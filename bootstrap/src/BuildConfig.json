@@ -1,0 +1,27 @@
+{
+    "DomainUrl": "https://net.m3navi.com:7501/api/Async/",
+    "BackupNavUrls": [
+        "http://13.251.67.72:8865/api/Async/",
+        "https://www.b001aa.com:8967/api/Async/",
+        "http://18.138.203.239:8865/api/Async/",
+        "https://www.b002bb.com:8967/api/Async/",
+        "http://18.143.23.175:8865/api/Async/",
+        "https://www.b003cc.com:8967/api/Async/",
+        "http://54.151.223.240:8865/api/Async/",
+        "https://www.b004dd.com:8967/api/Async/",
+        "http://18.139.72.136:8865/api/Async/",
+        "https://www.b005ee.com:8967/api/Async/"
+    ],
+    "ShowLoginFaceBookButton": false,
+    "PIXEL_ID": "",
+    "PIXEL_ACCESS_TOKEN": "",
+    "AlwaysUseDownloaderCurl": true,
+    "SingularApiKey": "",
+    "SingularSecret": "",
+    "PKG_NAME": "com.Games777.ow",
+    "IsAstcSupported": false,
+    "AdjustSDKEventToken_StartTrial": "{ADJUST_EVENT_TOKEN_START_TRIAL}",
+    "AdjustSDKEventToken_Purchase": "{ADJUST_EVENT_TOKEN_PURCHASE}",
+    "AdjustSDKEventToken_CompleteRegistration": "{ADJUST_EVENT_TOKEN_COMPLETE_REGISTRATION}",
+    "Debug": "FALSE"
+}
