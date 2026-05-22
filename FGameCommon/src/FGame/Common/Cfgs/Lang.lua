@@ -1,0 +1,33 @@
+local M = {}
+
+M["fgame_1"] = "当前金币不足!"
+M["fgame_2"] = "确定退出游戏?"
+M["fgame_3"] = "请先成为VIP!"
+M["fgame_4"] = "游戏长时间未操作，游戏将在%s秒后退出"
+M["fgame_5"] = "钻石余额不足!"
+
+M["fgame_crimson_cartoon_menu_1"] = "退出"
+M["fgame_crimson_cartoon_menu_2"] = "声音"
+M["fgame_crimson_cartoon_menu_3"] = "赔付表"
+M["fgame_crimson_cartoon_menu_4"] = "规则"
+M["fgame_crimson_cartoon_menu_5"] = "关闭"
+M["fgame_crimson_cartoon_title_1"] = "赔付表"
+M["fgame_crimson_cartoon_title_2"] = "游戏规则"
+M["fgame_crimson_cartoon_title_3"] = "押注选项"
+M["fgame_crimson_cartoon_title_4"] = "押注大小"
+M["fgame_crimson_cartoon_title_5"] = "押注等级"
+M["fgame_crimson_cartoon_title_6"] = "线"
+M["fgame_crimson_cartoon_title_7"] = "押注金额"
+M["fgame_crimson_cartoon_title_8"] = "最大押注"
+M["fgame_crimson_cartoon_title_9"] = "确定"
+M["fgame_crimson_cartoon_title_10"] = "自动旋转"
+M["fgame_crimson_cartoon_title_11"] = "开始自动旋转"
+M["fgame_crimson_cartoon_title_12"] = "自动旋转次数"
+M["fgame_crimson_cartoon_title_13"] = "取消"
+M["fgame_crimson_cartoon_title_14"] = "确定"
+M["fgame_crimson_cartoon_title_15"] = "退出游戏"
+M["fgame_crimson_cartoon_title_16"] = "是否退出游戏?"
+M["fgame_crimson_cartoon_title_17"] = "加速旋转启用"
+M["fgame_crimson_cartoon_title_18"] = "加速旋转禁用"
+
+return M
