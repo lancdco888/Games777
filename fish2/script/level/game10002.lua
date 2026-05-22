@@ -1,0 +1,1901 @@
+-- level/game107.lua
+local root = ...
+
+local FishEventHelper = FF_G.FishEventHelper
+local fishGroup = FF_G.LoadLuaFunc("script/config/fish_group.lua")()
+
+-- 初始化场景
+local InitTimeline = function()
+    local scene1 = FishEventHelper.CreateScene(60)
+    local scene2 = FishEventHelper.CreateScene(66)
+    local scene3 = FishEventHelper.CreateScene(310)
+    local scene4 = FishEventHelper.CreateScene(66)
+    local scene5 = FishEventHelper.CreateScene(310)
+    local scene6 = FishEventHelper.CreateScene(66)
+
+    --场景1： --暗夜炬兽 300
+    do
+     
+        local scene = scene1
+        scene.AddSwitchBgEvent(0, 15)
+        scene.AddSwitchBgEvent(10, 16)
+        --scene.AddSwitchBgEvent(20, 17)
+        --scene.AddSwitchBgEvent(30, 18)
+        --scene.AddSwitchBgEvent(40, 19)
+        --scene.AddSetPlayBgAnimEvent(4, "enter")
+        --scene.AddSetPlayBgAnimEvent(7, "exit")
+        scene.AddSetPlayBgAnimEvent(10, "scar", true)
+
+        --scene.AddRule(
+        --        {
+        --            startTime = 0,
+        --            endTime = 1000,
+        --            cdTime = 1,
+        --            leaveCd = 0,
+        --            deathCd = 0,
+        --            groupName = "goldedfish",
+        --            limit = 2,
+        --            mutex = true,
+        --        },
+        --        {
+        --            fish = fishGroup["goldedfish"],
+        --            fishTypeCount = {1},
+        --            pathwayGroup= "Group_gfishby",
+        --        }
+        --)
+
+        scene.AddRule(
+                {
+                    startTime = 0,
+                    endTime = 1000,
+                    cdTime = 1,
+                    leaveCd = 0,
+                    deathCd = 0,
+                    groupName = "goldedfish",
+                    mutex = true,
+                    limit = 2,
+                },
+                {
+                    fish = fishGroup["goldedfish"],
+                    fishTypeCount = {1},
+                    pathwayGroup= "Group_special",
+                }
+        )
+
+        --scene.AddRule(
+        --    {
+        --        startTime = 0,
+        --        endTime = 200,
+        --        cdTime = 3,
+        --        leaveCd = 1,
+        --        deathCd = 1,
+        --        groupName = 108,
+        --        limit = 2,
+        --    },
+        --    {
+        --        fish = 108,
+        --        fishTypeCount = 1,
+        --        pathwayGroup= "Group_fish2R",
+        --    }
+        --)
+
+        --for i = 5, 60, 10 do
+        --    scene.AddBossWarningEvent(i, FF_G.BossWarning_Red)
+        --    --scene.AddBossWarningEvent(i, FF_G.BossWarning_BisonComing)
+        --end
+        --
+        --local fishId = FF_G.FishInfo.GodOfWealth.typeId
+        --scene.AddRule(
+        --        {
+        --            startTime = 0,
+        --            endTime = 60,
+        --            -- cdTime = 0,
+        --            leaveCd = 0,
+        --            deathCd = 0,
+        --            groupName = fishId,
+        --            limit = 1,
+        --        },
+        --        {
+        --            fish = fishId,
+        --            fishTypeCount = {1},
+        --            pathwayGroup= "Group_niu",
+        --        }
+        --)
+
+        --local fishId = FF_G.FishInfo.Pegasus.typeId
+        ----补boss-- 暗夜巨兽
+        --scene.AddRule(
+        --        {
+        --            startTime = 0,
+        --            endTime = 300,
+        --            cdTime = 0,
+        --            deathCd = 0,
+        --            leaveCd = 0,
+        --            groupName = fishId,
+        --            limit = 1,
+        --        },
+        --        {
+        --            fish = fishId,      -- 指定鱼组
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_group",
+        --        }
+        --)
+
+        --for i = 0, 300, 20 do
+        --    scene.AddFishBornEvent(i, {
+        --        fish = FF_G.FishInfo.FlamesStorm.typeId,
+        --        fishTypeCount = 1,
+        --        pathway = "line_2",
+        --        createPrams = {
+        --            fadeInSecs = 3,             -- 淡入持续时间
+        --            --fadeOutStartTime = 10,      -- 淡入开始时间
+        --            --fadeOutSecs = 3,            -- 淡出持续时间
+        --            --scaleInSec = 0.25,             -- 从小变大入场
+        --        },
+        --    })
+        --    --scene.AddFishBornEvent(i + 20, {
+        --    --    fish = FF_G.FishInfo.GoldenToad.typeId,
+        --    --    fishTypeCount = 1,
+        --    --    pathway = "line_0000000",
+        --    --    createPrams = {
+        --    --        scaleInSec = 0.25,             -- 从小变大入场
+        --    --    },
+        --    --})
+        --    --scene.AddFishBornEvent(i, {
+        --    --    fish = 100,
+        --    --    fishTypeCount = 1,
+        --    --    pathway = "line_347",
+        --    --    offsets = {{20 , 0}},
+        --    --    speedScale = 1
+        --    --})
+        --end
+
+        --for i = 10, 300, 42 do
+        --    scene.AddSetPlayBgAnimEvent(i, "open")
+        --    scene.AddSetPlayBgAnimEvent(i+32, "close")
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 300,      -- 暗夜炬兽
+        --        fishTypeCount = {1},
+        --        pathwayGroup = "Group_long",
+        --    })
+        --end
+        -----------偶尔在随机场景出现---------------鲸鱼伪装----
+        --for j = 60, 300, 6666 do
+        --    for i = 1, 31 do
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 0,      -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            pathway = "line_103",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_332",
+        --                    startTime = 1,
+        --                    endTime = 20,
+        --                    offsetTime = 0.5 * i,
+        --                    useAngle = false,
+        --                    speed = 160 ,
+        --                },
+        --            },
+        --        })
+        --    end
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 100,                     -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            offsets = {{-130, -40}},        -- 刷鱼的位置
+        --            intervalTime = 0,               -- 两条鱼的间隔时间
+        --            lineCount = 1,                  -- 固定选一条鱼线
+        --            fixedFishType = true,
+        --            pathway = "line_103",
+        --        })
+        --
+        --end
+        --for j = 120, 300, 6666 do
+        --    for i = 1, 31 do
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 1,      -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            pathway = "line_103",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_332",
+        --                    startTime = 1,
+        --                    endTime = 20,
+        --                    offsetTime = 0.5 * i,
+        --                    useAngle = false,
+        --                    speed = 160 ,
+        --                },
+        --            },
+        --        })
+        --    end
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 101,                     -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            offsets = {{-130, -40}},        -- 刷鱼的位置
+        --            intervalTime = 0,               -- 两条鱼的间隔时间
+        --            lineCount = 1,                  -- 固定选一条鱼线
+        --            fixedFishType = true,
+        --            pathway = "line_103",
+        --        })
+        --
+        --end
+        --for j = 180, 300, 6666 do
+        --    for i = 1, 31 do
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 2,      -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            pathway = "line_103",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_332",
+        --                    startTime = 1,
+        --                    endTime = 20,
+        --                    offsetTime = 0.5 * i,
+        --                    useAngle = false,
+        --                    speed = 160 ,
+        --                },
+        --            },
+        --        })
+        --    end
+        --        scene.AddFishBornEvent(j, {
+        --            fish = 102,                     -- 指定鱼组
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            offsets = {{-130, -40}},        -- 刷鱼的位置
+        --            intervalTime = 0,               -- 两条鱼的间隔时间
+        --            lineCount = 1,                  -- 固定选一条鱼线
+        --            fixedFishType = true,
+        --            pathway = "line_103",
+        --        })
+        --
+        --end
+        --
+        ----出小鱼跟随： SetFishGroup("fish1", {0,1,2})
+        --    for i = 7, 300, 20 do
+        --    scene.AddFishBornEvent(i, {
+        --        fish = fishGroup["fish1"],      -- 指定鱼组
+        --        fishCount = {4,5,6},          -- 鱼的数量
+        --        fishTypeCount = 1,              -- 鱼类型数量
+        --        intervalTime = 0.5,             -- 两条鱼的间隔时间
+        --        lineCount = 1,                  -- 固定选一条鱼线
+        --        fixedFishType = true,
+        --        pathwayGroup = "Group_follow",
+        --    })
+        --    end
+        --    --出小鱼群： SetFishGroup("fish1", {0,1,2})
+        --    for i = 5, 300, 20 do
+        --        scene.AddFishBornEvent(i, {
+        --        fish = fishGroup["fish1"],                       -- 指定鱼组
+        --        fishCount = {5},                -- 鱼的数量
+        --        offsets = {{0, 0}, {50, 0}, {-50, 0}, {0, 50}, {0, -50}}, --多鱼的时候位置偏移
+        --        fishTypeCount = 1,              -- 鱼类型数量
+        --        intervalTime = 0,             -- 两条鱼的间隔时间
+        --        lineCount = 1,                  -- 固定选一条鱼线
+        --        fixedFishType = true,
+        --        pathwayGroup = "Group_group",
+        --        })
+        --    end
+        --    --出龙虾跟随
+        --    for i = 10, 300, 40 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["longxia"],      -- 指定鱼组
+        --            fishCount = {4,5},          -- 鱼的数量
+        --            fishTypeCount = 1,              -- 鱼类型数量
+        --            intervalTime = 1.5,             -- 两条鱼的间隔时间
+        --            lineCount = 1,                  -- 固定选一条鱼线
+        --            fixedFishType = true,
+        --            pathwayGroup = "Group_lxfollow",
+        --        })
+        --    end
+        --
+        --    --出小鱼单条:SetFishGroup("fish1", {0,1,2})
+        --    for i = 0, 300, 6 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["fish1"],      -- 指定鱼组
+        --            fishTypeCount = {3, 2},
+        --            intervalTime = 2.5,
+        --            pathwayGroup = "Group_fish1",
+        --        })
+        --    end
+        --
+        --    --出普通中型鱼：SetFishGroup("fish2", {3,4,6,7,8,9,10,11})
+        --    for i = 2, 300, 6 do
+        --    scene.AddFishBornEvent(i, {
+        --        fish = fishGroup["fish2"],
+        --        fishTypeCount = {4, 3},
+        --        intervalTime = 2.5,
+        --        pathwayGroup = "Group_fish2L",
+        --    })
+        --    end
+        --    for i = 4, 300, 6 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["fish2"],
+        --            fishTypeCount = {4, 3},
+        --            intervalTime = 2.5,
+        --            pathwayGroup = "Group_fish2R",
+        --        })
+        --    end
+        --
+        --    --出普通大鱼：SetFishGroup("fish3", {12,13,14,15,16,17})
+        --    for i = 4, 300, 7 do
+        --    scene.AddFishBornEvent(i, {
+        --        fish = fishGroup["fish3"],
+        --        fishTypeCount = {1,2,2},
+        --        intervalTime = 2.5,
+        --        pathwayGroup = "Group_fish3L",
+        --    })
+        --    end
+        --    for i = 7, 300, 7 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["fish3"],
+        --            fishTypeCount = {1,2,2},
+        --            intervalTime = 2.5,
+        --            pathwayGroup = "Group_fish3R",
+        --        })
+        --    end
+        --    --补普通大鱼：SetFishGroup("bigfish", {14,15,16,17})
+        --    scene.AddRule(
+        --        {
+        --            startTime = 15,
+        --            endTime = 300,
+        --            cdTime = 1,
+        --            groupName = "fish3",
+        --            limit = 2,
+        --        },
+        --        {
+        --            fish = fishGroup["bigfish"],      -- 指定鱼组
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_bubig",
+        --
+        --        }
+        --    )
+        --
+        --    --补彩金鱼：SetFishGroup("goldedfish", {320,321,322,323,324})
+        --    scene.AddRule(
+        --        {
+        --            startTime = 15,
+        --            endTime = 300,
+        --            cdTime = 1,
+        --            groupName = "goldedfish",
+        --            limit = 2,
+        --        },
+        --        {
+        --            fish = fishGroup["goldedfish"],      -- 指定鱼组
+        --            fishTypeCount = {2},
+        --            pathwayGroup = "Group_gfishby",
+        --
+        --        }
+        --    )
+        --    --补烈焰风暴：204
+        --    scene.AddRule(
+        --        {
+        --            startTime = 20,
+        --            endTime = 300,
+        --            cdTime = 1,
+        --            deathCd =30,
+        --            groupName = 204,
+        --            limit = 1,
+        --        },
+        --        {
+        --            fish = 204,      -- 指定鱼组
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_buyu",
+        --
+        --        }
+        --    )
+        --    --出组合鱼SetFishGroup("combinedfish", {350,351,352,353,354,355,356})
+        --    scene.AddRule(
+        --        {
+        --            startTime = 30,
+        --            endTime = 300,
+        --            cdTime = 1,
+        --            --deathCd = 20     -- 鱼死后刷鱼的CD时间，只对fish = xxx 有效，单挑鱼
+        --            groupName = "combinedfish",
+        --            limit = 1,
+        --        },
+        --        {
+        --            fish = fishGroup["combinedfish"],      -- 指定鱼组
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_Cbfish",
+        --        }
+        --    )
+        --    --出比目鱼：5
+        --    for i = 2, 300, 10 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["OtterFish"],
+        --            fishTypeCount = {1,2,3},
+        --            intervalTime = 2.5,
+        --            pathwayGroup = "Group_bimu",
+        --        })
+        --    end
+        --
+        --
+        --    for i = 8, 300, 15 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["Carb"],
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_Carb",
+        --            offsetAngles = {math.pi / 2},
+        --        })
+        --    end
+        --
+        --    for i = 17, 300, 34 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["LightningShark"],
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_shadiansha",
+        --        })
+        --    end
+        --
+        --    for i = 20, 300, 60 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["kingfish1"],
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_Cycle",
+        --        })
+        --    end
+        --
+        --    for i = 40, 300, 60 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = fishGroup["kingfish2"],
+        --            fishTypeCount = {1},
+        --            pathwayGroup = "Group_BCycle",
+        --        })
+        --    end
+        --
+        ----出辅助线-----
+        --
+        --for i = 157, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 1,
+        --            fishTypeCount = 1,
+        --            pathway="line_350",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_348",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.4* j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 1,
+        --            fishTypeCount = 1,
+        --            pathway="line_350",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_349",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.4 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 101,
+        --        fishTypeCount = 1,
+        --        pathway = "line_350",
+        --        offsets = {{-20, -55}},
+        --        speedScale = 1
+        --    })
+        --end
+        --
+        --for i = 89, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 1,
+        --            fishTypeCount = 1,
+        --            pathway="line_351",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_348",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.4* j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 1,
+        --            fishTypeCount = 1,
+        --            pathway="line_351",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_349",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.4 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 101,
+        --        fishTypeCount = 1,
+        --        pathway = "line_351",
+        --        offsets = {{-10, 55}},
+        --        speedScale = 1
+        --    })
+        --end
+        --
+        --for i = 225, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 1,
+        --            fishTypeCount = 1,
+        --            pathway="line_346",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_yuan1",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.44 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 101,
+        --        fishTypeCount = 1,
+        --        pathway = "line_346",
+        --        offsets = {{-60 , 10}},
+        --        speedScale = 1
+        --    })
+        --end
+        --
+        --for i = 95, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 0,
+        --            fishTypeCount = 1,
+        --            pathway="line_347",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_yuan1",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.44 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 100,
+        --        fishTypeCount = 1,
+        --        pathway = "line_347",
+        --        offsets = {{20 , 0}},
+        --        speedScale = 1
+        --    })
+        --end
+        --
+        --for i = 125, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 2,
+        --            fishTypeCount = 1,
+        --            pathway="line_346",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_yuan1",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.44 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 102,
+        --        fishTypeCount = 1,
+        --        pathway = "line_346",
+        --        offsets = {{-23, 5}},
+        --        speedScale = 1
+        --    })
+        --end
+        --
+        --for i = 175, 300, 40 do
+        --    for j = 1,8 do
+        --        scene.AddFishBornEvent(i, {
+        --            fish = 4,
+        --            fishTypeCount = 1,
+        --            pathway="line_347",
+        --            subPathway = {
+        --                {
+        --                    pathway = "line_yuan1",
+        --                    startTime = 0,
+        --                    endTime = 30,
+        --                    offsetTime = 0.44 * j,
+        --                    useAngle = true,
+        --                    speed = 200,
+        --                },
+        --            },
+        --        })
+        --    end
+        --    scene.AddFishBornEvent(i, {
+        --        fish = 104,
+        --        fishTypeCount = 1,
+        --        pathway = "line_347",
+        --        offsets = {{60, -10}},
+        --        speedScale = 1
+        --    })
+        --end
+    end
+
+    --场景2：
+    ------鱼阵：小丑鱼和黄金小丑鱼池--------------------
+    --do
+    --
+    --    local scene = scene2
+    --    scene.AddSwitchBgEvent(0, 2)
+    --
+    --    scene.AddRule(
+    --            {
+    --                startTime = 0,
+    --                endTime = 60,
+    --                -- cdTime = 0,
+    --                leaveCd = 5,
+    --                deathCd = 5,
+    --                groupName = "boss",
+    --                limit = 1,
+    --            },
+    --            {
+    --                fish = fishGroup["boss"],
+    --                fishTypeCount = {1},
+    --                pathwayGroup= "Group_boss",
+    --            }
+    --    )
+    --
+    --    --for i = 5, 60, 15 do
+    --    --    scene.AddFishBornEvent(i, {
+    --    --        fish = fishGroup["LightningShark"],
+    --    --        fishTypeCount = {1},
+    --    --        pathwayGroup = "Group_shadiansha",
+    --    --    })
+    --    --end
+    --    --
+    --    --for i = 0, 60, 7 do
+    --    --    scene.AddFishBornEvent(i, {
+    --    --        fish = {14,14,14},
+    --    --        fishTypeCount = {3},
+    --    --        pathwayGroup = "Group_yzxcyL",
+    --    --    })
+    --    --end
+    --    --for i = 3, 60, 7 do
+    --    --    scene.AddFishBornEvent(i, {
+    --    --        fish = {14,14,14},
+    --    --        fishTypeCount = {3},
+    --    --        pathwayGroup = "Group_yzxcyR",
+    --    --    })
+    --    --end
+    --    --for i = 3, 60, 7 do
+    --    --    scene.AddFishBornEvent(i, {
+    --    --        fish = {320,320,320},
+    --    --        fishTypeCount = {3},
+    --    --        pathwayGroup = "Group_yzhjxcyL",
+    --    --    })
+    --    --end
+    --    --for i = 1, 60, 7 do
+    --    --    scene.AddFishBornEvent(i, {
+    --    --        fish = {320,320,320},
+    --    --        fishTypeCount = {3},
+    --    --        pathwayGroup = "Group_yzhjxcyR",
+    --    --    })
+    --    --end
+    --
+    --end
+    --
+    ----场景3：--虎头鲨 301
+    --do
+    --
+    --    local scene = scene3
+    --    scene.AddSwitchBgEvent(0, 1)
+    --
+    --    --补boss
+    --    scene.AddRule(
+    --        {
+    --        startTime = 15,
+    --        endTime = 300,
+    --        cdTime = 6,
+    --        deathCd = 20,
+    --        groupName = 301, --虎头鲨 301
+    --        limit = 1,
+    --        },
+    --        {
+    --        fish = 301,      -- --虎头鲨 301
+    --        --offsetAngles = {math.pi / 2},           --横着走
+    --        fishTypeCount = {1},
+    --        pathwayGroup= "Group_boss",
+    --        }
+    --    )
+    --    -----------偶尔在随机场景出现---------------鲸鱼伪装----
+    --    for j = 60, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 0,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 100,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --    for j = 120, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 1,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 101,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --    for j = 180, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 2,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 102,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --    --出小鱼跟随： SetFishGroup("fish1", {0,1,2})
+    --    for i = 7, 300, 20 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish1"],      -- 指定鱼组
+    --            fishCount = {4,5,6},          -- 鱼的数量
+    --            fishTypeCount = 1,              -- 鱼类型数量
+    --            intervalTime = 0.5,             -- 两条鱼的间隔时间
+    --            lineCount = 1,                  -- 固定选一条鱼线
+    --            fixedFishType = true,
+    --            pathwayGroup = "Group_follow",
+    --        })
+    --        end
+    --        --出小鱼群： SetFishGroup("fish1", {0,1,2})
+    --        for i = 5, 300, 20 do
+    --            scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish1"],                       -- 指定鱼组
+    --            fishCount = {5},                -- 鱼的数量
+    --            offsets = {{0, 0}, {50, 0}, {-50, 0}, {0, 50}, {0, -50}}, --多鱼的时候位置偏移
+    --            fishTypeCount = 1,              -- 鱼类型数量
+    --            intervalTime = 0,             -- 两条鱼的间隔时间
+    --            lineCount = 1,                  -- 固定选一条鱼线
+    --            fixedFishType = true,
+    --            pathwayGroup = "Group_group",
+    --            })
+    --        end
+    --        --出龙虾跟随
+    --        for i = 10, 300, 40 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["longxia"],      -- 指定鱼组
+    --                fishCount = {4,5},          -- 鱼的数量
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                intervalTime = 1.5,             -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathwayGroup = "Group_lxfollow",
+    --            })
+    --        end
+    --
+    --        --出小鱼单条:SetFishGroup("fish1", {0,1,2})
+    --        for i = 0, 300, 6 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["fish1"],      -- 指定鱼组
+    --                fishTypeCount = {3, 2},
+    --                intervalTime = 2.5,
+    --                pathwayGroup = "Group_fish1",
+    --            })
+    --        end
+    --
+    --        --出普通中型鱼：SetFishGroup("fish2", {3,4,6,7,8,9,10,11})
+    --        for i = 2, 300, 6 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish2"],
+    --            fishTypeCount = {4, 3},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_fish2L",
+    --        })
+    --        end
+    --        for i = 4, 300, 6 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["fish2"],
+    --                fishTypeCount = {4, 3},
+    --                intervalTime = 2.5,
+    --                pathwayGroup = "Group_fish2R",
+    --            })
+    --        end
+    --
+    --        --出普通大鱼：SetFishGroup("fish3", {12,13,14,15,16,17})
+    --        for i = 4, 300, 7 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish3"],
+    --            fishTypeCount = {1,2,2},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_fish3L",
+    --        })
+    --        end
+    --        for i = 7, 300, 7 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["fish3"],
+    --                fishTypeCount = {1,2,2},
+    --                intervalTime = 2.5,
+    --                pathwayGroup = "Group_fish3R",
+    --            })
+    --        end
+    --        --补普通大鱼：SetFishGroup("bigfish", {14,15,16,17})
+    --        scene.AddRule(
+    --            {
+    --                startTime = 15,
+    --                endTime = 300,
+    --                cdTime = 1,
+    --                groupName = "fish3",
+    --                limit = 2,
+    --            },
+    --            {
+    --                fish = fishGroup["bigfish"],      -- 指定鱼组
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_bubig",
+    --
+    --            }
+    --        )
+    --
+    --        --补彩金鱼：SetFishGroup("goldedfish", {320,321,322,323,324})
+    --        scene.AddRule(
+    --            {
+    --                startTime = 15,
+    --                endTime = 300,
+    --                cdTime = 1,
+    --                groupName = "goldedfish",
+    --                limit = 2,
+    --            },
+    --            {
+    --                fish = fishGroup["goldedfish"],      -- 指定鱼组
+    --                fishTypeCount = {2},
+    --                pathwayGroup = "Group_gfishby",
+    --
+    --            }
+    --        )
+    --        --补烈焰风暴：204
+    --        scene.AddRule(
+    --            {
+    --                startTime = 0,
+    --                endTime = 300,
+    --                cdTime = 1,
+    --                deathCd =30,
+    --                groupName = 204,
+    --                limit = 1,
+    --            },
+    --            {
+    --                fish = 204,      -- 指定鱼组
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_buyu",
+    --
+    --            }
+    --        )
+    --        --出组合鱼SetFishGroup("combinedfish", {350,351,352,353,354,355,356})
+    --        scene.AddRule(
+    --            {
+    --                startTime = 30,
+    --                endTime = 300,
+    --                cdTime = 1,
+    --                --deathCd = 20     -- 鱼死后刷鱼的CD时间，只对fish = xxx 有效，单挑鱼
+    --                groupName = "combinedfish",
+    --                limit = 1,
+    --            },
+    --            {
+    --                fish = fishGroup["combinedfish"],      -- 指定鱼组
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_Cbfish",
+    --            }
+    --        )
+    --        --出比目鱼：5
+    --        for i = 2, 300, 10 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["OtterFish"],
+    --                fishTypeCount = {1,2,3},
+    --                intervalTime = 2.5,
+    --                pathwayGroup = "Group_bimu",
+    --            })
+    --        end
+    --
+    --
+    --        for i = 8, 300, 15 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["Carb"],
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_Carb",
+    --                offsetAngles = {math.pi / 2},
+    --            })
+    --        end
+    --
+    --        for i = 17, 300, 34 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["LightningShark"],
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_shadiansha",
+    --            })
+    --        end
+    --
+    --        for i = 20, 300, 60 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["kingfish1"],
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_Cycle",
+    --            })
+    --        end
+    --
+    --        for i = 40, 300, 60 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = fishGroup["kingfish2"],
+    --                fishTypeCount = {1},
+    --                pathwayGroup = "Group_BCycle",
+    --            })
+    --        end
+    --
+    --        --出辅助线-----
+    --
+    --    for i = 157, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_350",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_348",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4* j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_350",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_349",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_350",
+    --            offsets = {{-20, -55}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 89, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_351",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_348",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4* j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_351",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_349",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_351",
+    --            offsets = {{-10, 55}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 225, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_346",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_346",
+    --            offsets = {{-60 , 10}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 95, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 0,
+    --                fishTypeCount = 1,
+    --                pathway="line_347",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 100,
+    --            fishTypeCount = 1,
+    --            pathway = "line_347",
+    --            offsets = {{20 , 0}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 125, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 2,
+    --                fishTypeCount = 1,
+    --                pathway="line_346",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 102,
+    --            fishTypeCount = 1,
+    --            pathway = "line_346",
+    --            offsets = {{-23, 5}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 175, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 4,
+    --                fishTypeCount = 1,
+    --                pathway="line_347",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 104,
+    --            fishTypeCount = 1,
+    --            pathway = "line_347",
+    --            offsets = {{60, -10}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --end
+    --
+    ----场景4：鱼阵--------------------鱼阵:中间出螺旋形状河豚，伴随闪电鲨和炸弹蟹----------------------
+    --do
+    --
+    --    local scene = scene4
+    --    scene.AddSwitchBgEvent(0.0, 1)
+    --
+    --    for i = 0 , 59, 0.5 do
+    --        if i % 10 == 6 then
+    --        scene.AddFishBornEvent(i, {
+    --            fish = {200,200},                       -- 指定鱼组
+    --            fishTypeCount = 2,                      -- 鱼类型数量
+    --            pathwayGroup = "Group_yzzxsd",
+    --            speedScale = 1
+    --        })
+    --        end
+    --        if i>=10 and i % 10 == 0 then
+    --            scene.AddFishBornEvent(i,
+    --            {
+    --                speedScale = 2,                     -- 前进速度
+    --                fish = 103,                         -- 鱼或鱼组
+    --                pathwayGroup = "Group_zhognxin",    -- 线或线组
+    --                fishCount = 8,
+    --                intervalTime = 0,
+    --                fixedFishType = true,
+    --            })
+    --        end
+    --        if i>=10 and i % 10 < 5 then
+    --            scene.AddFishBornEvent(i+0.5,
+    --            {
+    --                speedScale = 2,                     -- 前进速度
+    --                fish = 3,                           -- 鱼或鱼组
+    --                pathwayGroup = "Group_zhognxin",    -- 线或线组
+    --                fishCount = 8,
+    --                intervalTime = 0,
+    --                fixedFishType = true,
+    --            })
+    --        end
+    --        if i>=10 and i % 10 == 0 then
+    --            scene.AddFishBornEvent(i, {
+    --                fish = {202,203},                    -- 指定鱼组
+    --                fishTypeCount = 1,                   -- 鱼类型数量
+    --                --pathwayGroup = "Group_Carb",
+    --                pathway = "line_yzzxcarb",
+    --                offsetAngles = {math.pi / -2},
+    --                speedScale = 0.7
+    --            })
+    --        end
+    --
+    --    end
+    --    for i = 0 , 59 , 25 do
+    --        if  i % 50 == 0 then
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 102,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_yzzxL",
+    --                speedScale = 1.5
+    --            })
+    --            scene.AddFishBornEvent(i+0.5, {
+    --                fish = 2,                       -- 指定鱼组
+    --                fishCount = {25},               -- 鱼的数量
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                intervalTime = 0.5,             -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_yzzxL",
+    --                speedScale = 1.5
+    --            })
+    --        else
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 102,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_yzzxR",
+    --                speedScale = 1.5
+    --            })
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 2,                       -- 指定鱼组
+    --                fishCount = {25},               -- 鱼的数量
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                intervalTime = 0.5,             -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_yzzxR",
+    --                speedScale = 1.5
+    --            })
+    --        end
+    --    end
+    --
+    --end
+    --
+    ----场景5：--大王乌贼 305
+    --do
+    --
+    --    local scene = scene5
+    --    scene.AddSwitchBgEvent(0, 3)
+    --    scene.AddSetPlayBgAnimEvent(25, "open")
+    --    scene.AddSetPlayBgAnimEvent(45, "close")
+    --    scene.AddSetPlayBgAnimEvent(85, "open")
+    --    scene.AddSetPlayBgAnimEvent(105, "close")
+    --
+    --    --补boss
+    --    scene.AddRule(
+    --            {
+    --            startTime = 15,
+    --            endTime = 300,
+    --            cdTime = 6,
+    --            deathCd = 20,
+    --            groupName = 305,  --大王乌贼
+    --            limit = 1,
+    --            },
+    --            {
+    --            fish = 305,      -- --大王乌贼
+    --            --offsetAngles = {math.pi / 2},           --横着走
+    --            fishTypeCount = {1},
+    --            pathwayGroup= "Group_boss",
+    --            }
+    --    )
+    --    -----------偶尔在随机场景出现---------------鲸鱼伪装----
+    --    for j = 60, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 0,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 100,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --    for j = 120, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 1,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 101,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --    for j = 180, 300, 6666 do
+    --        for i = 1, 31 do
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 2,      -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                pathway = "line_103",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_332",
+    --                        startTime = 1,
+    --                        endTime = 20,
+    --                        offsetTime = 0.5 * i,
+    --                        useAngle = false,
+    --                        speed = 160 ,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --            scene.AddFishBornEvent(j, {
+    --                fish = 102,                     -- 指定鱼组
+    --                fishTypeCount = 1,              -- 鱼类型数量
+    --                offsets = {{-130, -40}},        -- 刷鱼的位置
+    --                intervalTime = 0,               -- 两条鱼的间隔时间
+    --                lineCount = 1,                  -- 固定选一条鱼线
+    --                fixedFishType = true,
+    --                pathway = "line_103",
+    --            })
+    --
+    --    end
+    --
+    --    --出小鱼跟随： SetFishGroup("fish1", {0,1,2})
+    --    for i = 7, 300, 20 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish1"],      -- 指定鱼组
+    --            fishCount = {4,5,6},          -- 鱼的数量
+    --            fishTypeCount = 1,              -- 鱼类型数量
+    --            intervalTime = 0.5,             -- 两条鱼的间隔时间
+    --            lineCount = 1,                  -- 固定选一条鱼线
+    --            fixedFishType = true,
+    --            pathwayGroup = "Group_follow",
+    --        })
+    --    end
+    --    --出小鱼群： SetFishGroup("fish1", {0,1,2})
+    --    for i = 5, 300, 20 do
+    --        scene.AddFishBornEvent(i, {
+    --        fish = fishGroup["fish1"],                       -- 指定鱼组
+    --        fishCount = {5},                -- 鱼的数量
+    --        offsets = {{0, 0}, {50, 0}, {-50, 0}, {0, 50}, {0, -50}}, --多鱼的时候位置偏移
+    --        fishTypeCount = 1,              -- 鱼类型数量
+    --        intervalTime = 0,             -- 两条鱼的间隔时间
+    --        lineCount = 1,                  -- 固定选一条鱼线
+    --        fixedFishType = true,
+    --        pathwayGroup = "Group_group",
+    --        })
+    --    end
+    --    --出龙虾跟随
+    --    for i = 10, 300, 40 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["longxia"],      -- 指定鱼组
+    --            fishCount = {4,5},          -- 鱼的数量
+    --            fishTypeCount = 1,              -- 鱼类型数量
+    --            intervalTime = 1.5,             -- 两条鱼的间隔时间
+    --            lineCount = 1,                  -- 固定选一条鱼线
+    --            fixedFishType = true,
+    --            pathwayGroup = "Group_lxfollow",
+    --        })
+    --    end
+    --
+    --    --出小鱼单条:SetFishGroup("fish1", {0,1,2})
+    --    for i = 0, 300, 6 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish1"],      -- 指定鱼组
+    --            fishTypeCount = {3, 2},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_fish1",
+    --        })
+    --    end
+    --
+    --    --出普通中型鱼：SetFishGroup("fish2", {3,4,6,7,8,9,10,11})
+    --    for i = 2, 300, 6 do
+    --    scene.AddFishBornEvent(i, {
+    --        fish = fishGroup["fish2"],
+    --        fishTypeCount = {4, 3},
+    --        intervalTime = 2.5,
+    --        pathwayGroup = "Group_fish2L",
+    --    })
+    --    end
+    --    for i = 4, 300, 6 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish2"],
+    --            fishTypeCount = {4, 3},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_fish2R",
+    --        })
+    --    end
+    --
+    --    --出普通大鱼：SetFishGroup("fish3", {12,13,14,15,16,17})
+    --    for i = 4, 300, 7 do
+    --    scene.AddFishBornEvent(i, {
+    --        fish = fishGroup["fish3"],
+    --        fishTypeCount = {1,2,2},
+    --        intervalTime = 2.5,
+    --        pathwayGroup = "Group_fish3L",
+    --    })
+    --    end
+    --    for i = 7, 300, 7 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["fish3"],
+    --            fishTypeCount = {1,2,2},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_fish3R",
+    --        })
+    --    end
+    --    --补普通大鱼：SetFishGroup("bigfish", {14,15,16,17})
+    --    scene.AddRule(
+    --        {
+    --            startTime = 15,
+    --            endTime = 300,
+    --            cdTime = 1,
+    --            groupName = "fish3",
+    --            limit = 2,
+    --        },
+    --        {
+    --            fish = fishGroup["bigfish"],      -- 指定鱼组
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_bubig",
+    --
+    --        }
+    --    )
+    --
+    --    --补彩金鱼：SetFishGroup("goldedfish", {320,321,322,323,324})
+    --    scene.AddRule(
+    --        {
+    --            startTime = 15,
+    --            endTime = 300,
+    --            cdTime = 1,
+    --            groupName = "goldedfish",
+    --            limit = 2,
+    --        },
+    --        {
+    --            fish = fishGroup["goldedfish"],      -- 指定鱼组
+    --            fishTypeCount = {2},
+    --            pathwayGroup = "Group_gfishby",
+    --
+    --        }
+    --    )
+    --    --补烈焰风暴：204
+    --    scene.AddRule(
+    --        {
+    --            startTime = 20,
+    --            endTime = 300,
+    --            cdTime = 1,
+    --            deathCd =30,
+    --            groupName = 204,
+    --            limit = 1,
+    --        },
+    --        {
+    --            fish = 204,      -- 指定鱼组
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_buyu",
+    --
+    --        }
+    --    )
+    --    --出组合鱼SetFishGroup("combinedfish", {350,351,352,353,354,355,356})
+    --    scene.AddRule(
+    --        {
+    --            startTime = 30,
+    --            endTime = 300,
+    --            cdTime = 1,
+    --            --deathCd = 20     -- 鱼死后刷鱼的CD时间，只对fish = xxx 有效，单挑鱼
+    --            groupName = "combinedfish",
+    --            limit = 1,
+    --        },
+    --        {
+    --            fish = fishGroup["combinedfish"],      -- 指定鱼组
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_Cbfish",
+    --        }
+    --    )
+    --    --出比目鱼：5
+    --    for i = 2, 300, 10 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["OtterFish"],
+    --            fishTypeCount = {1,2,3},
+    --            intervalTime = 2.5,
+    --            pathwayGroup = "Group_bimu",
+    --        })
+    --    end
+    --
+    --
+    --    for i = 8, 300, 15 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["Carb"],
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_Carb",
+    --            offsetAngles = {math.pi / 2},
+    --        })
+    --    end
+    --
+    --    for i = 17, 300, 34 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["LightningShark"],
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_shadiansha",
+    --        })
+    --    end
+    --
+    --    for i = 20, 300, 60 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["kingfish1"],
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_Cycle",
+    --        })
+    --    end
+    --
+    --    for i = 40, 300, 60 do
+    --        scene.AddFishBornEvent(i, {
+    --            fish = fishGroup["kingfish2"],
+    --            fishTypeCount = {1},
+    --            pathwayGroup = "Group_BCycle",
+    --        })
+    --    end
+    --    -- 出辅助线-----
+    --
+    --    for i = 157, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_350",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_348",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4* j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_350",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_349",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_350",
+    --            offsets = {{-20, -55}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 89, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_351",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_348",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4* j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_351",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_349",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.4 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_351",
+    --            offsets = {{-10, 55}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 225, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 1,
+    --                fishTypeCount = 1,
+    --                pathway="line_346",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 101,
+    --            fishTypeCount = 1,
+    --            pathway = "line_346",
+    --            offsets = {{-60 , 10}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 95, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 0,
+    --                fishTypeCount = 1,
+    --                pathway="line_347",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 100,
+    --            fishTypeCount = 1,
+    --            pathway = "line_347",
+    --            offsets = {{20 , 0}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 125, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 2,
+    --                fishTypeCount = 1,
+    --                pathway="line_346",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 102,
+    --            fishTypeCount = 1,
+    --            pathway = "line_346",
+    --            offsets = {{-23, 5}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --
+    --    for i = 175, 300, 40 do
+    --        for j = 1,8 do
+    --            scene.AddFishBornEvent(i, {
+    --                fish = 4,
+    --                fishTypeCount = 1,
+    --                pathway="line_347",
+    --                subPathway = {
+    --                    {
+    --                        pathway = "line_yuan1",
+    --                        startTime = 0,
+    --                        endTime = 30,
+    --                        offsetTime = 0.44 * j,
+    --                        useAngle = true,
+    --                        speed = 200,
+    --                    },
+    --                },
+    --            })
+    --        end
+    --        scene.AddFishBornEvent(i, {
+    --            fish = 104,
+    --            fishTypeCount = 1,
+    --            pathway = "line_347",
+    --            offsets = {{60, -10}},
+    --            speedScale = 1
+    --        })
+    --    end
+    --end
+    --
+    ----场景6：鱼阵--------------鱼阵15-花两朵-鱼王()-------------
+    --do
+    --
+    --    local scene = scene6
+    --    scene.AddSwitchBgEvent(0, 1)
+    --
+    --
+    --    for i = 0, 14, 1 do
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1 ,                 -- 前进速度
+    --            fish = {4,4,4,104} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua2",           -- 线或线组
+    --        })
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1.5 ,                 -- 前进速度
+    --            fish = {3,3,3,103} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua3",           -- 线或线组
+    --        })
+    --     end
+    --     for i = 16, 29, 1 do
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1 ,                 -- 前进速度
+    --            fish = {4,4,4,104} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua3",           -- 线或线组
+    --        })
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1.5 ,                 -- 前进速度
+    --            fish = {3,3,3,103} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua2",           -- 线或线组
+    --        })
+    --     end
+    --     for i = 31, 44, 1 do
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1 ,                 -- 前进速度
+    --            fish = {4,4,4,104} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua2",           -- 线或线组
+    --        })
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1.5 ,                 -- 前进速度
+    --            fish = {3,3,3,103} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua3",           -- 线或线组
+    --        })
+    --     end
+    --     for i = 46, 59, 1 do
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1 ,                 -- 前进速度
+    --            fish = {4,4,4,104} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua3",           -- 线或线组
+    --        })
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 1.5 ,                 -- 前进速度
+    --            fish = {3,3,3,103} ,                     -- 鱼或鱼组
+    --            fishTypeCount = {4} ,             -- 数量
+    --           -- lineCount = 1 ,                  -- 固定选一条鱼线
+    --            pathwayGroup = "Group_hua2",           -- 线或线组
+    --        })
+    --     end
+    --    for i = 5, 59, 8 do
+    --        scene.AddFishBornEvent(i,
+    --        {
+    --            speedScale = 0.7,                   -- 前进速度
+    --            fish = {202,201} ,                  -- 鱼或鱼组
+    --            fishTypeCount = 1 ,
+    --            pathway = "line_yzd1",              -- 线或线组
+    --            offsetAngles = {math.pi / -2},
+    --        })
+    --    end
+    --
+    --end
+    
+
+    scene1.PushToGame(true)
+    --scene2.PushToGame(true)
+    --scene3.PushToGame(true)
+    --scene4.PushToGame(true)
+    --scene5.PushToGame(true)
+    --scene6.PushToGame(true)
+
+     
+end
+
+InitTimeline()
+
+--FF_G.TimeLineData = {
+--    gameLoopTime = gameLoopTime,
+--}
+
