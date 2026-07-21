@@ -24,6 +24,8 @@ export class GameDataStore {
   casinoLevelTabs: Record<number, unknown[]> = {};
   entergame_id = -1;
   exchangeCoinRatio: number | null = null;
+  lobbyToken = '';
+  serverID = 0;
 
   GetGameID(gameId: number): number {
     let id = gameId;

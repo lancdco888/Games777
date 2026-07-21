@@ -1,18 +1,27 @@
-import { _decorator, Component, Label, Node, director } from 'cc';
+import { _decorator, Component, Label, Node } from 'cc';
 import { UserData } from '../data/UserData';
 import { GameData } from '../data/GameData';
 import { ConstGame } from '../data/ConstGame';
 import { gSound } from '../core/Sound';
 import { AppStorage } from '../core/Storage';
 import { Dispatcher } from '../core/Dispatcher';
+import { Coroutines } from '../core/Coroutine';
 import { SendEnterRoomLevel } from './GameLauncher';
 import { UIManager } from './UIManager';
+import {
+  buildLobbyUI,
+  refreshGameList,
+  bindMoneyRefresh,
+  clickEnterGame,
+  backToLogin,
+  type LobbyUIRefs,
+} from './ui/LobbyUIBuilder';
 
 const { ccclass, property } = _decorator;
 
 /**
  * Lobby shell — port of hallnew Panel_Lobby + LobbyLayer.
- * Attach to Lobby scene root. Bind labels / game-list container in editor.
+ * If editor labels/nodes are unbound, builds programmatic UI (CSB stand-in).
  */
 @ccclass('LobbyController')
 export class LobbyController extends Component {
@@ -28,17 +37,30 @@ export class LobbyController extends Component {
   @property(Label)
   statusLabel: Label | null = null;
 
+  private ui: LobbyUIRefs | null = null;
+  private unbindMoney: (() => void) | null = null;
+
   onLoad(): void {
+    this.schedule((dt: number) => Coroutines.update(dt), 0);
     Dispatcher.Add('UI_TOAST', this, (text: unknown) => {
-      if (this.statusLabel) this.statusLabel.string = String(text);
+      const label = this.statusLabel || this.ui?.statusLabel;
+      if (label) label.string = String(text);
     });
   }
 
   onDestroy(): void {
     Dispatcher.Remove(this);
+    this.unbindMoney?.();
   }
 
   start(): void {
+    if (!this.nicknameLabel || !this.moneyLabel || !this.gameListRoot) {
+      this.ui = buildLobbyUI(this.node);
+      this.nicknameLabel = this.ui.nicknameLabel;
+      this.moneyLabel = this.ui.moneyLabel;
+      this.gameListRoot = this.ui.gameListRoot;
+      this.statusLabel = this.ui.statusLabel;
+    }
     this.EnterLobby();
   }
 
@@ -51,6 +73,7 @@ export class LobbyController extends Component {
     gSound.playBgm('hallsound/bg_lobby.mp3');
     this.refreshUserBar();
     this.refreshGameList();
+    this.unbindMoney = bindMoneyRefresh(this.nicknameLabel!, this.moneyLabel!);
   }
 
   refreshUserBar(): void {
@@ -65,16 +88,17 @@ export class LobbyController extends Component {
   refreshGameList(): void {
     const ids = GameData.game_ids.length ? GameData.game_ids : Object.keys(ConstGame.Param).map(Number);
     if (this.statusLabel) {
-      this.statusLabel.string = `games: ${ids.join(', ')}`;
+      this.statusLabel.string = `大厅游戏列表 (${ids.length}): 点击卡片进入`;
     }
-    // Full GameList item prefabs arrive with art migration from CSB.
+    if (this.gameListRoot) {
+      refreshGameList(this.gameListRoot, (gameId) => {
+        void this.onClickGame(gameId);
+      });
+    }
   }
 
-  /** Bound from game icon buttons in editor */
   async onClickGame(gameId: number): Promise<void> {
-    UIManager.ShowWaiting();
-    await SendEnterRoomLevel(gameId);
-    UIManager.HideWaiting();
+    await clickEnterGame(gameId);
   }
 
   onClickGame270(): void {
@@ -90,6 +114,12 @@ export class LobbyController extends Component {
   }
 
   onClickBackLogin(): void {
-    director.loadScene('Login');
+    backToLogin();
+  }
+
+  /** Debug helper — direct enter without UI */
+  onClickEnterSelected(): void {
+    void SendEnterRoomLevel(GameData.game_id > 0 ? GameData.game_id : 485);
+    UIManager.HideWaiting();
   }
 }

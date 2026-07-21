@@ -20,32 +20,37 @@
 
 ## 阶段计划
 
-### Phase 1 — 大厅壳（本 PR）
+### Phase 1 — 大厅壳（已完成）
 
 - Creator 工程骨架 + 场景脚本：`BootApp` / `LoginController` / `LobbyController`
 - 核心基础设施：Dispatcher、Coroutine、Device、Sound、Storage、i18n
 - 数据：`UserData` / `GameData` / `sGameManager` / `LoginData` / `ConstGame`（种子表）
-- 网络：`NetClient`（默认 mock，可连真服后关 mock）
-- 会话：`LogicMain`（对齐 `hall/src/logic.lua`）
-- 入口路由：`GameLauncher` → FGame / fish2
-- FGame：`RunCasino` + `APIGateway` + FairyGUI stub + `CasinoStub` 场景脚本
-- fish2：`EnterFish` + `FishBridge` + `FishStub` 场景脚本
-- 补齐 `FGameCommon/Special/Creator/*` Lua 适配
+- 网络 mock + FGame/fish2 stub
 
-### Phase 2 — 大厅完善 + 首个 FGame
+### Phase 2 — 大厅真协议 + Lobby UI + FGame485 进房（进行中 / 本迭代）
 
-1. 用 Creator 编辑器建场景：`Boot` / `Login` / `Lobby` / `CasinoStub` / `FishStub`，挂上对应脚本
-2. 从 `hall/src/common/const_game.lua` 生成完整 `ConstGame.Param`
-3. 大厅 UI：CSB `LobbyLayer` → Creator Prefab（用户条、游戏列表、底部功能）
-4. 真 TCP/WebSocket + 从 `pkgs/*.lua` 生成协议编解码
-5. 热更新：Asset Bundle 对齐 `DownloadingHall` / `FGame{id}` 模块名
-6. 接入 FairyGUI-Creator，打通 **FGame485**（或 270）端到端：`RunCasino` → 主题 → 结算回大厅
+已落地：
+
+1. **二进制协议框架**：`XxData` + `ObjMgr`（对齐 Lua ObjMgr 引用索引）
+2. **关键包**：AuthByUsername(1106)、Auth_Success_Lobby(1001)、Lobby_Enter(2002)、Enter_Success(1202)、EnterGame(2003)、EnterGameSlots_Success(1215)、MoneyChanged(1236)、Ping/Pong、Slots_Enter / Enter_Success
+3. **NetClient**：mock 返回真实包结构；WebSocket 二进制帧（serviceId/serial/len/payload）可接真服
+4. **LogicMain**：Auth → `EnterLobbyPanel`(token) → 游戏列表 / casinoLevelTabs → 大厅场景
+5. **Lobby UI**：无 Prefab 时程序化搭建 user_info + game_list（CSB 占位）
+6. **FGame 进房链**：`CasinoEnterFlow` = EnterGame → Slots_Enter → loadBundle → `RunCasino`（485 等 FGUI 游戏）
+7. **场景脚本**：`CasinoLoadingController` + `CasinoStubController`（展示 enterData）
+
+仍待：
+
+- Creator 编辑器内建齐场景并挂载脚本
+- FairyGUI-Creator + `Game485` 包真渲染
+- 从 `pkgs/*.lua` 代码生成完整 Shared 嵌套类型（selfAccount 等）
+- 热更新 Asset Bundle 与原生 TCP（非仅 WebSocket）
 
 ### Phase 3 — fish2
 
 1. 原生插件暴露 `Fish2Env` / `NewCatchFishEnv` 给 Creator
-2. 移植 `fish2/script/` 逻辑或保留 native + Lua 脚本桥
-3. 大厅 `EnterFish` 接真环境，去掉 stub
+2. 移植 `fish2/script/` 或保留 native + 脚本桥
+3. 大厅 `EnterFish` 接真环境
 
 ## 在 Creator 中打开
 
@@ -55,10 +60,11 @@
    - `Boot` → 根节点挂 `BootApp`
    - `Login` → 挂 `LoginController`（按钮绑 `onClickGuest` / `onClickPassword`）
    - `Lobby` → 挂 `LobbyController`（可绑 `onClickGame485` / `onClickFish30`）
-   - `CasinoStub` → 挂 `CasinoStubController`
+   - `CasinoLoading` → 挂 `CasinoLoadingController`
+   - `CasinoStub` → 挂 `CasinoStubController`（`onClickBack` / `onClickSpin`）
    - `FishStub` → 挂 `FishStubController`
 4. 项目设置 → 启动场景设为 `Boot`
-5. 预览：游客登录（mock）→ 大厅 → 点游戏进 stub
+5. 预览：游客登录（mock）→ 大厅列表 → 点 485 → Loading → CasinoStub（含 enterData）
 
 ## 模块映射（Phase 1）
 

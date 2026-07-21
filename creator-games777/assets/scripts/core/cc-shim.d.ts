@@ -16,17 +16,23 @@ declare module 'cc' {
   }
 
   export class Node {
+    constructor(name?: string);
     name: string;
     parent: Node | null;
+    children: Node[];
     addChild(child: Node): void;
     removeFromParent(): void;
+    removeAllChildren?(): void;
     getChildByName(name: string): Node | null;
     getComponent<T extends Component>(type: { new (): T } | string): T | null;
     addComponent<T extends Component>(type: { new (): T }): T;
+    setPosition?(pos: Vec3 | number, y?: number, z?: number): void;
   }
 
   export class Label extends Component {
     string: string;
+    fontSize?: number;
+    color?: Color;
   }
 
   export class Button extends Component {

@@ -6,7 +6,7 @@ import { GameData } from '../data/GameData';
 import { sGameManager } from '../data/GameManager';
 import { ConstGame } from '../data/ConstGame';
 import { UIManager } from './UIManager';
-import { RunCasino } from '../fgame/RunCasino';
+import { enterFGUICasino } from './CasinoEnterFlow';
 import { EnterFish } from '../fish2/EnterFish';
 
 export async function launchCasino(gameId: number): Promise<boolean> {
@@ -17,12 +17,13 @@ export async function launchCasino(gameId: number): Promise<boolean> {
     return false;
   }
 
-  sGameManager.gameState = ConstGame.Game_State;
-  sGameManager.isCasinoLoaded = true;
+  if (GameData.IsFGUIReleaseGame(gameId) || GameData.IsFGUIReleaseGame(resId)) {
+    return enterFGUICasino(gameId);
+  }
 
-  // enterData / reconnectData will come from lobby enter packets
-  await RunCasino(resId, { game_id: gameId }, null);
-  return true;
+  // Legacy cocos casino path (casino221 etc.) — not ported; show toast
+  UIManager.ShowToast(`legacy casino ${resId} not in Creator yet`);
+  return false;
 }
 
 export async function launchFish(gameId: number): Promise<boolean> {

@@ -1,0 +1,142 @@
+{
+  "221": {
+    "Icon": 221,
+    "Game_type": "casino",
+    "Game_Name": "狂野蛮牛",
+    "ScreenType": 1,
+    "Reconnect_Msg": null,
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "270": {
+    "Icon": 270,
+    "Game_type": "casino",
+    "Game_Name": "财富之眼",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_EyesOfWealthEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "336": {
+    "Icon": 336,
+    "Game_type": "casino",
+    "Game_Name": "和平&长寿",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_DragonGiftEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "341": {
+    "Icon": 341,
+    "Game_type": "casino",
+    "Game_Name": "魔法熊猫",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_EyesOfWealthEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "353": {
+    "Icon": 353,
+    "Game_type": "casino",
+    "Game_Name": "野牛-豪华版",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_BuffaloEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "375": {
+    "Icon": 375,
+    "Game_type": "casino",
+    "Game_Name": "尤里卡列车",
+    "ScreenType": 2,
+    "Reconnect_Msg": "PKG_Slots_Client_EurekaTrainEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "388": {
+    "Icon": 388,
+    "Game_type": "casino",
+    "Game_Name": "江湖儿女",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_NvXiaEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "465": {
+    "Icon": 465,
+    "Game_type": "casino",
+    "Game_Name": "五龙争霸Ⅱ",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_fafafa_WealthGoldEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "475": {
+    "Icon": 475,
+    "Game_type": "casino",
+    "Game_Name": "海盗财宝",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_EyesOfWealthEnterResumed",
+    "FGUI_Support": true,
+    "FGUI_Release": true,
+    "Cocos_Support": false
+  },
+  "479": {
+    "Icon": 479,
+    "Game_type": "casino",
+    "Game_Name": "熊猫宝藏Ⅱ",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_PandaTreasureEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "481": {
+    "Icon": 481,
+    "Game_type": "casino",
+    "Game_Name": "481-Gates of Olympus 1000",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_GatesOfOlympusEnterResumed",
+    "FGUI_Support": true,
+    "FGUI_Release": true,
+    "Cocos_Support": false
+  },
+  "482": {
+    "Icon": 482,
+    "Game_type": "casino",
+    "Game_Name": "482-Gates of Olympus",
+    "ScreenType": 1,
+    "Reconnect_Msg": "PKG_Slots_Client_GatesOfOlympusEnterResumed",
+    "FGUI_Support": true,
+    "FGUI_Release": true,
+    "Cocos_Support": false
+  },
+  "483": {
+    "Icon": 483,
+    "Game_type": "casino",
+    "Game_Name": "麻将胡了",
+    "ScreenType": 2,
+    "Reconnect_Msg": "PKG_Slots_Client_MahjongWaysEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  },
+  "485": {
+    "Icon": 311,
+    "Game_type": "casino",
+    "Game_Name": "终极火链",
+    "ScreenType": 2,
+    "Reconnect_Msg": "PKG_Slots_Client_FireLinkEnterResumed",
+    "FGUI_Support": false,
+    "FGUI_Release": false,
+    "Cocos_Support": false
+  }
+}

@@ -8,6 +8,7 @@ export class GameManagerStore {
   isCasinoLoaded = false;
   NetRestoreCasino = false;
   NetRestoreCasinoRlt: unknown = null;
+  slotEnterResult: unknown = null;
   curLevel: { c_value?: number } | null = null;
   exchangerate = 1;
   _washcode_mode = 0;
@@ -47,6 +48,14 @@ export class GameManagerStore {
 
   CheckNeedPopCasinoLevel(): boolean {
     return this.casinoLevelOpen;
+  }
+
+  SetBetLotteryMode(v: boolean): void {
+    this.betLotteryMode = v;
+  }
+
+  SetWashCodeMode(mode: number): void {
+    this._washcode_mode = mode;
   }
 }
 
