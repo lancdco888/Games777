@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2015",
+    "strict": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "outDir": "./temp/ts",
+    "rootDir": "./assets/scripts",
+    "baseUrl": "./assets/scripts",
+    "paths": {
+      "db://assets/scripts/*": ["./*"]
+    },
+    "lib": ["ES2015", "DOM"],
+    "types": []
+  },
+  "include": ["./assets/scripts/**/*.ts"],
+  "exclude": ["./node_modules", "./library", "./temp", "./build", "./local"]
+}
