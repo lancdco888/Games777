@@ -1,0 +1,83 @@
+
+361_sd_icon.png
+size: 145,145
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sd
+  rotate: false
+  xy: 57, 50
+  size: 32, 42
+  orig: 32, 49
+  offset: 0, 7
+  index: -1
+sd/1_01
+  rotate: false
+  xy: 108, 104
+  size: 27, 39
+  orig: 58, 58
+  offset: 4, 19
+  index: -1
+sd/1_02
+  rotate: true
+  xy: 100, 9
+  size: 22, 28
+  orig: 58, 58
+  offset: 4, 26
+  index: -1
+sd/1_03
+  rotate: false
+  xy: 127, 41
+  size: 16, 21
+  orig: 58, 58
+  offset: 9, 32
+  index: -1
+sd/1_04
+  rotate: false
+  xy: 2, 87
+  size: 49, 56
+  orig: 58, 58
+  offset: 6, 2
+  index: -1
+sd/1_05
+  rotate: true
+  xy: 2, 34
+  size: 51, 53
+  orig: 58, 58
+  offset: 4, 1
+  index: -1
+sd/1_06
+  rotate: false
+  xy: 2, 3
+  size: 42, 29
+  orig: 58, 58
+  offset: 6, 4
+  index: -1
+sd/1_07
+  rotate: true
+  xy: 100, 33
+  size: 29, 25
+  orig: 58, 58
+  offset: 10, 8
+  index: -1
+sd/1_08
+  rotate: false
+  xy: 53, 94
+  size: 53, 49
+  orig: 58, 58
+  offset: 5, 1
+  index: -1
+sd/1_09
+  rotate: true
+  xy: 57, 11
+  size: 37, 41
+  orig: 58, 58
+  offset: 6, 0
+  index: -1
+sd/1_10
+  rotate: true
+  xy: 91, 64
+  size: 28, 37
+  orig: 58, 58
+  offset: 7, 0
+  index: -1
