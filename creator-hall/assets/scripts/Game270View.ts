@@ -2,9 +2,6 @@ import {
     AudioClip,
     AudioSource,
     BlockInputEvents,
-    Color,
-    HorizontalTextAlignment,
-    Label,
     Layers,
     Mask,
     Node,
@@ -14,9 +11,8 @@ import {
     Sprite,
     SpriteFrame,
     UITransform,
-    VerticalTextAlignment,
 } from 'cc';
-import { bindClick, loadSpriteFrame } from './CsbView';
+import { bindClick, BitmapReadout, loadSpriteFrame } from './CsbView';
 import { rollGrid, scoreGrid } from './Game270Rules';
 import { formatMoney, HallState } from './HallState';
 import type { GosClient } from './GosClient';
@@ -94,12 +90,12 @@ export class Game270View {
     private readonly cells: Sprite[][] = [];
     private readonly art = new Map<number, SpriteFrame>();
     private readonly clips = new Map<string, AudioClip>();
-    private readonly jackpotLabels: Label[] = [];
-    private balance: Label | null = null;
-    private topBet: Label | null = null;
-    private topWin: Label | null = null;
-    private betLabel: Label | null = null;
-    private winLabel: Label | null = null;
+    private readonly jackpotLabels: BitmapReadout[] = [];
+    private balance: BitmapReadout | null = null;
+    private topBet: BitmapReadout | null = null;
+    private topWin: BitmapReadout | null = null;
+    private betLabel: BitmapReadout | null = null;
+    private winLabel: BitmapReadout | null = null;
     private betIndex = 1;
     private betChoices = BETS;
     private session: Slot270Session | null = null;
@@ -205,13 +201,13 @@ export class Game270View {
         spinLabel.setParent(spin);
         spinLabel.setPosition(102 - 203 / 2, 88 / 2 - 43, 0);
 
-        this.balance = this.readout(291, 36, 168, 36, 26);
-        this.topBet = this.readout(659 - 62, 36, 124, 36, 26);
-        this.topWin = this.readout(966 - 120, 36, 240, 36, 26);
-        this.betLabel = this.readout(231 - 70, 664, 140, 36, 24);
-        this.winLabel = this.readout(648 - 150, 658, 300, 40, 28);
+        this.balance = this.readout(291, 36, 168, 36, 'slot');
+        this.topBet = this.readout(659 - 62, 36, 124, 36, 'slot');
+        this.topWin = this.readout(966 - 120, 36, 240, 36, 'slot');
+        this.betLabel = this.readout(231 - 70, 664, 140, 36, 'slot');
+        this.winLabel = this.readout(648 - 150, 658, 300, 40, 'slot');
         JACKPOTS.forEach((jackpot) => {
-            this.jackpotLabels.push(this.readout(jackpot.x - 90, 148, 180, 40, 26));
+            this.jackpotLabels.push(this.readout(jackpot.x - 90, 148, 180, 40, 'slotJackpot'));
         });
         this.refreshMoney();
     }
@@ -535,20 +531,14 @@ export class Game270View {
         return sprite;
     }
 
-    private readout(x: number, y: number, width: number, height: number, size: number): Label {
+    private readout(x: number, y: number, width: number, height: number, fontId: string): BitmapReadout {
         const node = new Node('readout');
         node.layer = Layers.Enum.UI_2D;
         node.addComponent(UITransform).setContentSize(width, height);
         const center = fguiCenter(x, y, width, height);
         node.setPosition(center.x, center.y, 0);
         node.setParent(this.root);
-        const label = node.addComponent(Label);
-        label.fontSize = size;
-        label.lineHeight = size + 4;
-        label.horizontalAlign = HorizontalTextAlignment.CENTER;
-        label.verticalAlign = VerticalTextAlignment.CENTER;
-        label.color = new Color(255, 236, 170, 255);
-        return label;
+        return new BitmapReadout(node, fontId);
     }
 
     private play(name: string): void {

@@ -16,6 +16,8 @@ import {
     UITransform,
     VerticalTextAlignment,
 } from 'cc';
+import { bitmapFont, layoutBitmap } from './BitmapFont';
+import type { BitmapFont } from './BitmapFont';
 
 export interface CsbLayout {
     px?: boolean;
@@ -86,7 +88,9 @@ function createNode(item: CsbNode, parentData: CsbNode, named: Map<string, Node>
     if (item.sprite) {
         addSprite(node, item.sprite);
     }
-    if (item.cls === 'Text' || item.cls === 'TextBMFont') {
+    if (item.cls === 'TextBMFont' && mountBitmap(node, item.file || '', item.text || '')) {
+        // Image glyphs from the original .fnt page.
+    } else if (item.cls === 'Text' || item.cls === 'TextBMFont') {
         addLabel(node, item);
     }
     if (item.cls === 'Button') {
@@ -222,6 +226,124 @@ function reportImages(): void {
     if (imageStats.pending === 0) {
         console.log(`[hall] images loaded ${imageStats.loaded}, missing ${imageStats.missing}`);
     }
+}
+
+interface MountedBitmap {
+    font: BitmapFont;
+    text: string;
+    frame: SpriteFrame | null;
+    node: Node;
+}
+
+const mountedBitmaps = new WeakMap<Node, MountedBitmap>();
+const glyphFrames = new Map<string, SpriteFrame>();
+
+/** Draw a bitmap-font string into the node. Returns false when the file is not an image font. */
+export function mountBitmap(node: Node, fileOrId: string, text: string): boolean {
+    const font = bitmapFont(fileOrId);
+    if (!font) {
+        return false;
+    }
+    const state: MountedBitmap = { font, text, frame: null, node };
+    mountedBitmaps.set(node, state);
+    loadSpriteFrame(font.page, (frame) => {
+        if (!frame || !node.isValid) {
+            return;
+        }
+        state.frame = frame;
+        redrawBitmap(state);
+    });
+    return true;
+}
+
+/** Update a node created by mountBitmap. Returns false for ordinary Labels. */
+export function setBitmapText(node: Node | null | undefined, text: string): boolean {
+    if (!node) {
+        return false;
+    }
+    const state = mountedBitmaps.get(node);
+    if (!state) {
+        return false;
+    }
+    state.text = text;
+    redrawBitmap(state);
+    return true;
+}
+
+/** Number readout whose `.string` paints image glyphs instead of a system font. */
+export class BitmapReadout {
+    private value = '';
+    node: Node;
+
+    constructor(node: Node, fontId: string, text = '') {
+        this.node = node;
+        this.value = text;
+        mountBitmap(node, fontId, text);
+    }
+
+    get string(): string {
+        return this.value;
+    }
+
+    set string(value: string) {
+        this.value = value;
+        setBitmapText(this.node, value);
+    }
+}
+
+function redrawBitmap(state: MountedBitmap): void {
+    const node = state.node;
+    if (!node.isValid) {
+        return;
+    }
+    for (const child of [...node.children]) {
+        if (child.name === 'bm') {
+            child.destroy();
+        }
+    }
+    if (!state.frame) {
+        return;
+    }
+    const transform = node.getComponent(UITransform);
+    const placed = layoutBitmap(
+        state.font,
+        state.text,
+        transform?.width || 0,
+        transform?.height || 0,
+        transform?.anchorX ?? 0.5,
+        transform?.anchorY ?? 0.5,
+    );
+    for (const glyph of placed) {
+        const child = new Node('bm');
+        child.layer = Layers.Enum.UI_2D;
+        const ui = child.addComponent(UITransform);
+        ui.setAnchorPoint(0.5, 0.5);
+        child.setPosition(glyph.x, glyph.y, 0);
+        child.setParent(node);
+        const sprite = child.addComponent(Sprite);
+        sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+        sprite.type = Sprite.Type.SIMPLE;
+        sprite.trim = false;
+        sprite.spriteFrame = cropGlyph(state.frame, state.font.id, glyph.ch, glyph.sx, glyph.sy, glyph.sw, glyph.sh);
+        ui.setContentSize(glyph.w, glyph.h);
+    }
+}
+
+function cropGlyph(base: SpriteFrame, fontId: string, ch: string, x: number, y: number, w: number, h: number): SpriteFrame {
+    const key = `${fontId}:${ch}`;
+    const cached = glyphFrames.get(key);
+    if (cached) {
+        return cached;
+    }
+    const frame = new SpriteFrame();
+    frame.reset({
+        texture: base.texture,
+        rect: new Rect(x, y, w, h),
+        originalSize: new Size(w, h),
+    });
+    frame.packable = false;
+    glyphFrames.set(key, frame);
+    return frame;
 }
 
 function addLabel(node: Node, item: CsbNode): void {

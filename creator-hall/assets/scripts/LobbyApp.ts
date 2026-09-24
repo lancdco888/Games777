@@ -1,5 +1,5 @@
 import { _decorator, Button, Component, EventTouch, JsonAsset, js, Label, Layers, Mask, Node, resources, ScrollView, UITransform } from 'cc';
-import { attachSprite, bindClick, CsbNode, mountCsb } from './CsbView';
+import { attachSprite, bindClick, CsbNode, mountCsb, setBitmapText } from './CsbView';
 import { Game270View } from './Game270View';
 import { HallPanels } from './HallPanels';
 import { formatMoney, GameInfo, HallState, selectLobbyGames } from './HallState';
@@ -243,6 +243,9 @@ export class LobbyApp extends Component {
 
     private setText(name: string, text: string): void {
         const node = this.names.get(name);
+        if (setBitmapText(node, text)) {
+            return;
+        }
         const label = node?.getComponent(Label);
         if (label) {
             label.string = text;
