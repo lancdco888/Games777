@@ -231,8 +231,13 @@ end
 ---base64:图片的base64
 ---返回压缩后的图片base64
 function Tools.getSmilePicture(base64)
-	local scale = 1
 	local sp = createSpriteFromBase64(base64)
+	if sp == nil then
+		print("Tools.getSmilePicture : createSpriteFromBase64 return nil")
+		return nil
+	end
+
+	local scale = 1
 	local size = sp:getContentSize()
 	local designSize = {width = 1920,height = 1080}
 	if size.height > size.width then
@@ -821,6 +826,10 @@ function Tools.FormatTime(time)
 	local year, month, day, hour, min, second, _, _  = Int64ToDateTime(time)
 	local fmt = "%d-%02d-%02d %02d:%02d:%02d"
 	return fmt:format(year, month, day, hour, min, second)
+end
+
+function Tools.DigitIDAreRight(id)
+	return UserData.id > 0 and #tostring(UserData.id) == #tostring(id)
 end
 
 -------------------------------------------------------------------------

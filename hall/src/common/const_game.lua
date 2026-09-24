@@ -1144,6 +1144,19 @@ const_game.Param = {
         },
         [const_game.Cocos_Support] = true,
     },
+    [324] = {
+        [const_game.Icon] = 324,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("多福多彩_龙"),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_JuLongEnterResumed',
+        ["anims"] = {
+            10306
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
     [331] = {
         [const_game.Icon] = 331,
         [const_game.Game_type] = 'casino',
@@ -1253,6 +1266,18 @@ const_game.Param = {
         ["caijin_type"] = 5,
         ["anims"] = {
             10205
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+    [342] = {
+        [const_game.Icon] = 342,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] = TR(""),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_HurricaneHorseEnterResumed',
+        ["anims"] = {
         },
         [const_game.Cocos_Support] = false,
         [const_game.FGUI_Support] = true,
@@ -1427,6 +1452,19 @@ const_game.Param = {
 		[const_game.ScreenType] = const_game.H_Screen_Type,
         [const_game.Reconnect_Msg] = 'PKG_Slots_Client_DeepSeaEnterResumed',
         ["caijin_type"] = 1,
+        ["anims"] = {
+            10204
+        },
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+
+    [372] = {
+        [const_game.Icon] = 372,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("猪狼"),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_PigAndWolfEnterResumed',
         ["anims"] = {
             10204
         },
@@ -2691,6 +2729,74 @@ const_game.Param = {
         [const_game.FGUI_Support] = true,
         [const_game.FGUI_Release] = true
     },
+
+    [734] = {
+        [const_game.Icon] = 734,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("猪狼-两转盘"),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_PigAndWolfEnterResumed',
+        ["anims"] = {
+            10204
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+    [738] = {
+        [const_game.Icon] = 738,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("猪狼-三转盘"),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_PigAndWolfEnterResumed',
+        ["anims"] = {
+            10204
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+    [739] = {
+        [const_game.Icon] = 739,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("金元宝"),
+        [const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_DFDCEnterResumed',
+        ["anims"] = {
+            10306
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+    [741] = {
+        [const_game.Icon] = 741,
+        [const_game.Game_type] = 'casino',
+        [const_game.Game_Name] =TR("木乃伊-圣诞"),
+		[const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = 'PKG_Slots_Client_MummyEnterResumed',
+        ["anims"] = {
+            10306
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+
+    [744] = {
+        [const_game.Icon] = 744,
+        [const_game.Game_type] = "casino",
+        [const_game.Game_Name] = TR("黄金万两-猛虎"),
+        [const_game.ScreenType] = const_game.V_Screen_Type,
+        [const_game.Reconnect_Msg] = "PB.Slots_Client.CoinTigerEnterResumed",
+        ["anims"] = {
+            10306
+        },
+        [const_game.Cocos_Support] = false,
+        [const_game.FGUI_Support] = true,
+        [const_game.FGUI_Release] = true
+    },
+
 --     ---------------------------------------------------- 海王新加游戏 -------------------------------------------
     [140] = {
         [const_game.Icon] = 140,
@@ -2758,3 +2864,4 @@ const_game.Param = {
 }
 
 const_game.PreLoadRes = {}
+
