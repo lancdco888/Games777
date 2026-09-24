@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>casino/casino/casino_251.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,2},{295,485}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{295,485}</string>
+			</dict>
+			<key>casino/SeatSelection/an_s.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{301,881},{68,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,46}</string>
+			</dict>
+			<key>casino/SeatSelection/an_x.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{437,949},{68,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{68,46}</string>
+			</dict>
+			<key>casino/SeatSelection/jt.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{301,351},{75,118}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{75,118}</string>
+			</dict>
+			<key>casino/SeatSelection/k_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,967},{220,48}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,48}</string>
+			</dict>
+			<key>casino/SeatSelection/k_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{226,967},{207,48}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{207,48}</string>
+			</dict>
+			<key>casino/SeatSelection/k_3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{565,700},{216,232}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{216,232}</string>
+			</dict>
+			<key>casino/SeatSelection/ren_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,491},{247,345}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{247,345}</string>
+			</dict>
+			<key>casino/SeatSelection/ren_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{253,491},{247,345}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{247,345}</string>
+			</dict>
+			<key>casino/SeatSelection/ren_3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{301,2},{247,345}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{247,345}</string>
+			</dict>
+			<key>casino/SeatSelection/ren_4.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{504,351},{247,345}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{247,345}</string>
+			</dict>
+			<key>casino/SeatSelection/xuanzhuo.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{151,840},{156,37}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{156,37}</string>
+			</dict>
+			<key>casino/SeatSelection/yz.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{552,2},{170,253}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{170,253}</string>
+			</dict>
+			<key>casino/SeatSelection/yz_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{726,2},{170,253}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{170,253}</string>
+			</dict>
+			<key>casino/btn_return.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,840},{145,83}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{145,83}</string>
+			</dict>
+			<key>casino/jiantou_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{373,840},{92,105}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{92,105}</string>
+			</dict>
+			<key>casino/jiantou_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{469,840},{92,105}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{92,105}</string>
+			</dict>
+			<key>casino/xsk.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{2,927},{295,36}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{295,36}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>casino.png</string>
+			<key>realTextureFileName</key>
+			<string>casino.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>
