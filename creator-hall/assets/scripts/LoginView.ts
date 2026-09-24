@@ -53,7 +53,7 @@ export class LoginView {
     private showHome(): void {
         this.clear();
         this.title('连接 goserver');
-        this.label('先在本机运行 node creator-hall/tools/goserver-bridge.mjs', 0, 250, 20, 860);
+        this.label('本机 127.0.0.1:20000，局域网 192.168.79.138:20000。先双击 open-bridge.bat', 0, 250, 18, 900);
         const host = this.field('服务器 IP', -170, 180, 300, 64, this.settings.host);
         const port = this.field('端口', 170, 180, 220, 16, this.settings.port);
         const packageName = this.field('包名', -170, 110, 300, 64, this.settings.packageName);

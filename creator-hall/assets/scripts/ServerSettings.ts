@@ -10,7 +10,7 @@ export interface ServerSettings {
 
 export const DEFAULT_SERVER: ServerSettings = {
     host: '127.0.0.1',
-    port: '',
+    port: '20000',
     packageName: 'com.idh.fjd.fkjh',
     version: '1.0.1',
     bridgeUrl: 'ws://127.0.0.1:17901',
@@ -28,9 +28,10 @@ export function loadServerSettings(): ServerSettings {
             return settings;
         }
         const parsed = JSON.parse(raw) as Partial<ServerSettings>;
+        const savedPort = text(parsed.port, '');
         return {
-            host: text(parsed.host, settings.host),
-            port: text(parsed.port, ''),
+            host: savedPort ? text(parsed.host, settings.host) : settings.host,
+            port: savedPort || settings.port,
             packageName: text(parsed.packageName, settings.packageName),
             version: text(parsed.version, settings.version),
             bridgeUrl: text(parsed.bridgeUrl, settings.bridgeUrl),

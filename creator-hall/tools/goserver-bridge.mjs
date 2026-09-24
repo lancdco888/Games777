@@ -6,8 +6,9 @@
  *
  *   node creator-hall/tools/goserver-bridge.mjs 17901
  *
+ * On Windows, double-click creator-hall/open-bridge.bat instead.
  * The page connects to ws://127.0.0.1:17901 and sends
- * {"host":"127.0.0.1","port":监听端口}. Later messages are raw TCP bytes.
+ * {"host":"127.0.0.1","port":20000}. Later messages are raw TCP bytes.
  */
 import crypto from 'node:crypto';
 import net from 'node:net';

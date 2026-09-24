@@ -165,16 +165,16 @@ export class GosClient {
         };
         socket.onerror = () => {
             if (generation === this.generation) {
-                this.fail(new Error(`连不上桥接 ${settings.bridgeUrl}`));
+                this.fail(new Error(bridgeDown(settings.bridgeUrl)));
             }
         };
         socket.onclose = () => {
             if (generation === this.generation) {
-                this.fail(new Error('连接已断开'));
+                this.fail(new Error('和 goserver 的连接已断开'));
             }
         };
         await new Promise<void>((resolve, reject) => {
-            const timer = setTimeout(() => reject(new Error(`连不上桥接 ${settings.bridgeUrl}`)), 5000);
+            const timer = setTimeout(() => reject(new Error(bridgeDown(settings.bridgeUrl))), 5000);
             const previous = socket.onerror;
             socket.onopen = () => {
                 clearTimeout(timer);
@@ -183,7 +183,7 @@ export class GosClient {
             socket.onerror = () => {
                 clearTimeout(timer);
                 previous?.();
-                reject(new Error(`连不上桥接 ${settings.bridgeUrl}`));
+                reject(new Error(bridgeDown(settings.bridgeUrl)));
             };
         });
         const replyPromise = this.nextText(5000);
@@ -343,7 +343,8 @@ export class GosStream {
             const view = new DataView(this.pending.buffer, this.pending.byteOffset, this.pending.byteLength);
             const length = view.getUint32(0, true);
             if (length < 8 || length > MAX_FRAME) {
-                throw new Error(`帧长度异常（${length}）`);
+                const sample = Array.from(this.pending.slice(0, 16)).map((byte) => byte.toString(16).padStart(2, '0')).join(' ');
+                throw new Error(`帧长度异常（${length}） ${sample}`);
             }
             if (this.pending.length < 4 + length) {
                 return;
@@ -421,6 +422,10 @@ function failureText(number: number, message: string): string {
         return '游客登录失败，请改用账号密码';
     }
     return `服务器拒绝了登录（${number}）`;
+}
+
+function bridgeDown(url: string): string {
+    return `连不上桥接 ${url}。先双击 creator-hall\\open-bridge.bat，窗口保持打开后再登录`;
 }
 
 function openSocket(url: string): SocketLike {
