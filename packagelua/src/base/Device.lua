@@ -229,6 +229,8 @@ function Device:GetSystemModel()
 			}
 			local luaoc = require("cocos.cocos2d.luaoc")
 			luaoc.callStaticMethod(IOS_ClassName,"getSystemModel",appargs)
+		elseif cc.PLATFORM_OS_LINUX == targetPlatform then
+			self.platform = "linux"
 		end
 	end
 	return self.platform
@@ -255,6 +257,8 @@ function Device:GetDeviceID()
 			local ok,ret = luaj.callStaticMethod(className, funcname, args, sigs)
 		elseif cc.PLATFORM_OS_IPHONE == targetPlatform
 			or cc.PLATFORM_OS_IPAD == targetPlatform then
+			self.deviceID = ""
+		elseif cc.PLATFORM_OS_LINUX == targetPlatform then
 			self.deviceID = ""
 		end
 	end
@@ -530,6 +534,33 @@ function Device:GetExternalPath()
 		end
 	else
 		return writable
+	end
+end
+
+function Device:GetMemoryInfo()
+	local targetPlatform = cc.Application:getInstance():getTargetPlatform()
+	if cc.PLATFORM_OS_ANDROID == targetPlatform then
+		local luaj = require "cocos.cocos2d.luaj"
+		local className = "org/cocos2dx/lua/AppActivity"
+		local args = {}
+		local sigs = "()Ljava/lang/String;"
+		local funcname = "getMemoryInfo"
+
+		if not luaj.checkStaticMethod(className, funcname, sigs) then
+			release_print("Device:GetMemoryInfo(): no such interface jni.getMemoryInfo()")
+			return writable
+		end
+		local ok, ret = luaj.callStaticMethod(className, funcname, args, sigs)
+		if ok then
+            local sucess, obj = pcall(json.decode, ret)
+			return obj
+		else
+			release_print("Device:GetMemoryInfo(): failed to call jni.getMemoryInfo()")
+			return nil
+		end
+	else
+		release_print("Device:GetMemoryInfo(): not supported")
+		return nil
 	end
 end
 
