@@ -1,0 +1,132 @@
+
+270_HS_HAB_FX.png
+size: 858,858
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+imagine/HS_HAB_FX/HS_HAB_FX_0000_11
+  rotate: false
+  xy: 655, 397
+  size: 171, 171
+  orig: 304, 304
+  offset: 77, 82
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_13
+  rotate: false
+  xy: 193, 181
+  size: 180, 189
+  orig: 304, 304
+  offset: 72, 67
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_15
+  rotate: true
+  xy: 552, 676
+  size: 180, 195
+  orig: 304, 304
+  offset: 72, 60
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_17
+  rotate: false
+  xy: 2, 3
+  size: 177, 194
+  orig: 304, 304
+  offset: 74, 60
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_19
+  rotate: true
+  xy: 181, 7
+  size: 172, 186
+  orig: 304, 304
+  offset: 76, 64
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_21
+  rotate: true
+  xy: 375, 192
+  size: 176, 188
+  orig: 304, 304
+  offset: 73, 65
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_23
+  rotate: false
+  xy: 565, 178
+  size: 175, 190
+  orig: 304, 304
+  offset: 75, 63
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_25
+  rotate: true
+  xy: 468, 370
+  size: 192, 185
+  orig: 304, 304
+  offset: 66, 62
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_27
+  rotate: false
+  xy: 2, 400
+  size: 193, 195
+  orig: 304, 304
+  offset: 65, 62
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_29
+  rotate: true
+  xy: 270, 372
+  size: 190, 196
+  orig: 304, 304
+  offset: 65, 62
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_3
+  rotate: true
+  xy: 197, 515
+  size: 80, 71
+  orig: 304, 304
+  offset: 111, 130
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_31
+  rotate: false
+  xy: 2, 597
+  size: 297, 259
+  orig: 304, 304
+  offset: 3, 0
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_33
+  rotate: false
+  xy: 2, 199
+  size: 189, 199
+  orig: 304, 304
+  offset: 70, 48
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_35
+  rotate: false
+  xy: 375, 2
+  size: 169, 188
+  orig: 304, 304
+  offset: 69, 44
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_37
+  rotate: true
+  xy: 301, 564
+  size: 292, 249
+  orig: 304, 304
+  offset: 6, 0
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_5
+  rotate: true
+  xy: 552, 570
+  size: 104, 107
+  orig: 304, 304
+  offset: 97, 115
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_7
+  rotate: false
+  xy: 707, 48
+  size: 121, 128
+  orig: 304, 304
+  offset: 88, 111
+  index: -1
+imagine/HS_HAB_FX/HS_HAB_FX_0000_9
+  rotate: true
+  xy: 546, 33
+  size: 143, 159
+  orig: 304, 304
+  offset: 81, 92
+  index: -1

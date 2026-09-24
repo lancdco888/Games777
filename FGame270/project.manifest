@@ -1,0 +1,318 @@
+{
+    "assets": {
+        "res/Game270/270_HS_HAB_FX.atlasf7cca0c7feea2614387e068af986842f": {
+            "md5": "f7cca0c7feea2614387e068af986842f"
+        },
+        "res/Game270/270_HS_HAB_FX.json91a49c3162d54b7c64719703d6296500": {
+            "md5": "91a49c3162d54b7c64719703d6296500"
+        },
+        "res/Game270/270_HS_HAB_FX.png605acc300a557cc963fac7c8ae1b9433": {
+            "md5": "605acc300a557cc963fac7c8ae1b9433"
+        },
+        "res/Game270/343_qipao.atlas81e8135a07b1878b0362181d7db701bf": {
+            "md5": "81e8135a07b1878b0362181d7db701bf"
+        },
+        "res/Game270/343_qipao.json79ffa6ebbbdba80743e3da3f5914d59c": {
+            "md5": "79ffa6ebbbdba80743e3da3f5914d59c"
+        },
+        "res/Game270/343_qipao.png2234dfd7ba8b2ed72f99c72388de1109": {
+            "md5": "2234dfd7ba8b2ed72f99c72388de1109"
+        },
+        "res/Game270/Game270.fuicc0305e6b2b4e4e4cfc2763920e60330": {
+            "md5": "cc0305e6b2b4e4e4cfc2763920e60330"
+        },
+        "res/Game270/Game270_atlas0.pnge2bcc746bdd71f6cb04e298b042c6a0d": {
+            "md5": "e2bcc746bdd71f6cb04e298b042c6a0d"
+        },
+        "res/Game270/Game270_atlas_dhwz10.pngc0baaa4d466d28277eb10a1b1cbc8266": {
+            "md5": "c0baaa4d466d28277eb10a1b1cbc8266"
+        },
+        "res/Game270/Game270_atlas_dhwz11.png6d1b267ea1ecf3474d92a6bfea181044": {
+            "md5": "6d1b267ea1ecf3474d92a6bfea181044"
+        },
+        "res/Game270/Game270_atlas_dhwz1c.pngcb9333ee7b373e363343647f2513d078": {
+            "md5": "cb9333ee7b373e363343647f2513d078"
+        },
+        "res/Game270/Game270_atlas_ebyl2d.png160360db3dbfe663dc7e322a4de0aace": {
+            "md5": "160360db3dbfe663dc7e322a4de0aace"
+        },
+        "res/Game270/Game270_atlas_lre1vgd.pngec163c6ebaab1c77f795cb82ee119647": {
+            "md5": "ec163c6ebaab1c77f795cb82ee119647"
+        },
+        "res/Game270/Game270_atlas_lre1vge.png14dd0f7e0b164171325571abb040ee69": {
+            "md5": "14dd0f7e0b164171325571abb040ee69"
+        },
+        "res/Game270/Game270_atlas_lre1vgf.png940268cd07dabe43f4e4329067c07e4a": {
+            "md5": "940268cd07dabe43f4e4329067c07e4a"
+        },
+        "res/Game270/Game270_atlas_lre1vgg.png87cd7a9676dffeaab4bf2c502d9ed411": {
+            "md5": "87cd7a9676dffeaab4bf2c502d9ed411"
+        },
+        "res/Game270/Game270_atlas_lre1vgh.pnge4c92cce8fc424a975d237057c33b64a": {
+            "md5": "e4c92cce8fc424a975d237057c33b64a"
+        },
+        "res/Game270/Game270_atlas_lre1vgi.pngaf4becce78c5564dab8dc1354b2a6929": {
+            "md5": "af4becce78c5564dab8dc1354b2a6929"
+        },
+        "res/Game270/Game270_atlas_lre1vgj.png5e6e2bb54f20c35a8e11401a6346e8fa": {
+            "md5": "5e6e2bb54f20c35a8e11401a6346e8fa"
+        },
+        "res/Game270/Game270_atlas_lre1vgk.pnge851381f8c71030d0e9ed74b29b328d1": {
+            "md5": "e851381f8c71030d0e9ed74b29b328d1"
+        },
+        "res/Game270/Game270_atlas_lre1vgl.pnga2cd383665b624e2bcb314477650f103": {
+            "md5": "a2cd383665b624e2bcb314477650f103"
+        },
+        "res/Game270/Game270_atlas_lre1vgs.pngade29353655920c8f2fde9a9124b307d": {
+            "md5": "ade29353655920c8f2fde9a9124b307d"
+        },
+        "res/Game270/Game270_atlas_lre1vgt.png9b0e2454f3dc3870a492667c2235f6cc": {
+            "md5": "9b0e2454f3dc3870a492667c2235f6cc"
+        },
+        "res/Game270/Game270_atlas_lre1vgu.png795be0f063bca866e9173eeb85244a51": {
+            "md5": "795be0f063bca866e9173eeb85244a51"
+        },
+        "res/Game270/Game270_atlas_lre1vgv.pnge6d438fbb063627876f946415cbaebab": {
+            "md5": "e6d438fbb063627876f946415cbaebab"
+        },
+        "res/Game270/Game270_atlas_pr3n2r.pngabc66d50447e9ac375877750e013ab62": {
+            "md5": "abc66d50447e9ac375877750e013ab62"
+        },
+        "res/Game270/Game270_atlas_pr3n2t.png0097df3ea0abd5c64ec431d2651e6974": {
+            "md5": "0097df3ea0abd5c64ec431d2651e6974"
+        },
+        "res/Game270/Game270_atlas_pr3n2u.png325437e0c25c7784fc7838fa2d1be52a": {
+            "md5": "325437e0c25c7784fc7838fa2d1be52a"
+        },
+        "res/Game270/Game270_atlas_pr3n2v.pngf1462b00120f5b9a843965cfd696a408": {
+            "md5": "f1462b00120f5b9a843965cfd696a408"
+        },
+        "res/Game270/Game270_atlas_pr3n2w.png6eafafe9eb1ef92be374a4d6d21157bb": {
+            "md5": "6eafafe9eb1ef92be374a4d6d21157bb"
+        },
+        "res/Game270/Game270_atlas_q3m6ve8.png9ca56898c3d8018209ca7583aaf4c8a3": {
+            "md5": "9ca56898c3d8018209ca7583aaf4c8a3"
+        },
+        "res/Game270/Game270_cr2sval.mp3106dfb5cacab01ceb7e9c291bf2f8d59": {
+            "md5": "106dfb5cacab01ceb7e9c291bf2f8d59"
+        },
+        "res/Game270/Game270_cr2svar.mp3101fabc53dba91dc0ecbfedd143745e1": {
+            "md5": "101fabc53dba91dc0ecbfedd143745e1"
+        },
+        "res/Game270/Game270_cr2svaw.mp313d482a715bf60b429805a67b6b6adcd": {
+            "md5": "13d482a715bf60b429805a67b6b6adcd"
+        },
+        "res/Game270/Game270_cr2svb4.mp3034eb99dfecbbac1754111e7c50e00e0": {
+            "md5": "034eb99dfecbbac1754111e7c50e00e0"
+        },
+        "res/Game270/Game270_cr2svbq.mp3d7eda0204d5b2255d5caaaafea750047": {
+            "md5": "d7eda0204d5b2255d5caaaafea750047"
+        },
+        "res/Game270/Game270_cr2svc5.mp376d703e9e602307be62031af948b0cd9": {
+            "md5": "76d703e9e602307be62031af948b0cd9"
+        },
+        "res/Game270/Game270_cr2svc6.mp3efba704aa60e350cc8a97cd229738b4a": {
+            "md5": "efba704aa60e350cc8a97cd229738b4a"
+        },
+        "res/Game270/Game270_cr2svc7.mp3b32f00a1e180fc4b3e2bbb4b4e702f0b": {
+            "md5": "b32f00a1e180fc4b3e2bbb4b4e702f0b"
+        },
+        "res/Game270/Game270_cr2svc8.mp37d45c4aba3b0409e81f4266b2bad19af": {
+            "md5": "7d45c4aba3b0409e81f4266b2bad19af"
+        },
+        "res/Game270/Game270_cr2svce.mp34b683d89dfc825769703ce13b533eec8": {
+            "md5": "4b683d89dfc825769703ce13b533eec8"
+        },
+        "res/Game270/Game270_cr2svcj.mp34b87b364ab49b26a59dca9e31443a279": {
+            "md5": "4b87b364ab49b26a59dca9e31443a279"
+        },
+        "res/Game270/Game270_cr2svcn.mp338ef54db7c998aba17f4823ee8132114": {
+            "md5": "38ef54db7c998aba17f4823ee8132114"
+        },
+        "res/Game270/Game270_fq3kvf9.mp3247032db4b620f05ba2a81bd8c1212d3": {
+            "md5": "247032db4b620f05ba2a81bd8c1212d3"
+        },
+        "res/Game270/Game270_fq3kvfa.mp3faa5050b46362cf02c144c51c132c13a": {
+            "md5": "faa5050b46362cf02c144c51c132c13a"
+        },
+        "res/Game270/Game270_fq3kvfb.mp3378c88f17d2a070155526c507d298165": {
+            "md5": "378c88f17d2a070155526c507d298165"
+        },
+        "res/Game270/Game270_fq3kvfc.mp3a531d7f582db463554548182412b3874": {
+            "md5": "a531d7f582db463554548182412b3874"
+        },
+        "res/Game270/Game270_fq3kvfd.mp31ca0ebebf59fcab43c65d8bd7ac2c9b0": {
+            "md5": "1ca0ebebf59fcab43c65d8bd7ac2c9b0"
+        },
+        "res/Game270/Game270_fq3kvfe.mp32d540b29a757bf8e11aee2e96d770e1f": {
+            "md5": "2d540b29a757bf8e11aee2e96d770e1f"
+        },
+        "res/Game270/Game270_fq3kvff.mp301e60f6c36a50c63c2edf7976338ea9f": {
+            "md5": "01e60f6c36a50c63c2edf7976338ea9f"
+        },
+        "res/Game270/Game270_fq3kvfg.mp3298dea84482d2df6bf3055e606d28d13": {
+            "md5": "298dea84482d2df6bf3055e606d28d13"
+        },
+        "res/Game270/Game270_fq3kvfh.mp39942bff684675f2f20a1474c808cd678": {
+            "md5": "9942bff684675f2f20a1474c808cd678"
+        },
+        "res/Game270/Game270_fq3kvfi.mp3c07949dbb3982baf974201d2e9e0e5c1": {
+            "md5": "c07949dbb3982baf974201d2e9e0e5c1"
+        },
+        "res/Game270/Game270_fq3kvfj.mp3c5e48611b63384f3502f827d0a1d29c6": {
+            "md5": "c5e48611b63384f3502f827d0a1d29c6"
+        },
+        "res/Game270/Game270_ltapvfr.mp371044027caf74a5dde0e525dc643b1f9": {
+            "md5": "71044027caf74a5dde0e525dc643b1f9"
+        },
+        "res/Game270/Game270_ltapvfs.mp3748f24f2a4039c78c705ae6e1ebcfaea": {
+            "md5": "748f24f2a4039c78c705ae6e1ebcfaea"
+        },
+        "res/Game270/Game270_ltapvft.mp3059e96d6c97b525e59d25030570b00e8": {
+            "md5": "059e96d6c97b525e59d25030570b00e8"
+        },
+        "res/Game270/Game270_ltapvfu.mp3d346ef1a067064d9326cb0a19744a7fc": {
+            "md5": "d346ef1a067064d9326cb0a19744a7fc"
+        },
+        "res/Game270/Game270_ltapvfv.mp3076216ab0da8ffeb8c40f209014801fb": {
+            "md5": "076216ab0da8ffeb8c40f209014801fb"
+        },
+        "res/Game270/Game270_yia439.mp3ab11c1e0627a7337e6a476493cac5f9e": {
+            "md5": "ab11c1e0627a7337e6a476493cac5f9e"
+        },
+        "res/Game270/Game270_yia43a.mp38f38b501df37058c65bc0baedaed763a": {
+            "md5": "8f38b501df37058c65bc0baedaed763a"
+        },
+        "res/Game270/Game270_yia43b.mp37ee80c5d9e1e6a15743310f849863281": {
+            "md5": "7ee80c5d9e1e6a15743310f849863281"
+        },
+        "res/Game270/Game270_yia43c.mp36deee8284d96f2a7eec00e7daf8ccf44": {
+            "md5": "6deee8284d96f2a7eec00e7daf8ccf44"
+        },
+        "res/Game270/Game270_yia43k.mp3640225dede72180198e84afa8a6f586f": {
+            "md5": "640225dede72180198e84afa8a6f586f"
+        },
+        "res/Game270/Game270_yia43l.mp306903787ed0bf8a117c8999a79acfe21": {
+            "md5": "06903787ed0bf8a117c8999a79acfe21"
+        },
+        "res/Game270/Game270_yia43m.mp3e7f4dca828eeadae5b7217abe111fa84": {
+            "md5": "e7f4dca828eeadae5b7217abe111fa84"
+        },
+        "res/Game270/Game270_yia43n.mp35736753ce6eaa97a04e32e70ac0b9f9f": {
+            "md5": "5736753ce6eaa97a04e32e70ac0b9f9f"
+        },
+        "res/Game270/Game270_yia43o.mp31d235bfc34bcf7f5d7d3226f5783e0fb": {
+            "md5": "1d235bfc34bcf7f5d7d3226f5783e0fb"
+        },
+        "res/Game270/Game270_yia440.mp341aa0dfe252569de190c008b8a0d189b": {
+            "md5": "41aa0dfe252569de190c008b8a0d189b"
+        },
+        "res/Game270/Game270_yia441.mp3486c6d27e2c7ce2b175919d06190ef98": {
+            "md5": "486c6d27e2c7ce2b175919d06190ef98"
+        },
+        "res/Game270/Game270_yia442.mp33a8287b2f57e216835a3fc53f5b0bdb0": {
+            "md5": "3a8287b2f57e216835a3fc53f5b0bdb0"
+        },
+        "res/Game270/Game270_yia443.mp3bd2046d1179676064d52e6bd59943533": {
+            "md5": "bd2046d1179676064d52e6bd59943533"
+        },
+        "res/Game270/Game270_yia44c.mp3efe38052485da9afb04f714a1b992889": {
+            "md5": "efe38052485da9afb04f714a1b992889"
+        },
+        "res/Game270/Game270_yia44j.mp32049abd8834558626fcb51906d7df81e": {
+            "md5": "2049abd8834558626fcb51906d7df81e"
+        },
+        "res/Game270/grand_jackpot.atlas6b2a4c9cce0827f7a25c3edb21a64d7e": {
+            "md5": "6b2a4c9cce0827f7a25c3edb21a64d7e"
+        },
+        "res/Game270/grand_jackpot.json8d33dab7ccebd5b2a0a748c5214bb97a": {
+            "md5": "8d33dab7ccebd5b2a0a748c5214bb97a"
+        },
+        "res/Game270/grand_jackpot.pngc326c2ae31e44011bd32a779d6977dd2": {
+            "md5": "c326c2ae31e44011bd32a779d6977dd2"
+        },
+        "res/Game270/loading/bg.pngbda3ff1911928839169cccf915845f53": {
+            "md5": "bda3ff1911928839169cccf915845f53"
+        },
+        "src/FGame/Game270/CaijinPanel.lua25a65987013b5e9007ae692ba6c6eddb": {
+            "md5": "25a65987013b5e9007ae692ba6c6eddb"
+        },
+        "src/FGame/Game270/Game270.lua3e8a97f4dac4348c6ad3cf7fa4b3ae52": {
+            "md5": "3e8a97f4dac4348c6ad3cf7fa4b3ae52"
+        },
+        "src/FGame/Game270/Cfgs/Defined.luac4b2338bd87112d75a180aa58c408088": {
+            "md5": "c4b2338bd87112d75a180aa58c408088"
+        },
+        "src/FGame/Game270/Cfgs/Reel.luac2bcff315ce821d15d5c91ca71282eb4": {
+            "md5": "c2bcff315ce821d15d5c91ca71282eb4"
+        },
+        "src/FGame/Game270/Cfgs/Rule.luadacab6ba659ec82164275f1f857a3d76": {
+            "md5": "dacab6ba659ec82164275f1f857a3d76"
+        },
+        "src/FGame/Game270/Cfgs/Theme.lua83b93ccba02d38cb4731f81224c4a49c": {
+            "md5": "83b93ccba02d38cb4731f81224c4a49c"
+        },
+        "src/FGame/Game270/Cfgs/WinLineConfigs.luaf68ea1f46206a53d3374589550ab9940": {
+            "md5": "f68ea1f46206a53d3374589550ab9940"
+        },
+        "src/FGame/Game270/Cfgs_Creator/Reel.lua5d5eaaa6467ce87642c50cad6c37d822": {
+            "md5": "5d5eaaa6467ce87642c50cad6c37d822"
+        },
+        "src/FGame/Game270/Hub/Game270Hub.luaf9b293a92e338dff1b37042b8ed6faf1": {
+            "md5": "f9b293a92e338dff1b37042b8ed6faf1"
+        },
+        "src/FGame/Game270/Hub/PkgHub.lua9259355e75d4b1aec7af61747906661a": {
+            "md5": "9259355e75d4b1aec7af61747906661a"
+        },
+        "src/FGame/Game270/Slot/BaseSlot.lua7af64dbb3fca9214f3a159fa9412d12f": {
+            "md5": "7af64dbb3fca9214f3a159fa9412d12f"
+        },
+        "src/FGame/Game270/Slot/ConstCfg.lua2cf40b1a5645fbb552393b5211a3df45": {
+            "md5": "2cf40b1a5645fbb552393b5211a3df45"
+        },
+        "src/FGame/Game270/Slot/FreeSlot.luacf48604ad5091739dffdf476bdfe7bbb": {
+            "md5": "cf48604ad5091739dffdf476bdfe7bbb"
+        },
+        "src/FGame/Game270/Slot/FreeTopupBounsSlot.lua49d2872b40c8a9ab75965ff2e7b7c5f7": {
+            "md5": "49d2872b40c8a9ab75965ff2e7b7c5f7"
+        },
+        "src/FGame/Game270/Slot/Help.lua3e093706923fae8bab150309e1335dfe": {
+            "md5": "3e093706923fae8bab150309e1335dfe"
+        },
+        "src/FGame/Game270/Slot/LineKuang.lua7675b6d9f7393156050acdd66bf1946c": {
+            "md5": "7675b6d9f7393156050acdd66bf1946c"
+        },
+        "src/FGame/Game270/Slot/MusicCfg.lua944ca158c1070bf1136daba42484d762": {
+            "md5": "944ca158c1070bf1136daba42484d762"
+        },
+        "src/FGame/Game270/Slot/NormalSlot.luac6f360042bb476b5a5a86455744275ac": {
+            "md5": "c6f360042bb476b5a5a86455744275ac"
+        },
+        "src/FGame/Game270/Slot/Reel.lua6bfa04dea7eeab74eea0b48cbcd39c10": {
+            "md5": "6bfa04dea7eeab74eea0b48cbcd39c10"
+        },
+        "src/FGame/Game270/Slot/SymbolConfig.lua7e7f82d39194e6eb23573a20e7da3825": {
+            "md5": "7e7f82d39194e6eb23573a20e7da3825"
+        },
+        "src/FGame/Game270/Slot/Tips.lua073bd0d2245e3857293be3926609000f": {
+            "md5": "073bd0d2245e3857293be3926609000f"
+        },
+        "src/FGame/Game270/Slot/TipsConfig.lua55e2d5eaf5fb277ead79f202d66d79a4": {
+            "md5": "55e2d5eaf5fb277ead79f202d66d79a4"
+        },
+        "src/FGame/Game270/Slot/Tools.lua8e8ca79335c4f1b73443ffed7a98e255": {
+            "md5": "8e8ca79335c4f1b73443ffed7a98e255"
+        },
+        "src/FGame/Game270/Slot/TopupBonusAnim.lua85239a1dd018faf60e19d3d0c787f742": {
+            "md5": "85239a1dd018faf60e19d3d0c787f742"
+        },
+        "src/FGame/Game270/Slot/TopupBounsFlyDragon.lua28f45bf124175d5517b1415f2b2746ec": {
+            "md5": "28f45bf124175d5517b1415f2b2746ec"
+        },
+        "src/FGame/Game270/Slot/TopupBounsSlot.luad97eff4a2a5ea50ad613fe44cbeac025": {
+            "md5": "d97eff4a2a5ea50ad613fe44cbeac025"
+        }
+    },
+    "version": "1.0.3",
+    "build_time": "1781604421"
+}

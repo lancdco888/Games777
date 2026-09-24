@@ -1,0 +1,111 @@
+
+grand_jackpot.png
+size: 795,795
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+grand/grand
+  rotate: false
+  xy: 2, 703
+  size: 196, 46
+  orig: 198, 47
+  offset: 1, 1
+  index: -1
+grand/jackpot
+  rotate: false
+  xy: 608, 754
+  size: 184, 39
+  orig: 186, 41
+  offset: 1, 1
+  index: -1
+grand/k1/1_00003
+  rotate: false
+  xy: 608, 652
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k1/1_00009
+  rotate: false
+  xy: 200, 649
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k1/1_00021
+  rotate: false
+  xy: 302, 649
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k1/1_00030
+  rotate: false
+  xy: 404, 649
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k1/1_00036
+  rotate: false
+  xy: 506, 649
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k1/1_00045
+  rotate: false
+  xy: 2, 601
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+grand/k2/1_00003
+  rotate: true
+  xy: 2, 773
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/k2/1_00009
+  rotate: true
+  xy: 204, 773
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/k2/1_00021
+  rotate: true
+  xy: 406, 773
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/k2/1_00030
+  rotate: true
+  xy: 2, 751
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/k2/1_00036
+  rotate: true
+  xy: 204, 751
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/k2/1_00045
+  rotate: true
+  xy: 406, 751
+  size: 20, 200
+  orig: 20, 200
+  offset: 0, 0
+  index: -1
+grand/kuang
+  rotate: false
+  xy: 2, 243
+  size: 791, 356
+  orig: 791, 357
+  offset: 0, 1
+  index: -1
