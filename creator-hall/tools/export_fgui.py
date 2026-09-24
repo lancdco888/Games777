@@ -161,8 +161,10 @@ def load_package(path: Path) -> dict:
         elif kind == FONT:
             buf.skip(buf.i32())
         elif kind == COMPONENT:
-            buf.u8()
-            buf.skip(buf.i32())
+            item["extension"] = buf.u8()
+            raw_len = buf.i32()
+            item["raw"] = bytes(buf.data[buf.pos : buf.pos + raw_len])
+            buf.skip(raw_len)
         elif kind in (9, 10):
             buf.skip(8)
         if buf.version >= 2 and buf.pos < next_pos:
@@ -248,10 +250,12 @@ def open_atlas(folder: Path, file_name: str) -> Image.Image:
     return Image.open(io.BytesIO(raw)).convert("RGBA")
 
 
-def crop_sprite(atlas: Image.Image, sprite: dict) -> Image.Image:
+def crop_sprite(atlas: Image.Image, sprite: dict, display_size: tuple[int, int] | None = None) -> Image.Image:
     x, y, w, h = sprite["rect"]
     image = atlas.crop((x, y, x + w, y + h))
-    if sprite["rotated"]:
+    # Some published sprites set rotated while the atlas rect already matches
+    # the package item. Turning those makes the symbol sideways.
+    if sprite["rotated"] and display_size != (w, h):
         image = image.transpose(Image.Transpose.ROTATE_90)
     return image
 
@@ -261,12 +265,17 @@ def safe_name(name: str) -> str:
     return cleaned.strip("_") or "sprite"
 
 
-def sprite_image(package: dict, sprite: dict, cache: dict[str, Image.Image]) -> Image.Image:
+def sprite_image(
+    package: dict,
+    sprite: dict,
+    cache: dict[str, Image.Image],
+    display_size: tuple[int, int] | None = None,
+) -> Image.Image:
     atlas_file = sprite["atlas"]
     disk_name = f"{package['name']}_{atlas_file}"
     if disk_name not in cache:
         cache[disk_name] = open_atlas(package["folder"], disk_name)
-    return crop_sprite(cache[disk_name], sprite)
+    return crop_sprite(cache[disk_name], sprite, display_size)
 
 
 def save_unique(image: Image.Image, out_dir: Path, name: str, used: dict[str, int]) -> str:
@@ -320,7 +329,7 @@ def resolve_art(package: dict, names: tuple[str, ...], cache: dict[str, Image.Im
         if not item:
             continue
         if item["type"] == IMAGE and item["id"] in by_id:
-            return sprite_image(package, by_id[item["id"]], cache)
+            return sprite_image(package, by_id[item["id"]], cache, (item["width"], item["height"]))
         if item["type"] == MOVIE and item.get("raw"):
             for sprite_id in movie_frames(item["raw"], package["strings"]):
                 sprite = by_id.get(sprite_id)
@@ -353,7 +362,7 @@ def export_package(fui: Path, out_dir: Path) -> dict:
     for item in package["items"]:
         if item["type"] != IMAGE or item["id"] not in package["spritesById"]:
             continue
-        image = sprite_image(package, package["spritesById"][item["id"]], cache)
+        image = sprite_image(package, package["spritesById"][item["id"]], cache, (item["width"], item["height"]))
         base = save_unique(image, art_dir, item["name"], used)
         written.append({"name": item["name"], "file": f"game270/art/{base}.png", "width": image.width, "height": image.height})
 
@@ -395,9 +404,42 @@ def export_package(fui: Path, out_dir: Path) -> dict:
     return manifest
 
 
+THEME_IMAGES = [
+    "bg_sl",
+    "bg_5",
+    "bg_fsxsb",
+    "henban_u3d",
+    "title_top_1",
+    "title_top_2",
+    "title_top_3",
+    "ksan",
+    "btn_a1_1",
+    "btn_a2_1",
+    "btn_ii_1",
+    "btn_bz_1",
+    "zidong",
+    "qiehuan",
+    "fh",
+    "max",
+]
+
+
+def export_named(fui: Path, names: list[str], out_dir: Path) -> None:
+    package = load_package(fui)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    cache: dict[str, Image.Image] = {}
+    by_name = {item["name"]: item for item in package["items"]}
+    for name in names:
+        item = by_name[name]
+        image = sprite_image(package, package["spritesById"][item["id"]], cache, (item["width"], item["height"]))
+        image.save(out_dir / f"{safe_name(name)}.png", "PNG")
+
+
 def main() -> None:
     fui = ROOT / "FGame270/res/Game270/Game270.fui"
     manifest = export_package(fui, OUT)
+    theme = ROOT / "FGameCommon/res/Basics/Theme_Lilac/Theme_Lilac.fui"
+    export_named(theme, THEME_IMAGES, OUT / "theme")
     print("images", len(manifest["images"]), "symbols", list(manifest["symbols"]), "sounds", manifest["sounds"])
 
 

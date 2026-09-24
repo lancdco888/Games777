@@ -69,6 +69,8 @@ def main():
     for name in ("wild", "scatter", "pic1", "sl1", "bg", "frame"):
         sprite = ROOT / f"assets/resources/game270/{name}.png"
         assert sprite.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n", name
+    assert (ROOT / "assets/resources/game270/theme/ksan.png").read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+    assert (ROOT / "assets/resources/game270/art/slots_345_sh1.png").read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
 
     compressed = compress_uuid(meta["uuid"])
     assert compressed == "c4a1eeybTBPkZpYDns8kdSm"

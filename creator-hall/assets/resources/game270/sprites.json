@@ -45,8 +45,8 @@
     },
     "sl1": {
       "file": "game270/sl1.png",
-      "width": 261,
-      "height": 287
+      "width": 287,
+      "height": 261
     },
     "sl2": {
       "file": "game270/sl2.png",
@@ -55,8 +55,8 @@
     },
     "sl3": {
       "file": "game270/sl3.png",
-      "width": 268,
-      "height": 242
+      "width": 242,
+      "height": 268
     },
     "sl4": {
       "file": "game270/sl4.png",
@@ -65,8 +65,8 @@
     },
     "sl5": {
       "file": "game270/sl5.png",
-      "width": 274,
-      "height": 262
+      "width": 262,
+      "height": 274
     },
     "bg": {
       "file": "game270/bg.png",
@@ -80,8 +80,8 @@
     },
     "kuang": {
       "file": "game270/kuang.png",
-      "width": 133,
-      "height": 158
+      "width": 158,
+      "height": 133
     }
   },
   "sounds": {
@@ -95,68 +95,68 @@
     {
       "name": "lightning_8",
       "file": "game270/art/lightning_8.png",
-      "width": 282,
-      "height": 152
+      "width": 152,
+      "height": 282
     },
     {
       "name": "lightning_6",
       "file": "game270/art/lightning_6.png",
-      "width": 339,
-      "height": 402
+      "width": 402,
+      "height": 339
     },
     {
       "name": "lightning_9",
       "file": "game270/art/lightning_9.png",
-      "width": 285,
-      "height": 281
+      "width": 281,
+      "height": 285
     },
     {
       "name": "lightning_10",
       "file": "game270/art/lightning_10.png",
-      "width": 269,
-      "height": 416
+      "width": 416,
+      "height": 269
     },
     {
       "name": "lightning_15",
       "file": "game270/art/lightning_15.png",
-      "width": 413,
-      "height": 455
+      "width": 455,
+      "height": 413
     },
     {
       "name": "lightning_12",
       "file": "game270/art/lightning_12.png",
-      "width": 425,
-      "height": 246
+      "width": 246,
+      "height": 425
     },
     {
       "name": "lightning_7",
       "file": "game270/art/lightning_7.png",
-      "width": 296,
-      "height": 230
+      "width": 230,
+      "height": 296
     },
     {
       "name": "lightning_2_4",
       "file": "game270/art/lightning_2_4.png",
-      "width": 174,
-      "height": 239
+      "width": 239,
+      "height": 174
     },
     {
       "name": "lightning_5",
       "file": "game270/art/lightning_5.png",
-      "width": 178,
-      "height": 386
+      "width": 386,
+      "height": 178
     },
     {
       "name": "lightning_3",
       "file": "game270/art/lightning_3.png",
-      "width": 111,
-      "height": 107
+      "width": 107,
+      "height": 111
     },
     {
       "name": "lightning_13",
       "file": "game270/art/lightning_13.png",
-      "width": 414,
-      "height": 167
+      "width": 167,
+      "height": 414
     },
     {
       "name": "lightning_1",
@@ -239,32 +239,32 @@
     {
       "name": "kuang",
       "file": "game270/art/kuang.png",
-      "width": 133,
-      "height": 158
+      "width": 158,
+      "height": 133
     },
     {
       "name": "collect15ToWin",
       "file": "game270/art/collect15ToWin.png",
-      "width": 245,
-      "height": 392
+      "width": 392,
+      "height": 245
     },
     {
       "name": "caijinbg_1",
       "file": "game270/art/caijinbg_1.png",
-      "width": 105,
-      "height": 1437
+      "width": 1437,
+      "height": 105
     },
     {
       "name": "45",
       "file": "game270/art/45.png",
-      "width": 184,
-      "height": 402
+      "width": 402,
+      "height": 184
     },
     {
       "name": "41",
       "file": "game270/art/41.png",
-      "width": 207,
-      "height": 402
+      "width": 402,
+      "height": 207
     },
     {
       "name": "slots_270_info_1",
@@ -359,14 +359,14 @@
     {
       "name": "50Line_en",
       "file": "game270/art/50Line_en.png",
-      "width": 103,
-      "height": 55
+      "width": 55,
+      "height": 103
     },
     {
       "name": "line_background(1)",
       "file": "game270/art/line_background_1.png",
-      "width": 136,
-      "height": 66
+      "width": 66,
+      "height": 136
     },
     {
       "name": "slots_270_background_ng",
@@ -383,14 +383,14 @@
     {
       "name": "27",
       "file": "game270/art/27.png",
-      "width": 159,
-      "height": 160
+      "width": 160,
+      "height": 159
     },
     {
       "name": "slots_345_ssc1",
       "file": "game270/art/slots_345_ssc1.png",
-      "width": 438,
-      "height": 534
+      "width": 534,
+      "height": 438
     },
     {
       "name": "freetitle",
@@ -437,8 +437,8 @@
     {
       "name": "slots_345_sl1",
       "file": "game270/art/slots_345_sl1.png",
-      "width": 261,
-      "height": 287
+      "width": 287,
+      "height": 261
     },
     {
       "name": "slots_345_sl2",
@@ -449,8 +449,8 @@
     {
       "name": "slots_345_sl3",
       "file": "game270/art/slots_345_sl3.png",
-      "width": 268,
-      "height": 242
+      "width": 242,
+      "height": 268
     },
     {
       "name": "slots_345_sl4",
@@ -461,20 +461,20 @@
     {
       "name": "slots_345_sl5",
       "file": "game270/art/slots_345_sl5.png",
-      "width": 274,
-      "height": 262
+      "width": 262,
+      "height": 274
     },
     {
       "name": "slots_345_symbol_bonus",
       "file": "game270/art/slots_345_symbol_bonus.png",
-      "width": 46,
-      "height": 149
+      "width": 149,
+      "height": 46
     },
     {
       "name": "slots_345_symbol_grand",
       "file": "game270/art/slots_345_symbol_grand.png",
-      "width": 47,
-      "height": 198
+      "width": 198,
+      "height": 47
     },
     {
       "name": "slots_345_symbol_jackpot",
@@ -515,20 +515,20 @@
     {
       "name": "slots_345_sh1",
       "file": "game270/art/slots_345_sh1.png",
-      "width": 348,
-      "height": 417
+      "width": 417,
+      "height": 348
     },
     {
       "name": "slots_345_sh2",
       "file": "game270/art/slots_345_sh2.png",
-      "width": 348,
-      "height": 417
+      "width": 417,
+      "height": 348
     },
     {
       "name": "slots_345_sh3",
       "file": "game270/art/slots_345_sh3.png",
-      "width": 348,
-      "height": 417
+      "width": 417,
+      "height": 348
     },
     {
       "name": "slots_345_sh4",
@@ -551,8 +551,8 @@
     {
       "name": "specialendwin",
       "file": "game270/art/specialendwin.png",
-      "width": 73,
-      "height": 907
+      "width": 907,
+      "height": 73
     },
     {
       "name": "freecount",
@@ -581,20 +581,20 @@
     {
       "name": "specailcount",
       "file": "game270/art/specailcount.png",
-      "width": 86,
-      "height": 828
+      "width": 828,
+      "height": 86
     },
     {
       "name": "specailcount2",
       "file": "game270/art/specailcount2.png",
-      "width": 84,
-      "height": 852
+      "width": 852,
+      "height": 84
     },
     {
       "name": "specialcount3",
       "file": "game270/art/specialcount3.png",
-      "width": 86,
-      "height": 851
+      "width": 851,
+      "height": 86
     }
   ]
 }
