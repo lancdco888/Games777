@@ -8,7 +8,9 @@ import {
     Layers,
     Mask,
     Node,
+    Rect,
     resources,
+    Size,
     Sprite,
     SpriteFrame,
     UITransform,
@@ -53,6 +55,24 @@ const SYMBOL_ART: Record<number, string> = {
     10: 'game270/art/slots_345_sl3',
     11: 'game270/art/slots_345_sl4',
     12: 'game270/art/slots_345_sl5',
+};
+
+/** Symbol component is 165x137. Each icon uses the child box from that component. */
+const SYMBOL_W = 165;
+const SYMBOL_BOX_H = 137;
+const SYMBOL_BOX: Record<number, { x: number; y: number; w: number; h: number; center?: boolean }> = {
+    1: { x: 83, y: 68, w: 165, h: 137, center: true },
+    2: { x: 83, y: 68, w: 165, h: 137, center: true },
+    3: { x: 5, y: 5, w: 155, h: 127 },
+    4: { x: 82, y: 68, w: 165, h: 137, center: true },
+    5: { x: 82, y: 69, w: 165, h: 137, center: true },
+    6: { x: 8, y: 10, w: 147, h: 121 },
+    7: { x: 6, y: -1, w: 159, h: 135 },
+    8: { x: 5, y: 5, w: 155, h: 127 },
+    9: { x: 5, y: 5, w: 155, h: 127 },
+    10: { x: 5, y: 5, w: 155, h: 127 },
+    11: { x: 5, y: 5, w: 155, h: 127 },
+    12: { x: 5, y: 5, w: 155, h: 127 },
 };
 
 const JACKPOTS = [
@@ -141,7 +161,10 @@ export class Game270View {
         this.picture('game270/theme/btn_a2_1', 308, 640, 75, 72, () => this.changeBet(1));
         this.picture('game270/theme/btn_ii_1', 838, 640, 106, 77, () => this.changeBet(BETS.length));
         this.picture('game270/theme/max', 848, 658, 85, 37);
-        this.picture('game270/theme/ksan', 1072, 632, 203, 88, () => this.spin());
+        const spin = this.picture('game270/theme/ksan', 1072, 632, 203, 88, () => this.spin());
+        const spinLabel = this.picture('game270/theme/ks', 0, 0, 121, 55);
+        spinLabel.setParent(spin);
+        spinLabel.setPosition(102 - 203 / 2, 88 / 2 - 43, 0);
 
         this.balance = this.readout(291, 36, 168, 36, 26);
         this.topBet = this.readout(659 - 62, 36, 124, 36, 26);
@@ -260,12 +283,28 @@ export class Game270View {
 
     private paint(grid: number[][]): void {
         this.grid = grid;
+        const scaleX = REEL_W / SYMBOL_W;
+        const scaleY = SYMBOL_H / SYMBOL_BOX_H;
         for (let col = 0; col < 5; col += 1) {
             for (let row = 0; row < 3; row += 1) {
-                const frame = this.art.get(grid[col][row]);
+                const id = grid[col][row];
+                const box = SYMBOL_BOX[id];
+                let left = box.x;
+                let top = box.y;
+                if (box.center) {
+                    left -= box.w / 2;
+                    top -= box.h / 2;
+                }
+                const width = box.w * scaleX;
+                const height = box.h * scaleY;
+                const x = REEL_X + col * (REEL_W + REEL_GAP) + left * scaleX;
+                const y = REEL_Y + row * SYMBOL_H + top * scaleY;
                 const sprite = this.cells[col][row];
+                const center = fguiCenter(x, y, width, height);
+                sprite.node.setPosition(center.x, center.y, 0);
+                const frame = this.art.get(id);
                 if (frame) {
-                    fitSprite(sprite, frame, REEL_W - 4, SYMBOL_H - 4);
+                    fitSprite(sprite, frame, width, height);
                 }
             }
         }
@@ -381,15 +420,40 @@ export class Game270View {
     }
 }
 
-/** Draw the sprite inside the node box. Trimmed imports otherwise shift the picture. */
+/** Draw the whole exported picture inside the node box, including its transparent margin. */
+const fullFrames = new WeakMap<SpriteFrame, SpriteFrame>();
+
 function fitSprite(sprite: Sprite, frame: SpriteFrame, width: number, height: number): void {
-    frame.packable = false;
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
     sprite.trim = true;
-    sprite.spriteFrame = frame;
+    sprite.spriteFrame = fullFrame(frame);
     const transform = sprite.node.getComponent(UITransform);
     transform?.setAnchorPoint(0.5, 0.5);
     transform?.setContentSize(width, height);
+}
+
+/** Keep the whole exported picture, including its transparent margin. */
+function fullFrame(frame: SpriteFrame): SpriteFrame {
+    const cached = fullFrames.get(frame);
+    if (cached) {
+        return cached;
+    }
+    const texture = frame.texture;
+    const texW = texture?.width || frame.originalSize.width;
+    const texH = texture?.height || frame.originalSize.height;
+    if (!texture || texW <= 0 || texH <= 0) {
+        frame.packable = false;
+        return frame;
+    }
+    const full = new SpriteFrame();
+    full.reset({
+        texture,
+        rect: new Rect(0, 0, texW, texH),
+        originalSize: new Size(texW, texH),
+    });
+    full.packable = false;
+    fullFrames.set(frame, full);
+    return full;
 }
 
 function fguiCenter(x: number, y: number, width: number, height: number): { x: number; y: number } {

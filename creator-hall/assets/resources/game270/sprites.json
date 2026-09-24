@@ -15,8 +15,8 @@
     },
     "scatter": {
       "file": "game270/scatter.png",
-      "width": 208,
-      "height": 256
+      "width": 256,
+      "height": 208
     },
     "lantern": {
       "file": "game270/lantern.png",
@@ -25,18 +25,18 @@
     },
     "pic1": {
       "file": "game270/pic1.png",
-      "width": 197,
-      "height": 239
+      "width": 239,
+      "height": 197
     },
     "pic2": {
       "file": "game270/pic2.png",
-      "width": 194,
-      "height": 244
+      "width": 244,
+      "height": 194
     },
     "pic3": {
       "file": "game270/pic3.png",
-      "width": 206,
-      "height": 251
+      "width": 251,
+      "height": 206
     },
     "pic4": {
       "file": "game270/pic4.png",

@@ -250,14 +250,19 @@ def open_atlas(folder: Path, file_name: str) -> Image.Image:
     return Image.open(io.BytesIO(raw)).convert("RGBA")
 
 
-def crop_sprite(atlas: Image.Image, sprite: dict, display_size: tuple[int, int] | None = None) -> Image.Image:
+def crop_sprite(atlas: Image.Image, sprite: dict) -> Image.Image:
+    """Cut one atlas sprite the way FairyGUI samples it.
+
+    The rect stored in the package is the upright display size. When the
+    sprite is rotated, the pixels occupy the swapped footprint (height, width)
+    and sit 90 degrees counter-clockwise from the upright image. Cropping the
+    unswapped rect reads the neighbour and leaves the picture sideways.
+    """
     x, y, w, h = sprite["rect"]
-    image = atlas.crop((x, y, x + w, y + h))
-    # Some published sprites set rotated while the atlas rect already matches
-    # the package item. Turning those makes the symbol sideways.
-    if sprite["rotated"] and display_size != (w, h):
-        image = image.transpose(Image.Transpose.ROTATE_90)
-    return image
+    if sprite["rotated"]:
+        packed = atlas.crop((x, y, x + h, y + w))
+        return packed.transpose(Image.Transpose.ROTATE_90)
+    return atlas.crop((x, y, x + w, y + h))
 
 
 def safe_name(name: str) -> str:
@@ -265,17 +270,12 @@ def safe_name(name: str) -> str:
     return cleaned.strip("_") or "sprite"
 
 
-def sprite_image(
-    package: dict,
-    sprite: dict,
-    cache: dict[str, Image.Image],
-    display_size: tuple[int, int] | None = None,
-) -> Image.Image:
+def sprite_image(package: dict, sprite: dict, cache: dict[str, Image.Image]) -> Image.Image:
     atlas_file = sprite["atlas"]
     disk_name = f"{package['name']}_{atlas_file}"
     if disk_name not in cache:
         cache[disk_name] = open_atlas(package["folder"], disk_name)
-    return crop_sprite(cache[disk_name], sprite, display_size)
+    return crop_sprite(cache[disk_name], sprite)
 
 
 def save_unique(image: Image.Image, out_dir: Path, name: str, used: dict[str, int]) -> str:
@@ -329,7 +329,7 @@ def resolve_art(package: dict, names: tuple[str, ...], cache: dict[str, Image.Im
         if not item:
             continue
         if item["type"] == IMAGE and item["id"] in by_id:
-            return sprite_image(package, by_id[item["id"]], cache, (item["width"], item["height"]))
+            return sprite_image(package, by_id[item["id"]], cache)
         if item["type"] == MOVIE and item.get("raw"):
             for sprite_id in movie_frames(item["raw"], package["strings"]):
                 sprite = by_id.get(sprite_id)
@@ -362,7 +362,7 @@ def export_package(fui: Path, out_dir: Path) -> dict:
     for item in package["items"]:
         if item["type"] != IMAGE or item["id"] not in package["spritesById"]:
             continue
-        image = sprite_image(package, package["spritesById"][item["id"]], cache, (item["width"], item["height"]))
+        image = sprite_image(package, package["spritesById"][item["id"]], cache)
         base = save_unique(image, art_dir, item["name"], used)
         written.append({"name": item["name"], "file": f"game270/art/{base}.png", "width": image.width, "height": image.height})
 
@@ -421,6 +421,7 @@ THEME_IMAGES = [
     "qiehuan",
     "fh",
     "max",
+    "ks",
 ]
 
 
@@ -431,7 +432,7 @@ def export_named(fui: Path, names: list[str], out_dir: Path) -> None:
     by_name = {item["name"]: item for item in package["items"]}
     for name in names:
         item = by_name[name]
-        image = sprite_image(package, package["spritesById"][item["id"]], cache, (item["width"], item["height"]))
+        image = sprite_image(package, package["spritesById"][item["id"]], cache)
         image.save(out_dir / f"{safe_name(name)}.png", "PNG")
 
 
