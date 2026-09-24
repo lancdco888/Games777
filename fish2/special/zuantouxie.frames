@@ -1,0 +1,432 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "zuantouxie_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "zuantouxie_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "zuantouxie_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "zuantouxie_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "zuantouxie_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "zuantouxie_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "zuantouxie_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "zuantouxie_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "zuantouxie_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "zuantouxie_move (29).png"
+                }
+            ],
+            "totalSeconds": 0.5
+        },
+        {
+            "name": "boom",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_boom (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_boom (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_boom (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_boom (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_boom (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "zuantouxie_boom (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "zuantouxie_boom (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "zuantouxie_boom (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "zuantouxie_boom (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "zuantouxie_boom (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "zuantouxie_boom (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "zuantouxie_boom (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "zuantouxie_boom (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "zuantouxie_boom (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "zuantouxie_boom (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "zuantouxie_boom (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "zuantouxie_boom (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "zuantouxie_boom (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "zuantouxie_boom (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "zuantouxie_boom (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "zuantouxie_boom (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "zuantouxie_boom (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "zuantouxie_boom (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "zuantouxie_boom (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "zuantouxie_boom (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "zuantouxie_boom (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "zuantouxie_boom (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "zuantouxie_boom (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "zuantouxie_boom (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "zuantouxie_boom (59).png"
+                }
+            ],
+            "totalSeconds": 1
+        },
+        {
+            "name": "cannon",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_cannon (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_cannon (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_cannon (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_cannon (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_cannon (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "zuantouxie_cannon (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "zuantouxie_cannon (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "zuantouxie_cannon (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "zuantouxie_cannon (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "zuantouxie_cannon (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "zuantouxie_cannon (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "zuantouxie_cannon (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "zuantouxie_cannon (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "zuantouxie_cannon (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "zuantouxie_cannon (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "zuantouxie_cannon (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "zuantouxie_cannon (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "zuantouxie_cannon (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "zuantouxie_cannon (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "zuantouxie_cannon (39).png"
+                }
+            ],
+            "totalSeconds": 0.6666666666666666
+        },
+        {
+            "name": "collide_effect",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_pengzhang (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_pengzhang (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_pengzhang (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_pengzhang (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_pengzhang (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "zuantouxie_pengzhang (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "zuantouxie_pengzhang (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "zuantouxie_pengzhang (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "zuantouxie_pengzhang (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "zuantouxie_pengzhang (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "zuantouxie_pengzhang (11).png"
+                }
+            ],
+            "totalSeconds": 0.36666666666666664
+        },
+        {
+            "name": "drift",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_drift (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_drift (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_drift (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_drift (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_drift (9).png"
+                }
+            ],
+            "totalSeconds": 0.16666666666666666
+        },
+        {
+            "name": "move2",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "zuantouxie_bullet_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "zuantouxie_bullet_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "zuantouxie_bullet_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "zuantouxie_bullet_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "zuantouxie_bullet_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "zuantouxie_bullet_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "zuantouxie_bullet_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "zuantouxie_bullet_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "zuantouxie_bullet_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "zuantouxie_bullet_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "zuantouxie_bullet_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "zuantouxie_bullet_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "zuantouxie_bullet_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "zuantouxie_bullet_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "zuantouxie_bullet_move (29).png"
+                }
+            ],
+            "totalSeconds": 0.5
+        }
+    ],
+    "plists": [
+        "fish/special/zuantouxie_boom_0.plist",
+        "fish/special/zuantouxie_cannon_0.plist",
+        "fish/special/zuantouxie_pengzhang_0.plist",
+        "fish/special/zuantouxie_drift_0.plist",
+        "fish/special/zuantouxie_move_0.plist",
+        "fish/special/zuantouxie_bullet_move_0.plist"
+    ]
+}

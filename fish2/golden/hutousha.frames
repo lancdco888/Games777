@@ -1,0 +1,669 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "hutousha_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "hutousha_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "hutousha_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "hutousha_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "hutousha_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "hutousha_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "hutousha_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "hutousha_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "hutousha_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "hutousha_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "hutousha_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "hutousha_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "hutousha_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "hutousha_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "hutousha_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "hutousha_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "hutousha_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "hutousha_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "hutousha_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "hutousha_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "hutousha_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "hutousha_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "hutousha_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "hutousha_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "hutousha_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "hutousha_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "hutousha_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "hutousha_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "hutousha_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "hutousha_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "hutousha_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "hutousha_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "hutousha_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "hutousha_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "hutousha_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "hutousha_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "hutousha_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "hutousha_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "hutousha_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "hutousha_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "hutousha_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "hutousha_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "hutousha_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "hutousha_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "hutousha_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "hutousha_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "hutousha_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "hutousha_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "hutousha_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "hutousha_move (99).png"
+                },
+                {
+                    "time": 1.6666666666666667,
+                    "picName": "hutousha_move (101).png"
+                },
+                {
+                    "time": 1.7,
+                    "picName": "hutousha_move (103).png"
+                },
+                {
+                    "time": 1.7333333333333334,
+                    "picName": "hutousha_move (105).png"
+                },
+                {
+                    "time": 1.7666666666666666,
+                    "picName": "hutousha_move (107).png"
+                },
+                {
+                    "time": 1.8,
+                    "picName": "hutousha_move (109).png"
+                },
+                {
+                    "time": 1.8333333333333333,
+                    "picName": "hutousha_move (111).png"
+                },
+                {
+                    "time": 1.8666666666666667,
+                    "picName": "hutousha_move (113).png"
+                },
+                {
+                    "time": 1.9,
+                    "picName": "hutousha_move (115).png"
+                },
+                {
+                    "time": 1.9333333333333333,
+                    "picName": "hutousha_move (117).png"
+                },
+                {
+                    "time": 1.9666666666666666,
+                    "picName": "hutousha_move (119).png"
+                },
+                {
+                    "time": 2,
+                    "picName": "hutousha_move (121).png"
+                },
+                {
+                    "time": 2.033333333333333,
+                    "picName": "hutousha_move (123).png"
+                },
+                {
+                    "time": 2.0666666666666664,
+                    "picName": "hutousha_move (125).png"
+                },
+                {
+                    "time": 2.1,
+                    "picName": "hutousha_move (127).png"
+                },
+                {
+                    "time": 2.1333333333333333,
+                    "picName": "hutousha_move (129).png"
+                },
+                {
+                    "time": 2.1666666666666665,
+                    "picName": "hutousha_move (131).png"
+                },
+                {
+                    "time": 2.2,
+                    "picName": "hutousha_move (133).png"
+                },
+                {
+                    "time": 2.2333333333333334,
+                    "picName": "hutousha_move (135).png"
+                },
+                {
+                    "time": 2.2666666666666666,
+                    "picName": "hutousha_move (137).png"
+                },
+                {
+                    "time": 2.3,
+                    "picName": "hutousha_move (139).png"
+                },
+                {
+                    "time": 2.3333333333333335,
+                    "picName": "hutousha_move (141).png"
+                },
+                {
+                    "time": 2.3666666666666667,
+                    "picName": "hutousha_move (143).png"
+                },
+                {
+                    "time": 2.4,
+                    "picName": "hutousha_move (145).png"
+                },
+                {
+                    "time": 2.433333333333333,
+                    "picName": "hutousha_move (147).png"
+                },
+                {
+                    "time": 2.466666666666667,
+                    "picName": "hutousha_move (149).png"
+                },
+                {
+                    "time": 2.5,
+                    "picName": "hutousha_move (151).png"
+                },
+                {
+                    "time": 2.533333333333333,
+                    "picName": "hutousha_move (153).png"
+                },
+                {
+                    "time": 2.5666666666666664,
+                    "picName": "hutousha_move (155).png"
+                },
+                {
+                    "time": 2.6,
+                    "picName": "hutousha_move (157).png"
+                },
+                {
+                    "time": 2.6333333333333333,
+                    "picName": "hutousha_move (159).png"
+                },
+                {
+                    "time": 2.6666666666666665,
+                    "picName": "hutousha_move (161).png"
+                },
+                {
+                    "time": 2.7,
+                    "picName": "hutousha_move (163).png"
+                },
+                {
+                    "time": 2.7333333333333334,
+                    "picName": "hutousha_move (165).png"
+                },
+                {
+                    "time": 2.7666666666666666,
+                    "picName": "hutousha_move (167).png"
+                },
+                {
+                    "time": 2.8,
+                    "picName": "hutousha_move (169).png"
+                },
+                {
+                    "time": 2.8333333333333335,
+                    "picName": "hutousha_move (171).png"
+                },
+                {
+                    "time": 2.8666666666666667,
+                    "picName": "hutousha_move (173).png"
+                },
+                {
+                    "time": 2.9,
+                    "picName": "hutousha_move (175).png"
+                },
+                {
+                    "time": 2.933333333333333,
+                    "picName": "hutousha_move (177).png"
+                },
+                {
+                    "time": 2.966666666666667,
+                    "picName": "hutousha_move (179).png"
+                },
+                {
+                    "time": 3,
+                    "picName": "hutousha_move (181).png"
+                },
+                {
+                    "time": 3.033333333333333,
+                    "picName": "hutousha_move (183).png"
+                },
+                {
+                    "time": 3.0666666666666664,
+                    "picName": "hutousha_move (185).png"
+                },
+                {
+                    "time": 3.1,
+                    "picName": "hutousha_move (187).png"
+                },
+                {
+                    "time": 3.1333333333333333,
+                    "picName": "hutousha_move (189).png"
+                },
+                {
+                    "time": 3.1666666666666665,
+                    "picName": "hutousha_move (191).png"
+                },
+                {
+                    "time": 3.2,
+                    "picName": "hutousha_move (193).png"
+                },
+                {
+                    "time": 3.2333333333333334,
+                    "picName": "hutousha_move (195).png"
+                },
+                {
+                    "time": 3.2666666666666666,
+                    "picName": "hutousha_move (197).png"
+                },
+                {
+                    "time": 3.3,
+                    "picName": "hutousha_move (199).png"
+                },
+                {
+                    "time": 3.3333333333333335,
+                    "picName": "hutousha_move (201).png"
+                },
+                {
+                    "time": 3.3666666666666667,
+                    "picName": "hutousha_move (203).png"
+                },
+                {
+                    "time": 3.4,
+                    "picName": "hutousha_move (205).png"
+                },
+                {
+                    "time": 3.433333333333333,
+                    "picName": "hutousha_move (207).png"
+                },
+                {
+                    "time": 3.466666666666667,
+                    "picName": "hutousha_move (209).png"
+                },
+                {
+                    "time": 3.5,
+                    "picName": "hutousha_move (211).png"
+                },
+                {
+                    "time": 3.533333333333333,
+                    "picName": "hutousha_move (213).png"
+                },
+                {
+                    "time": 3.5666666666666664,
+                    "picName": "hutousha_move (215).png"
+                },
+                {
+                    "time": 3.6,
+                    "picName": "hutousha_move (217).png"
+                },
+                {
+                    "time": 3.6333333333333333,
+                    "picName": "hutousha_move (219).png"
+                },
+                {
+                    "time": 3.6666666666666665,
+                    "picName": "hutousha_move (221).png"
+                },
+                {
+                    "time": 3.6999999999999997,
+                    "picName": "hutousha_move (223).png"
+                },
+                {
+                    "time": 3.7333333333333334,
+                    "picName": "hutousha_move (225).png"
+                },
+                {
+                    "time": 3.7666666666666666,
+                    "picName": "hutousha_move (227).png"
+                },
+                {
+                    "time": 3.8,
+                    "picName": "hutousha_move (229).png"
+                },
+                {
+                    "time": 3.8333333333333335,
+                    "picName": "hutousha_move (231).png"
+                },
+                {
+                    "time": 3.8666666666666667,
+                    "picName": "hutousha_move (233).png"
+                },
+                {
+                    "time": 3.9,
+                    "picName": "hutousha_move (235).png"
+                },
+                {
+                    "time": 3.933333333333333,
+                    "picName": "hutousha_move (237).png"
+                },
+                {
+                    "time": 3.966666666666667,
+                    "picName": "hutousha_move (239).png"
+                },
+                {
+                    "time": 4,
+                    "picName": "hutousha_move (241).png"
+                },
+                {
+                    "time": 4.033333333333333,
+                    "picName": "hutousha_move (243).png"
+                },
+                {
+                    "time": 4.066666666666666,
+                    "picName": "hutousha_move (245).png"
+                },
+                {
+                    "time": 4.1,
+                    "picName": "hutousha_move (247).png"
+                },
+                {
+                    "time": 4.133333333333333,
+                    "picName": "hutousha_move (249).png"
+                },
+                {
+                    "time": 4.166666666666667,
+                    "picName": "hutousha_move (251).png"
+                },
+                {
+                    "time": 4.2,
+                    "picName": "hutousha_move (253).png"
+                },
+                {
+                    "time": 4.233333333333333,
+                    "picName": "hutousha_move (255).png"
+                },
+                {
+                    "time": 4.266666666666667,
+                    "picName": "hutousha_move (257).png"
+                },
+                {
+                    "time": 4.3,
+                    "picName": "hutousha_move (259).png"
+                },
+                {
+                    "time": 4.333333333333333,
+                    "picName": "hutousha_move (261).png"
+                },
+                {
+                    "time": 4.366666666666666,
+                    "picName": "hutousha_move (263).png"
+                }
+            ],
+            "totalSeconds": 4.4
+        },
+        {
+            "name": "pre",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "hutousha_xuanfeng (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "hutousha_xuanfeng (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "hutousha_xuanfeng (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "hutousha_xuanfeng (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "hutousha_xuanfeng (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "hutousha_xuanfeng (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "hutousha_xuanfeng (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "hutousha_xuanfeng (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "hutousha_xuanfeng (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "hutousha_xuanfeng (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "hutousha_xuanfeng (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "hutousha_xuanfeng (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "hutousha_xuanfeng (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "hutousha_xuanfeng (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "hutousha_xuanfeng (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "hutousha_xuanfeng (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "hutousha_xuanfeng (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "hutousha_xuanfeng (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "hutousha_xuanfeng (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "hutousha_xuanfeng (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "hutousha_xuanfeng (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "hutousha_xuanfeng (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "hutousha_xuanfeng (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "hutousha_xuanfeng (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "hutousha_xuanfeng (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "hutousha_xuanfeng (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "hutousha_xuanfeng (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "hutousha_xuanfeng (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "hutousha_xuanfeng (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "hutousha_xuanfeng (59).png"
+                }
+            ],
+            "totalSeconds": 1
+        }
+    ],
+    "plists": [
+        "fish/golden/hutousha_move_0.plist",
+        "fish/golden/hutousha_move_1.plist",
+        "fish/golden/hutousha_xuanfeng_0.plist"
+    ]
+}

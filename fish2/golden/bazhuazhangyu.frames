@@ -1,0 +1,444 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "bazhuazhangyu_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "bazhuazhangyu_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "bazhuazhangyu_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "bazhuazhangyu_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "bazhuazhangyu_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "bazhuazhangyu_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "bazhuazhangyu_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "bazhuazhangyu_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "bazhuazhangyu_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "bazhuazhangyu_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "bazhuazhangyu_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "bazhuazhangyu_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "bazhuazhangyu_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "bazhuazhangyu_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "bazhuazhangyu_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "bazhuazhangyu_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "bazhuazhangyu_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "bazhuazhangyu_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "bazhuazhangyu_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "bazhuazhangyu_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "bazhuazhangyu_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "bazhuazhangyu_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "bazhuazhangyu_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "bazhuazhangyu_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "bazhuazhangyu_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "bazhuazhangyu_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "bazhuazhangyu_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "bazhuazhangyu_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "bazhuazhangyu_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "bazhuazhangyu_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "bazhuazhangyu_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "bazhuazhangyu_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "bazhuazhangyu_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "bazhuazhangyu_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "bazhuazhangyu_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "bazhuazhangyu_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "bazhuazhangyu_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "bazhuazhangyu_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "bazhuazhangyu_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "bazhuazhangyu_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "bazhuazhangyu_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "bazhuazhangyu_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "bazhuazhangyu_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "bazhuazhangyu_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "bazhuazhangyu_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "bazhuazhangyu_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "bazhuazhangyu_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "bazhuazhangyu_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "bazhuazhangyu_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "bazhuazhangyu_move (99).png"
+                },
+                {
+                    "time": 1.6666666666666667,
+                    "picName": "bazhuazhangyu_move (101).png"
+                },
+                {
+                    "time": 1.7,
+                    "picName": "bazhuazhangyu_move (103).png"
+                },
+                {
+                    "time": 1.7333333333333334,
+                    "picName": "bazhuazhangyu_move (105).png"
+                },
+                {
+                    "time": 1.7666666666666666,
+                    "picName": "bazhuazhangyu_move (107).png"
+                },
+                {
+                    "time": 1.8,
+                    "picName": "bazhuazhangyu_move (109).png"
+                },
+                {
+                    "time": 1.8333333333333333,
+                    "picName": "bazhuazhangyu_move (111).png"
+                },
+                {
+                    "time": 1.8666666666666667,
+                    "picName": "bazhuazhangyu_move (113).png"
+                },
+                {
+                    "time": 1.9,
+                    "picName": "bazhuazhangyu_move (115).png"
+                },
+                {
+                    "time": 1.9333333333333333,
+                    "picName": "bazhuazhangyu_move (117).png"
+                },
+                {
+                    "time": 1.9666666666666666,
+                    "picName": "bazhuazhangyu_move (119).png"
+                },
+                {
+                    "time": 2,
+                    "picName": "bazhuazhangyu_move (121).png"
+                },
+                {
+                    "time": 2.033333333333333,
+                    "picName": "bazhuazhangyu_move (123).png"
+                },
+                {
+                    "time": 2.0666666666666664,
+                    "picName": "bazhuazhangyu_move (125).png"
+                },
+                {
+                    "time": 2.1,
+                    "picName": "bazhuazhangyu_move (127).png"
+                },
+                {
+                    "time": 2.1333333333333333,
+                    "picName": "bazhuazhangyu_move (129).png"
+                },
+                {
+                    "time": 2.1666666666666665,
+                    "picName": "bazhuazhangyu_move (131).png"
+                },
+                {
+                    "time": 2.2,
+                    "picName": "bazhuazhangyu_move (133).png"
+                },
+                {
+                    "time": 2.2333333333333334,
+                    "picName": "bazhuazhangyu_move (135).png"
+                },
+                {
+                    "time": 2.2666666666666666,
+                    "picName": "bazhuazhangyu_move (137).png"
+                },
+                {
+                    "time": 2.3,
+                    "picName": "bazhuazhangyu_move (139).png"
+                },
+                {
+                    "time": 2.3333333333333335,
+                    "picName": "bazhuazhangyu_move (141).png"
+                },
+                {
+                    "time": 2.3666666666666667,
+                    "picName": "bazhuazhangyu_move (143).png"
+                },
+                {
+                    "time": 2.4,
+                    "picName": "bazhuazhangyu_move (145).png"
+                },
+                {
+                    "time": 2.433333333333333,
+                    "picName": "bazhuazhangyu_move (147).png"
+                },
+                {
+                    "time": 2.466666666666667,
+                    "picName": "bazhuazhangyu_move (149).png"
+                }
+            ],
+            "totalSeconds": 2.5
+        },
+        {
+            "name": "born",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "bazhuazhangyu_born (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "bazhuazhangyu_born (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "bazhuazhangyu_born (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "bazhuazhangyu_born (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "bazhuazhangyu_born (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "bazhuazhangyu_born (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "bazhuazhangyu_born (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "bazhuazhangyu_born (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "bazhuazhangyu_born (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "bazhuazhangyu_born (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "bazhuazhangyu_born (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "bazhuazhangyu_born (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "bazhuazhangyu_born (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "bazhuazhangyu_born (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "bazhuazhangyu_born (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "bazhuazhangyu_born (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "bazhuazhangyu_born (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "bazhuazhangyu_born (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "bazhuazhangyu_born (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "bazhuazhangyu_born (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "bazhuazhangyu_born (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "bazhuazhangyu_born (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "bazhuazhangyu_born (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "bazhuazhangyu_born (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "bazhuazhangyu_born (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "bazhuazhangyu_born (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "bazhuazhangyu_born (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "bazhuazhangyu_born (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "bazhuazhangyu_born (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "bazhuazhangyu_born (59).png"
+                }
+            ],
+            "totalSeconds": 1
+        }
+    ],
+    "plists": [
+        "fish/golden/bazhuazhangyu_born_0.plist",
+        "fish/golden/bazhuazhangyu_born_1.plist",
+        "fish/golden/bazhuazhangyu_move_0.plist",
+        "fish/golden/bazhuazhangyu_move_1.plist",
+        "fish/golden/bazhuazhangyu_move_2.plist",
+        "fish/golden/bazhuazhangyu_move_3.plist"
+    ]
+}

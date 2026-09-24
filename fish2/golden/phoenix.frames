@@ -1,0 +1,1417 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "phoenix_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "phoenix_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "phoenix_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "phoenix_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "phoenix_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "phoenix_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "phoenix_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "phoenix_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "phoenix_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "phoenix_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "phoenix_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "phoenix_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "phoenix_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "phoenix_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "phoenix_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "phoenix_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "phoenix_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "phoenix_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "phoenix_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "phoenix_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "phoenix_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "phoenix_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "phoenix_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "phoenix_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "phoenix_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "phoenix_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "phoenix_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "phoenix_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "phoenix_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "phoenix_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "phoenix_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "phoenix_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "phoenix_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "phoenix_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "phoenix_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "phoenix_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "phoenix_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "phoenix_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "phoenix_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "phoenix_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "phoenix_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "phoenix_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "phoenix_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "phoenix_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "phoenix_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "phoenix_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "phoenix_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "phoenix_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "phoenix_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "phoenix_move (99).png"
+                },
+                {
+                    "time": 1.6666666666666667,
+                    "picName": "phoenix_move (101).png"
+                },
+                {
+                    "time": 1.7,
+                    "picName": "phoenix_move (103).png"
+                },
+                {
+                    "time": 1.7333333333333334,
+                    "picName": "phoenix_move (105).png"
+                },
+                {
+                    "time": 1.7666666666666666,
+                    "picName": "phoenix_move (107).png"
+                },
+                {
+                    "time": 1.8,
+                    "picName": "phoenix_move (109).png"
+                },
+                {
+                    "time": 1.8333333333333333,
+                    "picName": "phoenix_move (111).png"
+                },
+                {
+                    "time": 1.8666666666666667,
+                    "picName": "phoenix_move (113).png"
+                },
+                {
+                    "time": 1.9,
+                    "picName": "phoenix_move (115).png"
+                },
+                {
+                    "time": 1.9333333333333333,
+                    "picName": "phoenix_move (117).png"
+                },
+                {
+                    "time": 1.9666666666666666,
+                    "picName": "phoenix_move (119).png"
+                },
+                {
+                    "time": 2,
+                    "picName": "phoenix_move (121).png"
+                },
+                {
+                    "time": 2.033333333333333,
+                    "picName": "phoenix_move (123).png"
+                },
+                {
+                    "time": 2.0666666666666664,
+                    "picName": "phoenix_move (125).png"
+                },
+                {
+                    "time": 2.1,
+                    "picName": "phoenix_move (127).png"
+                },
+                {
+                    "time": 2.1333333333333333,
+                    "picName": "phoenix_move (129).png"
+                },
+                {
+                    "time": 2.1666666666666665,
+                    "picName": "phoenix_move (131).png"
+                },
+                {
+                    "time": 2.2,
+                    "picName": "phoenix_move (133).png"
+                },
+                {
+                    "time": 2.2333333333333334,
+                    "picName": "phoenix_move (135).png"
+                },
+                {
+                    "time": 2.2666666666666666,
+                    "picName": "phoenix_move (137).png"
+                },
+                {
+                    "time": 2.3,
+                    "picName": "phoenix_move (139).png"
+                },
+                {
+                    "time": 2.3333333333333335,
+                    "picName": "phoenix_move (141).png"
+                },
+                {
+                    "time": 2.3666666666666667,
+                    "picName": "phoenix_move (143).png"
+                },
+                {
+                    "time": 2.4,
+                    "picName": "phoenix_move (145).png"
+                },
+                {
+                    "time": 2.433333333333333,
+                    "picName": "phoenix_move (147).png"
+                },
+                {
+                    "time": 2.466666666666667,
+                    "picName": "phoenix_move (149).png"
+                },
+                {
+                    "time": 2.5,
+                    "picName": "phoenix_move (151).png"
+                },
+                {
+                    "time": 2.533333333333333,
+                    "picName": "phoenix_move (153).png"
+                },
+                {
+                    "time": 2.5666666666666664,
+                    "picName": "phoenix_move (155).png"
+                },
+                {
+                    "time": 2.6,
+                    "picName": "phoenix_move (157).png"
+                },
+                {
+                    "time": 2.6333333333333333,
+                    "picName": "phoenix_move (159).png"
+                },
+                {
+                    "time": 2.6666666666666665,
+                    "picName": "phoenix_move (161).png"
+                },
+                {
+                    "time": 2.7,
+                    "picName": "phoenix_move (163).png"
+                },
+                {
+                    "time": 2.7333333333333334,
+                    "picName": "phoenix_move (165).png"
+                },
+                {
+                    "time": 2.7666666666666666,
+                    "picName": "phoenix_move (167).png"
+                },
+                {
+                    "time": 2.8,
+                    "picName": "phoenix_move (169).png"
+                },
+                {
+                    "time": 2.8333333333333335,
+                    "picName": "phoenix_move (171).png"
+                },
+                {
+                    "time": 2.8666666666666667,
+                    "picName": "phoenix_move (173).png"
+                },
+                {
+                    "time": 2.9,
+                    "picName": "phoenix_move (175).png"
+                },
+                {
+                    "time": 2.933333333333333,
+                    "picName": "phoenix_move (177).png"
+                },
+                {
+                    "time": 2.966666666666667,
+                    "picName": "phoenix_move (179).png"
+                },
+                {
+                    "time": 3,
+                    "picName": "phoenix_move (181).png"
+                },
+                {
+                    "time": 3.033333333333333,
+                    "picName": "phoenix_move (183).png"
+                },
+                {
+                    "time": 3.0666666666666664,
+                    "picName": "phoenix_move (185).png"
+                },
+                {
+                    "time": 3.1,
+                    "picName": "phoenix_move (187).png"
+                },
+                {
+                    "time": 3.1333333333333333,
+                    "picName": "phoenix_move (189).png"
+                },
+                {
+                    "time": 3.1666666666666665,
+                    "picName": "phoenix_move (191).png"
+                },
+                {
+                    "time": 3.2,
+                    "picName": "phoenix_move (193).png"
+                },
+                {
+                    "time": 3.2333333333333334,
+                    "picName": "phoenix_move (195).png"
+                },
+                {
+                    "time": 3.2666666666666666,
+                    "picName": "phoenix_move (197).png"
+                },
+                {
+                    "time": 3.3,
+                    "picName": "phoenix_move (199).png"
+                },
+                {
+                    "time": 3.3333333333333335,
+                    "picName": "phoenix_move (201).png"
+                },
+                {
+                    "time": 3.3666666666666667,
+                    "picName": "phoenix_move (203).png"
+                },
+                {
+                    "time": 3.4,
+                    "picName": "phoenix_move (205).png"
+                },
+                {
+                    "time": 3.433333333333333,
+                    "picName": "phoenix_move (207).png"
+                },
+                {
+                    "time": 3.466666666666667,
+                    "picName": "phoenix_move (209).png"
+                },
+                {
+                    "time": 3.5,
+                    "picName": "phoenix_move (211).png"
+                },
+                {
+                    "time": 3.533333333333333,
+                    "picName": "phoenix_move (213).png"
+                },
+                {
+                    "time": 3.5666666666666664,
+                    "picName": "phoenix_move (215).png"
+                },
+                {
+                    "time": 3.6,
+                    "picName": "phoenix_move (217).png"
+                },
+                {
+                    "time": 3.6333333333333333,
+                    "picName": "phoenix_move (219).png"
+                },
+                {
+                    "time": 3.6666666666666665,
+                    "picName": "phoenix_move (221).png"
+                },
+                {
+                    "time": 3.6999999999999997,
+                    "picName": "phoenix_move (223).png"
+                },
+                {
+                    "time": 3.7333333333333334,
+                    "picName": "phoenix_move (225).png"
+                },
+                {
+                    "time": 3.7666666666666666,
+                    "picName": "phoenix_move (227).png"
+                },
+                {
+                    "time": 3.8,
+                    "picName": "phoenix_move (229).png"
+                },
+                {
+                    "time": 3.8333333333333335,
+                    "picName": "phoenix_move (231).png"
+                },
+                {
+                    "time": 3.8666666666666667,
+                    "picName": "phoenix_move (233).png"
+                },
+                {
+                    "time": 3.9,
+                    "picName": "phoenix_move (235).png"
+                },
+                {
+                    "time": 3.933333333333333,
+                    "picName": "phoenix_move (237).png"
+                },
+                {
+                    "time": 3.966666666666667,
+                    "picName": "phoenix_move (239).png"
+                },
+                {
+                    "time": 4,
+                    "picName": "phoenix_move (241).png"
+                },
+                {
+                    "time": 4.033333333333333,
+                    "picName": "phoenix_move (243).png"
+                },
+                {
+                    "time": 4.066666666666666,
+                    "picName": "phoenix_move (245).png"
+                },
+                {
+                    "time": 4.1,
+                    "picName": "phoenix_move (247).png"
+                },
+                {
+                    "time": 4.133333333333333,
+                    "picName": "phoenix_move (249).png"
+                },
+                {
+                    "time": 4.166666666666667,
+                    "picName": "phoenix_move (251).png"
+                },
+                {
+                    "time": 4.2,
+                    "picName": "phoenix_move (253).png"
+                },
+                {
+                    "time": 4.233333333333333,
+                    "picName": "phoenix_move (255).png"
+                },
+                {
+                    "time": 4.266666666666667,
+                    "picName": "phoenix_move (257).png"
+                },
+                {
+                    "time": 4.3,
+                    "picName": "phoenix_move (259).png"
+                },
+                {
+                    "time": 4.333333333333333,
+                    "picName": "phoenix_move (261).png"
+                },
+                {
+                    "time": 4.366666666666666,
+                    "picName": "phoenix_move (263).png"
+                },
+                {
+                    "time": 4.4,
+                    "picName": "phoenix_move (265).png"
+                },
+                {
+                    "time": 4.433333333333334,
+                    "picName": "phoenix_move (267).png"
+                },
+                {
+                    "time": 4.466666666666667,
+                    "picName": "phoenix_move (269).png"
+                }
+            ],
+            "totalSeconds": 4.5
+        },
+        {
+            "name": "bomb",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "bombing (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "bombing (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "bombing (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "bombing (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "bombing (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "bombing (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "bombing (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "bombing (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "bombing (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "bombing (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "bombing (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "bombing (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "bombing (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "bombing (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "bombing (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "bombing (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "bombing (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "bombing (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "bombing (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "bombing (20).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "bombing (21).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "bombing (22).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "bombing (23).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "bombing (24).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "bombing (25).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "bombing (26).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "bombing (27).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "bombing (28).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "bombing (29).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "bombing (30).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "bombing (31).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "bombing (32).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "bombing (33).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "bombing (34).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "bombing (35).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "bombing (36).png"
+                }
+            ],
+            "totalSeconds": 1.2
+        },
+        {
+            "name": "coin_up",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "coin_up (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "coin_up (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "coin_up (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "coin_up (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "coin_up (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "coin_up (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "coin_up (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "coin_up (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "coin_up (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "coin_up (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "coin_up (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "coin_up (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "coin_up (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "coin_up (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "coin_up (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "coin_up (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "coin_up (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "coin_up (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "coin_up (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "coin_up (20).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "coin_up (21).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "coin_up (22).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "coin_up (23).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "coin_up (24).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "coin_up (25).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "coin_up (26).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "coin_up (27).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "coin_up (28).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "coin_up (29).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "coin_up (30).png"
+                }
+            ],
+            "totalSeconds": 1
+        },
+        {
+            "name": "feather",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "feather_ (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "feather_ (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "feather_ (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "feather_ (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "feather_ (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "feather_ (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "feather_ (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "feather_ (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "feather_ (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "feather_ (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "feather_ (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "feather_ (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "feather_ (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "feather_ (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "feather_ (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "feather_ (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "feather_ (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "feather_ (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "feather_ (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "feather_ (20).png"
+                }
+            ],
+            "totalSeconds": 0.6666666666666666
+        },
+        {
+            "name": "halo",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "effect_halo (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "effect_halo (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "effect_halo (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "effect_halo (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "effect_halo (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "effect_halo (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "effect_halo (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "effect_halo (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "effect_halo (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "effect_halo (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "effect_halo (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "effect_halo (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "effect_halo (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "effect_halo (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "effect_halo (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "effect_halo (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "effect_halo (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "effect_halo (18).png"
+                }
+            ],
+            "totalSeconds": 0.6
+        },
+        {
+            "name": "lianji",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lianji (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lianji (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lianji (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lianji (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lianji (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lianji (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lianji (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lianji (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "lianji (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "lianji (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "lianji (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "lianji (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "lianji (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "lianji (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "lianji (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "lianji (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "lianji (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "lianji (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "lianji (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "lianji (20).png"
+                }
+            ],
+            "totalSeconds": 0.6666666666666666
+        },
+        {
+            "name": "move1",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "group_phoenix_ (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "group_phoenix_ (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "group_phoenix_ (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "group_phoenix_ (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "group_phoenix_ (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "group_phoenix_ (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "group_phoenix_ (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "group_phoenix_ (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "group_phoenix_ (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "group_phoenix_ (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "group_phoenix_ (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "group_phoenix_ (12).png"
+                }
+            ],
+            "totalSeconds": 0.4
+        },
+        {
+            "name": "die",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "boss_die_explosion (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "boss_die_explosion (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "boss_die_explosion (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "boss_die_explosion (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "boss_die_explosion (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "boss_die_explosion (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "boss_die_explosion (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "boss_die_explosion (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "boss_die_explosion (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "boss_die_explosion (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "boss_die_explosion (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "boss_die_explosion (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "boss_die_explosion (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "boss_die_explosion (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "boss_die_explosion (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "boss_die_explosion (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "boss_die_explosion (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "boss_die_explosion (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "boss_die_explosion (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "boss_die_explosion (20).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "boss_die_explosion (21).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "boss_die_explosion (22).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "boss_die_explosion (23).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "boss_die_explosion (24).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "boss_die_explosion (25).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "boss_die_explosion (26).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "boss_die_explosion (27).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "boss_die_explosion (28).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "boss_die_explosion (29).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "boss_die_explosion (30).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "boss_die_explosion (31).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "boss_die_explosion (32).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "boss_die_explosion (33).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "boss_die_explosion (34).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "boss_die_explosion (35).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "boss_die_explosion (36).png"
+                }
+            ],
+            "totalSeconds": 1.2
+        },
+        {
+            "name": "screen_fire",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "screen_fire (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "screen_fire (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "screen_fire (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "screen_fire (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "screen_fire (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "screen_fire (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "screen_fire (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "screen_fire (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "screen_fire (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "screen_fire (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "screen_fire (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "screen_fire (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "screen_fire (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "screen_fire (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "screen_fire (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "screen_fire (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "screen_fire (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "screen_fire (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "screen_fire (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "screen_fire (20).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "screen_fire (21).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "screen_fire (22).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "screen_fire (23).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "screen_fire (24).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "screen_fire (25).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "screen_fire (26).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "screen_fire (27).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "screen_fire (28).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "screen_fire (29).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "screen_fire (30).png"
+                }
+            ],
+            "totalSeconds": 1
+        }
+    ],
+    "plists": [
+        "fish/golden/bombing_0.plist",
+        "fish/golden/coin_up_0.plist",
+        "fish/golden/feather__0.plist",
+        "fish/golden/effect_halo_0.plist",
+        "fish/golden/lianji_0.plist",
+        "fish/golden/phoenix_move_0.plist",
+        "fish/golden/phoenix_move_1.plist",
+        "fish/golden/boss_die_explosion_0.plist",
+        "fish/golden/screen_fire_0.plist"
+    ]
+}

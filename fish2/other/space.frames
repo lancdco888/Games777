@@ -1,0 +1,16 @@
+{
+    "frameAnims": [
+        {
+            "name": "1",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "dian.png"
+                }
+            ],
+            "totalSeconds": 10000
+        }
+    ],
+    "plists": [
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "animsFileName": "lanternfestival.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 2.2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 70,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "totalSeconds": 0.2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

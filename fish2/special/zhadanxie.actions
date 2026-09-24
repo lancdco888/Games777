@@ -1,0 +1,114 @@
+{
+    "animsFileName": "zhadanxie.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 4.16666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 250,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 2.8,
+                    "speed": 60,
+                    "animPlayRatio": 1.3,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "move1",
+            "totalSeconds": 416666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "boom",
+            "totalSeconds": 0.75,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 0.75,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "move_multiple",
+            "totalSeconds": 5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 200,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 2
+                },
+                {
+                    "time": 2,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                },
+                {
+                    "time": 3,
+                    "speed": 300,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 2
+                },
+                {
+                    "time": 4,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "totalSeconds": 0.75,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                }
+            ]
+        },
+        {
+            "name": "over_multiple",
+            "totalSeconds": 0.5166666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 4
+                }
+            ]
+        }
+    ]
+}

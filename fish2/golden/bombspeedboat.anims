@@ -1,0 +1,49 @@
+{
+    "resFileName": "bombspeedboat.frames",
+    "anims": [
+        {
+            "name": "move",
+            "skin": "",
+            "totalSeconds": 0.5,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 8.99755859375,
+                        "y": -7.001068115234375
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 20.9996337890625,
+                        "y": -13.000457763671875,
+                        "r": 75.900634765625
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 20.9996337890625,
+                            "y": -13.000457763671875,
+                            "r": 75.900634765625
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "skin": "",
+            "totalSeconds": 0.28333333134651184,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

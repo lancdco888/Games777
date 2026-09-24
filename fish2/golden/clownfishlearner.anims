@@ -1,0 +1,41 @@
+{
+    "resFileName": "clownfishlearner.frames",
+    "anims": [
+        {
+            "name": "move",
+            "skin": "",
+            "totalSeconds": 0.5,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 88.998046875,
+                        "y": -6.00006103515625
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 57.996826171875,
+                        "y": 1.99798583984375,
+                        "r": 188.9005584716797
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 57.996826171875,
+                            "y": 1.99798583984375,
+                            "r": 188.9005584716797
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

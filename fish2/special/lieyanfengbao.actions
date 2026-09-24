@@ -1,0 +1,83 @@
+{
+    "animsFileName": "lieyanfengbao.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1.66666666666667,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 60,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "bullet",
+            "totalSeconds": 0.4166666666666667,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "cannon",
+            "totalSeconds": 0.1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "fire",
+            "totalSeconds": 0.16666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                }
+            ]
+        },
+        {
+            "name": "move_texiao",
+            "totalSeconds": 0.25,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 4
+                }
+            ]
+        },
+        {
+            "name": "yuwang",
+            "totalSeconds": 0.4166666666666667,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 5
+                }
+            ]
+        }
+    ]
+}

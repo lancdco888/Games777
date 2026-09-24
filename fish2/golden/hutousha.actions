@@ -1,0 +1,60 @@
+{
+    "animsFileName": "hutousha.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 7,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 0,
+                    "animIndex": 0,
+                    "eventId": 1000
+                },
+                {
+                    "time": 0.3,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 3
+                },
+                {
+                    "time": 3.5,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 1001
+                },
+                {
+                    "time": 4.7,
+                    "speed": 50,
+                    "animPlayRatio": 0,
+                    "animIndex": 0,
+                    "eventId": 4
+                }
+            ]
+        },
+        {
+            "name": "pre",
+            "totalSeconds": 2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 1.8,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1,
+                    "eventId": 2
+                }
+            ]
+        }
+    ]
+}

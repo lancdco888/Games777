@@ -1,0 +1,49 @@
+{
+    "resFileName": "lanternfestival.frames",
+    "anims": [
+        {
+            "name": "move",
+            "skin": "",
+            "totalSeconds": 1.100000023841858,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": -3.0010986328125,
+                        "y": -2.00103759765625
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 2.9981689453125,
+                        "y": -9.00140380859375,
+                        "r": 144.03318786621094
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 2.9981689453125,
+                            "y": -9.00140380859375,
+                            "r": 144.03318786621094
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "skin": "",
+            "totalSeconds": 0.20000000298023224,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

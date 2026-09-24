@@ -1,0 +1,18 @@
+{
+    "animsFileName": "huangjinhetun.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 80,
+                    "animPlayRatio": 0.95,
+                    "animIndex": 0
+                }
+            ]
+        }
+    ]
+}

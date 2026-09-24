@@ -1,0 +1,51 @@
+{
+    "animsFileName": "bazhuazhangyu.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 100,
+            "baseSpeed": 0,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 1,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 11,
+                    "speed": 0,
+                    "animPlayRatio": -1,
+                    "animIndex": 1,
+                    "eventId": 5
+                },
+                {
+                    "time": 11.95,
+                    "speed": 0,
+                    "animPlayRatio": 0,
+                    "animIndex": 1,
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "born",
+            "totalSeconds": 1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

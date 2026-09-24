@@ -1,0 +1,208 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "bombspeedboat_move (1).png"
+                },
+                {
+                    "time": 0.016666666666666666,
+                    "picName": "bombspeedboat_move (2).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "bombspeedboat_move (3).png"
+                },
+                {
+                    "time": 0.05,
+                    "picName": "bombspeedboat_move (4).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "bombspeedboat_move (5).png"
+                },
+                {
+                    "time": 0.08333333333333333,
+                    "picName": "bombspeedboat_move (6).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "bombspeedboat_move (7).png"
+                },
+                {
+                    "time": 0.11666666666666667,
+                    "picName": "bombspeedboat_move (8).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "bombspeedboat_move (9).png"
+                },
+                {
+                    "time": 0.15,
+                    "picName": "bombspeedboat_move (10).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "bombspeedboat_move (11).png"
+                },
+                {
+                    "time": 0.18333333333333332,
+                    "picName": "bombspeedboat_move (12).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "bombspeedboat_move (13).png"
+                },
+                {
+                    "time": 0.21666666666666667,
+                    "picName": "bombspeedboat_move (14).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "bombspeedboat_move (15).png"
+                },
+                {
+                    "time": 0.25,
+                    "picName": "bombspeedboat_move (16).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "bombspeedboat_move (17).png"
+                },
+                {
+                    "time": 0.2833333333333333,
+                    "picName": "bombspeedboat_move (18).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "bombspeedboat_move (19).png"
+                },
+                {
+                    "time": 0.31666666666666665,
+                    "picName": "bombspeedboat_move (20).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "bombspeedboat_move (21).png"
+                },
+                {
+                    "time": 0.35,
+                    "picName": "bombspeedboat_move (22).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "bombspeedboat_move (23).png"
+                },
+                {
+                    "time": 0.3833333333333333,
+                    "picName": "bombspeedboat_move (24).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "bombspeedboat_move (25).png"
+                },
+                {
+                    "time": 0.4166666666666667,
+                    "picName": "bombspeedboat_move (26).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "bombspeedboat_move (27).png"
+                },
+                {
+                    "time": 0.45,
+                    "picName": "bombspeedboat_move (28).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "bombspeedboat_move (29).png"
+                },
+                {
+                    "time": 0.48333333333333334,
+                    "picName": "bombspeedboat_move (30).png"
+                }
+            ],
+            "totalSeconds": 0.5
+        },
+        {
+            "name": "die",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "bombspeedboat_die (1).png"
+                },
+                {
+                    "time": 0.016666666666666666,
+                    "picName": "bombspeedboat_die (2).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "bombspeedboat_die (3).png"
+                },
+                {
+                    "time": 0.05,
+                    "picName": "bombspeedboat_die (4).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "bombspeedboat_die (5).png"
+                },
+                {
+                    "time": 0.08333333333333333,
+                    "picName": "bombspeedboat_die (6).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "bombspeedboat_die (7).png"
+                },
+                {
+                    "time": 0.11666666666666667,
+                    "picName": "bombspeedboat_die (8).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "bombspeedboat_die (9).png"
+                },
+                {
+                    "time": 0.15,
+                    "picName": "bombspeedboat_die (10).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "bombspeedboat_die (11).png"
+                },
+                {
+                    "time": 0.18333333333333332,
+                    "picName": "bombspeedboat_die (12).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "bombspeedboat_die (13).png"
+                },
+                {
+                    "time": 0.21666666666666667,
+                    "picName": "bombspeedboat_die (14).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "bombspeedboat_die (15).png"
+                },
+                {
+                    "time": 0.25,
+                    "picName": "bombspeedboat_die (16).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "bombspeedboat_die (17).png"
+                }
+            ],
+            "totalSeconds": 0.2833333333333333
+        }
+    ],
+    "plists": [
+        "fish/golden/bombspeedboat_move_0.plist",
+        "fish/golden/bombspeedboat_die_0.plist"
+    ]
+}

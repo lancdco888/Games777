@@ -1,0 +1,106 @@
+{
+    "resFileName": "lieyanfengbao.frames",
+    "anims": [
+        {
+            "name": "move",
+            "skin": "",
+            "totalSeconds": 0.8333333134651184,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": -10.00146484375,
+                        "y": -5.000732421875
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": -4.0020751953125,
+                        "y": -6.99945068359375,
+                        "r": 72.50112915039062
+                    },
+                    "cdCircles": [
+                        {
+                            "x": -4.0020751953125,
+                            "y": -6.99945068359375,
+                            "r": 72.50112915039062
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "bullet",
+            "skin": "",
+            "totalSeconds": 0.4333333373069763,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 86.9993896484375,
+                        "y": 1.9996337890625
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 83.9996337890625,
+                        "y": 1.00030517578125,
+                        "r": 22.471694946289062
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 83.9996337890625,
+                            "y": 1.00030517578125,
+                            "r": 22.471694946289062
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "cannon",
+            "skin": "",
+            "totalSeconds": 0.10000000149011612,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "fire",
+            "skin": "",
+            "totalSeconds": 0.1666666716337204,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "move_texiao",
+            "skin": "",
+            "totalSeconds": 0.2666666805744171,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "yuwang",
+            "skin": "",
+            "totalSeconds": 0.4333333373069763,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -15,
+    "shadowY": -15,
+    "shadowScale": 1
+}

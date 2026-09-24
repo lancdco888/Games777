@@ -1,0 +1,62 @@
+{
+    "animsFileName": "maodaye.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1.625,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 60,
+                    "animPlayRatio": 0.4,
+                    "animIndex": 0
+                },
+                {
+                    "time": 0.5,
+                    "speed": 140,
+                    "animPlayRatio": 0.4,
+                    "animIndex": 0
+                },
+                {
+                    "time": 1.625,
+                    "speed": 60,
+                    "animPlayRatio": 0.4,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "dead_effect",
+            "totalSeconds": 0.3833333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "totalSeconds": 0.9,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                },
+                {
+                    "time": 0.5,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

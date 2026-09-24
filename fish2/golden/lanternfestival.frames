@@ -1,0 +1,332 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lanternfestival_move (1).png"
+                },
+                {
+                    "time": 0.016666666666666666,
+                    "picName": "lanternfestival_move (2).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lanternfestival_move (3).png"
+                },
+                {
+                    "time": 0.05,
+                    "picName": "lanternfestival_move (4).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lanternfestival_move (5).png"
+                },
+                {
+                    "time": 0.08333333333333333,
+                    "picName": "lanternfestival_move (6).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lanternfestival_move (7).png"
+                },
+                {
+                    "time": 0.11666666666666667,
+                    "picName": "lanternfestival_move (8).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lanternfestival_move (9).png"
+                },
+                {
+                    "time": 0.15,
+                    "picName": "lanternfestival_move (10).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lanternfestival_move (11).png"
+                },
+                {
+                    "time": 0.18333333333333332,
+                    "picName": "lanternfestival_move (12).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lanternfestival_move (13).png"
+                },
+                {
+                    "time": 0.21666666666666667,
+                    "picName": "lanternfestival_move (14).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lanternfestival_move (15).png"
+                },
+                {
+                    "time": 0.25,
+                    "picName": "lanternfestival_move (16).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "lanternfestival_move (17).png"
+                },
+                {
+                    "time": 0.2833333333333333,
+                    "picName": "lanternfestival_move (18).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "lanternfestival_move (19).png"
+                },
+                {
+                    "time": 0.31666666666666665,
+                    "picName": "lanternfestival_move (20).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "lanternfestival_move (21).png"
+                },
+                {
+                    "time": 0.35,
+                    "picName": "lanternfestival_move (22).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "lanternfestival_move (23).png"
+                },
+                {
+                    "time": 0.3833333333333333,
+                    "picName": "lanternfestival_move (24).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "lanternfestival_move (25).png"
+                },
+                {
+                    "time": 0.4166666666666667,
+                    "picName": "lanternfestival_move (26).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "lanternfestival_move (27).png"
+                },
+                {
+                    "time": 0.45,
+                    "picName": "lanternfestival_move (28).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "lanternfestival_move (29).png"
+                },
+                {
+                    "time": 0.48333333333333334,
+                    "picName": "lanternfestival_move (30).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "lanternfestival_move (31).png"
+                },
+                {
+                    "time": 0.5166666666666666,
+                    "picName": "lanternfestival_move (32).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "lanternfestival_move (33).png"
+                },
+                {
+                    "time": 0.55,
+                    "picName": "lanternfestival_move (34).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "lanternfestival_move (35).png"
+                },
+                {
+                    "time": 0.5833333333333334,
+                    "picName": "lanternfestival_move (36).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "lanternfestival_move (37).png"
+                },
+                {
+                    "time": 0.6166666666666667,
+                    "picName": "lanternfestival_move (38).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "lanternfestival_move (39).png"
+                },
+                {
+                    "time": 0.65,
+                    "picName": "lanternfestival_move (40).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "lanternfestival_move (41).png"
+                },
+                {
+                    "time": 0.6833333333333333,
+                    "picName": "lanternfestival_move (42).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "lanternfestival_move (43).png"
+                },
+                {
+                    "time": 0.7166666666666667,
+                    "picName": "lanternfestival_move (44).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "lanternfestival_move (45).png"
+                },
+                {
+                    "time": 0.75,
+                    "picName": "lanternfestival_move (46).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "lanternfestival_move (47).png"
+                },
+                {
+                    "time": 0.7833333333333333,
+                    "picName": "lanternfestival_move (48).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "lanternfestival_move (49).png"
+                },
+                {
+                    "time": 0.8166666666666667,
+                    "picName": "lanternfestival_move (50).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "lanternfestival_move (51).png"
+                },
+                {
+                    "time": 0.85,
+                    "picName": "lanternfestival_move (52).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "lanternfestival_move (53).png"
+                },
+                {
+                    "time": 0.8833333333333333,
+                    "picName": "lanternfestival_move (54).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "lanternfestival_move (55).png"
+                },
+                {
+                    "time": 0.9166666666666666,
+                    "picName": "lanternfestival_move (56).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "lanternfestival_move (57).png"
+                },
+                {
+                    "time": 0.95,
+                    "picName": "lanternfestival_move (58).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "lanternfestival_move (59).png"
+                },
+                {
+                    "time": 0.9833333333333333,
+                    "picName": "lanternfestival_move (60).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "lanternfestival_move (61).png"
+                },
+                {
+                    "time": 1.0166666666666666,
+                    "picName": "lanternfestival_move (62).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "lanternfestival_move (63).png"
+                },
+                {
+                    "time": 1.05,
+                    "picName": "lanternfestival_move (64).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "lanternfestival_move (65).png"
+                },
+                {
+                    "time": 1.0833333333333333,
+                    "picName": "lanternfestival_move (66).png"
+                }
+            ],
+            "totalSeconds": 1.1
+        },
+        {
+            "name": "die",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lanternfestival_die (1).png"
+                },
+                {
+                    "time": 0.016666666666666666,
+                    "picName": "lanternfestival_die (2).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lanternfestival_die (3).png"
+                },
+                {
+                    "time": 0.05,
+                    "picName": "lanternfestival_die (4).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lanternfestival_die (5).png"
+                },
+                {
+                    "time": 0.08333333333333333,
+                    "picName": "lanternfestival_die (6).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lanternfestival_die (7).png"
+                },
+                {
+                    "time": 0.11666666666666667,
+                    "picName": "lanternfestival_die (8).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lanternfestival_die (9).png"
+                },
+                {
+                    "time": 0.15,
+                    "picName": "lanternfestival_die (10).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lanternfestival_die (11).png"
+                },
+                {
+                    "time": 0.18333333333333332,
+                    "picName": "lanternfestival_die (12).png"
+                }
+            ],
+            "totalSeconds": 0.2
+        }
+    ],
+    "plists": [
+        "fish/golden/lanternfestival_move_0.plist",
+        "fish/golden/lanternfestival_die_0.plist"
+    ]
+}

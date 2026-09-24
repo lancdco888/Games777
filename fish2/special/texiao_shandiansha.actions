@@ -1,0 +1,70 @@
+{
+    "animsFileName": "texiao_shandiansha.anims",
+    "actions": [
+        {
+            "name": "1",
+            "totalSeconds": 0.26666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "2",
+            "totalSeconds": 0.25,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "3",
+            "totalSeconds": 0.1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "4",
+            "totalSeconds": 0.26666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                }
+            ]
+        },
+        {
+            "name": "5",
+            "totalSeconds": 0.4,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 4
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "animsFileName": "awakenkingtaco.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 14.27,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 2.1333333333333333,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 12.1333333333333333,
+                    "speed": 0,
+                    "animPlayRatio": -1,
+                    "animIndex": 1,
+                    "eventId": 5
+                },
+                {
+                    "time": 14.1666666,
+                    "speed": 0,
+                    "animPlayRatio": 0,
+                    "animIndex": 1,
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "into",
+            "totalSeconds": 2.1333333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

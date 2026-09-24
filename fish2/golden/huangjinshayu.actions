@@ -1,0 +1,18 @@
+{
+    "animsFileName": "huangjinshayu.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1.6333333333334,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 80,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 0
+                }
+            ]
+        }
+    ]
+}

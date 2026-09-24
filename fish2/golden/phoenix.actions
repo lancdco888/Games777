@@ -1,0 +1,129 @@
+{
+    "animsFileName": "phoenix.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 4.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 360,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 4.495,
+                    "speed": 400,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "bomb",
+            "totalSeconds": 1.2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "coin_up",
+            "totalSeconds": 1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "feather",
+            "totalSeconds": 0.6666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                }
+            ]
+        },
+        {
+            "name": "halo",
+            "totalSeconds": 0.6,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 4
+                }
+            ]
+        },
+        {
+            "name": "lianji",
+            "totalSeconds": 0.6666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 5
+                }
+            ]
+        },
+        {
+            "name": "move1",
+            "totalSeconds": 0.4,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 6
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "totalSeconds": 1.2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 7
+                }
+            ]
+        },
+        {
+            "name": "screen_fire",
+            "totalSeconds": 1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 8
+                }
+            ]
+        }
+    ]
+}

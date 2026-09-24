@@ -1,0 +1,215 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "maodaye_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "maodaye_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "maodaye_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "maodaye_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "maodaye_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "maodaye_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "maodaye_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "maodaye_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "maodaye_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "maodaye_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "maodaye_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "maodaye_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "maodaye_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "maodaye_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "maodaye_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "maodaye_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "maodaye_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "maodaye_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "maodaye_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "maodaye_move (39).png"
+                }
+            ],
+            "totalSeconds": 0.6666666666666666
+        },
+        {
+            "name": "dead_effect",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "maodaye_dead_effect (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "maodaye_dead_effect (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "maodaye_dead_effect (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "maodaye_dead_effect (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "maodaye_dead_effect (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "maodaye_dead_effect (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "maodaye_dead_effect (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "maodaye_dead_effect (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "maodaye_dead_effect (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "maodaye_dead_effect (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "maodaye_dead_effect (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "maodaye_dead_effect (23).png"
+                }
+            ],
+            "totalSeconds": 0.4
+        },
+        {
+            "name": "die",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "maodaye_die (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "maodaye_die (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "maodaye_die (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "maodaye_die (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "maodaye_die (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "maodaye_die (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "maodaye_die (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "maodaye_die (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "maodaye_die (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "maodaye_die (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "maodaye_die (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "maodaye_die (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "maodaye_die (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "maodaye_die (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "maodaye_die (29).png"
+                }
+            ],
+            "totalSeconds": 0.5
+        }
+    ],
+    "plists": [
+        "fish/special/maodaye_dead_effect_0.plist",
+        "fish/special/maodaye_die_0.plist",
+        "fish/special/maodaye_move_0.plist"
+    ]
+}

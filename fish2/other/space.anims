@@ -1,0 +1,12 @@
+{
+    "resFileName": "space.frames",
+    "anims": [
+        {
+            "name": "1",
+            "totalSeconds": 10000
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

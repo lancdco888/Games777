@@ -1,0 +1,41 @@
+{
+    "resFileName": "pumpkin.frames",
+    "anims": [
+        {
+            "name": "move",
+            "skin": "",
+            "totalSeconds": 0.6666666865348816,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": -4.9998779296875,
+                        "y": -15.00079345703125
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 0.9996337890625,
+                        "y": -8.00042724609375,
+                        "r": 92.47972869873047
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 0.9996337890625,
+                            "y": -8.00042724609375,
+                            "r": 92.47972869873047
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

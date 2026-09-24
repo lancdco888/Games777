@@ -1,0 +1,133 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "god_move (01).png"
+                },
+                {
+                    "time": 0.016666666666666666,
+                    "picName": "god_move (02).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "god_move (03).png"
+                },
+                {
+                    "time": 0.05,
+                    "picName": "god_move (04).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "god_move (05).png"
+                },
+                {
+                    "time": 0.08333333333333333,
+                    "picName": "god_move (06).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "god_move (07).png"
+                },
+                {
+                    "time": 0.11666666666666667,
+                    "picName": "god_move (08).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "god_move (09).png"
+                },
+                {
+                    "time": 0.15,
+                    "picName": "god_move (10).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "god_move (11).png"
+                },
+                {
+                    "time": 0.18333333333333332,
+                    "picName": "god_move (12).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "god_move (13).png"
+                },
+                {
+                    "time": 0.21666666666666667,
+                    "picName": "god_move (14).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "god_move (15).png"
+                },
+                {
+                    "time": 0.25,
+                    "picName": "god_move (16).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "god_move (17).png"
+                },
+                {
+                    "time": 0.2833333333333333,
+                    "picName": "god_move (18).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "god_move (19).png"
+                },
+                {
+                    "time": 0.31666666666666665,
+                    "picName": "god_move (20).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "god_move (21).png"
+                },
+                {
+                    "time": 0.35,
+                    "picName": "god_move (22).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "god_move (23).png"
+                },
+                {
+                    "time": 0.3833333333333333,
+                    "picName": "god_move (24).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "god_move (25).png"
+                },
+                {
+                    "time": 0.4166666666666667,
+                    "picName": "god_move (26).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "god_move (27).png"
+                },
+                {
+                    "time": 0.45,
+                    "picName": "god_move (28).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "god_move (29).png"
+                },
+                {
+                    "time": 0.48333333333333334,
+                    "picName": "god_move (30).png"
+                }
+            ],
+            "totalSeconds": 0.5
+        }
+    ],
+    "plists": [
+        "fish/golden/god_move_0.plist"
+    ]
+}

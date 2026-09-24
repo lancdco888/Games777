@@ -1,0 +1,133 @@
+{
+    "animsFileName": "zuantouxie.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 20,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 200,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 3,
+                    "speed": 150,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                },
+                {
+                    "time": 4,
+                    "speed": 80,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                },
+                {
+                    "time": 7,
+                    "speed": 250,
+                    "animPlayRatio": 1.2,
+                    "animIndex": 0
+                },
+                {
+                    "time": 8,
+                    "speed": -40,
+                    "animPlayRatio": 1.6,
+                    "animIndex": 0
+                },
+                {
+                    "time": 9.5,
+                    "speed": 80,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                },
+                {
+                    "time": 12,
+                    "speed": 150,
+                    "animPlayRatio": 0.9,
+                    "animIndex": 0
+                },
+                {
+                    "time": 14,
+                    "speed": 250,
+                    "animPlayRatio": 1.2,
+                    "animIndex": 0
+                }
+                
+            ]
+        },
+        {
+            "name": "boom",
+            "totalSeconds": 0.9833333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "cannon",
+            "totalSeconds": 0.6666666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        },
+        {
+            "name": "collide_effect",
+            "totalSeconds": 0.36666666666666664,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "speed": 0,
+                    "animPlayRatio": 0,
+                    "animIndex": 3,
+                    "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "drift",
+            "totalSeconds": 0.15,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 4
+                }
+            ]
+        },
+        {
+            "name": "move2",
+            "totalSeconds": 0.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 5
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "chiyanlonggui_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "chiyanlonggui_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "chiyanlonggui_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "chiyanlonggui_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "chiyanlonggui_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "chiyanlonggui_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "chiyanlonggui_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "chiyanlonggui_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "chiyanlonggui_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "chiyanlonggui_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "chiyanlonggui_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "chiyanlonggui_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "chiyanlonggui_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "chiyanlonggui_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "chiyanlonggui_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "chiyanlonggui_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "chiyanlonggui_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "chiyanlonggui_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "chiyanlonggui_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "chiyanlonggui_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "chiyanlonggui_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "chiyanlonggui_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "chiyanlonggui_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "chiyanlonggui_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "chiyanlonggui_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "chiyanlonggui_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "chiyanlonggui_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "chiyanlonggui_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "chiyanlonggui_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "chiyanlonggui_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "chiyanlonggui_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "chiyanlonggui_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "chiyanlonggui_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "chiyanlonggui_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "chiyanlonggui_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "chiyanlonggui_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "chiyanlonggui_move (73).png"
+                }
+            ],
+            "totalSeconds": 1.2333333333333334
+        },
+        {
+            "name": "attack",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "chiyanlonggui_roll (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "chiyanlonggui_roll (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "chiyanlonggui_roll (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "chiyanlonggui_roll (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "chiyanlonggui_roll (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "chiyanlonggui_roll (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "chiyanlonggui_roll (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "chiyanlonggui_roll (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "chiyanlonggui_roll (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "chiyanlonggui_roll (19).png"
+                }
+            ],
+            "totalSeconds": 0.3333333333333333
+        },
+        {
+            "name": "change",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "chiyanlonggui_change (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "chiyanlonggui_change (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "chiyanlonggui_change (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "chiyanlonggui_change (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "chiyanlonggui_change (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "chiyanlonggui_change (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "chiyanlonggui_change (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "chiyanlonggui_change (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "chiyanlonggui_change (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "chiyanlonggui_change (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "chiyanlonggui_change (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "chiyanlonggui_change (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "chiyanlonggui_change (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "chiyanlonggui_change (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "chiyanlonggui_change (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "chiyanlonggui_change (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "chiyanlonggui_change (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "chiyanlonggui_change (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "chiyanlonggui_change (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "chiyanlonggui_change (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "chiyanlonggui_change (41).png"
+                }
+            ],
+            "totalSeconds": 0.7
+        }
+    ],
+    "plists": [
+        "fish/golden/chiyanlonggui_roll_0.plist",
+        "fish/golden/chiyanlonggui_change_0.plist",
+        "fish/golden/chiyanlonggui_change_1.plist",
+        "fish/golden/chiyanlonggui_move_0.plist",
+        "fish/golden/chiyanlonggui_move_1.plist",
+        "fish/golden/chiyanlonggui_move_2.plist",
+        "fish/golden/chiyanlonggui_move_3.plist"
+    ]
+}

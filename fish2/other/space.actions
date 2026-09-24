@@ -1,0 +1,19 @@
+{
+    "animsFileName": "space.anims",
+    "actions": [
+        {
+            "name": "1",
+            "totalSeconds": 1000,
+            "baseSpeed": 0,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 0.1,
+                    "animIndex": 0,
+                    "eventId": 4
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,334 @@
+{
+    "animsFileName": "chiyanlonggui.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1000000,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 860,
+                    "animPlayRatio":1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 1.1,
+                    "speed": 860,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 1
+                },
+                {
+                    "time": 2.1,
+                    "speed": 860,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 1
+                },
+                {
+                    "time": 2.6,
+                    "speed": 860,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 1
+                },
+                {
+                    "time": 3.1,
+                    "speed": 860,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 1
+                },
+                {
+                    "time":4.3,
+                    "speed": 0,
+                    "animPlayRatio": 0.3,
+                    "eventId": 1100,
+                    "animIndex": 2
+                },
+                {
+                    "time": 6.11111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    
+                    "animIndex":0
+                },
+                {
+                    "time": 6.78111111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4, 
+                    "eventId": 1100, 
+                    "animIndex":0
+                },
+                {
+                    "time": 7.65111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 8.32111111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100, 
+                    "animIndex":0
+                },
+                {
+                    "time": 9.19111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 9.86111111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100, 
+                    "animIndex":0
+                },
+                {
+                    "time": 10.7311111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 11.4011111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100, 
+                    "animIndex":0
+                },
+                {
+                    "time": 12.2711111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 12.9411111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100, 
+                    "animIndex":0
+                },
+                {
+                    "time": 13.8111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 14.4811111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time": 15.3511111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 16,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time": 16.8911111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 17.5611111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time": 18.4311111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 19.1011111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time":19.9711111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 20.6411111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time":21.5111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 22.1811111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time":23.0511111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 23.7211111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time":24.5911111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 25.2611111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "eventId": 1100,
+                    "animIndex":0
+                },
+                {
+                    "time":26.1311111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 26.9011111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time":27.6711111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 28.4411111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 29.2111111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 29.9811111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 30.7511111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 31.5211111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 32.2911111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 33.0611111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 33.8311111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 34.6011111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 35.3711111111111,
+                    "speed": 0,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                },
+                {
+                    "time": 36.1411111111111,
+                    "speed": 145,
+                    "animPlayRatio": 0.4,
+                    "animIndex":0
+                }
+                
+            ]
+        },
+        {
+            "name": "attack",
+            "totalSeconds": 0.3333333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "change",
+            "totalSeconds": 0.6833333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        }
+    ]
+}

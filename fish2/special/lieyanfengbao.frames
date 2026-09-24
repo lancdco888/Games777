@@ -1,0 +1,316 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lieyanfengbao_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lieyanfengbao_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lieyanfengbao_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lieyanfengbao_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lieyanfengbao_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "lieyanfengbao_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "lieyanfengbao_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "lieyanfengbao_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "lieyanfengbao_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "lieyanfengbao_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "lieyanfengbao_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "lieyanfengbao_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "lieyanfengbao_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "lieyanfengbao_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "lieyanfengbao_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "lieyanfengbao_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "lieyanfengbao_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "lieyanfengbao_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "lieyanfengbao_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "lieyanfengbao_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "lieyanfengbao_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "lieyanfengbao_move (49).png"
+                }
+            ],
+            "totalSeconds": 0.8333333333333334
+        },
+        {
+            "name": "bullet",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_bullet (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_bullet (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_bullet (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lieyanfengbao_bullet (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lieyanfengbao_bullet (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lieyanfengbao_bullet (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lieyanfengbao_bullet (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lieyanfengbao_bullet (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "lieyanfengbao_bullet (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "lieyanfengbao_bullet (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "lieyanfengbao_bullet (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "lieyanfengbao_bullet (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "lieyanfengbao_bullet (25).png"
+                }
+            ],
+            "totalSeconds": 0.43333333333333335
+        },
+        {
+            "name": "cannon",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_cannon (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_cannon (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_cannon (5).png"
+                }
+            ],
+            "totalSeconds": 0.1
+        },
+        {
+            "name": "fire",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_fire (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_fire (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_fire (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lieyanfengbao_fire (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lieyanfengbao_fire (9).png"
+                }
+            ],
+            "totalSeconds": 0.16666666666666666
+        },
+        {
+            "name": "move_texiao",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_move_texiao (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_move_texiao (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_move_texiao (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lieyanfengbao_move_texiao (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lieyanfengbao_move_texiao (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lieyanfengbao_move_texiao (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lieyanfengbao_move_texiao (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lieyanfengbao_move_texiao (15).png"
+                }
+            ],
+            "totalSeconds": 0.26666666666666666
+        },
+        {
+            "name": "yuwang",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "lieyanfengbao_yuwang (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "lieyanfengbao_yuwang (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "lieyanfengbao_yuwang (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "lieyanfengbao_yuwang (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "lieyanfengbao_yuwang (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "lieyanfengbao_yuwang (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "lieyanfengbao_yuwang (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "lieyanfengbao_yuwang (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "lieyanfengbao_yuwang (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "lieyanfengbao_yuwang (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "lieyanfengbao_yuwang (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "lieyanfengbao_yuwang (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "lieyanfengbao_yuwang (25).png"
+                }
+            ],
+            "totalSeconds": 0.43333333333333335
+        }
+    ],
+    "plists": [
+        "fish/special/lieyanfengbao_bullet_0.plist",
+        "fish/special/lieyanfengbao_cannon_0.plist",
+        "fish/special/lieyanfengbao_fire_0.plist",
+        "fish/special/lieyanfengbao_move_0.plist",
+        "fish/special/lieyanfengbao_move_texiao_0.plist",
+        "fish/special/lieyanfengbao_yuwang_0.plist"
+    ]
+}

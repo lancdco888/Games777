@@ -1,0 +1,230 @@
+{
+    "animsFileName": "bawangxie.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 66666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 4,
+                    "speed": 250,
+                    "animPlayRatio": 1.4,
+                    "animIndex": 0
+                },
+                {
+                    "time": 4.5,
+                    "speed": 200,
+                    "animPlayRatio": 1.25,
+                    "animIndex": 0
+                },
+                {
+                    "time": 5,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 5.5,
+                    "speed": 100,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                },
+                {
+                    "time": 6,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 6.5,
+                    "speed": -300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 7,
+                    "speed": -300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 8,
+                    "speed": -250,
+                    "animPlayRatio": 1.4,
+                    "animIndex": 0
+                },
+                {
+                    "time": 8.5,
+                    "speed": -200,
+                    "animPlayRatio": 1.25,
+                    "animIndex": 0
+                },
+                {
+                    "time": 9,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 9.5,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 10,
+                    "speed": 300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 11.5,
+                    "speed": 200,
+                    "animPlayRatio": 1.25,
+                    "animIndex": 0
+                },
+                {
+                    "time": 13,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 14.5,
+                    "speed": 100,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                },
+                 {
+                    "time": 22,
+                    "speed": 300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 25,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                 {
+                    "time": 26,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 29,
+                    "speed": -300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 32,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 32.5,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 34,
+                    "speed": 300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 37,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 37.5,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 38,
+                    "speed": -300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 38.5,
+                    "speed": -150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 39,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 39.5,
+                    "speed": 300,
+                    "animPlayRatio": 1.5,
+                    "animIndex": 0
+                },
+                {
+                    "time": 43,
+                    "speed": 150,
+                    "animPlayRatio": 1.05,
+                    "animIndex": 0
+                },
+                {
+                    "time": 44,
+                    "speed": 100,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "die",
+            "totalSeconds": 1.33333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 2
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+            "name": "die1",
+            "totalSeconds": 0.3333333333333333,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        }
+    ]
+}

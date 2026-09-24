@@ -1,0 +1,48 @@
+{
+    "resFileName": "texiao_shandiansha.frames",
+    "anims": [
+        {
+            "name": "1",
+            "skin": "",
+            "totalSeconds": 0.2666666805744171,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "2",
+            "skin": "",
+            "totalSeconds": 0.2666666805744171,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "3",
+            "skin": "",
+            "totalSeconds": 0.10000000149011612,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "4",
+            "skin": "",
+            "totalSeconds": 0.2666666805744171,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "5",
+            "skin": "",
+            "totalSeconds": 0.4000000059604645,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}
