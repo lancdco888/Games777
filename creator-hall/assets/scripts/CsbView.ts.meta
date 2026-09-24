@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.24",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "b8e2c4d1-7a15-4e63-8c90-1f5d6a27b903",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/scripts/CsbView.js",
+    "importerSettings": 0,
+    "simulateGlobals": []
+  }
+}

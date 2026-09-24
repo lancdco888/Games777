@@ -1,0 +1,23 @@
+{
+  "nickname": "玩家9236",
+  "vipLevel": 3,
+  "money": "128,800",
+  "moneySafe": "50,000",
+  "washCode": "8,600",
+  "url": "www.game.com",
+  "games": [
+    { "id": 270, "name": "财富之眼" },
+    { "id": 336, "name": "和平&长寿" },
+    { "id": 341, "name": "魔法熊猫" },
+    { "id": 353, "name": "野牛-豪华版" },
+    { "id": 375, "name": "尤里卡列车" },
+    { "id": 388, "name": "江湖儿女" },
+    { "id": 465, "name": "五龙争霸Ⅱ" },
+    { "id": 475, "name": "海盗财宝" },
+    { "id": 479, "name": "熊猫宝藏Ⅱ" },
+    { "id": 481, "name": "Gates of Olympus 1000" },
+    { "id": 482, "name": "Gates of Olympus" },
+    { "id": 483, "name": "麻将胡了" },
+    { "id": 485, "name": "终极火链" }
+  ]
+}
