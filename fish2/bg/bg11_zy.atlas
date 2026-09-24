@@ -1,0 +1,20 @@
+
+bg11_zy.png
+size: 582,580
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg11/by_cj_shenhaibazhua_02
+  rotate: false
+  xy: 2, 22
+  size: 288, 556
+  orig: 288, 556
+  offset: 0, 0
+  index: -1
+bg11/by_cj_shenhaibazhua_03
+  rotate: false
+  xy: 292, 22
+  size: 288, 556
+  orig: 288, 556
+  offset: 0, 0
+  index: -1

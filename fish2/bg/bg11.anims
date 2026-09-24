@@ -1,0 +1,33 @@
+{
+    "resFileName": "bg11.atlas",
+    "anims": [
+        {
+            "name": "enter",
+            "totalSeconds": 0.666666
+        },
+        {
+            "name": "exit",
+            "totalSeconds": 0.666666
+        },
+        {
+            "name": "move",
+            "totalSeconds": 8
+        },
+        {
+            "name": "turn1",
+            "totalSeconds": 2
+        },
+        {
+            "name": "turn2",
+            "totalSeconds": 2
+        },
+        {
+            "name": "turn3",
+            "totalSeconds": 2
+        },
+        {
+            "name": "turn4",
+            "totalSeconds": 2
+        }
+    ]
+}

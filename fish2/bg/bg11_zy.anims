@@ -1,0 +1,9 @@
+{
+    "resFileName": "bg11_zy.atlas",
+    "anims": [
+        {
+            "name": "bg11_zy",
+            "totalSeconds": 8
+        }
+    ]
+}
