@@ -1,0 +1,18 @@
+{
+    "animsFileName": "fish_lbl_baozha.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 1.333334,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 0
+                }
+			]
+		}
+	]
+}

@@ -1,0 +1,111 @@
+
+fish_wfcs_yuanbao.png
+size: 368,612
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuanbao (1)
+  rotate: false
+  xy: 2, 490
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (11)
+  rotate: false
+  xy: 2, 368
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (13)
+  rotate: false
+  xy: 124, 490
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (15)
+  rotate: false
+  xy: 2, 246
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (17)
+  rotate: false
+  xy: 124, 368
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (19)
+  rotate: false
+  xy: 246, 490
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (21)
+  rotate: false
+  xy: 2, 124
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (23)
+  rotate: false
+  xy: 124, 246
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (25)
+  rotate: false
+  xy: 246, 368
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (27)
+  rotate: false
+  xy: 2, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (29)
+  rotate: false
+  xy: 124, 124
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (3)
+  rotate: false
+  xy: 246, 246
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (5)
+  rotate: false
+  xy: 124, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (7)
+  rotate: false
+  xy: 246, 124
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+yuanbao (9)
+  rotate: false
+  xy: 246, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1

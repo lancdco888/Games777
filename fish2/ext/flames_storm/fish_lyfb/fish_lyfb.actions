@@ -1,0 +1,25 @@
+{
+    "animsFileName": "fish_lyfb.anims",
+	"actions": [
+		{
+			"name": "fish_lyfb",
+			"totalSeconds": 4.53,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 4.52999,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		}
+	]
+}

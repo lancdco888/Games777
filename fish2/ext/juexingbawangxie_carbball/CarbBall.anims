@@ -1,0 +1,9 @@
+{
+    "resFileName": "CarbBall.frames",
+    "anims": [
+        {
+            "name": "carbball",
+            "totalSeconds": 0.8
+        }
+    ]
+}

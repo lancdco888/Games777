@@ -1,0 +1,12 @@
+{
+    "resFileName": "BombSpeedboat.frames",
+    "anims": [
+        {
+            "name": "speedboat_bomb",
+            "totalSeconds": 0.5666666666666667
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

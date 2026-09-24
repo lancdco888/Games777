@@ -1,0 +1,44 @@
+{
+    "animsFileName": "fish_jxayjs_boomstar.anims",
+	"actions": [
+		{
+			"name": "effect1",
+			"totalSeconds": 2.66667,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		},
+		{
+			"name": "effect2",
+			"totalSeconds": 0.666667,
+			"baseSpeed": 0,
+			"events": [
+				{
+					"time": 0,
+					"speed": 0,
+					"animPlayRatio": 1,
+					"animIndex": 1
+				}
+			]
+		},
+		{
+			"name": "effect3",
+			"totalSeconds": 2,
+			"baseSpeed": 0,
+			"events": [
+				{
+					"time": 0,
+					"speed": 0,
+					"animPlayRatio": 1,
+					"animIndex": 2
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_wfcs_yuanbao.atlas",
+    "anims": [
+        {
+            "name": "fish_wfcs_yuanbao",
+            "totalSeconds": 2
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

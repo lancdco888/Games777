@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_scorll.atlas",
+    "anims": [
+        {
+            "name": "fish_scroll_chuxian",
+            "totalSeconds": 11.9333
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

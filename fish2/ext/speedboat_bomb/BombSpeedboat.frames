@@ -1,0 +1,81 @@
+{
+    "frameAnims": [
+        {
+            "name": "speedboat_bomb",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "BombSpeedboat_Explotion (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "BombSpeedboat_Explotion (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "BombSpeedboat_Explotion (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "BombSpeedboat_Explotion (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "BombSpeedboat_Explotion (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "BombSpeedboat_Explotion (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "BombSpeedboat_Explotion (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "BombSpeedboat_Explotion (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "BombSpeedboat_Explotion (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "BombSpeedboat_Explotion (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "BombSpeedboat_Explotion (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "BombSpeedboat_Explotion (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "BombSpeedboat_Explotion (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "BombSpeedboat_Explotion (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "BombSpeedboat_Explotion (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "BombSpeedboat_Explotion (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "BombSpeedboat_Explotion (17).png"
+                }
+            ],
+            "totalSeconds": 0.5666666666666667
+        }
+    ],
+    "plists": [
+        "ext/speedboat_bomb/BombSpeedboat_Explotion_0.plist"
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "resFileName": "dragonred.frames",
+    "anims": [
+        {
+            "name": "fire",
+            "totalSeconds": 0.3333333333333333,
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "lockPoints": [
+                        {
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 0,
+                        "y": 0,
+                        "r": "147"
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "r": 73.5
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

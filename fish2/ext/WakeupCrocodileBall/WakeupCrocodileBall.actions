@@ -1,0 +1,18 @@
+{
+    "animsFileName": "WakeupCrocodileBall.anims",
+    "actions": [
+        {
+            "name": "show",
+            "totalSeconds": 1,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        }
+    ]
+}

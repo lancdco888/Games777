@@ -1,0 +1,44 @@
+{
+    "animsFileName": "fish_meirenyu_effect.anims",
+	"actions": [
+		{
+			"name": "effect",
+			"totalSeconds": 100000,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		},
+		{
+			"name": "kuang",
+			"totalSeconds": 100000,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+			]
+		},
+		{
+			"name": "stayheart",
+			"totalSeconds": 100000,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+			]
+		}
+	]
+}

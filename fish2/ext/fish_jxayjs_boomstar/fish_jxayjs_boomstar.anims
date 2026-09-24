@@ -1,0 +1,20 @@
+{
+    "resFileName": "fish_jxayjs_boomstar.atlas",
+    "anims": [
+        {
+            "name": "fish_jxayjs_boom",
+            "totalSeconds": 2.66667
+        },
+        {
+            "name": "fish_jxayjs_backlight",
+            "totalSeconds": 0.666667
+        },
+        {
+            "name": "fish_jxayjs_mid",
+            "totalSeconds": 2
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

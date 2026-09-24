@@ -1,0 +1,15 @@
+{
+    "resFileName": "fish_yuanxiao.atlas",
+    "anims": [
+        {
+            "name": "fish_yuanxiao",
+            "skin": "",
+            "totalSeconds": 2,
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

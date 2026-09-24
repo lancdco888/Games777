@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_lbl_baozha.atlas",
+    "anims": [
+        {
+            "name": "fish_lbl_baozha",
+            "totalSeconds": 0.666667
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

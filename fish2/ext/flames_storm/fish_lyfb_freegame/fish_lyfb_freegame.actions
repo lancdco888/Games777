@@ -1,0 +1,45 @@
+{
+    "animsFileName": "fish_lyfb_freegame.anims",
+	"actions": [
+		{
+			"name": "start",
+			"totalSeconds": 3.53333,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 3.53333,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		},
+		{
+            "name": "end",
+            "totalSeconds": 2.66667,
+            "baseSpeed": 0,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 2.66667,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+            ]
+        }
+	]
+}

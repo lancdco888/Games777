@@ -1,0 +1,314 @@
+
+fish_yuanxiao.png
+size: 3654,1094
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuanxiao_00003
+  rotate: false
+  xy: 2, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00006
+  rotate: false
+  xy: 334, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00009
+  rotate: false
+  xy: 2, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00012
+  rotate: false
+  xy: 334, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00015
+  rotate: false
+  xy: 666, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00018
+  rotate: false
+  xy: 2, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00021
+  rotate: false
+  xy: 334, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00024
+  rotate: false
+  xy: 666, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00027
+  rotate: false
+  xy: 998, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00030
+  rotate: false
+  xy: 334, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00033
+  rotate: false
+  xy: 666, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00036
+  rotate: false
+  xy: 998, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00039
+  rotate: false
+  xy: 1330, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00042
+  rotate: false
+  xy: 666, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00045
+  rotate: false
+  xy: 998, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00048
+  rotate: false
+  xy: 1330, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00051
+  rotate: false
+  xy: 1662, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00054
+  rotate: false
+  xy: 998, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00057
+  rotate: false
+  xy: 1330, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00060
+  rotate: false
+  xy: 1662, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00063
+  rotate: false
+  xy: 1994, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00066
+  rotate: false
+  xy: 1330, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00069
+  rotate: false
+  xy: 1662, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00072
+  rotate: false
+  xy: 1994, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00075
+  rotate: false
+  xy: 2326, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00078
+  rotate: false
+  xy: 1662, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00081
+  rotate: false
+  xy: 1994, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00084
+  rotate: false
+  xy: 2326, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00087
+  rotate: false
+  xy: 2658, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00090
+  rotate: false
+  xy: 1994, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00093
+  rotate: false
+  xy: 2326, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00096
+  rotate: false
+  xy: 2658, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00099
+  rotate: false
+  xy: 2990, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00102
+  rotate: false
+  xy: 2326, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00108
+  rotate: false
+  xy: 2658, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00111
+  rotate: false
+  xy: 2990, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00114
+  rotate: false
+  xy: 3322, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00117
+  rotate: false
+  xy: 2658, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00120
+  rotate: false
+  xy: 2990, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00123
+  rotate: false
+  xy: 3322, 548
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00126
+  rotate: false
+  xy: 2990, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00129
+  rotate: false
+  xy: 3322, 275
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00132
+  rotate: false
+  xy: 3322, 2
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1
+yuanxiao_00135
+  rotate: false
+  xy: 2, 821
+  size: 330, 271
+  orig: 330, 271
+  offset: 0, 0
+  index: -1

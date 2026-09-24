@@ -1,0 +1,133 @@
+{
+    "frameAnims": [
+        {
+            "name": "WakeupCrocodileBall",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "WakeupCrocodileBall (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "WakeupCrocodileBall (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "WakeupCrocodileBall (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "WakeupCrocodileBall (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "WakeupCrocodileBall (5).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "WakeupCrocodileBall (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "WakeupCrocodileBall (7).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "WakeupCrocodileBall (8).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "WakeupCrocodileBall (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "WakeupCrocodileBall (10).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "WakeupCrocodileBall (11).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "WakeupCrocodileBall (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "WakeupCrocodileBall (13).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "WakeupCrocodileBall (14).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "WakeupCrocodileBall (15).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "WakeupCrocodileBall (16).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "WakeupCrocodileBall (17).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "WakeupCrocodileBall (18).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "WakeupCrocodileBall (19).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "WakeupCrocodileBall (20).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "WakeupCrocodileBall (21).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "WakeupCrocodileBall (22).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "WakeupCrocodileBall (23).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "WakeupCrocodileBall (24).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "WakeupCrocodileBall (25).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "WakeupCrocodileBall (26).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "WakeupCrocodileBall (27).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "WakeupCrocodileBall (28).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "WakeupCrocodileBall (29).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "WakeupCrocodileBall (30).png"
+                }
+            ],
+            "totalSeconds": 1
+        }
+    ],
+    "plists": [
+        "ext/WakeupCrocodileBall/WakeupCrocodileBall_0.plist"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "animsFileName": "fish_ngsxd.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 1,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		}
+	]
+}

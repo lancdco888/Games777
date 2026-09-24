@@ -1,0 +1,31 @@
+{
+    "animsFileName": "Spine_BisonComing.anims",
+	"actions": [
+		{
+			"name": "BisonComing",
+			"totalSeconds": 4.8,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		},
+		{
+			"name": "BisonRunAway",
+			"totalSeconds": 2.13333,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		}
+	]
+}

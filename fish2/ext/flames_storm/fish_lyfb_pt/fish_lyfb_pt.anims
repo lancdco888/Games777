@@ -1,0 +1,24 @@
+{
+    "resFileName": "fish_lyfb_pt.atlas",
+    "anims": [
+        {
+            "name": "fish_lyfb_begin",
+            "totalSeconds": 1
+        },
+        {
+            "name": "fish_lyfb_fire",
+            "totalSeconds": 0.933333
+        },
+        {
+            "name": "fish_lyfb_ptquan",
+            "totalSeconds": 0.1
+        },
+        {
+            "name": "fish_lyfb_ptquan2",
+            "totalSeconds": 5
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

@@ -1,0 +1,62 @@
+
+fish_sd2.png
+size: 2898,644
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shandain (1)
+  rotate: true
+  xy: 364, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (13)
+  rotate: true
+  xy: 726, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (17)
+  rotate: true
+  xy: 1088, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (21)
+  rotate: true
+  xy: 1450, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (25)
+  rotate: true
+  xy: 1812, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (29)
+  rotate: true
+  xy: 2174, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (5)
+  rotate: true
+  xy: 2536, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+shandain (9)
+  rotate: true
+  xy: 2, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1

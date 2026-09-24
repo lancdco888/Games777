@@ -1,0 +1,20 @@
+{
+    "resFileName": "fish_meirenyu_effect.atlas",
+    "anims": [
+        {
+            "name": "fish_meirenyu_effect",
+            "totalSeconds": 4.83333
+        },
+        {
+            "name": "fish_meirenyu_kuang",
+            "totalSeconds": 2
+        },
+        {
+            "name": "fish_meirenyu_stayheart",
+            "totalSeconds": 0.5
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

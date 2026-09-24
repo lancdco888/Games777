@@ -1,0 +1,34 @@
+
+fish_gxfc.png
+size: 756,546
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bless
+  rotate: true
+  xy: 607, 116
+  size: 428, 147
+  orig: 428, 147
+  offset: 0, 0
+  index: -1
+cs
+  rotate: false
+  xy: 2, 152
+  size: 497, 392
+  orig: 497, 392
+  offset: 0, 0
+  index: -1
+getrich
+  rotate: false
+  xy: 2, 2
+  size: 603, 148
+  orig: 603, 148
+  offset: 0, 0
+  index: -1
+yuzhonglaixi_fuwangcaishenlaile
+  rotate: true
+  xy: 501, 173
+  size: 371, 43
+  orig: 371, 43
+  offset: 0, 0
+  index: -1

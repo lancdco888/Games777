@@ -1,0 +1,202 @@
+
+fish_lyfb_pt.png
+size: 2573,268
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+imagine/emputy
+  rotate: false
+  xy: 2570, 265
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (1)
+  rotate: true
+  xy: 2, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (10)
+  rotate: true
+  xy: 160, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (11)
+  rotate: true
+  xy: 318, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (12)
+  rotate: true
+  xy: 476, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (13)
+  rotate: true
+  xy: 634, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (14)
+  rotate: true
+  xy: 792, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (15)
+  rotate: true
+  xy: 950, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (2)
+  rotate: true
+  xy: 1108, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (3)
+  rotate: true
+  xy: 1266, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (4)
+  rotate: true
+  xy: 1424, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (5)
+  rotate: true
+  xy: 1582, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (6)
+  rotate: true
+  xy: 1740, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (7)
+  rotate: true
+  xy: 1898, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (8)
+  rotate: true
+  xy: 2056, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fire/lieyanfengbao_move_texiao (9)
+  rotate: true
+  xy: 2214, 2
+  size: 264, 156
+  orig: 264, 156
+  offset: 0, 0
+  index: -1
+imagine/fontfire/1
+  rotate: false
+  xy: 2372, 202
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/10
+  rotate: false
+  xy: 2438, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/11
+  rotate: false
+  xy: 2504, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/12
+  rotate: false
+  xy: 2504, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/2
+  rotate: false
+  xy: 2438, 202
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/3
+  rotate: false
+  xy: 2504, 202
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/4
+  rotate: false
+  xy: 2372, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/5
+  rotate: false
+  xy: 2372, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/6
+  rotate: false
+  xy: 2372, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/7
+  rotate: false
+  xy: 2438, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/8
+  rotate: false
+  xy: 2504, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/9
+  rotate: false
+  xy: 2438, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

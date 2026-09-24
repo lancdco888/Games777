@@ -1,0 +1,9 @@
+{
+    "resFileName": "fish_sd2.atlas",
+    "anims": [
+        {
+            "name": "fish_sd2",
+            "totalSeconds": 1.96667
+        }
+    ]
+}

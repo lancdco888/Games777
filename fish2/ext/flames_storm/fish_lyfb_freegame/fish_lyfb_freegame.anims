@@ -1,0 +1,16 @@
+{
+    "resFileName": "fish_lyfb_freegame.atlas",
+    "anims": [
+        {
+            "name": "start",
+            "totalSeconds": 3.53333
+        },
+        {
+            "name": "end",
+            "totalSeconds": 2.66667
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

@@ -1,0 +1,64 @@
+{
+    "animsFileName": "fish_lyfb_pt.anims",
+	"actions": [
+		{
+			"name": "fish_lyfb_begin",
+			"totalSeconds": 1,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 1,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		},
+		{
+            "name": "fish_lyfb_fire",
+            "totalSeconds": 0.933333,
+            "baseSpeed": 0,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        },
+        {
+             "name": "fish_lyfb_ptquan",
+             "totalSeconds": 1000,
+             "baseSpeed": 0,
+             "events": [
+                 {
+                     "time": 0,
+                     "speed": 0,
+                     "animPlayRatio": 0,
+                     "animIndex": 2
+                 }
+             ]
+        },
+        {
+             "name": "fish_lyfb_ptquan2",
+             "totalSeconds": 5,
+             "baseSpeed": 0,
+             "events": [
+                 {
+                     "time": 0,
+                     "speed": 0,
+                     "animPlayRatio": 1,
+                     "animIndex": 3
+                 }
+             ]
+        }
+	]
+}

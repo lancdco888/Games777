@@ -1,0 +1,27 @@
+
+fish_lyfb_freegame.png
+size: 444,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+emputy
+  rotate: false
+  xy: 2, 39
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+freegame/lieyanfengbao_wind
+  rotate: true
+  xy: 304, 2
+  size: 122, 138
+  orig: 122, 138
+  offset: 0, 0
+  index: -1
+lieyanfengbao_light
+  rotate: false
+  xy: 2, 42
+  size: 300, 82
+  orig: 300, 82
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,44 @@
+{
+    "resFileName": "WakeupCrocodileBall.frames",
+    "anims": [
+        {
+            "name": "WakeupCrocodileBall",
+            "totalSeconds": 1,
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "lockPoints": [
+                        {
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 0,
+                        "y": 0,
+                        "r": "316"
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "r": 158
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_ngsxd.atlas",
+    "anims": [
+        {
+            "name": "fish_ngsxd",
+            "totalSeconds": 1
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

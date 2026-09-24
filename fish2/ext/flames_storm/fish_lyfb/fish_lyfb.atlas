@@ -1,0 +1,139 @@
+
+fish_lyfb.png
+size: 1406,202
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+imagine/emputy
+  rotate: false
+  xy: 2, 2
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+imagine/fontfire/1
+  rotate: false
+  xy: 1142, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/10
+  rotate: false
+  xy: 1274, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/11
+  rotate: false
+  xy: 1340, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/12
+  rotate: false
+  xy: 1340, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/2
+  rotate: false
+  xy: 1142, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/3
+  rotate: false
+  xy: 1142, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/4
+  rotate: false
+  xy: 1208, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/5
+  rotate: false
+  xy: 1208, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/6
+  rotate: false
+  xy: 1208, 4
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/7
+  rotate: false
+  xy: 1274, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/8
+  rotate: false
+  xy: 1340, 136
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/fontfire/9
+  rotate: false
+  xy: 1274, 70
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (1)
+  rotate: true
+  xy: 2, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (2)
+  rotate: true
+  xy: 192, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (3)
+  rotate: true
+  xy: 382, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (4)
+  rotate: true
+  xy: 572, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (5)
+  rotate: true
+  xy: 762, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1
+imagine/pao/pao (6)
+  rotate: true
+  xy: 952, 5
+  size: 195, 188
+  orig: 195, 188
+  offset: 0, 0
+  index: -1

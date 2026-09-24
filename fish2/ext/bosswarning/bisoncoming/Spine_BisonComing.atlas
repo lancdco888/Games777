@@ -1,0 +1,97 @@
+
+Spine_BisonComing.png
+size: 1966,1492
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Blink_1
+  rotate: false
+  xy: 553, 334
+  size: 150, 89
+  orig: 150, 89
+  offset: 0, 0
+  index: -1
+Blink_2
+  rotate: false
+  xy: 705, 334
+  size: 150, 89
+  orig: 150, 89
+  offset: 0, 0
+  index: -1
+RunAway_red_smoke
+  rotate: true
+  xy: 553, 425
+  size: 1065, 527
+  orig: 1065, 527
+  offset: 0, 0
+  index: -1
+bison
+  rotate: false
+  xy: 2, 57
+  size: 607, 235
+  orig: 607, 235
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1082, 2
+  size: 585, 432
+  orig: 585, 432
+  offset: 0, 0
+  index: -1
+come_bg
+  rotate: false
+  xy: 1082, 436
+  size: 759, 498
+  orig: 759, 498
+  offset: 0, 0
+  index: -1
+come_tittle02bg
+  rotate: false
+  xy: 2, 6
+  size: 589, 49
+  orig: 589, 49
+  offset: 0, 0
+  index: -1
+crazy
+  rotate: true
+  xy: 916, 65
+  size: 267, 133
+  orig: 267, 133
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 611, 61
+  size: 271, 303
+  orig: 271, 303
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 2, 294
+  size: 1196, 549
+  orig: 1196, 549
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 593, 16
+  size: 64, 39
+  orig: 64, 39
+  offset: 0, 0
+  index: -1
+red_smoke
+  rotate: false
+  xy: 1082, 936
+  size: 882, 554
+  orig: 882, 554
+  offset: 0, 0
+  index: -1
+smoke
+  rotate: false
+  xy: 857, 334
+  size: 89, 89
+  orig: 89, 89
+  offset: 0, 0
+  index: -1

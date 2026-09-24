@@ -1,0 +1,16 @@
+{
+    "resFileName": "boom_coin.frames",
+    "anims": [
+        {
+            "name": "coin_up",
+            "skin": "",
+            "totalSeconds": 1,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

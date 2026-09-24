@@ -1,0 +1,16 @@
+{
+    "resFileName": "Spine_BisonComing.atlas",
+    "anims": [
+        {
+            "name": "BisonComing",
+            "totalSeconds": 4.8
+        },
+        {
+            "name": "BisonRunAway",
+            "totalSeconds": 2.13333
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

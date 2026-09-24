@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_lyfb.atlas",
+    "anims": [
+        {
+            "name": "fish_lyfb",
+            "totalSeconds": 4.53
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

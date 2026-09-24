@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_gxfc.atlas",
+    "anims": [
+        {
+            "name": "fish_gxfc",
+            "totalSeconds": 3.33333
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

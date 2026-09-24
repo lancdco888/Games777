@@ -1,0 +1,531 @@
+
+fish_jxayjs_boomstar.png
+size: 2676,2676
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juexing/light
+  rotate: false
+  xy: 2532, 1736
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_01
+  rotate: false
+  xy: 1376, 427
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_02
+  rotate: false
+  xy: 1562, 212
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_03
+  rotate: false
+  xy: 1580, 427
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_04
+  rotate: true
+  xy: 1562, 8
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_05
+  rotate: false
+  xy: 1766, 212
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_06
+  rotate: true
+  xy: 1777, 8
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_07
+  rotate: false
+  xy: 1634, 943
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_08
+  rotate: false
+  xy: 1634, 728
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_09
+  rotate: false
+  xy: 1784, 513
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_10
+  rotate: false
+  xy: 1970, 298
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_11
+  rotate: false
+  xy: 1992, 83
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_12
+  rotate: false
+  xy: 1838, 943
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_13
+  rotate: false
+  xy: 1838, 728
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_14
+  rotate: false
+  xy: 1988, 513
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_15
+  rotate: false
+  xy: 2174, 298
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_16
+  rotate: false
+  xy: 2196, 83
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_17
+  rotate: true
+  xy: 2378, 954
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_18
+  rotate: false
+  xy: 2042, 739
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_19
+  rotate: true
+  xy: 2042, 954
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/1/AnglerFishBall_20
+  rotate: false
+  xy: 2192, 524
+  size: 202, 213
+  orig: 202, 213
+  offset: 0, 0
+  index: -1
+jxayjs/204250pkvememc57vz.thumb
+  rotate: false
+  xy: 1352, 60
+  size: 208, 208
+  orig: 208, 208
+  offset: 0, 0
+  index: -1
+jxayjs/T_Aura_Gray
+  rotate: false
+  xy: 2532, 1802
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+jxayjs/T_Phoenix_Explosion_Ray_A
+  rotate: false
+  xy: 1500, 1674
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/ci
+  rotate: false
+  xy: 2598, 1736
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00000
+  rotate: false
+  xy: 1758, 1674
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00008
+  rotate: false
+  xy: 2016, 1674
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00016
+  rotate: false
+  xy: 2274, 1674
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00024
+  rotate: false
+  xy: 1500, 1416
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00032
+  rotate: false
+  xy: 1118, 1302
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00040
+  rotate: false
+  xy: 1758, 1416
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00048
+  rotate: false
+  xy: 2016, 1416
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00056
+  rotate: false
+  xy: 2274, 1416
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00064
+  rotate: false
+  xy: 1376, 1158
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00072
+  rotate: false
+  xy: 1118, 1044
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00080
+  rotate: false
+  xy: 1634, 1158
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00088
+  rotate: false
+  xy: 1892, 1158
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00096
+  rotate: false
+  xy: 2150, 1158
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00104
+  rotate: false
+  xy: 2408, 1158
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00112
+  rotate: false
+  xy: 1376, 900
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00120
+  rotate: false
+  xy: 1118, 786
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00128
+  rotate: false
+  xy: 1376, 642
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00136
+  rotate: false
+  xy: 1118, 528
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/midshandian/sd_00144
+  rotate: false
+  xy: 1118, 270
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+jxayjs/quan
+  rotate: false
+  xy: 1118, 36
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00003
+  rotate: false
+  xy: 2, 2294
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00006
+  rotate: false
+  xy: 2, 1912
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00009
+  rotate: false
+  xy: 2, 1530
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00012
+  rotate: false
+  xy: 2, 1148
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00015
+  rotate: false
+  xy: 2, 766
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00018
+  rotate: false
+  xy: 2, 384
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00021
+  rotate: false
+  xy: 2, 2
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00024
+  rotate: true
+  xy: 374, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00027
+  rotate: true
+  xy: 756, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00030
+  rotate: true
+  xy: 1138, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00033
+  rotate: true
+  xy: 1520, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00036
+  rotate: true
+  xy: 1902, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00039
+  rotate: true
+  xy: 2284, 2304
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00042
+  rotate: false
+  xy: 374, 1922
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00045
+  rotate: false
+  xy: 374, 1540
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00048
+  rotate: false
+  xy: 374, 1158
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00051
+  rotate: false
+  xy: 374, 776
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00054
+  rotate: false
+  xy: 374, 394
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00057
+  rotate: false
+  xy: 374, 12
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00060
+  rotate: true
+  xy: 746, 1932
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00063
+  rotate: true
+  xy: 1128, 1932
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00066
+  rotate: true
+  xy: 1510, 1932
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00069
+  rotate: true
+  xy: 1892, 1932
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00072
+  rotate: true
+  xy: 2274, 1932
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00075
+  rotate: false
+  xy: 746, 1550
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00078
+  rotate: false
+  xy: 746, 1168
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00081
+  rotate: false
+  xy: 746, 786
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00084
+  rotate: false
+  xy: 746, 404
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00087
+  rotate: false
+  xy: 746, 22
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
+jxayjs/star/star_00090
+  rotate: true
+  xy: 1118, 1560
+  size: 370, 380
+  orig: 370, 380
+  offset: 0, 0
+  index: -1
