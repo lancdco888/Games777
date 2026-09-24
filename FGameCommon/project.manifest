@@ -1,0 +1,525 @@
+{
+    "assets": {
+        "res/Basics/all_xfj_sj.atlasb45c1a74797c10c720753b3c3158eb39": {
+            "md5": "b45c1a74797c10c720753b3c3158eb39"
+        },
+        "res/Basics/all_xfj_sj.json24ea3ee706c3c8139273a354def2c3b5": {
+            "md5": "24ea3ee706c3c8139273a354def2c3b5"
+        },
+        "res/Basics/all_xfj_sj.png6e4296d6bf96f22605ac779527caafc9": {
+            "md5": "6e4296d6bf96f22605ac779527caafc9"
+        },
+        "res/Basics/an_win.atlas08f6e9becdd42ec77ce35c9f0a17717a": {
+            "md5": "08f6e9becdd42ec77ce35c9f0a17717a"
+        },
+        "res/Basics/an_win.json463b027be39b344af4350394b56b7393": {
+            "md5": "463b027be39b344af4350394b56b7393"
+        },
+        "res/Basics/an_win.png4f1d23275e819fd137ab4e861d622f0e": {
+            "md5": "4f1d23275e819fd137ab4e861d622f0e"
+        },
+        "res/Basics/an_win_v.atlas7b9d1bf392f2754f0f5557f22749d75f": {
+            "md5": "7b9d1bf392f2754f0f5557f22749d75f"
+        },
+        "res/Basics/an_win_v.json5c3eacd0284f87951622410348d4892f": {
+            "md5": "5c3eacd0284f87951622410348d4892f"
+        },
+        "res/Basics/an_win_v.png0a69a544a0cd3ec5a00fa49f2bfbc502": {
+            "md5": "0a69a544a0cd3ec5a00fa49f2bfbc502"
+        },
+        "res/Basics/Basics.fuif293bb69f3de01e713dd4aafe1b28560": {
+            "md5": "f293bb69f3de01e713dd4aafe1b28560"
+        },
+        "res/Basics/Basics_atlas0.png91e3e6983cf9bade22a314062f371fb2": {
+            "md5": "91e3e6983cf9bade22a314062f371fb2"
+        },
+        "res/Basics/Basics_atlas_ck5w9r.png043dd8691b57bd94d71ddab115c634de": {
+            "md5": "043dd8691b57bd94d71ddab115c634de"
+        },
+        "res/Basics/Basics_atlas_e4qqg7.png84f5c4be7e9844328ad264ed2844c173": {
+            "md5": "84f5c4be7e9844328ad264ed2844c173"
+        },
+        "res/Basics/Basics_atlas_e4qqgx.pngadc92d4b079827f402572b79630f65f0": {
+            "md5": "adc92d4b079827f402572b79630f65f0"
+        },
+        "res/Basics/Basics_atlas_e4qqhf.png7e09e0a302b49036f7ffc97470e47db2": {
+            "md5": "7e09e0a302b49036f7ffc97470e47db2"
+        },
+        "res/Basics/Basics_atlas_e4qqig.png645f7e75a54b324006af7de49c4ab708": {
+            "md5": "645f7e75a54b324006af7de49c4ab708"
+        },
+        "res/Basics/Basics_atlas_i1o2jw.pngadd4876db52c15cc21fb8f6b2c9071c3": {
+            "md5": "add4876db52c15cc21fb8f6b2c9071c3"
+        },
+        "res/Basics/Basics_atlas_ki9zcy.png1c9914566df204f6a252aadb9796c50e": {
+            "md5": "1c9914566df204f6a252aadb9796c50e"
+        },
+        "res/Basics/Basics_atlas_r14rks.png4524f1084e497cf85a15087dba0fb30c": {
+            "md5": "4524f1084e497cf85a15087dba0fb30c"
+        },
+        "res/Basics/Basics_atlas_r14rkt.pngc6cdea2210d4fea4bbd085e06c4bf0ec": {
+            "md5": "c6cdea2210d4fea4bbd085e06c4bf0ec"
+        },
+        "res/Basics/Basics_ck5w9s.mp3aed938d1de6c2eccdcf13225fdc1fa9e": {
+            "md5": "aed938d1de6c2eccdcf13225fdc1fa9e"
+        },
+        "res/Basics/Basics_ck5w9t.mp3689a877228829057816a7ba9e23e275d": {
+            "md5": "689a877228829057816a7ba9e23e275d"
+        },
+        "res/Basics/Basics_ck5w9v.mp3593990a39d4f02d2cb657cf29c7ef337": {
+            "md5": "593990a39d4f02d2cb657cf29c7ef337"
+        },
+        "res/Basics/Basics_ck5w9w.mp33b2a4cd72af86c231d272355de36338f": {
+            "md5": "3b2a4cd72af86c231d272355de36338f"
+        },
+        "res/Basics/Basics_ck5w9x.mp3c744c2e6cac9fd7b1230ecb70ee5fe65": {
+            "md5": "c744c2e6cac9fd7b1230ecb70ee5fe65"
+        },
+        "res/Basics/Basics_ck5w9y.mp3e184e5f0d644471720bf80a2ace64c35": {
+            "md5": "e184e5f0d644471720bf80a2ace64c35"
+        },
+        "res/Basics/Basics_ck5w9z.mp3ce3f91b1166642a7a6b8145eef591e7b": {
+            "md5": "ce3f91b1166642a7a6b8145eef591e7b"
+        },
+        "res/Basics/Basics_ck5wa0.mp3916c275303d8e533eb5905f85ddd565c": {
+            "md5": "916c275303d8e533eb5905f85ddd565c"
+        },
+        "res/Basics/Basics_ck5wa1.mp3ed5707e4190ac0713ab3ba727abe71f0": {
+            "md5": "ed5707e4190ac0713ab3ba727abe71f0"
+        },
+        "res/Basics/Basics_ck5wa2.mp3e967e8c357607f66d80ffee89a2ad256": {
+            "md5": "e967e8c357607f66d80ffee89a2ad256"
+        },
+        "res/Basics/Basics_ck5wa3.mp34a81d11bb90bef9d47e1031feccc7ba3": {
+            "md5": "4a81d11bb90bef9d47e1031feccc7ba3"
+        },
+        "res/Basics/Basics_ck5wa4.mp36fd7555de96ec3e11a0b51211c441a2f": {
+            "md5": "6fd7555de96ec3e11a0b51211c441a2f"
+        },
+        "res/Basics/Basics_ck5wa5.mp3e07abade779513597c82b0d7fddd5b54": {
+            "md5": "e07abade779513597c82b0d7fddd5b54"
+        },
+        "res/Basics/Basics_ck5wa6.mp3ac13b1242178773e40ace0edfd0722cb": {
+            "md5": "ac13b1242178773e40ace0edfd0722cb"
+        },
+        "res/Basics/Basics_ck5wa7.mp33d8805554d17e3a5ba853f2dba2271cd": {
+            "md5": "3d8805554d17e3a5ba853f2dba2271cd"
+        },
+        "res/Basics/Basics_ck5wa8.mp30b5b99f045850e48d32d194c049ef4b1": {
+            "md5": "0b5b99f045850e48d32d194c049ef4b1"
+        },
+        "res/Basics/Basics_ck5wa9.mp353a0d5123ea7dc8efc826d07f3294c03": {
+            "md5": "53a0d5123ea7dc8efc826d07f3294c03"
+        },
+        "res/Basics/Basics_ck5waa.mp352e2dbd0b5e99770fa66f3b1692277c0": {
+            "md5": "52e2dbd0b5e99770fa66f3b1692277c0"
+        },
+        "res/Basics/Basics_ck5wab.mp378dadfb3dcb35d0f201e15f3fddef736": {
+            "md5": "78dadfb3dcb35d0f201e15f3fddef736"
+        },
+        "res/Basics/Basics_qien80.mp38c12ea2e27e2c12bed89710055df6af9": {
+            "md5": "8c12ea2e27e2c12bed89710055df6af9"
+        },
+        "res/Basics/Basics_uop2ca.mp39349c1d830104d7167c247c8fd7cc347": {
+            "md5": "9349c1d830104d7167c247c8fd7cc347"
+        },
+        "res/Basics/Basics_vbbidt.mp3ad28e824d13ff3cd2e2642ca09a3411f": {
+            "md5": "ad28e824d13ff3cd2e2642ca09a3411f"
+        },
+        "res/Basics/Basics_vbbidu.mp383455eb0159e883358f861ca97f8e624": {
+            "md5": "83455eb0159e883358f861ca97f8e624"
+        },
+        "res/Basics/Basics_vbbidv.mp33c877fa507f51ae833658b272288e3e0": {
+            "md5": "3c877fa507f51ae833658b272288e3e0"
+        },
+        "res/Basics/Basics_vbbidw.mp328ba4960d92fc689bbc29251eab0cbc2": {
+            "md5": "28ba4960d92fc689bbc29251eab0cbc2"
+        },
+        "res/Basics/Basics_vbbidx.mp367c44f1c06aada1fe5c2461d2d29f4ad": {
+            "md5": "67c44f1c06aada1fe5c2461d2d29f4ad"
+        },
+        "res/Basics/Basics_vbbidy.mp3be7edb406608d2a947603b58a67f8a03": {
+            "md5": "be7edb406608d2a947603b58a67f8a03"
+        },
+        "res/Basics/Basics_vbbidz.mp3eb99ef776bc0ba23bb28ae368d4c1db7": {
+            "md5": "eb99ef776bc0ba23bb28ae368d4c1db7"
+        },
+        "res/Basics/Basics_vbbie0.mp3e9ff7c450cc30cf24a0f92c77806cd2e": {
+            "md5": "e9ff7c450cc30cf24a0f92c77806cd2e"
+        },
+        "res/Basics/Basics_vbbie1.mp3fea97ebf959efba01ad050d3a0a1beed": {
+            "md5": "fea97ebf959efba01ad050d3a0a1beed"
+        },
+        "res/Basics/Basics_vbbie2.mp356733f290e8bf4462aaffd44d8fb67c3": {
+            "md5": "56733f290e8bf4462aaffd44d8fb67c3"
+        },
+        "res/Basics/Basics_vbbie3.mp325e21f9ce78c1a592ec5a0e806df4456": {
+            "md5": "25e21f9ce78c1a592ec5a0e806df4456"
+        },
+        "res/Basics/Basics_vbbie4.mp30af6ce23bb9871a9a9aa2f7a21224b86": {
+            "md5": "0af6ce23bb9871a9a9aa2f7a21224b86"
+        },
+        "res/Basics/Basics_vbbie5.mp368b6cdd44d07fbdb5949d5ea77e5187c": {
+            "md5": "68b6cdd44d07fbdb5949d5ea77e5187c"
+        },
+        "res/Basics/Basics_vbbie6.mp39abd3f235ffb55990fa6e2dfbe358eec": {
+            "md5": "9abd3f235ffb55990fa6e2dfbe358eec"
+        },
+        "res/Basics/Basics_vbbie7.mp35768220398a3900efc734900a7be2061": {
+            "md5": "5768220398a3900efc734900a7be2061"
+        },
+        "res/Basics/Basics_vbbie8.mp34151520821d72b68602511ad3f2dadfc": {
+            "md5": "4151520821d72b68602511ad3f2dadfc"
+        },
+        "res/Basics/Basics_vbbie9.mp3646c5cac38a85a9461f5ea553076a396": {
+            "md5": "646c5cac38a85a9461f5ea553076a396"
+        },
+        "res/Basics/Basics_vbbiea.mp337ed90dcb1d113abc36bee1e2d414332": {
+            "md5": "37ed90dcb1d113abc36bee1e2d414332"
+        },
+        "res/Basics/Basics_vbbieb.mp3a300ee1499ac39388a5744429afe808a": {
+            "md5": "a300ee1499ac39388a5744429afe808a"
+        },
+        "res/Basics/Basics_vbbiec.mp357d9bd26911ba905b4412466df96fb41": {
+            "md5": "57d9bd26911ba905b4412466df96fb41"
+        },
+        "res/Basics/Basics_vbbied.mp3ab3d5febb34d004d703de9c88a9d1647": {
+            "md5": "ab3d5febb34d004d703de9c88a9d1647"
+        },
+        "res/Basics/Basics_vbbiee.mp399ed0f6ca87d4e83130878b3e76fdec2": {
+            "md5": "99ed0f6ca87d4e83130878b3e76fdec2"
+        },
+        "res/Basics/Basics_vbbief.mp34e0697e9d297e90b70cc8bd68353cfd3": {
+            "md5": "4e0697e9d297e90b70cc8bd68353cfd3"
+        },
+        "res/Basics/Basics_vbbieg.mp302ea5cd2a39261f0d74e512e0d0145a2": {
+            "md5": "02ea5cd2a39261f0d74e512e0d0145a2"
+        },
+        "res/Basics/Basics_vbbieh.mp3342aba03522beb717b9083aeb3799dd3": {
+            "md5": "342aba03522beb717b9083aeb3799dd3"
+        },
+        "res/Basics/Basics_vbbiei.mp37e716cb524d601ad88d8abec64832c17": {
+            "md5": "7e716cb524d601ad88d8abec64832c17"
+        },
+        "res/Basics/Basics_vbbiej.mp30005ea94dfcc5cf179f1cdf18f0ba4c7": {
+            "md5": "0005ea94dfcc5cf179f1cdf18f0ba4c7"
+        },
+        "res/Basics/Basics_vbbiek.mp373beef70432976971ea564d31ca42897": {
+            "md5": "73beef70432976971ea564d31ca42897"
+        },
+        "res/Basics/Basics_vbbiel.mp39bbcc9221ba43d66834c56fc3463306c": {
+            "md5": "9bbcc9221ba43d66834c56fc3463306c"
+        },
+        "res/Basics/Basics_vbbiem.mp3d588c3494419e58873b55ca7bbdffda5": {
+            "md5": "d588c3494419e58873b55ca7bbdffda5"
+        },
+        "res/Basics/Basics_vbbien.mp32a38fa54ff19881f3d2dd2925ee088e7": {
+            "md5": "2a38fa54ff19881f3d2dd2925ee088e7"
+        },
+        "res/Basics/Basics_vbbieo.mp386761c1ef4900f637f3cb5f915b7afb6": {
+            "md5": "86761c1ef4900f637f3cb5f915b7afb6"
+        },
+        "res/Basics/slot_sj_big.atlas6a66dad6ffec7fc299f80881beb81f73": {
+            "md5": "6a66dad6ffec7fc299f80881beb81f73"
+        },
+        "res/Basics/slot_sj_big.json40027e106d7bcb7b3b8cbca316ef468f": {
+            "md5": "40027e106d7bcb7b3b8cbca316ef468f"
+        },
+        "res/Basics/slot_sj_big.png712bd00c320bc1e968777d10b88ebcee": {
+            "md5": "712bd00c320bc1e968777d10b88ebcee"
+        },
+        "res/Basics/Theme_CrimsonCartoon/361_sd_icon.atlas59b2d2290e045684838e1d3749d415a6": {
+            "md5": "59b2d2290e045684838e1d3749d415a6"
+        },
+        "res/Basics/Theme_CrimsonCartoon/361_sd_icon.json9781e3e1a8893cbb35690a3367ec665f": {
+            "md5": "9781e3e1a8893cbb35690a3367ec665f"
+        },
+        "res/Basics/Theme_CrimsonCartoon/361_sd_icon.png4ae19bbe140165a9e5a9e9777cc87348": {
+            "md5": "4ae19bbe140165a9e5a9e9777cc87348"
+        },
+        "res/Basics/Theme_CrimsonCartoon/Theme_CrimsonCartoon.fui8dc84a1b1ea3afec4a84cde8e831836a": {
+            "md5": "8dc84a1b1ea3afec4a84cde8e831836a"
+        },
+        "res/Basics/Theme_CrimsonCartoon/Theme_CrimsonCartoon_atlas0.png29d2246f80bf63d9631cc0f324ad110f": {
+            "md5": "29d2246f80bf63d9631cc0f324ad110f"
+        },
+        "res/Basics/Theme_CrimsonCartoon/Theme_CrimsonCartoon_gjpzjw.mp3ce8596e73108c9b88aeefb1e751c24ec": {
+            "md5": "ce8596e73108c9b88aeefb1e751c24ec"
+        },
+        "res/Basics/Theme_CrimsonCartoon/Theme_CrimsonCartoon_gjpzjz.mp34789bf328a31f07ce213998d5afa9e96": {
+            "md5": "4789bf328a31f07ce213998d5afa9e96"
+        },
+        "res/Basics/Theme_CrimsonCartoon/Theme_CrimsonCartoon_le0eoc.mp38c12ea2e27e2c12bed89710055df6af9": {
+            "md5": "8c12ea2e27e2c12bed89710055df6af9"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac.fui619f35832a0414afbd28c535c75d60b8": {
+            "md5": "619f35832a0414afbd28c535c75d60b8"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0.png32e4cef9c072c889776696ffa5db60c4": {
+            "md5": "32e4cef9c072c889776696ffa5db60c4"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_bd.png69ea17b19d20b6e8b7fc8dab055705ba": {
+            "md5": "69ea17b19d20b6e8b7fc8dab055705ba"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_cn.png4bdbd238d105be7eb8c41e98844cd425": {
+            "md5": "4bdbd238d105be7eb8c41e98844cd425"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_es.png9395cb1eea651a6e7ac59c1800df07a5": {
+            "md5": "9395cb1eea651a6e7ac59c1800df07a5"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_ind.png4ce14f1975c88b082f88173dc6080289": {
+            "md5": "4ce14f1975c88b082f88173dc6080289"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_mm.pngcde09b67f13108c6b1dfc148813b11c5": {
+            "md5": "cde09b67f13108c6b1dfc148813b11c5"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_ph.png657eca8401ebd2d40c2a5729acb6f6a8": {
+            "md5": "657eca8401ebd2d40c2a5729acb6f6a8"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_pt.png4ed5efda234165368b8cd2838983c049": {
+            "md5": "4ed5efda234165368b8cd2838983c049"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_tha.pngf8a99ef800607c7af59f7b79bd279625": {
+            "md5": "f8a99ef800607c7af59f7b79bd279625"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas0_vn.png04ec52b8135e9ac83b1ff57e5982ef6f": {
+            "md5": "04ec52b8135e9ac83b1ff57e5982ef6f"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas10.pngabf13b52f0009504dc088f7dc6b6bab2": {
+            "md5": "abf13b52f0009504dc088f7dc6b6bab2"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_cg5sn7.pngefdc4c9735f626fc1e4e2049f1adc197": {
+            "md5": "efdc4c9735f626fc1e4e2049f1adc197"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_cg5sn8.pngd8a4235ccbe1eada4721a4229c88d89e": {
+            "md5": "d8a4235ccbe1eada4721a4229c88d89e"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_ck5w90.pngaa691e05eed06668f9ab5f4c8e4d4b60": {
+            "md5": "aa691e05eed06668f9ab5f4c8e4d4b60"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_ck5w95.png665744178f150ab324478daf31ab4aba": {
+            "md5": "665744178f150ab324478daf31ab4aba"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_emuxj0.pngaca6d316785e5a3ab416155e9a2f5dca": {
+            "md5": "aca6d316785e5a3ab416155e9a2f5dca"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_atlas_pprxjk.pngfbf4c6dfeba1b339e98de13bdfa1e04f": {
+            "md5": "fbf4c6dfeba1b339e98de13bdfa1e04f"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_gttgc9.mp30d45b28480a8236a5e7628549cd5b17f": {
+            "md5": "0d45b28480a8236a5e7628549cd5b17f"
+        },
+        "res/Basics/Theme_Lilac/Theme_Lilac_qien80.mp38c12ea2e27e2c12bed89710055df6af9": {
+            "md5": "8c12ea2e27e2c12bed89710055df6af9"
+        },
+        "src/FGame/Common/CasinoContext.lua95ec145b86c2ab8962e7b30c625eef35": {
+            "md5": "95ec145b86c2ab8962e7b30c625eef35"
+        },
+        "src/FGame/Common/Entry.luadfef9996ddcbabe79c324b346fbd55fd": {
+            "md5": "dfef9996ddcbabe79c324b346fbd55fd"
+        },
+        "src/FGame/Common/FTheme.lua15ccb5b15f57f8ce75e7adf98ccc4aaf": {
+            "md5": "15ccb5b15f57f8ce75e7adf98ccc4aaf"
+        },
+        "src/FGame/Common/Global.lua367d3cfbb01e405e5c1990f2bbff2f14": {
+            "md5": "367d3cfbb01e405e5c1990f2bbff2f14"
+        },
+        "src/FGame/Common/Base/BaseGame.lua56304b11ea4803c6820d928676d83386": {
+            "md5": "56304b11ea4803c6820d928676d83386"
+        },
+        "src/FGame/Common/Base/BaseReel.lua90caa5178aca8714c05d547bfcf20ec6": {
+            "md5": "90caa5178aca8714c05d547bfcf20ec6"
+        },
+        "src/FGame/Common/Bigwin/BigwinCommonPanel.luadb2130f9d9f3955ee4c6707d1a8378bf": {
+            "md5": "db2130f9d9f3955ee4c6707d1a8378bf"
+        },
+        "src/FGame/Common/Cfgs/Common.lua1b45cf9e4f4cf658024e43f859a3f004": {
+            "md5": "1b45cf9e4f4cf658024e43f859a3f004"
+        },
+        "src/FGame/Common/Cfgs/Lang.lua3b8ff7a3a196e2d26216675a3b08192d": {
+            "md5": "3b8ff7a3a196e2d26216675a3b08192d"
+        },
+        "src/FGame/Common/Cfgs/SpinButton.luaa1af10b63860d003c9cf0dca1ac0c2e3": {
+            "md5": "a1af10b63860d003c9cf0dca1ac0c2e3"
+        },
+        "src/FGame/Common/Cfgs/WinLineConfigs.luaa266bdd1cbd01b6e8a89a4cd821ad5e8": {
+            "md5": "a266bdd1cbd01b6e8a89a4cd821ad5e8"
+        },
+        "src/FGame/Common/CommonUI/BetConfigParser.lua601cc17f8a28c87067ca9f412cd8d505": {
+            "md5": "601cc17f8a28c87067ca9f412cd8d505"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/AutoSpin.lua05af1ce3251ec820e09d1368cf31c62e": {
+            "md5": "05af1ce3251ec820e09d1368cf31c62e"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/BettingOptions.luad8c5fa42e3b11a64d1a46f89a4e663a1": {
+            "md5": "d8c5fa42e3b11a64d1a46f89a4e663a1"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/CommonPanel.lua8b704e42ad3094818dab4683beb12154": {
+            "md5": "8b704e42ad3094818dab4683beb12154"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/Countdown.luaa92c74ba28f8fb7e6f696522c6bd6e7a": {
+            "md5": "a92c74ba28f8fb7e6f696522c6bd6e7a"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/GameRulePanel.lua5c8775538fae9bccc8a3c484a2cfce75": {
+            "md5": "5c8775538fae9bccc8a3c484a2cfce75"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/MessageBox.luace4c8bfd1745d5a07e82e20cd5612086": {
+            "md5": "ce4c8bfd1745d5a07e82e20cd5612086"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/Utils.lua9b209ad5cc6c3606eec25bb5e6e2c54e": {
+            "md5": "9b209ad5cc6c3606eec25bb5e6e2c54e"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/General/BottomPanel.lua7b66015880cea592de28975e37c0e241": {
+            "md5": "7b66015880cea592de28975e37c0e241"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/General/HoverMenu.lua91499e642af479b2ab7cba8c4d38e19a": {
+            "md5": "91499e642af479b2ab7cba8c4d38e19a"
+        },
+        "src/FGame/Common/CommonUI/CrimsonCartoon/General/SpinButton.lua963fb06310671f4e43f58563a664ae92": {
+            "md5": "963fb06310671f4e43f58563a664ae92"
+        },
+        "src/FGame/Common/CommonUI/Lilac/BettingOptions.lua66dbbd563e2daba20e202669d192415c": {
+            "md5": "66dbbd563e2daba20e202669d192415c"
+        },
+        "src/FGame/Common/CommonUI/Lilac/CommonPanel.luab6a4f95298f478453e8f965fe0bdfafd": {
+            "md5": "b6a4f95298f478453e8f965fe0bdfafd"
+        },
+        "src/FGame/Common/CommonUI/Lilac/Countdown.luaa92c74ba28f8fb7e6f696522c6bd6e7a": {
+            "md5": "a92c74ba28f8fb7e6f696522c6bd6e7a"
+        },
+        "src/FGame/Common/CommonUI/Lilac/GameRulePanel.luaaa085df33c19d212db753875d8b3c3f1": {
+            "md5": "aa085df33c19d212db753875d8b3c3f1"
+        },
+        "src/FGame/Common/CommonUI/Lilac/Cfg/SpinButtonCfg.lua5532db9a9550fd9a8a1fbf46eb72d8af": {
+            "md5": "5532db9a9550fd9a8a1fbf46eb72d8af"
+        },
+        "src/FGame/Common/CommonUI/Lilac/General/AutoSpinListPanel.luac05e9d9db944f0bd5b06be1b0ba3bdaa": {
+            "md5": "c05e9d9db944f0bd5b06be1b0ba3bdaa"
+        },
+        "src/FGame/Common/CommonUI/Lilac/General/BottomPanel.luacceec4960c2364d722cbfcf13f20bf66": {
+            "md5": "cceec4960c2364d722cbfcf13f20bf66"
+        },
+        "src/FGame/Common/CommonUI/Lilac/General/GameBetListPanel.lua1719be01bf620963e71f7a0b27559b26": {
+            "md5": "1719be01bf620963e71f7a0b27559b26"
+        },
+        "src/FGame/Common/CommonUI/Lilac/General/HoverMenu.lua91499e642af479b2ab7cba8c4d38e19a": {
+            "md5": "91499e642af479b2ab7cba8c4d38e19a"
+        },
+        "src/FGame/Common/CommonUI/Lilac/General/TopPanel.lua18abb1be98ad0395c51ceca464d8ef93": {
+            "md5": "18abb1be98ad0395c51ceca464d8ef93"
+        },
+        "src/FGame/Common/Functions/Class.luaa685378122956f9ea098b5d2a6672477": {
+            "md5": "a685378122956f9ea098b5d2a6672477"
+        },
+        "src/FGame/Common/Functions/Compatible.luaa6874940070a95177d32462b30835832": {
+            "md5": "a6874940070a95177d32462b30835832"
+        },
+        "src/FGame/Common/Functions/GameConsoleDebug.luaf4e8777a35add42889c80d93f9907e0f": {
+            "md5": "f4e8777a35add42889c80d93f9907e0f"
+        },
+        "src/FGame/Common/Functions/GamePrintExPlugin.lua49347d2b80b2270b6c586446a17cc879": {
+            "md5": "49347d2b80b2270b6c586446a17cc879"
+        },
+        "src/FGame/Common/Functions/Import.luad47ae12a2d05350e0a4276343cd4a1de": {
+            "md5": "d47ae12a2d05350e0a4276343cd4a1de"
+        },
+        "src/FGame/Common/Functions/Misc.luaeec7bb9b8205b6eb041eae27d1ece8ee": {
+            "md5": "eec7bb9b8205b6eb041eae27d1ece8ee"
+        },
+        "src/FGame/Common/Functions/Table.lua4838daf5ac07c893a4723af57f85eac7": {
+            "md5": "4838daf5ac07c893a4723af57f85eac7"
+        },
+        "src/FGame/Common/Logic/Enums.lua3ecfa76b122518acbdd2817d04c17324": {
+            "md5": "3ecfa76b122518acbdd2817d04c17324"
+        },
+        "src/FGame/Common/Logic/GlobalMsgHandle.lua8e90d8ffea3cfcec4eb54b3bc46581b8": {
+            "md5": "8e90d8ffea3cfcec4eb54b3bc46581b8"
+        },
+        "src/FGame/Common/Logic/Effect/BezierAction.lua427859f1bf703d67343699c5bb947a9d": {
+            "md5": "427859f1bf703d67343699c5bb947a9d"
+        },
+        "src/FGame/Common/Logic/Effect/CoinFountain.luae312db3fb4cbe059f1322efefc6cf505": {
+            "md5": "e312db3fb4cbe059f1322efefc6cf505"
+        },
+        "src/FGame/Common/Logic/Effect/ExplosionEffect.luac165bc15db6f2eb3db511ad32b604adb": {
+            "md5": "c165bc15db6f2eb3db511ad32b604adb"
+        },
+        "src/FGame/Common/Logic/Effect/FountainPool.luae9f45444109220e49e97a519f6390e98": {
+            "md5": "e9f45444109220e49e97a519f6390e98"
+        },
+        "src/FGame/Common/Logic/General/PickerView.lua419918aefc6d01bb1495733ef627b127": {
+            "md5": "419918aefc6d01bb1495733ef627b127"
+        },
+        "src/FGame/Common/Logic/General/PickerViewNode.lua00f3025d7b00fecc73e66380283467aa": {
+            "md5": "00f3025d7b00fecc73e66380283467aa"
+        },
+        "src/FGame/Common/Logic/General/WinLines.lua51c383188f8201b95fccb95a2d132e2c": {
+            "md5": "51c383188f8201b95fccb95a2d132e2c"
+        },
+        "src/FGame/Common/Special/Init.lua311e8dcb4c5fc8bfbd07943b19a78ff6": {
+            "md5": "311e8dcb4c5fc8bfbd07943b19a78ff6"
+        },
+        "src/FGame/Common/Special/Cocos/APIGateway.luaa3ca7b8f944192e1cff36973210efa6d": {
+            "md5": "a3ca7b8f944192e1cff36973210efa6d"
+        },
+        "src/FGame/Common/Special/Cocos/API_FGUI.lua5d6a4980eadea2f7d589b8fe04721897": {
+            "md5": "5d6a4980eadea2f7d589b8fe04721897"
+        },
+        "src/FGame/Common/Special/Cocos/FairyGUI.luaf3eb4b7862366f9a542a7bdaa40af5a6": {
+            "md5": "f3eb4b7862366f9a542a7bdaa40af5a6"
+        },
+        "src/FGame/Common/Special/Cocos/FairyGUIConstants.lua8977c58b0c934d9c7c11bfcd3d47fec2": {
+            "md5": "8977c58b0c934d9c7c11bfcd3d47fec2"
+        },
+        "src/FGame/Common/Special/Cocos/Timer.luac87f5851342344329a1eef07b3f37b7c": {
+            "md5": "c87f5851342344329a1eef07b3f37b7c"
+        },
+        "src/FGame/Common/Special/Cocos/Webm/WebmAnimationApi.luaadb1676cfd404e91d7142e7d5e9662d0": {
+            "md5": "adb1676cfd404e91d7142e7d5e9662d0"
+        },
+        "src/FGame/Common/Special/Cocos/Webm/WebmHelper.luaa3e908a339bdd1157bc280c5fef39872": {
+            "md5": "a3e908a339bdd1157bc280c5fef39872"
+        },
+        "src/FGame/Common/Special/CocosFish2/APIGateway.lua8879950a30110b2e4d8a9a3e906fb7a7": {
+            "md5": "8879950a30110b2e4d8a9a3e906fb7a7"
+        },
+        "src/FGame/Common/Special/CocosFish2/API_FGUI.lua75551bb347f23aef6a2d029f5e556d8f": {
+            "md5": "75551bb347f23aef6a2d029f5e556d8f"
+        },
+        "src/FGame/Common/Special/CocosFish2/FairyGUI.lua53afb03896ec75eddef909dccddd3832": {
+            "md5": "53afb03896ec75eddef909dccddd3832"
+        },
+        "src/FGame/Common/Special/CocosFish2/FairyGUIConstants.lua8afa4e690ca12d95b23daec8b5a9136a": {
+            "md5": "8afa4e690ca12d95b23daec8b5a9136a"
+        },
+        "src/FGame/Common/Special/CocosFish2/FBasePkgHub.luaf69ec1df2f3e0c22b113089b0964200d": {
+            "md5": "f69ec1df2f3e0c22b113089b0964200d"
+        },
+        "src/FGame/Common/Special/CocosFish2/Timer.luac87f5851342344329a1eef07b3f37b7c": {
+            "md5": "c87f5851342344329a1eef07b3f37b7c"
+        },
+        "src/FGame/Common/Special/CocosFish2/Webm/WebmAnimationApi.luaadb1676cfd404e91d7142e7d5e9662d0": {
+            "md5": "adb1676cfd404e91d7142e7d5e9662d0"
+        },
+        "src/FGame/Common/Special/CocosFish2/Webm/WebmHelper.luaa3e908a339bdd1157bc280c5fef39872": {
+            "md5": "a3e908a339bdd1157bc280c5fef39872"
+        },
+        "src/FGame/Common/Utils/EventEmitter.lua18f9e389353166baad3d4faf55917a49": {
+            "md5": "18f9e389353166baad3d4faf55917a49"
+        },
+        "src/FGame/Common/Utils/IteratorExternal.lua643f30e62e5e7edc288fd7700faa26c9": {
+            "md5": "643f30e62e5e7edc288fd7700faa26c9"
+        },
+        "src/FGame/Common/Utils/ToolSet.lua940edbc39fd3361fa3e693a5dc1bbd93": {
+            "md5": "940edbc39fd3361fa3e693a5dc1bbd93"
+        },
+        "src/FGame/Common/Utils/Tracker.luaa9a11a36624f9b6d4bfcfc5f2b1889cd": {
+            "md5": "a9a11a36624f9b6d4bfcfc5f2b1889cd"
+        },
+        "src/FGame/Common/Utils/Tween.lua618f1be054489be818fd3e88b6a8c728": {
+            "md5": "618f1be054489be818fd3e88b6a8c728"
+        }
+    },
+    "version": "1.0.7",
+    "build_time": "1786255336"
+}
