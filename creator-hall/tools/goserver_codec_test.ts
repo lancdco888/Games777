@@ -3,7 +3,7 @@ import { spawn } from 'node:child_process';
 import net from 'node:net';
 import { GosClient, GosStream, packFrame, packOpen } from '../assets/scripts/GosClient.ts';
 import { CLIENT_LOGIN_MD5, decodePacket, encodeAuth, encodeEnterSuccess, encodeLobbySuccess, encodeRegister } from '../assets/scripts/GosPackets.ts';
-import { HallState } from '../assets/scripts/HallState.ts';
+import { HallState, selectLobbyGames } from '../assets/scripts/HallState.ts';
 import type { ServerSettings } from '../assets/scripts/ServerSettings.ts';
 import { XxBuf } from '../assets/scripts/XxBuf.ts';
 
@@ -213,6 +213,14 @@ function testHallState(): void {
     assert.deepEqual(state.serverGameIds, [270, 220]);
     state.logout();
     assert.equal(state.serverGameIds, null);
+    const catalog = [
+        { id: 270 },
+        { id: 336 },
+        { id: 341 },
+    ];
+    assert.deepEqual(selectLobbyGames(catalog, [336, 341]).map((game) => game.id), [270, 336, 341]);
+    assert.deepEqual(selectLobbyGames(catalog, [2270, 336]).map((game) => game.id), [270, 336]);
+    assert.deepEqual(selectLobbyGames(catalog, null).map((game) => game.id), [270, 336, 341]);
 }
 
 function startFakeServer(): Promise<{ port: number; close: () => void }> {

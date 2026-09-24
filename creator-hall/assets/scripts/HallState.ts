@@ -27,6 +27,43 @@ export function parseMoney(text: string): number {
     return Number.isFinite(value) ? value : 0;
 }
 
+/** Same aliases as hall/src/common/GameData.lua. Rich rooms use 2xxx and 3xxx. */
+const GAME_ID_ALIAS: Record<number, number> = {
+    235: 221, 236: 221, 237: 221, 238: 221, 239: 221,
+    240: 221, 241: 221, 242: 221, 243: 221, 244: 221, 245: 221, 246: 221, 247: 221, 248: 221, 249: 221,
+    420: 320, 701: 320, 702: 320, 703: 320, 704: 320,
+    421: 321, 711: 321, 712: 321, 713: 321, 714: 321,
+    422: 322, 721: 322, 722: 322, 723: 322, 724: 322,
+    448: 348, 449: 349,
+};
+
+/** Game 270 is the ported slot, so its card stays even when the server list omits it. */
+const PINNED_GAME_IDS = [270];
+
+export function canonicalGameId(gameId: number): number {
+    let id = gameId;
+    if (id > 3000) {
+        id -= 3000;
+    } else if (id > 2000) {
+        id -= 2000;
+    }
+    return GAME_ID_ALIAS[id] ?? id;
+}
+
+export function selectLobbyGames<T extends { id: number }>(catalog: readonly T[], serverIds: readonly number[] | null): T[] {
+    const pinned = catalog.filter((game) => PINNED_GAME_IDS.includes(game.id));
+    const restOf = (games: readonly T[]) => games.filter((game) => !PINNED_GAME_IDS.includes(game.id));
+    if (!serverIds || serverIds.length === 0) {
+        return [...pinned, ...restOf(catalog)];
+    }
+    const allowed = new Set(serverIds.map(canonicalGameId));
+    const matched = restOf(catalog).filter((game) => allowed.has(canonicalGameId(game.id)));
+    if (matched.length === 0) {
+        return [...pinned, ...restOf(catalog)];
+    }
+    return [...pinned, ...matched];
+}
+
 /**
  * Hall account. Login can replace these numbers with the goserver profile.
  */

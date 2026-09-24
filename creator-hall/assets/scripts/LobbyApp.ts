@@ -2,7 +2,7 @@ import { _decorator, Button, Component, EventTouch, JsonAsset, js, Label, Layers
 import { attachSprite, bindClick, CsbNode, mountCsb } from './CsbView';
 import { Game270View } from './Game270View';
 import { HallPanels } from './HallPanels';
-import { formatMoney, GameInfo, HallState } from './HallState';
+import { formatMoney, GameInfo, HallState, selectLobbyGames } from './HallState';
 import { LoginView } from './LoginView';
 
 const { ccclass } = _decorator;
@@ -132,15 +132,7 @@ export class LobbyApp extends Component {
         if (!list || !listTransform || this.catalog.length === 0) {
             return;
         }
-        const allowed = this.state.serverGameIds;
-        let games = this.catalog;
-        if (allowed && allowed.length) {
-            const ids = new Set(allowed);
-            const matched = this.catalog.filter((game) => ids.has(game.id));
-            if (matched.length) {
-                games = matched;
-            }
-        }
+        const games = selectLobbyGames(this.catalog, this.state.serverGameIds);
         list.getChildByName('cards')?.destroy();
         const mask = list.getComponent(Mask) ?? list.addComponent(Mask);
         mask.type = Mask.Type.GRAPHICS_RECT;
