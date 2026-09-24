@@ -1,0 +1,600 @@
+{
+  "package": "Game270",
+  "id": "wd2jx8ug",
+  "dependencies": [
+    {
+      "id": "4n6rrgkc",
+      "name": "Basics"
+    }
+  ],
+  "symbols": {
+    "wild": {
+      "file": "game270/wild.png",
+      "width": 256,
+      "height": 208
+    },
+    "scatter": {
+      "file": "game270/scatter.png",
+      "width": 208,
+      "height": 256
+    },
+    "lantern": {
+      "file": "game270/lantern.png",
+      "width": 120,
+      "height": 117
+    },
+    "pic1": {
+      "file": "game270/pic1.png",
+      "width": 197,
+      "height": 239
+    },
+    "pic2": {
+      "file": "game270/pic2.png",
+      "width": 194,
+      "height": 244
+    },
+    "pic3": {
+      "file": "game270/pic3.png",
+      "width": 206,
+      "height": 251
+    },
+    "pic4": {
+      "file": "game270/pic4.png",
+      "width": 256,
+      "height": 208
+    },
+    "sl1": {
+      "file": "game270/sl1.png",
+      "width": 261,
+      "height": 287
+    },
+    "sl2": {
+      "file": "game270/sl2.png",
+      "width": 305,
+      "height": 262
+    },
+    "sl3": {
+      "file": "game270/sl3.png",
+      "width": 268,
+      "height": 242
+    },
+    "sl4": {
+      "file": "game270/sl4.png",
+      "width": 307,
+      "height": 265
+    },
+    "sl5": {
+      "file": "game270/sl5.png",
+      "width": 274,
+      "height": 262
+    },
+    "bg": {
+      "file": "game270/bg.png",
+      "width": 818,
+      "height": 529
+    },
+    "frame": {
+      "file": "game270/frame.png",
+      "width": 836,
+      "height": 416
+    },
+    "kuang": {
+      "file": "game270/kuang.png",
+      "width": 133,
+      "height": 158
+    }
+  },
+  "sounds": {
+    "reelstop": "game270/audio/reelstop.mp3",
+    "wild": "game270/audio/wild.mp3",
+    "scatter": "game270/audio/scatter.mp3",
+    "pic1": "game270/audio/pic1.mp3",
+    "win": "game270/audio/win.mp3"
+  },
+  "images": [
+    {
+      "name": "lightning_8",
+      "file": "game270/art/lightning_8.png",
+      "width": 282,
+      "height": 152
+    },
+    {
+      "name": "lightning_6",
+      "file": "game270/art/lightning_6.png",
+      "width": 339,
+      "height": 402
+    },
+    {
+      "name": "lightning_9",
+      "file": "game270/art/lightning_9.png",
+      "width": 285,
+      "height": 281
+    },
+    {
+      "name": "lightning_10",
+      "file": "game270/art/lightning_10.png",
+      "width": 269,
+      "height": 416
+    },
+    {
+      "name": "lightning_15",
+      "file": "game270/art/lightning_15.png",
+      "width": 413,
+      "height": 455
+    },
+    {
+      "name": "lightning_12",
+      "file": "game270/art/lightning_12.png",
+      "width": 425,
+      "height": 246
+    },
+    {
+      "name": "lightning_7",
+      "file": "game270/art/lightning_7.png",
+      "width": 296,
+      "height": 230
+    },
+    {
+      "name": "lightning_2_4",
+      "file": "game270/art/lightning_2_4.png",
+      "width": 174,
+      "height": 239
+    },
+    {
+      "name": "lightning_5",
+      "file": "game270/art/lightning_5.png",
+      "width": 178,
+      "height": 386
+    },
+    {
+      "name": "lightning_3",
+      "file": "game270/art/lightning_3.png",
+      "width": 111,
+      "height": 107
+    },
+    {
+      "name": "lightning_13",
+      "file": "game270/art/lightning_13.png",
+      "width": 414,
+      "height": 167
+    },
+    {
+      "name": "lightning_1",
+      "file": "game270/art/lightning_1.png",
+      "width": 402,
+      "height": 207
+    },
+    {
+      "name": "lightning_11",
+      "file": "game270/art/lightning_11.png",
+      "width": 390,
+      "height": 462
+    },
+    {
+      "name": "lightning_14",
+      "file": "game270/art/lightning_14.png",
+      "width": 306,
+      "height": 415
+    },
+    {
+      "name": "0_5",
+      "file": "game270/art/0_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "1_5",
+      "file": "game270/art/1_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "2_5",
+      "file": "game270/art/2_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "3_5",
+      "file": "game270/art/3_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "4_5",
+      "file": "game270/art/4_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "5_5",
+      "file": "game270/art/5_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "6_5",
+      "file": "game270/art/6_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "7_5",
+      "file": "game270/art/7_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "8_5",
+      "file": "game270/art/8_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "9_5",
+      "file": "game270/art/9_5.png",
+      "width": 20,
+      "height": 28
+    },
+    {
+      "name": "kuang",
+      "file": "game270/art/kuang.png",
+      "width": 133,
+      "height": 158
+    },
+    {
+      "name": "collect15ToWin",
+      "file": "game270/art/collect15ToWin.png",
+      "width": 245,
+      "height": 392
+    },
+    {
+      "name": "caijinbg_1",
+      "file": "game270/art/caijinbg_1.png",
+      "width": 105,
+      "height": 1437
+    },
+    {
+      "name": "45",
+      "file": "game270/art/45.png",
+      "width": 184,
+      "height": 402
+    },
+    {
+      "name": "41",
+      "file": "game270/art/41.png",
+      "width": 207,
+      "height": 402
+    },
+    {
+      "name": "slots_270_info_1",
+      "file": "game270/art/slots_270_info_1.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_2",
+      "file": "game270/art/slots_270_info_2.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_3",
+      "file": "game270/art/slots_270_info_3.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_4",
+      "file": "game270/art/slots_270_info_4.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_5",
+      "file": "game270/art/slots_270_info_5.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_6",
+      "file": "game270/art/slots_270_info_6.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_7",
+      "file": "game270/art/slots_270_info_7.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_8",
+      "file": "game270/art/slots_270_info_8.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "slots_270_info_9",
+      "file": "game270/art/slots_270_info_9.png",
+      "width": 900,
+      "height": 409
+    },
+    {
+      "name": "7",
+      "file": "game270/art/7.png",
+      "width": 486,
+      "height": 510
+    },
+    {
+      "name": "79",
+      "file": "game270/art/79.png",
+      "width": 557,
+      "height": 598
+    },
+    {
+      "name": "slots_270_frame_01",
+      "file": "game270/art/slots_270_frame_01.png",
+      "width": 836,
+      "height": 416
+    },
+    {
+      "name": "slots_270_frame_02",
+      "file": "game270/art/slots_270_frame_02.png",
+      "width": 837,
+      "height": 413
+    },
+    {
+      "name": "slots_270_frame_03",
+      "file": "game270/art/slots_270_frame_03.png",
+      "width": 631,
+      "height": 309
+    },
+    {
+      "name": "slots_270_frame_04",
+      "file": "game270/art/slots_270_frame_04.png",
+      "width": 631,
+      "height": 309
+    },
+    {
+      "name": "50Line_en",
+      "file": "game270/art/50Line_en.png",
+      "width": 103,
+      "height": 55
+    },
+    {
+      "name": "line_background(1)",
+      "file": "game270/art/line_background_1.png",
+      "width": 136,
+      "height": 66
+    },
+    {
+      "name": "slots_270_background_ng",
+      "file": "game270/art/slots_270_background_ng.png",
+      "width": 818,
+      "height": 529
+    },
+    {
+      "name": "hold&spin",
+      "file": "game270/art/hold_spin.png",
+      "width": 305,
+      "height": 354
+    },
+    {
+      "name": "27",
+      "file": "game270/art/27.png",
+      "width": 159,
+      "height": 160
+    },
+    {
+      "name": "slots_345_ssc1",
+      "file": "game270/art/slots_345_ssc1.png",
+      "width": 438,
+      "height": 534
+    },
+    {
+      "name": "freetitle",
+      "file": "game270/art/freetitle.png",
+      "width": 457,
+      "height": 62
+    },
+    {
+      "name": "caijinNum321",
+      "file": "game270/art/caijinNum321.png",
+      "width": 789,
+      "height": 160
+    },
+    {
+      "name": "fnt_8",
+      "file": "game270/art/fnt_8.png",
+      "width": 346,
+      "height": 47
+    },
+    {
+      "name": "fnt_1",
+      "file": "game270/art/fnt_1.png",
+      "width": 494,
+      "height": 69
+    },
+    {
+      "name": "fnt_2",
+      "file": "game270/art/fnt_2.png",
+      "width": 377,
+      "height": 53
+    },
+    {
+      "name": "fnt_3",
+      "file": "game270/art/fnt_3.png",
+      "width": 441,
+      "height": 61
+    },
+    {
+      "name": "fnt_4",
+      "file": "game270/art/fnt_4.png",
+      "width": 577,
+      "height": 82
+    },
+    {
+      "name": "slots_345_sl1",
+      "file": "game270/art/slots_345_sl1.png",
+      "width": 261,
+      "height": 287
+    },
+    {
+      "name": "slots_345_sl2",
+      "file": "game270/art/slots_345_sl2.png",
+      "width": 305,
+      "height": 262
+    },
+    {
+      "name": "slots_345_sl3",
+      "file": "game270/art/slots_345_sl3.png",
+      "width": 268,
+      "height": 242
+    },
+    {
+      "name": "slots_345_sl4",
+      "file": "game270/art/slots_345_sl4.png",
+      "width": 307,
+      "height": 265
+    },
+    {
+      "name": "slots_345_sl5",
+      "file": "game270/art/slots_345_sl5.png",
+      "width": 274,
+      "height": 262
+    },
+    {
+      "name": "slots_345_symbol_bonus",
+      "file": "game270/art/slots_345_symbol_bonus.png",
+      "width": 46,
+      "height": 149
+    },
+    {
+      "name": "slots_345_symbol_grand",
+      "file": "game270/art/slots_345_symbol_grand.png",
+      "width": 47,
+      "height": 198
+    },
+    {
+      "name": "slots_345_symbol_jackpot",
+      "file": "game270/art/slots_345_symbol_jackpot.png",
+      "width": 186,
+      "height": 41
+    },
+    {
+      "name": "slots_345_symbol_major",
+      "file": "game270/art/slots_345_symbol_major.png",
+      "width": 177,
+      "height": 54
+    },
+    {
+      "name": "slots_345_symbol_mini",
+      "file": "game270/art/slots_345_symbol_mini.png",
+      "width": 133,
+      "height": 52
+    },
+    {
+      "name": "slots_345_symbol_minor",
+      "file": "game270/art/slots_345_symbol_minor.png",
+      "width": 169,
+      "height": 53
+    },
+    {
+      "name": "collected",
+      "file": "game270/art/collected.png",
+      "width": 120,
+      "height": 135
+    },
+    {
+      "name": "symbol_number",
+      "file": "game270/art/symbol_number.png",
+      "width": 351,
+      "height": 365
+    },
+    {
+      "name": "slots_345_sh1",
+      "file": "game270/art/slots_345_sh1.png",
+      "width": 348,
+      "height": 417
+    },
+    {
+      "name": "slots_345_sh2",
+      "file": "game270/art/slots_345_sh2.png",
+      "width": 348,
+      "height": 417
+    },
+    {
+      "name": "slots_345_sh3",
+      "file": "game270/art/slots_345_sh3.png",
+      "width": 348,
+      "height": 417
+    },
+    {
+      "name": "slots_345_sh4",
+      "file": "game270/art/slots_345_sh4.png",
+      "width": 417,
+      "height": 348
+    },
+    {
+      "name": "slots_symbol_denglong",
+      "file": "game270/art/slots_symbol_denglong.png",
+      "width": 120,
+      "height": 117
+    },
+    {
+      "name": "slots_345_wild",
+      "file": "game270/art/slots_345_wild.png",
+      "width": 332,
+      "height": 268
+    },
+    {
+      "name": "specialendwin",
+      "file": "game270/art/specialendwin.png",
+      "width": 73,
+      "height": 907
+    },
+    {
+      "name": "freecount",
+      "file": "game270/art/freecount.png",
+      "width": 728,
+      "height": 75
+    },
+    {
+      "name": "freeendbg",
+      "file": "game270/art/freeendbg.png",
+      "width": 897,
+      "height": 75
+    },
+    {
+      "name": "selectspin",
+      "file": "game270/art/selectspin.png",
+      "width": 928,
+      "height": 65
+    },
+    {
+      "name": "specialendtitle",
+      "file": "game270/art/specialendtitle.png",
+      "width": 919,
+      "height": 74
+    },
+    {
+      "name": "specailcount",
+      "file": "game270/art/specailcount.png",
+      "width": 86,
+      "height": 828
+    },
+    {
+      "name": "specailcount2",
+      "file": "game270/art/specailcount2.png",
+      "width": 84,
+      "height": 852
+    },
+    {
+      "name": "specialcount3",
+      "file": "game270/art/specialcount3.png",
+      "width": 86,
+      "height": 851
+    }
+  ]
+}

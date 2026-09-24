@@ -135,30 +135,48 @@ function addSprite(node: Node, spritePath: string): void {
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
     sprite.type = Sprite.Type.SIMPLE;
     sprite.trim = false;
+    loadSpriteFrame(spritePath, (frame) => {
+        if (!frame) {
+            return;
+        }
+        showSprite(sprite, frame);
+    });
+}
+
+/** Loads a resources image as a sprite frame. Creator may import it as a frame, image, or texture. */
+export function loadSpriteFrame(spritePath: string, done: (frame: SpriteFrame | null) => void): void {
     const base = spritePath.replace(/\.(png|jpg|jpeg|webp)$/i, '');
     imageStats.pending += 1;
     resources.load(`${base}/spriteFrame`, SpriteFrame, (err, frame) => {
         if (!err && frame) {
-            showSprite(sprite, frame);
+            finishLoad(frame, done);
             return;
         }
         resources.load(base, ImageAsset, (imageErr, image) => {
             if (!imageErr && image) {
-                showSprite(sprite, frameFromImage(image));
+                finishLoad(frameFromImage(image), done);
                 return;
             }
             resources.load(`${base}/texture`, Texture2D, (textureErr, texture) => {
                 if (!textureErr && texture) {
-                    showSprite(sprite, frameFromTexture(texture));
+                    finishLoad(frameFromTexture(texture), done);
                     return;
                 }
                 imageStats.pending -= 1;
                 imageStats.missing += 1;
                 console.warn('[hall] image missing', base, err || imageErr || textureErr);
                 reportImages();
+                done(null);
             });
         });
     });
+}
+
+function finishLoad(frame: SpriteFrame, done: (frame: SpriteFrame | null) => void): void {
+    imageStats.pending -= 1;
+    imageStats.loaded += 1;
+    reportImages();
+    done(frame);
 }
 
 function frameFromImage(image: ImageAsset): SpriteFrame {
@@ -189,9 +207,7 @@ function imageHeight(texture: Texture2D): number {
 }
 
 function showSprite(sprite: Sprite, frame: SpriteFrame): void {
-    imageStats.pending -= 1;
     if (!sprite.isValid) {
-        reportImages();
         return;
     }
     const transform = sprite.node.getComponent(UITransform);
@@ -200,8 +216,6 @@ function showSprite(sprite: Sprite, frame: SpriteFrame): void {
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
     sprite.spriteFrame = frame;
     transform?.setContentSize(width, height);
-    imageStats.loaded += 1;
-    reportImages();
 }
 
 function reportImages(): void {

@@ -63,6 +63,12 @@ def main():
     assert by_id[101]["type"] == "haiwang"
     icon = ROOT / "assets/resources/hall/lobby/icon/270.png"
     assert icon.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+    fgui = json.loads((ROOT / "assets/resources/game270/sprites.json").read_text(encoding="utf-8"))
+    assert fgui["package"] == "Game270"
+    assert len(fgui["images"]) >= 80
+    for name in ("wild", "scatter", "pic1", "sl1", "bg", "frame"):
+        sprite = ROOT / f"assets/resources/game270/{name}.png"
+        assert sprite.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n", name
 
     compressed = compress_uuid(meta["uuid"])
     assert compressed == "c4a1eeybTBPkZpYDns8kdSm"
