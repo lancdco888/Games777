@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_cat_bosscome.atlas",
+    "anims": [
+        {
+            "name": "fish_cat_bosscome",
+            "totalSeconds": 3.67
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

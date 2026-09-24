@@ -1,0 +1,335 @@
+
+fish_jxsd.png
+size: 3874,1202
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shandian/Lightning_000
+  rotate: false
+  xy: 2, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_001
+  rotate: false
+  xy: 2, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_002
+  rotate: false
+  xy: 244, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_003
+  rotate: false
+  xy: 2, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_004
+  rotate: false
+  xy: 244, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_005
+  rotate: false
+  xy: 486, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_006
+  rotate: false
+  xy: 244, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_007
+  rotate: false
+  xy: 486, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_008
+  rotate: false
+  xy: 728, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_009
+  rotate: false
+  xy: 486, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_010
+  rotate: false
+  xy: 728, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_011
+  rotate: false
+  xy: 970, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_012
+  rotate: false
+  xy: 728, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_013
+  rotate: false
+  xy: 970, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_014
+  rotate: false
+  xy: 1212, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_015
+  rotate: false
+  xy: 970, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_016
+  rotate: false
+  xy: 1212, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_017
+  rotate: false
+  xy: 1454, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_018
+  rotate: false
+  xy: 1212, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_019
+  rotate: false
+  xy: 1454, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_020
+  rotate: false
+  xy: 1696, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_021
+  rotate: false
+  xy: 1454, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_022
+  rotate: false
+  xy: 1696, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_023
+  rotate: false
+  xy: 1938, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_024
+  rotate: false
+  xy: 1696, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_025
+  rotate: false
+  xy: 1938, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_026
+  rotate: false
+  xy: 2180, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_027
+  rotate: false
+  xy: 1938, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_028
+  rotate: false
+  xy: 2180, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_029
+  rotate: false
+  xy: 2422, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_030
+  rotate: false
+  xy: 2180, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_031
+  rotate: false
+  xy: 2422, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_032
+  rotate: false
+  xy: 2664, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_033
+  rotate: false
+  xy: 2422, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_034
+  rotate: false
+  xy: 2664, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_035
+  rotate: false
+  xy: 2906, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_036
+  rotate: false
+  xy: 2664, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_037
+  rotate: false
+  xy: 2906, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_038
+  rotate: false
+  xy: 3148, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_039
+  rotate: false
+  xy: 2906, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_040
+  rotate: false
+  xy: 3148, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_041
+  rotate: false
+  xy: 3390, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_042
+  rotate: false
+  xy: 3148, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_043
+  rotate: false
+  xy: 3390, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_044
+  rotate: false
+  xy: 3632, 802
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_045
+  rotate: false
+  xy: 3390, 2
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1
+shandian/Lightning_046
+  rotate: false
+  xy: 3632, 402
+  size: 240, 398
+  orig: 240, 398
+  offset: 0, 0
+  index: -1

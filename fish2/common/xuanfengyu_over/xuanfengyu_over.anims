@@ -1,0 +1,16 @@
+{
+    "resFileName": "xuanfengyu_over.frames",
+    "anims": [
+        {
+            "name": "effect",
+            "skin": "",
+            "totalSeconds": 0.5,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 1
+}

@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_suoding.atlas",
+    "anims": [
+        {
+            "name": "fish_suoding",
+            "totalSeconds": 2
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

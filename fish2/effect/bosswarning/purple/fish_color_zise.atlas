@@ -1,0 +1,13 @@
+
+fish_color_zise.png
+size: 312,310
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+color/boos_dengchang_beijing2
+  rotate: false
+  xy: 2, 135
+  size: 308, 173
+  orig: 308, 173
+  offset: 0, 0
+  index: -1

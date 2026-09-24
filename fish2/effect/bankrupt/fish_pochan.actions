@@ -1,0 +1,24 @@
+{
+    "animsFileName": "fish_pochan.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 100000,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 1.999999,
+                    "speed": 0,
+                    "animPlayRatio": 0,
+                    "animIndex": 0
+                }
+			]
+		}
+	]
+}

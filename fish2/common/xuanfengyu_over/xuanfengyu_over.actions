@@ -1,0 +1,18 @@
+{
+    "animsFileName": "xuanfengyu_over.anims",
+    "actions": [
+        {
+            "name": "effect",
+            "totalSeconds": 0.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        }
+    ]
+}

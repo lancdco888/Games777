@@ -1,0 +1,16 @@
+{
+	"frameAnims": [
+		{
+			"name": "idle",
+			"totalSeconds": 3,
+			"frames": [
+				{
+					"time": 0,
+					"picName": "zidan_14.png"
+				}
+			]
+		}
+	],
+	"plists": [
+	]
+}

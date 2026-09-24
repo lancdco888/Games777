@@ -1,0 +1,55 @@
+
+gun1.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chi1
+  rotate: true
+  xy: 2, 2
+  size: 75, 112
+  orig: 75, 112
+  offset: 0, 0
+  index: -1
+gou1
+  rotate: false
+  xy: 371, 436
+  size: 54, 51
+  orig: 54, 51
+  offset: 0, 0
+  index: -1
+gun
+  rotate: false
+  xy: 252, 371
+  size: 117, 116
+  orig: 117, 116
+  offset: 0, 0
+  index: -1
+gun1
+  rotate: false
+  xy: 252, 311
+  size: 59, 58
+  orig: 59, 58
+  offset: 0, 0
+  index: -1
+main
+  rotate: false
+  xy: 2, 238
+  size: 248, 249
+  orig: 248, 249
+  offset: 0, 0
+  index: -1
+mid
+  rotate: false
+  xy: 2, 79
+  size: 166, 157
+  orig: 166, 157
+  offset: 0, 0
+  index: -1
+wei
+  rotate: true
+  xy: 170, 134
+  size: 102, 49
+  orig: 102, 49
+  offset: 0, 0
+  index: -1

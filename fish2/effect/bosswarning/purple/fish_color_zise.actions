@@ -1,0 +1,32 @@
+{
+    "animsFileName": "fish_color_zise.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 30,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 0.1,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 1201
+                },
+                {
+                    "time": 30,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		}
+	]
+}

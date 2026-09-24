@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_juexing.atlas",
+    "anims": [
+        {
+            "name": "fish_juexing",
+            "totalSeconds": 5
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

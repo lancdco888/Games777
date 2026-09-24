@@ -1,0 +1,31 @@
+{
+    "animsFileName": "vip_levelup.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 60,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 2.6666,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 59.99,
+                    "speed": 0,
+                    "animPlayRatio": 0,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		}
+	]
+}

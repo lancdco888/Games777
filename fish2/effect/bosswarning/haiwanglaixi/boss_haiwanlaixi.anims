@@ -1,0 +1,12 @@
+{
+    "resFileName": "skeletonhaiwanglaixi_bawangxie.atlas",
+    "anims": [
+        {
+            "name": "haiwanglaixi_anyejushou",
+            "totalSeconds": 2.5
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

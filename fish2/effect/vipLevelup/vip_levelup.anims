@@ -1,0 +1,16 @@
+{
+    "resFileName": "vip_levelup1.atlas",
+    "anims": [
+        {
+            "name": "vip_levelup",
+            "totalSeconds": 2.66667
+        },
+        {
+            "name": "vip_levelup_stay",
+            "totalSeconds": 2.66667
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

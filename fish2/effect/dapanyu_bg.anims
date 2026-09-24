@@ -1,0 +1,14 @@
+{
+    "resFileName": "dapanyu_bg.frames",
+    "anims": [
+        {
+            "name": "move",
+            "totalSeconds": 10000,
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

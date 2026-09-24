@@ -1,0 +1,27 @@
+
+skeletonhaiwanglaixi_bawangxie.png
+size: 553,1021
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+texiao_booslaixibeijingguang
+  rotate: true
+  xy: 2, 191
+  size: 828, 490
+  orig: 828, 490
+  offset: 0, 0
+  index: -1
+texiao_haiwangguangxian1
+  rotate: true
+  xy: 494, 2
+  size: 1017, 28
+  orig: 1017, 28
+  offset: 0, 0
+  index: -1
+texiao_haiwangguangxian2
+  rotate: true
+  xy: 524, 326
+  size: 693, 27
+  orig: 693, 27
+  offset: 0, 0
+  index: -1

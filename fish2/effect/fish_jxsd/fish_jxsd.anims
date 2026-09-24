@@ -1,0 +1,12 @@
+{
+    "resFileName": "fish_jxsd.atlas",
+    "anims": [
+        {
+            "name": "fish_jxsd",
+            "totalSeconds": 3.33333
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

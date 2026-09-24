@@ -1,0 +1,25 @@
+{
+    "animsFileName": "boss_haiwanlaixi.anims",
+	"actions": [
+		{
+			"name": "show",
+			"totalSeconds": 2.5,
+            "baseSpeed": 0,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 2.4950,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+			]
+		}
+	]
+}

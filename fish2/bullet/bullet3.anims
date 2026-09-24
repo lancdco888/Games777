@@ -1,0 +1,44 @@
+{
+    "resFileName": "bullet3.frames",
+    "anims": [
+        {
+            "name": "idle",
+            "totalSeconds": 3,
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "lockPoints": [
+                        {
+                            "x": 0,
+                            "y": 0
+                        }
+                    ]
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": 40,
+                        "y": 0,
+                        "r": 12
+                    },
+                    "cdCircles": [
+                        {
+                            "x": 40,
+                            "y": 0,
+                            "r": 12
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

@@ -1,0 +1,16 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "texiao_dapanyu.png"
+                }
+            ],
+            "totalSeconds": 10000
+        }
+    ],
+    "plists": [
+    ]
+}

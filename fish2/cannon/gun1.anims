@@ -1,0 +1,28 @@
+{
+    "resFileName": "gun1.atlas",
+    "anims": [
+        {
+            "name": "1",
+            "totalSeconds": 1,
+            "lps": [],
+            "cds": [],
+            "nextAnim": "2"
+        },
+        {
+            "name": "2",
+            "totalSeconds": 1,
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "3",
+            "totalSeconds": 0.333333343,
+            "lps": [],
+            "cds": [],
+            "nextAnim": "2"
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

@@ -1,0 +1,16 @@
+{
+    "resFileName": "fish_pochan.atlas",
+    "anims": [
+        {
+            "name": "fish_pochan",
+            "totalSeconds": 2
+        },
+        {
+            "name": "fish_pochan2",
+            "totalSeconds": 0.000001
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

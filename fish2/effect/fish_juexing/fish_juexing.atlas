@@ -1,0 +1,195 @@
+
+fish_juexing.png
+size: 472,2074
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bigcircle
+  rotate: false
+  xy: 2, 822
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
+fazheng2
+  rotate: false
+  xy: 2, 588
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
+fazheng3
+  rotate: false
+  xy: 2, 354
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
+jue
+  rotate: true
+  xy: 2, 1565
+  size: 507, 337
+  orig: 507, 337
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00005
+  rotate: true
+  xy: 341, 1783
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00006
+  rotate: true
+  xy: 236, 765
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00008
+  rotate: true
+  xy: 341, 1492
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00009
+  rotate: true
+  xy: 400, 1783
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00010
+  rotate: true
+  xy: 236, 474
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00011
+  rotate: true
+  xy: 341, 1201
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00012
+  rotate: true
+  xy: 400, 1492
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00014
+  rotate: true
+  xy: 236, 183
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00015
+  rotate: true
+  xy: 400, 1201
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00016
+  rotate: true
+  xy: 295, 765
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00017
+  rotate: true
+  xy: 295, 474
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00018
+  rotate: true
+  xy: 295, 183
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00020
+  rotate: false
+  xy: 2, 61
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00021
+  rotate: false
+  xy: 2, 2
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00022
+  rotate: true
+  xy: 354, 910
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00023
+  rotate: true
+  xy: 413, 910
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00024
+  rotate: true
+  xy: 354, 619
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00026
+  rotate: true
+  xy: 413, 619
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00027
+  rotate: true
+  xy: 354, 328
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+jx/panner_jx_00028
+  rotate: true
+  xy: 413, 328
+  size: 289, 57
+  orig: 289, 57
+  offset: 0, 0
+  index: -1
+light
+  rotate: false
+  xy: 354, 262
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+xing
+  rotate: true
+  xy: 2, 1056
+  size: 507, 337
+  orig: 507, 337
+  offset: 0, 0
+  index: -1
+xx
+  rotate: false
+  xy: 2, 120
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1

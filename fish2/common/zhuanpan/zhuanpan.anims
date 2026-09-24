@@ -1,0 +1,15 @@
+{
+    "resFileName": "zhuanpan.atlas",
+    "anims": [
+        {
+            "name": "zhuanpanzhuandong",
+            "skin": "",
+            "totalSeconds": 3.0333333,
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}
