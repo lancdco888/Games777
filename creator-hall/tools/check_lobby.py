@@ -57,6 +57,13 @@ def main():
     assert sample["games"][0]["id"] == 270
     assert sample["vipLevel"] > 0
 
+    games = json.loads((ROOT / "assets/resources/layout/games.json").read_text(encoding="utf-8"))["games"]
+    by_id = {item["id"]: item for item in games}
+    assert by_id[270]["name"] == "财富之眼"
+    assert by_id[101]["type"] == "haiwang"
+    icon = ROOT / "assets/resources/hall/lobby/icon/270.png"
+    assert icon.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+
     compressed = compress_uuid(meta["uuid"])
     assert compressed == "c4a1eeybTBPkZpYDns8kdSm"
     script = next(item for item in scene if item.get("__type__") == compressed)

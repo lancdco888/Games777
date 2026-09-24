@@ -407,47 +407,73 @@ def set_visible(node, name, visible):
         set_visible(child, name, visible)
 
 
+def export_game_catalog():
+    text = (ROOT / "hall/src/common/const_game.lua").read_text(encoding="utf-8", errors="replace")
+    blocks = re.findall(r"\[(\d+)\]\s*=\s*\{(.*?)\n\s*\},", text, re.S)
+    catalog = {}
+    for game_id, body in blocks:
+        icon = re.search(r"\[const_game\.Icon\]\s*=\s*(\d+)", body)
+        name = re.search(r"\[const_game\.Game_Name\]\s*=\s*TR\(\s*[\"'](.+?)[\"']", body)
+        game_type = re.search(r"\[const_game\.Game_type\]\s*=\s*['\"]([^'\"]+)", body)
+        catalog[int(game_id)] = {
+            "id": int(game_id),
+            "icon": int(icon.group(1)) if icon else int(game_id),
+            "name": name.group(1) if name else str(game_id),
+            "type": game_type.group(1) if game_type else "slot",
+        }
+    icon_out = RES_OUT / "lobby/icon"
+    icon_out.mkdir(parents=True, exist_ok=True)
+    sources = [ROOT / "hall/res/lobby/icon", ROOT / "hall/res/mm/language/lobby/icon"]
+    copied = 0
+    for index, folder in enumerate(sources):
+        if not folder.is_dir():
+            continue
+        for src in folder.glob("*.png"):
+            dest = icon_out / src.name
+            if index > 0 and dest.is_file():
+                continue
+            open_image(src).save(dest)
+            copied += 1
+    sample = json.loads((LAYOUT_OUT / "sample-lobby.json").read_text(encoding="utf-8"))
+    preferred = [item["id"] for item in sample.get("games", [])]
+    available = {int(path.stem) for path in icon_out.glob("*.png")}
+    ordered = []
+    seen = set()
+    for game_id in preferred + sorted(available):
+        if game_id in seen or game_id not in available:
+            continue
+        seen.add(game_id)
+        info = catalog.get(game_id) or {"id": game_id, "icon": game_id, "name": str(game_id), "type": "slot"}
+        if info["icon"] not in available:
+            info = dict(info)
+            info["icon"] = game_id
+        ordered.append(info)
+    (LAYOUT_OUT / "games.json").write_text(json.dumps({"games": ordered}, ensure_ascii=False, indent=2), encoding="utf-8")
+    return copied, len(ordered)
+
+
 def draw_game_cards(canvas: Image.Image):
-    font = ImageFont.truetype("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc", 32)
     small = ImageFont.truetype("/usr/share/fonts/truetype/wqy/wqy-microhei.ttc", 22)
-    games = [
-        (270, "财富之眼"),
-        (336, "和平&长寿"),
-        (341, "魔法熊猫"),
-        (353, "野牛-豪华版"),
-        (375, "尤里卡列车"),
-        (388, "江湖儿女"),
-        (465, "五龙争霸Ⅱ"),
-        (475, "海盗财宝"),
-        (479, "熊猫宝藏Ⅱ"),
-        (481, "Gates of Olympus"),
-        (482, "Olympus"),
-        (483, "麻将胡了"),
-        (485, "终极火链"),
-    ]
     list_x, list_y, list_w, list_h = 20, 75, 1240, 570
-    item_w, item_h = 274.0, 600.0
-    scale = list_h / item_h
-    cell_w = item_w * scale + 3
-    cell_h = item_h * scale
+    icon_h = list_h - 24
+    icon_w = icon_h * 264 / 467
+    cell_w = icon_w + 12
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
-    for index, (gid, name) in enumerate(games):
-        x = list_x + index * cell_w + 6
-        if x > list_x + list_w:
+    catalog = json.loads((LAYOUT_OUT / "games.json").read_text(encoding="utf-8"))["games"]
+    for index, game in enumerate(catalog):
+        x = list_x + index * cell_w + 8
+        if x + icon_w > list_x + list_w:
             break
-        bottom = list_y + 8
-        top = 720 - (bottom + cell_h - 16)
-        box = (x, top, min(list_x + list_w - 4, x + item_w * scale - 10), top + cell_h - 16)
-        draw.rounded_rectangle(box, radius=18, fill=(16, 36, 64, 230), outline=(255, 214, 120, 255), width=3)
-        id_text = str(gid)
-        name_text = name
-        id_w = draw.textlength(id_text, font=font)
-        name_w = draw.textlength(name_text, font=small)
-        cx = (box[0] + box[2]) / 2
-        cy = (box[1] + box[3]) / 2
-        draw.text((cx - id_w / 2, cy - 36), id_text, font=font, fill=(255, 236, 180, 255))
-        draw.text((cx - name_w / 2, cy + 8), name_text, font=small, fill=(220, 232, 245, 255))
+        bottom = list_y + 12
+        top = int(round(720 - (bottom + icon_h)))
+        icon_path = RES_OUT / "lobby/icon" / f"{game['icon']}.png"
+        if icon_path.is_file():
+            pic = open_image(icon_path).resize((int(icon_w), int(icon_h)), Image.Resampling.LANCZOS)
+            overlay.alpha_composite(pic, (int(round(x)), top))
+        else:
+            draw.rounded_rectangle((x, top, x + icon_w, top + icon_h), radius=16, fill=(16, 36, 64, 230))
+            draw.text((x + 12, top + icon_h / 2), game["name"], font=small, fill=(255, 236, 180, 255))
     mask = Image.new("L", canvas.size, 0)
     mask_draw = ImageDraw.Draw(mask)
     list_top = 720 - (list_y + list_h)
@@ -475,6 +501,7 @@ def main():
     set_visible(lobby, "btn_return", False)
     missing = []
     render(lobby, canvas, 0, 0, missing)
+    icons, game_count = export_game_catalog()
     draw_game_cards(canvas)
     buttons = None
 
@@ -498,7 +525,7 @@ def main():
         raise SystemExit(f"user_info position drifted: {creator_x}, {creator_y}")
     copied = sum(1 for v in cache.values() if v)
     absent = sorted(set(missing))
-    print(json.dumps({"copied": copied, "missing": absent, "preview": str(PREVIEW), "userInfo": [creator_x, creator_y]}, ensure_ascii=False, indent=2))
+    print(json.dumps({"copied": copied, "icons": icons, "games": game_count, "missing": absent, "preview": str(PREVIEW), "userInfo": [creator_x, creator_y]}, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
