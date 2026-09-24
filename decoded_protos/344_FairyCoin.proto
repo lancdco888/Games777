@@ -1,0 +1,47 @@
+// ==============================================
+// 📄 Source: 344_FairyCoin.proto
+package PB.FairyCoin;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 curWinCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 intoFree = 5;
+    optional int32 freeTime = 6;
+    optional int32 totalFreeTime = 7;
+    optional int32 addFreeTime = 8;
+    optional int32 purple = 9;
+    optional int32 doubled = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+    optional int64 levelUpMoney = 13;
+    repeated int64 levelUpMoneys = 14;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 intoFree = 5;
+    optional int32 freeTime = 6;
+    optional int32 totalFreeTime = 7;
+    optional int32 addFreeTime = 8;
+    optional int32 purple = 9;
+    optional int32 doubled = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}
