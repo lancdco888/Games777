@@ -1,0 +1,26 @@
+{
+    "animsFileName": "fishnet_effect2.anims",
+    "actions": [
+        {
+            "name": "once",
+            "totalSeconds": 0.43333333333333333,
+            "baseSpeed": 100,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 0
+                },
+                {
+                    "time": 0.43333333333333333,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0,
+                    "eventId": 2
+                }
+            ]
+        }
+    ]
+}

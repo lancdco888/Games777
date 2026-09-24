@@ -1,0 +1,18 @@
+{
+    "animsFileName": "fuyu.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        }
+    ]
+}

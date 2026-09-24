@@ -1,0 +1,424 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "shiziyu_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "shiziyu_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "shiziyu_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "shiziyu_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "shiziyu_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "shiziyu_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "shiziyu_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "shiziyu_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "shiziyu_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "shiziyu_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "shiziyu_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "shiziyu_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "shiziyu_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "shiziyu_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "shiziyu_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "shiziyu_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "shiziyu_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "shiziyu_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "shiziyu_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "shiziyu_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "shiziyu_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "shiziyu_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "shiziyu_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "shiziyu_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "shiziyu_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "shiziyu_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "shiziyu_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "shiziyu_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "shiziyu_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "shiziyu_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "shiziyu_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "shiziyu_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "shiziyu_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "shiziyu_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "shiziyu_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "shiziyu_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "shiziyu_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "shiziyu_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "shiziyu_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "shiziyu_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "shiziyu_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "shiziyu_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "shiziyu_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "shiziyu_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "shiziyu_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "shiziyu_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "shiziyu_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "shiziyu_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "shiziyu_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "shiziyu_move (99).png"
+                },
+                {
+                    "time": 1.6666666666666667,
+                    "picName": "shiziyu_move (101).png"
+                }
+            ],
+            "totalSeconds": 1.7
+        },
+        {
+            "name": "light",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "shiziyu_xuanfeng_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "shiziyu_xuanfeng_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "shiziyu_xuanfeng_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "shiziyu_xuanfeng_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "shiziyu_xuanfeng_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "shiziyu_xuanfeng_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "shiziyu_xuanfeng_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "shiziyu_xuanfeng_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "shiziyu_xuanfeng_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "shiziyu_xuanfeng_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "shiziyu_xuanfeng_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "shiziyu_xuanfeng_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "shiziyu_xuanfeng_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "shiziyu_xuanfeng_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "shiziyu_xuanfeng_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "shiziyu_xuanfeng_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "shiziyu_xuanfeng_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "shiziyu_xuanfeng_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "shiziyu_xuanfeng_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "shiziyu_xuanfeng_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "shiziyu_xuanfeng_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "shiziyu_xuanfeng_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "shiziyu_xuanfeng_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "shiziyu_xuanfeng_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "shiziyu_xuanfeng_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "shiziyu_xuanfeng_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "shiziyu_xuanfeng_move (99).png"
+                }
+            ],
+            "totalSeconds": 1.6666666666666667
+        }
+    ],
+    "plists": [
+        "fish/general/shiziyu_xuanfeng_move_0.plist",
+        "fish/general/shiziyu_move_0.plist"
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "animsFileName": "bimuyu.anims",
+    "actions":
+    [
+        {
+            "name": "move",
+            "totalSeconds": 4,
+            "baseSpeed": 50,
+            "events": [
+               {
+                    "time": 0,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time":1,
+                    "speed": 50,
+                    "animPlayRatio": 2,
+                    "animIndex": 0
+                },
+                {
+                    "time": 2,
+                    "speed": 400,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time":3,
+                    "speed": 150,
+                    "animPlayRatio": 2,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "light",
+            "totalSeconds": 4,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time":1,
+                    "speed": 50,
+                    "animPlayRatio": 2,
+                    "animIndex": 1
+                },
+                {
+                    "time": 2,
+                    "speed": 400,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+                ,
+                {
+                    "time":3,
+                    "speed": 150,
+                    "animPlayRatio": 2,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

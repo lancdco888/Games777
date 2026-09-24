@@ -1,0 +1,14 @@
+{
+    "resFileName": "fishnet_effect4.frames",
+    "anims": [
+        {
+            "name": "move",
+            "totalSeconds": 0.43333333333333335,
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": 0,
+    "shadowY": 0,
+    "shadowScale": 0
+}

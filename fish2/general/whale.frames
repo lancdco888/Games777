@@ -1,0 +1,493 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "whale_move (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "whale_move (3).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "whale_move (5).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "whale_move (7).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "whale_move (9).png"
+                },
+                {
+                    "time": 0.16666666666666666,
+                    "picName": "whale_move (11).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "whale_move (13).png"
+                },
+                {
+                    "time": 0.23333333333333334,
+                    "picName": "whale_move (15).png"
+                },
+                {
+                    "time": 0.26666666666666666,
+                    "picName": "whale_move (17).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "whale_move (19).png"
+                },
+                {
+                    "time": 0.3333333333333333,
+                    "picName": "whale_move (21).png"
+                },
+                {
+                    "time": 0.36666666666666664,
+                    "picName": "whale_move (23).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "whale_move (25).png"
+                },
+                {
+                    "time": 0.43333333333333335,
+                    "picName": "whale_move (27).png"
+                },
+                {
+                    "time": 0.4666666666666667,
+                    "picName": "whale_move (29).png"
+                },
+                {
+                    "time": 0.5,
+                    "picName": "whale_move (31).png"
+                },
+                {
+                    "time": 0.5333333333333333,
+                    "picName": "whale_move (33).png"
+                },
+                {
+                    "time": 0.5666666666666667,
+                    "picName": "whale_move (35).png"
+                },
+                {
+                    "time": 0.6,
+                    "picName": "whale_move (37).png"
+                },
+                {
+                    "time": 0.6333333333333333,
+                    "picName": "whale_move (39).png"
+                },
+                {
+                    "time": 0.6666666666666666,
+                    "picName": "whale_move (41).png"
+                },
+                {
+                    "time": 0.7,
+                    "picName": "whale_move (43).png"
+                },
+                {
+                    "time": 0.7333333333333333,
+                    "picName": "whale_move (45).png"
+                },
+                {
+                    "time": 0.7666666666666666,
+                    "picName": "whale_move (47).png"
+                },
+                {
+                    "time": 0.8,
+                    "picName": "whale_move (49).png"
+                },
+                {
+                    "time": 0.8333333333333334,
+                    "picName": "whale_move (51).png"
+                },
+                {
+                    "time": 0.8666666666666667,
+                    "picName": "whale_move (53).png"
+                },
+                {
+                    "time": 0.9,
+                    "picName": "whale_move (55).png"
+                },
+                {
+                    "time": 0.9333333333333333,
+                    "picName": "whale_move (57).png"
+                },
+                {
+                    "time": 0.9666666666666667,
+                    "picName": "whale_move (59).png"
+                },
+                {
+                    "time": 1,
+                    "picName": "whale_move (61).png"
+                },
+                {
+                    "time": 1.0333333333333332,
+                    "picName": "whale_move (63).png"
+                },
+                {
+                    "time": 1.0666666666666667,
+                    "picName": "whale_move (65).png"
+                },
+                {
+                    "time": 1.1,
+                    "picName": "whale_move (67).png"
+                },
+                {
+                    "time": 1.1333333333333333,
+                    "picName": "whale_move (69).png"
+                },
+                {
+                    "time": 1.1666666666666667,
+                    "picName": "whale_move (71).png"
+                },
+                {
+                    "time": 1.2,
+                    "picName": "whale_move (73).png"
+                },
+                {
+                    "time": 1.2333333333333334,
+                    "picName": "whale_move (75).png"
+                },
+                {
+                    "time": 1.2666666666666666,
+                    "picName": "whale_move (77).png"
+                },
+                {
+                    "time": 1.3,
+                    "picName": "whale_move (79).png"
+                },
+                {
+                    "time": 1.3333333333333333,
+                    "picName": "whale_move (81).png"
+                },
+                {
+                    "time": 1.3666666666666667,
+                    "picName": "whale_move (83).png"
+                },
+                {
+                    "time": 1.4,
+                    "picName": "whale_move (85).png"
+                },
+                {
+                    "time": 1.4333333333333333,
+                    "picName": "whale_move (87).png"
+                },
+                {
+                    "time": 1.4666666666666666,
+                    "picName": "whale_move (89).png"
+                },
+                {
+                    "time": 1.5,
+                    "picName": "whale_move (91).png"
+                },
+                {
+                    "time": 1.5333333333333332,
+                    "picName": "whale_move (93).png"
+                },
+                {
+                    "time": 1.5666666666666667,
+                    "picName": "whale_move (95).png"
+                },
+                {
+                    "time": 1.6,
+                    "picName": "whale_move (97).png"
+                },
+                {
+                    "time": 1.6333333333333333,
+                    "picName": "whale_move (99).png"
+                },
+                {
+                    "time": 1.6666666666666667,
+                    "picName": "whale_move (101).png"
+                },
+                {
+                    "time": 1.7,
+                    "picName": "whale_move (103).png"
+                },
+                {
+                    "time": 1.7333333333333334,
+                    "picName": "whale_move (105).png"
+                },
+                {
+                    "time": 1.7666666666666666,
+                    "picName": "whale_move (107).png"
+                },
+                {
+                    "time": 1.8,
+                    "picName": "whale_move (109).png"
+                },
+                {
+                    "time": 1.8333333333333333,
+                    "picName": "whale_move (111).png"
+                },
+                {
+                    "time": 1.8666666666666667,
+                    "picName": "whale_move (113).png"
+                },
+                {
+                    "time": 1.9,
+                    "picName": "whale_move (115).png"
+                },
+                {
+                    "time": 1.9333333333333333,
+                    "picName": "whale_move (117).png"
+                },
+                {
+                    "time": 1.9666666666666666,
+                    "picName": "whale_move (119).png"
+                },
+                {
+                    "time": 2,
+                    "picName": "whale_move (121).png"
+                },
+                {
+                    "time": 2.033333333333333,
+                    "picName": "whale_move (123).png"
+                },
+                {
+                    "time": 2.0666666666666664,
+                    "picName": "whale_move (125).png"
+                },
+                {
+                    "time": 2.1,
+                    "picName": "whale_move (127).png"
+                },
+                {
+                    "time": 2.1333333333333333,
+                    "picName": "whale_move (129).png"
+                },
+                {
+                    "time": 2.1666666666666665,
+                    "picName": "whale_move (131).png"
+                },
+                {
+                    "time": 2.2,
+                    "picName": "whale_move (133).png"
+                },
+                {
+                    "time": 2.2333333333333334,
+                    "picName": "whale_move (135).png"
+                },
+                {
+                    "time": 2.2666666666666666,
+                    "picName": "whale_move (137).png"
+                },
+                {
+                    "time": 2.3,
+                    "picName": "whale_move (139).png"
+                },
+                {
+                    "time": 2.3333333333333335,
+                    "picName": "whale_move (141).png"
+                },
+                {
+                    "time": 2.3666666666666667,
+                    "picName": "whale_move (143).png"
+                },
+                {
+                    "time": 2.4,
+                    "picName": "whale_move (145).png"
+                },
+                {
+                    "time": 2.433333333333333,
+                    "picName": "whale_move (147).png"
+                },
+                {
+                    "time": 2.466666666666667,
+                    "picName": "whale_move (149).png"
+                },
+                {
+                    "time": 2.5,
+                    "picName": "whale_move (151).png"
+                },
+                {
+                    "time": 2.533333333333333,
+                    "picName": "whale_move (153).png"
+                },
+                {
+                    "time": 2.5666666666666664,
+                    "picName": "whale_move (155).png"
+                },
+                {
+                    "time": 2.6,
+                    "picName": "whale_move (157).png"
+                },
+                {
+                    "time": 2.6333333333333333,
+                    "picName": "whale_move (159).png"
+                },
+                {
+                    "time": 2.6666666666666665,
+                    "picName": "whale_move (161).png"
+                },
+                {
+                    "time": 2.7,
+                    "picName": "whale_move (163).png"
+                },
+                {
+                    "time": 2.7333333333333334,
+                    "picName": "whale_move (165).png"
+                },
+                {
+                    "time": 2.7666666666666666,
+                    "picName": "whale_move (167).png"
+                },
+                {
+                    "time": 2.8,
+                    "picName": "whale_move (169).png"
+                },
+                {
+                    "time": 2.8333333333333335,
+                    "picName": "whale_move (171).png"
+                },
+                {
+                    "time": 2.8666666666666667,
+                    "picName": "whale_move (173).png"
+                },
+                {
+                    "time": 2.9,
+                    "picName": "whale_move (175).png"
+                },
+                {
+                    "time": 2.933333333333333,
+                    "picName": "whale_move (177).png"
+                },
+                {
+                    "time": 2.966666666666667,
+                    "picName": "whale_move (179).png"
+                },
+                {
+                    "time": 3,
+                    "picName": "whale_move (181).png"
+                },
+                {
+                    "time": 3.033333333333333,
+                    "picName": "whale_move (183).png"
+                },
+                {
+                    "time": 3.0666666666666664,
+                    "picName": "whale_move (185).png"
+                },
+                {
+                    "time": 3.1,
+                    "picName": "whale_move (187).png"
+                },
+                {
+                    "time": 3.1333333333333333,
+                    "picName": "whale_move (189).png"
+                },
+                {
+                    "time": 3.1666666666666665,
+                    "picName": "whale_move (191).png"
+                },
+                {
+                    "time": 3.2,
+                    "picName": "whale_move (193).png"
+                },
+                {
+                    "time": 3.2333333333333334,
+                    "picName": "whale_move (195).png"
+                },
+                {
+                    "time": 3.2666666666666666,
+                    "picName": "whale_move (197).png"
+                },
+                {
+                    "time": 3.3,
+                    "picName": "whale_move (199).png"
+                },
+                {
+                    "time": 3.3333333333333335,
+                    "picName": "whale_move (201).png"
+                },
+                {
+                    "time": 3.3666666666666667,
+                    "picName": "whale_move (203).png"
+                },
+                {
+                    "time": 3.4,
+                    "picName": "whale_move (205).png"
+                },
+                {
+                    "time": 3.433333333333333,
+                    "picName": "whale_move (207).png"
+                },
+                {
+                    "time": 3.466666666666667,
+                    "picName": "whale_move (209).png"
+                },
+                {
+                    "time": 3.5,
+                    "picName": "whale_move (211).png"
+                },
+                {
+                    "time": 3.533333333333333,
+                    "picName": "whale_move (213).png"
+                },
+                {
+                    "time": 3.5666666666666664,
+                    "picName": "whale_move (215).png"
+                },
+                {
+                    "time": 3.6,
+                    "picName": "whale_move (217).png"
+                },
+                {
+                    "time": 3.6333333333333333,
+                    "picName": "whale_move (219).png"
+                },
+                {
+                    "time": 3.6666666666666665,
+                    "picName": "whale_move (221).png"
+                },
+                {
+                    "time": 3.6999999999999997,
+                    "picName": "whale_move (223).png"
+                },
+                {
+                    "time": 3.7333333333333334,
+                    "picName": "whale_move (225).png"
+                },
+                {
+                    "time": 3.7666666666666666,
+                    "picName": "whale_move (227).png"
+                },
+                {
+                    "time": 3.8,
+                    "picName": "whale_move (229).png"
+                },
+                {
+                    "time": 3.8333333333333335,
+                    "picName": "whale_move (231).png"
+                },
+                {
+                    "time": 3.8666666666666667,
+                    "picName": "whale_move (233).png"
+                },
+                {
+                    "time": 3.9,
+                    "picName": "whale_move (235).png"
+                },
+                {
+                    "time": 3.933333333333333,
+                    "picName": "whale_move (237).png"
+                },
+                {
+                    "time": 3.966666666666667,
+                    "picName": "whale_move (239).png"
+                }
+            ],
+            "totalSeconds": 4
+        }
+    ],
+    "plists": [
+        "fish/general/whale_move_0.plist"
+    ]
+}

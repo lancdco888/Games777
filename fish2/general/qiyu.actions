@@ -1,0 +1,31 @@
+{
+    "animsFileName": "qiyu.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 3.96666666666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 0.5,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "light",
+            "totalSeconds": 1.3666666666666667,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

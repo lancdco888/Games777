@@ -1,0 +1,31 @@
+{
+    "animsFileName": "xiaohetun.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 2,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 65,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "light",
+            "totalSeconds": 0.458333333325,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 65,
+                    "animPlayRatio": 0.8,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

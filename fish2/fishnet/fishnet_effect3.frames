@@ -1,0 +1,64 @@
+{
+    "frameAnims": [
+        {
+            "name": "move",
+            "frames": [
+                {
+                    "time": 0,
+                    "picName": "yuwang_texiao02 (1).png"
+                },
+                {
+                    "time": 0.03333333333333333,
+                    "picName": "yuwang_texiao02 (2).png"
+                },
+                {
+                    "time": 0.06666666666666667,
+                    "picName": "yuwang_texiao02 (3).png"
+                },
+                {
+                    "time": 0.1,
+                    "picName": "yuwang_texiao02 (4).png"
+                },
+                {
+                    "time": 0.13333333333333333,
+                    "picName": "yuwang_texiao02 (5).png"
+                },
+                {
+                    "time": 0.16666666666666667,
+                    "picName": "yuwang_texiao02 (6).png"
+                },
+                {
+                    "time": 0.2,
+                    "picName": "yuwang_texiao02 (7).png"
+                },
+                {
+                    "time": 0.23333333333333333,
+                    "picName": "yuwang_texiao02 (8).png"
+                },
+                {
+                    "time": 0.26666666666666667,
+                    "picName": "yuwang_texiao02 (9).png"
+                },
+                {
+                    "time": 0.3,
+                    "picName": "yuwang_texiao02 (10).png"
+                },
+                {
+                    "time": 0.33333333333333333,
+                    "picName": "yuwang_texiao02 (11).png"
+                },
+                {
+                    "time": 0.36666666666666667,
+                    "picName": "yuwang_texiao02 (12).png"
+                },
+                {
+                    "time": 0.4,
+                    "picName": "yuwang_texiao02 (13).png"
+                }
+            ],
+            "totalSeconds": 0.43333333333333333
+        }
+    ],
+    "plists": [
+    ]
+}

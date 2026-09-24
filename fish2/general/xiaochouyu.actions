@@ -1,0 +1,31 @@
+{
+    "animsFileName": "xiaochouyu.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 0.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 150,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "light",
+            "totalSeconds": 0.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 150,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}

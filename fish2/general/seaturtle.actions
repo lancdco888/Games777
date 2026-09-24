@@ -1,0 +1,55 @@
+{
+    "animsFileName": "seaturtle.anims",
+    "actions": [
+        {
+            "name": "move",
+            "totalSeconds": 1.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 80,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 0.5,
+                    "speed": 150,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+                {
+                    "time": 1.1,
+                    "speed": 120,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+            ]
+        },
+        {
+            "name": "light",
+            "totalSeconds": 1.5,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 80,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 0.5,
+                    "speed": 150,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                    "time": 1.1,
+                    "speed": 120,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+    ]
+}
