@@ -14,12 +14,16 @@ BASE64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 
 
 def compress_uuid(uuid: str) -> str:
+    """Scene components use Creator's non-min uuid, which keeps 5 hex characters."""
     hexv = uuid.replace("-", "")
-    out = hexv[:2]
-    for index in range(2, 32, 3):
+    out = [hexv[:5]]
+    index = 5
+    while index < len(hexv):
         value = int(hexv[index : index + 3], 16)
-        out += BASE64[value >> 6] + BASE64[value & 63]
-    return out
+        out.append(BASE64[value >> 6])
+        out.append(BASE64[value & 63])
+        index += 3
+    return "".join(out)
 
 
 def find(node, name):
@@ -54,7 +58,7 @@ def main():
     assert sample["vipLevel"] > 0
 
     compressed = compress_uuid(meta["uuid"])
-    assert len(compressed) == 22
+    assert compressed == "c4a1eeybTBPkZpYDns8kdSm"
     script = next(item for item in scene if item.get("__type__") == compressed)
     assert script["node"]["__id__"] == 4
     lobby_node = scene[4]
