@@ -1,0 +1,20 @@
+
+bg3_fg.png
+size: 1286,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg3/cj_pengzhuang_02
+  rotate: false
+  xy: 2, 2
+  size: 640, 720
+  orig: 640, 720
+  offset: 0, 0
+  index: -1
+bg3/cj_pengzhuang_03
+  rotate: false
+  xy: 644, 2
+  size: 640, 720
+  orig: 640, 720
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+bg8_fg.png
+size: 1286,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg8/8
+  rotate: false
+  xy: 2, 2
+  size: 640, 720
+  orig: 640, 720
+  offset: 0, 0
+  index: -1
+bg8/9
+  rotate: false
+  xy: 644, 2
+  size: 640, 720
+  orig: 640, 720
+  offset: 0, 0
+  index: -1

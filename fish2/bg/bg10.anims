@@ -1,0 +1,17 @@
+{
+    "resFileName": "bg10.atlas",
+    "anims": [
+        {
+            "name": "enter",
+            "totalSeconds": 0.666666
+        },
+        {
+            "name": "exit",
+            "totalSeconds": 0.666666
+        },
+        {
+            "name": "scar",
+            "totalSeconds": 5.333333
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "animsFileName": "bg8.anims",
+	"actions": [
+		{
+			"name": "enter",
+			"totalSeconds": 0.666666,
+            "baseSpeed": 10,
+			"events": [
+				{
+					"time": 0,
+					"speed": 10,
+                    "animPlayRatio": 1,
+					"animIndex": 0
+				}
+			]
+		},
+		{
+            "name": "exit",
+            "totalSeconds": 0.666666,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                },
+                {
+                     "time": 0.666660,
+                     "speed": 10,
+                     "animPlayRatio": 1,
+                     "animIndex": 0,
+                     "eventId": 2
+                }
+            ]
+        },
+        {
+            "name": "xunhuan",
+            "totalSeconds": 150,
+            "baseSpeed": 10,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 10,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                }
+            ]
+        }
+	]
+}

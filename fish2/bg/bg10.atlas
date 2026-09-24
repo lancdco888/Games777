@@ -1,0 +1,20 @@
+
+bg10.png
+size: 1692,786
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg10/by_cj_bawangxielaixi_01
+  rotate: false
+  xy: 2, 64
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+bg10/by_cj_bawangxielaixi_02
+  rotate: true
+  xy: 1284, 2
+  size: 782, 406
+  orig: 782, 406
+  offset: 0, 0
+  index: -1

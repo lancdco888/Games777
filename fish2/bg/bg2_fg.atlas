@@ -1,0 +1,13 @@
+
+bg2_fg.png
+size: 644,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg2/6
+  rotate: false
+  xy: 2, 2
+  size: 640, 720
+  orig: 640, 720
+  offset: 0, 0
+  index: -1

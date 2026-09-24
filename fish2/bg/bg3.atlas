@@ -1,0 +1,27 @@
+
+bg3.png
+size: 3155,724
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg3/by_cj_03_01
+  rotate: false
+  xy: 1284, 2
+  size: 941, 720
+  orig: 941, 720
+  offset: 0, 0
+  index: -1
+bg3/by_cj_03_02
+  rotate: false
+  xy: 2227, 2
+  size: 926, 720
+  orig: 926, 720
+  offset: 0, 0
+  index: -1
+bg3/by_cj_03_03
+  rotate: false
+  xy: 2, 2
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
