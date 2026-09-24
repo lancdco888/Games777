@@ -1,0 +1,2422 @@
+[
+    {
+        "text": "正在获取导航信息...",
+        "translate": "正在获取导航信息..."
+    },
+    {
+        "text": "获取导航信息失败",
+        "translate": "获取导航信息失败"
+    },
+    {
+        "text": "获取导航信息失败, 是否重试？",
+        "translate": "获取导航信息失败, 是否重试？"
+    },
+    {
+        "text": "版本更新失败",
+        "translate": "版本更新失败"
+    },
+    {
+        "text": "版本更新失败, 是否重试？",
+        "translate": "版本更新失败, 是否重试？"
+    },
+    {
+        "text": "正在更新文件...",
+        "translate": "正在更新文件..."
+    },
+    {
+        "text": "正在检查版本信息...",
+        "translate": "正在检查版本信息..."
+    },
+    {
+        "text": "检查版本信息失败，是否重试？",
+        "translate": "检查版本信息失败，是否重试？"
+    },
+    {
+        "text": "确定",
+        "translate": "确定"
+    },
+    {
+        "text": "取消",
+        "translate": "取消"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "该软件尚未安装，请安装后继续"
+    },
+    {
+        "text": "正在更新大厅...",
+        "translate": "正在更新大厅..."
+    },
+    {
+        "text": "正在更新 SO ...",
+        "translate": "正在更新 SO ..."
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "该软件尚未安装，请安装后继续"
+    },
+    {
+        "text": "用户名或密码错误",
+        "translate": "用户名或密码错误"
+    },
+    {
+        "text": "服务器未响应",
+        "translate": "服务器未响应"
+    },
+    {
+        "text": "密码登录",
+        "translate": "密码登录"
+    },
+    {
+        "text": "游客登录",
+        "translate": "游客登录"
+    },
+    {
+        "text": "请选择语言",
+        "translate": "请选择语言"
+    },
+    {
+        "text": "账户名称",
+        "translate": "账户名称"
+    },
+    {
+        "text": "账户密码",
+        "translate": "账户密码"
+    },
+    {
+        "text": "记住密码",
+        "translate": "记住密码"
+    },
+    {
+        "text": "字母或数字%d至%d位",
+        "translate": "字母或数字%d至%d位"
+    },
+    {
+        "text": "你取消了该操作，请重试",
+        "translate": "你取消了该操作，请重试"
+    },
+    {
+        "text": "你需先安装facebook，如果没有，请取消服务。",
+        "translate": "你需先安装facebook，如果没有，请取消服务。"
+    },
+    {
+        "text": "绑定失败",
+        "translate": "绑定失败"
+    },
+    {
+        "text": "亲，确定不再玩一会儿游戏了吗？",
+        "translate": "亲，确定不再玩一会儿游戏了吗？"
+    },
+    {
+        "text": "网络连接失败，请重试",
+        "translate": "网络连接失败，请重试"
+    },
+    {
+        "text": "连接中，请稍后",
+        "translate": "连接中，请稍后"
+    },
+    {
+        "text": "FACEBOOK登录",
+        "translate": "FACEBOOK登录"
+    },
+    {
+        "text": "请输入邀请码",
+        "translate": "请输入邀请码"
+    },
+    {
+        "text": "请确认两次密码输入一致",
+        "translate": "请确认两次密码输入一致"
+    },
+    {
+        "text": "确认密码",
+        "translate": "确认密码"
+    },
+    {
+        "text": "邀请码",
+        "translate": "邀请码"
+    },
+    {
+        "text": "请选择屏幕尺寸",
+        "translate": "请选择屏幕尺寸"
+    },
+    {
+        "text": "%d至%d位",
+        "translate": "%d至%d位"
+    },
+    {
+        "text": "账号不能含有空白字符",
+        "translate": "账号不能含有空白字符"
+    },
+    {
+        "text": "邀请码不存在",
+        "translate": "邀请码不存在"
+    },
+    {
+        "text": "服务器正在维护当中",
+        "translate": "服务器正在维护当中"
+    },
+    {
+        "text": "当前账号无法登录，请联系客服",
+        "translate": "当前账号无法登录，请联系客服"
+    },
+    {
+        "text": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服",
+        "translate": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服"
+    },
+    {
+        "text": "当前版本过低，点击确定更新",
+        "translate": "当前版本过低，点击确定更新"
+    },
+    {
+        "text": "进入大厅失败，请重试",
+        "translate": "进入大厅失败，请重试"
+    },
+    {
+        "text": "断线重连，重新进入大厅主界面",
+        "translate": "断线重连，重新进入大厅主界面"
+    },
+    {
+        "text": "网络连接失败，是否重试？",
+        "translate": "网络连接失败，是否重试？"
+    },
+    {
+        "text": "大王乌贼",
+        "translate": "大王乌贼"
+    },
+    {
+        "text": "八爪章鱼",
+        "translate": "八爪章鱼"
+    },
+    {
+        "text": "狂暴火龙",
+        "translate": "狂暴火龙"
+    },
+    {
+        "text": "霸王蟹",
+        "translate": "霸王蟹"
+    },
+    {
+        "text": "龙虾将军",
+        "translate": "龙虾将军"
+    },
+    {
+        "text": "史前巨鳄",
+        "translate": "史前巨鳄"
+    },
+    {
+        "text": "暗夜巨兽",
+        "translate": "暗夜巨兽"
+    },
+    {
+        "text": "海王荣耀",
+        "translate": "海王荣耀"
+    },
+    {
+        "text": "铁甲飞龙",
+        "translate": "铁甲飞龙"
+    },
+    {
+        "text": "追风逐月",
+        "translate": "追风逐月"
+    },
+    {
+        "text": "哪吒闹海",
+        "translate": "哪吒闹海"
+    },
+    {
+        "text": "神龙宝藏",
+        "translate": "神龙宝藏"
+    },
+    {
+        "text": "同类炸弹",
+        "translate": "同类炸弹"
+    },
+    {
+        "text": "响震四方",
+        "translate": "响震四方"
+    },
+    {
+        "text": "羊鳄大战",
+        "translate": "羊鳄大战"
+    },
+    {
+        "text": "海盗船",
+        "translate": "海盗船"
+    },
+    {
+        "text": "三色鳄鱼",
+        "translate": "三色鳄鱼"
+    },
+    {
+        "text": "李逵劈鱼",
+        "translate": "李逵劈鱼"
+    },
+    {
+        "text": "摇钱树",
+        "translate": "摇钱树"
+    },
+    {
+        "text": "金蟾捕鱼",
+        "translate": "金蟾捕鱼"
+    },
+    {
+        "text": "黄金美人鱼",
+        "translate": "黄金美人鱼"
+    },
+    {
+        "text": "龙鲨争霸",
+        "translate": "龙鲨争霸"
+    },
+    {
+        "text": "火凤凰",
+        "translate": "火凤凰"
+    },
+    {
+        "text": "神龙转轮",
+        "translate": "神龙转轮"
+    },
+    {
+        "text": "野蛮丛林",
+        "translate": "野蛮丛林"
+    },
+    {
+        "text": "水浒英雄",
+        "translate": "水浒英雄"
+    },
+    {
+        "text": "财神道",
+        "translate": "财神道"
+    },
+    {
+        "text": "糖果王国",
+        "translate": "糖果王国"
+    },
+    {
+        "text": "好运年年",
+        "translate": "好运年年"
+    },
+    {
+        "text": "幸运钻石",
+        "translate": "幸运钻石"
+    },
+    {
+        "text": "阿拉丁宝藏",
+        "translate": "阿拉丁宝藏"
+    },
+    {
+        "text": "皇朝88",
+        "translate": "皇朝88"
+    },
+    {
+        "text": "神偷侠兔",
+        "translate": "神偷侠兔"
+    },
+    {
+        "text": "冰雪女神",
+        "translate": "冰雪女神"
+    },
+    {
+        "text": "金虎聚财",
+        "translate": "金虎聚财"
+    },
+    {
+        "text": "巨龙争霸",
+        "translate": "巨龙争霸"
+    },
+    {
+        "text": "彩凤呈祥",
+        "translate": "彩凤呈祥"
+    },
+    {
+        "text": "黄金88",
+        "translate": "黄金88"
+    },
+    {
+        "text": "福星发财",
+        "translate": "福星发财"
+    },
+    {
+        "text": "发财树",
+        "translate": "发财树"
+    },
+    {
+        "text": "法老宝藏",
+        "translate": "法老宝藏"
+    },
+    {
+        "text": "熊猫宝藏",
+        "translate": "熊猫宝藏"
+    },
+    {
+        "text": "狂野蛮牛",
+        "translate": "狂野蛮牛"
+    },
+    {
+        "text": "幸运美金",
+        "translate": "幸运美金"
+    },
+    {
+        "text": "霹雳火",
+        "translate": "霹雳火"
+    },
+    {
+        "text": "齐天大圣",
+        "translate": "齐天大圣"
+    },
+    {
+        "text": "龙海公主",
+        "translate": "龙海公主"
+    },
+    {
+        "text": "精灵宝藏",
+        "translate": "精灵宝藏"
+    },
+    {
+        "text": "维加斯之夜",
+        "translate": "维加斯之夜"
+    },
+    {
+        "text": "招财猫",
+        "translate": "招财猫"
+    },
+    {
+        "text": "富贵树",
+        "translate": "富贵树"
+    },
+    {
+        "text": "金猪报喜",
+        "translate": "金猪报喜"
+    },
+    {
+        "text": "大福盛典",
+        "translate": "大福盛典"
+    },
+    {
+        "text": "777",
+        "translate": "777"
+    },
+    {
+        "text": "88FORTUNES_5",
+        "translate": "88FORTUNES_5"
+    },
+    {
+        "text": "DOUBLE BLESSINGS",
+        "translate": "DOUBLE BLESSINGS"
+    },
+    {
+        "text": "DIAMOND ETERNITY",
+        "translate": "DIAMOND ETERNITY"
+    },
+    {
+        "text": "88FORTUNES_3",
+        "translate": "88FORTUNES_3"
+    },
+    {
+        "text": "DUANWU",
+        "translate": "DUANWU"
+    },
+    {
+        "text": "DANCING DRUMS",
+        "translate": "DANCING DRUMS"
+    },
+    {
+        "text": "RISING FORTUNES",
+        "translate": "RISING FORTUNES"
+    },
+    {
+        "text": "5TREASURES",
+        "translate": "5TREASURES"
+    },
+    {
+        "text": "财富之眼",
+        "translate": "财富之眼"
+    },
+    {
+        "text": "东海龙王",
+        "translate": "东海龙王"
+    },
+    {
+        "text": "女娲",
+        "translate": "女娲"
+    },
+    {
+        "text": "锦鲤报喜",
+        "translate": "锦鲤报喜"
+    },
+    {
+        "text": "财神到",
+        "translate": "财神到"
+    },
+    {
+        "text": "五龙争霸",
+        "translate": "五龙争霸"
+    },
+    {
+        "text": "财神赐宝",
+        "translate": "财神赐宝"
+    },
+    {
+        "text": "龙之宝藏",
+        "translate": "龙之宝藏"
+    },
+    {
+        "text": "运财锦鲤",
+        "translate": "运财锦鲤"
+    },
+    {
+        "text": "天马",
+        "translate": "天马"
+    },
+    {
+        "text": "龙族王子",
+        "translate": "龙族王子"
+    },
+    {
+        "text": "运财龙神",
+        "translate": "运财龙神"
+    },
+    {
+        "text": "女侠",
+        "translate": "女侠"
+    },
+    {
+        "text": "招财狮",
+        "translate": "招财狮"
+    },
+    {
+        "text": "龙腾虎啸",
+        "translate": "龙腾虎啸"
+    },
+    {
+        "text": "中秋佳节",
+        "translate": "中秋佳节"
+    },
+    {
+        "text": "美女猫咪",
+        "translate": "美女猫咪"
+    },
+    {
+        "text": "财神在线",
+        "translate": "财神在线"
+    },
+    {
+        "text": "五皇争霸",
+        "translate": "五皇争霸"
+    },
+    {
+        "text": "幸运女皇",
+        "translate": "幸运女皇"
+    },
+    {
+        "text": "虎威公主",
+        "translate": "虎威公主"
+    },
+    {
+        "text": "熊猫滚滚",
+        "translate": "熊猫滚滚"
+    },
+    {
+        "text": "大圣爷",
+        "translate": "大圣爷"
+    },
+    {
+        "text": "鸿福",
+        "translate": "鸿福"
+    },
+    {
+        "text": "熊猫宝贝",
+        "translate": "熊猫宝贝"
+    },
+    {
+        "text": "双喜熊猫",
+        "translate": "双喜熊猫"
+    },
+    {
+        "text": "虎虎献瑞",
+        "translate": "虎虎献瑞"
+    },
+    {
+        "text": "金福满堂",
+        "translate": "金福满堂"
+    },
+    {
+        "text": "赤红女皇",
+        "translate": "赤红女皇"
+    },
+    {
+        "text": "天龙地虎",
+        "translate": "天龙地虎"
+    },
+    {
+        "text": "巨龙宝藏",
+        "translate": "巨龙宝藏"
+    },
+    {
+        "text": "富贵之花",
+        "translate": "富贵之花"
+    },
+    {
+        "text": "财富之树",
+        "translate": "财富之树"
+    },
+    {
+        "text": "终极火链",
+        "translate": "终极火链"
+    },
+    {
+        "text": "女猎手",
+        "translate": "女猎手"
+    },
+    {
+        "text": "紫晶人鱼",
+        "translate": "紫晶人鱼"
+    },
+    {
+        "text": "冥焰赤龙",
+        "translate": "冥焰赤龙"
+    },
+    {
+        "text": "蛮荒凶兽",
+        "translate": "蛮荒凶兽"
+    },
+    {
+        "text": "金色龙虾将军",
+        "translate": "金色龙虾将军"
+    },
+    {
+        "text": "招财宝蟾",
+        "translate": "招财宝蟾"
+    },
+    {
+        "text": "深海秘籍",
+        "translate": "深海秘籍"
+    },
+    {
+        "text": "远古秘境",
+        "translate": "远古秘境"
+    },
+    {
+        "text": "请求充值失败，请联系客服后重试",
+        "translate": "请求充值失败，请联系客服后重试"
+    },
+    {
+        "text": "恭喜您，充值成功，获得NNN金币",
+        "translate": "恭喜您，充值成功，获得NNN金币"
+    },
+    {
+        "text": "google充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "google充值验证失败，未查询到相应订单，请联系客服"
+    },
+    {
+        "text": "非android用户不可用",
+        "translate": "非android用户不可用"
+    },
+    {
+        "text": "暂不可用，请选择其他充值方式",
+        "translate": "暂不可用，请选择其他充值方式"
+    },
+    {
+        "text": "绑定号码成功",
+        "translate": "绑定号码成功"
+    },
+    {
+        "text": "本Facebook账号已经绑定",
+        "translate": "本Facebook账号已经绑定"
+    },
+    {
+        "text": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!",
+        "translate": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!"
+    },
+    {
+        "text": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!",
+        "translate": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!"
+    },
+    {
+        "text": "已经是第一页了",
+        "translate": "已经是第一页了"
+    },
+    {
+        "text": "已经是最后一页了",
+        "translate": "已经是最后一页了"
+    },
+    {
+        "text": "ID不能为空",
+        "translate": "ID不能为空"
+    },
+    {
+        "text": "最少赠送NNN金币，并且自身最少保留SSS金币",
+        "translate": "最少赠送NNN金币，并且自身最少保留SSS金币"
+    },
+    {
+        "text": "数值不能含有小数",
+        "translate": "数值不能含有小数"
+    },
+    {
+        "text": "密码不能为空",
+        "translate": "密码不能为空"
+    },
+    {
+        "text": "成功赠送NNN枚金币给AAA",
+        "translate": "成功赠送NNN枚金币给AAA"
+    },
+    {
+        "text": "请输入正确的ID",
+        "translate": "请输入正确的ID"
+    },
+    {
+        "text": "密码输入错误请重新输入",
+        "translate": "密码输入错误请重新输入"
+    },
+    {
+        "text": "赠送金币失败",
+        "translate": "赠送金币失败"
+    },
+    {
+        "text": "请输入密码",
+        "translate": "请输入密码"
+    },
+    {
+        "text": "密码至少需要8位",
+        "translate": "密码至少需要8位"
+    },
+    {
+        "text": "验证码已过期，请重新发送",
+        "translate": "验证码已过期，请重新发送"
+    },
+    {
+        "text": "密码设置失败",
+        "translate": "密码设置失败"
+    },
+    {
+        "text": "8到12位之间",
+        "translate": "8到12位之间"
+    },
+    {
+        "text": "账号只能NNN至SSS位",
+        "translate": "账号只能NNN至SSS位"
+    },
+    {
+        "text": "密码只能NNN至SSS位",
+        "translate": "密码只能NNN至SSS位"
+    },
+    {
+        "text": "账号密码绑定成功",
+        "translate": "账号密码绑定成功"
+    },
+    {
+        "text": "帐户名不能为空",
+        "translate": "帐户名不能为空"
+    },
+    {
+        "text": "重复注册",
+        "translate": "重复注册"
+    },
+    {
+        "text": "首充",
+        "translate": "首充"
+    },
+    {
+        "text": "绑定金返利",
+        "translate": "绑定金返利"
+    },
+    {
+        "text": "豪礼重重",
+        "translate": "豪礼重重"
+    },
+    {
+        "text": "官方地址",
+        "translate": "官方地址"
+    },
+    {
+        "text": "未知数据包",
+        "translate": "未知数据包"
+    },
+    {
+        "text": "老虎机选座返回大厅，数据发生错误",
+        "translate": "老虎机选座返回大厅，数据发生错误"
+    },
+    {
+        "text": "游戏更新失败，是否重试?",
+        "translate": "游戏更新失败，是否重试?"
+    },
+    {
+        "text": "该座位无效，请选择其它位置",
+        "translate": "该座位无效，请选择其它位置"
+    },
+    {
+        "text": "该座位已经有人",
+        "translate": "该座位已经有人"
+    },
+    {
+        "text": "状态不一致，自动回大厅",
+        "translate": "状态不一致，自动回大厅"
+    },
+    {
+        "text": "更换头像失败",
+        "translate": "更换头像失败"
+    },
+    {
+        "text": "请在这里输入你的问题",
+        "translate": "请在这里输入你的问题"
+    },
+    {
+        "text": "请输入您的问题",
+        "translate": "请输入您的问题"
+    },
+    {
+        "text": "发件人:系统",
+        "translate": "发件人:系统"
+    },
+    {
+        "text": "欢迎",
+        "translate": "欢迎"
+    },
+    {
+        "text": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！",
+        "translate": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！"
+    },
+    {
+        "text": "金币追回",
+        "translate": "金币追回"
+    },
+    {
+        "text": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。",
+        "translate": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。"
+    },
+    {
+        "text": "赠送通知",
+        "translate": "赠送通知"
+    },
+    {
+        "text": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！",
+        "translate": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！"
+    },
+    {
+        "text": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！",
+        "translate": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！"
+    },
+    {
+        "text": "充值通知",
+        "translate": "充值通知"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功！",
+        "translate": "您的订单: {order_num},充值金额: {money} , 已充值成功！"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！",
+        "translate": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！",
+        "translate": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！"
+    },
+    {
+        "text": "领取奖励失败",
+        "translate": "领取奖励失败"
+    },
+    {
+        "text": "请输入新昵称",
+        "translate": "请输入新昵称"
+    },
+    {
+        "text": "修改昵称成功",
+        "translate": "修改昵称成功"
+    },
+    {
+        "text": "该昵称已被使用，请重新输入",
+        "translate": "该昵称已被使用，请重新输入"
+    },
+    {
+        "text": "修改昵称失败",
+        "translate": "修改昵称失败"
+    },
+    {
+        "text": "没有更多",
+        "translate": "没有更多"
+    },
+    {
+        "text": "用户取消选择系统照片",
+        "translate": "用户取消选择系统照片"
+    },
+    {
+        "text": "图片已选择",
+        "translate": "图片已选择"
+    },
+    {
+        "text": "网络异常，图片上传失败",
+        "translate": "网络异常，图片上传失败"
+    },
+    {
+        "text": "网络异常，正在努力上传图片~",
+        "translate": "网络异常，正在努力上传图片~"
+    },
+    {
+        "text": "当前绑定金额",
+        "translate": "当前绑定金额"
+    },
+    {
+        "text": "当前金额",
+        "translate": "当前金额"
+    },
+    {
+        "text": "绑定保险箱金额",
+        "translate": "绑定保险箱金额"
+    },
+    {
+        "text": "保险箱金额",
+        "translate": "保险箱金额"
+    },
+    {
+        "text": "请输入金额！！！",
+        "translate": "请输入金额！！！"
+    },
+    {
+        "text": "操作成功",
+        "translate": "操作成功"
+    },
+    {
+        "text": "复制成功",
+        "translate": "复制成功"
+    },
+    {
+        "text": "截图失败",
+        "translate": "截图失败"
+    },
+    {
+        "text": "保存截图文件失败",
+        "translate": "保存截图文件失败"
+    },
+    {
+        "text": "收藏失败",
+        "translate": "收藏失败"
+    },
+    {
+        "text": "收藏成功",
+        "translate": "收藏成功"
+    },
+    {
+        "text": "我的ID: %s",
+        "translate": "我的ID: %s"
+    },
+    {
+        "text": "VIP%d以上",
+        "translate": "VIP%d以上"
+    },
+    {
+        "text": "所有玩家",
+        "translate": "所有玩家"
+    },
+    {
+        "text": "* 开启绑定金币使用权限。",
+        "translate": "* 开启绑定金币使用权限。"
+    },
+    {
+        "text": "* 在游戏中可获取绑定金币。",
+        "translate": "* 在游戏中可获取绑定金币。"
+    },
+    {
+        "text": "* 达成此等级，获取%s绑定金币。",
+        "translate": "* 达成此等级，获取%s绑定金币。"
+    },
+    {
+        "text": "* 在游戏中可获取更多绑定金币。",
+        "translate": "* 在游戏中可获取更多绑定金币。"
+    },
+    {
+        "text": "* 可参与更多活动。",
+        "translate": "* 可参与更多活动。"
+    },
+    {
+        "text": "开启绑定金币使用权限",
+        "translate": "开启绑定金币使用权限"
+    },
+    {
+        "text": "如果有其他问题可直接联系'在线客服'",
+        "translate": "如果有其他问题可直接联系'在线客服'"
+    },
+    {
+        "text": "没有更多的消息了",
+        "translate": "没有更多的消息了"
+    },
+    {
+        "text": "请输入您宝贵的建议(200字以内)",
+        "translate": "请输入您宝贵的建议(200字以内)"
+    },
+    {
+        "text": "您的建议已经发送",
+        "translate": "您的建议已经发送"
+    },
+    {
+        "text": "请完善建议内容",
+        "translate": "请完善建议内容"
+    },
+    {
+        "text": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络",
+        "translate": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络"
+    },
+    {
+        "text": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?",
+        "translate": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?"
+    },
+    {
+        "text": "获取俱乐部信息失败",
+        "translate": "获取俱乐部信息失败"
+    },
+    {
+        "text": "领取福利失败",
+        "translate": "领取福利失败"
+    },
+    {
+        "text": "本地未找到相关游戏",
+        "translate": "本地未找到相关游戏"
+    },
+    {
+        "text": "进入等级房失败",
+        "translate": "进入等级房失败"
+    },
+    {
+        "text": "没有空闲的游戏服",
+        "translate": "没有空闲的游戏服"
+    },
+    {
+        "text": "当前座位已有人或房间已满",
+        "translate": "当前座位已有人或房间已满"
+    },
+    {
+        "text": "请耐心等待更新完成",
+        "translate": "请耐心等待更新完成"
+    },
+    {
+        "text": "正在检查游戏是否需要更新",
+        "translate": "正在检查游戏是否需要更新"
+    },
+    {
+        "text": "请耐心等待其他游戏更新完成",
+        "translate": "请耐心等待其他游戏更新完成"
+    },
+    {
+        "text": "领取奖励成功",
+        "translate": "领取奖励成功"
+    },
+    {
+        "text": "兑换失败，收到退款NNN金币",
+        "translate": "兑换失败，收到退款NNN金币"
+    },
+    {
+        "text": "获得来自SSS赠送的NNN枚金币",
+        "translate": "获得来自SSS赠送的NNN枚金币"
+    },
+    {
+        "text": "该账号已在其他设备登陆，您已被强制登出！！！",
+        "translate": "该账号已在其他设备登陆，您已被强制登出！！！"
+    },
+    {
+        "text": "收藏",
+        "translate": "收藏"
+    },
+    {
+        "text": "收藏个人信息",
+        "translate": "收藏个人信息"
+    },
+    {
+        "text": "获取代理信息失败!",
+        "translate": "获取代理信息失败!"
+    },
+    {
+        "text": "会长无法退出俱乐部",
+        "translate": "会长无法退出俱乐部"
+    },
+    {
+        "text": "是否确认退出俱乐部？",
+        "translate": "是否确认退出俱乐部？"
+    },
+    {
+        "text": "退出俱乐部成功",
+        "translate": "退出俱乐部成功"
+    },
+    {
+        "text": "%d小时%d分后可退出俱乐部。",
+        "translate": "%d小时%d分后可退出俱乐部。"
+    },
+    {
+        "text": "退出俱乐部失败",
+        "translate": "退出俱乐部失败"
+    },
+    {
+        "text": "领取返利失败",
+        "translate": "领取返利失败"
+    },
+    {
+        "text": "获取记录日志失败",
+        "translate": "获取记录日志失败"
+    },
+    {
+        "text": "欢迎加入俱乐部",
+        "translate": "欢迎加入俱乐部"
+    },
+    {
+        "text": "邀请码:%s",
+        "translate": "邀请码:%s"
+    },
+    {
+        "text": "公告修改失败!",
+        "translate": "公告修改失败!"
+    },
+    {
+        "text": "公告修改成功!",
+        "translate": "公告修改成功!"
+    },
+    {
+        "text": "总人数:{total_man}   在线人数:{online_man}",
+        "translate": "总人数:{total_man}   在线人数:{online_man}"
+    },
+    {
+        "text": "在线",
+        "translate": "在线"
+    },
+    {
+        "text": "%d年前在线",
+        "translate": "%d年前在线"
+    },
+    {
+        "text": "%d月前在线",
+        "translate": "%d月前在线"
+    },
+    {
+        "text": "%d天前在线",
+        "translate": "%d天前在线"
+    },
+    {
+        "text": "%d小时前在线",
+        "translate": "%d小时前在线"
+    },
+    {
+        "text": "刚刚离线",
+        "translate": "刚刚离线"
+    },
+    {
+        "text": "请输入俱乐部名字",
+        "translate": "请输入俱乐部名字"
+    },
+    {
+        "text": "创建俱乐部失败",
+        "translate": "创建俱乐部失败"
+    },
+    {
+        "text": "请求俱乐部信息失败",
+        "translate": "请求俱乐部信息失败"
+    },
+    {
+        "text": "你还不是正式账号，请绑定账号后再操作!",
+        "translate": "你还不是正式账号，请绑定账号后再操作!"
+    },
+    {
+        "text": "收藏推广信息",
+        "translate": "收藏推广信息"
+    },
+    {
+        "text": "请输入推广码",
+        "translate": "请输入推广码"
+    },
+    {
+        "text": "加入俱乐部失败",
+        "translate": "加入俱乐部失败"
+    },
+    {
+        "text": "昨日累计:{total}",
+        "translate": "昨日累计:{total}"
+    },
+    {
+        "text": "总累计:{total}",
+        "translate": "总累计:{total}"
+    },
+    {
+        "text": "领取记录",
+        "translate": "领取记录"
+    },
+    {
+        "text": "领取时间",
+        "translate": "领取时间"
+    },
+    {
+        "text": "领取金币",
+        "translate": "领取金币"
+    },
+    {
+        "text": "暂无领取记录",
+        "translate": "暂无领取记录"
+    },
+    {
+        "text": "已自动保存到保险箱",
+        "translate": "已自动保存到保险箱"
+    },
+    {
+        "text": "分享",
+        "translate": "分享"
+    },
+    {
+        "text": "领   取",
+        "translate": "领   取"
+    },
+    {
+        "text": "退出俱乐部",
+        "translate": "退出俱乐部"
+    },
+    {
+        "text": "成员",
+        "translate": "成员"
+    },
+    {
+        "text": "返利",
+        "translate": "返利"
+    },
+    {
+        "text": "名称",
+        "translate": "名称"
+    },
+    {
+        "text": "加入时间",
+        "translate": "加入时间"
+    },
+    {
+        "text": "状态",
+        "translate": "状态"
+    },
+    {
+        "text": "创建",
+        "translate": "创建"
+    },
+    {
+        "text": "请输入俱乐部名称",
+        "translate": "请输入俱乐部名称"
+    },
+    {
+        "text": "邀请码：",
+        "translate": "邀请码："
+    },
+    {
+        "text": "保存图片以获取游戏下载地址",
+        "translate": "保存图片以获取游戏下载地址"
+    },
+    {
+        "text": "加入",
+        "translate": "加入"
+    },
+    {
+        "text": "加入俱乐部请输入邀请码",
+        "translate": "加入俱乐部请输入邀请码"
+    },
+    {
+        "text": "请选择俱乐部头像",
+        "translate": "请选择俱乐部头像"
+    },
+    {
+        "text": "昨日排行",
+        "translate": "昨日排行"
+    },
+    {
+        "text": "总排行",
+        "translate": "总排行"
+    },
+    {
+        "text": "排名",
+        "translate": "排名"
+    },
+    {
+        "text": "捕鱼/老虎机洗码量",
+        "translate": "捕鱼/老虎机洗码量"
+    },
+    {
+        "text": "选 桌",
+        "translate": "选 桌"
+    },
+    {
+        "text": "充值",
+        "translate": "充值"
+    },
+    {
+        "text": "保险箱",
+        "translate": "保险箱"
+    },
+    {
+        "text": "转账记录",
+        "translate": "转账记录"
+    },
+    {
+        "text": "转账编码",
+        "translate": "转账编码"
+    },
+    {
+        "text": "收款玩家",
+        "translate": "收款玩家"
+    },
+    {
+        "text": "金额",
+        "translate": "金额"
+    },
+    {
+        "text": "转账时间",
+        "translate": "转账时间"
+    },
+    {
+        "text": "首页",
+        "translate": "首页"
+    },
+    {
+        "text": "上一页",
+        "translate": "上一页"
+    },
+    {
+        "text": "下一页",
+        "translate": "下一页"
+    },
+    {
+        "text": "末页",
+        "translate": "末页"
+    },
+    {
+        "text": "赠送用户ID",
+        "translate": "赠送用户ID"
+    },
+    {
+        "text": "金币数量",
+        "translate": "金币数量"
+    },
+    {
+        "text": "输入密码",
+        "translate": "输入密码"
+    },
+    {
+        "text": "赠送记录",
+        "translate": "赠送记录"
+    },
+    {
+        "text": "请确认密码",
+        "translate": "请确认密码"
+    },
+    {
+        "text": "绑定账号成为",
+        "translate": "绑定账号成为"
+    },
+    {
+        "text": "查看VIP权益",
+        "translate": "查看VIP权益"
+    },
+    {
+        "text": "请选择你的头像",
+        "translate": "请选择你的头像"
+    },
+    {
+        "text": "发送",
+        "translate": "发送"
+    },
+    {
+        "text": "上传图片",
+        "translate": "上传图片"
+    },
+    {
+        "text": "活动时间:",
+        "translate": "活动时间:"
+    },
+    {
+        "text": "参与条件:",
+        "translate": "参与条件:"
+    },
+    {
+        "text": "领取",
+        "translate": "领取"
+    },
+    {
+        "text": "前往",
+        "translate": "前往"
+    },
+    {
+        "text": "输入新名称",
+        "translate": "输入新名称"
+    },
+    {
+        "text": "账户只能修改一次",
+        "translate": "账户只能修改一次"
+    },
+    {
+        "text": "确认修改",
+        "translate": "确认修改"
+    },
+    {
+        "text": "今日赢金币量",
+        "translate": "今日赢金币量"
+    },
+    {
+        "text": "玩家",
+        "translate": "玩家"
+    },
+    {
+        "text": "今日赢金币",
+        "translate": "今日赢金币"
+    },
+    {
+        "text": "未上榜",
+        "translate": "未上榜"
+    },
+    {
+        "text": "存款",
+        "translate": "存款"
+    },
+    {
+        "text": "取款",
+        "translate": "取款"
+    },
+    {
+        "text": "绑定金币取款",
+        "translate": "绑定金币取款"
+    },
+    {
+        "text": "绑定金币存款",
+        "translate": "绑定金币存款"
+    },
+    {
+        "text": "最大",
+        "translate": "最大"
+    },
+    {
+        "text": "确认存款",
+        "translate": "确认存款"
+    },
+    {
+        "text": "确认取款",
+        "translate": "确认取款"
+    },
+    {
+        "text": "修改头像",
+        "translate": "修改头像"
+    },
+    {
+        "text": "复制",
+        "translate": "复制"
+    },
+    {
+        "text": "成为VIP",
+        "translate": "成为VIP"
+    },
+    {
+        "text": "退出游戏",
+        "translate": "退出游戏"
+    },
+    {
+        "text": "昵称",
+        "translate": "昵称"
+    },
+    {
+        "text": "ID",
+        "translate": "ID"
+    },
+    {
+        "text": "音 乐",
+        "translate": "音 乐"
+    },
+    {
+        "text": "音 效",
+        "translate": "音 效"
+    },
+    {
+        "text": "特 效",
+        "translate": "特 效"
+    },
+    {
+        "text": "滚动报喜",
+        "translate": "滚动报喜"
+    },
+    {
+        "text": "恭喜获得奖励",
+        "translate": "恭喜获得奖励"
+    },
+    {
+        "text": "绑定账号后解锁转盘",
+        "translate": "绑定账号后解锁转盘"
+    },
+    {
+        "text": "绑定账号",
+        "translate": "绑定账号"
+    },
+    {
+        "text": "不用了",
+        "translate": "不用了"
+    },
+    {
+        "text": "游戏时间越多，获得的绑定金返利越多。",
+        "translate": "游戏时间越多，获得的绑定金返利越多。"
+    },
+    {
+        "text": "当前进度",
+        "translate": "当前进度"
+    },
+    {
+        "text": "昨日进度",
+        "translate": "昨日进度"
+    },
+    {
+        "text": "可领取",
+        "translate": "可领取"
+    },
+    {
+        "text": "去游戏",
+        "translate": "去游戏"
+    },
+    {
+        "text": "每天24点发放奖励，奖励保存24小时，限时未领取作废。",
+        "translate": "每天24点发放奖励，奖励保存24小时，限时未领取作废。"
+    },
+    {
+        "text": "提示：通过玩游戏得到绑定金币提升VIP经验。",
+        "translate": "提示：通过玩游戏得到绑定金币提升VIP经验。"
+    },
+    {
+        "text": "当前等级",
+        "translate": "当前等级"
+    },
+    {
+        "text": "您的vip等级已达到最高级！",
+        "translate": "您的vip等级已达到最高级！"
+    },
+    {
+        "text": "联系客服",
+        "translate": "联系客服"
+    },
+    {
+        "text": "常见问题",
+        "translate": "常见问题"
+    },
+    {
+        "text": "在线客服",
+        "translate": "在线客服"
+    },
+    {
+        "text": "提交建议",
+        "translate": "提交建议"
+    },
+    {
+        "text": "邮件",
+        "translate": "邮件"
+    },
+    {
+        "text": "阅读",
+        "translate": "阅读"
+    },
+    {
+        "text": "已读",
+        "translate": "已读"
+    },
+    {
+        "text": "您的意见将帮助我们改进产品和服务",
+        "translate": "您的意见将帮助我们改进产品和服务"
+    },
+    {
+        "text": "真实姓名",
+        "translate": "真实姓名"
+    },
+    {
+        "text": "手机号码",
+        "translate": "手机号码"
+    },
+    {
+        "text": "建议回复需要通过手机号查看，请填写真实的手机号码",
+        "translate": "建议回复需要通过手机号查看，请填写真实的手机号码"
+    },
+    {
+        "text": "提交",
+        "translate": "提交"
+    },
+    {
+        "text": "图片",
+        "translate": "图片"
+    },
+    {
+        "text": "是否退出游戏",
+        "translate": "是否退出游戏"
+    },
+    {
+        "text": "金币不足",
+        "translate": "金币不足"
+    },
+    {
+        "text": "账号只能由NNN至SSS位的数字和字母组成",
+        "translate": "账号只能由NNN至SSS位的数字和字母组成"
+    },
+    {
+        "text": "密码只能由NNN至SSS位的数字和字母组成",
+        "translate": "密码只能由NNN至SSS位的数字和字母组成"
+    },
+    {
+        "text": "全部",
+        "translate": "全部"
+    },
+    {
+        "text": "已禁言",
+        "translate": "已禁言"
+    },
+    {
+        "text": "未禁言",
+        "translate": "未禁言"
+    },
+    {
+        "text": "设置成功",
+        "translate": "设置成功"
+    },
+    {
+        "text": "设置失败",
+        "translate": "设置失败"
+    },
+    {
+        "text": "公频",
+        "translate": "公频"
+    },
+    {
+        "text": "俱乐部",
+        "translate": "俱乐部"
+    },
+    {
+        "text": "密语",
+        "translate": "密语"
+    },
+    {
+        "text": "群发",
+        "translate": "群发"
+    },
+    {
+        "text": "点击输入消息",
+        "translate": "点击输入消息"
+    },
+    {
+        "text": "请输入聊天消息",
+        "translate": "请输入聊天消息"
+    },
+    {
+        "text": "您已被禁言",
+        "translate": "您已被禁言"
+    },
+    {
+        "text": "消息发送失败",
+        "translate": "消息发送失败"
+    },
+    {
+        "text": "模板数目已达最大, 无法再新建",
+        "translate": "模板数目已达最大, 无法再新建"
+    },
+    {
+        "text": "请输入标题！",
+        "translate": "请输入标题！"
+    },
+    {
+        "text": "请输入文字信息！",
+        "translate": "请输入文字信息！"
+    },
+    {
+        "text": "请输入标题",
+        "translate": "请输入标题"
+    },
+    {
+        "text": "请输入文字信息",
+        "translate": "请输入文字信息"
+    },
+    {
+        "text": "%d 人",
+        "translate": "%d 人"
+    },
+    {
+        "text": "请选择一个群发模板再发送",
+        "translate": "请选择一个群发模板再发送"
+    },
+    {
+        "text": "模板信息",
+        "translate": "模板信息"
+    },
+    {
+        "text": "模板修改完成",
+        "translate": "模板修改完成"
+    },
+    {
+        "text": "你还未加入俱乐部",
+        "translate": "你还未加入俱乐部"
+    },
+    {
+        "text": "抱歉，银商玩家不能进入游戏游玩！",
+        "translate": "抱歉，银商玩家不能进入游戏游玩！"
+    },
+    {
+        "text": "禁言管理",
+        "translate": "禁言管理"
+    },
+    {
+        "text": "保存",
+        "translate": "保存"
+    },
+    {
+        "text": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。"
+    },
+    {
+        "text": "发送间隔:",
+        "translate": "发送间隔:"
+    },
+    {
+        "text": "删除",
+        "translate": "删除"
+    },
+    {
+        "text": "标题：",
+        "translate": "标题："
+    },
+    {
+        "text": "筛选:",
+        "translate": "筛选:"
+    },
+    {
+        "text": "用户ID",
+        "translate": "用户ID"
+    },
+    {
+        "text": "VIP等级",
+        "translate": "VIP等级"
+    },
+    {
+        "text": "在线状态",
+        "translate": "在线状态"
+    },
+    {
+        "text": "下一步",
+        "translate": "下一步"
+    },
+    {
+        "text": "120人",
+        "translate": "120人"
+    },
+    {
+        "text": "*列表展示XX小时/天登陆过的用户",
+        "translate": "*列表展示XX小时/天登陆过的用户"
+    },
+    {
+        "text": "群发模板:",
+        "translate": "群发模板:"
+    },
+    {
+        "text": "模板内容:",
+        "translate": "模板内容:"
+    },
+    {
+        "text": "上一步",
+        "translate": "上一步"
+    },
+    {
+        "text": "联系人",
+        "translate": "联系人"
+    },
+    {
+        "text": "赠送",
+        "translate": "赠送"
+    },
+    {
+        "text": "收礼",
+        "translate": "收礼"
+    },
+    {
+        "text": "日期",
+        "translate": "日期"
+    },
+    {
+        "text": "玩家ID",
+        "translate": "玩家ID"
+    },
+    {
+        "text": "赠送金币",
+        "translate": "赠送金币"
+    },
+    {
+        "text": "金币余额",
+        "translate": "金币余额"
+    },
+    {
+        "text": "* 忘记密码请联系客服",
+        "translate": "* 忘记密码请联系客服"
+    },
+    {
+        "text": "客服",
+        "translate": "客服"
+    },
+    {
+        "text": "投诉",
+        "translate": "投诉"
+    },
+    {
+        "text": "保存成功!",
+        "translate": "保存成功!"
+    },
+    {
+        "text": "保存失败!",
+        "translate": "保存失败!"
+    },
+    {
+        "text": "请选择需要群发的用户后再试！",
+        "translate": "请选择需要群发的用户后再试！"
+    },
+    {
+        "text": "发送成功",
+        "translate": "发送成功"
+    },
+    {
+        "text": "发送失败",
+        "translate": "发送失败"
+    },
+    {
+        "text": "获取赠送记录失败",
+        "translate": "获取赠送记录失败"
+    },
+    {
+        "text": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。"
+    },
+    {
+        "text": "禁言",
+        "translate": "禁言"
+    },
+    {
+        "text": "解禁",
+        "translate": "解禁"
+    },
+    {
+        "text": "私聊",
+        "translate": "私聊"
+    },
+    {
+        "text": "加入俱乐部",
+        "translate": "加入俱乐部"
+    },
+    {
+        "text": "搜索",
+        "translate": "搜索"
+    },
+    {
+        "text": "id或者昵称",
+        "translate": "id或者昵称"
+    },
+    {
+        "text": "尚无聊天记录。",
+        "translate": "尚无聊天记录。"
+    },
+    {
+        "text": "获取群组列表信息失败",
+        "translate": "获取群组列表信息失败"
+    },
+    {
+        "text": "进入码错误",
+        "translate": "进入码错误"
+    },
+    {
+        "text": "加入群失败",
+        "translate": "加入群失败"
+    },
+    {
+        "text": "对方已经是你的好友了",
+        "translate": "对方已经是你的好友了"
+    },
+    {
+        "text": "添加好友成功",
+        "translate": "添加好友成功"
+    },
+    {
+        "text": "添加好友失败",
+        "translate": "添加好友失败"
+    },
+    {
+        "text": "删除好友失败",
+        "translate": "删除好友失败"
+    },
+    {
+        "text": "搜索用户",
+        "translate": "搜索用户"
+    },
+    {
+        "text": "获取用户信息失败",
+        "translate": "获取用户信息失败"
+    },
+    {
+        "text": "群主已开启全局禁言",
+        "translate": "群主已开启全局禁言"
+    },
+    {
+        "text": "请输入群组名",
+        "translate": "请输入群组名"
+    },
+    {
+        "text": "请输入进入码",
+        "translate": "请输入进入码"
+    },
+    {
+        "text": "请输入6位的进入码",
+        "translate": "请输入6位的进入码"
+    },
+    {
+        "text": "创建成功",
+        "translate": "创建成功"
+    },
+    {
+        "text": "创建失败",
+        "translate": "创建失败"
+    },
+    {
+        "text": "获取群信息失败",
+        "translate": "获取群信息失败"
+    },
+    {
+        "text": "无效的群组信息",
+        "translate": "无效的群组信息"
+    },
+    {
+        "text": "获取成员列表失败",
+        "translate": "获取成员列表失败"
+    },
+    {
+        "text": "请输入群组名字！",
+        "translate": "请输入群组名字！"
+    },
+    {
+        "text": "请输入群组公告信息",
+        "translate": "请输入群组公告信息"
+    },
+    {
+        "text": "解散群组失败!",
+        "translate": "解散群组失败!"
+    },
+    {
+        "text": "请输入合法的群组名字",
+        "translate": "请输入合法的群组名字"
+    },
+    {
+        "text": "修改成功!",
+        "translate": "修改成功!"
+    },
+    {
+        "text": "修改失败!",
+        "translate": "修改失败!"
+    },
+    {
+        "text": "退出群组失败!",
+        "translate": "退出群组失败!"
+    },
+    {
+        "text": "已建立群组(%d)",
+        "translate": "已建立群组(%d)"
+    },
+    {
+        "text": "已加入群组(%d)",
+        "translate": "已加入群组(%d)"
+    },
+    {
+        "text": "公开群组(%d)",
+        "translate": "公开群组(%d)"
+    },
+    {
+        "text": "该群人数已满，加入失败",
+        "translate": "该群人数已满，加入失败"
+    },
+    {
+        "text": "加入成功",
+        "translate": "加入成功"
+    },
+    {
+        "text": "群主",
+        "translate": "群主"
+    },
+    {
+        "text": "管理员",
+        "translate": "管理员"
+    },
+    {
+        "text": "聊天(%d)",
+        "translate": "聊天(%d)"
+    },
+    {
+        "text": "好友(%d)",
+        "translate": "好友(%d)"
+    },
+    {
+        "text": "群组",
+        "translate": "群组"
+    },
+    {
+        "text": "频道 1",
+        "translate": "频道 1"
+    },
+    {
+        "text": "建立群组",
+        "translate": "建立群组"
+    },
+    {
+        "text": "欢迎来到群组",
+        "translate": "欢迎来到群组"
+    },
+    {
+        "text": "请选择一个群组",
+        "translate": "请选择一个群组"
+    },
+    {
+        "text": "群组名称：",
+        "translate": "群组名称："
+    },
+    {
+        "text": "进入码",
+        "translate": "进入码"
+    },
+    {
+        "text": "* 进入码为6位数字",
+        "translate": "* 进入码为6位数字"
+    },
+    {
+        "text": "全局禁言",
+        "translate": "全局禁言"
+    },
+    {
+        "text": "群组公告：",
+        "translate": "群组公告："
+    },
+    {
+        "text": "解散群组",
+        "translate": "解散群组"
+    },
+    {
+        "text": "退出群组",
+        "translate": "退出群组"
+    },
+    {
+        "text": "踢人",
+        "translate": "踢人"
+    },
+    {
+        "text": "设为管理员",
+        "translate": "设为管理员"
+    },
+    {
+        "text": "取消管理员",
+        "translate": "取消管理员"
+    },
+    {
+        "text": "加为好友",
+        "translate": "加为好友"
+    },
+    {
+        "text": "删除好友",
+        "translate": "删除好友"
+    },
+    {
+        "text": "您没有该操作权限",
+        "translate": "您没有该操作权限"
+    },
+    {
+        "text": "群名字太长",
+        "translate": "群名字太长"
+    },
+    {
+        "text": "进入码太长",
+        "translate": "进入码太长"
+    },
+    {
+        "text": "群名字已存在",
+        "translate": "群名字已存在"
+    },
+    {
+        "text": "群创建失败",
+        "translate": "群创建失败"
+    },
+    {
+        "text": "非法的群名字",
+        "translate": "非法的群名字"
+    },
+    {
+        "text": "群公告过长",
+        "translate": "群公告过长"
+    },
+    {
+        "text": "群信息修改失败",
+        "translate": "群信息修改失败"
+    },
+    {
+        "text": "保存图片以获取游戏官方下载地址",
+        "translate": "保存图片以获取游戏官方下载地址"
+    },
+    {
+        "text": "活动内容",
+        "translate": "活动内容"
+    },
+    {
+        "text": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。",
+        "translate": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。"
+    },
+    {
+        "text": "请输入账号",
+        "translate": "请输入账号"
+    },
+    {
+        "text": "该账号已注册",
+        "translate": "该账号已注册"
+    },
+    {
+        "text": "忘记密码，请联系在线客服",
+        "translate": "忘记密码，请联系在线客服"
+    },
+    {
+        "text": "连接出错 网关连不上！",
+        "translate": "连接出错 网关连不上！"
+    },
+    {
+        "text": "忘记密码",
+        "translate": "忘记密码"
+    },
+    {
+        "text": "账号注册",
+        "translate": "账号注册"
+    },
+    {
+        "text": "登录游戏",
+        "translate": "登录游戏"
+    },
+    {
+        "text": "去解锁",
+        "translate": "去解锁"
+    },
+    {
+        "text": "成为VIP%d解锁转盘",
+        "translate": "成为VIP%d解锁转盘"
+    },
+    {
+        "text": "充值任意金额成为VIP",
+        "translate": "充值任意金额成为VIP"
+    },
+    {
+        "text": "谷歌账号",
+        "translate": "谷歌账号"
+    },
+    {
+        "text": "苹果账号",
+        "translate": "苹果账号"
+    },
+    {
+        "text": "注册成功",
+        "translate": "注册成功"
+    },
+    {
+        "text": "请先成为VIP",
+        "translate": "请先成为VIP"
+    },
+    {
+        "text": "字母和数字%d至%d位",
+        "translate": "字母和数字%d至%d位"
+    },
+    {
+        "text": "账户名称长度%d至%d位",
+        "translate": "账户名称长度%d至%d位"
+    },
+    {
+        "text": "账户密码长度%d至%d位",
+        "translate": "账户密码长度%d至%d位"
+    },
+    {
+        "text": "两次输入的密码不相同",
+        "translate": "两次输入的密码不相同"
+    },
+    {
+        "text": "用户名或密码为空",
+        "translate": "用户名或密码为空"
+    },
+    {
+        "text": "包名为空",
+        "translate": "包名为空"
+    },
+    {
+        "text": "注册失败，请重试",
+        "translate": "注册失败，请重试"
+    },
+    {
+        "text": "已达到注册限制",
+        "translate": "已达到注册限制"
+    },
+    {
+        "text": "用户名非法，请新输入",
+        "translate": "用户名非法，请新输入"
+    },
+    {
+        "text": "注册",
+        "translate": "注册"
+    },
+    {
+        "text": "成为VIP%d后解锁",
+        "translate": "成为VIP%d后解锁"
+    },
+    {
+        "text": "成为VIP后解锁",
+        "translate": "成为VIP后解锁"
+    },
+    {
+        "text": "* 解锁转盘。",
+        "translate": "* 解锁转盘。"
+    },
+    {
+        "text": "充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "充值验证失败，未查询到相应订单，请联系客服"
+    },
+    {
+        "text": "非 iphone 用户不可用",
+        "translate": "非 iphone 用户不可用"
+    },
+    {
+        "text": "正在加载大厅资源...",
+        "translate": "正在加载大厅资源..."
+    },
+    {
+        "text": "更新模块失败",
+        "translate": "更新模块失败"
+    },
+    {
+        "text": "更新大厅失败，是否重试?",
+        "translate": "更新大厅失败，是否重试?"
+    },
+    {
+        "text": "登入游戏",
+        "translate": "登入游戏"
+    },
+    {
+        "text": "正在更新游戏...",
+        "translate": "正在更新游戏..."
+    },
+    {
+        "text": "确定删除好友 '%s' 吗?",
+        "translate": "确定删除好友 '%s' 吗?"
+    },
+    {
+        "text": "您已被 '%s' 群管理员禁言。",
+        "translate": "您已被 '%s' 群管理员禁言。"
+    },
+    {
+        "text": "您在 '%s' 群的禁言已被解除。",
+        "translate": "您在 '%s' 群的禁言已被解除。"
+    },
+    {
+        "text": "您已被设置为 '%s' 管理员。",
+        "translate": "您已被设置为 '%s' 管理员。"
+    },
+    {
+        "text": "您在 '%s' 群的管理员资格已被解除。",
+        "translate": "您在 '%s' 群的管理员资格已被解除。"
+    },
+    {
+        "text": "你已经被踢出群 '%s' ",
+        "translate": "你已经被踢出群 '%s' "
+    },
+    {
+        "text": "确定解散群组 '%s' 吗?",
+        "translate": "确定解散群组 '%s' 吗?"
+    },
+    {
+        "text": "欢迎加入'%s' ",
+        "translate": "欢迎加入'%s' "
+    },
+    {
+        "text": "您是否确认将 '%s' 踢出群组?",
+        "translate": "您是否确认将 '%s' 踢出群组?"
+    },
+    {
+        "text": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)",
+        "translate": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)"
+    },
+    {
+        "text": "你确定要赠送给 '%s' 金币吗？",
+        "translate": "你确定要赠送给 '%s' 金币吗？"
+    },
+    {
+        "text": "收款钱包地址",
+        "translate": "收款钱包地址"
+    },
+    {
+        "text": "钱包地址",
+        "translate": "钱包地址"
+    },
+    {
+        "text": "请绑定地址",
+        "translate": "请绑定地址"
+    },
+    {
+        "text": "绑定",
+        "translate": "绑定"
+    },
+    {
+        "text": "充值金额",
+        "translate": "充值金额"
+    },
+    {
+        "text": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值",
+        "translate": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值"
+    },
+    {
+        "text": "请输入钱包地址",
+        "translate": "请输入钱包地址"
+    },
+    {
+        "text": "地址只能绑定一次，请仔细核对，有问题请及时联系客服",
+        "translate": "地址只能绑定一次，请仔细核对，有问题请及时联系客服"
+    },
+    {
+        "text": "可提现金币数量",
+        "translate": "可提现金币数量"
+    },
+    {
+        "text": "请输入金额",
+        "translate": "请输入金额"
+    },
+    {
+        "text": "提现钱包地址",
+        "translate": "提现钱包地址"
+    },
+    {
+        "text": "请输入提现地址",
+        "translate": "请输入提现地址"
+    },
+    {
+        "text": "提现记录",
+        "translate": "提现记录"
+    },
+    {
+        "text": "提交成功，等待审核",
+        "translate": "提交成功，等待审核"
+    },
+    {
+        "text": "充值成功，等待审核",
+        "translate": "充值成功，等待审核"
+    },
+    {
+        "text": "银行卡",
+        "translate": "银行卡"
+    },
+    {
+        "text": "最低提现200金币",
+        "translate": "最低提现200金币"
+    },
+    {
+        "text": "订单号",
+        "translate": "订单号"
+    },
+    {
+        "text": "操作",
+        "translate": "操作"
+    },
+    {
+        "text": "成功",
+        "translate": "成功"
+    },
+    {
+        "text": "审核中",
+        "translate": "审核中"
+    },
+    {
+        "text": "失败",
+        "translate": "失败"
+    },
+    {
+        "text": "详情",
+        "translate": "详情"
+    },
+    {
+        "text": "系统",
+        "translate": "系统"
+    },
+    {
+        "text": "奖励金币",
+        "translate": "奖励金币"
+    },
+    {
+        "text": "游戏返利",
+        "translate": "游戏返利"
+    },
+    {
+        "text": "游戏时间越多，返利越多。",
+        "translate": "游戏时间越多，返利越多。"
+    },
+    {
+        "text": "*玩游戏可获得VIP经验。",
+        "translate": "*玩游戏可获得VIP经验。"
+    },
+    {
+        "text": "*玩游戏可获得更多VIP经验。",
+        "translate": "*玩游戏可获得更多VIP经验。"
+    },
+    {
+        "text": "*奖励%d金币",
+        "translate": "*奖励%d金币"
+    },
+    {
+        "text": "快速登录",
+        "translate": "快速登录"
+    },
+    {
+        "text": "实时返利活动",
+        "translate": "实时返利活动"
+    },
+    {
+        "text": "日返利活动",
+        "translate": "日返利活动"
+    },
+    {
+        "text": "周返利活动",
+        "translate": "周返利活动"
+    },
+    {
+        "text": "月返利活动",
+        "translate": "月返利活动"
+    },
+    {
+        "text": "小时",
+        "translate": "小时"
+    },
+    {
+        "text": "天",
+        "translate": "天"
+    },
+    {
+        "text": "周",
+        "translate": "周"
+    },
+    {
+        "text": "月",
+        "translate": "月"
+    },
+    {
+        "text": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。",
+        "translate": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。"
+    },
+    {
+        "text": "请先绑定钱包地址！",
+        "translate": "请先绑定钱包地址！"
+    },
+    {
+        "text": "金币不足%d时才能切换充值方式",
+        "translate": "金币不足%d时才能切换充值方式"
+    },
+    {
+        "text": "请确认钱包地址是否正确",
+        "translate": "请确认钱包地址是否正确"
+    },
+    {
+        "text": "金币",
+        "translate": "金币"
+    },
+    {
+        "text": "请输入订单号",
+        "translate": "请输入订单号"
+    },
+    {
+        "text": "VIP福利",
+        "translate": "VIP福利"
+    },
+    {
+        "text": "本次更新需要重启应用.",
+        "translate": "本次更新需要重启应用."
+    }
+]

@@ -1,0 +1,2422 @@
+[
+    {
+        "text": "正在获取导航信息...",
+        "translate": "Getting navigation information..."
+    },
+    {
+        "text": "获取导航信息失败",
+        "translate": "Failed to obtain navigation information"
+    },
+    {
+        "text": "获取导航信息失败, 是否重试？",
+        "translate": "Failed to obtain navigation information, do you want to try again?"
+    },
+    {
+        "text": "版本更新失败",
+        "translate": "Version update failed"
+    },
+    {
+        "text": "版本更新失败, 是否重试？",
+        "translate": "The version update failed, do you want to try again?"
+    },
+    {
+        "text": "正在更新文件...",
+        "translate": "Updating file..."
+    },
+    {
+        "text": "正在检查版本信息...",
+        "translate": "Checking version information..."
+    },
+    {
+        "text": "检查版本信息失败，是否重试？",
+        "translate": "Failed to check version information, do you want to try again?"
+    },
+    {
+        "text": "确定",
+        "translate": "Confirm"
+    },
+    {
+        "text": "取消",
+        "translate": "Cancel"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "The software has not been installed, please continue after installation"
+    },
+    {
+        "text": "正在更新大厅...",
+        "translate": "Updating lobby..."
+    },
+    {
+        "text": "正在更新 SO ...",
+        "translate": "Updating SO..."
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "The software has not been installed, please continue after installation"
+    },
+    {
+        "text": "用户名或密码错误",
+        "translate": "Incorrect username or password"
+    },
+    {
+        "text": "服务器未响应",
+        "translate": "Server not responding"
+    },
+    {
+        "text": "密码登录",
+        "translate": "Password login"
+    },
+    {
+        "text": "游客登录",
+        "translate": "Guest login"
+    },
+    {
+        "text": "请选择语言",
+        "translate": "Please select language"
+    },
+    {
+        "text": "账户名称",
+        "translate": "Account name"
+    },
+    {
+        "text": "账户密码",
+        "translate": "Password"
+    },
+    {
+        "text": "记住密码",
+        "translate": "Remember password"
+    },
+    {
+        "text": "字母或数字%d至%d位",
+        "translate": "Letters or numbers %d to %d digits"
+    },
+    {
+        "text": "你取消了该操作，请重试",
+        "translate": "You have Cancel this operation, Pls try again"
+    },
+    {
+        "text": "你需先安装facebook，如果没有，请取消服务。",
+        "translate": "You need to install facebook first, you may contact our customer service for more information."
+    },
+    {
+        "text": "绑定失败",
+        "translate": "Binding failed"
+    },
+    {
+        "text": "亲，确定不再玩一会儿游戏了吗？",
+        "translate": "Are you sure you won't continue playing games?"
+    },
+    {
+        "text": "网络连接失败，请重试",
+        "translate": "Network connection failed, please try again"
+    },
+    {
+        "text": "连接中，请稍后",
+        "translate": "Connecting, please wait"
+    },
+    {
+        "text": "FACEBOOK登录",
+        "translate": "Facebook login"
+    },
+    {
+        "text": "请输入邀请码",
+        "translate": "Please enter the invitation code"
+    },
+    {
+        "text": "请确认两次密码输入一致",
+        "translate": "Please make sure that the password input is the same twice"
+    },
+    {
+        "text": "确认密码",
+        "translate": "Confirm password"
+    },
+    {
+        "text": "邀请码",
+        "translate": "Invitation code"
+    },
+    {
+        "text": "请选择屏幕尺寸",
+        "translate": "Please select a screen size"
+    },
+    {
+        "text": "%d至%d位",
+        "translate": "%d to %d digits"
+    },
+    {
+        "text": "账号不能含有空白字符",
+        "translate": "Account cannot contain blank characters"
+    },
+    {
+        "text": "邀请码不存在",
+        "translate": "Invitation code does not exist"
+    },
+    {
+        "text": "服务器正在维护当中",
+        "translate": "Servers are in maintenance"
+    },
+    {
+        "text": "当前账号无法登录，请联系客服",
+        "translate": "Current account cannot be logged in. Please contact customer service."
+    },
+    {
+        "text": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服",
+        "translate": "Your account has been blocked. Please login again in one minute. If you can't, please contact customer service"
+    },
+    {
+        "text": "当前版本过低，点击确定更新",
+        "translate": "Current version is too low, Click to confirm the update"
+    },
+    {
+        "text": "进入大厅失败，请重试",
+        "translate": "Failed to enter the hall, please try again"
+    },
+    {
+        "text": "断线重连，重新进入大厅主界面",
+        "translate": "Disconnection and reconnection, re entering the main interface of the hall"
+    },
+    {
+        "text": "网络连接失败，是否重试？",
+        "translate": "Network connection failed, try again?"
+    },
+    {
+        "text": "大王乌贼",
+        "translate": "King Squid"
+    },
+    {
+        "text": "八爪章鱼",
+        "translate": "Octopus"
+    },
+    {
+        "text": "狂暴火龙",
+        "translate": "Fire Dragon"
+    },
+    {
+        "text": "霸王蟹",
+        "translate": "Crab King"
+    },
+    {
+        "text": "龙虾将军",
+        "translate": "Lobster General"
+    },
+    {
+        "text": "史前巨鳄",
+        "translate": "Prehistoric Predato"
+    },
+    {
+        "text": "暗夜巨兽",
+        "translate": "Night Beast"
+    },
+    {
+        "text": "海王荣耀",
+        "translate": "Glory Sea King"
+    },
+    {
+        "text": "铁甲飞龙",
+        "translate": "Dragon Iron Armor"
+    },
+    {
+        "text": "追风逐月",
+        "translate": "Chasing The Wind"
+    },
+    {
+        "text": "哪吒闹海",
+        "translate": "Story Of Nezha"
+    },
+    {
+        "text": "神龙宝藏",
+        "translate": "Dragon Treasure"
+    },
+    {
+        "text": "同类炸弹",
+        "translate": "Twin of booms"
+    },
+    {
+        "text": "响震四方",
+        "translate": "Earthshaker"
+    },
+    {
+        "text": "羊鳄大战",
+        "translate": "Crocodile War"
+    },
+    {
+        "text": "海盗船",
+        "translate": "Pirate ship"
+    },
+    {
+        "text": "三色鳄鱼",
+        "translate": "Three Coloured Crocodile"
+    },
+    {
+        "text": "李逵劈鱼",
+        "translate": "God of Likui"
+    },
+    {
+        "text": "摇钱树",
+        "translate": "Tree Of Wealth"
+    },
+    {
+        "text": "金蟾捕鱼",
+        "translate": "Gold Toad Fishing"
+    },
+    {
+        "text": "黄金美人鱼",
+        "translate": "Golden Mermaid"
+    },
+    {
+        "text": "龙鲨争霸",
+        "translate": "Power of Dragon shark"
+    },
+    {
+        "text": "火凤凰",
+        "translate": "Flaming Phoenix"
+    },
+    {
+        "text": "神龙转轮",
+        "translate": "Wheels Of God Dragon"
+    },
+    {
+        "text": "野蛮丛林",
+        "translate": "Huca"
+    },
+    {
+        "text": "水浒英雄",
+        "translate": "SaterMargin"
+    },
+    {
+        "text": "财神道",
+        "translate": "CaiShen Dao"
+    },
+    {
+        "text": "糖果王国",
+        "translate": "Suger Kingdom"
+    },
+    {
+        "text": "好运年年",
+        "translate": "Chinese Festival"
+    },
+    {
+        "text": "幸运钻石",
+        "translate": "Lucky Diamond"
+    },
+    {
+        "text": "阿拉丁宝藏",
+        "translate": "Aladdin Treasures"
+    },
+    {
+        "text": "皇朝88",
+        "translate": "Empire 88"
+    },
+    {
+        "text": "神偷侠兔",
+        "translate": "Miss Bunn"
+    },
+    {
+        "text": "冰雪女神",
+        "translate": "Snow Goddess"
+    },
+    {
+        "text": "金虎聚财",
+        "translate": "Tiger Wealth"
+    },
+    {
+        "text": "巨龙争霸",
+        "translate": "Grand Dragons"
+    },
+    {
+        "text": "彩凤呈祥",
+        "translate": "5 Phoenix"
+    },
+    {
+        "text": "黄金88",
+        "translate": "Golden 88"
+    },
+    {
+        "text": "福星发财",
+        "translate": "Fortune Babies"
+    },
+    {
+        "text": "发财树",
+        "translate": "Fortune Tree"
+    },
+    {
+        "text": "法老宝藏",
+        "translate": "Egyptian Fantasy"
+    },
+    {
+        "text": "熊猫宝藏",
+        "translate": "Panda Treasures"
+    },
+    {
+        "text": "狂野蛮牛",
+        "translate": "African Buffalo"
+    },
+    {
+        "text": "幸运美金",
+        "translate": "Lucky Dollars"
+    },
+    {
+        "text": "霹雳火",
+        "translate": "Thunder Fire"
+    },
+    {
+        "text": "齐天大圣",
+        "translate": "Immoital Monkey"
+    },
+    {
+        "text": "龙海公主",
+        "translate": "Ocean Princess"
+    },
+    {
+        "text": "精灵宝藏",
+        "translate": "Leprechaun Stack Gold"
+    },
+    {
+        "text": "维加斯之夜",
+        "translate": "Vegas Night"
+    },
+    {
+        "text": "招财猫",
+        "translate": "Fortune Cat"
+    },
+    {
+        "text": "富贵树",
+        "translate": "Rich Tree"
+    },
+    {
+        "text": "金猪报喜",
+        "translate": "Year of Golden Pig"
+    },
+    {
+        "text": "大福盛典",
+        "translate": "DaFu Show"
+    },
+    {
+        "text": "777",
+        "translate": "Sevens"
+    },
+    {
+        "text": "88FORTUNES_5",
+        "translate": "88FORTUNES_5"
+    },
+    {
+        "text": "DOUBLE BLESSINGS",
+        "translate": "DOUBLE BLESSINGS"
+    },
+    {
+        "text": "DIAMOND ETERNITY",
+        "translate": "DIAMOND ETERNITY"
+    },
+    {
+        "text": "88FORTUNES_3",
+        "translate": "88FORTUNES_3"
+    },
+    {
+        "text": "DUANWU",
+        "translate": "DUANWU"
+    },
+    {
+        "text": "DANCING DRUMS",
+        "translate": "DANCING DRUMS"
+    },
+    {
+        "text": "RISING FORTUNES",
+        "translate": "RISING FORTUNES"
+    },
+    {
+        "text": "5TREASURES",
+        "translate": "5TREASURES"
+    },
+    {
+        "text": "财富之眼",
+        "translate": ""
+    },
+    {
+        "text": "东海龙王",
+        "translate": ""
+    },
+    {
+        "text": "女娲",
+        "translate": ""
+    },
+    {
+        "text": "锦鲤报喜",
+        "translate": ""
+    },
+    {
+        "text": "财神到",
+        "translate": ""
+    },
+    {
+        "text": "五龙争霸",
+        "translate": ""
+    },
+    {
+        "text": "财神赐宝",
+        "translate": ""
+    },
+    {
+        "text": "龙之宝藏",
+        "translate": ""
+    },
+    {
+        "text": "运财锦鲤",
+        "translate": ""
+    },
+    {
+        "text": "天马",
+        "translate": ""
+    },
+    {
+        "text": "龙族王子",
+        "translate": ""
+    },
+    {
+        "text": "运财龙神",
+        "translate": ""
+    },
+    {
+        "text": "女侠",
+        "translate": ""
+    },
+    {
+        "text": "招财狮",
+        "translate": ""
+    },
+    {
+        "text": "龙腾虎啸",
+        "translate": ""
+    },
+    {
+        "text": "中秋佳节",
+        "translate": ""
+    },
+    {
+        "text": "美女猫咪",
+        "translate": ""
+    },
+    {
+        "text": "财神在线",
+        "translate": ""
+    },
+    {
+        "text": "五皇争霸",
+        "translate": ""
+    },
+    {
+        "text": "幸运女皇",
+        "translate": ""
+    },
+    {
+        "text": "虎威公主",
+        "translate": ""
+    },
+    {
+        "text": "熊猫滚滚",
+        "translate": ""
+    },
+    {
+        "text": "大圣爷",
+        "translate": ""
+    },
+    {
+        "text": "鸿福",
+        "translate": ""
+    },
+    {
+        "text": "熊猫宝贝",
+        "translate": ""
+    },
+    {
+        "text": "双喜熊猫",
+        "translate": ""
+    },
+    {
+        "text": "虎虎献瑞",
+        "translate": ""
+    },
+    {
+        "text": "金福满堂",
+        "translate": ""
+    },
+    {
+        "text": "赤红女皇",
+        "translate": ""
+    },
+    {
+        "text": "天龙地虎",
+        "translate": ""
+    },
+    {
+        "text": "巨龙宝藏",
+        "translate": ""
+    },
+    {
+        "text": "富贵之花",
+        "translate": ""
+    },
+    {
+        "text": "财富之树",
+        "translate": ""
+    },
+    {
+        "text": "终极火链",
+        "translate": ""
+    },
+    {
+        "text": "女猎手",
+        "translate": ""
+    },
+    {
+        "text": "紫晶人鱼",
+        "translate": "Amethyst Mermaid"
+    },
+    {
+        "text": "冥焰赤龙",
+        "translate": "Dark Flame Red Dragon"
+    },
+    {
+        "text": "蛮荒凶兽",
+        "translate": "Wild beast"
+    },
+    {
+        "text": "金色龙虾将军",
+        "translate": "General Golden Lobster"
+    },
+    {
+        "text": "招财宝蟾",
+        "translate": "Lucky treasure toad"
+    },
+    {
+        "text": "深海秘籍",
+        "translate": "Deep Sea Cheats"
+    },
+    {
+        "text": "远古秘境",
+        "translate": "Ancient Secret Realm"
+    },
+    {
+        "text": "请求充值失败，请联系客服后重试",
+        "translate": "The request for recharge failed. Please contact customer service and try again."
+    },
+    {
+        "text": "恭喜您，充值成功，获得NNN金币",
+        "translate": "Congratulations!Top Up success,Get NNN gold coins"
+    },
+    {
+        "text": "google充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Google Pay failed，no relevant order ，Pls Contact Service"
+    },
+    {
+        "text": "非android用户不可用",
+        "translate": "Not available for non Android users"
+    },
+    {
+        "text": "暂不可用，请选择其他充值方式",
+        "translate": "Temporarily unavailable, please select another recharge method"
+    },
+    {
+        "text": "绑定号码成功",
+        "translate": "Binding Number Successful"
+    },
+    {
+        "text": "本Facebook账号已经绑定",
+        "translate": "The Facebook has been bound to other accounts"
+    },
+    {
+        "text": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!",
+        "translate": "Congratulations to [vip][name] for using [bet] times cannon to kill [fish] in [gameId] to get [coin] gold!"
+    },
+    {
+        "text": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!",
+        "translate": "Congratulations to [vip][name] for winning [winMoney] gold in [gameId]!"
+    },
+    {
+        "text": "已经是第一页了",
+        "translate": "It's already the first page"
+    },
+    {
+        "text": "已经是最后一页了",
+        "translate": "It's the last page"
+    },
+    {
+        "text": "ID不能为空",
+        "translate": "ID cannot be empty"
+    },
+    {
+        "text": "最少赠送NNN金币，并且自身最少保留SSS金币",
+        "translate": "Minimum gift NNN coin, at least retain SSS coin"
+    },
+    {
+        "text": "数值不能含有小数",
+        "translate": "Number cannot contain decimal"
+    },
+    {
+        "text": "密码不能为空",
+        "translate": "Password cannot be empty"
+    },
+    {
+        "text": "成功赠送NNN枚金币给AAA",
+        "translate": "Successful gift of NNN gold coin to AAA"
+    },
+    {
+        "text": "请输入正确的ID",
+        "translate": "Please enter the correct ID"
+    },
+    {
+        "text": "密码输入错误请重新输入",
+        "translate": "Password input error please re-enter"
+    },
+    {
+        "text": "赠送金币失败",
+        "translate": "Gold coin donation failed"
+    },
+    {
+        "text": "请输入密码",
+        "translate": "Please input a password"
+    },
+    {
+        "text": "密码至少需要8位",
+        "translate": "Password requires at least 8 digits"
+    },
+    {
+        "text": "验证码已过期，请重新发送",
+        "translate": "The validation code has expired. Please send it again"
+    },
+    {
+        "text": "密码设置失败",
+        "translate": "Password Setting Failed"
+    },
+    {
+        "text": "8到12位之间",
+        "translate": "Between 8 and 12 bits"
+    },
+    {
+        "text": "账号只能NNN至SSS位",
+        "translate": "Account can only be NNN to SSS bit"
+    },
+    {
+        "text": "密码只能NNN至SSS位",
+        "translate": "Password can only be NNN to SSS bits"
+    },
+    {
+        "text": "账号密码绑定成功",
+        "translate": "The account password binding has been successful"
+    },
+    {
+        "text": "帐户名不能为空",
+        "translate": "The account name cannot be empty"
+    },
+    {
+        "text": "重复注册",
+        "translate": "Repeated registration"
+    },
+    {
+        "text": "首充",
+        "translate": "First charge"
+    },
+    {
+        "text": "绑定金返利",
+        "translate": "Bind cash rebate"
+    },
+    {
+        "text": "豪礼重重",
+        "translate": "Lavishly"
+    },
+    {
+        "text": "官方地址",
+        "translate": "Official address"
+    },
+    {
+        "text": "未知数据包",
+        "translate": "Unknown Packet"
+    },
+    {
+        "text": "老虎机选座返回大厅，数据发生错误",
+        "translate": "no_translate"
+    },
+    {
+        "text": "游戏更新失败，是否重试?",
+        "translate": "The game update failed. Do you want to try again?"
+    },
+    {
+        "text": "该座位无效，请选择其它位置",
+        "translate": "no_translate"
+    },
+    {
+        "text": "该座位已经有人",
+        "translate": "no_translate"
+    },
+    {
+        "text": "状态不一致，自动回大厅",
+        "translate": "no_translate"
+    },
+    {
+        "text": "更换头像失败",
+        "translate": "Replacement failure"
+    },
+    {
+        "text": "请在这里输入你的问题",
+        "translate": "Please enter your question here"
+    },
+    {
+        "text": "请输入您的问题",
+        "translate": "Please enter your question"
+    },
+    {
+        "text": "发件人:系统",
+        "translate": "System"
+    },
+    {
+        "text": "欢迎",
+        "translate": "Welcome"
+    },
+    {
+        "text": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！",
+        "translate": "WelcomeNNN New technology to create a large collection of fishing gamesNNNA lot of recommended friends to play!"
+    },
+    {
+        "text": "金币追回",
+        "translate": "Coin recovery"
+    },
+    {
+        "text": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。",
+        "translate": "Hello, due to misoperation of the customer service staff, the recharge error occurred, and now trigger the system gold coin recovery protection function: false recharge [{total_recover_money}] gold coin, has now recovered [{recover_money}] gold coin, used [{money} ] Gold coins will no longer be recovered, please forgive us for any inconvenience caused."
+    },
+    {
+        "text": "赠送通知",
+        "translate": "Gift notice"
+    },
+    {
+        "text": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！",
+        "translate": "Player: {account_id} Give you {money} coins, which have been deposited into your safe, please check!"
+    },
+    {
+        "text": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！",
+        "translate": "You give {money} coins to the player: {account_id}, which has been deposited into his safe!"
+    },
+    {
+        "text": "充值通知",
+        "translate": "Recharge notice"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功！",
+        "translate": "your order number is {order_num},the deposit amount is {money} ,  the deposit has been succesful !"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！",
+        "translate": "Your order: {order_num}, top-up amount: {money}, the top-up has been completed successfully, and additional {washcode} binding gold coins will be presented!"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！",
+        "translate": "Your order: {order_num}, top-up amount: {money}, top-up failed, reason for failure: {msg}, please contact customer service if you have any questions!"
+    },
+    {
+        "text": "领取奖励失败",
+        "translate": "Failed to claim reward"
+    },
+    {
+        "text": "请输入新昵称",
+        "translate": "Maximum 6 character"
+    },
+    {
+        "text": "修改昵称成功",
+        "translate": "Successful modification of nicknames"
+    },
+    {
+        "text": "该昵称已被使用，请重新输入",
+        "translate": "This nickname is in use. Please re-enter it"
+    },
+    {
+        "text": "修改昵称失败",
+        "translate": "Failure to modify nicknames"
+    },
+    {
+        "text": "没有更多",
+        "translate": "No more"
+    },
+    {
+        "text": "用户取消选择系统照片",
+        "translate": "User deselects system photo"
+    },
+    {
+        "text": "图片已选择",
+        "translate": "Picture selected"
+    },
+    {
+        "text": "网络异常，图片上传失败",
+        "translate": "The network is abnormal, Picture upload failed"
+    },
+    {
+        "text": "网络异常，正在努力上传图片~",
+        "translate": "The network is abnormal, trying to upload pictures~"
+    },
+    {
+        "text": "当前绑定金额",
+        "translate": "Current bound amount"
+    },
+    {
+        "text": "当前金额",
+        "translate": "Current amount"
+    },
+    {
+        "text": "绑定保险箱金额",
+        "translate": "Bind safe deposit amount"
+    },
+    {
+        "text": "保险箱金额",
+        "translate": "Safe deposit"
+    },
+    {
+        "text": "请输入金额！！！",
+        "translate": "Please input the amount!!!"
+    },
+    {
+        "text": "操作成功",
+        "translate": "Operation Success"
+    },
+    {
+        "text": "复制成功",
+        "translate": "Replication success"
+    },
+    {
+        "text": "截图失败",
+        "translate": "Screenshot failed"
+    },
+    {
+        "text": "保存截图文件失败",
+        "translate": "Failed to save screenshot file"
+    },
+    {
+        "text": "收藏失败",
+        "translate": "Collection failed"
+    },
+    {
+        "text": "收藏成功",
+        "translate": "Collection success"
+    },
+    {
+        "text": "我的ID: %s",
+        "translate": "My ID: %s"
+    },
+    {
+        "text": "VIP%d以上",
+        "translate": "VIP%d or more"
+    },
+    {
+        "text": "所有玩家",
+        "translate": "All players"
+    },
+    {
+        "text": "* 开启绑定金币使用权限。",
+        "translate": "* Enable the use of bound gold coins"
+    },
+    {
+        "text": "* 在游戏中可获取绑定金币。",
+        "translate": "* You can get bound gold coins in the game"
+    },
+    {
+        "text": "* 达成此等级，获取%s绑定金币。",
+        "translate": "* Reach this level and get %s bound gold coins"
+    },
+    {
+        "text": "* 在游戏中可获取更多绑定金币。",
+        "translate": "* Get more bound gold coins in the game"
+    },
+    {
+        "text": "* 可参与更多活动。",
+        "translate": "* Can participate in more activities"
+    },
+    {
+        "text": "开启绑定金币使用权限",
+        "translate": "Enable the use of bound gold coins"
+    },
+    {
+        "text": "如果有其他问题可直接联系'在线客服'",
+        "translate": "If you have other questions,you can directly contact 'Customer Service'"
+    },
+    {
+        "text": "没有更多的消息了",
+        "translate": "No more news"
+    },
+    {
+        "text": "请输入您宝贵的建议(200字以内)",
+        "translate": "Please give your suggestion (in 200 words)"
+    },
+    {
+        "text": "您的建议已经发送",
+        "translate": "Your suggestion has been sent"
+    },
+    {
+        "text": "请完善建议内容",
+        "translate": "Please give good advice"
+    },
+    {
+        "text": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络",
+        "translate": "Failed updating due to poor connection, please check your connection"
+    },
+    {
+        "text": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?",
+        "translate": "Requires minimum NNN coin to enter room. Go to the safe to get money or recharge?"
+    },
+    {
+        "text": "获取俱乐部信息失败",
+        "translate": "Failed to get club information"
+    },
+    {
+        "text": "领取福利失败",
+        "translate": "Failed to claim benefits"
+    },
+    {
+        "text": "本地未找到相关游戏",
+        "translate": "No related games found locally"
+    },
+    {
+        "text": "进入等级房失败",
+        "translate": "Failure to enter grade housing"
+    },
+    {
+        "text": "没有空闲的游戏服",
+        "translate": "No idle game clothes"
+    },
+    {
+        "text": "当前座位已有人或房间已满",
+        "translate": "The current seat is occupied or the room is full."
+    },
+    {
+        "text": "请耐心等待更新完成",
+        "translate": "Please wait patiently for the update to complete"
+    },
+    {
+        "text": "正在检查游戏是否需要更新",
+        "translate": "Checking if the game needs to be updated"
+    },
+    {
+        "text": "请耐心等待其他游戏更新完成",
+        "translate": "Please wait patiently for other game updates to complete"
+    },
+    {
+        "text": "领取奖励成功",
+        "translate": "Successfully receive rewards"
+    },
+    {
+        "text": "兑换失败，收到退款NNN金币",
+        "translate": "Exchange failure, refund NNN coin received"
+    },
+    {
+        "text": "获得来自SSS赠送的NNN枚金币",
+        "translate": "Get NNN gold coins from SSS"
+    },
+    {
+        "text": "该账号已在其他设备登陆，您已被强制登出！！！",
+        "translate": "This account has been logged on to other devices, you have been forced to log out!!!"
+    },
+    {
+        "text": "收藏",
+        "translate": "collect"
+    },
+    {
+        "text": "收藏个人信息",
+        "translate": "Favorite personal information"
+    },
+    {
+        "text": "获取代理信息失败!",
+        "translate": "Failed to get club information"
+    },
+    {
+        "text": "会长无法退出俱乐部",
+        "translate": "Failed to obtain agent information"
+    },
+    {
+        "text": "是否确认退出俱乐部？",
+        "translate": "Are you sure to leave the club?"
+    },
+    {
+        "text": "退出俱乐部成功",
+        "translate": "Quit the club successfully"
+    },
+    {
+        "text": "%d小时%d分后可退出俱乐部。",
+        "translate": "You can quit the club after %d hours and %d minutes."
+    },
+    {
+        "text": "退出俱乐部失败",
+        "translate": "Failed to quit the club"
+    },
+    {
+        "text": "领取返利失败",
+        "translate": "Failed to claim rebate"
+    },
+    {
+        "text": "获取记录日志失败",
+        "translate": "Failed to get record log"
+    },
+    {
+        "text": "欢迎加入俱乐部",
+        "translate": "Welcome to join the club"
+    },
+    {
+        "text": "邀请码:%s",
+        "translate": "Invitation code:%s"
+    },
+    {
+        "text": "公告修改失败!",
+        "translate": "Announcement modification failed"
+    },
+    {
+        "text": "公告修改成功!",
+        "translate": "Announcement modified successfully"
+    },
+    {
+        "text": "总人数:{total_man}   在线人数:{online_man}",
+        "translate": "total people:{total_man} online users:{online_man}"
+    },
+    {
+        "text": "在线",
+        "translate": "Online"
+    },
+    {
+        "text": "%d年前在线",
+        "translate": "Online %d years ago"
+    },
+    {
+        "text": "%d月前在线",
+        "translate": "Online %d months ago"
+    },
+    {
+        "text": "%d天前在线",
+        "translate": "Online %d days ago"
+    },
+    {
+        "text": "%d小时前在线",
+        "translate": "Online %d hours ago"
+    },
+    {
+        "text": "刚刚离线",
+        "translate": "Just offline"
+    },
+    {
+        "text": "请输入俱乐部名字",
+        "translate": "Please enter club name"
+    },
+    {
+        "text": "创建俱乐部失败",
+        "translate": "Failed to create club"
+    },
+    {
+        "text": "请求俱乐部信息失败",
+        "translate": "Failed to request club information"
+    },
+    {
+        "text": "你还不是正式账号，请绑定账号后再操作!",
+        "translate": "You are not an official account, please bind the account before operating"
+    },
+    {
+        "text": "收藏推广信息",
+        "translate": "Collection promotion information"
+    },
+    {
+        "text": "请输入推广码",
+        "translate": "Please enter the promotion code"
+    },
+    {
+        "text": "加入俱乐部失败",
+        "translate": "Failed to join the club"
+    },
+    {
+        "text": "昨日累计:{total}",
+        "translate": "Yesterday's cumulative:{total}"
+    },
+    {
+        "text": "总累计:{total}",
+        "translate": "Total cumulative:{total}"
+    },
+    {
+        "text": "领取记录",
+        "translate": "Collection record"
+    },
+    {
+        "text": "领取时间",
+        "translate": "Collection time"
+    },
+    {
+        "text": "领取金币",
+        "translate": "Collect gold coins"
+    },
+    {
+        "text": "暂无领取记录",
+        "translate": "No collection record"
+    },
+    {
+        "text": "已自动保存到保险箱",
+        "translate": "Saved to the safebox"
+    },
+    {
+        "text": "分享",
+        "translate": "share"
+    },
+    {
+        "text": "领   取",
+        "translate": "Take"
+    },
+    {
+        "text": "退出俱乐部",
+        "translate": "Quit the club"
+    },
+    {
+        "text": "成员",
+        "translate": "member"
+    },
+    {
+        "text": "返利",
+        "translate": "Rebate"
+    },
+    {
+        "text": "名称",
+        "translate": "name"
+    },
+    {
+        "text": "加入时间",
+        "translate": "Join time"
+    },
+    {
+        "text": "状态",
+        "translate": "Status"
+    },
+    {
+        "text": "创建",
+        "translate": "create"
+    },
+    {
+        "text": "请输入俱乐部名称",
+        "translate": "Please enter club name"
+    },
+    {
+        "text": "邀请码：",
+        "translate": "Invitation code:"
+    },
+    {
+        "text": "保存图片以获取游戏下载地址",
+        "translate": "Save the picture to get the game download address"
+    },
+    {
+        "text": "加入",
+        "translate": "join in"
+    },
+    {
+        "text": "加入俱乐部请输入邀请码",
+        "translate": "Please enter the invitation code to join the club"
+    },
+    {
+        "text": "请选择俱乐部头像",
+        "translate": "Please choose a club avatar"
+    },
+    {
+        "text": "昨日排行",
+        "translate": "Yesterday"
+    },
+    {
+        "text": "总排行",
+        "translate": "Overall"
+    },
+    {
+        "text": "排名",
+        "translate": "Rank"
+    },
+    {
+        "text": "捕鱼/老虎机洗码量",
+        "translate": "Fishing/Slot machine"
+    },
+    {
+        "text": "选 桌",
+        "translate": "Choose a table"
+    },
+    {
+        "text": "充值",
+        "translate": "Recharge"
+    },
+    {
+        "text": "保险箱",
+        "translate": "Safe"
+    },
+    {
+        "text": "转账记录",
+        "translate": "Transfer records"
+    },
+    {
+        "text": "转账编码",
+        "translate": "Transfer code"
+    },
+    {
+        "text": "收款玩家",
+        "translate": "Receiving player"
+    },
+    {
+        "text": "金额",
+        "translate": "Amount"
+    },
+    {
+        "text": "转账时间",
+        "translate": "Transfer time"
+    },
+    {
+        "text": "首页",
+        "translate": "Home"
+    },
+    {
+        "text": "上一页",
+        "translate": "Previous page"
+    },
+    {
+        "text": "下一页",
+        "translate": "Next page"
+    },
+    {
+        "text": "末页",
+        "translate": "Last page"
+    },
+    {
+        "text": "赠送用户ID",
+        "translate": "Gift user ID"
+    },
+    {
+        "text": "金币数量",
+        "translate": "Number of gold coins"
+    },
+    {
+        "text": "输入密码",
+        "translate": "Enter password"
+    },
+    {
+        "text": "赠送记录",
+        "translate": "Gift record"
+    },
+    {
+        "text": "请确认密码",
+        "translate": "Please confirm password"
+    },
+    {
+        "text": "绑定账号成为",
+        "translate": "Bind your account to become"
+    },
+    {
+        "text": "查看VIP权益",
+        "translate": "View VIP rights"
+    },
+    {
+        "text": "请选择你的头像",
+        "translate": "Please choose your avatar"
+    },
+    {
+        "text": "发送",
+        "translate": "Send"
+    },
+    {
+        "text": "上传图片",
+        "translate": "Upload picture"
+    },
+    {
+        "text": "活动时间:",
+        "translate": "Activity time:"
+    },
+    {
+        "text": "参与条件:",
+        "translate": "Participation conditions:"
+    },
+    {
+        "text": "领取",
+        "translate": "receive"
+    },
+    {
+        "text": "前往",
+        "translate": "GO"
+    },
+    {
+        "text": "输入新名称",
+        "translate": "Enter new name"
+    },
+    {
+        "text": "账户只能修改一次",
+        "translate": "Account can only be modified once"
+    },
+    {
+        "text": "确认修改",
+        "translate": "Confirm modification"
+    },
+    {
+        "text": "今日赢金币量",
+        "translate": "Amount of gold coins won today"
+    },
+    {
+        "text": "玩家",
+        "translate": "Player"
+    },
+    {
+        "text": "今日赢金币",
+        "translate": "Win coins today"
+    },
+    {
+        "text": "未上榜",
+        "translate": "Not on the list"
+    },
+    {
+        "text": "存款",
+        "translate": "Deposit"
+    },
+    {
+        "text": "取款",
+        "translate": "Withdrawal"
+    },
+    {
+        "text": "绑定金币取款",
+        "translate": "Token Withdrawal"
+    },
+    {
+        "text": "绑定金币存款",
+        "translate": "Token Deposit"
+    },
+    {
+        "text": "最大",
+        "translate": "The largest"
+    },
+    {
+        "text": "确认存款",
+        "translate": "Confirm deposit"
+    },
+    {
+        "text": "确认取款",
+        "translate": "Confirm withdrawal"
+    },
+    {
+        "text": "修改头像",
+        "translate": "Modify avatar"
+    },
+    {
+        "text": "复制",
+        "translate": "Copy"
+    },
+    {
+        "text": "成为VIP",
+        "translate": "Become a VIP"
+    },
+    {
+        "text": "退出游戏",
+        "translate": "Quit the game"
+    },
+    {
+        "text": "昵称",
+        "translate": "Nickname"
+    },
+    {
+        "text": "ID",
+        "translate": "ID"
+    },
+    {
+        "text": "音 乐",
+        "translate": "Music"
+    },
+    {
+        "text": "音 效",
+        "translate": "Sound effect"
+    },
+    {
+        "text": "特 效",
+        "translate": "Special effects"
+    },
+    {
+        "text": "滚动报喜",
+        "translate": "Rolling Annunciation"
+    },
+    {
+        "text": "恭喜获得奖励",
+        "translate": "Congratulations on getting the reward"
+    },
+    {
+        "text": "绑定账号后解锁转盘",
+        "translate": "Unlock after binding"
+    },
+    {
+        "text": "绑定账号",
+        "translate": "Bind account"
+    },
+    {
+        "text": "不用了",
+        "translate": "no need"
+    },
+    {
+        "text": "游戏时间越多，获得的绑定金返利越多。",
+        "translate": "The more time you play, the more bound cash rebates you will get."
+    },
+    {
+        "text": "当前进度",
+        "translate": "Current progress"
+    },
+    {
+        "text": "昨日进度",
+        "translate": "Yesterday's progress"
+    },
+    {
+        "text": "可领取",
+        "translate": "Available"
+    },
+    {
+        "text": "去游戏",
+        "translate": "Go game"
+    },
+    {
+        "text": "每天24点发放奖励，奖励保存24小时，限时未领取作废。",
+        "translate": "Rewards are issued at 24 o'clock every day, and the rewards are kept for 24 hours."
+    },
+    {
+        "text": "提示：通过玩游戏得到绑定金币提升VIP经验。",
+        "translate": "Tip: Get bound gold coins to improve VIP experience by playing games."
+    },
+    {
+        "text": "当前等级",
+        "translate": "current level"
+    },
+    {
+        "text": "您的vip等级已达到最高级！",
+        "translate": "Your VIP level has reached the highest level!"
+    },
+    {
+        "text": "联系客服",
+        "translate": "Contact customer service"
+    },
+    {
+        "text": "常见问题",
+        "translate": "Frequently Asked Questions"
+    },
+    {
+        "text": "在线客服",
+        "translate": "Online customer service"
+    },
+    {
+        "text": "提交建议",
+        "translate": "Submit suggestions"
+    },
+    {
+        "text": "邮件",
+        "translate": "Mail"
+    },
+    {
+        "text": "阅读",
+        "translate": "Reading"
+    },
+    {
+        "text": "已读",
+        "translate": "Read"
+    },
+    {
+        "text": "您的意见将帮助我们改进产品和服务",
+        "translate": "Your suggestions will help us to improve our services"
+    },
+    {
+        "text": "真实姓名",
+        "translate": "Real name"
+    },
+    {
+        "text": "手机号码",
+        "translate": "Phone number"
+    },
+    {
+        "text": "建议回复需要通过手机号查看，请填写真实的手机号码",
+        "translate": "It is recommended that the reply needs to be checked by mobile phone number, please fill in the real mobile phone number"
+    },
+    {
+        "text": "提交",
+        "translate": "Submit"
+    },
+    {
+        "text": "图片",
+        "translate": "Picture"
+    },
+    {
+        "text": "是否退出游戏",
+        "translate": "Do you want to quit the game?"
+    },
+    {
+        "text": "金币不足",
+        "translate": "Gold inadequate"
+    },
+    {
+        "text": "账号只能由NNN至SSS位的数字和字母组成",
+        "translate": "The account can only be composed of numbers and letters from NNN to SSS"
+    },
+    {
+        "text": "密码只能由NNN至SSS位的数字和字母组成",
+        "translate": "The password can only be composed of NNN to SSS digits and letters"
+    },
+    {
+        "text": "全部",
+        "translate": "All"
+    },
+    {
+        "text": "已禁言",
+        "translate": "Muted"
+    },
+    {
+        "text": "未禁言",
+        "translate": "not mute"
+    },
+    {
+        "text": "设置成功",
+        "translate": "set successfully"
+    },
+    {
+        "text": "设置失败",
+        "translate": "Setup Failed"
+    },
+    {
+        "text": "公频",
+        "translate": "public frequency"
+    },
+    {
+        "text": "俱乐部",
+        "translate": "club"
+    },
+    {
+        "text": "密语",
+        "translate": "secret language"
+    },
+    {
+        "text": "群发",
+        "translate": "Bulk"
+    },
+    {
+        "text": "点击输入消息",
+        "translate": "Click to enter message"
+    },
+    {
+        "text": "请输入聊天消息",
+        "translate": "Please enter a chat message"
+    },
+    {
+        "text": "您已被禁言",
+        "translate": "you have been banned"
+    },
+    {
+        "text": "消息发送失败",
+        "translate": "Failed to send message"
+    },
+    {
+        "text": "模板数目已达最大, 无法再新建",
+        "translate": "The number of templates has reached the maximum and cannot be created any more"
+    },
+    {
+        "text": "请输入标题！",
+        "translate": "Please enter a title!"
+    },
+    {
+        "text": "请输入文字信息！",
+        "translate": "Please enter text message!"
+    },
+    {
+        "text": "请输入标题",
+        "translate": "Please enter a title"
+    },
+    {
+        "text": "请输入文字信息",
+        "translate": "Please enter text information"
+    },
+    {
+        "text": "%d 人",
+        "translate": "%d people"
+    },
+    {
+        "text": "请选择一个群发模板再发送",
+        "translate": "Please select a group template to send"
+    },
+    {
+        "text": "模板信息",
+        "translate": "Template information"
+    },
+    {
+        "text": "模板修改完成",
+        "translate": "Template modification completed"
+    },
+    {
+        "text": "你还未加入俱乐部",
+        "translate": "you haven't joined the club"
+    },
+    {
+        "text": "抱歉，银商玩家不能进入游戏游玩！",
+        "translate": "Sorry, Silver Merchant players cannot enter the game to play!"
+    },
+    {
+        "text": "禁言管理",
+        "translate": "Mute management"
+    },
+    {
+        "text": "保存",
+        "translate": "keep"
+    },
+    {
+        "text": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "Edit template: After selecting multiple templates, the message will be automatically sent according to the selected template when sending a message."
+    },
+    {
+        "text": "发送间隔:",
+        "translate": "Send interval:"
+    },
+    {
+        "text": "删除",
+        "translate": "delete"
+    },
+    {
+        "text": "标题：",
+        "translate": "title:"
+    },
+    {
+        "text": "筛选:",
+        "translate": "filter:"
+    },
+    {
+        "text": "用户ID",
+        "translate": "User ID"
+    },
+    {
+        "text": "VIP等级",
+        "translate": "VIP level"
+    },
+    {
+        "text": "在线状态",
+        "translate": "online status"
+    },
+    {
+        "text": "下一步",
+        "translate": "Next step"
+    },
+    {
+        "text": "120人",
+        "translate": "120 people"
+    },
+    {
+        "text": "*列表展示XX小时/天登陆过的用户",
+        "translate": "*List shows users who have logged in XX hours/days"
+    },
+    {
+        "text": "群发模板:",
+        "translate": "Bulk template:"
+    },
+    {
+        "text": "模板内容:",
+        "translate": "Template content:"
+    },
+    {
+        "text": "上一步",
+        "translate": "Previous"
+    },
+    {
+        "text": "联系人",
+        "translate": "contact"
+    },
+    {
+        "text": "赠送",
+        "translate": "give away"
+    },
+    {
+        "text": "收礼",
+        "translate": "receive gifts"
+    },
+    {
+        "text": "日期",
+        "translate": "date"
+    },
+    {
+        "text": "玩家ID",
+        "translate": "Player ID"
+    },
+    {
+        "text": "赠送金币",
+        "translate": "give away coins"
+    },
+    {
+        "text": "金币余额",
+        "translate": "gold coin balance"
+    },
+    {
+        "text": "* 忘记密码请联系客服",
+        "translate": "Forgot your password, please contact customer service"
+    },
+    {
+        "text": "客服",
+        "translate": "customer service"
+    },
+    {
+        "text": "投诉",
+        "translate": "complaint"
+    },
+    {
+        "text": "保存成功!",
+        "translate": "Successfully saved"
+    },
+    {
+        "text": "保存失败!",
+        "translate": "Save failed!"
+    },
+    {
+        "text": "请选择需要群发的用户后再试！",
+        "translate": "Please select the user who needs mass posting and try again!"
+    },
+    {
+        "text": "发送成功",
+        "translate": "Sent successfully"
+    },
+    {
+        "text": "发送失败",
+        "translate": "Failed to send"
+    },
+    {
+        "text": "获取赠送记录失败",
+        "translate": "Failed to get gift record"
+    },
+    {
+        "text": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "Edit Template: After checking multiple templates, the message will be automatically sent according to the checked template."
+    },
+    {
+        "text": "禁言",
+        "translate": "mute"
+    },
+    {
+        "text": "解禁",
+        "translate": "Lifting of the ban"
+    },
+    {
+        "text": "私聊",
+        "translate": "private chat"
+    },
+    {
+        "text": "加入俱乐部",
+        "translate": "join the club"
+    },
+    {
+        "text": "搜索",
+        "translate": "search"
+    },
+    {
+        "text": "id或者昵称",
+        "translate": "id or nickname"
+    },
+    {
+        "text": "尚无聊天记录。",
+        "translate": "No chat history yet."
+    },
+    {
+        "text": "获取群组列表信息失败",
+        "translate": "Failed to acquire group list information"
+    },
+    {
+        "text": "进入码错误",
+        "translate": "Wrong access code"
+    },
+    {
+        "text": "加入群失败",
+        "translate": "Failed to join group"
+    },
+    {
+        "text": "对方已经是你的好友了",
+        "translate": "Already registered as friend"
+    },
+    {
+        "text": "添加好友成功",
+        "translate": "Friend added successfully"
+    },
+    {
+        "text": "添加好友失败",
+        "translate": "Failed to add as friend"
+    },
+    {
+        "text": "删除好友失败",
+        "translate": "Failed to delete friend"
+    },
+    {
+        "text": "搜索用户",
+        "translate": "Searching for Other User"
+    },
+    {
+        "text": "获取用户信息失败",
+        "translate": "Failed to acquire user information"
+    },
+    {
+        "text": "群主已开启全局禁言",
+        "translate": "Group owner has activated public ban"
+    },
+    {
+        "text": "请输入群组名",
+        "translate": "Please enter your group name"
+    },
+    {
+        "text": "请输入进入码",
+        "translate": "Please enter your access code"
+    },
+    {
+        "text": "请输入6位的进入码",
+        "translate": "Please enter your 6-digit accesss code"
+    },
+    {
+        "text": "创建成功",
+        "translate": "Created Successfully"
+    },
+    {
+        "text": "创建失败",
+        "translate": "Fail to Create"
+    },
+    {
+        "text": "获取群信息失败",
+        "translate": "Fail to acquire group information"
+    },
+    {
+        "text": "无效的群组信息",
+        "translate": "Group information is invalid"
+    },
+    {
+        "text": "获取成员列表失败",
+        "translate": "Fail to acquire member information"
+    },
+    {
+        "text": "请输入群组名字！",
+        "translate": "Please enter your group name"
+    },
+    {
+        "text": "请输入群组公告信息",
+        "translate": "Please enter your group announcement"
+    },
+    {
+        "text": "解散群组失败!",
+        "translate": "Can't disband group"
+    },
+    {
+        "text": "请输入合法的群组名字",
+        "translate": "Please enter a valid group name"
+    },
+    {
+        "text": "修改成功!",
+        "translate": "Modification successful"
+    },
+    {
+        "text": "修改失败!",
+        "translate": "Modification failed"
+    },
+    {
+        "text": "退出群组失败!",
+        "translate": "Can't leave the group"
+    },
+    {
+        "text": "已建立群组(%d)",
+        "translate": "Create group (%d)"
+    },
+    {
+        "text": "已加入群组(%d)",
+        "translate": "Joined the group (%d)"
+    },
+    {
+        "text": "公开群组(%d)",
+        "translate": "Public Group (%d)"
+    },
+    {
+        "text": "该群人数已满，加入失败",
+        "translate": "Group is full, can't accept anymore"
+    },
+    {
+        "text": "加入成功",
+        "translate": "Group joined successfully"
+    },
+    {
+        "text": "群主",
+        "translate": "Group Owner"
+    },
+    {
+        "text": "管理员",
+        "translate": "Administrator"
+    },
+    {
+        "text": "聊天(%d)",
+        "translate": "Chat (%d)"
+    },
+    {
+        "text": "好友(%d)",
+        "translate": "Friends (%d)"
+    },
+    {
+        "text": "群组",
+        "translate": "Group"
+    },
+    {
+        "text": "频道 1",
+        "translate": "Channel 1"
+    },
+    {
+        "text": "建立群组",
+        "translate": "Create Group"
+    },
+    {
+        "text": "欢迎来到群组",
+        "translate": "Welcome to the group"
+    },
+    {
+        "text": "请选择一个群组",
+        "translate": "Please choose your group"
+    },
+    {
+        "text": "群组名称：",
+        "translate": "Group Name:"
+    },
+    {
+        "text": "进入码",
+        "translate": "Access Code:"
+    },
+    {
+        "text": "* 进入码为6位数字",
+        "translate": "*Access code consists of 6-digits"
+    },
+    {
+        "text": "全局禁言",
+        "translate": "Public Ban"
+    },
+    {
+        "text": "群组公告：",
+        "translate": "Group announcement:"
+    },
+    {
+        "text": "解散群组",
+        "translate": "Disband group"
+    },
+    {
+        "text": "退出群组",
+        "translate": "Leave group"
+    },
+    {
+        "text": "踢人",
+        "translate": "Remove group member"
+    },
+    {
+        "text": "设为管理员",
+        "translate": "Set as admin"
+    },
+    {
+        "text": "取消管理员",
+        "translate": "Revoke Admin's rights"
+    },
+    {
+        "text": "加为好友",
+        "translate": "Add as friend"
+    },
+    {
+        "text": "删除好友",
+        "translate": "Delete Friend"
+    },
+    {
+        "text": "您没有该操作权限",
+        "translate": "You don't have this permission"
+    },
+    {
+        "text": "群名字太长",
+        "translate": "Group name is too long"
+    },
+    {
+        "text": "进入码太长",
+        "translate": "Access code is too long"
+    },
+    {
+        "text": "群名字已存在",
+        "translate": "Group name already exists"
+    },
+    {
+        "text": "群创建失败",
+        "translate": "Group creation failed"
+    },
+    {
+        "text": "非法的群名字",
+        "translate": "Illegal group name"
+    },
+    {
+        "text": "群公告过长",
+        "translate": "Group announcement is too long"
+    },
+    {
+        "text": "群信息修改失败",
+        "translate": "Failed to modify group information"
+    },
+    {
+        "text": "保存图片以获取游戏官方下载地址",
+        "translate": "Save Picture to access official download link"
+    },
+    {
+        "text": "活动内容",
+        "translate": "Activity Content"
+    },
+    {
+        "text": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。",
+        "translate": "Semakin banyak koin bonus yang anda dapatkan dari penggunaan koin emas selama permainan, maka lebih banyak juga koin bonus yang akan diperoleh dari bonus rabat."
+    },
+    {
+        "text": "请输入账号",
+        "translate": "Input your account number"
+    },
+    {
+        "text": "该账号已注册",
+        "translate": "Account has been registered"
+    },
+    {
+        "text": "忘记密码，请联系在线客服",
+        "translate": "Forgot your password, please contact customer service"
+    },
+    {
+        "text": "连接出错 网关连不上！",
+        "translate": "Unstable connection, can't connect to the game"
+    },
+    {
+        "text": "忘记密码",
+        "translate": "Forget Password"
+    },
+    {
+        "text": "账号注册",
+        "translate": "Account Registered"
+    },
+    {
+        "text": "登录游戏",
+        "translate": "Login"
+    },
+    {
+        "text": "去解锁",
+        "translate": "Unlock"
+    },
+    {
+        "text": "成为VIP%d解锁转盘",
+        "translate": "Unlock after VIP%d"
+    },
+    {
+        "text": "充值任意金额成为VIP",
+        "translate": "Recharge any amount to become VIP"
+    },
+    {
+        "text": "谷歌账号",
+        "translate": "Google account"
+    },
+    {
+        "text": "苹果账号",
+        "translate": "Apple account"
+    },
+    {
+        "text": "注册成功",
+        "translate": "Registration succeeded."
+    },
+    {
+        "text": "请先成为VIP",
+        "translate": "Please become VIP first"
+    },
+    {
+        "text": "字母和数字%d至%d位",
+        "translate": "%d to %d letters and numbers"
+    },
+    {
+        "text": "账户名称长度%d至%d位",
+        "translate": "Account name length %d to %d characters"
+    },
+    {
+        "text": "账户密码长度%d至%d位",
+        "translate": "password length %d to %d "
+    },
+    {
+        "text": "两次输入的密码不相同",
+        "translate": "The password entered twice is not the same"
+    },
+    {
+        "text": "用户名或密码为空",
+        "translate": "username or password is empty"
+    },
+    {
+        "text": "包名为空",
+        "translate": "package name is empty"
+    },
+    {
+        "text": "注册失败，请重试",
+        "translate": "Registration failed, please try again"
+    },
+    {
+        "text": "已达到注册限制",
+        "translate": "Registration limit reached"
+    },
+    {
+        "text": "用户名非法，请新输入",
+        "translate": "The username is invalid, please enter a new one"
+    },
+    {
+        "text": "注册",
+        "translate": "register"
+    },
+    {
+        "text": "成为VIP%d后解锁",
+        "translate": "Unlock after VIP%d"
+    },
+    {
+        "text": "成为VIP后解锁",
+        "translate": "Unlock after becoming VIP"
+    },
+    {
+        "text": "* 解锁转盘。",
+        "translate": "* Unlock the Lucky Wheel"
+    },
+    {
+        "text": "充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Recharge verification failed. No corresponding order can be found. Please contact customer service"
+    },
+    {
+        "text": "非 iphone 用户不可用",
+        "translate": "Not available for non-iphone users"
+    },
+    {
+        "text": "正在加载大厅资源...",
+        "translate": "Loading lobby resources..."
+    },
+    {
+        "text": "更新模块失败",
+        "translate": "Module update failed"
+    },
+    {
+        "text": "更新大厅失败，是否重试?",
+        "translate": "Lobby update failed. Try again?"
+    },
+    {
+        "text": "登入游戏",
+        "translate": "Log in to the game"
+    },
+    {
+        "text": "正在更新游戏...",
+        "translate": "Updating the game..."
+    },
+    {
+        "text": "确定删除好友 '%s' 吗?",
+        "translate": "Are you sure to delete friends '%s'?"
+    },
+    {
+        "text": "您已被 '%s' 群管理员禁言。",
+        "translate": "You have been gagged by '%s' group administrator."
+    },
+    {
+        "text": "您在 '%s' 群的禁言已被解除。",
+        "translate": "Your gag on '%s' group has been lifted."
+    },
+    {
+        "text": "您已被设置为 '%s' 管理员。",
+        "translate": "You have been set to '%s' administrator."
+    },
+    {
+        "text": "您在 '%s' 群的管理员资格已被解除。",
+        "translate": "Your administrator status in '%s' group has been revoked."
+    },
+    {
+        "text": "你已经被踢出群 '%s' ",
+        "translate": "You've been kicked out of the group '%s'"
+    },
+    {
+        "text": "确定解散群组 '%s' 吗?",
+        "translate": "Are you sure to disband the group '%s'?"
+    },
+    {
+        "text": "欢迎加入'%s' ",
+        "translate": "Welcome to join '%s'"
+    },
+    {
+        "text": "您是否确认将 '%s' 踢出群组?",
+        "translate": "Are you sure to kick '%s' out of the group?"
+    },
+    {
+        "text": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)",
+        "translate": "Do you want to set '%s' as administrator? (The message sent by the administrator is visible to all users)"
+    },
+    {
+        "text": "你确定要赠送给 '%s' 金币吗？",
+        "translate": "Are you sure you want to give '%s' gold coins?"
+    },
+    {
+        "text": "收款钱包地址",
+        "translate": "Collection wallet address"
+    },
+    {
+        "text": "钱包地址",
+        "translate": "The wallet address"
+    },
+    {
+        "text": "请绑定地址",
+        "translate": "Please bind the address"
+    },
+    {
+        "text": "绑定",
+        "translate": "The binding"
+    },
+    {
+        "text": "充值金额",
+        "translate": "Top-up amount"
+    },
+    {
+        "text": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值",
+        "translate": "Players bind their wallet address, input the amount of recharge, and click the recharge button to complete the recharge"
+    },
+    {
+        "text": "请输入钱包地址",
+        "translate": "Please enter your wallet address"
+    },
+    {
+        "text": "地址只能绑定一次，请仔细核对，有问题请及时联系客服",
+        "translate": "The address can only be bound once, please check carefully, if there is any problem, please contact customer service in time"
+    },
+    {
+        "text": "可提现金币数量",
+        "translate": "Quantity of gold coins that can be withdrawn"
+    },
+    {
+        "text": "请输入金额",
+        "translate": "Please enter amount"
+    },
+    {
+        "text": "提现钱包地址",
+        "translate": "Address of the withdrawal wallet"
+    },
+    {
+        "text": "请输入提现地址",
+        "translate": "Please enter the withdrawal address"
+    },
+    {
+        "text": "提现记录",
+        "translate": "Withdrawal record"
+    },
+    {
+        "text": "提交成功，等待审核",
+        "translate": "Submission successful, waiting for review"
+    },
+    {
+        "text": "充值成功，等待审核",
+        "translate": "Recharge succeeded, waiting for review"
+    },
+    {
+        "text": "银行卡",
+        "translate": "Bank card"
+    },
+    {
+        "text": "最低提现200金币",
+        "translate": "Minimum withdrawal 200 gold pieces"
+    },
+    {
+        "text": "订单号",
+        "translate": "The order number"
+    },
+    {
+        "text": "操作",
+        "translate": "operation"
+    },
+    {
+        "text": "成功",
+        "translate": "successful"
+    },
+    {
+        "text": "审核中",
+        "translate": "In the review"
+    },
+    {
+        "text": "失败",
+        "translate": "failure"
+    },
+    {
+        "text": "详情",
+        "translate": "details"
+    },
+    {
+        "text": "系统",
+        "translate": "system"
+    },
+    {
+        "text": "奖励金币",
+        "translate": "Reward of gold"
+    },
+    {
+        "text": "游戏返利",
+        "translate": "The game is rebate"
+    },
+    {
+        "text": "游戏时间越多，返利越多。",
+        "translate": "The more time you play, the more rebates you get."
+    },
+    {
+        "text": "*玩游戏可获得VIP经验。",
+        "translate": "* Play the game for VIP experience."
+    },
+    {
+        "text": "*玩游戏可获得更多VIP经验。",
+        "translate": "* Play games for more VIP experience."
+    },
+    {
+        "text": "*奖励%d金币",
+        "translate": "* Bonus %d gold coins"
+    },
+    {
+        "text": "快速登录",
+        "translate": "Quick login"
+    },
+    {
+        "text": "实时返利活动",
+        "translate": "Real-time rebate activities"
+    },
+    {
+        "text": "日返利活动",
+        "translate": "Day rebate activities"
+    },
+    {
+        "text": "周返利活动",
+        "translate": "Weekly rebate activities"
+    },
+    {
+        "text": "月返利活动",
+        "translate": "Monthly rebate activities"
+    },
+    {
+        "text": "小时",
+        "translate": "hours"
+    },
+    {
+        "text": "天",
+        "translate": "day"
+    },
+    {
+        "text": "周",
+        "translate": "weeks"
+    },
+    {
+        "text": "月",
+        "translate": "month"
+    },
+    {
+        "text": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。",
+        "translate": "%d %s will issue a reward, and the reward is kept for %d hours. It will be forfeit if not claimed within the time limit."
+    },
+    {
+        "text": "请先绑定钱包地址！",
+        "translate": "Please bind the wallet address first!"
+    },
+    {
+        "text": "金币不足%d时才能切换充值方式",
+        "translate": "Only when the gold coin is less than %d can the recharge mode be switched"
+    },
+    {
+        "text": "请确认钱包地址是否正确",
+        "translate": "Please make sure the wallet address is correct"
+    },
+    {
+        "text": "金币",
+        "translate": "Gold COINS"
+    },
+    {
+        "text": "请输入订单号",
+        "translate": "Please enter the order number"
+    },
+    {
+        "text": "VIP福利",
+        "translate": "VIP benefits"
+    },
+    {
+        "text": "本次更新需要重启应用.",
+        "translate": ""
+    }
+]

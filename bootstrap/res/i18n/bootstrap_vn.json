@@ -1,0 +1,2422 @@
+[
+    {
+        "text": "正在获取导航信息...",
+        "translate": "Nhận thông tin tự la bàn"
+    },
+    {
+        "text": "获取导航信息失败",
+        "translate": "Nhận thông tin tự la bàn Thất bại"
+    },
+    {
+        "text": "获取导航信息失败, 是否重试？",
+        "translate": "Nhận thông tin tự la bàn Thất bại Thử lại"
+    },
+    {
+        "text": "版本更新失败",
+        "translate": "Cập nhật phiên bản không thành công"
+    },
+    {
+        "text": "版本更新失败, 是否重试？",
+        "translate": "Cập nhật phiên bản không thành công,cho dù Thử lại"
+    },
+    {
+        "text": "正在更新文件...",
+        "translate": "Đang cập nhật tài liệu"
+    },
+    {
+        "text": "正在检查版本信息...",
+        "translate": "Đang Kiểm tra thông tin phiên bản"
+    },
+    {
+        "text": "检查版本信息失败，是否重试？",
+        "translate": "Kiểm tra thông tin phiên bản Thất bại hử lại"
+    },
+    {
+        "text": "确定",
+        "translate": "XÁC ĐỊNH"
+    },
+    {
+        "text": "取消",
+        "translate": "HỦY BỎ"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Phần mềm chưa Cài đặt được Vui lòng tiếp tục sau khi cài đặt"
+    },
+    {
+        "text": "正在更新大厅...",
+        "translate": "Cập nhật sảnh"
+    },
+    {
+        "text": "正在更新 SO ...",
+        "translate": "Đang cập nhật SO"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Bản cập nhật này cần khởi động lại ứng dụng"
+    },
+    {
+        "text": "用户名或密码错误",
+        "translate": "tên người dùng hoặc mật khẩu sai"
+    },
+    {
+        "text": "服务器未响应",
+        "translate": "THIẾT BỊ PHỤC VỤ KHÔNG HƯỞNG ỨNG"
+    },
+    {
+        "text": "密码登录",
+        "translate": "mật khẩu đăng nhập"
+    },
+    {
+        "text": "游客登录",
+        "translate": "Đăng nhập của khách"
+    },
+    {
+        "text": "请选择语言",
+        "translate": "Vui lòng chọn ngôn ngữ"
+    },
+    {
+        "text": "账户名称",
+        "translate": "tên tài khoản"
+    },
+    {
+        "text": "账户密码",
+        "translate": "mật khẩu tài khoản"
+    },
+    {
+        "text": "记住密码",
+        "translate": "Nhớ mật khẩu"
+    },
+    {
+        "text": "字母或数字%d至%d位",
+        "translate": "từ %d đến %d chữ hoặc ký tự"
+    },
+    {
+        "text": "你取消了该操作，请重试",
+        "translate": "BẠN HỦY BỎ THAO TÁC ĐÁNG PHẢI XIN THỬ LẠI"
+    },
+    {
+        "text": "你需先安装facebook，如果没有，请取消服务。",
+        "translate": "BẠN MUỐN LẮP Facebook，NẾU CHƯA CÓ NÊN HỦY BỎ PHỤC VỤ"
+    },
+    {
+        "text": "绑定失败",
+        "translate": "TRÓI ĐỊNH THẤT BẠI"
+    },
+    {
+        "text": "亲，确定不再玩一会儿游戏了吗？",
+        "translate": "THÂN XÁC ĐỊNH KHÔNG CÒN CHƠI MỘT LÚC TRÒ CHƠI NỮA?"
+    },
+    {
+        "text": "网络连接失败，请重试",
+        "translate": "KÊT NỐI ĐƯỜNG MẠNG LỖI XIN THỬ LẠI"
+    },
+    {
+        "text": "连接中，请稍后",
+        "translate": "Đang kết nối, vui lòng đợi"
+    },
+    {
+        "text": "FACEBOOK登录",
+        "translate": "mật khẩu đăng nhập"
+    },
+    {
+        "text": "请输入邀请码",
+        "translate": "Vui lòng nhập mã mời"
+    },
+    {
+        "text": "请确认两次密码输入一致",
+        "translate": "XIN XÁC NHẬN KỸ CÀNG MẬT MÃ  NHẬP VÀO HAI LẦN"
+    },
+    {
+        "text": "确认密码",
+        "translate": "xác nhận mật khẩu"
+    },
+    {
+        "text": "邀请码",
+        "translate": "Mã mời"
+    },
+    {
+        "text": "请选择屏幕尺寸",
+        "translate": "Vui lòng chọn kích thước màn hình"
+    },
+    {
+        "text": "%d至%d位",
+        "translate": "%d đến %d chữ số"
+    },
+    {
+        "text": "账号不能含有空白字符",
+        "translate": "Tài khoản không được chứa các ký tự trống"
+    },
+    {
+        "text": "邀请码不存在",
+        "translate": "Mã  mời không tồn tại"
+    },
+    {
+        "text": "服务器正在维护当中",
+        "translate": "THIẾT BỊ PHỤC VỤ ĐANG TRONG BẢO VỆ"
+    },
+    {
+        "text": "当前账号无法登录，请联系客服",
+        "translate": "tài khoản này không được đăng nhập,xin liên hệ với nhân viên phục vụ"
+    },
+    {
+        "text": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服",
+        "translate": "Tài khoản của bạn đã bị ngắt kết nối do khóa tạm thời hoặc vĩnh viễn, vui lòng thử đăng nhập lại sau 1 phút, nếu sau 1 phút vẫn hiện thông báo này vui lòng liên hệ cskh."
+    },
+    {
+        "text": "当前版本过低，点击确定更新",
+        "translate": "VĂN BẢN TRƯỚC MẮT QUÁ THẤP CHỌN ĐỔI MỚIXÁC ĐỊNH"
+    },
+    {
+        "text": "进入大厅失败，请重试",
+        "translate": "tiến vào đại sảnh thất bại, vui lòng thử lại"
+    },
+    {
+        "text": "断线重连，重新进入大厅主界面",
+        "translate": "mất kết nối, đang tự động kết nối lại và quay trở lại đại sảnh"
+    },
+    {
+        "text": "网络连接失败，是否重试？",
+        "translate": "Kết nối mạng không thành công, thử lại?"
+    },
+    {
+        "text": "大王乌贼",
+        "translate": "King Squid"
+    },
+    {
+        "text": "八爪章鱼",
+        "translate": "Octopus"
+    },
+    {
+        "text": "狂暴火龙",
+        "translate": "Fire Dragon"
+    },
+    {
+        "text": "霸王蟹",
+        "translate": "Crab King"
+    },
+    {
+        "text": "龙虾将军",
+        "translate": "Lobster General"
+    },
+    {
+        "text": "史前巨鳄",
+        "translate": "Prehistoric Predato"
+    },
+    {
+        "text": "暗夜巨兽",
+        "translate": "Night Beast"
+    },
+    {
+        "text": "海王荣耀",
+        "translate": "Glory Sea King"
+    },
+    {
+        "text": "铁甲飞龙",
+        "translate": "thiết giáp phi long"
+    },
+    {
+        "text": "追风逐月",
+        "translate": "truy phong đuổi nguyệt"
+    },
+    {
+        "text": "哪吒闹海",
+        "translate": "na tra loạn hải"
+    },
+    {
+        "text": "神龙宝藏",
+        "translate": "thần long bảo trang"
+    },
+    {
+        "text": "同类炸弹",
+        "translate": "cá đầu đàn"
+    },
+    {
+        "text": "响震四方",
+        "translate": "uy chấn tứ phương"
+    },
+    {
+        "text": "羊鳄大战",
+        "translate": "dương ngạc đại chiến"
+    },
+    {
+        "text": "海盗船",
+        "translate": "thuyển hải tặc"
+    },
+    {
+        "text": "三色鳄鱼",
+        "translate": "tam sắc ngạc ngư"
+    },
+    {
+        "text": "李逵劈鱼",
+        "translate": "lý quỳ săn cá"
+    },
+    {
+        "text": "摇钱树",
+        "translate": "cây phát tài"
+    },
+    {
+        "text": "金蟾捕鱼",
+        "translate": "săn ếch vàng"
+    },
+    {
+        "text": "黄金美人鱼",
+        "translate": "mỹ nhân ngư"
+    },
+    {
+        "text": "龙鲨争霸",
+        "translate": "long xà đài chiến"
+    },
+    {
+        "text": "火凤凰",
+        "translate": "hỏa phượng hoàng"
+    },
+    {
+        "text": "神龙转轮",
+        "translate": "vòng xoay thần long"
+    },
+    {
+        "text": "野蛮丛林",
+        "translate": "Huca"
+    },
+    {
+        "text": "水浒英雄",
+        "translate": "SaterMargin"
+    },
+    {
+        "text": "财神道",
+        "translate": "CaiShen Dao"
+    },
+    {
+        "text": "糖果王国",
+        "translate": "Suger Kingdom"
+    },
+    {
+        "text": "好运年年",
+        "translate": "Chinese Festival"
+    },
+    {
+        "text": "幸运钻石",
+        "translate": "Lucky Diamond"
+    },
+    {
+        "text": "阿拉丁宝藏",
+        "translate": "Aladdin Treasures"
+    },
+    {
+        "text": "皇朝88",
+        "translate": "Empire 88"
+    },
+    {
+        "text": "神偷侠兔",
+        "translate": "Miss Bunn"
+    },
+    {
+        "text": "冰雪女神",
+        "translate": "Snow Goddess"
+    },
+    {
+        "text": "金虎聚财",
+        "translate": "Tiger Wealth"
+    },
+    {
+        "text": "巨龙争霸",
+        "translate": "Grand Dragons"
+    },
+    {
+        "text": "彩凤呈祥",
+        "translate": "5 Phoenix"
+    },
+    {
+        "text": "黄金88",
+        "translate": "Golden 88"
+    },
+    {
+        "text": "福星发财",
+        "translate": "Fortune Babies"
+    },
+    {
+        "text": "发财树",
+        "translate": "Fortune Tree"
+    },
+    {
+        "text": "法老宝藏",
+        "translate": "Egyptian Fantasy"
+    },
+    {
+        "text": "熊猫宝藏",
+        "translate": "Panda Treasures"
+    },
+    {
+        "text": "狂野蛮牛",
+        "translate": "African Buffalo"
+    },
+    {
+        "text": "幸运美金",
+        "translate": "Lucky Dollars"
+    },
+    {
+        "text": "霹雳火",
+        "translate": "Thunder Fire"
+    },
+    {
+        "text": "齐天大圣",
+        "translate": "Immoital Monkey"
+    },
+    {
+        "text": "龙海公主",
+        "translate": "Ocean Princess"
+    },
+    {
+        "text": "精灵宝藏",
+        "translate": "Leprechaun Stack Gold"
+    },
+    {
+        "text": "维加斯之夜",
+        "translate": "Vegas Night"
+    },
+    {
+        "text": "招财猫",
+        "translate": "Fortune Cat"
+    },
+    {
+        "text": "富贵树",
+        "translate": "Rich Tree"
+    },
+    {
+        "text": "金猪报喜",
+        "translate": "Year of Golden Pig"
+    },
+    {
+        "text": "大福盛典",
+        "translate": "DaFu Show"
+    },
+    {
+        "text": "777",
+        "translate": "Sevens"
+    },
+    {
+        "text": "88FORTUNES_5",
+        "translate": "88FORTUNES_5"
+    },
+    {
+        "text": "DOUBLE BLESSINGS",
+        "translate": "DOUBLE BLESSINGS"
+    },
+    {
+        "text": "DIAMOND ETERNITY",
+        "translate": "DIAMOND ETERNITY"
+    },
+    {
+        "text": "88FORTUNES_3",
+        "translate": "88FORTUNES_3"
+    },
+    {
+        "text": "DUANWU",
+        "translate": "DUANWU"
+    },
+    {
+        "text": "DANCING DRUMS",
+        "translate": "DANCING DRUMS"
+    },
+    {
+        "text": "RISING FORTUNES",
+        "translate": "RISING FORTUNES"
+    },
+    {
+        "text": "5TREASURES",
+        "translate": "5TREASURES"
+    },
+    {
+        "text": "财富之眼",
+        "translate": ""
+    },
+    {
+        "text": "东海龙王",
+        "translate": ""
+    },
+    {
+        "text": "女娲",
+        "translate": ""
+    },
+    {
+        "text": "锦鲤报喜",
+        "translate": ""
+    },
+    {
+        "text": "财神到",
+        "translate": ""
+    },
+    {
+        "text": "五龙争霸",
+        "translate": ""
+    },
+    {
+        "text": "财神赐宝",
+        "translate": ""
+    },
+    {
+        "text": "龙之宝藏",
+        "translate": ""
+    },
+    {
+        "text": "运财锦鲤",
+        "translate": ""
+    },
+    {
+        "text": "天马",
+        "translate": ""
+    },
+    {
+        "text": "龙族王子",
+        "translate": ""
+    },
+    {
+        "text": "运财龙神",
+        "translate": ""
+    },
+    {
+        "text": "女侠",
+        "translate": ""
+    },
+    {
+        "text": "招财狮",
+        "translate": ""
+    },
+    {
+        "text": "龙腾虎啸",
+        "translate": ""
+    },
+    {
+        "text": "中秋佳节",
+        "translate": ""
+    },
+    {
+        "text": "美女猫咪",
+        "translate": ""
+    },
+    {
+        "text": "财神在线",
+        "translate": ""
+    },
+    {
+        "text": "五皇争霸",
+        "translate": ""
+    },
+    {
+        "text": "幸运女皇",
+        "translate": ""
+    },
+    {
+        "text": "虎威公主",
+        "translate": ""
+    },
+    {
+        "text": "熊猫滚滚",
+        "translate": ""
+    },
+    {
+        "text": "大圣爷",
+        "translate": ""
+    },
+    {
+        "text": "鸿福",
+        "translate": ""
+    },
+    {
+        "text": "熊猫宝贝",
+        "translate": ""
+    },
+    {
+        "text": "双喜熊猫",
+        "translate": ""
+    },
+    {
+        "text": "虎虎献瑞",
+        "translate": ""
+    },
+    {
+        "text": "金福满堂",
+        "translate": ""
+    },
+    {
+        "text": "赤红女皇",
+        "translate": ""
+    },
+    {
+        "text": "天龙地虎",
+        "translate": ""
+    },
+    {
+        "text": "巨龙宝藏",
+        "translate": ""
+    },
+    {
+        "text": "富贵之花",
+        "translate": ""
+    },
+    {
+        "text": "财富之树",
+        "translate": ""
+    },
+    {
+        "text": "终极火链",
+        "translate": ""
+    },
+    {
+        "text": "女猎手",
+        "translate": ""
+    },
+    {
+        "text": "紫晶人鱼",
+        "translate": "người cá thạch tím"
+    },
+    {
+        "text": "冥焰赤龙",
+        "translate": "Rồng đỏ ngọn lửa đen"
+    },
+    {
+        "text": "蛮荒凶兽",
+        "translate": "Con thú hung dữ Hoang dại"
+    },
+    {
+        "text": "金色龙虾将军",
+        "translate": "Tổng quan Tôm hùm vàng"
+    },
+    {
+        "text": "招财宝蟾",
+        "translate": "kho báu con Cóc may mắn"
+    },
+    {
+        "text": "深海秘籍",
+        "translate": "bí kiếp biển sâu"
+    },
+    {
+        "text": "远古秘境",
+        "translate": "cổ đại Huyền bí"
+    },
+    {
+        "text": "请求充值失败，请联系客服后重试",
+        "translate": "YÊU CẦU CHẤT ĐẦY GIÁ TRỊ THẤT BẠI XIN LIÊN HỆ KHÁCH ĐẢM NHẬN THỬ LẠI SAU"
+    },
+    {
+        "text": "恭喜您，充值成功，获得NNN金币",
+        "translate": "CHÚC MỪNG BẠN CHẤT ĐẦY GIÁ TRỊ THÀNH CÔNG NHẬN ĐƯỢC TIỀN TỆ NNN"
+    },
+    {
+        "text": "google充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "KIỂM CHỨNG CHẤT ĐẦY GIÁ TRỊ qooqleTHẤT BẠI KHÔNG TRA HỎI ĐƯỢC ĐƠN ĐẶT TƯƠNG ỨNG XIN LIÊN HỆ KHÁCH ĐẢM NHẬN"
+    },
+    {
+        "text": "非android用户不可用",
+        "translate": "chỉ hỗ trợ android"
+    },
+    {
+        "text": "暂不可用，请选择其他充值方式",
+        "translate": "cổng nạp bảo trì, vui lòng chọn cổng nạp khác"
+    },
+    {
+        "text": "绑定号码成功",
+        "translate": "MÃ SỐ TRÓI ĐỊNH THÀNH CÔNG"
+    },
+    {
+        "text": "本Facebook账号已经绑定",
+        "translate": "tài khoản Facebook này đã trói định"
+    },
+    {
+        "text": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!",
+        "translate": "chúc mừng [vip][name] tại phòng [gameId] sử dụng pháo [bet] tiêu diệt [fish] giành được [coin] xu!"
+    },
+    {
+        "text": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!",
+        "translate": "chúc mừng [vip][name] tại phòng [gameId] thắng được [winMoney] xu!"
+    },
+    {
+        "text": "已经是第一页了",
+        "translate": "ĐÃ LÀ TRANG THỨ NHẤT RỒI"
+    },
+    {
+        "text": "已经是最后一页了",
+        "translate": "ĐÃ LÀ TRANG CUỐI CÙNG RỒI"
+    },
+    {
+        "text": "ID不能为空",
+        "translate": "ID KHÔNG THỂ ĐỂ LÀ KHÔNG"
+    },
+    {
+        "text": "最少赠送NNN金币，并且自身最少保留SSS金币",
+        "translate": "BIẾU TẶNG TIỀN TỆ ÍT NHẤT NNN ĐỒNG THỜI BẢO LƯU TIỀN TỆ TỰ THÂN SSS"
+    },
+    {
+        "text": "数值不能含有小数",
+        "translate": "Giá trị không thể chứa số thập phân"
+    },
+    {
+        "text": "密码不能为空",
+        "translate": "MẬT MÃ KHÔNG THỂ ĐỂ LÀ KHÔNG"
+    },
+    {
+        "text": "成功赠送NNN枚金币给AAA",
+        "translate": "THÀNH CÔNG CÁI NNN BIẾU TẶNG TIỀN TỆ CHO AAA"
+    },
+    {
+        "text": "请输入正确的ID",
+        "translate": "XIN NHẬP ID CHÍNH XÁC"
+    },
+    {
+        "text": "密码输入错误请重新输入",
+        "translate": "MẬT MÃ NHẬP SAI LẦM XIN NHẬP LẠI"
+    },
+    {
+        "text": "赠送金币失败",
+        "translate": "BIẾU TẶNG TIỀN TỆ THẤT BẠI"
+    },
+    {
+        "text": "请输入密码",
+        "translate": "XIN NHẬP MÂT MÃ"
+    },
+    {
+        "text": "密码至少需要8位",
+        "translate": "ÍT NHẤT 8 VỊ TRÍ"
+    },
+    {
+        "text": "验证码已过期，请重新发送",
+        "translate": "MÃ KIỂM CHỨNG QUÁ HẠN XIN TRUYỀN LẠI"
+    },
+    {
+        "text": "密码设置失败",
+        "translate": "CÀI ĐẶT MẬT MÃ THẤT BẠI"
+    },
+    {
+        "text": "8到12位之间",
+        "translate": "TRONG KHOẢNG VỊ TRÍ 8 ĐẾN12"
+    },
+    {
+        "text": "账号只能NNN至SSS位",
+        "translate": "Tài khoản chỉ có thể là NNN sang bit SSS"
+    },
+    {
+        "text": "密码只能NNN至SSS位",
+        "translate": "Mật khẩu chỉ có thể là NNN đến bit SSS"
+    },
+    {
+        "text": "账号密码绑定成功",
+        "translate": "mật khẩu  phải từ NNN đến SSS số hoặc chữ cái"
+    },
+    {
+        "text": "帐户名不能为空",
+        "translate": "tên tài khoản không được bỏ trống"
+    },
+    {
+        "text": "重复注册",
+        "translate": "tài khoản đã tồn tại vui lòng chọn tài khoản khác"
+    },
+    {
+        "text": "首充",
+        "translate": "Nạp điện"
+    },
+    {
+        "text": "绑定金返利",
+        "translate": "Ràng buộc vàng"
+    },
+    {
+        "text": "豪礼重重",
+        "translate": "Xa hoa"
+    },
+    {
+        "text": "官方地址",
+        "translate": "chính thức"
+    },
+    {
+        "text": "未知数据包",
+        "translate": "BAO ẨN SỐ DỮ LIỆU"
+    },
+    {
+        "text": "老虎机选座返回大厅，数据发生错误",
+        "translate": "lỗi dữ liệu vui lòng quay lại đại sảnh"
+    },
+    {
+        "text": "游戏更新失败，是否重试?",
+        "translate": "Cập nhật trò chơi không thành công. Bạn có muốn thử lại không?"
+    },
+    {
+        "text": "该座位无效，请选择其它位置",
+        "translate": "vị trí bạn chọn phát sinh lỗi, vui lòng chọn vị trí khác "
+    },
+    {
+        "text": "该座位已经有人",
+        "translate": "chỗ ngồi đã có người vui lòng chọn chỗ khác"
+    },
+    {
+        "text": "状态不一致，自动回大厅",
+        "translate": "lỗi thống nhất trạng thái, tự động quay trở lại đại sảnh"
+    },
+    {
+        "text": "更换头像失败",
+        "translate": "ĐỔI MỚI ẢNH CHÂN DUNG THẤT BẠI"
+    },
+    {
+        "text": "请在这里输入你的问题",
+        "translate": "mời nhập vấn đề của bạn ở đây"
+    },
+    {
+        "text": "请输入您的问题",
+        "translate": "Vui lòng nhập câu hỏi của bạn"
+    },
+    {
+        "text": "发件人:系统",
+        "translate": "Người gửi:Hệ thống"
+    },
+    {
+        "text": "欢迎",
+        "translate": "HOAN NGHÊNH"
+    },
+    {
+        "text": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！",
+        "translate": "HOAN NGHÊNHNNN KỸ THUẬT CHẾ TẠO TẬP HỢP TOÀN MỚI NHIỀU LOẠI TRÒ CHƠI BẮT CÁNNNGIỚI THIỆU RẤT NHIỀU BẠN BÈ CHƠI!"
+    },
+    {
+        "text": "金币追回",
+        "translate": "Phục hồi tiền xu"
+    },
+    {
+        "text": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。",
+        "translate": "kính chào quý khách, do nhân viên thao tác sai dẫn đến tình trạng nạp tiền sai, hệ thống tiến hành thu hồi đơn nạp tiền. Giá trị đơn:[{total_recover_money}] xu, đã thực hiện thu hồi:[{recover_money}] xu,[{money}] đã bị sử dụng . nếu có bất kỳ vấn đề thắc mắc cần hỗ trợ vui lòng liên hệ cskh, xin lỗi vì sự bất tiện."
+    },
+    {
+        "text": "赠送通知",
+        "translate": "Thông báo quà tặng"
+    },
+    {
+        "text": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！",
+        "translate": "Người chơi: {account_id} Cung cấp cho bạn {money} tiền, đã được gửi vào két của bạn, vui lòng kiểm tra!"
+    },
+    {
+        "text": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！",
+        "translate": "Bạn đưa tiền {money} cho người chơi: {account_id}, đã được gửi vào két của anh ấy!"
+    },
+    {
+        "text": "充值通知",
+        "translate": "Thông báo nạp tiền"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功！",
+        "translate": "mã đơn :{order_num}, số tiền nạp:{money}, đã nạp tiền thành công!"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！",
+        "translate": "Đơn đặt hàng của bạn: {order_num}, số tiền nạp: {money}, nạp tiền thành công và sẽ nhận được thêm tiền vàng ràng buộc {washcode}"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！",
+        "translate": "Đơn đặt hàng của bạn: {order_num}, số tiền nạp: {money}, nạp tiền không thành công, lý do thất bại: {msg}, vui lòng liên hệ với bộ phận dịch vụ khách hàng nếu bạn có bất kỳ câu hỏi nào"
+    },
+    {
+        "text": "领取奖励失败",
+        "translate": "Không nhận được phần thưởng"
+    },
+    {
+        "text": "请输入新昵称",
+        "translate": "XIN NHẬP SỐ GỌI THÂN MẬT MỚI"
+    },
+    {
+        "text": "修改昵称成功",
+        "translate": "SỬA ĐỔI GỌI THÂN MẬT THÀNH CÔNG"
+    },
+    {
+        "text": "该昵称已被使用，请重新输入",
+        "translate": "GỌI THÂN MẬT ĐÃ BỊ SỬ DỤNG XIN NHẬP LẠ"
+    },
+    {
+        "text": "修改昵称失败",
+        "translate": "SỬA ĐỔI GỌI THÂN MẬT THẤT BẠI"
+    },
+    {
+        "text": "没有更多",
+        "translate": "không Có Hơn nữa"
+    },
+    {
+        "text": "用户取消选择系统照片",
+        "translate": "Người dùng bỏ chọn ảnh hệ thống"
+    },
+    {
+        "text": "图片已选择",
+        "translate": "Hình ảnh đã chọn"
+    },
+    {
+        "text": "网络异常，图片上传失败",
+        "translate": "kết nối kém, tải ảnh lên thất bại"
+    },
+    {
+        "text": "网络异常，正在努力上传图片~",
+        "translate": "kết nối kém đang cố gắng tải ảnh lên~"
+    },
+    {
+        "text": "当前绑定金额",
+        "translate": "Số tiền ràng buộc hiện tại"
+    },
+    {
+        "text": "当前金额",
+        "translate": "Số du hiện tại"
+    },
+    {
+        "text": "绑定保险箱金额",
+        "translate": "Số tiền hiện tại"
+    },
+    {
+        "text": "保险箱金额",
+        "translate": "Số du tiền kho hiện tại"
+    },
+    {
+        "text": "请输入金额！！！",
+        "translate": "vui lòng nhập số tiền"
+    },
+    {
+        "text": "操作成功",
+        "translate": "Operation Success"
+    },
+    {
+        "text": "复制成功",
+        "translate": "PHỤC CHẾ THÀNH CÔNG"
+    },
+    {
+        "text": "截图失败",
+        "translate": "Ảnh chụp màn hình không thành công"
+    },
+    {
+        "text": "保存截图文件失败",
+        "translate": "Không lưu được tệp ảnh chụp màn hình"
+    },
+    {
+        "text": "收藏失败",
+        "translate": "Bộ sưu tập không thành công"
+    },
+    {
+        "text": "收藏成功",
+        "translate": "Bộ sưu tập thành công"
+    },
+    {
+        "text": "我的ID: %s",
+        "translate": "ID của tôi: %s"
+    },
+    {
+        "text": "VIP%d以上",
+        "translate": "VIP %d trở lên"
+    },
+    {
+        "text": "所有玩家",
+        "translate": "Tất cả người chơi"
+    },
+    {
+        "text": "* 开启绑定金币使用权限。",
+        "translate": "* Cho phép sử dụng tiền vàng bị ràng buộc"
+    },
+    {
+        "text": "* 在游戏中可获取绑定金币。",
+        "translate": "* Bạn có thể nhận được tiền vàng ràng buộc trong trò chơi"
+    },
+    {
+        "text": "* 达成此等级，获取%s绑定金币。",
+        "translate": "* Đạt đến cấp độ này và nhận được %s tiền vàng ràng buộc"
+    },
+    {
+        "text": "* 在游戏中可获取更多绑定金币。",
+        "translate": "* Nhận nhiều tiền vàng ràng buộc hơn trong trò chơi"
+    },
+    {
+        "text": "* 可参与更多活动。",
+        "translate": "* Có thể tham gia nhiều hoạt động hơn"
+    },
+    {
+        "text": "开启绑定金币使用权限",
+        "translate": "Cho phép sử dụng tiền vàng bị ràng buộc"
+    },
+    {
+        "text": "如果有其他问题可直接联系'在线客服'",
+        "translate": "nếu có vấn đề cần hỗ trợ vui lòng liên lạc 'cskh online'"
+    },
+    {
+        "text": "没有更多的消息了",
+        "translate": "không có thêm thông báo mới"
+    },
+    {
+        "text": "请输入您宝贵的建议(200字以内)",
+        "translate": "mời nhập ý kiến đóng góp của bạn (tối đa 200 chữ)"
+    },
+    {
+        "text": "您的建议已经发送",
+        "translate": "ý kiến đóng góp của bạn đã được gửi"
+    },
+    {
+        "text": "请完善建议内容",
+        "translate": "vui lòng hoàn thiện nội dung"
+    },
+    {
+        "text": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络",
+        "translate": "xin lỗi, kết nối kém, cập nhật đại sảnh thất bại, vui lòng thoát khỏi trò chơi kiểm tra lại kết nối của bạn và thử lại"
+    },
+    {
+        "text": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?",
+        "translate": "yêu cầu tối thiểu NNN xu trên người mới có thể tham gia, vui lòng rút tiền từ trong kho hoặc tiến hành nạp thêm?"
+    },
+    {
+        "text": "获取俱乐部信息失败",
+        "translate": "Không lấy được thông tin câu lạc bộ"
+    },
+    {
+        "text": "领取福利失败",
+        "translate": "Không yêu cầu được quyền lợi"
+    },
+    {
+        "text": "本地未找到相关游戏",
+        "translate": "không thể tìm thấy trò chơi"
+    },
+    {
+        "text": "进入等级房失败",
+        "translate": "ĐẲNG CẤP TIẾN VÀO PHÒNG THẤT BẠI"
+    },
+    {
+        "text": "没有空闲的游戏服",
+        "translate": "KHÔNG CÓ TRÒ CHƠI QUYEN VỚI RẢNH RỖI"
+    },
+    {
+        "text": "当前座位已有人或房间已满",
+        "translate": "CHỖ NGỒI TRƯỚC MẮT ĐÃ CÓ NGƯỜI PHÒNG ĐÃ ĐẦY"
+    },
+    {
+        "text": "请耐心等待更新完成",
+        "translate": "vui lòng chờ cập nhật hoàn tất"
+    },
+    {
+        "text": "正在检查游戏是否需要更新",
+        "translate": "đang kiểm tra yêu cầu cập nhật của trò chơi"
+    },
+    {
+        "text": "请耐心等待其他游戏更新完成",
+        "translate": "vui lòng đợi hoàn tất cập nhật của trò chơi khác"
+    },
+    {
+        "text": "领取奖励成功",
+        "translate": "Nhận phần thưởng thành công"
+    },
+    {
+        "text": "兑换失败，收到退款NNN金币",
+        "translate": "ĐỔI TIỀN THẤT BẠI THU ĐƯỢC KHOẢN TRẢ LẠI TIỀN TỆ NNN"
+    },
+    {
+        "text": "获得来自SSS赠送的NNN枚金币",
+        "translate": "THU ĐƯỢC TIỀN TỆ BIẾU TẶNG ĐÚNG CÁI NNN ĐẾN TỪ SSS"
+    },
+    {
+        "text": "该账号已在其他设备登陆，您已被强制登出！！！",
+        "translate": "SỐ TÀI KHOẢN NÀY NGƯNG DO CÁC THIẾT BỊ ĐĂNG LỤC ĐỔ BỘ BẠN ĐÃ BỊ CƯỠNG CHẾ ĐĂNG XUẤT!!!"
+    },
+    {
+        "text": "收藏",
+        "translate": "sưu tầm"
+    },
+    {
+        "text": "收藏个人信息",
+        "translate": "Thông tin cá nhân yêu thích"
+    },
+    {
+        "text": "获取代理信息失败!",
+        "translate": "Không lấy được thông tin đại lý"
+    },
+    {
+        "text": "会长无法退出俱乐部",
+        "translate": "Chủ tịch không thể rờikhỏi câu lạc bộ"
+    },
+    {
+        "text": "是否确认退出俱乐部？",
+        "translate": "Bạn có chắc chắn rời câu lạc bộ không?"
+    },
+    {
+        "text": "退出俱乐部成功",
+        "translate": "Thoát khỏi câu lạc bộ thành công"
+    },
+    {
+        "text": "%d小时%d分后可退出俱乐部。",
+        "translate": "Bạn có thể thoát khỏi câu lạc bộ sau %d giờ và %d phút."
+    },
+    {
+        "text": "退出俱乐部失败",
+        "translate": "thoát khỏi câu lạc bộ không được"
+    },
+    {
+        "text": "领取返利失败",
+        "translate": "Không yêu cầu giảm giá"
+    },
+    {
+        "text": "获取记录日志失败",
+        "translate": "lấy nhật ký ghi thất bại"
+    },
+    {
+        "text": "欢迎加入俱乐部",
+        "translate": "Chào mừng bạn tham gia câu lạc bộ"
+    },
+    {
+        "text": "邀请码:%s",
+        "translate": "Mã mời:%s"
+    },
+    {
+        "text": "公告修改失败!",
+        "translate": "Sửa đổi thông báo thất bại"
+    },
+    {
+        "text": "公告修改成功!",
+        "translate": "Thông báo được sửa đổi thành công"
+    },
+    {
+        "text": "总人数:{total_man}   在线人数:{online_man}",
+        "translate": "tổng số người:{total_man}  Trực tuyến:{online_man}"
+    },
+    {
+        "text": "在线",
+        "translate": "Trực tuyến"
+    },
+    {
+        "text": "%d年前在线",
+        "translate": "Trực tuyến %d năm trước"
+    },
+    {
+        "text": "%d月前在线",
+        "translate": "Trực tuyến %d tháng trước"
+    },
+    {
+        "text": "%d天前在线",
+        "translate": "Trực tuyến %d ngày trước"
+    },
+    {
+        "text": "%d小时前在线",
+        "translate": "Trực tuyến %d giờ trước"
+    },
+    {
+        "text": "刚刚离线",
+        "translate": "Chỉ ngoại tuyến"
+    },
+    {
+        "text": "请输入俱乐部名字",
+        "translate": "Vui lòng nhập tên câu lạc bộ"
+    },
+    {
+        "text": "创建俱乐部失败",
+        "translate": "Không tạo được câu lạc bộ"
+    },
+    {
+        "text": "请求俱乐部信息失败",
+        "translate": "Không yêu cầu được thông tin câu lạc bộ"
+    },
+    {
+        "text": "你还不是正式账号，请绑定账号后再操作!",
+        "translate": "Bạn không phải là tài khoản chính thức, vui lòng ràng buộc tài khoản trước khi hoạt động"
+    },
+    {
+        "text": "收藏推广信息",
+        "translate": "Thông tin khuyến mãi bộ sưu tập"
+    },
+    {
+        "text": "请输入推广码",
+        "translate": "Vui lòng nhập mã khuyến mãi"
+    },
+    {
+        "text": "加入俱乐部失败",
+        "translate": "tham gia câu lạc bộ không thành công"
+    },
+    {
+        "text": "昨日累计:{total}",
+        "translate": "Tổng cộng của hôm qua:{total}"
+    },
+    {
+        "text": "总累计:{total}",
+        "translate": "dồn Tổng cộng:{total}"
+    },
+    {
+        "text": "领取记录",
+        "translate": "Hồ sơ bộ sưu tập"
+    },
+    {
+        "text": "领取时间",
+        "translate": "Thời gian thu thập"
+    },
+    {
+        "text": "领取金币",
+        "translate": "thu thập tiền vàng"
+    },
+    {
+        "text": "暂无领取记录",
+        "translate": "Không có hồ sơ bộ sưu tập"
+    },
+    {
+        "text": "已自动保存到保险箱",
+        "translate": "Đã lưu vào két"
+    },
+    {
+        "text": "分享",
+        "translate": "chia sẻ"
+    },
+    {
+        "text": "领   取",
+        "translate": "nhận được"
+    },
+    {
+        "text": "退出俱乐部",
+        "translate": "Thoát khỏi câu lạc bộ"
+    },
+    {
+        "text": "成员",
+        "translate": "thành viên"
+    },
+    {
+        "text": "返利",
+        "translate": "giảm giá"
+    },
+    {
+        "text": "名称",
+        "translate": "họ tên"
+    },
+    {
+        "text": "加入时间",
+        "translate": "thời gian tham gia"
+    },
+    {
+        "text": "状态",
+        "translate": "trạng thái"
+    },
+    {
+        "text": "创建",
+        "translate": "tạo ra"
+    },
+    {
+        "text": "请输入俱乐部名称",
+        "translate": "Vui lòng nhập tên câu lạc bộ"
+    },
+    {
+        "text": "邀请码：",
+        "translate": "Mã mời:"
+    },
+    {
+        "text": "保存图片以获取游戏下载地址",
+        "translate": "Lưu hình để lấy thông tin tải game"
+    },
+    {
+        "text": "加入",
+        "translate": "tham gia"
+    },
+    {
+        "text": "加入俱乐部请输入邀请码",
+        "translate": "Vui lòng nhập mã mời tham gia câu lạc bộ"
+    },
+    {
+        "text": "请选择俱乐部头像",
+        "translate": "vui lòng chọn hình ảnh đại diện của câu lạc bộ"
+    },
+    {
+        "text": "昨日排行",
+        "translate": "Hôm qua"
+    },
+    {
+        "text": "总排行",
+        "translate": "Tổng cộng"
+    },
+    {
+        "text": "排名",
+        "translate": "bảng xếp hạng"
+    },
+    {
+        "text": "捕鱼/老虎机洗码量",
+        "translate": "đánh bắt cá/game slot"
+    },
+    {
+        "text": "选 桌",
+        "translate": "Chọn bàn"
+    },
+    {
+        "text": "充值",
+        "translate": "nạp tiền"
+    },
+    {
+        "text": "保险箱",
+        "translate": "thùng két sắt"
+    },
+    {
+        "text": "转账记录",
+        "translate": "lịch sử chuyển khoản"
+    },
+    {
+        "text": "转账编码",
+        "translate": "mã chuyển khoản"
+    },
+    {
+        "text": "收款玩家",
+        "translate": "thanh toán của Người chơi"
+    },
+    {
+        "text": "金额",
+        "translate": "số dư"
+    },
+    {
+        "text": "转账时间",
+        "translate": "Thời gian chuyển khoản"
+    },
+    {
+        "text": "首页",
+        "translate": "trang đầu"
+    },
+    {
+        "text": "上一页",
+        "translate": "Trang trước"
+    },
+    {
+        "text": "下一页",
+        "translate": "Trang tiếp theo"
+    },
+    {
+        "text": "末页",
+        "translate": "trang cuối"
+    },
+    {
+        "text": "赠送用户ID",
+        "translate": "ID Người dùng quà tặng"
+    },
+    {
+        "text": "金币数量",
+        "translate": "Số lượng tiền vàng"
+    },
+    {
+        "text": "输入密码",
+        "translate": "đăng nhập mật khẩu"
+    },
+    {
+        "text": "赠送记录",
+        "translate": "Kỷ lục quà tặng"
+    },
+    {
+        "text": "请确认密码",
+        "translate": "Vui lòng xác nhận mật khẩu của bạn"
+    },
+    {
+        "text": "绑定账号成为",
+        "translate": "Ràng buộc tài khoản của bạn để trở thành"
+    },
+    {
+        "text": "查看VIP权益",
+        "translate": "Xem quyền VIP"
+    },
+    {
+        "text": "请选择你的头像",
+        "translate": "Vui lòng chọn hình đại diện của bạn"
+    },
+    {
+        "text": "发送",
+        "translate": "gửi"
+    },
+    {
+        "text": "上传图片",
+        "translate": "tải hình ảnh lên"
+    },
+    {
+        "text": "活动时间:",
+        "translate": "thời gian:"
+    },
+    {
+        "text": "参与条件:",
+        "translate": "tình trạng:"
+    },
+    {
+        "text": "领取",
+        "translate": "nhận"
+    },
+    {
+        "text": "前往",
+        "translate": "Đi đến"
+    },
+    {
+        "text": "输入新名称",
+        "translate": "Nhập tên mới"
+    },
+    {
+        "text": "账户只能修改一次",
+        "translate": "Tài khoản chỉ có thể được sửa đổi 1 lần"
+    },
+    {
+        "text": "确认修改",
+        "translate": "Xác nhận thay đổi"
+    },
+    {
+        "text": "今日赢金币量",
+        "translate": "Số lượng thắng tiền vàng giành được ngày hôm nay"
+    },
+    {
+        "text": "玩家",
+        "translate": "Người chơi"
+    },
+    {
+        "text": "今日赢金币",
+        "translate": "hôm nay thắng tiền vàng"
+    },
+    {
+        "text": "未上榜",
+        "translate": "Không có trong danh sách"
+    },
+    {
+        "text": "存款",
+        "translate": "gủi tiết kiệm"
+    },
+    {
+        "text": "取款",
+        "translate": "Rút tiền"
+    },
+    {
+        "text": "绑定金币取款",
+        "translate": "Rút tiền mã thông báo"
+    },
+    {
+        "text": "绑定金币存款",
+        "translate": "Tiền gửi mã thông báo"
+    },
+    {
+        "text": "最大",
+        "translate": "lớn nhất"
+    },
+    {
+        "text": "确认存款",
+        "translate": "xác nhận gủi tiết kiệm"
+    },
+    {
+        "text": "确认取款",
+        "translate": "xác nhận Rút tiền"
+    },
+    {
+        "text": "修改头像",
+        "translate": "Sửa đổi hình đại diện"
+    },
+    {
+        "text": "复制",
+        "translate": "sao chép"
+    },
+    {
+        "text": "成为VIP",
+        "translate": "Trở thành VIP"
+    },
+    {
+        "text": "退出游戏",
+        "translate": "thoát khỏi trò chơi"
+    },
+    {
+        "text": "昵称",
+        "translate": "tên nick name"
+    },
+    {
+        "text": "ID",
+        "translate": "ID"
+    },
+    {
+        "text": "音 乐",
+        "translate": "Âm nhạc"
+    },
+    {
+        "text": "音 效",
+        "translate": "Hiệu ứng âm thanh"
+    },
+    {
+        "text": "特 效",
+        "translate": "Hiệu ứng đặc biệt"
+    },
+    {
+        "text": "滚动报喜",
+        "translate": "Truyền tin cuộn"
+    },
+    {
+        "text": "恭喜获得奖励",
+        "translate": "Chúc mừng bạn đã nhận được phần thưởng"
+    },
+    {
+        "text": "绑定账号后解锁转盘",
+        "translate": "Mở khóa sau khi ràng buộc"
+    },
+    {
+        "text": "绑定账号",
+        "translate": "Tài khoản ràng buộc"
+    },
+    {
+        "text": "不用了",
+        "translate": "không cần"
+    },
+    {
+        "text": "游戏时间越多，获得的绑定金返利越多。",
+        "translate": "Thời gian chơi càng nhiều, bạn càng nhận được nhiều khoản hoàn trả tiền mặt ràng buộc."
+    },
+    {
+        "text": "当前进度",
+        "translate": "Tiến độ hiện tại"
+    },
+    {
+        "text": "昨日进度",
+        "translate": "Tiến độ của ngày hôm qua"
+    },
+    {
+        "text": "可领取",
+        "translate": "Có sẵn"
+    },
+    {
+        "text": "去游戏",
+        "translate": "Vào trò chơi"
+    },
+    {
+        "text": "每天24点发放奖励，奖励保存24小时，限时未领取作废。",
+        "translate": "Phần thưởng được phát vào 24 giờ hàng ngày và phần thưởng được giữ trong 24 giờ."
+    },
+    {
+        "text": "提示：通过玩游戏得到绑定金币提升VIP经验。",
+        "translate": "Mẹo: Nhận tiền vàng ràng buộc để cải thiện trải nghiệm VIP bằng cách chơi trò chơi."
+    },
+    {
+        "text": "当前等级",
+        "translate": "mức hiện tại"
+    },
+    {
+        "text": "您的vip等级已达到最高级！",
+        "translate": "Cấp độ VIP của bạn đã đạt đến cấp độ cao nhất!"
+    },
+    {
+        "text": "联系客服",
+        "translate": "liên hệ với chăm sóc"
+    },
+    {
+        "text": "常见问题",
+        "translate": "vấn đề thường gặp"
+    },
+    {
+        "text": "在线客服",
+        "translate": "chăm sóc Trực tuyến"
+    },
+    {
+        "text": "提交建议",
+        "translate": "Gửi đề xuất"
+    },
+    {
+        "text": "邮件",
+        "translate": "gửi thư"
+    },
+    {
+        "text": "阅读",
+        "translate": "đọc"
+    },
+    {
+        "text": "已读",
+        "translate": "đã đọc"
+    },
+    {
+        "text": "您的意见将帮助我们改进产品和服务",
+        "translate": "ý kiến đóng góp của bạn sẽ giúp chúng tôi cải tiến trò chơi và nâng cao chất lượng phục vụ"
+    },
+    {
+        "text": "真实姓名",
+        "translate": "tên thật"
+    },
+    {
+        "text": "手机号码",
+        "translate": "số điện thoại"
+    },
+    {
+        "text": "建议回复需要通过手机号查看，请填写真实的手机号码",
+        "translate": "Khuyến cáo rằng thư trả lời cần xem qua số điện thoại di động, vui lòng điền số điện thoại di động thực"
+    },
+    {
+        "text": "提交",
+        "translate": "Gửi đi"
+    },
+    {
+        "text": "图片",
+        "translate": "ảnh"
+    },
+    {
+        "text": "是否退出游戏",
+        "translate": "Bạn có muốn thoát khỏi trò chơi?"
+    },
+    {
+        "text": "金币不足",
+        "translate": "Vàng không đủ"
+    },
+    {
+        "text": "账号只能由NNN至SSS位的数字和字母组成",
+        "translate": "tên tài khoàn  phải từ NNN đến SSS số hoặc chữ cái "
+    },
+    {
+        "text": "密码只能由NNN至SSS位的数字和字母组成",
+        "translate": "mật khẩu  phải từ NNN đến SSS số hoặc chữ cái "
+    },
+    {
+        "text": "全部",
+        "translate": "tất cả"
+    },
+    {
+        "text": "已禁言",
+        "translate": "đã tắt âm thanh"
+    },
+    {
+        "text": "未禁言",
+        "translate": "chưa mở âm thanh"
+    },
+    {
+        "text": "设置成功",
+        "translate": "cài đặt thành công "
+    },
+    {
+        "text": "设置失败",
+        "translate": "cài đặt thất bại "
+    },
+    {
+        "text": "公频",
+        "translate": "số công khai"
+    },
+    {
+        "text": "俱乐部",
+        "translate": "câu lạc bộ "
+    },
+    {
+        "text": "密语",
+        "translate": "ngôn ngữ bí mật"
+    },
+    {
+        "text": "群发",
+        "translate": "Số lượng lớn"
+    },
+    {
+        "text": "点击输入消息",
+        "translate": "bấm để xác nhận tin nhắn"
+    },
+    {
+        "text": "请输入聊天消息",
+        "translate": "Vui lòng nhập tin nhắn trò chuyện"
+    },
+    {
+        "text": "您已被禁言",
+        "translate": "bạn đã bị chặn"
+    },
+    {
+        "text": "消息发送失败",
+        "translate": "gửi tin nhắm thất bại"
+    },
+    {
+        "text": "模板数目已达最大, 无法再新建",
+        "translate": "Số lượng đã đạt đến mức tối đa và không thể tạo thêm nữa"
+    },
+    {
+        "text": "请输入标题！",
+        "translate": "xin nhập các tiêu đề"
+    },
+    {
+        "text": "请输入文字信息！",
+        "translate": "vui lòng nhập tin nhắn bằng chữ cái"
+    },
+    {
+        "text": "请输入标题",
+        "translate": "xin nhập các vấn đề "
+    },
+    {
+        "text": "请输入文字信息",
+        "translate": "vui lòng nhập tin nhắn bằng chữ cái"
+    },
+    {
+        "text": "%d 人",
+        "translate": "%d số lượng người"
+    },
+    {
+        "text": "请选择一个群发模板再发送",
+        "translate": "xin chọn một mẫu nhóm để gửi"
+    },
+    {
+        "text": "模板信息",
+        "translate": "thông tin mẫu"
+    },
+    {
+        "text": "模板修改完成",
+        "translate": "sữa đổi mẫu đã thành công"
+    },
+    {
+        "text": "你还未加入俱乐部",
+        "translate": "bạn chưa tham gia câu lạc bộ"
+    },
+    {
+        "text": "抱歉，银商玩家不能进入游戏游玩！",
+        "translate": "Rất tiếc, người chơi thông Thương  không thể vào game để chơi!"
+    },
+    {
+        "text": "禁言管理",
+        "translate": "Quản lý tắt âm thanh"
+    },
+    {
+        "text": "保存",
+        "translate": "lưu lại"
+    },
+    {
+        "text": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": " Chỉnh sửa bản mẫu: Sau khi kiểm tra nhiều bản mẫu, tin nhắn sẽ được gửi tự động theo bản mẫu đã kiểm tra khi gửi tin nhắn"
+    },
+    {
+        "text": "发送间隔:",
+        "translate": "thời gian gửi"
+    },
+    {
+        "text": "删除",
+        "translate": "xóa bỏ"
+    },
+    {
+        "text": "标题：",
+        "translate": "tiêu đề"
+    },
+    {
+        "text": "筛选:",
+        "translate": "màn hình"
+    },
+    {
+        "text": "用户ID",
+        "translate": "ID người dùng"
+    },
+    {
+        "text": "VIP等级",
+        "translate": "cấp vip"
+    },
+    {
+        "text": "在线状态",
+        "translate": "trạng thái trực tuyến"
+    },
+    {
+        "text": "下一步",
+        "translate": "trang tiếp theo"
+    },
+    {
+        "text": "120人",
+        "translate": "120 người"
+    },
+    {
+        "text": "*列表展示XX小时/天登陆过的用户",
+        "translate": "bản Danh sách người dùng đã đăng nhập vào lúc XX giờ / ngày"
+    },
+    {
+        "text": "群发模板:",
+        "translate": "số lượng bản mẫu"
+    },
+    {
+        "text": "模板内容:",
+        "translate": "nội dung bản mẫu "
+    },
+    {
+        "text": "上一步",
+        "translate": "trang trướng "
+    },
+    {
+        "text": "联系人",
+        "translate": "người liên hệ "
+    },
+    {
+        "text": "赠送",
+        "translate": " phần thưởng"
+    },
+    {
+        "text": "收礼",
+        "translate": "nhận quà"
+    },
+    {
+        "text": "日期",
+        "translate": "ngày tháng"
+    },
+    {
+        "text": "玩家ID",
+        "translate": "ID người chơi"
+    },
+    {
+        "text": "赠送金币",
+        "translate": "thưởng tiền vàng"
+    },
+    {
+        "text": "金币余额",
+        "translate": "số lượng tiền vàng"
+    },
+    {
+        "text": "* 忘记密码请联系客服",
+        "translate": "Quên mật khẩu xin liên hệ chăm sóc khách hàng"
+    },
+    {
+        "text": "客服",
+        "translate": "chăm sóc khách hàng "
+    },
+    {
+        "text": "投诉",
+        "translate": "bị kiện "
+    },
+    {
+        "text": "保存成功!",
+        "translate": "lưu thành công!"
+    },
+    {
+        "text": "保存失败!",
+        "translate": "lưu thất bại!"
+    },
+    {
+        "text": "请选择需要群发的用户后再试！",
+        "translate": "xin lựa chọn người trong danh sách bạn cần rồi thử lại "
+    },
+    {
+        "text": "发送成功",
+        "translate": "đã gửi thành công "
+    },
+    {
+        "text": "发送失败",
+        "translate": "đã gửi thất bại "
+    },
+    {
+        "text": "获取赠送记录失败",
+        "translate": "nhật ký tặng "
+    },
+    {
+        "text": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "chỉnh sữa mẫu :lựa chọn mẫu ô xong lúc gửi tin nhắn bấm vào trong ô mình lựa chọn rồi gửi đi "
+    },
+    {
+        "text": "禁言",
+        "translate": "cấm nói "
+    },
+    {
+        "text": "解禁",
+        "translate": "gỡ bỏ lệnh cấm "
+    },
+    {
+        "text": "私聊",
+        "translate": "trò chuyện riêng tư "
+    },
+    {
+        "text": "加入俱乐部",
+        "translate": "tham gia vào câu lạc bộ"
+    },
+    {
+        "text": "搜索",
+        "translate": "tìm kiếm "
+    },
+    {
+        "text": "id或者昵称",
+        "translate": "biệt danh hoặc tên đăng nhập "
+    },
+    {
+        "text": "尚无聊天记录。",
+        "translate": "Chưa có lịch sử trò chuyện."
+    },
+    {
+        "text": "获取群组列表信息失败",
+        "translate": "Không lấy được thông tin danh sách nhóm"
+    },
+    {
+        "text": "进入码错误",
+        "translate": "Lỗi mã nhập"
+    },
+    {
+        "text": "加入群失败",
+        "translate": "Không thể tham gia nhóm"
+    },
+    {
+        "text": "对方已经是你的好友了",
+        "translate": "Anh ấy đã là bạn của bạn"
+    },
+    {
+        "text": "添加好友成功",
+        "translate": "Thêm bạn bè thành công"
+    },
+    {
+        "text": "添加好友失败",
+        "translate": "Không thêm được bạn bè"
+    },
+    {
+        "text": "删除好友失败",
+        "translate": "Không xóa được bạn bè"
+    },
+    {
+        "text": "搜索用户",
+        "translate": "người dùng tìm kiếm"
+    },
+    {
+        "text": "获取用户信息失败",
+        "translate": "Không lấy được thông tin người dùng"
+    },
+    {
+        "text": "群主已开启全局禁言",
+        "translate": "Chủ sở hữu nhóm đã bật lệnh cấm toàn cầu"
+    },
+    {
+        "text": "请输入群组名",
+        "translate": "Vui lòng nhập tên nhóm"
+    },
+    {
+        "text": "请输入进入码",
+        "translate": "Vui lòng nhập mã truy cập"
+    },
+    {
+        "text": "请输入6位的进入码",
+        "translate": "Vui lòng nhập mã truy cập gồm 6 chữ số"
+    },
+    {
+        "text": "创建成功",
+        "translate": "Đã tạo thành công"
+    },
+    {
+        "text": "创建失败",
+        "translate": "Không tạo được"
+    },
+    {
+        "text": "获取群信息失败",
+        "translate": "Không lấy được thông tin nhóm"
+    },
+    {
+        "text": "无效的群组信息",
+        "translate": "Thông tin nhóm không hợp lệ"
+    },
+    {
+        "text": "获取成员列表失败",
+        "translate": "Không lấy được danh sách thành viên"
+    },
+    {
+        "text": "请输入群组名字！",
+        "translate": "Vui lòng nhập tên nhóm!"
+    },
+    {
+        "text": "请输入群组公告信息",
+        "translate": "Vui lòng nhập thông tin thông báo nhóm"
+    },
+    {
+        "text": "解散群组失败!",
+        "translate": "Không xóa được nhóm!"
+    },
+    {
+        "text": "请输入合法的群组名字",
+        "translate": "Vui lòng nhập tên nhóm hợp lệ"
+    },
+    {
+        "text": "修改成功!",
+        "translate": "Đã sửa đổi thành công!"
+    },
+    {
+        "text": "修改失败!",
+        "translate": "không chỉnh sửa được!"
+    },
+    {
+        "text": "退出群组失败!",
+        "translate": "Không thể rời khỏi nhóm!"
+    },
+    {
+        "text": "已建立群组(%d)",
+        "translate": "Nhóm đã tạo (%d)"
+    },
+    {
+        "text": "已加入群组(%d)",
+        "translate": "Đã tham vào nhóm (%d)"
+    },
+    {
+        "text": "公开群组(%d)",
+        "translate": "Nhóm công khai (%d)"
+    },
+    {
+        "text": "该群人数已满，加入失败",
+        "translate": "Nhóm đã đầy và  tham gia thất bại"
+    },
+    {
+        "text": "加入成功",
+        "translate": "Tham gia thành công"
+    },
+    {
+        "text": "群主",
+        "translate": "quản lý nhóm"
+    },
+    {
+        "text": "管理员",
+        "translate": "người quản lý"
+    },
+    {
+        "text": "聊天(%d)",
+        "translate": "trò chuyện (%d)"
+    },
+    {
+        "text": "好友(%d)",
+        "translate": "bạn bèn (%d)"
+    },
+    {
+        "text": "群组",
+        "translate": "nhóm"
+    },
+    {
+        "text": "频道 1",
+        "translate": "đường link 1"
+    },
+    {
+        "text": "建立群组",
+        "translate": "lập nhóm "
+    },
+    {
+        "text": "欢迎来到群组",
+        "translate": "chào bạn đến nhóm"
+    },
+    {
+        "text": "请选择一个群组",
+        "translate": "xin lựa chọn nhóm"
+    },
+    {
+        "text": "群组名称：",
+        "translate": "tên nhóm"
+    },
+    {
+        "text": "进入码",
+        "translate": "vào mã"
+    },
+    {
+        "text": "* 进入码为6位数字",
+        "translate": "nhập 6 số vào mã"
+    },
+    {
+        "text": "全局禁言",
+        "translate": "tất cả kết nối "
+    },
+    {
+        "text": "群组公告：",
+        "translate": "thông báo nhóm"
+    },
+    {
+        "text": "解散群组",
+        "translate": "xóa bỏ nhóm"
+    },
+    {
+        "text": "退出群组",
+        "translate": "thoát khỏi nhóm"
+    },
+    {
+        "text": "踢人",
+        "translate": "đá khỏi "
+    },
+    {
+        "text": "设为管理员",
+        "translate": "thiết lập quản lý nhóm"
+    },
+    {
+        "text": "取消管理员",
+        "translate": "xóa bỏ quản lý nhóm"
+    },
+    {
+        "text": "加为好友",
+        "translate": "Thêm bạn bè thành công"
+    },
+    {
+        "text": "删除好友",
+        "translate": "xóa bạn bè"
+    },
+    {
+        "text": "您没有该操作权限",
+        "translate": "Bạn không thể tham gia hoạt động này"
+    },
+    {
+        "text": "群名字太长",
+        "translate": "Tên nhóm quá dài"
+    },
+    {
+        "text": "进入码太长",
+        "translate": "mã nhập quá dài"
+    },
+    {
+        "text": "群名字已存在",
+        "translate": "Tên nhóm đã tồn tại"
+    },
+    {
+        "text": "群创建失败",
+        "translate": "Tạo nhóm không thành công"
+    },
+    {
+        "text": "非法的群名字",
+        "translate": "tên nhóm không hợp lệ"
+    },
+    {
+        "text": "群公告过长",
+        "translate": "Thông báo nhóm quá dài"
+    },
+    {
+        "text": "群信息修改失败",
+        "translate": "Không thể sửa đổi thông tin nhóm"
+    },
+    {
+        "text": "保存图片以获取游戏官方下载地址",
+        "translate": "Lưu ảnh để lấy link tải game chính thức"
+    },
+    {
+        "text": "活动内容",
+        "translate": "nội dung khuyến mãi"
+    },
+    {
+        "text": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。",
+        "translate": "Bạn nhận được càng nhiều tiền vàng ràng buộc bằng cách tiêu thụ tiền vàng trong thời gian diễn ra sự kiện, thì bạn càng nhận được nhiều tiền vàng ràng buộc dưới dạng giảm giá."
+    },
+    {
+        "text": "请输入账号",
+        "translate": "vui lòng nhập tài khoản"
+    },
+    {
+        "text": "该账号已注册",
+        "translate": "Tài khoản đã được đăng ký"
+    },
+    {
+        "text": "忘记密码，请联系在线客服",
+        "translate": "Quên mật khẩu của bạn, vui lòng liên hệ với chăm sóc khách hàng trực tuyến"
+    },
+    {
+        "text": "连接出错 网关连不上！",
+        "translate": "Lỗi kết nối Không thể kết nối cổng!"
+    },
+    {
+        "text": "忘记密码",
+        "translate": "Quên mật khẩu"
+    },
+    {
+        "text": "账号注册",
+        "translate": "Tài khoản đã đăng ký"
+    },
+    {
+        "text": "登录游戏",
+        "translate": "Đăng nhập"
+    },
+    {
+        "text": "去解锁",
+        "translate": "Mở khóa"
+    },
+    {
+        "text": "成为VIP%d解锁转盘",
+        "translate": "Mở khóa vong quay VIP%d"
+    },
+    {
+        "text": "充值任意金额成为VIP",
+        "translate": "Nạp bất kỳ số tiền nào để trở thành VIP"
+    },
+    {
+        "text": "谷歌账号",
+        "translate": "tài khoản Google"
+    },
+    {
+        "text": "苹果账号",
+        "translate": "Tài khoản Apple"
+    },
+    {
+        "text": "注册成功",
+        "translate": "Đăng ký thành công."
+    },
+    {
+        "text": "请先成为VIP",
+        "translate": "Hãy trở thành VIP trước"
+    },
+    {
+        "text": "字母和数字%d至%d位",
+        "translate": "%d đến%d chữ cái và số"
+    },
+    {
+        "text": "账户名称长度%d至%d位",
+        "translate": "Độ dài tên tài khoản từ %d đến %d ký tự"
+    },
+    {
+        "text": "账户密码长度%d至%d位",
+        "translate": "Độ dài mật khẩu từ %d đến %d chữ số"
+    },
+    {
+        "text": "两次输入的密码不相同",
+        "translate": "Mật khẩu nhập hai lần không giống nhau"
+    },
+    {
+        "text": "用户名或密码为空",
+        "translate": "tên người dùng hoặc mật khẩu trống"
+    },
+    {
+        "text": "包名为空",
+        "translate": "tên gói trống"
+    },
+    {
+        "text": "注册失败，请重试",
+        "translate": "đăng ký không thành công"
+    },
+    {
+        "text": "已达到注册限制",
+        "translate": "Đã đạt đến giới hạn đăng ký"
+    },
+    {
+        "text": "用户名非法，请新输入",
+        "translate": "tên sử dụng không hợp lệ"
+    },
+    {
+        "text": "注册",
+        "translate": "Đăng ký"
+    },
+    {
+        "text": "成为VIP%d后解锁",
+        "translate": "Mở khóa sau khi trở thành VIP%d"
+    },
+    {
+        "text": "成为VIP后解锁",
+        "translate": "Mở khóa sau khi trở thành VIP"
+    },
+    {
+        "text": "* 解锁转盘。",
+        "translate": "* Mở khóa Vòng quay may mắn"
+    },
+    {
+        "text": "充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Xác minh nạp tiền thất bại, đơn hàng tương ứng không được truy vấn, vui lòng liên hệ với bộ phận chăm sóc khách hàng"
+    },
+    {
+        "text": "非 iphone 用户不可用",
+        "translate": "Không hộ trợ cho người dùng không phải iPhone"
+    },
+    {
+        "text": "正在加载大厅资源...",
+        "translate": "Đang tải tài nguyên vận động đại sảnh ..."
+    },
+    {
+        "text": "更新模块失败",
+        "translate": "cập nhật mô-đun thất bại "
+    },
+    {
+        "text": "更新大厅失败，是否重试?",
+        "translate": "Không cập nhật được sảnh , hãy thử lại?"
+    },
+    {
+        "text": "登入游戏",
+        "translate": "đăng nhập vào trò chơi"
+    },
+    {
+        "text": "正在更新游戏...",
+        "translate": "đang cập nhật trò chơi"
+    },
+    {
+        "text": "确定删除好友 '%s' 吗?",
+        "translate": "Bạn có chắc chắn muốn xóa kết bạn '%s' không?"
+    },
+    {
+        "text": "您已被 '%s' 群管理员禁言。",
+        "translate": "Bạn đã bị người kiểm duyệt nhóm '%s' bỏ qua."
+    },
+    {
+        "text": "您在 '%s' 群的禁言已被解除。",
+        "translate": "Lệnh cấm của bạn trong nhóm '%s' đã được hủy bỏ "
+    },
+    {
+        "text": "您已被设置为 '%s' 管理员。",
+        "translate": "Bạn đã được đặt làm quản lý  của '%s'."
+    },
+    {
+        "text": "您在 '%s' 群的管理员资格已被解除。",
+        "translate": "Trạng thái của bạn với tư cách là người quản lý thành viên trong nhóm '%s' đã bị xóa."
+    },
+    {
+        "text": "你已经被踢出群 '%s' ",
+        "translate": "Bạn đã bị mời ra khỏi nhóm '%s'"
+    },
+    {
+        "text": "确定解散群组 '%s' 吗?",
+        "translate": "Bạn có chắc chắn muốn giải tán nhóm '%s' không?"
+    },
+    {
+        "text": "欢迎加入'%s' ",
+        "translate": "Chào mừng bạn đến với '%s'"
+    },
+    {
+        "text": "您是否确认将 '%s' 踢出群组?",
+        "translate": "Bạn có chắc chắn muốn loại bỏ '%s' ra khỏi nhóm không?"
+    },
+    {
+        "text": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)",
+        "translate": "Đặt  '%s' quản lý thành viên ? (Tất cả các tin nhắn được gửi sau khi được đặt làm quản lý thành viên đều có thể được xem với mọi người)"
+    },
+    {
+        "text": "你确定要赠送给 '%s' 金币吗？",
+        "translate": "Bạn có chắc chắn muốn tặng '%s' xu không?"
+    },
+    {
+        "text": "收款钱包地址",
+        "translate": "Địa chỉ nhận tiền"
+    },
+    {
+        "text": "钱包地址",
+        "translate": "địa chỉ ví"
+    },
+    {
+        "text": "请绑定地址",
+        "translate": "vui lòng liên kết địa chỉ"
+    },
+    {
+        "text": "绑定",
+        "translate": "liên kết "
+    },
+    {
+        "text": "充值金额",
+        "translate": "Số tiền nạp"
+    },
+    {
+        "text": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值",
+        "translate": "Người chơi liên kết địa chỉ ví của mình, nhập số tiền nạp và nhấp vào nút nạp tiền để hoàn tất việc nạp tiền"
+    },
+    {
+        "text": "请输入钱包地址",
+        "translate": "Vui lòng nhập địa chỉ ví"
+    },
+    {
+        "text": "地址只能绑定一次，请仔细核对，有问题请及时联系客服",
+        "translate": "địa chỉ chỉ có thể liên kết được một lần , vui lòng kiểm tra thật kỹ , nếu có vấn đề gì liền hệ chăm sóc khách hàng nhé "
+    },
+    {
+        "text": "可提现金币数量",
+        "translate": "số Lượng tiền mặt có thể rút"
+    },
+    {
+        "text": "请输入金额",
+        "translate": "Vui lòng nhập số tiền"
+    },
+    {
+        "text": "提现钱包地址",
+        "translate": "Địa chỉ ví rút tiền"
+    },
+    {
+        "text": "请输入提现地址",
+        "translate": "Vui lòng nhập địa chỉ rút tiền"
+    },
+    {
+        "text": "提现记录",
+        "translate": "chi tiết rút tiền "
+    },
+    {
+        "text": "提交成功，等待审核",
+        "translate": "đã nộp  thành công ,vui lòng đợi "
+    },
+    {
+        "text": "充值成功，等待审核",
+        "translate": "nạp tiền thành công , vui lòng đợi"
+    },
+    {
+        "text": "银行卡",
+        "translate": "thẻ ngân hàng "
+    },
+    {
+        "text": "最低提现200金币",
+        "translate": "Rút tối thiểu 200 tiền vàng"
+    },
+    {
+        "text": "订单号",
+        "translate": "mã hộp đơn "
+    },
+    {
+        "text": "操作",
+        "translate": "chuyển đọng"
+    },
+    {
+        "text": "成功",
+        "translate": "thành công"
+    },
+    {
+        "text": "审核中",
+        "translate": "đang xem xét"
+    },
+    {
+        "text": "失败",
+        "translate": "thất bại"
+    },
+    {
+        "text": "详情",
+        "translate": "Thông tin chi tiết"
+    },
+    {
+        "text": "系统",
+        "translate": "Hệ thống "
+    },
+    {
+        "text": "奖励金币",
+        "translate": "thưởng tiền vàng "
+    },
+    {
+        "text": "游戏返利",
+        "translate": "trò chơi giảm giá "
+    },
+    {
+        "text": "游戏时间越多，返利越多。",
+        "translate": "Thời gian chơi càng nhiều, bạn càng nhận được nhiều phần thưởng"
+    },
+    {
+        "text": "*玩游戏可获得VIP经验。",
+        "translate": " Chơi trò chơi để nhận được kinh nghiệm VIP."
+    },
+    {
+        "text": "*玩游戏可获得更多VIP经验。",
+        "translate": "Chơi game để có thêm kinh nghiệm VIP."
+    },
+    {
+        "text": "*奖励%d金币",
+        "translate": "Phần thưởng %d tiền vàng"
+    },
+    {
+        "text": "快速登录",
+        "translate": "Đăng nhập nhanh"
+    },
+    {
+        "text": "实时返利活动",
+        "translate": "Chiến dịch giảm giá theo thời gian thực"
+    },
+    {
+        "text": "日返利活动",
+        "translate": "Hoạt động giảm giá hàng ngày"
+    },
+    {
+        "text": "周返利活动",
+        "translate": "Hoạt động giảm giá hàng tuần"
+    },
+    {
+        "text": "月返利活动",
+        "translate": "Hoạt động giảm giá hàng tháng"
+    },
+    {
+        "text": "小时",
+        "translate": "thời gian"
+    },
+    {
+        "text": "天",
+        "translate": "ngày"
+    },
+    {
+        "text": "周",
+        "translate": "tuần "
+    },
+    {
+        "text": "月",
+        "translate": "tháng"
+    },
+    {
+        "text": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。",
+        "translate": "%d %s  sẽ phát hành phần thưởng một lần và phần thưởng sẽ được lưu trong %d giờ. Nếu không nhận được trong thời hạn, phần thưởng sẽ không hợp lệ."
+    },
+    {
+        "text": "请先绑定钱包地址！",
+        "translate": "Vui lòng liên kết địa chỉ ví trước!"
+    },
+    {
+        "text": "金币不足%d时才能切换充值方式",
+        "translate": "Phương thức nạp tiền chỉ có thể được chuyển đổi khi số tiền vàng ít hơn %d"
+    },
+    {
+        "text": "请确认钱包地址是否正确",
+        "translate": "Vui lòng xác nhận địa chỉ ví cho chính xác"
+    },
+    {
+        "text": "金币",
+        "translate": "tiền vàng"
+    },
+    {
+        "text": "请输入订单号",
+        "translate": "vui lòng nhập số đơn hàng "
+    },
+    {
+        "text": "VIP福利",
+        "translate": "Quyền lợi VIP"
+    },
+    {
+        "text": "本次更新需要重启应用.",
+        "translate": ""
+    }
+]

@@ -1,0 +1,2422 @@
+[
+    {
+        "text": "正在获取导航信息...",
+        "translate": "Sedang mendapatkan informasi Pemandu"
+    },
+    {
+        "text": "获取导航信息失败",
+        "translate": "Gagal mendapatkan informasi Pemandu"
+    },
+    {
+        "text": "获取导航信息失败, 是否重试？",
+        "translate": "Gagal mendapatkan informasi Pemandu, apakah Anda ingin mencoba lagi?"
+    },
+    {
+        "text": "版本更新失败",
+        "translate": "Pembaruan versi gagal"
+    },
+    {
+        "text": "版本更新失败, 是否重试？",
+        "translate": "Pembaruan versi gagal, Apakah anda ingin mencoba lagi ?"
+    },
+    {
+        "text": "正在更新文件...",
+        "translate": "Memperbarui berkas"
+    },
+    {
+        "text": "正在检查版本信息...",
+        "translate": "Sedang memeriksa informasi versi"
+    },
+    {
+        "text": "检查版本信息失败，是否重试？",
+        "translate": "Gagal memeriksa informasi versi, silahkan coba lagi"
+    },
+    {
+        "text": "确定",
+        "translate": "Yakin"
+    },
+    {
+        "text": "取消",
+        "translate": "Batal"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Perangkat lunak belum terinstal , silahkan lanjutkan setelah selesai instalasi"
+    },
+    {
+        "text": "正在更新大厅...",
+        "translate": "Memperbarui lobi"
+    },
+    {
+        "text": "正在更新 SO ...",
+        "translate": "Sedang memperbarui SO"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Pembaruan ini perlu memulai ulang aplikasi"
+    },
+    {
+        "text": "用户名或密码错误",
+        "translate": "Username Atau Password salah"
+    },
+    {
+        "text": "服务器未响应",
+        "translate": "Pelayan tidak bertindak balas"
+    },
+    {
+        "text": "密码登录",
+        "translate": "LOGIN AKUN"
+    },
+    {
+        "text": "游客登录",
+        "translate": "LOGIN TAMU"
+    },
+    {
+        "text": "请选择语言",
+        "translate": "PILIH BAHASA"
+    },
+    {
+        "text": "账户名称",
+        "translate": "NAMA AKUN"
+    },
+    {
+        "text": "账户密码",
+        "translate": "Kata sandi"
+    },
+    {
+        "text": "记住密码",
+        "translate": "Ingat Kata sandi"
+    },
+    {
+        "text": "字母或数字%d至%d位",
+        "translate": "Huruf atau angka %d hingga %d"
+    },
+    {
+        "text": "你取消了该操作，请重试",
+        "translate": "Anda telah membatalkan operasi ini, Harap coba lagi"
+    },
+    {
+        "text": "你需先安装facebook，如果没有，请取消服务。",
+        "translate": "Anda harus memasang facebook terlebih dahulu, Silakan hubungi customer service kami untuk informasi lebih lanjut."
+    },
+    {
+        "text": "绑定失败",
+        "translate": "gagal menyambungan"
+    },
+    {
+        "text": "亲，确定不再玩一会儿游戏了吗？",
+        "translate": "Apakah Anda yakin tidak akan melanjutkan bermain game?"
+    },
+    {
+        "text": "网络连接失败，请重试",
+        "translate": "koneksi jaringan internet gagal , silakan coba lagi"
+    },
+    {
+        "text": "连接中，请稍后",
+        "translate": "Menghubungkan, Harap Tunggu.."
+    },
+    {
+        "text": "FACEBOOK登录",
+        "translate": "FACEBOOK"
+    },
+    {
+        "text": "请输入邀请码",
+        "translate": "Silakan masukkan kode undangan"
+    },
+    {
+        "text": "请确认两次密码输入一致",
+        "translate": "harap dapat memastikan kata sandi yang di input telah benar seperti sebanyak 2x"
+    },
+    {
+        "text": "确认密码",
+        "translate": "Konfirmasi Sandi"
+    },
+    {
+        "text": "邀请码",
+        "translate": "Kode undangan"
+    },
+    {
+        "text": "请选择屏幕尺寸",
+        "translate": "Silakan pilih ukuran layar"
+    },
+    {
+        "text": "%d至%d位",
+        "translate": "%d sampai %d digit"
+    },
+    {
+        "text": "账号不能含有空白字符",
+        "translate": "Akun tidak boleh berisi karakter kosong"
+    },
+    {
+        "text": "邀请码不存在",
+        "translate": "Kode undangan tidak ada"
+    },
+    {
+        "text": "服务器正在维护当中",
+        "translate": "Server dalam pemeliharaan"
+    },
+    {
+        "text": "当前账号无法登录，请联系客服",
+        "translate": "ID Lama Tidak Bisa Log-in , Silahkan Masuk Sebagai Tamu."
+    },
+    {
+        "text": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服",
+        "translate": "Your account has been blocked. Please login again in one minute. If you can't, please contact customer service"
+    },
+    {
+        "text": "当前版本过低，点击确定更新",
+        "translate": "Versi saat ini terlalu rendah, Klik untuk mengonfirmasi pembaruan"
+    },
+    {
+        "text": "进入大厅失败，请重试",
+        "translate": "Gagal masuk ke dalam beranda, harap mencoba kembali"
+    },
+    {
+        "text": "断线重连，重新进入大厅主界面",
+        "translate": "Hubungkan kembali setelah pemutusan koneksi dan kembali ke beranda permainan"
+    },
+    {
+        "text": "网络连接失败，是否重试？",
+        "translate": "Sambungan jaringan gagal, coba lagi?"
+    },
+    {
+        "text": "大王乌贼",
+        "translate": "Raja Sotong"
+    },
+    {
+        "text": "八爪章鱼",
+        "translate": "Ikan Kurita Besar"
+    },
+    {
+        "text": "狂暴火龙",
+        "translate": "NAGA API MENGAMUK"
+    },
+    {
+        "text": "霸王蟹",
+        "translate": "Ketam Raja"
+    },
+    {
+        "text": "龙虾将军",
+        "translate": "Ketua Lobster"
+    },
+    {
+        "text": "史前巨鳄",
+        "translate": "Raksasa Prasejarah"
+    },
+    {
+        "text": "暗夜巨兽",
+        "translate": "Ikan Tanglung"
+    },
+    {
+        "text": "海王荣耀",
+        "translate": "Raja Laut Berhormat"
+    },
+    {
+        "text": "铁甲飞龙",
+        "translate": "Naga Besi"
+    },
+    {
+        "text": "追风逐月",
+        "translate": "Mengejar Angin"
+    },
+    {
+        "text": "哪吒闹海",
+        "translate": "Pertempuran Nezha di lautan"
+    },
+    {
+        "text": "神龙宝藏",
+        "translate": "Harta Karun Dewa Naga"
+    },
+    {
+        "text": "同类炸弹",
+        "translate": "Bom Kembar"
+    },
+    {
+        "text": "响震四方",
+        "translate": "Gempa"
+    },
+    {
+        "text": "羊鳄大战",
+        "translate": "Perang Domba Buaya"
+    },
+    {
+        "text": "海盗船",
+        "translate": "Kapal Bajak Laut"
+    },
+    {
+        "text": "三色鳄鱼",
+        "translate": "Tiga Warna Buaya"
+    },
+    {
+        "text": "李逵劈鱼",
+        "translate": "Ikan Likul"
+    },
+    {
+        "text": "摇钱树",
+        "translate": "Sapi Perah"
+    },
+    {
+        "text": "金蟾捕鱼",
+        "translate": "KODOK EMAS KEBERUNTUNGAN"
+    },
+    {
+        "text": "黄金美人鱼",
+        "translate": "Ikan Duyung Emas"
+    },
+    {
+        "text": "龙鲨争霸",
+        "translate": "Kekuasaan Naga hiu"
+    },
+    {
+        "text": "火凤凰",
+        "translate": "Phoenix Berapi"
+    },
+    {
+        "text": "神龙转轮",
+        "translate": "Perputaran Dewa Naga"
+    },
+    {
+        "text": "野蛮丛林",
+        "translate": "Huca"
+    },
+    {
+        "text": "水浒英雄",
+        "translate": "SaterMargin"
+    },
+    {
+        "text": "财神道",
+        "translate": "CaiShen Dao"
+    },
+    {
+        "text": "糖果王国",
+        "translate": "Suger Kingdom"
+    },
+    {
+        "text": "好运年年",
+        "translate": "Chinese Festival"
+    },
+    {
+        "text": "幸运钻石",
+        "translate": "Lucky Diamond"
+    },
+    {
+        "text": "阿拉丁宝藏",
+        "translate": "Aladdin Treasures"
+    },
+    {
+        "text": "皇朝88",
+        "translate": "Empire 88"
+    },
+    {
+        "text": "神偷侠兔",
+        "translate": "Miss Bunn"
+    },
+    {
+        "text": "冰雪女神",
+        "translate": "Snow Goddess"
+    },
+    {
+        "text": "金虎聚财",
+        "translate": "Tiger Wealth"
+    },
+    {
+        "text": "巨龙争霸",
+        "translate": "Grand Dragons"
+    },
+    {
+        "text": "彩凤呈祥",
+        "translate": "5 Phoenix"
+    },
+    {
+        "text": "黄金88",
+        "translate": "Golden 88"
+    },
+    {
+        "text": "福星发财",
+        "translate": "Fortune Babies"
+    },
+    {
+        "text": "发财树",
+        "translate": "Fortune Tree"
+    },
+    {
+        "text": "法老宝藏",
+        "translate": "Egyptian Fantasy"
+    },
+    {
+        "text": "熊猫宝藏",
+        "translate": "Panda Treasures"
+    },
+    {
+        "text": "狂野蛮牛",
+        "translate": "African Buffalo"
+    },
+    {
+        "text": "幸运美金",
+        "translate": "Lucky Dollars"
+    },
+    {
+        "text": "霹雳火",
+        "translate": "Thunder Fire"
+    },
+    {
+        "text": "齐天大圣",
+        "translate": "Immortal Monkey"
+    },
+    {
+        "text": "龙海公主",
+        "translate": "Ocean Princess"
+    },
+    {
+        "text": "精灵宝藏",
+        "translate": "Leprechaun Stack Gold"
+    },
+    {
+        "text": "维加斯之夜",
+        "translate": "Vegas Night"
+    },
+    {
+        "text": "招财猫",
+        "translate": "Fortune Cat"
+    },
+    {
+        "text": "富贵树",
+        "translate": "Rich Tree"
+    },
+    {
+        "text": "金猪报喜",
+        "translate": "Year of Golden Pig"
+    },
+    {
+        "text": "大福盛典",
+        "translate": "DaFu Show"
+    },
+    {
+        "text": "777",
+        "translate": "Sevens"
+    },
+    {
+        "text": "88FORTUNES_5",
+        "translate": "88FORTUNES_5"
+    },
+    {
+        "text": "DOUBLE BLESSINGS",
+        "translate": "DOUBLE BLESSINGS"
+    },
+    {
+        "text": "DIAMOND ETERNITY",
+        "translate": "DIAMOND ETERNITY"
+    },
+    {
+        "text": "88FORTUNES_3",
+        "translate": "88FORTUNES_3"
+    },
+    {
+        "text": "DUANWU",
+        "translate": "DUANWU"
+    },
+    {
+        "text": "DANCING DRUMS",
+        "translate": "DANCING DRUMS"
+    },
+    {
+        "text": "RISING FORTUNES",
+        "translate": "RISING FORTUNES"
+    },
+    {
+        "text": "5TREASURES",
+        "translate": "5TREASURES"
+    },
+    {
+        "text": "财富之眼",
+        "translate": ""
+    },
+    {
+        "text": "东海龙王",
+        "translate": ""
+    },
+    {
+        "text": "女娲",
+        "translate": ""
+    },
+    {
+        "text": "锦鲤报喜",
+        "translate": ""
+    },
+    {
+        "text": "财神到",
+        "translate": ""
+    },
+    {
+        "text": "五龙争霸",
+        "translate": ""
+    },
+    {
+        "text": "财神赐宝",
+        "translate": ""
+    },
+    {
+        "text": "龙之宝藏",
+        "translate": ""
+    },
+    {
+        "text": "运财锦鲤",
+        "translate": ""
+    },
+    {
+        "text": "天马",
+        "translate": ""
+    },
+    {
+        "text": "龙族王子",
+        "translate": ""
+    },
+    {
+        "text": "运财龙神",
+        "translate": ""
+    },
+    {
+        "text": "女侠",
+        "translate": ""
+    },
+    {
+        "text": "招财狮",
+        "translate": ""
+    },
+    {
+        "text": "龙腾虎啸",
+        "translate": ""
+    },
+    {
+        "text": "中秋佳节",
+        "translate": ""
+    },
+    {
+        "text": "美女猫咪",
+        "translate": ""
+    },
+    {
+        "text": "财神在线",
+        "translate": ""
+    },
+    {
+        "text": "五皇争霸",
+        "translate": ""
+    },
+    {
+        "text": "幸运女皇",
+        "translate": ""
+    },
+    {
+        "text": "虎威公主",
+        "translate": ""
+    },
+    {
+        "text": "熊猫滚滚",
+        "translate": ""
+    },
+    {
+        "text": "大圣爷",
+        "translate": ""
+    },
+    {
+        "text": "鸿福",
+        "translate": ""
+    },
+    {
+        "text": "熊猫宝贝",
+        "translate": ""
+    },
+    {
+        "text": "双喜熊猫",
+        "translate": ""
+    },
+    {
+        "text": "虎虎献瑞",
+        "translate": ""
+    },
+    {
+        "text": "金福满堂",
+        "translate": ""
+    },
+    {
+        "text": "赤红女皇",
+        "translate": ""
+    },
+    {
+        "text": "天龙地虎",
+        "translate": ""
+    },
+    {
+        "text": "巨龙宝藏",
+        "translate": ""
+    },
+    {
+        "text": "富贵之花",
+        "translate": ""
+    },
+    {
+        "text": "财富之树",
+        "translate": ""
+    },
+    {
+        "text": "终极火链",
+        "translate": ""
+    },
+    {
+        "text": "女猎手",
+        "translate": ""
+    },
+    {
+        "text": "紫晶人鱼",
+        "translate": "Putri Duyung Ametis"
+    },
+    {
+        "text": "冥焰赤龙",
+        "translate": "HARI RAYA CHILONG"
+    },
+    {
+        "text": "蛮荒凶兽",
+        "translate": "Binatang Buas"
+    },
+    {
+        "text": "金色龙虾将军",
+        "translate": "Lobster Emas"
+    },
+    {
+        "text": "招财宝蟾",
+        "translate": "Zhao Cai Bao Chan"
+    },
+    {
+        "text": "深海秘籍",
+        "translate": "Cheats Laut Dalam"
+    },
+    {
+        "text": "远古秘境",
+        "translate": "Alam Rahasia Kuno"
+    },
+    {
+        "text": "请求充值失败，请联系客服后重试",
+        "translate": "Permintaan isi ulang gagal. Silakan hubungi layanan pelanggan dan coba lagi."
+    },
+    {
+        "text": "恭喜您，充值成功，获得NNN金币",
+        "translate": "Selamat! Isi ulang sukses, Dapatkan NNN koin emas"
+    },
+    {
+        "text": "google充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Google Pay gagal, tidak ada pesanan yang relevan, Silakan Hubungi Layanan"
+    },
+    {
+        "text": "非android用户不可用",
+        "translate": "Tidak tersedia untuk pengguna non-android"
+    },
+    {
+        "text": "暂不可用，请选择其他充值方式",
+        "translate": "Pilihan ini belum tersedia, silahkan pilih metode isi ulang lainnya"
+    },
+    {
+        "text": "绑定号码成功",
+        "translate": "Terikat dengan nomer telpon sukses"
+    },
+    {
+        "text": "本Facebook账号已经绑定",
+        "translate": "ID Facebook ini telah dihubungkan. Terimakasih"
+    },
+    {
+        "text": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!",
+        "translate": "Selamat kepada [vip] [name] menggunakan [bet] untuk mengalahkan [fish] di ruang permainan [gameId] dan mendapatkan koin sebesar [coin]!"
+    },
+    {
+        "text": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!",
+        "translate": "Selamat kepada [vip] [name] karena memenangkan koin sebesar[winMoney] di ruang permainan [gameId]!"
+    },
+    {
+        "text": "已经是第一页了",
+        "translate": "Sudah halaman pertama"
+    },
+    {
+        "text": "已经是最后一页了",
+        "translate": "Ini halaman terakhir"
+    },
+    {
+        "text": "ID不能为空",
+        "translate": "ID tidak boleh kosong"
+    },
+    {
+        "text": "最少赠送NNN金币，并且自身最少保留SSS金币",
+        "translate": "Hadiah minimum NNN koin, setidaknya simpan SSS coin"
+    },
+    {
+        "text": "数值不能含有小数",
+        "translate": "Nilai tidak boleh mengandung desimal"
+    },
+    {
+        "text": "密码不能为空",
+        "translate": "Password tidak boleh kosong"
+    },
+    {
+        "text": "成功赠送NNN枚金币给AAA",
+        "translate": "hadiah sukses dari koin NNN ke koin AAA"
+    },
+    {
+        "text": "请输入正确的ID",
+        "translate": "Silakan masukkan ID yang benar"
+    },
+    {
+        "text": "密码输入错误请重新输入",
+        "translate": "Kesalahan input kata sandi harap masukkan kembali"
+    },
+    {
+        "text": "赠送金币失败",
+        "translate": "Sumbangan koin emas gagal"
+    },
+    {
+        "text": "请输入密码",
+        "translate": "Silakan masukkan kata sandi"
+    },
+    {
+        "text": "密码至少需要8位",
+        "translate": "Password minimal 8 bit"
+    },
+    {
+        "text": "验证码已过期，请重新发送",
+        "translate": "Kode validasi telah kedaluwarsa. Tolong kirimkan lagi nomor akun yang benar."
+    },
+    {
+        "text": "密码设置失败",
+        "translate": "Pengaturan Kata Sandi Gagal"
+    },
+    {
+        "text": "8到12位之间",
+        "translate": "Antara 8 dan 12 bit"
+    },
+    {
+        "text": "账号只能NNN至SSS位",
+        "translate": "Akun hanya bisa NNN ke SSS bit"
+    },
+    {
+        "text": "密码只能NNN至SSS位",
+        "translate": "Kata sandi hanya dapat berupa bit NNN ke SSS"
+    },
+    {
+        "text": "账号密码绑定成功",
+        "translate": "Pengikatan kata sandi akun anda berhasil"
+    },
+    {
+        "text": "帐户名不能为空",
+        "translate": "Nama aku tidak boleh dikosongkan"
+    },
+    {
+        "text": "重复注册",
+        "translate": "Ulangi pendaftaran"
+    },
+    {
+        "text": "首充",
+        "translate": "Isi ulang"
+    },
+    {
+        "text": "绑定金返利",
+        "translate": "Bouns Penggunaan"
+    },
+    {
+        "text": "豪礼重重",
+        "translate": "Tantangan"
+    },
+    {
+        "text": "官方地址",
+        "translate": "Alamat resmi"
+    },
+    {
+        "text": "未知数据包",
+        "translate": "Paket Tidak Dikenal"
+    },
+    {
+        "text": "老虎机选座返回大厅，数据发生错误",
+        "translate": "Nomor rekening tidak boleh menggunakan spasi"
+    },
+    {
+        "text": "游戏更新失败，是否重试?",
+        "translate": "Pembaruan versi gagal, Apakah anda ingin mencoba lagi ?"
+    },
+    {
+        "text": "该座位无效，请选择其它位置",
+        "translate": "Kursi tidak dapat dipilih, harap pilih kursi yang lain"
+    },
+    {
+        "text": "该座位已经有人",
+        "translate": "Kursi ini sudah ditempati pemain lain"
+    },
+    {
+        "text": "状态不一致，自动回大厅",
+        "translate": "Koneksi tidak stabil, kembali ke beranda"
+    },
+    {
+        "text": "更换头像失败",
+        "translate": "Kegagalan penggantian"
+    },
+    {
+        "text": "请在这里输入你的问题",
+        "translate": "Masukkan pertanyaan Anda"
+    },
+    {
+        "text": "请输入您的问题",
+        "translate": "Silahkan masukkan pertanyaan anda"
+    },
+    {
+        "text": "发件人:系统",
+        "translate": "Dari : Sistem"
+    },
+    {
+        "text": "欢迎",
+        "translate": "Welcome"
+    },
+    {
+        "text": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！",
+        "translate": "Selamat DatangNNN Permainan Tembak Ikan Dengan Teknologi Terbaru,Dengan Berbagai Koleksi Permainan.NNNAyo Mengajak Temen-Teman Datang Bergabung dan Bermain!"
+    },
+    {
+        "text": "金币追回",
+        "translate": "Coin recovery"
+    },
+    {
+        "text": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。",
+        "translate": "Hello, due to misoperation of the customer service staff, the recharge error occurred, and now trigger the system gold coin recovery protection function: false recharge [{total_recover_money}] gold coin, has now recovered [{recover_money}] gold coin, used [{money} ] Gold coins will no longer be recovered, please forgive us for any inconvenience caused."
+    },
+    {
+        "text": "赠送通知",
+        "translate": "Gift notice"
+    },
+    {
+        "text": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！",
+        "translate": "Player: {account_id} Give you {money} coins, which have been deposited into your safe, please check!"
+    },
+    {
+        "text": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！",
+        "translate": "You give {money} coins to the player: {account_id}, which has been deposited into his safe!"
+    },
+    {
+        "text": "充值通知",
+        "translate": "Recharge notice"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功！",
+        "translate": "your order number is {order_num},the deposit amount is {money} ,  the deposit has been succesful !"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！",
+        "translate": "Pesanan Anda: {order_num}, jumlah top-up: {money}, top-up berhasil, dan koin emas pengikat {washcode} tambahan akan diberikan"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！",
+        "translate": "Pesanan Anda: {order_num}, jumlah top-up: {money}, top-up gagal, alasan kegagalan: {msg}, silakan hubungi layanan pelanggan jika Anda memiliki pertanyaan!"
+    },
+    {
+        "text": "领取奖励失败",
+        "translate": "Gagal mengklaim hadiah"
+    },
+    {
+        "text": "请输入新昵称",
+        "translate": "Maksimal 6 karakter"
+    },
+    {
+        "text": "修改昵称成功",
+        "translate": "Modifikasi julukan yang berhasil"
+    },
+    {
+        "text": "该昵称已被使用，请重新输入",
+        "translate": "Julukan ini sudah digunakan. Harap masukkan kembali."
+    },
+    {
+        "text": "修改昵称失败",
+        "translate": "Gagal mengubah nama panggilan"
+    },
+    {
+        "text": "没有更多",
+        "translate": "Tidak ada lagi"
+    },
+    {
+        "text": "用户取消选择系统照片",
+        "translate": "Pengguna membatalkan pilihan foto sistem"
+    },
+    {
+        "text": "图片已选择",
+        "translate": "Pilih gambar"
+    },
+    {
+        "text": "网络异常，图片上传失败",
+        "translate": "The network is abnormal, Picture upload failed"
+    },
+    {
+        "text": "网络异常，正在努力上传图片~",
+        "translate": "Rangkaian itu tidak normal, cuba memuat naik gambar ~"
+    },
+    {
+        "text": "当前绑定金额",
+        "translate": "Jumlah terikat saat ini"
+    },
+    {
+        "text": "当前金额",
+        "translate": "Jumlah Saat Ini"
+    },
+    {
+        "text": "绑定保险箱金额",
+        "translate": "Mengikat jumlah deposit aman"
+    },
+    {
+        "text": "保险箱金额",
+        "translate": "Jumlah Brankas"
+    },
+    {
+        "text": "请输入金额！！！",
+        "translate": "Harap masukkan nominalnya！！！"
+    },
+    {
+        "text": "操作成功",
+        "translate": "pengoperasian sukses"
+    },
+    {
+        "text": "复制成功",
+        "translate": "Replikasi sukses"
+    },
+    {
+        "text": "截图失败",
+        "translate": "Tangkapan layar gagal"
+    },
+    {
+        "text": "保存截图文件失败",
+        "translate": "Gagal menyimpan file tangkapan layar"
+    },
+    {
+        "text": "收藏失败",
+        "translate": "Koleksi gagal"
+    },
+    {
+        "text": "收藏成功",
+        "translate": "Koleksi sukses"
+    },
+    {
+        "text": "我的ID: %s",
+        "translate": "ID saya: %s"
+    },
+    {
+        "text": "VIP%d以上",
+        "translate": "VIP%d atau lebih"
+    },
+    {
+        "text": "所有玩家",
+        "translate": "Semua pemain"
+    },
+    {
+        "text": "* 开启绑定金币使用权限。",
+        "translate": "* Aktifkan penggunaan koin emas terikat"
+    },
+    {
+        "text": "* 在游戏中可获取绑定金币。",
+        "translate": "* Anda bisa mendapatkan koin emas terikat dalam game"
+    },
+    {
+        "text": "* 达成此等级，获取%s绑定金币。",
+        "translate": "* Capai level ini dan dapatkan %s koin emas terikat"
+    },
+    {
+        "text": "* 在游戏中可获取更多绑定金币。",
+        "translate": "* Dapatkan lebih banyak koin emas terikat dalam game"
+    },
+    {
+        "text": "* 可参与更多活动。",
+        "translate": "* Dapat berpartisipasi dalam lebih banyak kegiatan"
+    },
+    {
+        "text": "开启绑定金币使用权限",
+        "translate": "Aktifkan penggunaan koin emas terikat"
+    },
+    {
+        "text": "如果有其他问题可直接联系'在线客服'",
+        "translate": "Jika anda memiliki pertanyaan lain harap langsung kontak ke 'Layanan Pelanggan'"
+    },
+    {
+        "text": "没有更多的消息了",
+        "translate": "Tidak ada pesan baru"
+    },
+    {
+        "text": "请输入您宝贵的建议(200字以内)",
+        "translate": "Harap masukkan saran anda yang berharga (Maksimal 200 kata)"
+    },
+    {
+        "text": "您的建议已经发送",
+        "translate": "Saran anda sudah terkirim dan telah kami terima"
+    },
+    {
+        "text": "请完善建议内容",
+        "translate": "Harap tingkatkan pelayanan sesuai dengan saran yang diberikan"
+    },
+    {
+        "text": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络",
+        "translate": "Internet anda tidak stabil, gagal memperbaharui permainan, silakan keluar dari aplikasi dan cek kembali internet anda !"
+    },
+    {
+        "text": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?",
+        "translate": "Ruang permainan yang ingin dimasuki membutuhkan minimal koin sebesar NNN. Harap menarik koin dari brankas atau melakukan top up di menu deposit？"
+    },
+    {
+        "text": "获取俱乐部信息失败",
+        "translate": "Gagal mendapatkan informasi klub"
+    },
+    {
+        "text": "领取福利失败",
+        "translate": "Gagal mengklaim manfaat"
+    },
+    {
+        "text": "本地未找到相关游戏",
+        "translate": "Tidak ada ruang permainan yang dapat ditemukan"
+    },
+    {
+        "text": "进入等级房失败",
+        "translate": "Gagal memasuki perumahan kelas"
+    },
+    {
+        "text": "没有空闲的游戏服",
+        "translate": "Tidak ada pakaian game yang tidak digunakan"
+    },
+    {
+        "text": "当前座位已有人或房间已满",
+        "translate": "Kursi saat ini ditempati atau ruangan penuh."
+    },
+    {
+        "text": "请耐心等待更新完成",
+        "translate": "Harap agar bersabar dan menunggu hingga pembaharuan permainan selesai"
+    },
+    {
+        "text": "正在检查游戏是否需要更新",
+        "translate": "Pengecekan jika permainan butuh pembaharuan"
+    },
+    {
+        "text": "请耐心等待其他游戏更新完成",
+        "translate": "Harap agar bersabar dan menunggu hingga pembaharuan permainan lain selesai"
+    },
+    {
+        "text": "领取奖励成功",
+        "translate": "Berhasil menerima hadiah"
+    },
+    {
+        "text": "兑换失败，收到退款NNN金币",
+        "translate": "penukaran anda gagal , pengembalian koin NNN yang diterima"
+    },
+    {
+        "text": "获得来自SSS赠送的NNN枚金币",
+        "translate": "dapat NNN gold dari SSS"
+    },
+    {
+        "text": "该账号已在其他设备登陆，您已被强制登出！！！",
+        "translate": "Akun ini telah masuk ke perangkat lain, Anda terpaksa keluar !!!"
+    },
+    {
+        "text": "收藏",
+        "translate": "mengumpulkan"
+    },
+    {
+        "text": "收藏个人信息",
+        "translate": "Informasi pribadi favorit"
+    },
+    {
+        "text": "获取代理信息失败!",
+        "translate": "Gagal mendapatkan informasi agen"
+    },
+    {
+        "text": "会长无法退出俱乐部",
+        "translate": "Kapten tidak bisa meninggalkan klub"
+    },
+    {
+        "text": "是否确认退出俱乐部？",
+        "translate": "Apakah Anda yakin akan meninggalkan klub?"
+    },
+    {
+        "text": "退出俱乐部成功",
+        "translate": "Keluar dari klub dengan sukses"
+    },
+    {
+        "text": "%d小时%d分后可退出俱乐部。",
+        "translate": "Anda dapat keluar dari klub setelah %d jam dan %d menit."
+    },
+    {
+        "text": "退出俱乐部失败",
+        "translate": "Gagal keluar dari klub"
+    },
+    {
+        "text": "领取返利失败",
+        "translate": "Gagal mengklaim rabat"
+    },
+    {
+        "text": "获取记录日志失败",
+        "translate": "Gagal mendapatkan catatan log"
+    },
+    {
+        "text": "欢迎加入俱乐部",
+        "translate": "Selamat bergabung dengan klub"
+    },
+    {
+        "text": "邀请码:%s",
+        "translate": "Kode undangan:%s"
+    },
+    {
+        "text": "公告修改失败!",
+        "translate": "Modifikasi pengumuman gagal"
+    },
+    {
+        "text": "公告修改成功!",
+        "translate": "Pengumuman berhasil diubah"
+    },
+    {
+        "text": "总人数:{total_man}   在线人数:{online_man}",
+        "translate": "jumlah orang:{total_man} Jumlah kumulatif:{online_man}"
+    },
+    {
+        "text": "在线",
+        "translate": "Online"
+    },
+    {
+        "text": "%d年前在线",
+        "translate": "Online %d tahun yang lalu"
+    },
+    {
+        "text": "%d月前在线",
+        "translate": "Online %d bulan yang lalu"
+    },
+    {
+        "text": "%d天前在线",
+        "translate": "Online %d hari yang lalu"
+    },
+    {
+        "text": "%d小时前在线",
+        "translate": "Online %d jam yang lalu"
+    },
+    {
+        "text": "刚刚离线",
+        "translate": "Baru offline"
+    },
+    {
+        "text": "请输入俱乐部名字",
+        "translate": "Silakan masukkan nama klub"
+    },
+    {
+        "text": "创建俱乐部失败",
+        "translate": "Gagal membuat klub"
+    },
+    {
+        "text": "请求俱乐部信息失败",
+        "translate": "Gagal meminta informasi klub"
+    },
+    {
+        "text": "你还不是正式账号，请绑定账号后再操作!",
+        "translate": "Anda bukan akun resmi, harap mengikat akun sebelum beroperasi"
+    },
+    {
+        "text": "收藏推广信息",
+        "translate": "Koleksi informasi promosi"
+    },
+    {
+        "text": "请输入推广码",
+        "translate": "Silakan masukkan kode promosi"
+    },
+    {
+        "text": "加入俱乐部失败",
+        "translate": "Gagal bergabung dengan klub"
+    },
+    {
+        "text": "昨日累计:{total}",
+        "translate": "Kumulatif kemarin:{total}"
+    },
+    {
+        "text": "总累计:{total}",
+        "translate": "Jumlah kumulatif:{total}"
+    },
+    {
+        "text": "领取记录",
+        "translate": "Catatan koleksi"
+    },
+    {
+        "text": "领取时间",
+        "translate": "Waktu Terima"
+    },
+    {
+        "text": "领取金币",
+        "translate": "Terima Koin"
+    },
+    {
+        "text": "暂无领取记录",
+        "translate": "Tidak ada catatan koleksi"
+    },
+    {
+        "text": "已自动保存到保险箱",
+        "translate": "Disimpan ke brankas"
+    },
+    {
+        "text": "分享",
+        "translate": "Bagikan"
+    },
+    {
+        "text": "领   取",
+        "translate": "Mengambil"
+    },
+    {
+        "text": "退出俱乐部",
+        "translate": "Keluar dari klub"
+    },
+    {
+        "text": "成员",
+        "translate": "anggota"
+    },
+    {
+        "text": "返利",
+        "translate": "Potongan harga"
+    },
+    {
+        "text": "名称",
+        "translate": "nama"
+    },
+    {
+        "text": "加入时间",
+        "translate": "waktu bergabung"
+    },
+    {
+        "text": "状态",
+        "translate": "Status"
+    },
+    {
+        "text": "创建",
+        "translate": "membuat"
+    },
+    {
+        "text": "请输入俱乐部名称",
+        "translate": "Silakan masukkan nama klub"
+    },
+    {
+        "text": "邀请码：",
+        "translate": "Kode undangan:"
+    },
+    {
+        "text": "保存图片以获取游戏下载地址",
+        "translate": "Simpan gambar untuk mendapatkan alamat download game"
+    },
+    {
+        "text": "加入",
+        "translate": "bergabung"
+    },
+    {
+        "text": "加入俱乐部请输入邀请码",
+        "translate": "Silakan masukkan kode undangan untuk bergabung dengan klub"
+    },
+    {
+        "text": "请选择俱乐部头像",
+        "translate": "Silakan pilih avatar klub"
+    },
+    {
+        "text": "昨日排行",
+        "translate": "Peringkat kemarin"
+    },
+    {
+        "text": "总排行",
+        "translate": "Peringkat keseluruhan"
+    },
+    {
+        "text": "排名",
+        "translate": "Peringkat"
+    },
+    {
+        "text": "捕鱼/老虎机洗码量",
+        "translate": "Tembak Ikan/Slot Mesin"
+    },
+    {
+        "text": "选 桌",
+        "translate": "Pilih Meja"
+    },
+    {
+        "text": "充值",
+        "translate": "ISI ULANG"
+    },
+    {
+        "text": "保险箱",
+        "translate": "Brankas"
+    },
+    {
+        "text": "转账记录",
+        "translate": "Riwayat Transfer"
+    },
+    {
+        "text": "转账编码",
+        "translate": "Kode Transfer"
+    },
+    {
+        "text": "收款玩家",
+        "translate": "Penerima"
+    },
+    {
+        "text": "金额",
+        "translate": "Jumlah"
+    },
+    {
+        "text": "转账时间",
+        "translate": "Waktu Transfer"
+    },
+    {
+        "text": "首页",
+        "translate": "Halaman Depan"
+    },
+    {
+        "text": "上一页",
+        "translate": "Halaman sebelumnya"
+    },
+    {
+        "text": "下一页",
+        "translate": "Halaman selanjutnya"
+    },
+    {
+        "text": "末页",
+        "translate": "Halaman Terakhir"
+    },
+    {
+        "text": "赠送用户ID",
+        "translate": "ID Pengirim Hadiah"
+    },
+    {
+        "text": "金币数量",
+        "translate": "Jumlah Koin"
+    },
+    {
+        "text": "输入密码",
+        "translate": "Masukkan kata sandi"
+    },
+    {
+        "text": "赠送记录",
+        "translate": "Catatan Hadiah"
+    },
+    {
+        "text": "请确认密码",
+        "translate": "Harap konfirmasi kata sandi Anda"
+    },
+    {
+        "text": "绑定账号成为",
+        "translate": "Ikat akun Anda untuk menjadi"
+    },
+    {
+        "text": "查看VIP权益",
+        "translate": "LIHAT HAK VIP"
+    },
+    {
+        "text": "请选择你的头像",
+        "translate": "Silahkan pilih avatar"
+    },
+    {
+        "text": "发送",
+        "translate": "Kirim"
+    },
+    {
+        "text": "上传图片",
+        "translate": "Kirim gambar"
+    },
+    {
+        "text": "活动时间:",
+        "translate": "Waktu aktivitas:"
+    },
+    {
+        "text": "参与条件:",
+        "translate": "Kondisi partisipasi:"
+    },
+    {
+        "text": "领取",
+        "translate": "menerima"
+    },
+    {
+        "text": "前往",
+        "translate": "Pergi ke"
+    },
+    {
+        "text": "输入新名称",
+        "translate": "Masukkan nama baru"
+    },
+    {
+        "text": "账户只能修改一次",
+        "translate": "Akun hanya dapat diubah sekali"
+    },
+    {
+        "text": "确认修改",
+        "translate": "Konfirmasi Perubahan"
+    },
+    {
+        "text": "今日赢金币量",
+        "translate": "Jumlah koin yang dimenangkan hari ini"
+    },
+    {
+        "text": "玩家",
+        "translate": "Pemain"
+    },
+    {
+        "text": "今日赢金币",
+        "translate": "Menangkan Koin hari ini"
+    },
+    {
+        "text": "未上榜",
+        "translate": "Tidak ada dalam daftar"
+    },
+    {
+        "text": "存款",
+        "translate": "Setoran"
+    },
+    {
+        "text": "取款",
+        "translate": "Penarikan"
+    },
+    {
+        "text": "绑定金币取款",
+        "translate": "Penarikan Token"
+    },
+    {
+        "text": "绑定金币存款",
+        "translate": "Setoran Token"
+    },
+    {
+        "text": "最大",
+        "translate": "Maksimum"
+    },
+    {
+        "text": "确认存款",
+        "translate": "Konfirmasi Setoran"
+    },
+    {
+        "text": "确认取款",
+        "translate": "Konfirmasi Penarikan"
+    },
+    {
+        "text": "修改头像",
+        "translate": "UBAH AVATAR"
+    },
+    {
+        "text": "复制",
+        "translate": "SALIN"
+    },
+    {
+        "text": "成为VIP",
+        "translate": "Menjadi VIP"
+    },
+    {
+        "text": "退出游戏",
+        "translate": "KELUAR DARI PERMAINAN"
+    },
+    {
+        "text": "昵称",
+        "translate": "NAMA PANGGILAN"
+    },
+    {
+        "text": "ID",
+        "translate": "ID"
+    },
+    {
+        "text": "音 乐",
+        "translate": "Musik"
+    },
+    {
+        "text": "音 效",
+        "translate": "Suara"
+    },
+    {
+        "text": "特 效",
+        "translate": "Grafik"
+    },
+    {
+        "text": "滚动报喜",
+        "translate": "Pengumuman Bergulir"
+    },
+    {
+        "text": "恭喜获得奖励",
+        "translate": "Selamat mendapatkan hadiahnya"
+    },
+    {
+        "text": "绑定账号后解锁转盘",
+        "translate": "HUBUNGKAN AKUN UNTUK MEMBERIKAN BANYAK MANFAAT"
+    },
+    {
+        "text": "绑定账号",
+        "translate": "IKAT AKUN"
+    },
+    {
+        "text": "不用了",
+        "translate": "TOLAK"
+    },
+    {
+        "text": "游戏时间越多，获得的绑定金返利越多。",
+        "translate": "Semakin banyak koin yang digunakan, maka semakin banyak bonus yang didapatkan."
+    },
+    {
+        "text": "当前进度",
+        "translate": "Kemajuan saat ini"
+    },
+    {
+        "text": "昨日进度",
+        "translate": "Progres kemarin"
+    },
+    {
+        "text": "可领取",
+        "translate": "Tersedia"
+    },
+    {
+        "text": "去游戏",
+        "translate": "Pergi ke permainan"
+    },
+    {
+        "text": "每天24点发放奖励，奖励保存24小时，限时未领取作废。",
+        "translate": "Hadiah dikeluarkan pada pukul 24 setiap hari, dan hadiah disimpan selama 24 jam."
+    },
+    {
+        "text": "提示：通过玩游戏得到绑定金币提升VIP经验。",
+        "translate": "Tip: Dapatkan koin emas terikat untuk meningkatkan pengalaman VIP dengan bermain game."
+    },
+    {
+        "text": "当前等级",
+        "translate": "level saat ini"
+    },
+    {
+        "text": "您的vip等级已达到最高级！",
+        "translate": "Level VIP Anda telah mencapai level tertinggi!"
+    },
+    {
+        "text": "联系客服",
+        "translate": "Hubungi Layanan Pelanggan"
+    },
+    {
+        "text": "常见问题",
+        "translate": "Pertanyaan Umum"
+    },
+    {
+        "text": "在线客服",
+        "translate": "Pelayanan Pelanggan"
+    },
+    {
+        "text": "提交建议",
+        "translate": "Kirim Saran"
+    },
+    {
+        "text": "邮件",
+        "translate": "Surat"
+    },
+    {
+        "text": "阅读",
+        "translate": "Baca"
+    },
+    {
+        "text": "已读",
+        "translate": "Telah dibaca"
+    },
+    {
+        "text": "您的意见将帮助我们改进产品和服务",
+        "translate": "Masukan anda akan berguna untuk meningkatkan kualitas aplikasi dan layanan kami"
+    },
+    {
+        "text": "真实姓名",
+        "translate": "Nama Asli"
+    },
+    {
+        "text": "手机号码",
+        "translate": "Nomor telepon"
+    },
+    {
+        "text": "建议回复需要通过手机号查看，请填写真实的手机号码",
+        "translate": "Harap mengisi nomor telepon yang benar "
+    },
+    {
+        "text": "提交",
+        "translate": "Kirim"
+    },
+    {
+        "text": "图片",
+        "translate": "Gambar"
+    },
+    {
+        "text": "是否退出游戏",
+        "translate": "Apakah Anda ingin keluar dari permainan?"
+    },
+    {
+        "text": "金币不足",
+        "translate": "Emas tidak memadai"
+    },
+    {
+        "text": "账号只能由NNN至SSS位的数字和字母组成",
+        "translate": "Nama akun hanya boleh terdiri dari angka dan huruf dari NNN hingga SSS"
+    },
+    {
+        "text": "密码只能由NNN至SSS位的数字和字母组成",
+        "translate": "Kata Sandi hanya boleh terdiri dari angka dan huruf dari NNN hingga SSS"
+    },
+    {
+        "text": "全部",
+        "translate": "semua"
+    },
+    {
+        "text": "已禁言",
+        "translate": "Meredam"
+    },
+    {
+        "text": "未禁言",
+        "translate": "Nyalakan Suara"
+    },
+    {
+        "text": "设置成功",
+        "translate": "Pengaturan Berhasil"
+    },
+    {
+        "text": "设置失败",
+        "translate": "Pengaturan Gagal"
+    },
+    {
+        "text": "公频",
+        "translate": "Saluran Umum"
+    },
+    {
+        "text": "俱乐部",
+        "translate": "Klub"
+    },
+    {
+        "text": "密语",
+        "translate": "Kata Sandi"
+    },
+    {
+        "text": "群发",
+        "translate": "Dalam jumlah besar"
+    },
+    {
+        "text": "点击输入消息",
+        "translate": "Klik untuk memasukkan pesan"
+    },
+    {
+        "text": "请输入聊天消息",
+        "translate": "Silakan masukkan pesan obrolan"
+    },
+    {
+        "text": "您已被禁言",
+        "translate": "Kamu telah terblokir"
+    },
+    {
+        "text": "消息发送失败",
+        "translate": "Gagal mengirim pesan"
+    },
+    {
+        "text": "模板数目已达最大, 无法再新建",
+        "translate": "Jumlah kategori telah mencapai batas maksimum dan tidak dapat dibuat lagi"
+    },
+    {
+        "text": "请输入标题！",
+        "translate": "Silakan masukkan judul!"
+    },
+    {
+        "text": "请输入文字信息！",
+        "translate": "Silakan masukkan pesan!"
+    },
+    {
+        "text": "请输入标题",
+        "translate": "Silakan masukkan judul"
+    },
+    {
+        "text": "请输入文字信息",
+        "translate": "Silakan masukkan informasi"
+    },
+    {
+        "text": "%d 人",
+        "translate": "%d pemain"
+    },
+    {
+        "text": "请选择一个群发模板再发送",
+        "translate": "Silahkan pilih Kategori grup untuk dipilih"
+    },
+    {
+        "text": "模板信息",
+        "translate": "Kategori Informasi"
+    },
+    {
+        "text": "模板修改完成",
+        "translate": "Penggantian Kategori Selesai"
+    },
+    {
+        "text": "你还未加入俱乐部",
+        "translate": "Anda belum bergabung ke dalam KLUB"
+    },
+    {
+        "text": "抱歉，银商玩家不能进入游戏游玩！",
+        "translate": "Maaf, pemain reguler tidak dapat masuk ke meja permainan"
+    },
+    {
+        "text": "禁言管理",
+        "translate": "Pengaturan Suara"
+    },
+    {
+        "text": "保存",
+        "translate": "Simpan"
+    },
+    {
+        "text": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "Ganti"
+    },
+    {
+        "text": "发送间隔:",
+        "translate": "Jeda Pengiriman:"
+    },
+    {
+        "text": "删除",
+        "translate": "Hapus"
+    },
+    {
+        "text": "标题：",
+        "translate": "Judul:"
+    },
+    {
+        "text": "筛选:",
+        "translate": "Pilihan:"
+    },
+    {
+        "text": "用户ID",
+        "translate": "ID Pengguna"
+    },
+    {
+        "text": "VIP等级",
+        "translate": "Tingkatan VIP"
+    },
+    {
+        "text": "在线状态",
+        "translate": "Status Online"
+    },
+    {
+        "text": "下一步",
+        "translate": "Berikutnya"
+    },
+    {
+        "text": "120人",
+        "translate": "120 Orang"
+    },
+    {
+        "text": "*列表展示XX小时/天登陆过的用户",
+        "translate": "*Daftar menunjukkan member telah masuk pada Jam/Hari XX"
+    },
+    {
+        "text": "群发模板:",
+        "translate": "Berita Umum:"
+    },
+    {
+        "text": "模板内容:",
+        "translate": "Kolom Berita:"
+    },
+    {
+        "text": "上一步",
+        "translate": "Kembali"
+    },
+    {
+        "text": "联系人",
+        "translate": "Hubungi"
+    },
+    {
+        "text": "赠送",
+        "translate": "Kirimkan"
+    },
+    {
+        "text": "收礼",
+        "translate": "Terima Hadiah"
+    },
+    {
+        "text": "日期",
+        "translate": "Tanggal"
+    },
+    {
+        "text": "玩家ID",
+        "translate": "ID Pemain"
+    },
+    {
+        "text": "赠送金币",
+        "translate": "Total Hadiah"
+    },
+    {
+        "text": "金币余额",
+        "translate": "Saldo Koin "
+    },
+    {
+        "text": "* 忘记密码请联系客服",
+        "translate": "*Jika lupa kata sandi, silahkan hubungi layanan pelanggan"
+    },
+    {
+        "text": "客服",
+        "translate": "Pelayanan pelanggan"
+    },
+    {
+        "text": "投诉",
+        "translate": "Keluhan"
+    },
+    {
+        "text": "保存成功!",
+        "translate": "Berhasil simpan!"
+    },
+    {
+        "text": "保存失败!",
+        "translate": "Gagal menyimpan!"
+    },
+    {
+        "text": "请选择需要群发的用户后再试！",
+        "translate": "Silakan pilih pengguna yang membutuhkan pemberitahuan semua dan coba lagi!"
+    },
+    {
+        "text": "发送成功",
+        "translate": "Berhasil dikirim"
+    },
+    {
+        "text": "发送失败",
+        "translate": "Gagal mengirim"
+    },
+    {
+        "text": "获取赠送记录失败",
+        "translate": "Gagal mendapatkan catatan hadiah"
+    },
+    {
+        "text": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "Edit berita : Setelah memeriksa beberapa berita , pesan akan otomatis terkirim sesuai berita yang dicentang."
+    },
+    {
+        "text": "禁言",
+        "translate": "Diam"
+    },
+    {
+        "text": "解禁",
+        "translate": "Pencabutan larangan"
+    },
+    {
+        "text": "私聊",
+        "translate": "Obrolan pribadi"
+    },
+    {
+        "text": "加入俱乐部",
+        "translate": "bergabung dengan klub"
+    },
+    {
+        "text": "搜索",
+        "translate": "Cari"
+    },
+    {
+        "text": "id或者昵称",
+        "translate": "Pengguna dan nama panggilan"
+    },
+    {
+        "text": "尚无聊天记录。",
+        "translate": "Belum ada riwayat obrolan."
+    },
+    {
+        "text": "获取群组列表信息失败",
+        "translate": "Gagal memperoleh daftar informasi grup"
+    },
+    {
+        "text": "进入码错误",
+        "translate": "Kode akses salah"
+    },
+    {
+        "text": "加入群失败",
+        "translate": "Gagal bergabung ke dalam grup"
+    },
+    {
+        "text": "对方已经是你的好友了",
+        "translate": "Pihak lain sudah terdaftar sebagai teman"
+    },
+    {
+        "text": "添加好友成功",
+        "translate": "Berhasil ditambahkan sebagai teman"
+    },
+    {
+        "text": "添加好友失败",
+        "translate": "Gagal menambah sebagai teman"
+    },
+    {
+        "text": "删除好友失败",
+        "translate": "Gagal menghapus pertemanan"
+    },
+    {
+        "text": "搜索用户",
+        "translate": "Mencari pengguna lain"
+    },
+    {
+        "text": "获取用户信息失败",
+        "translate": "Gagal memperoleh info pengguna"
+    },
+    {
+        "text": "群主已开启全局禁言",
+        "translate": "Pemilik grup telah mengaktifkan larangan publik"
+    },
+    {
+        "text": "请输入群组名",
+        "translate": "Harap isi nama grup anda"
+    },
+    {
+        "text": "请输入进入码",
+        "translate": "Harap isi kode akses anda"
+    },
+    {
+        "text": "请输入6位的进入码",
+        "translate": "Harap isi kode akses 6 angka"
+    },
+    {
+        "text": "创建成功",
+        "translate": "Pembuatan Berhasil"
+    },
+    {
+        "text": "创建失败",
+        "translate": "Pembuatan Gagal"
+    },
+    {
+        "text": "获取群信息失败",
+        "translate": "Gagal memperoleh info grup"
+    },
+    {
+        "text": "无效的群组信息",
+        "translate": "Informasi grup tidak valid"
+    },
+    {
+        "text": "获取成员列表失败",
+        "translate": "Gagal memperoleh info anggota"
+    },
+    {
+        "text": "请输入群组名字！",
+        "translate": "Harap isi nama grup anda"
+    },
+    {
+        "text": "请输入群组公告信息",
+        "translate": "Harap isi info pengumuman grup"
+    },
+    {
+        "text": "解散群组失败!",
+        "translate": "Pembubaran grup gagal"
+    },
+    {
+        "text": "请输入合法的群组名字",
+        "translate": "Harap isi nama grup yang jelas"
+    },
+    {
+        "text": "修改成功!",
+        "translate": "Berhasil diubah"
+    },
+    {
+        "text": "修改失败!",
+        "translate": "Gagal diubah"
+    },
+    {
+        "text": "退出群组失败!",
+        "translate": "Tidak dapat meninggalkan grup"
+    },
+    {
+        "text": "已建立群组(%d)",
+        "translate": "Membuat grup (%d)"
+    },
+    {
+        "text": "已加入群组(%d)",
+        "translate": "Telah bergabung dalam grup (%d)"
+    },
+    {
+        "text": "公开群组(%d)",
+        "translate": "Grup umum (%d)"
+    },
+    {
+        "text": "该群人数已满，加入失败",
+        "translate": "Grup penuh, tidak dapat bergabung"
+    },
+    {
+        "text": "加入成功",
+        "translate": "Berhasil bergabung ke dalam grup"
+    },
+    {
+        "text": "群主",
+        "translate": "Pemilik grup"
+    },
+    {
+        "text": "管理员",
+        "translate": "admin"
+    },
+    {
+        "text": "聊天(%d)",
+        "translate": "Pesan (%d)"
+    },
+    {
+        "text": "好友(%d)",
+        "translate": "Teman (%d)"
+    },
+    {
+        "text": "群组",
+        "translate": "Grup"
+    },
+    {
+        "text": "频道 1",
+        "translate": "Saluran 1"
+    },
+    {
+        "text": "建立群组",
+        "translate": "Membuat grup"
+    },
+    {
+        "text": "欢迎来到群组",
+        "translate": "Selamat datang di grup"
+    },
+    {
+        "text": "请选择一个群组",
+        "translate": "Harap pilih grup anda"
+    },
+    {
+        "text": "群组名称：",
+        "translate": "Nama grup:"
+    },
+    {
+        "text": "进入码",
+        "translate": "Kode Akses: "
+    },
+    {
+        "text": "* 进入码为6位数字",
+        "translate": "*kode akses terdiri dari 6 angka"
+    },
+    {
+        "text": "全局禁言",
+        "translate": "Larangan Publik"
+    },
+    {
+        "text": "群组公告：",
+        "translate": "Pengumuman grup:"
+    },
+    {
+        "text": "解散群组",
+        "translate": "Membubarkan grup"
+    },
+    {
+        "text": "退出群组",
+        "translate": "Keluar dari grup"
+    },
+    {
+        "text": "踢人",
+        "translate": "Mengeluarkan anggota"
+    },
+    {
+        "text": "设为管理员",
+        "translate": "Menetapkan sebagai admin"
+    },
+    {
+        "text": "取消管理员",
+        "translate": "Membatalkan izin admin"
+    },
+    {
+        "text": "加为好友",
+        "translate": "Menambah sebagai teman"
+    },
+    {
+        "text": "删除好友",
+        "translate": "Menghapus pertemanan"
+    },
+    {
+        "text": "您没有该操作权限",
+        "translate": "Anda tidak memiliki izin ini"
+    },
+    {
+        "text": "群名字太长",
+        "translate": "Nama grup terlalu panjang"
+    },
+    {
+        "text": "进入码太长",
+        "translate": "Kode akses terlalu panjang"
+    },
+    {
+        "text": "群名字已存在",
+        "translate": "Nama grup sudah digunakan"
+    },
+    {
+        "text": "群创建失败",
+        "translate": "Pembuatan grup gagal"
+    },
+    {
+        "text": "非法的群名字",
+        "translate": "Nama grup ilegal"
+    },
+    {
+        "text": "群公告过长",
+        "translate": "Pengumuman grup terlalu panjang"
+    },
+    {
+        "text": "群信息修改失败",
+        "translate": "Gagal mengubah informasi grup"
+    },
+    {
+        "text": "保存图片以获取游戏官方下载地址",
+        "translate": "Simpan gambar untuk mengakses situs download resmi"
+    },
+    {
+        "text": "活动内容",
+        "translate": "Konten Aktivitas"
+    },
+    {
+        "text": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。",
+        "translate": "Semakin banyak koin bonus yang anda dapatkan dari penggunaan koin emas selama permainan, maka lebih banyak juga koin bonus yang akan diperoleh dari bonus rabat."
+    },
+    {
+        "text": "请输入账号",
+        "translate": "Masukkan nomor rekening anda"
+    },
+    {
+        "text": "该账号已注册",
+        "translate": "Akun sudah terdaftar"
+    },
+    {
+        "text": "忘记密码，请联系在线客服",
+        "translate": "Lupa kata sandi anda, silahkan hubungi layanan pelanggan"
+    },
+    {
+        "text": "连接出错 网关连不上！",
+        "translate": "Jaringan kurang stabil, tidak dapat tersambung ke permainan"
+    },
+    {
+        "text": "忘记密码",
+        "translate": "Lupa kata sandi"
+    },
+    {
+        "text": "账号注册",
+        "translate": "Pendaftaran Akun"
+    },
+    {
+        "text": "登录游戏",
+        "translate": "Masuk"
+    },
+    {
+        "text": "去解锁",
+        "translate": "Membuka"
+    },
+    {
+        "text": "成为VIP%d解锁转盘",
+        "translate": "Akan terbuka setelah mencapai VIP %d"
+    },
+    {
+        "text": "充值任意金额成为VIP",
+        "translate": "Top up dengan nominal berapapun untuk membuka fitur VIP"
+    },
+    {
+        "text": "谷歌账号",
+        "translate": "Akun Google"
+    },
+    {
+        "text": "苹果账号",
+        "translate": "Akun Apple"
+    },
+    {
+        "text": "注册成功",
+        "translate": "Pendaftaran berhasil"
+    },
+    {
+        "text": "请先成为VIP",
+        "translate": "Harap menjadi VIP dulu"
+    },
+    {
+        "text": "字母和数字%d至%d位",
+        "translate": "%d sampai %d huruf dan angka"
+    },
+    {
+        "text": "账户名称长度%d至%d位",
+        "translate": "Panjang nama akun %d hingga %d karakter"
+    },
+    {
+        "text": "账户密码长度%d至%d位",
+        "translate": "Panjang kata sandi akun %d hingga %d karakter"
+    },
+    {
+        "text": "两次输入的密码不相同",
+        "translate": "Kata sandi yang dimasukkan dua kali tidak sama"
+    },
+    {
+        "text": "用户名或密码为空",
+        "translate": "nama pengguna atau kata sandi kosong"
+    },
+    {
+        "text": "包名为空",
+        "translate": "nama paket kosong"
+    },
+    {
+        "text": "注册失败，请重试",
+        "translate": "Pendaftaran gagal, silakan coba lagi"
+    },
+    {
+        "text": "已达到注册限制",
+        "translate": "Batas pendaftaran tercapai"
+    },
+    {
+        "text": "用户名非法，请新输入",
+        "translate": "Nama pengguna tidak valid, harap masukkan yang baru"
+    },
+    {
+        "text": "注册",
+        "translate": "daftar"
+    },
+    {
+        "text": "成为VIP%d后解锁",
+        "translate": "Buka kunci setelah VIP%d"
+    },
+    {
+        "text": "成为VIP后解锁",
+        "translate": "Buka kunci setelah menjadi VIP"
+    },
+    {
+        "text": "* 解锁转盘。",
+        "translate": "* Buka Kunci Roda Keberuntungan"
+    },
+    {
+        "text": "充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Verifikasi pengisian gagal, perintah yang sesuai tidak diminta, silahkan hubungi customer service"
+    },
+    {
+        "text": "非 iphone 用户不可用",
+        "translate": "Pengguna non iphone tidak tersedia"
+    },
+    {
+        "text": "正在加载大厅资源...",
+        "translate": "Memuat ruang utama …"
+    },
+    {
+        "text": "更新模块失败",
+        "translate": "Kegagalan pemutakhiran modul"
+    },
+    {
+        "text": "更新大厅失败，是否重试?",
+        "translate": "Pembaruan gagal."
+    },
+    {
+        "text": "登入游戏",
+        "translate": "Game entry"
+    },
+    {
+        "text": "正在更新游戏...",
+        "translate": "Perbarui permainan …"
+    },
+    {
+        "text": "确定删除好友 '%s' 吗?",
+        "translate": "Yakin ingin menghapus teman '%s'?"
+    },
+    {
+        "text": "您已被 '%s' 群管理员禁言。",
+        "translate": "Anda telah dilarang oleh '%s' ranger."
+    },
+    {
+        "text": "您在 '%s' 群的禁言已被解除。",
+        "translate": "Larangan anda di '%s' grup telah dicabut."
+    },
+    {
+        "text": "您已被设置为 '%s' 管理员。",
+        "translate": "Anda telah diatur untuk '%s' administrator."
+    },
+    {
+        "text": "您在 '%s' 群的管理员资格已被解除。",
+        "translate": "Status admin anda di grup '%s' telah dicabut."
+    },
+    {
+        "text": "你已经被踢出群 '%s' ",
+        "translate": "Anda telah ditendang dari kelompok '%s'"
+    },
+    {
+        "text": "确定解散群组 '%s' 吗?",
+        "translate": "Yakin membubarkan grup '%s'?"
+    },
+    {
+        "text": "欢迎加入'%s' ",
+        "translate": "Selamat datang di '%s'"
+    },
+    {
+        "text": "您是否确认将 '%s' 踢出群组?",
+        "translate": "Apakah anda mengkonfirmasi menendang grup '%s'?"
+    },
+    {
+        "text": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)",
+        "translate": "Apakah anda mengatur '%s' sebagai administrator? Kirim pesan setelah di admin semuanya terlihat"
+    },
+    {
+        "text": "你确定要赠送给 '%s' 金币吗？",
+        "translate": "Anda yakin ingin membagikan '%s'?"
+    },
+    {
+        "text": "收款钱包地址",
+        "translate": "Alamat penerima uang"
+    },
+    {
+        "text": "钱包地址",
+        "translate": "Alamat dompet"
+    },
+    {
+        "text": "请绑定地址",
+        "translate": "Tolong gantungkan alamat"
+    },
+    {
+        "text": "绑定",
+        "translate": "terikat"
+    },
+    {
+        "text": "充值金额",
+        "translate": "Jumlah isi ulang"
+    },
+    {
+        "text": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值",
+        "translate": "Pemain mengikat alamat dompet mereka sendiri, masukkan jumlah mengisi, dan tekan tombol pengisian untuk mengisi ulang"
+    },
+    {
+        "text": "请输入钱包地址",
+        "translate": "Silakan masukkan alamat dompet"
+    },
+    {
+        "text": "地址只能绑定一次，请仔细核对，有问题请及时联系客服",
+        "translate": "Alamat ini hanya dapat ditandai satu kali"
+    },
+    {
+        "text": "可提现金币数量",
+        "translate": "Jumlah koin emas ditarik"
+    },
+    {
+        "text": "请输入金额",
+        "translate": "Silahkan masukkan jumlahnya"
+    },
+    {
+        "text": "提现钱包地址",
+        "translate": "Alamat dompet penarikan"
+    },
+    {
+        "text": "请输入提现地址",
+        "translate": "Mohon masukkan alamat penarikan"
+    },
+    {
+        "text": "提现记录",
+        "translate": "Catatan penarikan"
+    },
+    {
+        "text": "提交成功，等待审核",
+        "translate": "Telah sukses diajukan, menunggu peninjauan kembali"
+    },
+    {
+        "text": "充值成功，等待审核",
+        "translate": "Pengisian sukses dan menunggu audit"
+    },
+    {
+        "text": "银行卡",
+        "translate": "Kartu bank"
+    },
+    {
+        "text": "最低提现200金币",
+        "translate": "Penarikan minimal 200 dukat"
+    },
+    {
+        "text": "订单号",
+        "translate": "Nomor pesanan"
+    },
+    {
+        "text": "操作",
+        "translate": "operasi"
+    },
+    {
+        "text": "成功",
+        "translate": "berhasil"
+    },
+    {
+        "text": "审核中",
+        "translate": "Ditinjau kembali"
+    },
+    {
+        "text": "失败",
+        "translate": "gagal"
+    },
+    {
+        "text": "详情",
+        "translate": "rincian"
+    },
+    {
+        "text": "系统",
+        "translate": "sistem"
+    },
+    {
+        "text": "奖励金币",
+        "translate": "Koin emas hadiah"
+    },
+    {
+        "text": "游戏返利",
+        "translate": "Permainan masuk"
+    },
+    {
+        "text": "游戏时间越多，返利越多。",
+        "translate": "Semakin banyak waktu bermain, semakin banyak yang dipulangkan."
+    },
+    {
+        "text": "*玩游戏可获得VIP经验。",
+        "translate": "* memainkan permainan memperoleh pengalaman VIP."
+    },
+    {
+        "text": "*玩游戏可获得更多VIP经验。",
+        "translate": "* lebih banyak pengalaman VIP diperoleh dengan bermain game."
+    },
+    {
+        "text": "*奖励%d金币",
+        "translate": "* reward %d emas"
+    },
+    {
+        "text": "快速登录",
+        "translate": "Log masuk cepat"
+    },
+    {
+        "text": "实时返利活动",
+        "translate": "Restitusi aktivitas"
+    },
+    {
+        "text": "日返利活动",
+        "translate": "Aktivitas menembak matahari terbenam"
+    },
+    {
+        "text": "周返利活动",
+        "translate": "Acara bunga ulang mingguan"
+    },
+    {
+        "text": "月返利活动",
+        "translate": "Kegiatan bunga bulan"
+    },
+    {
+        "text": "小时",
+        "translate": "jam"
+    },
+    {
+        "text": "天",
+        "translate": "hari"
+    },
+    {
+        "text": "周",
+        "translate": "minggu"
+    },
+    {
+        "text": "月",
+        "translate": "bulan"
+    },
+    {
+        "text": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。",
+        "translate": "1 reward diberikan oleh %d%s, reward save %d hour, dengan batas waktu yang tidak dibatalkan."
+    },
+    {
+        "text": "请先绑定钱包地址！",
+        "translate": "Silakan mengikat alamat dompet pertama!"
+    },
+    {
+        "text": "金币不足%d时才能切换充值方式",
+        "translate": "Ganti mengisi ulang sebelum koin emas jatuh dibawah %d"
+    },
+    {
+        "text": "请确认钱包地址是否正确",
+        "translate": "Silakan konfirmasi jika alamat dompet benar"
+    },
+    {
+        "text": "金币",
+        "translate": "Koin."
+    },
+    {
+        "text": "请输入订单号",
+        "translate": "Silahkan masukkan nomor perintah"
+    },
+    {
+        "text": "VIP福利",
+        "translate": "Manfaat VIP"
+    },
+    {
+        "text": "本次更新需要重启应用.",
+        "translate": ""
+    }
+]

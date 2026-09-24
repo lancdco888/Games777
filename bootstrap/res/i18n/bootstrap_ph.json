@@ -1,0 +1,2422 @@
+[
+    {
+        "text": "正在获取导航信息...",
+        "translate": "Pagkuha ng impormasyon sa nabigasyon"
+    },
+    {
+        "text": "获取导航信息失败",
+        "translate": "Nabigong makuha ang impormasyon sa nabigasyon"
+    },
+    {
+        "text": "获取导航信息失败, 是否重试？",
+        "translate": "Nabigong makakuha ng impormasyon sa nabigasyon, gusto mo bang subukang muli?"
+    },
+    {
+        "text": "版本更新失败",
+        "translate": "Nabigo ang pag-update ng bersyon."
+    },
+    {
+        "text": "版本更新失败, 是否重试？",
+        "translate": "Nabigo ang pag-update ng bersyon, gusto mo bang subukang muli?"
+    },
+    {
+        "text": "正在更新文件...",
+        "translate": "Ina-update ang file..."
+    },
+    {
+        "text": "正在检查版本信息...",
+        "translate": "Sinusuri ang impormasyon ng bersyon..."
+    },
+    {
+        "text": "检查版本信息失败，是否重试？",
+        "translate": "Nabigong suriin ang impormasyon ng bersyon, gusto mo bang subukang muli?"
+    },
+    {
+        "text": "确定",
+        "translate": "kumpirmahin"
+    },
+    {
+        "text": "取消",
+        "translate": "Kanselahin"
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Ang software ay hindi pa na-install, mangyaring magpatuloy pagkatapos ng pag-install"
+    },
+    {
+        "text": "正在更新大厅...",
+        "translate": "ina-update ang lobby"
+    },
+    {
+        "text": "正在更新 SO ...",
+        "translate": "Ina-update ang SO..."
+    },
+    {
+        "text": "该软件尚未安装，请安装后继续",
+        "translate": "Kailangang i-restart ng update na ito ang application."
+    },
+    {
+        "text": "用户名或密码错误",
+        "translate": "Maling username o password"
+    },
+    {
+        "text": "服务器未响应",
+        "translate": "Hindi tumutugon ang server"
+    },
+    {
+        "text": "密码登录",
+        "translate": "Password login"
+    },
+    {
+        "text": "游客登录",
+        "translate": "Guest login"
+    },
+    {
+        "text": "请选择语言",
+        "translate": "Pumili ng wika"
+    },
+    {
+        "text": "账户名称",
+        "translate": "Account name"
+    },
+    {
+        "text": "账户密码",
+        "translate": "Password"
+    },
+    {
+        "text": "记住密码",
+        "translate": "Tandaan ang password"
+    },
+    {
+        "text": "字母或数字%d至%d位",
+        "translate": "Mga titik o numero %d hanggang %d digit\n"
+    },
+    {
+        "text": "你取消了该操作，请重试",
+        "translate": "Kanselahin mo ang operasyong ito, Pakisubukang muli"
+    },
+    {
+        "text": "你需先安装facebook，如果没有，请取消服务。",
+        "translate": "Kailangan mo munang mag-install ng facebook, maaari kang makipag-ugnayan sa aming customer service para sa karagdagang impormasyon."
+    },
+    {
+        "text": "绑定失败",
+        "translate": "Nabigo ang pagbubuklod"
+    },
+    {
+        "text": "亲，确定不再玩一会儿游戏了吗？",
+        "translate": "Sigurado ka bang hindi ka magpapatuloy sa paglalaro?"
+    },
+    {
+        "text": "网络连接失败，请重试",
+        "translate": "Nabigo ang koneksyon sa network, pakisubukang muli"
+    },
+    {
+        "text": "连接中，请稍后",
+        "translate": "Kumokonekta, mangyaring maghintay"
+    },
+    {
+        "text": "FACEBOOK登录",
+        "translate": "Pag-login sa Facebook"
+    },
+    {
+        "text": "请输入邀请码",
+        "translate": "Mangyaring ipasok ang code ng imbitasyon"
+    },
+    {
+        "text": "请确认两次密码输入一致",
+        "translate": "Pakitiyak na ang pagpasok ng password ay pareho"
+    },
+    {
+        "text": "确认密码",
+        "translate": "Kumpirmahin ang password"
+    },
+    {
+        "text": "邀请码",
+        "translate": "Code ng imbitasyon"
+    },
+    {
+        "text": "请选择屏幕尺寸",
+        "translate": "Mangyaring pumili ng laki ng screen"
+    },
+    {
+        "text": "%d至%d位",
+        "translate": "%d hanggang %d digit"
+    },
+    {
+        "text": "账号不能含有空白字符",
+        "translate": "Ang account ay hindi maaaring maglaman ng mga blangkong character"
+    },
+    {
+        "text": "邀请码不存在",
+        "translate": "Ang code ng imbitasyon ay hindi umiiral"
+    },
+    {
+        "text": "服务器正在维护当中",
+        "translate": "Nasa maintenance ang mga server"
+    },
+    {
+        "text": "当前账号无法登录，请联系客服",
+        "translate": "Hindi ma-log in ang kasalukuyang account. Mangyaring makipag-ugnayan sa customer service."
+    },
+    {
+        "text": "你账号已经被封号，请在一分钟后重新登陆，重登不了请联系客服",
+        "translate": "Na-block ang iyong account. Mangyaring mag-login muli sa isang minuto. Kung hindi pa rin magawa, mangyaring makipag-ugnayan sa customer service"
+    },
+    {
+        "text": "当前版本过低，点击确定更新",
+        "translate": "Masyadong mababa ang kasalukuyang bersyon, I-click upang kumpirmahin ang pag-update"
+    },
+    {
+        "text": "进入大厅失败，请重试",
+        "translate": "Nabigong pumasok sa bulwagan, pakisubukang muli"
+    },
+    {
+        "text": "断线重连，重新进入大厅主界面",
+        "translate": "Pagdiskonekta at muling pagkonekta, muling pagpasok sa pangunahing interface ng bulwagan"
+    },
+    {
+        "text": "网络连接失败，是否重试？",
+        "translate": "Nabigo ang koneksyon sa network, subukang muli?"
+    },
+    {
+        "text": "大王乌贼",
+        "translate": "Haring Pusit"
+    },
+    {
+        "text": "八爪章鱼",
+        "translate": "Pugita"
+    },
+    {
+        "text": "狂暴火龙",
+        "translate": "Apoy na Dragon"
+    },
+    {
+        "text": "霸王蟹",
+        "translate": "Haring alimango"
+    },
+    {
+        "text": "龙虾将军",
+        "translate": "Lobster General"
+    },
+    {
+        "text": "史前巨鳄",
+        "translate": "Prehistoric crocodile"
+    },
+    {
+        "text": "暗夜巨兽",
+        "translate": "Hayop sa Gabi"
+    },
+    {
+        "text": "海王荣耀",
+        "translate": "Glory Sea King"
+    },
+    {
+        "text": "铁甲飞龙",
+        "translate": "Dragon Iron Armor"
+    },
+    {
+        "text": "追风逐月",
+        "translate": "Hinahabol Ang Hangin "
+    },
+    {
+        "text": "哪吒闹海",
+        "translate": "Kwento Ni Nezha"
+    },
+    {
+        "text": "神龙宝藏",
+        "translate": "Kayamanan ng Dragon"
+    },
+    {
+        "text": "同类炸弹",
+        "translate": "kambal na bomba"
+    },
+    {
+        "text": "响震四方",
+        "translate": "Earthshaker"
+    },
+    {
+        "text": "羊鳄大战",
+        "translate": "Digmaang Buwaya"
+    },
+    {
+        "text": "海盗船",
+        "translate": "barkong pirata"
+    },
+    {
+        "text": "三色鳄鱼",
+        "translate": "Tatlong Kulay na Buwaya"
+    },
+    {
+        "text": "李逵劈鱼",
+        "translate": "Diyos ng Likui"
+    },
+    {
+        "text": "摇钱树",
+        "translate": "Puno ng Kayamanan"
+    },
+    {
+        "text": "金蟾捕鱼",
+        "translate": "Pangingisda ng Gold Toad"
+    },
+    {
+        "text": "黄金美人鱼",
+        "translate": "Gintong Sirena"
+    },
+    {
+        "text": "龙鲨争霸",
+        "translate": "Kapangyarihan ng Dragon shark"
+    },
+    {
+        "text": "火凤凰",
+        "translate": "Naglalagablab na Phoenix"
+    },
+    {
+        "text": "神龙转轮",
+        "translate": "Gulong Ng Diyos na Dragon"
+    },
+    {
+        "text": "野蛮丛林",
+        "translate": "Huca"
+    },
+    {
+        "text": "水浒英雄",
+        "translate": "SaterMargin"
+    },
+    {
+        "text": "财神道",
+        "translate": "CaiShen Dao"
+    },
+    {
+        "text": "糖果王国",
+        "translate": "Kaharian ng kendi"
+    },
+    {
+        "text": "好运年年",
+        "translate": "Chinese Festival"
+    },
+    {
+        "text": "幸运钻石",
+        "translate": "Lucky Diamond"
+    },
+    {
+        "text": "阿拉丁宝藏",
+        "translate": "Kayamanan ni Aladdin"
+    },
+    {
+        "text": "皇朝88",
+        "translate": "Imperyo 88"
+    },
+    {
+        "text": "神偷侠兔",
+        "translate": "ginang kuneho"
+    },
+    {
+        "text": "冰雪女神",
+        "translate": "diyosa ng niyebe"
+    },
+    {
+        "text": "金虎聚财",
+        "translate": "Kayamanan ng Tigre"
+    },
+    {
+        "text": "巨龙争霸",
+        "translate": "labanan ng dragon"
+    },
+    {
+        "text": "彩凤呈祥",
+        "translate": "limang Phoenix"
+    },
+    {
+        "text": "黄金88",
+        "translate": "Ginto 88"
+    },
+    {
+        "text": "福星发财",
+        "translate": "Fortune Babies"
+    },
+    {
+        "text": "发财树",
+        "translate": "Fortune Tree"
+    },
+    {
+        "text": "法老宝藏",
+        "translate": "Pantasya Ng Egypt"
+    },
+    {
+        "text": "熊猫宝藏",
+        "translate": "Panda Kayamanan"
+    },
+    {
+        "text": "狂野蛮牛",
+        "translate": "Kalabaw Sa Africa"
+    },
+    {
+        "text": "幸运美金",
+        "translate": "Masuwerteng Dolyar"
+    },
+    {
+        "text": "霹雳火",
+        "translate": "Apoy Ng Kulog"
+    },
+    {
+        "text": "齐天大圣",
+        "translate": "Walang Kamatayang Unggoy"
+    },
+    {
+        "text": "龙海公主",
+        "translate": "Prinsesa Ng Karagatan"
+    },
+    {
+        "text": "精灵宝藏",
+        "translate": "Leprechaun Stack Ginto"
+    },
+    {
+        "text": "维加斯之夜",
+        "translate": "Gabi Ng Vegas"
+    },
+    {
+        "text": "招财猫",
+        "translate": "Kapalaran Pusa"
+    },
+    {
+        "text": "富贵树",
+        "translate": "Mayamang Puno"
+    },
+    {
+        "text": "金猪报喜",
+        "translate": "Taon ng ginintuang baboy"
+    },
+    {
+        "text": "大福盛典",
+        "translate": "Ipakita Ang Dafu"
+    },
+    {
+        "text": "777",
+        "translate": "PITO"
+    },
+    {
+        "text": "88FORTUNES_5",
+        "translate": "88 FORTUNES_5"
+    },
+    {
+        "text": "DOUBLE BLESSINGS",
+        "translate": "DOBLENG PAGPAPALA"
+    },
+    {
+        "text": "DIAMOND ETERNITY",
+        "translate": "DIAMOND KAWALANG-HANGGAN"
+    },
+    {
+        "text": "88FORTUNES_3",
+        "translate": "88 FORTUNES_3"
+    },
+    {
+        "text": "DUANWU",
+        "translate": "DUANWU"
+    },
+    {
+        "text": "DANCING DRUMS",
+        "translate": "sumasayaw na tambol"
+    },
+    {
+        "text": "RISING FORTUNES",
+        "translate": "TUMATAAS NA KAPALARAN"
+    },
+    {
+        "text": "5TREASURES",
+        "translate": "5 kayamanan"
+    },
+    {
+        "text": "财富之眼",
+        "translate": "Mata ng kapalaran"
+    },
+    {
+        "text": "东海龙王",
+        "translate": "hari ng dragon sa silangang dagat"
+    },
+    {
+        "text": "女娲",
+        "translate": "Nuwa"
+    },
+    {
+        "text": "锦鲤报喜",
+        "translate": "Ulat Ng Koi"
+    },
+    {
+        "text": "财神到",
+        "translate": "Diyos ng kayamanan"
+    },
+    {
+        "text": "五龙争霸",
+        "translate": "Limang Dragons"
+    },
+    {
+        "text": "财神赐宝",
+        "translate": "Ang Diyos ng kayamanan ay nagbibigay ng kayamanan"
+    },
+    {
+        "text": "龙之宝藏",
+        "translate": "Kayamanan ng Dragon"
+    },
+    {
+        "text": "运财锦鲤",
+        "translate": "Kapalaran Koi"
+    },
+    {
+        "text": "天马",
+        "translate": "Makalangit Na Kabayo"
+    },
+    {
+        "text": "龙族王子",
+        "translate": "Dragon Prinsipe"
+    },
+    {
+        "text": "运财龙神",
+        "translate": "Dragon diyos ng kapalaran"
+    },
+    {
+        "text": "女侠",
+        "translate": "Lady Mandirigma"
+    },
+    {
+        "text": "招财狮",
+        "translate": "Fortune Leon"
+    },
+    {
+        "text": "龙腾虎啸",
+        "translate": "Dragon at tigre"
+    },
+    {
+        "text": "中秋佳节",
+        "translate": "Pagdiriwang Ng Kalagitnaan Ng Taglagas"
+    },
+    {
+        "text": "美女猫咪",
+        "translate": "Magandang Pusa"
+    },
+    {
+        "text": "财神在线",
+        "translate": "Diyos ng kayamanan Online"
+    },
+    {
+        "text": "五皇争霸",
+        "translate": "Limang Hari"
+    },
+    {
+        "text": "幸运女皇",
+        "translate": "Masuwerteng Reyna"
+    },
+    {
+        "text": "虎威公主",
+        "translate": "prinsesa ng tigre"
+    },
+    {
+        "text": "熊猫滚滚",
+        "translate": "Panda Lumiligid"
+    },
+    {
+        "text": "大圣爷",
+        "translate": "Ang Dakilang Pantas"
+    },
+    {
+        "text": "鸿福",
+        "translate": "Hong Fu"
+    },
+    {
+        "text": "熊猫宝贝",
+        "translate": "sanggol na panda"
+    },
+    {
+        "text": "双喜熊猫",
+        "translate": "Double kaligayahan panda"
+    },
+    {
+        "text": "虎虎献瑞",
+        "translate": "Tigre at tigre kasalukuyan"
+    },
+    {
+        "text": "金福满堂",
+        "translate": "Golden Pagpapala Buong Bahay"
+    },
+    {
+        "text": "赤红女皇",
+        "translate": "Pulang Reyna"
+    },
+    {
+        "text": "天龙地虎",
+        "translate": "Makalangit na Dragon at makalupang Tigre"
+    },
+    {
+        "text": "巨龙宝藏",
+        "translate": "kayamanan ng dragon"
+    },
+    {
+        "text": "富贵之花",
+        "translate": "Ang bulaklak ng kayamanan"
+    },
+    {
+        "text": "财富之树",
+        "translate": "Puno ng kayamanan"
+    },
+    {
+        "text": "终极火链",
+        "translate": "Ultimate Chain Ng Sunog"
+    },
+    {
+        "text": "女猎手",
+        "translate": "Huntress"
+    },
+    {
+        "text": "紫晶人鱼",
+        "translate": "Amatista Sirena"
+    },
+    {
+        "text": "冥焰赤龙",
+        "translate": "Madilim Na Apoy ng Pulang Dragon"
+    },
+    {
+        "text": "蛮荒凶兽",
+        "translate": "Mabangis na hayop"
+    },
+    {
+        "text": "金色龙虾将军",
+        "translate": "Pangkalahatang Gintong Lobster"
+    },
+    {
+        "text": "招财宝蟾",
+        "translate": "Lucky kayamanan palaka"
+    },
+    {
+        "text": "深海秘籍",
+        "translate": "Malalim Na Dagat Cheat"
+    },
+    {
+        "text": "远古秘境",
+        "translate": "Sinaunang Lihim Na Kaharian"
+    },
+    {
+        "text": "请求充值失败，请联系客服后重试",
+        "translate": "Nabigo ang kahilingan para sa recharge. Mangyaring makipag-ugnay sa serbisyo sa customer at subukang muli."
+    },
+    {
+        "text": "恭喜您，充值成功，获得NNN金币",
+        "translate": "Binabati kita!Top up tagumpay, Kumuha NNN gintong barya"
+    },
+    {
+        "text": "google充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Nabigo ang Google Play，walang nauugnay na order ，serbisyo sa pakikipag-ugnay sa Pls"
+    },
+    {
+        "text": "非android用户不可用",
+        "translate": "Hindi magagamit para sa mga hindi gumagamit ng Android"
+    },
+    {
+        "text": "暂不可用，请选择其他充值方式",
+        "translate": "Pansamantalang hindi magagamit, mangyaring pumili ng isa pang paraan ng recharge"
+    },
+    {
+        "text": "绑定号码成功",
+        "translate": "Matagumpay Ang Nagbubuklod Na Numero"
+    },
+    {
+        "text": "本Facebook账号已经绑定",
+        "translate": "Ang Facebook ay nakatali sa iba pang mga account"
+    },
+    {
+        "text": "恭喜[vip][name]使用[bet]倍炮在[gameId]中击杀[fish]获得[coin]金币!",
+        "translate": "Binabati kita sa [vip] [pangalan] para sa paggamit ng [masamang] beses na kanyon upang patayin ang [isda] sa [game Id] upang makakuha ng [barya] ginto!"
+    },
+    {
+        "text": "恭喜[vip][name]在[gameId]中赢得[winMoney]金币!",
+        "translate": "Binabati kita sa [vip] [pangalan] para sa panalong [manalo ng pera] ginto sa [Game Id]!"
+    },
+    {
+        "text": "已经是第一页了",
+        "translate": "Ito na ang unang pahina"
+    },
+    {
+        "text": "已经是最后一页了",
+        "translate": "Ito ang huling pahina"
+    },
+    {
+        "text": "ID不能为空",
+        "translate": "Hindi maaaring walang laman ang ID"
+    },
+    {
+        "text": "最少赠送NNN金币，并且自身最少保留SSS金币",
+        "translate": "Minimum gift NNN coin, hindi bababa sa panatilihin ang SSS coin"
+    },
+    {
+        "text": "数值不能含有小数",
+        "translate": "Ang numero ay hindi maaaring maglaman ng decimal"
+    },
+    {
+        "text": "密码不能为空",
+        "translate": "Hindi maaaring walang laman ang Password"
+    },
+    {
+        "text": "成功赠送NNN枚金币给AAA",
+        "translate": "Ang matagumpay na regalo ng NNN gold coin sa AAA"
+    },
+    {
+        "text": "请输入正确的ID",
+        "translate": "Mangyaring ipasok ang tamang ID"
+    },
+    {
+        "text": "密码输入错误请重新输入",
+        "translate": "Error sa pag-input ng Password Mangyaring muling ipasok"
+    },
+    {
+        "text": "赠送金币失败",
+        "translate": "Nabigo ang giftaway ng gintong barya"
+    },
+    {
+        "text": "请输入密码",
+        "translate": "Mangyaring input ng isang password"
+    },
+    {
+        "text": "密码至少需要8位",
+        "translate": "Ang Password ay nangangailangan ng hindi bababa sa 8 digit"
+    },
+    {
+        "text": "验证码已过期，请重新发送",
+        "translate": "Ang code ng pagpapatunay ay nag-expire na. Mangyaring ipadala ito muli"
+    },
+    {
+        "text": "密码设置失败",
+        "translate": "Nabigo Ang Setting Ng Password"
+    },
+    {
+        "text": "8到12位之间",
+        "translate": "Sa pagitan ng 8 at 12 bits"
+    },
+    {
+        "text": "账号只能NNN至SSS位",
+        "translate": "Account pwede lang NNN sa SSS bit"
+    },
+    {
+        "text": "密码只能NNN至SSS位",
+        "translate": "Password pwede lang NNN sa SSS bits"
+    },
+    {
+        "text": "账号密码绑定成功",
+        "translate": "Ang pagbubuklod ng password ng account ay matagumpay"
+    },
+    {
+        "text": "帐户名不能为空",
+        "translate": "Ang pangalan ng account ay hindi maaaring walang laman"
+    },
+    {
+        "text": "重复注册",
+        "translate": "Paulit-ulit na pagpaparehistro"
+    },
+    {
+        "text": "首充",
+        "translate": "Unang singil"
+    },
+    {
+        "text": "绑定金返利",
+        "translate": "Magbigkis ng cash rebate"
+    },
+    {
+        "text": "豪礼重重",
+        "translate": "Marangyang Regalo"
+    },
+    {
+        "text": "官方地址",
+        "translate": "Opisyal na address"
+    },
+    {
+        "text": "未知数据包",
+        "translate": "Hindi Kilalang Packet"
+    },
+    {
+        "text": "老虎机选座返回大厅，数据发生错误",
+        "translate": "Ang pagpili ng upuan ng Slot machine ay bumalik sa lobby, nangyayari ang mga error sa data"
+    },
+    {
+        "text": "游戏更新失败，是否重试?",
+        "translate": "Nabigo ang pag-update ng laro. Nais mo bang subukang muli?"
+    },
+    {
+        "text": "该座位无效，请选择其它位置",
+        "translate": "Ang upuan na ito ay hindi wasto, mangyaring pumili ng isa pang upuan"
+    },
+    {
+        "text": "该座位已经有人",
+        "translate": "Ang upuan ay nasakop na"
+    },
+    {
+        "text": "状态不一致，自动回大厅",
+        "translate": "Katayuan ay hindi pantay-pantay, awtomatikong bumalik sa lobby"
+    },
+    {
+        "text": "更换头像失败",
+        "translate": "Pagkabigo ng kapalit"
+    },
+    {
+        "text": "请在这里输入你的问题",
+        "translate": "Mangyaring ipasok ang iyong katanungan dito"
+    },
+    {
+        "text": "请输入您的问题",
+        "translate": "Mangyaring ipasok ang iyong katanungan"
+    },
+    {
+        "text": "发件人:系统",
+        "translate": "Nagpadala:Sistema"
+    },
+    {
+        "text": "欢迎",
+        "translate": "Maligayang pagdating"
+    },
+    {
+        "text": "欢迎NNN全新技术打造 多种捕鱼游戏大集合NNN多多推荐朋友来玩哦！",
+        "translate": "WelcomeNNN bagong teknolohiya upang lumikha ng isang malaking koleksyon ng mga pangingisda gamesNNNA maraming mga inirekumendang kaibigan upang i-play!"
+    },
+    {
+        "text": "金币追回",
+        "translate": "Pagbawi ng barya"
+    },
+    {
+        "text": "您好，由于客服人员误操作，导致充值出现错误，现在触发系统金币追回保护功能：误充值[{total_recover_money}]金币,现已追回[{recover_money}]金币,已使用的[{money}]金币将不再进行追回,给您造成的不便，请您谅解。",
+        "translate": "Kumusta, dahil sa maling operasyon ng kawani ng serbisyo sa customer, naganap ang error sa recharge, at ngayon ay nag-trigger ng system gold coin recovery protection function: false recharge [{total_recover_money}] gintong barya, ngayon ay nakuhang muli [{recover_money}] gintong barya, ginamit [{pera} ] ang mga gintong barya ay hindi na mababawi, mangyaring patawarin kami para sa anumang abala na dulot."
+    },
+    {
+        "text": "赠送通知",
+        "translate": "Paunawa ng regalo"
+    },
+    {
+        "text": "玩家:  {account_id} 向你赠送 {money}金币，已存入您的保险箱，请查收！",
+        "translate": "miyembro: {account_id} bigyan ka ng {pera} barya, na na-deposito sa iyong ligtas, mangyaring suriin!"
+    },
+    {
+        "text": "您向玩家:  {account_id} 赠送 {money}金币，已存入他的保险箱，请悉知！",
+        "translate": "Nagbibigay ka ng {pera} barya sa miyembro: {account_id}, na na-deposito sa kanyang ligtas!"
+    },
+    {
+        "text": "充值通知",
+        "translate": "Paunawa sa Recharge"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功！",
+        "translate": "ang iyong numero ng order ay {order_num},ang halaga ng deposito ay {pera}, ang deposito ay naging matagumpay !"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 已充值成功，额外赠送 {washcode} 绑定金币！",
+        "translate": "Ang iyong order: {order_num}, top-up na halaga: {pera}, ang top-up ay matagumpay na nakumpleto, at ang karagdagang {washcode} na nagbubuklod na mga gintong barya ay ipapakita!"
+    },
+    {
+        "text": "您的订单: {order_num},充值金额: {money} , 充值失败，失败原因：{msg}, 有任何疑问请联系客服！",
+        "translate": "Ang iyong order: {order_num}, top-up na halaga: {pera}, nabigo ang top-up, dahilan para sa pagkabigo: {msg}, mangyaring makipag-ugnay sa serbisyo sa customer kung mayroon kang anumang mga katanungan!"
+    },
+    {
+        "text": "领取奖励失败",
+        "translate": "Nabigong mag-claim ng gantimpala"
+    },
+    {
+        "text": "请输入新昵称",
+        "translate": "Pinakamataas na 6 na character"
+    },
+    {
+        "text": "修改昵称成功",
+        "translate": "Ang matagumpay na pagbabago ng mga palayaw"
+    },
+    {
+        "text": "该昵称已被使用，请重新输入",
+        "translate": "Ang palayaw na ito ay ginagamit. Mangyaring muling ipasok ito"
+    },
+    {
+        "text": "修改昵称失败",
+        "translate": "Pagkabigo na baguhin ang mga palayaw"
+    },
+    {
+        "text": "没有更多",
+        "translate": "Wala nang"
+    },
+    {
+        "text": "用户取消选择系统照片",
+        "translate": "Larawan ng system ng deselect ng gumagamit"
+    },
+    {
+        "text": "图片已选择",
+        "translate": "Napili ang larawan"
+    },
+    {
+        "text": "网络异常，图片上传失败",
+        "translate": "Ang network ay abnormal, Nabigo ang pag-upload ng larawan"
+    },
+    {
+        "text": "网络异常，正在努力上传图片~",
+        "translate": "Ang network ay abnormal, sinusubukan na mag-upload ng mga larawan~"
+    },
+    {
+        "text": "当前绑定金额",
+        "translate": "Kasalukuyang halaga ng alkansya"
+    },
+    {
+        "text": "当前金额",
+        "translate": "Kasalukuyang halaga"
+    },
+    {
+        "text": "绑定保险箱金额",
+        "translate": "Nakabigkis na halaga na diniposito alkansya"
+    },
+    {
+        "text": "保险箱金额",
+        "translate": "Ligtas na deposito"
+    },
+    {
+        "text": "请输入金额！！！",
+        "translate": "Mangyaring input ang halaga!!!"
+    },
+    {
+        "text": "操作成功",
+        "translate": "Tagumpay Sa Operasyon"
+    },
+    {
+        "text": "复制成功",
+        "translate": "Tagumpay sa pagtitiklop"
+    },
+    {
+        "text": "截图失败",
+        "translate": "Nabigo ang Screenshot"
+    },
+    {
+        "text": "保存截图文件失败",
+        "translate": "Nabigong i-save ang screenshot file"
+    },
+    {
+        "text": "收藏失败",
+        "translate": "Nabigo ang koleksyon"
+    },
+    {
+        "text": "收藏成功",
+        "translate": "Tagumpay sa koleksyon"
+    },
+    {
+        "text": "我的ID: %s",
+        "translate": "Aking ID: %s"
+    },
+    {
+        "text": "VIP%d以上",
+        "translate": "VIP % d o higit pa"
+    },
+    {
+        "text": "所有玩家",
+        "translate": "Lahat ng miyembro"
+    },
+    {
+        "text": "* 开启绑定金币使用权限。",
+        "translate": "* Paganahin ang paggamit ng mga nakagapos na gintong barya"
+    },
+    {
+        "text": "* 在游戏中可获取绑定金币。",
+        "translate": "* Maaari kang makakuha ng nakatali gintong barya sa laro"
+    },
+    {
+        "text": "* 达成此等级，获取%s绑定金币。",
+        "translate": "* Abutin ang antas na ito at makakuha ng % s bound gold coins"
+    },
+    {
+        "text": "* 在游戏中可获取更多绑定金币。",
+        "translate": "* Kumuha ng higit pang mga nakagapos na gintong barya sa laro"
+    },
+    {
+        "text": "* 可参与更多活动。",
+        "translate": "* Maaaring lumahok sa higit pang mga aktibidad"
+    },
+    {
+        "text": "开启绑定金币使用权限",
+        "translate": "Paganahin ang paggamit ng mga nakagapos na gintong barya"
+    },
+    {
+        "text": "如果有其他问题可直接联系'在线客服'",
+        "translate": "Kung mayroon kang iba pang mga katanungan,maaari kang direktang makipag-ugnay sa 'Customer Service'"
+    },
+    {
+        "text": "没有更多的消息了",
+        "translate": "Wala nang balita"
+    },
+    {
+        "text": "请输入您宝贵的建议(200字以内)",
+        "translate": "Mangyaring ibigay ang iyong mungkahi (sa 200 salita)"
+    },
+    {
+        "text": "您的建议已经发送",
+        "translate": "Ang iyong mungkahi ay naipadala"
+    },
+    {
+        "text": "请完善建议内容",
+        "translate": "Mangyaring magbigay ng magandang payo"
+    },
+    {
+        "text": "亲，网络太差，大厅检测更新失败，请退出游戏检查网络",
+        "translate": "Nabigong pag-update dahil sa mahinang koneksyon, mangyaring suriin ang iyong koneksyon"
+    },
+    {
+        "text": "当前房间需要NNN金币才可进入，前往保险箱取钱或进行充值?",
+        "translate": "Nangangailangan ng minimum na barya ng NNN upang makapasok sa silid. Pumunta sa ligtas upang makakuha ng pera o muling magkarga?"
+    },
+    {
+        "text": "获取俱乐部信息失败",
+        "translate": "Nabigong makakuha ng impormasyon sa club"
+    },
+    {
+        "text": "领取福利失败",
+        "translate": "Nabigong mag-claim ng mga benepisyo"
+    },
+    {
+        "text": "本地未找到相关游戏",
+        "translate": "Walang mga kaugnay na laro na natagpuan nang lokal"
+    },
+    {
+        "text": "进入等级房失败",
+        "translate": "Pagkabigo na pumasok sa grade housing"
+    },
+    {
+        "text": "没有空闲的游戏服",
+        "translate": "Walang idle game damit"
+    },
+    {
+        "text": "当前座位已有人或房间已满",
+        "translate": "Ang kasalukuyang upuan ay inookupahan o ang silid ay puno."
+    },
+    {
+        "text": "请耐心等待更新完成",
+        "translate": "Mangyaring matiyagang maghintay para makumpleto ang pag-update"
+    },
+    {
+        "text": "正在检查游戏是否需要更新",
+        "translate": "Sinusuri kung ang laro ay kailangang ma-update"
+    },
+    {
+        "text": "请耐心等待其他游戏更新完成",
+        "translate": "Mangyaring maghintay matiyagang para sa iba pang mga update ng laro upang makumpleto"
+    },
+    {
+        "text": "领取奖励成功",
+        "translate": "Matagumpay na makatanggap ng mga gantimpala"
+    },
+    {
+        "text": "兑换失败，收到退款NNN金币",
+        "translate": "Exchange kabiguan, refund NNN barya natanggap"
+    },
+    {
+        "text": "获得来自SSS赠送的NNN枚金币",
+        "translate": "Kumuha ng NNN gold coins mula sa SSS"
+    },
+    {
+        "text": "该账号已在其他设备登陆，您已被强制登出！！！",
+        "translate": "Ang account na ito ay naka-log in sa iba pang mga aparato, napilitan kang mag-log out!!!"
+    },
+    {
+        "text": "收藏",
+        "translate": "Kolektahin ang"
+    },
+    {
+        "text": "收藏个人信息",
+        "translate": "Paboritong personal na impormasyon"
+    },
+    {
+        "text": "获取代理信息失败!",
+        "translate": "Nabigong makakuha ng impormasyon sa club"
+    },
+    {
+        "text": "会长无法退出俱乐部",
+        "translate": "Nabigong makakuha ng impormasyon ng ahente"
+    },
+    {
+        "text": "是否确认退出俱乐部？",
+        "translate": "Sigurado ka bang umalis sa club?"
+    },
+    {
+        "text": "退出俱乐部成功",
+        "translate": "matagumpay na umalis sa club"
+    },
+    {
+        "text": "%d小时%d分后可退出俱乐部。",
+        "translate": "Maaari kang umalis sa club pagkatapos ng %d na oras at %d minuto."
+    },
+    {
+        "text": "退出俱乐部失败",
+        "translate": "Nabigong umalis sa club"
+    },
+    {
+        "text": "领取返利失败",
+        "translate": "Nabigong mag-claim ng rebate"
+    },
+    {
+        "text": "获取记录日志失败",
+        "translate": "Nabigong makakuha ng record log"
+    },
+    {
+        "text": "欢迎加入俱乐部",
+        "translate": "Maligayang pagdating upang sumali sa club"
+    },
+    {
+        "text": "邀请码:%s",
+        "translate": "Code ng imbitasyon:%s"
+    },
+    {
+        "text": "公告修改失败!",
+        "translate": "Nabigo ang pagbabago ng anunsyo"
+    },
+    {
+        "text": "公告修改成功!",
+        "translate": "Matagumpay na binago ang anunsyo"
+    },
+    {
+        "text": "总人数:{total_man}   在线人数:{online_man}",
+        "translate": "kabuuang mga tao: {total_man} mga online na gumagamit:{online_man}"
+    },
+    {
+        "text": "在线",
+        "translate": "Online"
+    },
+    {
+        "text": "%d年前在线",
+        "translate": "Online % d taon na ang nakakaraan"
+    },
+    {
+        "text": "%d月前在线",
+        "translate": "Online % D mga buwan na nakalipas"
+    },
+    {
+        "text": "%d天前在线",
+        "translate": "Online % D mga araw na nakalipas"
+    },
+    {
+        "text": "%d小时前在线",
+        "translate": "Online % d oras na nakalipas"
+    },
+    {
+        "text": "刚刚离线",
+        "translate": "Offline lang"
+    },
+    {
+        "text": "请输入俱乐部名字",
+        "translate": "Mangyaring ipasok ang pangalan ng club"
+    },
+    {
+        "text": "创建俱乐部失败",
+        "translate": "Nabigong lumikha ng club"
+    },
+    {
+        "text": "请求俱乐部信息失败",
+        "translate": "Nabigong humiling ng impormasyon sa club"
+    },
+    {
+        "text": "你还不是正式账号，请绑定账号后再操作!",
+        "translate": "Ikaw ay hindi isang opisyal na account, mangyaring magbigkis ang account bago operating"
+    },
+    {
+        "text": "收藏推广信息",
+        "translate": "Impormasyon sa promosyon ng koleksyon"
+    },
+    {
+        "text": "请输入推广码",
+        "translate": "Mangyaring ipasok ang code ng promosyon"
+    },
+    {
+        "text": "加入俱乐部失败",
+        "translate": "Nabigong sumali sa club"
+    },
+    {
+        "text": "昨日累计:{total}",
+        "translate": "Pinagsama-samang kahapon: {kabuuan}"
+    },
+    {
+        "text": "总累计:{total}",
+        "translate": "Kabuuang pinagsama-samang: {kabuuan}"
+    },
+    {
+        "text": "领取记录",
+        "translate": "Talaan ng koleksyon"
+    },
+    {
+        "text": "领取时间",
+        "translate": "Oras ng koleksyon"
+    },
+    {
+        "text": "领取金币",
+        "translate": "Kolektahin ang mga gintong barya"
+    },
+    {
+        "text": "暂无领取记录",
+        "translate": "Walang record ng koleksyon"
+    },
+    {
+        "text": "已自动保存到保险箱",
+        "translate": "Nai-save sa safebox"
+    },
+    {
+        "text": "分享",
+        "translate": "ibahagi"
+    },
+    {
+        "text": "领   取",
+        "translate": "Kumuha ng"
+    },
+    {
+        "text": "退出俱乐部",
+        "translate": "Umalis sa club"
+    },
+    {
+        "text": "成员",
+        "translate": "miyembro"
+    },
+    {
+        "text": "返利",
+        "translate": "Rebate"
+    },
+    {
+        "text": "名称",
+        "translate": "pangalan"
+    },
+    {
+        "text": "加入时间",
+        "translate": "Sumali sa oras"
+    },
+    {
+        "text": "状态",
+        "translate": "Katayuan"
+    },
+    {
+        "text": "创建",
+        "translate": "lumikha"
+    },
+    {
+        "text": "请输入俱乐部名称",
+        "translate": "Mangyaring ipasok ang pangalan ng club"
+    },
+    {
+        "text": "邀请码：",
+        "translate": "Code ng paanyaya:"
+    },
+    {
+        "text": "保存图片以获取游戏下载地址",
+        "translate": "I-Save ang larawan upang makuha ang address ng pag-download ng laro"
+    },
+    {
+        "text": "加入",
+        "translate": "sumali sa"
+    },
+    {
+        "text": "加入俱乐部请输入邀请码",
+        "translate": "Mangyaring ipasok ang code ng paanyaya upang sumali sa club"
+    },
+    {
+        "text": "请选择俱乐部头像",
+        "translate": "Mangyaring pumili ng isang club avatar"
+    },
+    {
+        "text": "昨日排行",
+        "translate": "Kahapon"
+    },
+    {
+        "text": "总排行",
+        "translate": "Pangkalahatang"
+    },
+    {
+        "text": "排名",
+        "translate": "Ranggo"
+    },
+    {
+        "text": "捕鱼/老虎机洗码量",
+        "translate": "Pangingisda / Slot machine"
+    },
+    {
+        "text": "选 桌",
+        "translate": "Pumili ng isang mesa"
+    },
+    {
+        "text": "充值",
+        "translate": "Muling magkarga"
+    },
+    {
+        "text": "保险箱",
+        "translate": "Ligtas"
+    },
+    {
+        "text": "转账记录",
+        "translate": "Maglipat ng mga tala"
+    },
+    {
+        "text": "转账编码",
+        "translate": "Ilipat ang code"
+    },
+    {
+        "text": "收款玩家",
+        "translate": "Tumatanggap ng miyembro"
+    },
+    {
+        "text": "金额",
+        "translate": "Halaga"
+    },
+    {
+        "text": "转账时间",
+        "translate": "Oras ng paglipat"
+    },
+    {
+        "text": "首页",
+        "translate": "Tahanan"
+    },
+    {
+        "text": "上一页",
+        "translate": "Nakaraang pahina"
+    },
+    {
+        "text": "下一页",
+        "translate": "Susunod na pahina"
+    },
+    {
+        "text": "末页",
+        "translate": "Huling pahina"
+    },
+    {
+        "text": "赠送用户ID",
+        "translate": "ID ng gumagamit ng regalo"
+    },
+    {
+        "text": "金币数量",
+        "translate": "Bilang ng mga gintong barya"
+    },
+    {
+        "text": "输入密码",
+        "translate": "Ipasok ang password"
+    },
+    {
+        "text": "赠送记录",
+        "translate": "Talaan ng regalo"
+    },
+    {
+        "text": "请确认密码",
+        "translate": "Mangyaring kumpirmahin ang password"
+    },
+    {
+        "text": "绑定账号成为",
+        "translate": "Panagutin ang iyong account upang maging"
+    },
+    {
+        "text": "查看VIP权益",
+        "translate": "Tingnan ang mga karapatan sa VIP"
+    },
+    {
+        "text": "请选择你的头像",
+        "translate": "Mangyaring piliin ang iyong avatar"
+    },
+    {
+        "text": "发送",
+        "translate": "Ipadala"
+    },
+    {
+        "text": "上传图片",
+        "translate": "Mag-Upload ng larawan"
+    },
+    {
+        "text": "活动时间:",
+        "translate": "Oras ng aktibidad:"
+    },
+    {
+        "text": "参与条件:",
+        "translate": "Mga kondisyon sa pakikilahok:"
+    },
+    {
+        "text": "领取",
+        "translate": "tumanggap ng"
+    },
+    {
+        "text": "前往",
+        "translate": "Pumunta Sa"
+    },
+    {
+        "text": "输入新名称",
+        "translate": "Ipasok ang bagong pangalan"
+    },
+    {
+        "text": "账户只能修改一次",
+        "translate": "Account ay maaari lamang mabago nang isang beses"
+    },
+    {
+        "text": "确认修改",
+        "translate": "Kumpirmahin ang pagbabago"
+    },
+    {
+        "text": "今日赢金币量",
+        "translate": "Halaga ng mga gintong barya nanalo ngayon"
+    },
+    {
+        "text": "玩家",
+        "translate": "miyembro"
+    },
+    {
+        "text": "今日赢金币",
+        "translate": "Manalo ng mga barya ngayon"
+    },
+    {
+        "text": "未上榜",
+        "translate": "Wala sa listahan"
+    },
+    {
+        "text": "存款",
+        "translate": "Deposito"
+    },
+    {
+        "text": "取款",
+        "translate": "Pag withdraw"
+    },
+    {
+        "text": "绑定金币取款",
+        "translate": "Pag withdraw ng nakabigkis na gintong barya"
+    },
+    {
+        "text": "绑定金币存款",
+        "translate": "Pag deposito ng nakabigkis na gintong barya"
+    },
+    {
+        "text": "最大",
+        "translate": "Ang pinakamalaking"
+    },
+    {
+        "text": "确认存款",
+        "translate": "Kumpirmahin ang deposito"
+    },
+    {
+        "text": "确认取款",
+        "translate": "Kumpirmahin ang pag-atras"
+    },
+    {
+        "text": "修改头像",
+        "translate": "Baguhin ang avatar"
+    },
+    {
+        "text": "复制",
+        "translate": "Kopyahin"
+    },
+    {
+        "text": "成为VIP",
+        "translate": "Maging isang VIP"
+    },
+    {
+        "text": "退出游戏",
+        "translate": "Umalis sa laro"
+    },
+    {
+        "text": "昵称",
+        "translate": "Palayaw"
+    },
+    {
+        "text": "ID",
+        "translate": "ID"
+    },
+    {
+        "text": "音 乐",
+        "translate": "Musika"
+    },
+    {
+        "text": "音 效",
+        "translate": "Epekto ng tunog"
+    },
+    {
+        "text": "特 效",
+        "translate": "Mga espesyal na epekto"
+    },
+    {
+        "text": "滚动报喜",
+        "translate": "Lumiligid Na Anunsyo"
+    },
+    {
+        "text": "恭喜获得奖励",
+        "translate": "Binabati kita sa pagkuha ng gantimpala"
+    },
+    {
+        "text": "绑定账号后解锁转盘",
+        "translate": "I-Unlock pagkatapos ng pagbubuklod"
+    },
+    {
+        "text": "绑定账号",
+        "translate": "Magbigkis ng account"
+    },
+    {
+        "text": "不用了",
+        "translate": "hindi na kailangan"
+    },
+    {
+        "text": "游戏时间越多，获得的绑定金返利越多。",
+        "translate": "Mas maraming oras na paglalaro ay mas maraming pagkakataong makakuha ng nakabigkis na barya at maging gintong barya"
+    },
+    {
+        "text": "当前进度",
+        "translate": "Kasalukuyang pag-unlad"
+    },
+    {
+        "text": "昨日进度",
+        "translate": "Pag-unlad kahapon"
+    },
+    {
+        "text": "可领取",
+        "translate": "Magagamit"
+    },
+    {
+        "text": "去游戏",
+        "translate": "Pumunta sa laro"
+    },
+    {
+        "text": "每天24点发放奖励，奖励保存24小时，限时未领取作废。",
+        "translate": "Ang mga gantimpala ay ibinibigay sa 24: 00 araw-araw, at ang mga gantimpala ay itinatago sa loob ng 24 na oras."
+    },
+    {
+        "text": "提示：通过玩游戏得到绑定金币提升VIP经验。",
+        "translate": "Tip: Kumuha ng mga nakagapos na gintong barya upang mapabuti ang karanasan sa VIP sa pamamagitan ng paglalaro ng mga laro."
+    },
+    {
+        "text": "当前等级",
+        "translate": "kasalukuyang antas"
+    },
+    {
+        "text": "您的vip等级已达到最高级！",
+        "translate": "Ang iyong antas ng VIP ay umabot sa pinakamataas na antas!"
+    },
+    {
+        "text": "联系客服",
+        "translate": "Makipag-ugnay sa serbisyo sa customer"
+    },
+    {
+        "text": "常见问题",
+        "translate": "Mga Madalas Itanong"
+    },
+    {
+        "text": "在线客服",
+        "translate": "Serbisyo sa online na customer"
+    },
+    {
+        "text": "提交建议",
+        "translate": "Magsumite ng mga mungkahi"
+    },
+    {
+        "text": "邮件",
+        "translate": "Mail"
+    },
+    {
+        "text": "阅读",
+        "translate": "Pagbasa"
+    },
+    {
+        "text": "已读",
+        "translate": "Basahin"
+    },
+    {
+        "text": "您的意见将帮助我们改进产品和服务",
+        "translate": "Ang iyong mga mungkahi ay makakatulong sa amin upang mapabuti ang aming mga serbisyo"
+    },
+    {
+        "text": "真实姓名",
+        "translate": "Tunay na pangalan"
+    },
+    {
+        "text": "手机号码",
+        "translate": "Numero ng telepono"
+    },
+    {
+        "text": "建议回复需要通过手机号查看，请填写真实的手机号码",
+        "translate": "Inirerekomenda na ang tugon ay kailangang suriin ng numero ng mobile phone, mangyaring punan ang tunay na numero ng mobile phone"
+    },
+    {
+        "text": "提交",
+        "translate": "Isumite ang"
+    },
+    {
+        "text": "图片",
+        "translate": "Larawan"
+    },
+    {
+        "text": "是否退出游戏",
+        "translate": "Gusto mo bang umalis sa laro?"
+    },
+    {
+        "text": "金币不足",
+        "translate": "Hindi sapat ang ginto"
+    },
+    {
+        "text": "账号只能由NNN至SSS位的数字和字母组成",
+        "translate": "Ang account ay maaari lamang binubuo ng mga numero at mga titik mula sa NNN sa SSS"
+    },
+    {
+        "text": "密码只能由NNN至SSS位的数字和字母组成",
+        "translate": "Ang password ay maaari lamang binubuo ng NNN sa SSS digit at titik"
+    },
+    {
+        "text": "全部",
+        "translate": "Lahat"
+    },
+    {
+        "text": "已禁言",
+        "translate": "Naka-mute"
+    },
+    {
+        "text": "未禁言",
+        "translate": "hindi pipi"
+    },
+    {
+        "text": "设置成功",
+        "translate": "matagumpay na itinakda"
+    },
+    {
+        "text": "设置失败",
+        "translate": "Nabigo Ang Pag-Setup"
+    },
+    {
+        "text": "公频",
+        "translate": "Menasheng Pampubliko"
+    },
+    {
+        "text": "俱乐部",
+        "translate": "klab"
+    },
+    {
+        "text": "密语",
+        "translate": "Pribadong mensahe"
+    },
+    {
+        "text": "群发",
+        "translate": "Maramihang"
+    },
+    {
+        "text": "点击输入消息",
+        "translate": "I-Click upang ipasok ang mensahe"
+    },
+    {
+        "text": "请输入聊天消息",
+        "translate": "Mangyaring magpasok ng isang mensahe sa chat"
+    },
+    {
+        "text": "您已被禁言",
+        "translate": "ikaw ay pinagbawalan"
+    },
+    {
+        "text": "消息发送失败",
+        "translate": "Nabigong magpadala ng mensahe"
+    },
+    {
+        "text": "模板数目已达最大, 无法再新建",
+        "translate": "Ang bilang ng mga template ay umabot sa maximum at hindi na malilikha pa"
+    },
+    {
+        "text": "请输入标题！",
+        "translate": "Mangyaring magpasok ng isang pamagat!"
+    },
+    {
+        "text": "请输入文字信息！",
+        "translate": "Mangyaring ipasok ang text message!"
+    },
+    {
+        "text": "请输入标题",
+        "translate": "Mangyaring magpasok ng isang pamagat"
+    },
+    {
+        "text": "请输入文字信息",
+        "translate": "Mangyaring ipasok ang impormasyon ng teksto"
+    },
+    {
+        "text": "%d 人",
+        "translate": "%d mga tao"
+    },
+    {
+        "text": "请选择一个群发模板再发送",
+        "translate": "Mangyaring pumili ng isang template ng grupo upang ipadala"
+    },
+    {
+        "text": "模板信息",
+        "translate": "Impormasyon sa Template"
+    },
+    {
+        "text": "模板修改完成",
+        "translate": "Nakumpleto ang pagbabago ng Template"
+    },
+    {
+        "text": "你还未加入俱乐部",
+        "translate": "hindi ka pa sumali sa club"
+    },
+    {
+        "text": "抱歉，银商玩家不能进入游戏游玩！",
+        "translate": "Paumanhin, ang mga miyembro ng Silver Merchant ay hindi maaaring pumasok sa laro upang i-play!"
+    },
+    {
+        "text": "禁言管理",
+        "translate": "Pamamahala ng pipi"
+    },
+    {
+        "text": "保存",
+        "translate": "panatilihin"
+    },
+    {
+        "text": "编辑模板：勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "I-Edit ang template: matapos Pumili ng maraming mga template, awtomatikong ipapadala ang mensahe ayon sa napiling template kapag nagpapadala ng isang mensahe."
+    },
+    {
+        "text": "发送间隔:",
+        "translate": "Magpadala ng agwat:"
+    },
+    {
+        "text": "删除",
+        "translate": "tanggalin ang"
+    },
+    {
+        "text": "标题：",
+        "translate": "Pamagat:"
+    },
+    {
+        "text": "筛选:",
+        "translate": "Salain:"
+    },
+    {
+        "text": "用户ID",
+        "translate": "ID ng gumagamit"
+    },
+    {
+        "text": "VIP等级",
+        "translate": "Antas ng VIP"
+    },
+    {
+        "text": "在线状态",
+        "translate": "katayuan sa online"
+    },
+    {
+        "text": "下一步",
+        "translate": "Susunod na hakbang"
+    },
+    {
+        "text": "120人",
+        "translate": "120 katao"
+    },
+    {
+        "text": "*列表展示XX小时/天登陆过的用户",
+        "translate": "* Listahan ay nagpapakita ng mga gumagamit na naka-log in XX oras/araw"
+    },
+    {
+        "text": "群发模板:",
+        "translate": "Maramihang template:"
+    },
+    {
+        "text": "模板内容:",
+        "translate": "Nilalaman ng Template:"
+    },
+    {
+        "text": "上一步",
+        "translate": "Nakaraan"
+    },
+    {
+        "text": "联系人",
+        "translate": "makipag-ugnay sa"
+    },
+    {
+        "text": "赠送",
+        "translate": "bigyan ang layo"
+    },
+    {
+        "text": "收礼",
+        "translate": "tumanggap ng mga regalo"
+    },
+    {
+        "text": "日期",
+        "translate": "Petsa"
+    },
+    {
+        "text": "玩家ID",
+        "translate": "ID ng miyembro"
+    },
+    {
+        "text": "赠送金币",
+        "translate": "bigyan ang layo ng mga barya"
+    },
+    {
+        "text": "金币余额",
+        "translate": "balanse ng gintong barya"
+    },
+    {
+        "text": "* 忘记密码请联系客服",
+        "translate": "Nakalimutan ang iyong password, mangyaring makipag-ugnay sa serbisyo sa customer"
+    },
+    {
+        "text": "客服",
+        "translate": "serbisyo sa customer"
+    },
+    {
+        "text": "投诉",
+        "translate": "reklamo"
+    },
+    {
+        "text": "保存成功!",
+        "translate": "Matagumpay na nai-save"
+    },
+    {
+        "text": "保存失败!",
+        "translate": "Nabigo ang pag-Save!"
+    },
+    {
+        "text": "请选择需要群发的用户后再试！",
+        "translate": "Mangyaring piliin ang gumagamit na nangangailangan ng pag-post ng masa at subukang muli!"
+    },
+    {
+        "text": "发送成功",
+        "translate": "Matagumpay na ipinadala"
+    },
+    {
+        "text": "发送失败",
+        "translate": "Nabigong magpadala"
+    },
+    {
+        "text": "获取赠送记录失败",
+        "translate": "Nabigong makakuha ng record ng regalo"
+    },
+    {
+        "text": "编辑模板: 勾选多个模板后，发送消息时按勾选的模板自动发送。",
+        "translate": "I-Edit ang Template: matapos suriin ang maraming mga template, awtomatikong ipapadala ang mensahe ayon sa naka-check na template."
+    },
+    {
+        "text": "禁言",
+        "translate": "i-mute ang"
+    },
+    {
+        "text": "解禁",
+        "translate": "Pag-angat ng pagbabawal"
+    },
+    {
+        "text": "私聊",
+        "translate": "pribadong chat"
+    },
+    {
+        "text": "加入俱乐部",
+        "translate": "sumali sa club"
+    },
+    {
+        "text": "搜索",
+        "translate": "paghahanap"
+    },
+    {
+        "text": "id或者昵称",
+        "translate": "id o palayaw"
+    },
+    {
+        "text": "尚无聊天记录。",
+        "translate": "Wala pang kasaysayan ng chat."
+    },
+    {
+        "text": "获取群组列表信息失败",
+        "translate": "Nabigong makakuha ng impormasyon sa listahan ng pangkat"
+    },
+    {
+        "text": "进入码错误",
+        "translate": "Maling access code"
+    },
+    {
+        "text": "加入群失败",
+        "translate": "Nabigong sumali sa grupo"
+    },
+    {
+        "text": "对方已经是你的好友了",
+        "translate": "Nakarehistro na bilang kaibigan"
+    },
+    {
+        "text": "添加好友成功",
+        "translate": "Matagumpay na idinagdag ang kaibigan"
+    },
+    {
+        "text": "添加好友失败",
+        "translate": "Nabigong Magdagdag bilang kaibigan"
+    },
+    {
+        "text": "删除好友失败",
+        "translate": "Nabigong tanggalin ang kaibigan"
+    },
+    {
+        "text": "搜索用户",
+        "translate": "Naghahanap para sa iba pang gumagamit"
+    },
+    {
+        "text": "获取用户信息失败",
+        "translate": "Nabigong makakuha ng impormasyon ng gumagamit"
+    },
+    {
+        "text": "群主已开启全局禁言",
+        "translate": "Ang may-ari ng grupo ay nag-activate ng pampublikong pagbabawal"
+    },
+    {
+        "text": "请输入群组名",
+        "translate": "Mangyaring ipasok ang pangalan ng iyong pangkat"
+    },
+    {
+        "text": "请输入进入码",
+        "translate": "Mangyaring ipasok ang iyong access code"
+    },
+    {
+        "text": "请输入6位的进入码",
+        "translate": "Mangyaring ipasok ang iyong 6-digit na accesss code"
+    },
+    {
+        "text": "创建成功",
+        "translate": "Matagumpay Na Nilikha"
+    },
+    {
+        "text": "创建失败",
+        "translate": "Nabigong lumikha"
+    },
+    {
+        "text": "获取群信息失败",
+        "translate": "Nabigong makakuha ng impormasyon sa pangkat"
+    },
+    {
+        "text": "无效的群组信息",
+        "translate": "Ang impormasyon ng grupo ay hindi wasto"
+    },
+    {
+        "text": "获取成员列表失败",
+        "translate": "Nabigong makakuha ng impormasyon ng miyembro"
+    },
+    {
+        "text": "请输入群组名字！",
+        "translate": "Mangyaring ipasok ang pangalan ng iyong pangkat"
+    },
+    {
+        "text": "请输入群组公告信息",
+        "translate": "Mangyaring ipasok ang anunsyo ng iyong pangkat"
+    },
+    {
+        "text": "解散群组失败!",
+        "translate": "Hindi ma-disband ang grupo"
+    },
+    {
+        "text": "请输入合法的群组名字",
+        "translate": "Mangyaring magpasok ng isang wastong pangalan ng pangkat"
+    },
+    {
+        "text": "修改成功!",
+        "translate": "Matagumpay ang pagbabago"
+    },
+    {
+        "text": "修改失败!",
+        "translate": "Nabigo ang pagbabago"
+    },
+    {
+        "text": "退出群组失败!",
+        "translate": "Hindi maaaring umalis sa grupo"
+    },
+    {
+        "text": "已建立群组(%d)",
+        "translate": "Lumikha ng Pangkat (%d)"
+    },
+    {
+        "text": "已加入群组(%d)",
+        "translate": "Sumali sa pangkat (%d)"
+    },
+    {
+        "text": "公开群组(%d)",
+        "translate": "Pampublikong grupo (%d)"
+    },
+    {
+        "text": "该群人数已满，加入失败",
+        "translate": "Buo ang grupo, hindi na matanggap"
+    },
+    {
+        "text": "加入成功",
+        "translate": "Matagumpay na sumali ang grupo"
+    },
+    {
+        "text": "群主",
+        "translate": "May-Ari Ng Grupo"
+    },
+    {
+        "text": "管理员",
+        "translate": "Tagapangasiwa"
+    },
+    {
+        "text": "聊天(%d)",
+        "translate": "Chat (%d)"
+    },
+    {
+        "text": "好友(%d)",
+        "translate": "Mga kaibigan (%d)"
+    },
+    {
+        "text": "群组",
+        "translate": "Grupo"
+    },
+    {
+        "text": "频道 1",
+        "translate": "Channel 1"
+    },
+    {
+        "text": "建立群组",
+        "translate": "Lumikha Ng Pangkat"
+    },
+    {
+        "text": "欢迎来到群组",
+        "translate": "Maligayang pagdating sa grupo"
+    },
+    {
+        "text": "请选择一个群组",
+        "translate": "Mangyaring piliin ang iyong pangkat"
+    },
+    {
+        "text": "群组名称：",
+        "translate": "Pangalan Ng Pangkat:"
+    },
+    {
+        "text": "进入码",
+        "translate": "I-Access Ang Code:"
+    },
+    {
+        "text": "* 进入码为6位数字",
+        "translate": "* Ang Access code ay binubuo ng 6-digit"
+    },
+    {
+        "text": "全局禁言",
+        "translate": "Pagbabawal Sa Publiko"
+    },
+    {
+        "text": "群组公告：",
+        "translate": "Anunsyo ng grupo:"
+    },
+    {
+        "text": "解散群组",
+        "translate": "Buwagin ang grupo"
+    },
+    {
+        "text": "退出群组",
+        "translate": "Iwanan ang pangkat"
+    },
+    {
+        "text": "踢人",
+        "translate": "Alisin ang miyembro ng pangkat"
+    },
+    {
+        "text": "设为管理员",
+        "translate": "Itakda bilang admin"
+    },
+    {
+        "text": "取消管理员",
+        "translate": "Bawiin ang mga karapatan ng Admin"
+    },
+    {
+        "text": "加为好友",
+        "translate": "Idagdag bilang kaibigan"
+    },
+    {
+        "text": "删除好友",
+        "translate": "Tanggalin Ang Kaibigan"
+    },
+    {
+        "text": "您没有该操作权限",
+        "translate": "Wala kang pahintulot na ito"
+    },
+    {
+        "text": "群名字太长",
+        "translate": "Masyadong mahaba ang pangalan ng pangkat"
+    },
+    {
+        "text": "进入码太长",
+        "translate": "Masyadong mahaba ang Access code"
+    },
+    {
+        "text": "群名字已存在",
+        "translate": "Mayroon nang Pangalan ng pangkat"
+    },
+    {
+        "text": "群创建失败",
+        "translate": "Nabigo ang paglikha ng pangkat"
+    },
+    {
+        "text": "非法的群名字",
+        "translate": "Pangalan ng iligal na grupo"
+    },
+    {
+        "text": "群公告过长",
+        "translate": "Masyadong mahaba ang anunsyo ng grupo"
+    },
+    {
+        "text": "群信息修改失败",
+        "translate": "Nabigong baguhin ang impormasyon ng pangkat"
+    },
+    {
+        "text": "保存图片以获取游戏官方下载地址",
+        "translate": "I-Save ang larawan upang ma-access ang opisyal na link sa pag-download"
+    },
+    {
+        "text": "活动内容",
+        "translate": "Nilalaman Ng Aktibidad"
+    },
+    {
+        "text": "活动时间内通过消耗金币获得绑定金币越多，获得的绑定金币返利越多。",
+        "translate": "Semakin banyak koin bonus yang anda dapatkan dari penggunaan koin emas selama permainan, maka lebih banyak juga koin bonus yang akan diperoleh dari bonus rabat."
+    },
+    {
+        "text": "请输入账号",
+        "translate": "Ipasok ang numero ng iyong account"
+    },
+    {
+        "text": "该账号已注册",
+        "translate": "Account ay nakarehistro"
+    },
+    {
+        "text": "忘记密码，请联系在线客服",
+        "translate": "Nakalimutan ang iyong password, mangyaring makipag-ugnay sa serbisyo sa customer"
+    },
+    {
+        "text": "连接出错 网关连不上！",
+        "translate": "Hindi matatag na koneksyon, hindi makakonekta sa laro"
+    },
+    {
+        "text": "忘记密码",
+        "translate": "Kalimutan Ang Password"
+    },
+    {
+        "text": "账号注册",
+        "translate": "Nakarehistro Ang Account"
+    },
+    {
+        "text": "登录游戏",
+        "translate": "Pag-Login"
+    },
+    {
+        "text": "去解锁",
+        "translate": "I-Unlock ang"
+    },
+    {
+        "text": "成为VIP%d解锁转盘",
+        "translate": "I-Unlock pagkatapos ng VIP % d"
+    },
+    {
+        "text": "充值任意金额成为VIP",
+        "translate": "Recharge anumang halaga upang maging VIP"
+    },
+    {
+        "text": "谷歌账号",
+        "translate": "Google account"
+    },
+    {
+        "text": "苹果账号",
+        "translate": "Account sa Apple"
+    },
+    {
+        "text": "注册成功",
+        "translate": "Nagtagumpay ang pagpaparehistro."
+    },
+    {
+        "text": "请先成为VIP",
+        "translate": "Mangyaring maging VIP muna"
+    },
+    {
+        "text": "字母和数字%d至%d位",
+        "translate": "%d hanggang % D titik at numero"
+    },
+    {
+        "text": "账户名称长度%d至%d位",
+        "translate": "Haba ng pangalan ng Account %d hanggang %d character"
+    },
+    {
+        "text": "账户密码长度%d至%d位",
+        "translate": "haba ng password %d hanggang % d"
+    },
+    {
+        "text": "两次输入的密码不相同",
+        "translate": "Ang password na ipinasok nang dalawang beses ay hindi pareho"
+    },
+    {
+        "text": "用户名或密码为空",
+        "translate": "walang laman ang username o password"
+    },
+    {
+        "text": "包名为空",
+        "translate": "Walang laman ang pangalan ng Channel"
+    },
+    {
+        "text": "注册失败，请重试",
+        "translate": "Nabigo ang pagpaparehistro, mangyaring subukang muli"
+    },
+    {
+        "text": "已达到注册限制",
+        "translate": "Naabot ang limitasyon sa pagpaparehistro"
+    },
+    {
+        "text": "用户名非法，请新输入",
+        "translate": "Ang username ay hindi wasto, mangyaring magpasok ng bago"
+    },
+    {
+        "text": "注册",
+        "translate": "magrehistro"
+    },
+    {
+        "text": "成为VIP%d后解锁",
+        "translate": "I-Unlock pagkatapos ng VIP % d"
+    },
+    {
+        "text": "成为VIP后解锁",
+        "translate": "I-Unlock pagkatapos maging VIP"
+    },
+    {
+        "text": "* 解锁转盘。",
+        "translate": "* I-Unlock ang masuwerteng gulong"
+    },
+    {
+        "text": "充值验证失败，未查询到相应订单，请联系客服",
+        "translate": "Nabigo ang pag-verify sa pagsingil, hindi hiniling ang naaangkop na order, mangyaring makipag-ugnayan sa customer service\n"
+    },
+    {
+        "text": "非 iphone 用户不可用",
+        "translate": "Hindi available ang mga hindi gumagamit ng iPhone\n"
+    },
+    {
+        "text": "正在加载大厅资源...",
+        "translate": "Nilo-load ang pangunahing silid…\n"
+    },
+    {
+        "text": "更新模块失败",
+        "translate": "Nabigo ang pag-upgrade ng module"
+    },
+    {
+        "text": "更新大厅失败，是否重试?",
+        "translate": "Nabigo ang pag-update."
+    },
+    {
+        "text": "登入游戏",
+        "translate": "Pagpasok ng laro"
+    },
+    {
+        "text": "正在更新游戏...",
+        "translate": "I-update ang laro..."
+    },
+    {
+        "text": "确定删除好友 '%s' 吗?",
+        "translate": "Sigurado ka bang gusto mong tanggalin ang kaibigan ni '%s'?"
+    },
+    {
+        "text": "您已被 '%s' 群管理员禁言。",
+        "translate": "Ikaw ay pinagbawalan ng '%s' ranger."
+    },
+    {
+        "text": "您在 '%s' 群的禁言已被解除。",
+        "translate": "Ang iyong pagbabawal sa pangkat na '%s' ay inalis na."
+    },
+    {
+        "text": "您已被设置为 '%s' 管理员。",
+        "translate": "Ikaw ay nakatakda sa '%s' administrator."
+    },
+    {
+        "text": "您在 '%s' 群的管理员资格已被解除。",
+        "translate": "Ang katayuan ng iyong admin sa pangkat na '%s' ay binawi."
+    },
+    {
+        "text": "你已经被踢出群 '%s' ",
+        "translate": "Sinipa ka mula sa pangkat na '%s'"
+    },
+    {
+        "text": "确定解散群组 '%s' 吗?",
+        "translate": "Sigurado ka bang gusto mong buwagin ang pangkat na '%s'?"
+    },
+    {
+        "text": "欢迎加入'%s' ",
+        "translate": "Maligayang pagdating sa '%s'"
+    },
+    {
+        "text": "您是否确认将 '%s' 踢出群组?",
+        "translate": "Nakumpirma mo ba ang pagsipa sa pangkat na '%s'?"
+    },
+    {
+        "text": "是否将 '%s' 设为管理员？(设为管理员后发送的消息所有人可见)",
+        "translate": "Itinakda mo ba ang '%s' bilang administrator? Magpadala ng mensahe pagkatapos makita ng admin ang lahat"
+    },
+    {
+        "text": "你确定要赠送给 '%s' 金币吗？",
+        "translate": "Sigurado ka bang gusto mong ibahagi ang '%s'?"
+    },
+    {
+        "text": "收款钱包地址",
+        "translate": "Address ng recipient"
+    },
+    {
+        "text": "钱包地址",
+        "translate": "Address ng Wallet"
+    },
+    {
+        "text": "请绑定地址",
+        "translate": "Mangyaring i-hang up ang address"
+    },
+    {
+        "text": "绑定",
+        "translate": "nakatali"
+    },
+    {
+        "text": "充值金额",
+        "translate": "Halaga ng Refill"
+    },
+    {
+        "text": "玩家绑定自己的钱包地址，输入充值金额，点击充值按钮即可完成充值",
+        "translate": "Ang mga manlalaro ay nagbubuklod ng kanilang sariling address ng pitaka, ipasok ang halaga ng recharge, at pindutin ang pindutan ng recharge upang muling magkarga"
+    },
+    {
+        "text": "请输入钱包地址",
+        "translate": "Mangyaring ipasok ang iyong wallet address"
+    },
+    {
+        "text": "地址只能绑定一次，请仔细核对，有问题请及时联系客服",
+        "translate": "Ang address na ito ay maaari lamang markahan nang isang beses"
+    },
+    {
+        "text": "可提现金币数量",
+        "translate": "Bilang ng mga gintong barya withdraw"
+    },
+    {
+        "text": "请输入金额",
+        "translate": "Mangyaring ipasok ang halaga"
+    },
+    {
+        "text": "提现钱包地址",
+        "translate": "Address ng withdrawal wallet"
+    },
+    {
+        "text": "请输入提现地址",
+        "translate": "Mangyaring ipasok ang withdrawal address"
+    },
+    {
+        "text": "提现记录",
+        "translate": "Mga tala sa pag-alis"
+    },
+    {
+        "text": "提交成功，等待审核",
+        "translate": "Ay matagumpay na nai-file, naghihintay ng muling pagsasaalang-alang"
+    },
+    {
+        "text": "充值成功，等待审核",
+        "translate": "Ang matagumpay na singilin at naghihintay para sa pag-audit"
+    },
+    {
+        "text": "银行卡",
+        "translate": "Mga kard sa bangko"
+    },
+    {
+        "text": "最低提现200金币",
+        "translate": "Minimum na pag-alis ng 200 ducats"
+    },
+    {
+        "text": "订单号",
+        "translate": "Numero ng Order"
+    },
+    {
+        "text": "操作",
+        "translate": "operasyon"
+    },
+    {
+        "text": "成功",
+        "translate": "matagumpay"
+    },
+    {
+        "text": "审核中",
+        "translate": "Muling binisita"
+    },
+    {
+        "text": "失败",
+        "translate": "nabigo"
+    },
+    {
+        "text": "详情",
+        "translate": "mga detalye"
+    },
+    {
+        "text": "系统",
+        "translate": "sistema"
+    },
+    {
+        "text": "奖励金币",
+        "translate": "Mga regalo sa gintong barya"
+    },
+    {
+        "text": "游戏返利",
+        "translate": "Papasok na mga laro"
+    },
+    {
+        "text": "游戏时间越多，返利越多。",
+        "translate": "Ang mas maraming oras na paglalaro ay mas maraming pagkakataong mag withdraw"
+    },
+    {
+        "text": "*玩游戏可获得VIP经验。",
+        "translate": "* i-play ang laro kumita ng VIP karanasan."
+    },
+    {
+        "text": "*玩游戏可获得更多VIP经验。",
+        "translate": "* higit pang karanasan sa VIP ang nakukuha sa pamamagitan ng paglalaro ng laro."
+    },
+    {
+        "text": "*奖励%d金币",
+        "translate": "* gantimpala % d ginto"
+    },
+    {
+        "text": "快速登录",
+        "translate": "Mabilis na pag-login"
+    },
+    {
+        "text": "实时返利活动",
+        "translate": "Pagpapanumbalik ng aktibidad"
+    },
+    {
+        "text": "日返利活动",
+        "translate": "Aktibidad sa pagbaril sa paglubog ng araw"
+    },
+    {
+        "text": "周返利活动",
+        "translate": "Lingguhang kaarawan bulaklak kaganapan"
+    },
+    {
+        "text": "月返利活动",
+        "translate": "Mga aktibidad sa bulaklak ng buwan"
+    },
+    {
+        "text": "小时",
+        "translate": "oras"
+    },
+    {
+        "text": "天",
+        "translate": "araw"
+    },
+    {
+        "text": "周",
+        "translate": "linggo"
+    },
+    {
+        "text": "月",
+        "translate": "buwan"
+    },
+    {
+        "text": "%d%s发放一次奖励，奖励保存%d小时，限时未领取作废。",
+        "translate": "1 gantimpala na ibinigay ng%d %s, Gantimpala I-save ang % D oras, na walang kinansela na deadline."
+    },
+    {
+        "text": "请先绑定钱包地址！",
+        "translate": "Mangyaring itali muna ang address ng pitaka!"
+    },
+    {
+        "text": "金币不足%d时才能切换充值方式",
+        "translate": "Palitan ang recharge bago mahulog ang mga gintong barya sa ibaba % d"
+    },
+    {
+        "text": "请确认钱包地址是否正确",
+        "translate": "Mangyaring kumpirmahin kung tama ang address ng wallet"
+    },
+    {
+        "text": "金币",
+        "translate": "Mga barya."
+    },
+    {
+        "text": "请输入订单号",
+        "translate": "Mangyaring ipasok ang command number"
+    },
+    {
+        "text": "VIP福利",
+        "translate": "Mga benepisyo ng VIP"
+    },
+    {
+        "text": "本次更新需要重启应用.",
+        "translate": ""
+    }
+]
