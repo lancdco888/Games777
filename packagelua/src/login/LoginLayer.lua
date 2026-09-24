@@ -34,8 +34,8 @@ function LoginLayer:onEnter()
     Tools_Base      = require("packagelua.src.base.Tools_Base")
     require("packagelua.src.BuildConfig")
 
-    Sdk = require("packagelua.src.sdk.Sdk").new()
-    Sdk:firstOpen()
+	Sdk = require("packagelua.src.sdk.Sdk").new()
+	Sdk:firstOpen()
 
     Device:setScreenType(Device.H_Screen_Type)
 
@@ -51,14 +51,9 @@ function LoginLayer:onEnter()
         LoginData:SaveAccDatas()
     end
 
-    if NEED_PASSWD_LOGIN then
-        NEED_PASSWD_LOGIN = nil
-        self:ShowAutoLoginUI(false)
-        self:OnBtnPassword()
-    -- 去掉自动登录
-    -- elseif self:CanAutoLogin() then
-    --     self:ShowAutoLoginUI(true)
-    --     self:CheckAutoLogin()
+    if self:CanAutoLogin() then
+        self:ShowAutoLoginUI(true)
+        self:CheckAutoLogin()
     end
 end
 
@@ -96,12 +91,12 @@ function LoginLayer:CheckNewI18n()
     -- 需要兼容老包
     package.loaded["packagelua.src.bootstrap.init"] = nil
     require("packagelua.src.bootstrap.init")
+    xpcall(require, __G__TRACKBACK__, "packagelua.src.login.TranslatePatch")
     ResetTranslator()
 end
 
 function LoginLayer:CanAutoLogin()
-    -- local bAutoLogin = LoginData:IsAutoLogin()
-    local bAutoLogin = false
+    local bAutoLogin = LoginData:IsAutoLogin()
     if not bAutoLogin then
         return false
     end
@@ -160,10 +155,12 @@ function LoginLayer:CheckAutoLogin()
         Tools_Base.ShowWaiting()
         self:ConnectNetwork()
         Tools_Base.HideWaiting()
-
         if not self:GetServerVersionInfo() then
-            if tolua.isnull(self) then return end
-            self:ShowAutoLoginUI(false)
+            Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"),
+            function()
+                if tolua.isnull(self) then return end
+                self:ShowAutoLoginUI(false)
+            end)
         end
     end)
 end
@@ -172,45 +169,45 @@ function LoginLayer:InitUI()
     local panel = self:getChildByName("panel")
     local btn_facebook = panel:getChildByName("btn_facebook")
     Tools_Base.AddClickEvent(btn_facebook, function()
-        if Tools_Base.PreventContinuousClick(self, 2.0) then
-            self:OnBtnFaceBook()
-        end
+		if Tools_Base.PreventContinuousClick(self,0.4) then
+			self:OnBtnFaceBook()
+		end
     end, true)
     self.btn_facebook = btn_facebook
 
     local btn_guest = panel:getChildByName("btn_guest")
     Tools_Base.AddClickEvent(btn_guest, function()
-        if Tools_Base.PreventContinuousClick(self, 2.0) then
-            self:OnBtnGuest()
-        end
+		if Tools_Base.PreventContinuousClick(self,0.4) then
+			self:OnBtnGuest()
+		end
     end, true)
     self.btn_guest = btn_guest
 
-    local btn_password = panel:getChildByName("btn_password")
+	local btn_password = panel:getChildByName("btn_password")
     Tools_Base.AddClickEvent(btn_password, function()
-        if Tools_Base.PreventContinuousClick(self,0.4) then
-            self:OnBtnPassword()
-        end
+		if Tools_Base.PreventContinuousClick(self,0.4) then
+			self:OnBtnPassword()
+		end
     end, true)
     self.btn_password = btn_password
 
     local res_path = "login/denglu_mimadenglu.png"
     local res_path2 = "login/denglu_mimadenglu_2.png"
-    if LoginData:GetPassword() and #LoginData:GetPassword() > 0 then
+	if LoginData:GetPassword() and #LoginData:GetPassword() > 0 then
         if LoginData:GetIsSavePwd() then
             btn_password:loadTextures(res_path,res_path)
         else
             btn_password:loadTextures(res_path2,res_path2)
         end
     else
-        btn_password:loadTextures(res_path2,res_path2)
-    end
+		btn_password:loadTextures(res_path2,res_path2)
+	end
 
-    self.btn_service = panel:getChildByName("btn_service")
+	self.btn_service = panel:getChildByName("btn_service")
     Tools_Base.AddClickEvent(self.btn_service, function()
-        if Tools_Base.PreventContinuousClick(self,0.4) then
-            self:OnBtnService()
-        end
+		if Tools_Base.PreventContinuousClick(self,0.4) then
+			self:OnBtnService()
+		end
     end, true)
     self:showService()
 
@@ -221,6 +218,29 @@ function LoginLayer:InitUI()
         end,function () end)
     end, true)
     self.btn_return = btn_return
+    
+    local custom_logo = cc.FileUtils:getInstance():fullPathForFilename("bootstrap/res/custom/logo.png")
+    if custom_logo ~= "" then
+        release_print("need custom logo")
+        local logo = self:findChild("logo")
+        logo:loadTexture(custom_logo)
+    end
+    
+	if BuildConfig.ShowLoadingLogo == false then
+        local logo = self:findChild("logo")
+		if logo then
+			logo:setVisible(false)
+		end
+	end
+
+    local custom_bg = BuildConfig.CustomLoginBg
+    if custom_bg then
+        local full_custom_bg = cc.FileUtils:getInstance():fullPathForFilename(custom_bg)
+        if full_custom_bg ~= "" then
+            local bg = self:findChild("bg")
+            bg:loadTexture(full_custom_bg)
+        end
+    end
 
     self:InitLangCombo()
     local platform = cc.Application:getInstance():getTargetPlatform()
@@ -304,7 +324,7 @@ end
 function LoginLayer:InitLangCombo()
     local node = self:findChild("LangCombo")
     assert(node)
-
+    
     if #ConfigParam.Language > 1 then
         node:setVisible(true)
         self.lang_combo = LangCombo:new()
@@ -322,8 +342,7 @@ end
 function LoginLayer:showService()
     local ok = pcall(
         function()
-            ResetTranslator()
-            require "hall.src.pkgs.client_lobby"
+	        ResetTranslator()
             return require("hall.src.hallnew.layers.lobby.ChatLayer")
         end
     )
@@ -367,20 +386,15 @@ function LoginLayer:OnBtnFaceBook()
                 FacebookSingle:setCurrentFbid(fbid)
             else
                 print("本地有facebook")
-            end
+            end 
             LoginData:SetType(LoginData.TYPE.FACKBOOK)
             LoginData:SetAccount(fbid)
             LoginData:SetPassword(nil)
-
-            self:ShowAutoLoginUI(true)
             if not gNet:Alive() then
                 self:ConnectNetwork()
             end
-
             if not self:GetServerVersionInfo() then
-                if not tolua.isnull(self) then
-                    self:ShowAutoLoginUI(false)
-                end
+                Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
             end
         end
     )
@@ -390,17 +404,11 @@ function LoginLayer:OnBtnGuest()
     LoginData:SetType(LoginData.TYPE.GUEST)
     LoginData:SetAccount(self.accDatas.username)
     LoginData:SetPassword(nil)
-
-    self:ShowAutoLoginUI(true)
     go(
-        function()
+        function() 
             self:ConnectNetwork()
-            if tolua.isnull(self) then return end
-
             if not self:GetServerVersionInfo() then
-                if not tolua.isnull(self) then
-                    self:ShowAutoLoginUI(false)
-                end
+                Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
             end
         end
     )
@@ -409,13 +417,13 @@ end
 function LoginLayer:OnBtnPassword()
     print("密码登入")
     local passwordLoginLayer = require("packagelua.src.login.PasswordLoginLayer")
-    gStates_SetAsync(passwordLoginLayer)
+	gStates_SetAsync(passwordLoginLayer)
 end
 
 function LoginLayer:OnBtnService()
     print("在线客服")
     local accountid = LoginData.accDatas['account_id'] or 0
-    local username = LoginData.accDatas['username'] or ""
+	local username = LoginData.accDatas['username'] or ""
     if username == "" or accountid == "" then
         print("当前还未注册,去拿虚拟账号")
         accountid = LoginData.accDatas['vtrtual_id'] or 0
@@ -426,16 +434,14 @@ end
 
 -- 先放这里连一下网 协程调用
 function LoginLayer:ConnectNetwork()
-    local Network = require("packagelua.src.base.Network")
+	local Network = require("packagelua.src.base.Network")
     local ip = SettingData:GetNetworkIP()
-    local port = SettingData:GetNetworkPort()
-
-    if Network:SetHost(ip, port) == false then return false end
+	local port = SettingData:GetNetworkPort()
     print("IP:",ip)
     print("PORT:",port)
-
+    Network:SetHost(ip, port)
     Tools_Base.ShowWaiting()
-    local ret = Network:ConnectServer()
+    local ret = Network:ConnectServer() 
     Tools_Base.HideWaiting()
     if not ret then
         print("-------->>>>> 网络连接失败")
@@ -448,22 +454,24 @@ end
 
 import(".DownloadingHall")
 function LoginLayer:GetVersionDone()
+    local start_time = os.time()
     if not DownloadingHall(self.loading_layer) then
-        Tools_Base.ShowMsgBox(TR("版本更新失败"))
-
-        if tolua.isnull(self) then return end
-        self:ShowAutoLoginUI(false)
+        Tools_Base.ShowMsgBox(TR("更新大厅失败，是否重试?"),
+            function()
+                self:GetVersionDone()
+            end,
+            function()
+                cc.Director:getInstance():endToLua()
+            end
+        )
         return
     end
-    if tolua.isnull(self) then return end
-    SleepSecs(0.1)
+
+    self:ShowLoadingNode(false)
+    SleepSecs(0.3)
 
     go(function()
-        if tolua.isnull(self) then return end
-
-        self:ShowLoadingNode(false)
         self:ShowLoadingNode(true)
-        self:SetLoadingPercent(0)
         self:SetLoadingTips(TR("正在进入大厅..."))
 
         for path_,__ in pairs(package.loaded) do
@@ -474,15 +482,8 @@ function LoginLayer:GetVersionDone()
         cc.SpriteFrameCache:getInstance():removeUnusedSpriteFrames()
         cc.Director:getInstance():getTextureCache():removeUnusedTextures()
 
-        if tolua.isnull(self) then return end
         self:SetLoadingPercent(50)
         SleepSecs(0.2)
-
-        local hallChunkFile = cc.FileUtils:getInstance():fullPathForFilename("src/hall/src.chunk.zip")
-        if LoadChunksFromZIP and hallChunkFile ~= "" then
-            LoadChunksFromZIP(hallChunkFile)
-            print("Loading Chunk:" .. hallChunkFile)
-        end
 
         UserData = require("hall.src.hallnew.data.UserData")
         GameData = require("hall.src.hallnew.data.GameData")
@@ -491,11 +492,24 @@ function LoginLayer:GetVersionDone()
         require "hall.src.common.const_game"
         require "hall.src.common.GameInfoManager"
         sGameManager.Init()
-        require("hall.src.main")
 
-        if tolua.isnull(self) then return end
         self:SetLoadingPercent(100)
         SleepSecs(0.2)
+
+		if LogicMain then
+			go(
+                function ()
+                    pcall(
+                        function()
+                            require "exchange.src.main"
+                        end
+                    )
+                    LogicMain()
+                end
+            )
+		else
+			require("hall.src.main")
+		end
     end)
 end
 
@@ -523,33 +537,38 @@ function LoginLayer:GetServerVersionInfo()
         data_.password = ""
     end
 
-    if tolua.isnull(self) then return end
     self:ShowLoadingNode(true)
     self:SetLoadingTips(TR("正在检查版本信息..."))
     self:SetLoadingPercent(0)
     local rlt_ = gNet_SendRequest(data_)
-
-    if tolua.isnull(self) then return end
     self:SetLoadingPercent(100)
-    SleepSecs(0.4)
+    SleepSecs(0.5)
     self:ShowLoadingNode(false)
 
     if not rlt_ then
-        Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
+        print("rlt_", rlt_)
+        print("PKG_Client_Login_GetServerVersionInfo 返回nil")
         return false
     end
-
+    -- dump(rlt_,"rlt_")
     if getmetatable(rlt_) == PKG_Login_Client_ServerVersionInfo then
         if rlt_.info == "account_or_password_error" then
-            Tools_Base.ShowMsgBox(TR("用户名或密码错误"))
-            return false
+            Tools_Base.ShowMsgBox(TR("用户名或密码错误"), function()
+                if self.autoLogining then
+                    self:ShowAutoLoginUI(false)
+                end
+            end)
+            return true
         end
 
         local hotfixInfo = rlt_.info
         if CheckValidJson(hotfixInfo) then
             hotfixJson:LoadServerJson(hotfixInfo)
         else
-            Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
+            UploadData("ScriptError", {
+                result = true,
+                reason = "Invalid login hotfix json:" .. tostring(hotfixInfo)
+            })
             return false
         end
 
@@ -558,41 +577,52 @@ function LoginLayer:GetServerVersionInfo()
     elseif getmetatable(rlt_) == PKG_Generic_Error then
         local num = Int64ToNumber(rlt_.number)
         if (num == -6)then
-            Tools_Base.ShowMsgBox(TR("服务器未响应"))
-            return false
+            Tools_Base.ShowMsgBox(
+                TR("服务器未响应"),
+                function()
+                    cc.Director:getInstance():endToLua()
+                end
+            )
         elseif (num == -113)then
-            Tools_Base.ShowMsgBox(TR("用户名或密码错误"))
-            return false
+            Tools_Base.ShowMsgBox(TR("用户名或密码错误"),
+            function()
+                if self.autoLogining then
+                    self:ShowAutoLoginUI(false)
+                end
+            end
+        )
         else
+            Tools_Base.ShowMsgBox(TR("用户名或密码错误"),
+                function()
+                    if self.autoLogining then
+                        self:ShowAutoLoginUI(false)
+                    end
+                end
+            )
             print("PKG_Client_Login_GetServerVersionInfo PKG_Generic_Error \nmessage:"..rlt_.message.."\nnumber:"..num)
-            Tools_Base.ShowMsgBox(TR("用户名或密码错误"))
-            return false
         end
         return true
     else
         print("PKG_Client_Login_GetServerVersionInfo 发送失败")
-        Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
         return false
     end
-
-    return true
 end
 
 -- 客服聊天 先注册个聊天账号
 function LoginLayer:registAccForChat(accountid,username)
-    go(
+	go(
         function()
             self:ConnectNetwork()
-            local data_ = PKG_Client_Lobby_RegisterTempMsgService.Create()
-            data_.accountid = accountid
-            data_.username = username
-            dump(data_,"data_")
-            Tools_Base.ShowWaiting()
-            local rlt_ = gNet_SendRequest(data_)
-            Tools_Base.HideWaiting()
-            if (rlt_ ~= nil) then
-                if(getmetatable(rlt_) == PKG_Lobby_Client_RegisterTempMsgServiceResult) then
-                    -- todo 保存虚拟账号放
+			local data_ = PKG_Client_Lobby_RegisterTempMsgService.Create()
+			data_.accountid = accountid
+			data_.username = username
+			dump(data_,"data_")
+			Tools_Base.ShowWaiting()
+			local rlt_ = gNet_SendRequest(data_)
+			Tools_Base.HideWaiting()
+			if (rlt_ ~= nil) then
+				if(getmetatable(rlt_) == PKG_Lobby_Client_RegisterTempMsgServiceResult) then
+					-- todo 保存虚拟账号放
                     LoginData:ModifyAccDatas('vtrtual_name',rlt_.username)
                     LoginData:ModifyAccDatas('vtrtual_id',rlt_.accountid)
                     LoginData:SaveAccDatas()
@@ -606,17 +636,23 @@ function LoginLayer:registAccForChat(accountid,username)
                     local panel_service = require "hall.src.hallnew.layers.lobby.Panel_service"
                     panel_service.uploadimageUrl = rlt_.url
                     panel_service.setVirAcc(rlt_.accountid,rlt_.username)
-                    gStates_SetAsync(panel_service)
-                elseif(getmetatable(rlt_) == PKG_Generic_Error)then
+		            gStates_SetAsync(panel_service)
+				elseif(getmetatable(rlt_) == PKG_Generic_Error)then
+					go(
+						function()
+							local ErrorUpload = require("hall.src.hallnew.common.DEBUG.ErrorUpload"):create()
+							ErrorUpload:uploadLog("service get virAcc error:".."||"..(tostring(accountid)).."||"..rlt_.message)
+						end
+                    )
                     Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
-                    dump(rlt_,"为何会给我发 PKG_Generic_Error")
-                end
-            else
+					dump(rlt_,"为何会给我发 PKG_Generic_Error")
+				end
+			else
                 Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
-                print("发包失败???")
-            end
-        end
-    )
+				print("发包失败???")
+			end
+		end
+	)
 end
 
 return LoginLayer

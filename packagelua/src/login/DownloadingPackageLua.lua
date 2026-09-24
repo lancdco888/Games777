@@ -1,26 +1,9 @@
-local urls = {
-	"http://13.251.67.72:8865/api/Async/",
-	"https://www.b001aa.com:8967/api/Async/",
-
-	"http://18.138.203.239:8865/api/Async/",
-	"https://www.b002bb.com:8967/api/Async/",
-
-	"http://18.143.23.175:8865/api/Async/",
-	"https://www.b003cc.com:8967/api/Async/",
-
-	"http://54.151.223.240:8865/api/Async/",
-	"https://www.b004dd.com:8967/api/Async/",
-
-	"http://18.139.72.136:8865/api/Async/",
-	"https://www.b005ee.com:8967/api/Async/"
-}
-
 function GetNavConfig()
     require("bootstrap.src.package_name")
     local utils = require("bootstrap.src.utils")
 
     local mainUrl = BuildConfig.DomainUrl or ""
-    local backupUrls = urls or {}
+    local backupUrls = BuildConfig.BackupNavUrls or {}
     local pkgName = GetPackageName()
     local nav = require("packagelua.src.login.NavigationUrl").new(
         mainUrl,
@@ -82,11 +65,7 @@ function DownloadingPackageLua()
     if module and module.version then
         version = module.version
     else
-        if cfg and cfg.login_version then
-            version = cfg.login_version
-        else
-            version = "1.0.0"
-        end
+        version = cfg.login_version
     end
 
     local url = cfg.login_download_url
@@ -116,7 +95,7 @@ function DownloadingPackageLua()
     local updateFunc = function(module_)
         local percent = sDownloadMgr.updateTask[module_].percent
         if percent < last_p then
-            percent = last_p
+            percent = last_p 
         end
         last_p = percent
 
@@ -143,6 +122,19 @@ function DownloadingPackageLua()
 
     sDownloadMgr.UpdatingCallBack[module_] = updateFunc
     local endFunc = function(module_)
+        -- 加载失败，就不再下载，登录读条阶段会再次下载
+        if not ReLoadPackageLua() then
+            hotfixJson:SetCheckedMd5("packagelua", false)
+            hotfixJson:UpdateHotfixJson()
+            done = true
+            result = true
+            return
+        end
+
+        print("update done:" .. module_)
+        hotfixJson:SetZipDone(module_)
+        hotfixJson:UpdateHotfixJson()
+
         done = true
         result = true
     end
@@ -176,15 +168,57 @@ function DownloadingPackageLua()
     end
 
     RemoveBootStrapSearchPath()
+    return result
+end
 
-    if done and result then
-        print("DownloadPackageLua Success!")
+-- 更新资源之后重新刷新 packagelua 模块
+function ReLoadPackageLua()
+    package.loaded["packagelua.src.base.BaseInfo"] = nil
+    package.loaded["packagelua.src.base.generic"] = nil
+    package.loaded["packagelua.src.base.class_def"] = nil
+    package.loaded["packagelua.src.base.client_login"] = nil
+    package.loaded["packagelua.src.base.client_lobby"] = nil
+    package.loaded["packagelua.src.base.Lobby_Slots"] = nil
+    package.loaded["packagelua.src.base.SupportOther"] = nil
 
-        -- 加载失败，就不再下载，登录读条阶段会再次下载
-        if not ReLoadPackageLua() then
-            print("Reload PackageLua Failed!")
-        end
+    -- 更新的模块有问题
+    local status, __ = pcall(function()
+        require "packagelua.src.base.BaseInfo"
+        require "packagelua.src.base.generic"
+        require "packagelua.src.base.class_def"
+        require "packagelua.src.base.client_login"
+        require "packagelua.src.base.client_lobby"
+        require "packagelua.src.base.Lobby_Slots"
+        require "packagelua.src.base.SupportOther"
+    end)
+    
+    if not status then
+        release_print("更新失败，删除更新的文件")
+        local dir = const_def.WritablePath .. "src/packagelua/"
+        cc.FileUtils:getInstance():removeDirectory(dir)
+
+        require "packagelua.src.base.BaseInfo"
+        require "packagelua.src.base.generic"
+        require "packagelua.src.base.class_def"
+        require "packagelua.src.base.client_login"
+        require "packagelua.src.base.client_lobby"
+        require "packagelua.src.base.Lobby_Slots"
+        require "packagelua.src.base.SupportOther"
+        return false
     end
 
-    return result
+    for k,v in pairs(_G) do
+		if (string.find(k, "PKG_")) then
+			if v.Create then
+				local old = v.Create
+				local Create = function(...)
+					local o = old(...)
+					o.__proto = v
+					return o
+				end
+				v.Create = Create
+			end
+		end
+	end
+    return true
 end

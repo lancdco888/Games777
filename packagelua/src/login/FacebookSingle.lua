@@ -3,13 +3,11 @@ local FacebookSingle = class("FacebookSingle")
 local targetPlatform = cc.Application:getInstance():getTargetPlatform()
 function FacebookSingle:ctor()
     self.currentFbid = nil
-
-    if LoginData and LoginData.accDatas and LoginData.accDatas.fbid and LoginData.accDatas.fbid ~= "" then
-        local fbid = LoginData.accDatas.fbid
+    local fbid = LoginData.accDatas.fbid
+    if LoginData.accDatas.fbid and LoginData.accDatas.fbid ~= "" then
         self:setCurrentFbid(fbid)
     end
 end
-
 -----------------------------------------
 ---当前的facebookid
 function FacebookSingle:setCurrentFbid(id)
@@ -37,7 +35,7 @@ function FacebookSingle:getFBToken()
     elseif(cc.PLATFORM_OS_IPHONE == targetPlatform or cc.PLATFORM_OS_IPAD == targetPlatform)then
         local IOS_ClassName =  "PlatBridge"
         --str是一个table，里面只有一个名字叫str的token
-        local callback = function(str)
+        local callback = function(str) 
             token = str.str
         end
         local appargs = {
@@ -52,7 +50,7 @@ function FacebookSingle:getFBToken()
     return token
 end
 
--- 从服务器那根据token拿一个fbid，协程
+-- 从服务器那根据token拿一个fbid，协程 
 -- 确保网络畅通老铁
 function FacebookSingle:getFBIDByToken(token)
     local fbid = nil
@@ -74,7 +72,7 @@ function FacebookSingle:getFBIDByToken(token)
                 else
                     Tools_Base.ShowMsgBox(TR("绑定失败"))
                     print("服务器返回fbid错误 登录失败")
-                end
+                end	
             elseif(getmetatable(rlt_) == PKG_Generic_Error)then
                 print("服务器返回fbid错误")
                 Tools_Base.ShowMsgBox(TR("绑定失败"))

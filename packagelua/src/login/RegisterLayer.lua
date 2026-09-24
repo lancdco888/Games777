@@ -3,8 +3,6 @@ this.stateGroupName = "RegisterLayer"
 this.stateName = "RegisterLayer"
 this.opened = false
 
-local CaptchaLayer = require("packagelua.src.login.CaptchaLayer")
-
 function this.Open()
     this.run_layer = cc.Node:create()
     this.accDatas = LoginData.accDatas
@@ -25,13 +23,13 @@ function this.Init()
 	this.run_layer:addChild(this.layer)
 
 	local popup = this.layer:getChildByName("popup")
-
+	
 	local btn_close = popup:getChildByName("btn_close")
     Tools_Base.AddClickEvent(btn_close, function()
 		gSound.clickSound()
         this.OnBtnClose()
     end, true)
-
+	
     local btn = popup:getChildByName("_lang_btn_register")
     Tools_Base.AddClickEvent(btn, function()
         this.OnBtnRegister(btn)
@@ -82,10 +80,10 @@ end
 function this.Adjust()
 	local shadow = this.layer:getChildByName("shadow")
 	shadow:setScale(Tools_Base.ScaleMax)
-
+	
 	local popup = this.layer:getChildByName("popup")
     popup:setScale(Tools_Base.ScaleMin)
-
+	
     local center = cc.p(Tools_Base.visibleSize.width/2.0, Tools_Base.visibleSize.height/2.0)
     this.layer:setPosition(center)
 end
@@ -131,98 +129,79 @@ function this.OnBtnRegister(ref)
         return
     end
 
+    local account = this.accountInput:getText()
+    local password = this.passwordInput:getText()
     go(function()
 		LoginLayer:ConnectNetwork()
+        
+        local data_ = PKG_Client_Login_RegisterAccount.Create()
+        data_.packageName = Device:GetPackageName()
+        data_.clientType = Device:GetSystemModel()
+        data_.phoneType = Device:GetPhoneType()
+        data_.device_id = tostring(Device:GetDeviceID())
+        data_.account_name = account
+        data_.password = password
 
-        local account = this.accountInput:getText()
-        local password = this.passwordInput:getText()
-        this.Register(account, password, "")
-    end)
-end
+        dump(data_, " ** data_ ** ")
+        Tools_Base.ShowWaiting()
+        local rlt = gNet_SendRequest(data_)
+        dump(rlt, " ** rlt ** ")
 
-function this.onCodeInputDone(code)
-    go(function()
-        local account = this.accountInput:getText()
-        local password = this.passwordInput:getText()
-        this.Register(account, password, code)
-    end)
-end
+        Tools_Base.HideWaiting()
 
-function this.Register(account, password, code)
-    local data_ = PKG_Client_Login_RegisterAccount.Create()
-    data_.packageName = Device:GetPackageName()
-    data_.clientType = Device:GetSystemModel()
-    data_.phoneType = Device:GetPhoneType()
-    data_.device_id = tostring(Device:GetDeviceID())
-    data_.account_name = account
-    data_.password = password
-    data_.code = code or ""                 -- 验证码
-
-    Tools_Base.ShowWaiting()
-    local rlt = gNet_SendRequest(data_)
-
-    Tools_Base.HideWaiting()
-
-    if rlt == nil then
-        Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
-        return
-    end
-
-    -- dump(rlt)
-    local rlt_meta = getmetatable(rlt)
-
-    if rlt_meta == PKG_Login_Client_RegisterAccountInfo then
-        Tools_Base.ShowMsgBox(TR("注册成功"), function()
-            LoginData:SetType(LoginData.TYPE.PWD)
-            LoginData:SetAccount(account)
-            LoginData:SetPassword(password)
-            go(function()
-                local layer = BottomLayer:Get(LoginLayer)
-                layer:ConnectNetwork()
-                if not layer:GetServerVersionInfo() then
-                    print("get version info faield.")
-                end
-            end)
-
-            this.OnBtnClose()
-        end)
-    elseif rlt_meta == PKG_Login_Client_RequestCaptchaResult then
-        local image_data = rlt.image_data
-
-        local layer = CaptchaLayer:create()
-        layer:Show(function(code)
-            this.onCodeInputDone(code)
-        end)
-        layer:SetImageData(image_data)
-    elseif rlt_meta == PKG_Generic_Error then
-        -- 错误码：
-        -- "account or password is empty", -1
-        -- "packageName is empty", -2
-        -- "clientType can not empty", -3
-        -- "Registration limit reached", -4
-        -- "username illegal", -5
-        -- "set account and password error", -6
-
-        local num = Int64ToNumber(rlt.number)
-        if num == -1 then
-            Tools_Base.ShowMsgBox(TR("用户名或密码为空"))
-        elseif num == -2 then
-            Tools_Base.ShowMsgBox(TR("包名为空"))
-        elseif num == -3 then
-            print("获取到的手机型号为空")
-            Tools_Base.ShowMsgBox(TR("注册失败，请重试"))
-        elseif num == -4 then
-            Tools_Base.ShowMsgBox(TR("已达到注册限制"))
-        elseif num == -5 then
-            Tools_Base.ShowMsgBox(TR("用户名非法，请新输入"))
-        elseif num == -6 then
-            print("设置用户和密码错误")
-            Tools_Base.ShowMsgBox(TR("用户名或密码错误"))
-        else
-            print("未知错误码:", num)
+        if rlt == nil then
             Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
+            return
         end
-    end
+
+        -- dump(rlt)
+        local rlt_meta = getmetatable(rlt)
+
+        if rlt_meta == PKG_Login_Client_RegisterAccountInfo then
+            Tools_Base.ShowMsgBox(TR("注册成功"), function()
+                LoginData:SetType(LoginData.TYPE.PWD)
+                LoginData:SetAccount(account)
+                LoginData:SetPassword(password)
+                go(function() 
+                    local layer = BottomLayer:Get(LoginLayer)
+                    layer:ConnectNetwork()
+                    if not layer:GetServerVersionInfo() then
+                        Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
+                    end
+                end)
+
+                this.OnBtnClose()
+            end)
+        elseif rlt_meta == PKG_Generic_Error then        
+            -- 错误码：
+            -- "account or password is empty", -1
+            -- "packageName is empty", -2
+            -- "clientType can not empty", -3
+            -- "Registration limit reached", -4
+            -- "username illegal", -5
+            -- "set account and password error", -6
+
+            local num = Int64ToNumber(rlt.number)
+            if num == -1 then
+                Tools_Base.ShowMsgBox(TR("用户名或密码为空"))
+            elseif num == -2 then
+                Tools_Base.ShowMsgBox(TR("包名为空"))
+            elseif num == -3 then
+                print("获取到的手机型号为空")
+                Tools_Base.ShowMsgBox(TR("注册失败，请重试"))
+            elseif num == -4 then
+                Tools_Base.ShowMsgBox(TR("已达到注册限制"))
+            elseif num == -5 then
+                Tools_Base.ShowMsgBox(TR("用户名非法，请新输入"))
+            elseif num == -6 then
+                print("设置用户和密码错误")
+                Tools_Base.ShowMsgBox(TR("用户名或密码错误"))
+            else
+                print("未知错误码:", num)
+                Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
+            end
+        end
+    end)
 end
 
 -- 登录请求
@@ -230,15 +209,13 @@ function this.SendPKG(account,password)
     LoginData:SetType(LoginData.TYPE.PWD)
     LoginData:SetAccount(account)
     LoginData:SetPassword(password)
-    go(function()
-        local layer = BottomLayer:Get(LoginLayer)
-        if layer then
-            layer:ConnectNetwork()
-            if not layer:GetServerVersionInfo() then
-				print("get version info faield.")
-			end
+    go(function() 
+		local layer = BottomLayer:Get(LoginLayer)
+        layer:ConnectNetwork()
+        if not layer:GetServerVersionInfo() then
+            Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
         end
-    end)
+	end)
 end
 
 return this

@@ -35,7 +35,6 @@ function this.Init()
     Tools_Base.AddClickEvent(btn_login, function()
         this.OnBtnLogin(btn_login)
     end, true)
-	this.btn_login = btn_login
 
     local btn_register = popup:getChildByName("_lang_btn_register")
     Tools_Base.AddClickEvent(btn_register, function()
@@ -209,16 +208,10 @@ function this.SendPKG(account,password)
     LoginData:SetAccount(account)
     LoginData:SetPassword(password)
     go(function()
-		this.btn_login:setEnabled(false)
 		local layer = BottomLayer:Get(LoginLayer)
 		layer:ConnectNetwork()
 		if not layer:GetServerVersionInfo() then
-			print("get version info faield.")
-		end
-		SleepSecs(1.2)
-
-		if not tolua.isnull(this.btn_login) then
-			this.btn_login:setEnabled(true)
+			Tools_Base.ShowMsgBox(TR("网络连接失败，请重试"))
 		end
 	end)
 end

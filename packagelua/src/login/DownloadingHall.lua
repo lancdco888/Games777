@@ -58,23 +58,11 @@ function DownloadingHall(loading_layer)
             result_hall = true
         end
         sDownloadMgr.EndCallBack[module_] = endFunc
-
-        local failedFunc = function(module_)
-            print("update failed:" .. module_)
-            done_hall = true
-            result_hall = false
-        end
-        sDownloadMgr.FailedCallBack[module_] = failedFunc
-
-        if not sDownloadMgr.StartDownloadTask(module_) then
-            done_hall = true
-            result_hall = false
-        end
+        sDownloadMgr.StartDownloadTask(module_)
     end
 
     local done_packagelua = true
     local result_packagelua = true
-    local update_packagelua = false
     if sDownloadMgr.CheckModule(packagelua_module) then
         local module_ = packagelua_module
         count = count + 1
@@ -103,24 +91,10 @@ function DownloadingHall(loading_layer)
             print("update done:" .. module_)
             done_packagelua = true
             result_packagelua = true
-            update_packagelua = true
+            ReLoadPackageLua()
         end
         sDownloadMgr.EndCallBack[module_] = endFunc
-
-        local failedFunc = function(module_)
-            print("update failed:" .. module_)
-            done_packagelua = true
-            result_packagelua = false
-        end
-        sDownloadMgr.FailedCallBack[module_] = failedFunc
-
-        if hotfixJson.ClearZipDone then
-            hotfixJson:ClearZipDone(module_)
-        end
-        if not sDownloadMgr.StartDownloadTask(module_) then
-            done_packagelua = true
-            result_packagelua = false
-        end
+        sDownloadMgr.StartDownloadTask(module_)
     end
 
     while not done_hall or not done_packagelua do
@@ -129,14 +103,53 @@ function DownloadingHall(loading_layer)
     end
 
     if not tolua.isnull(loading_layer) then
-        loading_layer:setRate(1.0)
-        SleepSecs(0.4)
+        if last_p < 100 then
+            loading_layer:setRate(1.0)
+            SleepSecs(0.4)
+        end
 
         loading_layer:setVisible(false)
     end
-
-    if update_packagelua then
-        ReLoadPackageLua()
-    end
     return result_hall and result_packagelua
+end
+
+-- 更新资源之后重新刷新 packagelua 模块
+function ReLoadPackageLua()
+    package.loaded["packagelua.src.base.BaseInfo"] = nil
+    package.loaded["packagelua.src.base.generic"] = nil
+    package.loaded["packagelua.src.base.class_def"] = nil
+    package.loaded["packagelua.src.base.client_login"] = nil
+    package.loaded["packagelua.src.base.client_lobby"] = nil
+    package.loaded["packagelua.src.base.Lobby_Slots"] = nil
+    package.loaded["packagelua.src.base.SupportOther"] = nil
+    package.loaded["packagelua.src.const_def"] = nil
+
+    require "packagelua.src.base.BaseInfo"
+    require "packagelua.src.base.generic"
+    require "packagelua.src.base.class_def"
+    require "packagelua.src.base.client_login"
+    require "packagelua.src.base.client_lobby"
+    require "packagelua.src.base.Lobby_Slots"
+    require "packagelua.src.base.SupportOther"
+    require("packagelua.src.const_def")
+
+    package.loaded["packagelua.src.base.Device"] = nil
+    Device = require("packagelua.src.base.Device")
+
+    package.loaded["packagelua.src.base.Tools_Base"] = nil
+    Tools_Base      = require("packagelua.src.base.Tools_Base")
+
+    for k,v in pairs(_G) do
+		if (string.find(k, "PKG_")) then
+			if v.Create then
+				local old = v.Create
+				local Create = function(...)
+					local o = old(...)
+					o.__proto = v
+					return o
+				end
+				v.Create = Create
+			end
+		end
+	end
 end
