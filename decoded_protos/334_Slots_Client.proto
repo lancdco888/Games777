@@ -1,0 +1,33 @@
+// ==============================================
+// 📄 Source: 334_Slots_Client.proto
+package PB.Slots_Client;
+
+message LuckyDiceNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message LuckyDiceFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message LuckyDiceDiceRet {
+    optional DiceSpin diceSpin = 1;
+}
+
+message LuckyDiceSelectRet {
+    optional SelectType freeType = 1;
+}
+
+message LuckyDiceEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional LuckyDiceNormalRet resumedNormal = 4;
+    optional LuckyDiceFreeRet resumedFree = 5;
+    optional LuckyDiceDiceRet resumedDice = 6;
+    optional LuckyDiceSelectRet resumedSelect = 7;
+    optional int32 status = 8;
+    optional int32 needSendSelect = 9;
+    optional int64 accumulativeWin = 10;
+    optional int32 diceShowStep = 11;
+}

@@ -1,0 +1,26 @@
+// ==============================================
+// 📄 Source: 277_Slots_Client.proto
+package PB.Slots_Client;
+
+message DragonGiftNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message DragonGiftFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message DragonGiftSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message DragonGiftEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional DragonGiftNormalRet resumedNormal = 4;
+    optional DragonGiftFreeRet resumedFree = 5;
+    optional DragonGiftSpecialRet resumedSpecial = 6;
+    optional int32 type = 7;
+    optional int32 lvID = 10;
+}

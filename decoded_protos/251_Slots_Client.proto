@@ -1,0 +1,22 @@
+// ==============================================
+// 📄 Source: 251_Slots_Client.proto
+package PB.Slots_Client;
+
+message Fortune5lianNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message Fortune5lianFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message Fortune5lianEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional Fortune5lianNormalRet resumedNormal = 4;
+    optional Fortune5lianFreeRet resumedFree = 5;
+    optional int32 type = 7;
+    repeated int32 cells = 9;
+    optional int32 lvID = 10;
+}

@@ -1,0 +1,54 @@
+// ==============================================
+// 📄 Source: 220_pandaTreasures.proto
+package PB.PandaTreasures;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message map {
+    optional int32 index = 1;
+    optional int32 num = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 intoFree = 4;
+    repeated Line lines = 5;
+    optional int32 lockStates = 6;
+    optional SlotMoneyGift slotMoneyGift = 7;
+    optional SlotMoney slotMoney = 8;
+    optional int64 levelUpMoney = 9;
+    repeated int64 levelUpMoneys = 10;
+}
+
+message FreeType {
+    optional int32 freeTime = 1;
+    repeated int32 openlist = 2;
+    repeated int32 ohterlist = 3;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    optional int32 addTime = 7;
+    repeated Line lines = 8;
+    optional int32 wildBet = 9;
+    optional int32 lockStates = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}

@@ -1,0 +1,16 @@
+// ==============================================
+// 📄 Source: 216_Client_Slots.proto
+package PB.Client_Slots;
+
+message Golden88NormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message Golden88FreeType {
+    optional int32 type = 1;
+}
+
+message Golden88FreeSpin {
+}

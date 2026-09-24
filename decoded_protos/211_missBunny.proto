@@ -1,0 +1,59 @@
+// ==============================================
+// 📄 Source: 211_missBunny.proto
+package PB.MissBunny;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message WildBet {
+    optional int32 index = 1;
+    optional int32 bet = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 intoFree = 4;
+    optional int32 intoLottery = 5;
+    repeated Line lines = 6;
+    optional int32 intoSpecial = 7;
+    optional SlotMoneyGift slotMoneyGift = 9;
+    optional SlotMoney slotMoney = 10;
+    optional int64 levelUpMoney = 11;
+    repeated int64 levelUpMoneys = 12;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated WildBet listWild = 4;
+    optional int64 bonusWinCoin = 5;
+    optional int32 allCount = 6;
+    optional int32 totalCount = 7;
+    optional int32 newFreeTime = 8;
+    repeated Line lines = 9;
+    optional SlotMoneyGift slotMoneyGift = 10;
+    optional SlotMoney slotMoney = 11;
+}
+
+message SpecialSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int32 isEnd = 5;
+    repeated Line lines = 6;
+    optional SlotMoneyGift slotMoneyGift = 7;
+    optional SlotMoney slotMoney = 8;
+}

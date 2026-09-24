@@ -1,0 +1,16 @@
+// ==============================================
+// 📄 Source: 258_Client_Slots.proto
+package PB.Client_Slots;
+
+message dancingDrumsNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message dancingDrumsFreeType {
+    optional int32 type = 1;
+}
+
+message dancingDrumsFreeSpin {
+}

@@ -1,0 +1,68 @@
+// ==============================================
+// 📄 Source: 334_lucky_dice.proto
+package PB.LuckyDice;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 curWinCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 intoFree = 4;
+    optional int32 restSelectCount = 5;
+    repeated Line lines = 6;
+    optional int32 lockStates = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+    optional int64 levelUpMoney = 10;
+    repeated int64 levelUpMoneys = 11;
+    optional int32 wildScale = 12;
+}
+
+message SelectType {
+    optional int32 type = 1;
+    optional int32 time = 2;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    repeated Cell grids = 2;
+    optional int64 curWinCoin = 3;
+    optional int32 gameTotalTimesCount = 5;
+    optional int32 gameCurTimesNum = 6;
+    repeated Line lines = 7;
+    optional int32 lockStates = 8;
+    optional SlotMoneyGift slotMoneyGift = 9;
+    optional SlotMoney slotMoney = 10;
+    optional int32 restSelectCount = 11;
+    optional int32 wildScale = 12;
+}
+
+message Dice {
+    optional int32 diceCount = 1;
+    optional int64 diceMoney = 2;
+    repeated int32 diceCompressPosition = 3;
+}
+
+message DiceSpin {
+    optional int32 restSelectCount = 1;
+    optional int32 diceTotalRoundCount = 2;
+    optional int32 diceCurRoundNum = 3;
+    optional int32 gameTotalTimesCount = 4;
+    optional int32 gameCurTimesNum = 5;
+    optional Dice dice = 6;
+    optional int64 bet = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+    optional int64 curWinCoin = 10;
+}

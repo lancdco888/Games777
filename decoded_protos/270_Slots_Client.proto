@@ -1,0 +1,26 @@
+// ==============================================
+// 📄 Source: 270_Slots_Client.proto
+package PB.Slots_Client;
+
+message EyesOfWealthNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message EyesOfWealthFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message EyesOfWealthSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message EyesOfWealthEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional EyesOfWealthNormalRet resumedNormal = 4;
+    optional EyesOfWealthFreeRet resumedFree = 5;
+    optional EyesOfWealthSpecialRet resumedSpecial = 6;
+    optional int32 type = 7;
+    optional int32 lvID = 10;
+}

@@ -1,0 +1,22 @@
+// ==============================================
+// 📄 Source: 279_Slots_Client.proto
+package PB.Slots_Client;
+
+message PegasusNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message PegasusFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message PegasusEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional PegasusNormalRet resumedNormal = 4;
+    optional PegasusFreeRet resumedFree = 5;
+    optional int32 type = 7;
+    repeated int32 cells = 9;
+    optional int32 lvID = 10;
+}

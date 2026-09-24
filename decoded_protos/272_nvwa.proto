@@ -1,0 +1,55 @@
+// ==============================================
+// 📄 Source: 272_nvwa.proto
+package PB.Nvwa;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message map {
+    optional int32 index = 1;
+    optional int32 num = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    repeated int32 changeWilds = 5;
+    repeated int32 changeWild2s = 6;
+    repeated int32 changeFree = 7;
+    repeated int32 changeBacks = 8;
+    optional int32 intoFree = 9;
+    optional int32 lockStates = 11;
+    optional SlotMoneyGift slotMoneyGift = 12;
+    optional SlotMoney slotMoney = 13;
+    optional int64 levelUpMoney = 14;
+    repeated int64 levelUpMoneys = 15;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    repeated int32 changeWilds = 5;
+    repeated int32 changeWild2s = 6;
+    repeated int32 changeFree = 7;
+    repeated int32 changeBacks = 8;
+    optional int64 bonusWinCoin = 9;
+    optional int32 allCount = 10;
+    optional int32 totalCount = 11;
+    optional int32 newFreeTime = 12;
+    optional int32 lockStates = 15;
+    optional SlotMoneyGift slotMoneyGift = 17;
+    optional SlotMoney slotMoney = 18;
+}

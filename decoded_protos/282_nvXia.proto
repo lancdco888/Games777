@@ -1,0 +1,62 @@
+// ==============================================
+// 📄 Source: 282_nvXia.proto
+package PB.NvXia;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 SymbolType = 3;
+    optional int64 SymbolValue = 4;
+    optional int32 isCollect = 5;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 intoFree = 4;
+    optional int32 intoSpecial = 5;
+    repeated Line lines = 6;
+    optional SlotMoneyGift slotMoneyGift = 7;
+    optional SlotMoney slotMoney = 8;
+    optional int64 levelUpMoney = 9;
+    repeated int64 levelUpMoneys = 10;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    optional int32 newFreeTime = 7;
+    optional int32 intoSpecial = 8;
+    repeated Line lines = 9;
+    optional int32 addTime = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}
+
+message SpecialSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int64 AllWinCoin = 13;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    repeated Line lines = 8;
+    optional int32 addTime = 9;
+    optional int32 addTimeType = 15;
+    optional int32 lockStates = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}

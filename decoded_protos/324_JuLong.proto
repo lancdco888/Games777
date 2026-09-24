@@ -1,0 +1,66 @@
+// ==============================================
+// 📄 Source: 324_JuLong.proto
+package PB.JuLong;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int64 SymbolValue = 3;
+    optional int32 Symbolbet = 4;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 intoFree = 4;
+    optional int32 wildBet = 5;
+    repeated Line lines = 6;
+    optional int32 intoCollect = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+    optional int64 levelUpMoney = 11;
+    repeated int64 levelUpMoneys = 13;
+}
+
+message FreeSpinType {
+    optional int32 freeType = 1;
+    optional int32 wildNumIndex = 2;
+    optional int32 freeTimesIndex = 3;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 wildBet = 10;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    optional int32 addFreeTime = 7;
+    repeated int32 intoCollect = 9;
+    repeated Line lines = 8;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}
+
+message SpecialSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    repeated Line lines = 7;
+    optional int32 lockStates = 9;
+    optional int32 hasdl = 10;
+    optional SlotMoneyGift slotMoneyGift = 12;
+    optional SlotMoney slotMoney = 11;
+}

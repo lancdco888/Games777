@@ -1,0 +1,34 @@
+// ==============================================
+// 📄 Source: 324_Slots_Client.proto
+package PB.Slots_Client;
+
+message JuLongNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message JuLongFreeTypeRet {
+    optional FreeSpinType freeSpinType = 1;
+}
+
+message JuLongFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message JuLongSpecialSpinRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message JuLongEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional JuLongNormalRet resumedNormal = 4;
+    optional JuLongFreeRet resumedFree = 5;
+    optional JuLongFreeTypeRet resumedFreeType = 6;
+    optional JuLongSpecialSpinRet specialRet = 7;
+    optional int32 type = 8;
+    optional int64 MoneyA = 11;
+    optional int64 MoneyB = 12;
+    repeated int32 cells = 13;
+    optional int32 lvID = 14;
+}

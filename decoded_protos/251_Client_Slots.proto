@@ -1,0 +1,12 @@
+// ==============================================
+// 📄 Source: 251_Client_Slots.proto
+package PB.Client_Slots;
+
+message Fortune5lianNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message Fortune5lianFreeSpin {
+}

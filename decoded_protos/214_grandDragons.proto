@@ -1,0 +1,45 @@
+// ==============================================
+// 📄 Source: 214_grandDragons.proto
+package PB.GrandDragons;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 intoFree = 5;
+    optional SlotMoneyGift slotMoneyGift = 6;
+    optional SlotMoney slotMoney = 7;
+    optional int64 levelUpMoney = 8;
+    repeated int64 levelUpMoneys = 9;
+}
+
+message FreeType {
+    optional int32 freeTime = 1;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int64 bonusWinCoin = 5;
+    optional int32 allCount = 6;
+    optional int32 totalCount = 7;
+    optional int32 newFreeTime = 9;
+    optional int32 wildBet = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+}

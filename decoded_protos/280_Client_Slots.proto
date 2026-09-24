@@ -1,0 +1,12 @@
+// ==============================================
+// 📄 Source: 280_Client_Slots.proto
+package PB.Client_Slots;
+
+message DragonPrinceNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message DragonPrinceFreeSpin {
+}

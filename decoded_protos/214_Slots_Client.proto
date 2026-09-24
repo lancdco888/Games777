@@ -1,0 +1,27 @@
+// ==============================================
+// 📄 Source: 214_Slots_Client.proto
+package PB.Slots_Client;
+
+message GrandDragonsNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message GrandDragonsFreeRetType {
+    optional FreeType freeType = 1;
+}
+
+message GrandDragonsFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message GrandDragonsEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional GrandDragonsNormalRet resumedNormal = 4;
+    optional GrandDragonsFreeRet resumedFree = 5;
+    optional GrandDragonsFreeRetType freeType = 6;
+    optional int32 type = 7;
+    optional int32 freetime = 8;
+    optional int32 lvID = 9;
+}

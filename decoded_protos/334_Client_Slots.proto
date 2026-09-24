@@ -1,0 +1,19 @@
+// ==============================================
+// 📄 Source: 334_Client_Slots.proto
+package PB.Client_Slots;
+
+message LuckyDiceNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message LuckyDiceFreeSpin {
+}
+
+message LuckyDiceDiceSpin {
+}
+
+message LuckyDiceFreeType {
+    optional int32 type = 1;
+}

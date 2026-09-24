@@ -1,0 +1,60 @@
+// ==============================================
+// 📄 Source: 271_dragonKing.proto
+package PB.DragonKing;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 backinfos = 3;
+}
+
+message map {
+    optional int32 index = 1;
+    optional int32 num = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 wildBet = 14;
+    repeated int32 changeWilds = 11;
+    repeated int32 changeBacks = 12;
+    optional int32 intoFree = 4;
+    repeated Line lines = 6;
+    optional int32 intoCollect = 7;
+    optional int32 lockStates = 8;
+    optional SlotMoneyGift slotMoneyGift = 9;
+    optional SlotMoney slotMoney = 10;
+    optional int64 levelUpMoney = 15;
+    repeated int64 levelUpMoneys = 16;
+}
+
+message FreeType {
+    optional int32 type = 1;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int32 wildBet = 14;
+    repeated int32 changeWilds = 11;
+    repeated int32 changeBacks = 12;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    optional int32 addTime = 7;
+    repeated Line lines = 8;
+    optional int32 intoCollect = 9;
+    optional int32 lockStates = 10;
+    optional SlotMoneyGift slotMoneyGift = 15;
+    optional SlotMoney slotMoney = 16;
+}

@@ -1,0 +1,19 @@
+// ==============================================
+// 📄 Source: 259_Client_Slots.proto
+package PB.Client_Slots;
+
+message JinJiBaoXiNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message JinJiBaoXiFreeType {
+    optional int32 index = 1;
+}
+
+message JinJiBaoXiFreeSpin {
+}
+
+message JinJiBaoXiSpecialSpin {
+}
