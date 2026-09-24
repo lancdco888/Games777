@@ -1,0 +1,23 @@
+{
+  "__version__": "1.0.9",
+  "modules": {
+    "graphics": { "_value": true },
+    "gfx-webgl": { "_value": true },
+    "gfx-webgl2": { "_value": true },
+    "ui": { "_value": true },
+    "audio": { "_value": true },
+    "network": { "_value": true },
+    "animation": { "_value": true },
+    "spine": { "_value": true },
+    "particle": { "_value": false },
+    "physics": { "_value": false },
+    "physics-ammo": { "_value": false },
+    "physics-cannon": { "_value": false },
+    "physics-physx": { "_value": false },
+    "physics-builtin": { "_value": false },
+    "3d": { "_value": false },
+    "2d": { "_value": true },
+    "marionette": { "_value": false },
+    "xr": { "_value": false }
+  }
+}
