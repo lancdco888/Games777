@@ -28,42 +28,19 @@ Device.V_Screen_Type = 2
 function Device:ctor()
 	self.platform = nil
 	self.deviceID = nil
+	self.packagePlatform = nil
 	self.pkg_name_ = ""
 	self.currentScreenType = Device.Unknown_Screen_Type -- const_game.Unknown_Screen_Type
 
 	self:GetSystemModel()
+	self:GetTotalMemory()
 
 	local utils = require("bootstrap.src.utils")
 	utils.go(function()
 		self.pkg_name_ = GetPackageName()
 	end)
 	self:GetDeviceID()
-
-    self.gl_exts = {}
-    if gl.getSupportedExtensions then
-        self.gl_exts = gl.getSupportedExtensions()
-        -- dump(self.gl_exts, " ** Device.gl_exts ** ")
-    end
-end
-
-function Device:CheckGlExtensions(key)
-    local gl_exts = self.gl_exts
-    for __, ext in pairs(gl_exts) do
-        if string.find(ext, key) then
-            return true
-        end
-    end
-    return false
-end
-
-function Device:IsAstcSupported()
-    local astc = BuildConfig and BuildConfig.IsAstcSupported
-    local glAstc = self:CheckGlExtensions("GL_KHR_texture_compression_astc_ldr")
-    if astc and glAstc then
-        return true
-    end
-
-    return false
+	self:GetInstallReferrerUrl()
 end
 
 --退出游戏
@@ -190,19 +167,6 @@ function Device:setScreenType(screen_type_)
 	end
 end
 
-function Device:PushFacebookEvent(type_)
-    print("Device:PushFacebookEvent()," .. tostring(type_))
-	local targetPlatform = cc.Application:getInstance():getTargetPlatform()
-	if(cc.PLATFORM_OS_WINDOWS == targetPlatform or cc.PLATFORM_OS_IPHONE == targetPlatform or cc.PLATFORM_OS_IPAD == targetPlatform)then
-	elseif(cc.PLATFORM_OS_ANDROID == targetPlatform)then
-		local luaj = require "cocos.cocos2d.luaj"
-		local className = "org/cocos2dx/lua/AppActivity"
-		local args = {type_} --推送事件类型:"1" 首次获得账号，"2" 充值成功
-		local sigs = "(Ljava/lang/String;)V"
-		luaj.callStaticMethod(className, "PushFacebookEvent", args, sigs)
-	end
-end
-
 function Device:GetSystemModel()
 	if self.platform == nil then
 		local targetPlatform = cc.Application:getInstance():getTargetPlatform()
@@ -229,8 +193,6 @@ function Device:GetSystemModel()
 			}
 			local luaoc = require("cocos.cocos2d.luaoc")
 			luaoc.callStaticMethod(IOS_ClassName,"getSystemModel",appargs)
-		elseif cc.PLATFORM_OS_LINUX == targetPlatform then
-			self.platform = "linux"
 		end
 	end
 	return self.platform
@@ -255,10 +217,8 @@ function Device:GetDeviceID()
 			local sigs = "(Ljava/lang/String;I)V"
 			local funcname = "getDeviceIDInd"
 			local ok,ret = luaj.callStaticMethod(className, funcname, args, sigs)
-		elseif cc.PLATFORM_OS_IPHONE == targetPlatform
+		elseif cc.PLATFORM_OS_IPHONE == targetPlatform 
 			or cc.PLATFORM_OS_IPAD == targetPlatform then
-			self.deviceID = ""
-		elseif cc.PLATFORM_OS_LINUX == targetPlatform then
 			self.deviceID = ""
 		end
 	end
@@ -274,8 +234,37 @@ function Device:GetPhoneType()
 	elseif(cc.PLATFORM_OS_IPHONE == targetPlatform or cc.PLATFORM_OS_IPAD == targetPlatform)then
 		return 2
 	end
-
+	
 	return -1
+end
+
+function Device:GetTotalMemory()
+	if self.totalMemory == nil then
+		local targetPlatform = cc.Application:getInstance():getTargetPlatform()
+		if(cc.PLATFORM_OS_WINDOWS == targetPlatform or cc.PLATFORM_OS_MAC == targetPlatform)then
+			self.totalMemory = "1400"
+		elseif(cc.PLATFORM_OS_ANDROID == targetPlatform)then
+			local callbackLua = function(str)
+				self.totalMemory = str
+			end
+			local luaj = require "cocos.cocos2d.luaj"
+			local className = "org/cocos2dx/lua/AppActivity"
+			local args = {"getTotalMemory",callbackLua}
+			local sigs = "(Ljava/lang/String;I)V"
+			local ok,ret = luaj.callStaticMethod(className, "getTotalMemory", args, sigs)
+		elseif(cc.PLATFORM_OS_IPHONE == targetPlatform or cc.PLATFORM_OS_IPAD == targetPlatform)then
+			local IOS_ClassName =  "PlatBridge"
+            local callback = function(str)
+                self.totalMemory = str.memory
+            end
+            local appargs = {
+                memory = callback
+            }
+            local luaoc = require("cocos.cocos2d.luaoc")
+            luaoc.callStaticMethod(IOS_ClassName,"getSystemMemory",appargs)
+		end
+	end
+	return self.totalMemory
 end
 
 --获取包名
@@ -411,7 +400,7 @@ function Device:SaveImageToGallery(imagePath, title, description)
 		end
 		local data_ = fpread:read("*a")
 		fpread:close()
-
+		
 		-- 写入文件
 		local photo_n = photo_dir_ .. "photo.png"
 		local fpwrite = io.open(photo_n, "wb")
@@ -505,9 +494,53 @@ function Device:RequestStoragePermission(cbk)
 		if ver >= 33 then
 			return Device:RequestPermission("android.permission.READ_MEDIA_IMAGES", cbk)
 		end
-		return Device:RequestPermission("android.permission.WRITE_EXTERNAL_STORAGE", cbk)
+		return Device:RequestPermission("android.permission.WRITE_EXTERNAL_STORAGE", cbk)	
 	else
 		return false
+	end
+end
+
+function Device:GetInstallReferrerUrl(cbk)
+	if not cbk then
+		cbk = function() end
+	end
+
+	local UrlKey = "ReferrerUrl"
+	local url = cc.UserDefault:getInstance():getStringForKey(UrlKey, "nil")
+	if url ~= "nil" then
+		cbk(url)
+		return
+	end
+
+	local targetPlatform = cc.Application:getInstance():getTargetPlatform()
+	if cc.PLATFORM_OS_ANDROID == targetPlatform then
+		local callbackLua = function(str)
+			-- 保存起来便于查错
+			local json = require("json")
+			local data = json.decode(str)
+			local state = data.state
+			local referrerUrl = data.referrerUrl
+			if not referrerUrl then
+				referrerUrl = ""
+			end
+			cc.UserDefault:getInstance():setStringForKey(UrlKey, referrerUrl)
+			cbk(referrerUrl)
+		end
+
+		local luaj = require "cocos.cocos2d.luaj"
+		local className = "org/cocos2dx/lua/AppActivity"
+		local args = { callbackLua }
+		local sigs = "(I)V"
+		local funcname = "getInstallReferrer"
+
+		if not luaj.checkStaticMethod(className, funcname, sigs) then
+			cc.UserDefault:getInstance():setStringForKey(UrlKey, '')
+			cbk('')
+			return
+		end
+		local ok, ret = luaj.callStaticMethod(className, funcname, args, sigs)
+	else
+		cbk('not_android')
 	end
 end
 
@@ -534,33 +567,6 @@ function Device:GetExternalPath()
 		end
 	else
 		return writable
-	end
-end
-
-function Device:GetMemoryInfo()
-	local targetPlatform = cc.Application:getInstance():getTargetPlatform()
-	if cc.PLATFORM_OS_ANDROID == targetPlatform then
-		local luaj = require "cocos.cocos2d.luaj"
-		local className = "org/cocos2dx/lua/AppActivity"
-		local args = {}
-		local sigs = "()Ljava/lang/String;"
-		local funcname = "getMemoryInfo"
-
-		if not luaj.checkStaticMethod(className, funcname, sigs) then
-			release_print("Device:GetMemoryInfo(): no such interface jni.getMemoryInfo()")
-			return writable
-		end
-		local ok, ret = luaj.callStaticMethod(className, funcname, args, sigs)
-		if ok then
-            local sucess, obj = pcall(json.decode, ret)
-			return obj
-		else
-			release_print("Device:GetMemoryInfo(): failed to call jni.getMemoryInfo()")
-			return nil
-		end
-	else
-		release_print("Device:GetMemoryInfo(): not supported")
-		return nil
 	end
 end
 

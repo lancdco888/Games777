@@ -1,5 +1,5 @@
 ﻿
-CodeGen_client_login_md5 ="#*MD5<2338648a84e00e8b8406693f8ac8cce7>*#"
+CodeGen_client_login_md5 ="#*MD5<7303ea307c6f011669b18297404b5e45>*#"
 
 --[[
 客户端登陆类型
@@ -236,102 +236,6 @@ PKG_Login_Client_GameUpdatePath = {
 PKG_Login_Client_GameUpdatePath.__index = PKG_Login_Client_GameUpdatePath
 
 --[[
-校验成功, 下一步去连游戏
-]]
-PKG_Login_Client_Auth_Success_Game = {
-    typeName = "PKG_Login_Client_Auth_Success_Game",
-    typeId = 1002,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Login_Client_Auth_Success_Game)
-        end
-        --[[
-        游戏类型编号
-        ]]
-        o.gameId = 0 -- Int32
-        --[[
-        游戏ip
-        ]]
-        o.gameIp = "" -- String
-        --[[
-        游戏port
-        ]]
-        o.gamePort = 0 -- Int16
-        --[[
-        游戏token
-        ]]
-        o.gameToken = "" -- String
-        --[[
-        用户名
-        ]]
-        o.username = "" -- String
-        --[[
-        账号Id
-        ]]
-        o.accountId = 0 -- Int32
-        --[[
-        手机号
-        ]]
-        o.phone = "" -- String
-        --[[
-        facebook账号/id
-        ]]
-        o.facebook = "" -- String
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        -- gameId
-        r, self.gameId = d:Rvi32()
-        if r ~= 0 then return r end
-        -- gameIp
-        r, self.gameIp = d:Rstr()
-        if r ~= 0 then return r end
-        -- gamePort
-        r, self.gamePort = d:Rvi16()
-        if r ~= 0 then return r end
-        -- gameToken
-        r, self.gameToken = d:Rstr()
-        if r ~= 0 then return r end
-        -- username
-        r, self.username = d:Rstr()
-        if r ~= 0 then return r end
-        -- accountId
-        r, self.accountId = d:Rvi32()
-        if r ~= 0 then return r end
-        -- phone
-        r, self.phone = d:Rstr()
-        if r ~= 0 then return r end
-        -- facebook
-        r, self.facebook = d:Rstr()
-        if r ~= 0 then return r end
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-        -- gameId
-        d:Wvi32(self.gameId)
-        -- gameIp
-        d:Wstr(self.gameIp)
-        -- gamePort
-        d:Wvi16(self.gamePort)
-        -- gameToken
-        d:Wstr(self.gameToken)
-        -- username
-        d:Wstr(self.username)
-        -- accountId
-        d:Wvi32(self.accountId)
-        -- phone
-        d:Wstr(self.phone)
-        -- facebook
-        d:Wstr(self.facebook)
-    end
-}
-PKG_Login_Client_Auth_Success_Game.__index = PKG_Login_Client_Auth_Success_Game
-
---[[
 网络重新导向
 ]]
 PKG_Login_Client_ReRouteNetWork = {
@@ -507,6 +411,171 @@ PKG_Login_Client_ReceivedPromotionCode = {
 PKG_Login_Client_ReceivedPromotionCode.__index = PKG_Login_Client_ReceivedPromotionCode
 
 --[[
+强更包
+]]
+PKG_Login_Client_GameEnforceUpdatePath = {
+    typeName = "PKG_Login_Client_GameEnforceUpdatePath",
+    typeId = 1011,
+    Create = function(o)
+        if o == nil then
+            o = {}
+            setmetatable(o, PKG_Login_Client_GameEnforceUpdatePath)
+        end
+        o.version = "" -- String
+        o.updatePath = "" -- String
+        return o
+    end,
+    Read = function(self, om)
+        local d = om.d
+        local r, n
+        -- version
+        r, self.version = d:Rstr()
+        if r ~= 0 then return r end
+        -- updatePath
+        r, self.updatePath = d:Rstr()
+        if r ~= 0 then return r end
+        return 0
+    end,
+    Write = function(self, om)
+        local d = om.d
+        -- version
+        d:Wstr(self.version)
+        -- updatePath
+        d:Wstr(self.updatePath)
+    end
+}
+PKG_Login_Client_GameEnforceUpdatePath.__index = PKG_Login_Client_GameEnforceUpdatePath
+
+--[[
+服务器版本信息
+]]
+PKG_Login_Client_ServerVersionInfo = {
+    typeName = "PKG_Login_Client_ServerVersionInfo",
+    typeId = 1009,
+    Create = function(o)
+        if o == nil then
+            o = {}
+            setmetatable(o, PKG_Login_Client_ServerVersionInfo)
+        end
+        --[[
+        info is json
+        ]]
+        o.info = "" -- String
+        return o
+    end,
+    Read = function(self, om)
+        local d = om.d
+        local r, n
+        -- info
+        r, self.info = d:Rstr()
+        if r ~= 0 then return r end
+        return 0
+    end,
+    Write = function(self, om)
+        local d = om.d
+        -- info
+        d:Wstr(self.info)
+    end
+}
+PKG_Login_Client_ServerVersionInfo.__index = PKG_Login_Client_ServerVersionInfo
+
+--[[
+校验成功, 下一步去连游戏
+]]
+PKG_Login_Client_Auth_Success_Game = {
+    typeName = "PKG_Login_Client_Auth_Success_Game",
+    typeId = 1002,
+    Create = function(o)
+        if o == nil then
+            o = {}
+            setmetatable(o, PKG_Login_Client_Auth_Success_Game)
+        end
+        --[[
+        游戏类型编号
+        ]]
+        o.gameId = 0 -- Int32
+        --[[
+        游戏ip
+        ]]
+        o.gameIp = "" -- String
+        --[[
+        游戏port
+        ]]
+        o.gamePort = 0 -- Int16
+        --[[
+        游戏token
+        ]]
+        o.gameToken = "" -- String
+        --[[
+        用户名
+        ]]
+        o.username = "" -- String
+        --[[
+        账号Id
+        ]]
+        o.accountId = 0 -- Int32
+        --[[
+        手机号
+        ]]
+        o.phone = "" -- String
+        --[[
+        facebook账号/id
+        ]]
+        o.facebook = "" -- String
+        return o
+    end,
+    Read = function(self, om)
+        local d = om.d
+        local r, n
+        -- gameId
+        r, self.gameId = d:Rvi32()
+        if r ~= 0 then return r end
+        -- gameIp
+        r, self.gameIp = d:Rstr()
+        if r ~= 0 then return r end
+        -- gamePort
+        r, self.gamePort = d:Rvi16()
+        if r ~= 0 then return r end
+        -- gameToken
+        r, self.gameToken = d:Rstr()
+        if r ~= 0 then return r end
+        -- username
+        r, self.username = d:Rstr()
+        if r ~= 0 then return r end
+        -- accountId
+        r, self.accountId = d:Rvi32()
+        if r ~= 0 then return r end
+        -- phone
+        r, self.phone = d:Rstr()
+        if r ~= 0 then return r end
+        -- facebook
+        r, self.facebook = d:Rstr()
+        if r ~= 0 then return r end
+        return 0
+    end,
+    Write = function(self, om)
+        local d = om.d
+        -- gameId
+        d:Wvi32(self.gameId)
+        -- gameIp
+        d:Wstr(self.gameIp)
+        -- gamePort
+        d:Wvi16(self.gamePort)
+        -- gameToken
+        d:Wstr(self.gameToken)
+        -- username
+        d:Wstr(self.username)
+        -- accountId
+        d:Wvi32(self.accountId)
+        -- phone
+        d:Wstr(self.phone)
+        -- facebook
+        d:Wstr(self.facebook)
+    end
+}
+PKG_Login_Client_Auth_Success_Game.__index = PKG_Login_Client_Auth_Success_Game
+
+--[[
 注册账号结果
 ]]
 PKG_Login_Client_RegisterAccountInfo = {
@@ -558,73 +627,139 @@ PKG_Login_Client_RegisterAccountInfo = {
 PKG_Login_Client_RegisterAccountInfo.__index = PKG_Login_Client_RegisterAccountInfo
 
 --[[
-服务器版本信息
+验证google
 ]]
-PKG_Login_Client_ServerVersionInfo = {
-    typeName = "PKG_Login_Client_ServerVersionInfo",
-    typeId = 1009,
+PKG_Login_Client_ReceivedVerificationGoogle = {
+    typeName = "PKG_Login_Client_ReceivedVerificationGoogle",
+    typeId = 1013,
     Create = function(o)
         if o == nil then
             o = {}
-            setmetatable(o, PKG_Login_Client_ServerVersionInfo)
+            setmetatable(o, PKG_Login_Client_ReceivedVerificationGoogle)
         end
         --[[
-        info is json
+        验证状态(0=失败；1成功)
         ]]
-        o.info = "" -- String
+        o.state = 0 -- Int32
+        --[[
+        google id
+        ]]
+        o.google_id = "" -- String
         return o
     end,
     Read = function(self, om)
         local d = om.d
         local r, n
-        -- info
-        r, self.info = d:Rstr()
+        -- state
+        r, self.state = d:Rvi32()
+        if r ~= 0 then return r end
+        -- google_id
+        r, self.google_id = d:Rstr()
         if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
         local d = om.d
-        -- info
-        d:Wstr(self.info)
+        -- state
+        d:Wvi32(self.state)
+        -- google_id
+        d:Wstr(self.google_id)
     end
 }
-PKG_Login_Client_ServerVersionInfo.__index = PKG_Login_Client_ServerVersionInfo
+PKG_Login_Client_ReceivedVerificationGoogle.__index = PKG_Login_Client_ReceivedVerificationGoogle
 
 --[[
-强更包
+验证google
 ]]
-PKG_Login_Client_GameEnforceUpdatePath = {
-    typeName = "PKG_Login_Client_GameEnforceUpdatePath",
-    typeId = 1011,
+PKG_Login_Client_ReceivedVerificationApple = {
+    typeName = "PKG_Login_Client_ReceivedVerificationApple",
+    typeId = 1014,
     Create = function(o)
         if o == nil then
             o = {}
-            setmetatable(o, PKG_Login_Client_GameEnforceUpdatePath)
+            setmetatable(o, PKG_Login_Client_ReceivedVerificationApple)
         end
-        o.version = "" -- String
-        o.updatePath = "" -- String
+        --[[
+        验证状态(0=失败；1成功)
+        ]]
+        o.state = 0 -- Int32
+        --[[
+        apple id
+        ]]
+        o.apple_id = "" -- String
         return o
     end,
     Read = function(self, om)
         local d = om.d
         local r, n
-        -- version
-        r, self.version = d:Rstr()
+        -- state
+        r, self.state = d:Rvi32()
         if r ~= 0 then return r end
-        -- updatePath
-        r, self.updatePath = d:Rstr()
+        -- apple_id
+        r, self.apple_id = d:Rstr()
         if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
         local d = om.d
-        -- version
-        d:Wstr(self.version)
-        -- updatePath
-        d:Wstr(self.updatePath)
+        -- state
+        d:Wvi32(self.state)
+        -- apple_id
+        d:Wstr(self.apple_id)
     end
 }
-PKG_Login_Client_GameEnforceUpdatePath.__index = PKG_Login_Client_GameEnforceUpdatePath
+PKG_Login_Client_ReceivedVerificationApple.__index = PKG_Login_Client_ReceivedVerificationApple
+
+--[[
+验证facebook
+]]
+PKG_Login_Client_ReceivedVerificationFacebook = {
+    typeName = "PKG_Login_Client_ReceivedVerificationFacebook",
+    typeId = 1008,
+    Create = function(o)
+        if o == nil then
+            o = {}
+            setmetatable(o, PKG_Login_Client_ReceivedVerificationFacebook)
+        end
+        --[[
+        验证状态(0=失败；1成功)
+        ]]
+        o.state = 0 -- Int32
+        --[[
+        Facebook_id
+        ]]
+        o.facebook_id = "" -- String
+        --[[
+        Facebook_name
+        ]]
+        o.facebook_name = "" -- String
+        return o
+    end,
+    Read = function(self, om)
+        local d = om.d
+        local r, n
+        -- state
+        r, self.state = d:Rvi32()
+        if r ~= 0 then return r end
+        -- facebook_id
+        r, self.facebook_id = d:Rstr()
+        if r ~= 0 then return r end
+        -- facebook_name
+        r, self.facebook_name = d:Rstr()
+        if r ~= 0 then return r end
+        return 0
+    end,
+    Write = function(self, om)
+        local d = om.d
+        -- state
+        d:Wvi32(self.state)
+        -- facebook_id
+        d:Wstr(self.facebook_id)
+        -- facebook_name
+        d:Wstr(self.facebook_name)
+    end
+}
+PKG_Login_Client_ReceivedVerificationFacebook.__index = PKG_Login_Client_ReceivedVerificationFacebook
 
 --[[
 校验成功, 下一步去连大厅
@@ -850,196 +985,82 @@ PKG_Login_Client_Auth_Success_Lobby = {
 PKG_Login_Client_Auth_Success_Lobby.__index = PKG_Login_Client_Auth_Success_Lobby
 
 --[[
-验证google
+注册账号密码
 ]]
-PKG_Login_Client_ReceivedVerificationGoogle = {
-    typeName = "PKG_Login_Client_ReceivedVerificationGoogle",
-    typeId = 1013,
+PKG_Client_Login_RegisterAccount = {
+    typeName = "PKG_Client_Login_RegisterAccount",
+    typeId = 1113,
     Create = function(o)
         if o == nil then
             o = {}
-            setmetatable(o, PKG_Login_Client_ReceivedVerificationGoogle)
+            setmetatable(o, PKG_Client_Login_RegisterAccount)
         end
         --[[
-        验证状态(0=失败；1成功)
+        包名
         ]]
-        o.state = 0 -- Int32
+        o.packageName = "" -- String
         --[[
-        google id
+        客户端登陆类型 手机型号
         ]]
-        o.google_id = "" -- String
+        o.clientType = "" -- String
+        --[[
+        系统类型(0 robot,1 andriod,2 ios,3 windows)
+        ]]
+        o.phoneType = 0 -- Int32
+        --[[
+        设备号(手机唯一编号),注册时写入(不修改)
+        ]]
+        o.device_id = "" -- String
+        --[[
+        账号名
+        ]]
+        o.account_name = "" -- String
+        --[[
+        密码
+        ]]
+        o.password = "" -- String
         return o
     end,
     Read = function(self, om)
         local d = om.d
         local r, n
-        -- state
-        r, self.state = d:Rvi32()
+        -- packageName
+        r, self.packageName = d:Rstr()
         if r ~= 0 then return r end
-        -- google_id
-        r, self.google_id = d:Rstr()
+        -- clientType
+        r, self.clientType = d:Rstr()
         if r ~= 0 then return r end
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-        -- state
-        d:Wvi32(self.state)
-        -- google_id
-        d:Wstr(self.google_id)
-    end
-}
-PKG_Login_Client_ReceivedVerificationGoogle.__index = PKG_Login_Client_ReceivedVerificationGoogle
-
---[[
-验证google
-]]
-PKG_Login_Client_ReceivedVerificationApple = {
-    typeName = "PKG_Login_Client_ReceivedVerificationApple",
-    typeId = 1014,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Login_Client_ReceivedVerificationApple)
-        end
-        --[[
-        验证状态(0=失败；1成功)
-        ]]
-        o.state = 0 -- Int32
-        --[[
-        apple id
-        ]]
-        o.apple_id = "" -- String
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        -- state
-        r, self.state = d:Rvi32()
+        -- phoneType
+        r, self.phoneType = d:Rvi32()
         if r ~= 0 then return r end
-        -- apple_id
-        r, self.apple_id = d:Rstr()
+        -- device_id
+        r, self.device_id = d:Rstr()
+        if r ~= 0 then return r end
+        -- account_name
+        r, self.account_name = d:Rstr()
+        if r ~= 0 then return r end
+        -- password
+        r, self.password = d:Rstr()
         if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
         local d = om.d
-        -- state
-        d:Wvi32(self.state)
-        -- apple_id
-        d:Wstr(self.apple_id)
+        -- packageName
+        d:Wstr(self.packageName)
+        -- clientType
+        d:Wstr(self.clientType)
+        -- phoneType
+        d:Wvi32(self.phoneType)
+        -- device_id
+        d:Wstr(self.device_id)
+        -- account_name
+        d:Wstr(self.account_name)
+        -- password
+        d:Wstr(self.password)
     end
 }
-PKG_Login_Client_ReceivedVerificationApple.__index = PKG_Login_Client_ReceivedVerificationApple
-
---[[
-验证facebook
-]]
-PKG_Login_Client_ReceivedVerificationFacebook = {
-    typeName = "PKG_Login_Client_ReceivedVerificationFacebook",
-    typeId = 1008,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Login_Client_ReceivedVerificationFacebook)
-        end
-        --[[
-        验证状态(0=失败；1成功)
-        ]]
-        o.state = 0 -- Int32
-        --[[
-        Facebook_id
-        ]]
-        o.facebook_id = "" -- String
-        --[[
-        Facebook_name
-        ]]
-        o.facebook_name = "" -- String
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        -- state
-        r, self.state = d:Rvi32()
-        if r ~= 0 then return r end
-        -- facebook_id
-        r, self.facebook_id = d:Rstr()
-        if r ~= 0 then return r end
-        -- facebook_name
-        r, self.facebook_name = d:Rstr()
-        if r ~= 0 then return r end
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-        -- state
-        d:Wvi32(self.state)
-        -- facebook_id
-        d:Wstr(self.facebook_id)
-        -- facebook_name
-        d:Wstr(self.facebook_name)
-    end
-}
-PKG_Login_Client_ReceivedVerificationFacebook.__index = PKG_Login_Client_ReceivedVerificationFacebook
-
---[[
-获取验证码
-]]
-PKG_Client_Login_RequestCaptcha = {
-    typeName = "PKG_Client_Login_RequestCaptcha",
-    typeId = 2120,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Client_Login_RequestCaptcha)
-        end
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-    end
-}
-PKG_Client_Login_RequestCaptcha.__index = PKG_Client_Login_RequestCaptcha
-
---[[
-验证google
-]]
-PKG_Client_Login_ClientVerificationGoogle = {
-    typeName = "PKG_Client_Login_ClientVerificationGoogle",
-    typeId = 1114,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Client_Login_ClientVerificationGoogle)
-        end
-        --[[
-        google token
-        ]]
-        o.token = "" -- String
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        -- token
-        r, self.token = d:Rstr()
-        if r ~= 0 then return r end
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-        -- token
-        d:Wstr(self.token)
-    end
-}
-PKG_Client_Login_ClientVerificationGoogle.__index = PKG_Client_Login_ClientVerificationGoogle
+PKG_Client_Login_RegisterAccount.__index = PKG_Client_Login_RegisterAccount
 
 --[[
 验证apple
@@ -1075,124 +1096,37 @@ PKG_Client_Login_ClientVerificationApple = {
 PKG_Client_Login_ClientVerificationApple.__index = PKG_Client_Login_ClientVerificationApple
 
 --[[
-检查账号结果
+验证google
 ]]
-PKG_Login_Client_HasAccountNameResult = {
-    typeName = "PKG_Login_Client_HasAccountNameResult",
-    typeId = 1016,
+PKG_Client_Login_ClientVerificationGoogle = {
+    typeName = "PKG_Client_Login_ClientVerificationGoogle",
+    typeId = 1114,
     Create = function(o)
         if o == nil then
             o = {}
-            setmetatable(o, PKG_Login_Client_HasAccountNameResult)
+            setmetatable(o, PKG_Client_Login_ClientVerificationGoogle)
         end
         --[[
-        true表示可以
+        google token
         ]]
-        o.okya = false -- Boolean
+        o.token = "" -- String
         return o
     end,
     Read = function(self, om)
         local d = om.d
         local r, n
-        -- okya
-        r, self.okya = d:Rb()
+        -- token
+        r, self.token = d:Rstr()
         if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
         local d = om.d
-        -- okya
-        d:Wb(self.okya)
+        -- token
+        d:Wstr(self.token)
     end
 }
-PKG_Login_Client_HasAccountNameResult.__index = PKG_Login_Client_HasAccountNameResult
-
---[[
-注册账号密码
-]]
-PKG_Client_Login_RegisterAccount = {
-    typeName = "PKG_Client_Login_RegisterAccount",
-    typeId = 1113,
-    Create = function(o)
-        if o == nil then
-            o = {}
-            setmetatable(o, PKG_Client_Login_RegisterAccount)
-        end
-        --[[
-        包名
-        ]]
-        o.packageName = "" -- String
-        --[[
-        客户端登陆类型 手机型号
-        ]]
-        o.clientType = "" -- String
-        --[[
-        系统类型(0 robot,1 andriod,2 ios,3 windows)
-        ]]
-        o.phoneType = 0 -- Int32
-        --[[
-        设备号(手机唯一编号),注册时写入(不修改)
-        ]]
-        o.device_id = "" -- String
-        --[[
-        账号名
-        ]]
-        o.account_name = "" -- String
-        --[[
-        密码
-        ]]
-        o.password = "" -- String
-        --[[
-        验证码
-        ]]
-        o.code = "" -- String
-        return o
-    end,
-    Read = function(self, om)
-        local d = om.d
-        local r, n
-        -- packageName
-        r, self.packageName = d:Rstr()
-        if r ~= 0 then return r end
-        -- clientType
-        r, self.clientType = d:Rstr()
-        if r ~= 0 then return r end
-        -- phoneType
-        r, self.phoneType = d:Rvi32()
-        if r ~= 0 then return r end
-        -- device_id
-        r, self.device_id = d:Rstr()
-        if r ~= 0 then return r end
-        -- account_name
-        r, self.account_name = d:Rstr()
-        if r ~= 0 then return r end
-        -- password
-        r, self.password = d:Rstr()
-        if r ~= 0 then return r end
-        -- code
-        r, self.code = d:Rstr()
-        if r ~= 0 then return r end
-        return 0
-    end,
-    Write = function(self, om)
-        local d = om.d
-        -- packageName
-        d:Wstr(self.packageName)
-        -- clientType
-        d:Wstr(self.clientType)
-        -- phoneType
-        d:Wvi32(self.phoneType)
-        -- device_id
-        d:Wstr(self.device_id)
-        -- account_name
-        d:Wstr(self.account_name)
-        -- password
-        d:Wstr(self.password)
-        -- code
-        d:Wstr(self.code)
-    end
-}
-PKG_Client_Login_RegisterAccount.__index = PKG_Client_Login_RegisterAccount
+PKG_Client_Login_ClientVerificationGoogle.__index = PKG_Client_Login_ClientVerificationGoogle
 
 --[[
 查询版本
@@ -1480,10 +1414,6 @@ PKG_Client_Login_AuthByUsername = {
         apple id
         ]]
         o.apple = "" -- String
-        --[[
-        验证码
-        ]]
-        o.code = "" -- String
         return o
     end,
     Read = function(self, om)
@@ -1504,9 +1434,6 @@ PKG_Client_Login_AuthByUsername = {
         -- apple
         r, self.apple = d:Rstr()
         if r ~= 0 then return r end
-        -- code
-        r, self.code = d:Rstr()
-        if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
@@ -1521,8 +1448,6 @@ PKG_Client_Login_AuthByUsername = {
         d:Wstr(self.google)
         -- apple
         d:Wstr(self.apple)
-        -- code
-        d:Wstr(self.code)
     end
 }
 PKG_Client_Login_AuthByUsername.__index = PKG_Client_Login_AuthByUsername
@@ -1756,57 +1681,58 @@ PKG_Client_Login_HasAccountName = {
 PKG_Client_Login_HasAccountName.__index = PKG_Client_Login_HasAccountName
 
 --[[
-获取验证码结果
+检查账号结果
 ]]
-PKG_Login_Client_RequestCaptchaResult = {
-    typeName = "PKG_Login_Client_RequestCaptchaResult",
-    typeId = 1017,
+PKG_Login_Client_HasAccountNameResult = {
+    typeName = "PKG_Login_Client_HasAccountNameResult",
+    typeId = 1016,
     Create = function(o)
         if o == nil then
             o = {}
-            setmetatable(o, PKG_Login_Client_RequestCaptchaResult)
+            setmetatable(o, PKG_Login_Client_HasAccountNameResult)
         end
-        o.image_data = NewXxData() -- XxData
+        --[[
+        true表示可以
+        ]]
+        o.okya = false -- Boolean
         return o
     end,
     Read = function(self, om)
         local d = om.d
         local r, n
-        -- image_data
-        r, self.image_data = d:Rdata()
+        -- okya
+        r, self.okya = d:Rb()
         if r ~= 0 then return r end
         return 0
     end,
     Write = function(self, om)
         local d = om.d
-        -- image_data
-        d:Wdata(self.image_data)
+        -- okya
+        d:Wb(self.okya)
     end
 }
-PKG_Login_Client_RequestCaptchaResult.__index = PKG_Login_Client_RequestCaptchaResult
+PKG_Login_Client_HasAccountNameResult.__index = PKG_Login_Client_HasAccountNameResult
 
 local o = ObjMgr
 o.Register(PKG_Client_Login_ClientType)
 o.Register(PKG_Client_Login_Auth)
 o.Register(PKG_Login_Client_button_settings)
 o.Register(PKG_Login_Client_GameUpdatePath)
-o.Register(PKG_Login_Client_Auth_Success_Game)
 o.Register(PKG_Login_Client_ReRouteNetWork)
 o.Register(PKG_Login_Client_GetUpdatePath_Success)
 o.Register(PKG_Login_Client_ReceivedPackagetType)
 o.Register(PKG_Login_Client_ReceivedPromotionCode)
-o.Register(PKG_Login_Client_RegisterAccountInfo)
-o.Register(PKG_Login_Client_ServerVersionInfo)
 o.Register(PKG_Login_Client_GameEnforceUpdatePath)
-o.Register(PKG_Login_Client_Auth_Success_Lobby)
+o.Register(PKG_Login_Client_ServerVersionInfo)
+o.Register(PKG_Login_Client_Auth_Success_Game)
+o.Register(PKG_Login_Client_RegisterAccountInfo)
 o.Register(PKG_Login_Client_ReceivedVerificationGoogle)
 o.Register(PKG_Login_Client_ReceivedVerificationApple)
 o.Register(PKG_Login_Client_ReceivedVerificationFacebook)
-o.Register(PKG_Client_Login_RequestCaptcha)
-o.Register(PKG_Client_Login_ClientVerificationGoogle)
-o.Register(PKG_Client_Login_ClientVerificationApple)
-o.Register(PKG_Login_Client_HasAccountNameResult)
+o.Register(PKG_Login_Client_Auth_Success_Lobby)
 o.Register(PKG_Client_Login_RegisterAccount)
+o.Register(PKG_Client_Login_ClientVerificationApple)
+o.Register(PKG_Client_Login_ClientVerificationGoogle)
 o.Register(PKG_Client_Login_GetServerVersionInfo)
 o.Register(PKG_Client_Login_ClientVerificationFacebook)
 o.Register(PKG_Client_Login_GetUpdatePath)
@@ -1818,4 +1744,4 @@ o.Register(PKG_Client_Login_AuthByPhone)
 o.Register(PKG_Client_Login_ClientPromotionCode)
 o.Register(PKG_Client_Login_ClientPackagetType)
 o.Register(PKG_Client_Login_HasAccountName)
-o.Register(PKG_Login_Client_RequestCaptchaResult)
+o.Register(PKG_Login_Client_HasAccountNameResult)

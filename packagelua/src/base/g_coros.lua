@@ -3,12 +3,17 @@ local gCoros = {}
 
 -- 压入一个协程函数. 有参数就跟在后面. 有延迟执行的效果. 报错时带 name 显示
 go_ = function(name, func, ...)
+	local go_trace = debug.traceback()
+	local f = function(msg) 
+		print(debug.traceback())
+		print("go trace:" .. go_trace)
+	end
 	local args = {...}
 	local p
 	if #args == 0 then
-		p = function() xpcall(func, __G__TRACKBACK__) end
+		p = function() xpcall(func, f) end
 	else
-		p = function() xpcall(func, __G__TRACKBACK__, table.unpack(args)) end
+		p = function() xpcall(func, f, table.unpack(args)) end
 	end
 	local co = coroutine.create(p)
 	table.insert(gCoros, co)
@@ -16,11 +21,6 @@ go_ = function(name, func, ...)
 end
 -- 压入一个协程函数. 有参数就跟在后面. 有延迟执行的效果
 go = function(func, ...)
-	if func == nil then
-		__G__TRACKBACK__("go(), func == nil")
-		return
-	end
-
 	return go_("", func, ...)
 end
 gCoros_PushCo = function(co)

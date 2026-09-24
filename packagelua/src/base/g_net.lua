@@ -70,7 +70,7 @@ ObjMgr = {
 		if mt.typeId ~= 1283 then
 			-- print("ReadFirst.typeId:" .. mt.typeId)
 		end
-
+        
 		r = v:Read(self)
 
         if r ~= 0 then
@@ -106,7 +106,7 @@ ObjMgr = {
 
             local v = mt.Create()
             m[n] = v
-
+			
 			-- 心跳包 不打印
 			if mt.typeId ~= 1283 then
 				-- print("Read.typeId:" .. mt.typeId)
@@ -142,10 +142,6 @@ gNetHandlers = {}
 
 -- 注册网络包处理函数
 gNetHandlers_Register = function(pkgProto, key, func)
-	if not pkgProto then
-		return false
-	end
-
 	local t = gNetHandlers[pkgProto]
 	if t == nil then
 		t = {}
@@ -284,15 +280,6 @@ end
 
 -- 发请求. 如果 cb 为 nil 则表示 直接返回收到 response 的数据. 否则返回 SendTo 的返回值 int
 gNet_SendRequest = function(pkg, cb, timeoutMS)
-    local typeName
-    local typeId
-    PKG = getmetatable(pkg)
-    if PKG then
-        typeName = PKG.typeName
-        typeId = PKG.typeId
-    end
-    -- print(tostring(typeName) .. " == " .. tostring(typeId))
-
 	-- 如果已断线就直接短路返回 nil
 	if not gNet:Alive() then
 		print("gNet:Alive is false when SendRequest")
@@ -314,6 +301,10 @@ gNet_SendRequest = function(pkg, cb, timeoutMS)
 	end
 	-- 计算出 serial
 	local serial, serialStr = gNet_GenerateSerial()
+	-- if getmetatable(pkg).typeName ~= "PKG_Client_Lobby_Ping" then
+	-- 	print("serial:",serial)
+	-- 	print("pkg:",getmetatable(pkg).typeName)
+	-- end
 	-- 发送
 	local rtv = gNet:SendTo(serviceId, 0 - serial, gWriteRoot(gBB, pkg));
 	-- 发送失败? 立刻返回 rtv
@@ -362,15 +353,10 @@ gNet_SendRequest = function(pkg, cb, timeoutMS)
 			coroutine.yield()
 		end
 		-- 值应该是 pkg
-
-        local typeName
-        if getmetatable(t[1]) then
-            typeName = getmetatable(t[1]).typeName
-        end
-        -- dump(t[1], tostring(typeName))
 		return t[1]
 	end
 end
+
 
 -- 事件分发. 起个独立协程, 一直执行.
 gNetCoro = coroutine.create(function() xpcall(
@@ -386,7 +372,7 @@ function()
 	end
 	-- 试着 pop 出一条
 	local serverId, serial, bb = gNet:TryGetPackage()
-	if serverId ~= nil then
+	if serverId ~= nil then 
 		local r, typeId = bb:Rvu16()
         --if r == 0 then
 		--	print("gNet:TryGetPackage() = ", serial,typeId)
@@ -395,7 +381,7 @@ function()
 		bb:SetOffset(0)
 		--print("0xFFFFFFFFs")
 	end
-
+	
 	-- 如果没有取出消息就退出
 	if serverId == nil then
 		goto LabBegin

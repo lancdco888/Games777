@@ -1,5 +1,3 @@
-
-local socket = require("socket")
 local Network = class("Network")
 
 function Network:ctor()
@@ -9,20 +7,8 @@ function Network:ctor()
 end
 
 function Network:SetHost(host, port)
-    if host == nil or host == "" then
-        print("Network:SetHost invalid host:" .. tostring(host))
-        return false
-    end
-
-    port = tonumber(port)
-    if not port then
-        print("Network:SetHost invalid port:" .. tostring(port))
-        return false
-    end
-
     self.host = host
     self.port = port
-    return true
 end
 
 ----------------------------------------------------------------
@@ -31,12 +17,14 @@ function Network:ConnectServer()
     local port = self.port
     local host = self.host
 
+	local socket = require("socket")
+    local t = socket.gettime()
 	local ips = self:_ResolveHost(host, port)
-
+	
     if (#ips == 0) then
         return false
     end
-
+	
 	--过滤IPv6
 	local new_ips = {}
 	for _index,ip in pairs(ips) do
@@ -51,7 +39,7 @@ function Network:ConnectServer()
 	for _index,ip in pairs(ips) do
 		gNet_AddAddress(ip, port)
 	end
-
+	
     local ret = self:_CreateNet(ips, port)
     if not ret then
         print("_CreateNet Error.")
@@ -88,7 +76,12 @@ function Network:_CreateNet(ips, port)
 	yield()
 	-- 停掉拨号断开连接
 
+	local socket = require("socket")
+    local t = socket.gettime()
 	gNet:Cancel()
+
+	local socket = require("socket")
+    local t = socket.gettime()
 	gNet:Disconnect()
 
 	-- 必要的小睡( 防止拨号频繁，以及留出各种断开后的 callback 的执行时机 )

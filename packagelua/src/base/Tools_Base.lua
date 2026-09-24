@@ -212,21 +212,5 @@ function Tools_Base.HasSpace(text)
 	return false
 end
 
-function Tools_Base.ReplaceNode(node, new_node)
-    new_node:setContentSize(node:getContentSize())
-    new_node:setScale(node:getScale())
-    new_node:setPosition(cc.p(node:getPosition()))
-    new_node:setAnchorPoint(cc.p(node:getAnchorPoint()))
-    new_node:setLocalZOrder(node:getLocalZOrder())
-    new_node:setName(node:getName())
-    node:getParent():addChild(new_node)
-    node:removeFromParent()
-    return new_node
-end
-
-function Tools_Base.ReplaceEdit(node)
-    local edit = NewEditBox:create()
-    return Tools_Base.ReplaceNode(node, edit)
-end
 
 return Tools_Base

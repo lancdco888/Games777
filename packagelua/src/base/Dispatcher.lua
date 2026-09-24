@@ -8,7 +8,7 @@ end
 --first:是否插入到队首
 function Dispatcher:Register(evName, method, _self,first)
     if evName == nil or evName == "" or method == nil then
-        print("invliad param,traceback = ", debug.traceback("", 2))
+        Log:info("invliad param,traceback = ", debug.traceback("", 2))
         assert(false)
     end
 
