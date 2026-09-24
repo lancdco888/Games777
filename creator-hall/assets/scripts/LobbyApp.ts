@@ -22,19 +22,23 @@ export class LobbyApp extends Component {
     private login: LoginView | null = null;
     private entered = false;
     private game: Game270View | null = null;
+    private catalog: GameInfo[] = [];
 
     start(): void {
         this.panels = new HallPanels(this.node, this.state);
         this.panels.setLogout(() => {
+            this.login?.disconnect();
             this.state.logout();
             this.entered = false;
             this.setLobbyVisible(false);
+            this.renderGameList();
             this.login?.show();
         });
         this.login = new LoginView(this.node, this.state, (message) => {
             this.entered = true;
             this.panels?.toast(message);
             this.setLobbyVisible(true);
+            this.renderGameList();
             this.refresh();
             this.bringNicknameIntoBar();
             this.raiseBars();
@@ -118,11 +122,26 @@ export class LobbyApp extends Component {
     }
 
     private fillGameList(games: GameInfo[]): void {
+        this.catalog = games;
+        this.renderGameList();
+    }
+
+    private renderGameList(): void {
         const list = this.names.get('list');
         const listTransform = list?.getComponent(UITransform);
-        if (!list || !listTransform) {
+        if (!list || !listTransform || this.catalog.length === 0) {
             return;
         }
+        const allowed = this.state.serverGameIds;
+        let games = this.catalog;
+        if (allowed && allowed.length) {
+            const ids = new Set(allowed);
+            const matched = this.catalog.filter((game) => ids.has(game.id));
+            if (matched.length) {
+                games = matched;
+            }
+        }
+        list.getChildByName('cards')?.destroy();
         const mask = list.getComponent(Mask) ?? list.addComponent(Mask);
         mask.type = Mask.Type.GRAPHICS_RECT;
         const scale = (listTransform.height - 24) / ICON_HEIGHT;

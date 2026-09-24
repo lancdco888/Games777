@@ -28,7 +28,7 @@ export function parseMoney(text: string): number {
 }
 
 /**
- * Local hall account. Buttons change this state directly until the lobby socket is ported.
+ * Hall account. Login can replace these numbers with the goserver profile.
  */
 export class HallState {
     nickname = '玩家9236';
@@ -61,6 +61,7 @@ export class HallState {
         { id: 'vip', name: 'VIP 专属', detail: '当前 VIP 可在个人信息里查看。' },
     ];
     readonly records: { target: string; amount: number; fee: number }[] = [];
+    serverGameIds: number[] | null = null;
     private readonly listeners: Array<() => void> = [];
     private readonly accounts: Record<string, AccountRecord> = {
         player9236: {
@@ -91,6 +92,7 @@ export class HallState {
 
     loginGuest(): HallResult {
         const id = String(100000 + Math.floor(Math.random() * 900000));
+        this.serverGameIds = null;
         this.account = '';
         this.registered = false;
         this.nickname = `游客${id.slice(-4)}`;
@@ -109,6 +111,7 @@ export class HallState {
         if (!found || found.password !== password) {
             return { ok: false, message: '用户名或密码错误' };
         }
+        this.serverGameIds = null;
         this.applyAccount(account.trim(), found);
         return { ok: true, message: '登录成功' };
     }
@@ -145,6 +148,32 @@ export class HallState {
         this.captureAccount();
         this.account = '';
         this.registered = false;
+        this.serverGameIds = null;
+    }
+
+    applyServer(profile: {
+        username: string;
+        accountId: number;
+        nickname: string;
+        money: number;
+        moneySafe: number;
+        washCode: number;
+        giftSafe: number;
+        vipLevel: number;
+        gameIds: number[];
+    }, accountName: string): HallResult {
+        this.account = accountName;
+        this.registered = accountName.length > 0;
+        this.nickname = profile.nickname || profile.username;
+        this.userId = String(profile.accountId || profile.username);
+        this.vipLevel = profile.vipLevel;
+        this.money = profile.money;
+        this.moneySafe = profile.moneySafe;
+        this.washCode = profile.washCode;
+        this.giftSafe = profile.giftSafe;
+        this.serverGameIds = profile.gameIds.length ? profile.gameIds : null;
+        this.emit();
+        return { ok: true, message: `${this.nickname} 已登录，金币 ${formatMoney(this.money)}` };
     }
 
     spend(amount: number): HallResult {
