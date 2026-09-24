@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import net from 'node:net';
-import { GosClient, GosStream, OPEN_SERIAL, packFrame } from '../assets/scripts/GosClient.ts';
+import { GosClient, GosStream, packFrame, packOpen } from '../assets/scripts/GosClient.ts';
 import { CLIENT_LOGIN_MD5, decodePacket, encodeAuth, encodeEnterSuccess, encodeLobbySuccess, encodeRegister } from '../assets/scripts/GosPackets.ts';
 import { HallState } from '../assets/scripts/HallState.ts';
 import type { ServerSettings } from '../assets/scripts/ServerSettings.ts';
@@ -183,9 +183,13 @@ function testCodec(): void {
     const got = stream.shift();
     assert.equal(got?.serial, -3);
     assert.equal(got?.serviceId, 0);
-    stream.push(packFrame(0, OPEN_SERIAL, new Uint8Array()));
+    const open = packOpen(0);
+    assert.deepEqual(Array.from(open), [0x0a, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff, 0x04, 0x6f, 0x70, 0x65, 0x6e, 0x00]);
+    stream.push(open);
     assert.equal(stream.opened.has(0), true);
     assert.equal(stream.shift(), undefined);
+    const request = packFrame(0, -1, new Uint8Array([0xd2, 0x08]));
+    assert.equal(request[8], 0x01);
 }
 
 function testHallState(): void {
@@ -213,7 +217,7 @@ function testHallState(): void {
 
 function startFakeServer(): Promise<{ port: number; close: () => void }> {
     const server = net.createServer((socket) => {
-        socket.write(packFrame(0, OPEN_SERIAL, new Uint8Array()));
+        socket.write(packOpen(0));
         const stream = new GosStream();
         socket.on('data', (chunk) => {
             stream.push(new Uint8Array(chunk));

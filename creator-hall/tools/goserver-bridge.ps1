@@ -168,10 +168,30 @@ function Read-WsFrame([System.Net.Sockets.NetworkStream]$stream) {
     }
 }
 
-function Start-RemotePump([System.Net.Sockets.NetworkStream]$remote, [System.Net.Sockets.NetworkStream]$browser) {
+function Format-HexPreview([byte[]]$bytes) {
+    if ($null -eq $bytes -or $bytes.Length -eq 0) { return '' }
+    $count = [Math]::Min(32, $bytes.Length)
+    $text = ''
+    for ($i = 0; $i -lt $count; $i++) {
+        if ($i -gt 0) { $text += ' ' }
+        $text += '{0:x2}' -f $bytes[$i]
+    }
+    if ($bytes.Length -gt $count) { $text += ' ...' }
+    return $text
+}
+
+function Write-Traffic([System.Collections.ArrayList]$log) {
+    while ($log.Count -gt 0) {
+        $line = [string]$log[0]
+        $log.RemoveAt(0)
+        Write-Host $line
+    }
+}
+
+function Start-RemotePump([System.Net.Sockets.NetworkStream]$remote, [System.Net.Sockets.NetworkStream]$browser, [System.Collections.ArrayList]$log) {
     $worker = [powershell]::Create()
     [void]$worker.AddScript({
-        param($remote, $browser)
+        param($remote, $browser, $log)
         function Encode-Frame([int]$opcode, [byte[]]$payload) {
             $length = $payload.Length
             if ($length -lt 126) {
@@ -199,11 +219,26 @@ function Start-RemotePump([System.Net.Sockets.NetworkStream]$remote, [System.Net
         }
         try {
             $buffer = New-Object byte[] 8192
+            $shown = 0
             while ($true) {
                 $count = $remote.Read($buffer, 0, $buffer.Length)
-                if ($count -le 0) { break }
+                if ($count -le 0) {
+                    [void]$log.Add('tcp closed')
+                    break
+                }
                 $slice = New-Object byte[] $count
                 [Array]::Copy($buffer, $slice, $count)
+                if ($shown -lt 6) {
+                    $shown += 1
+                    $take = [Math]::Min(32, $count)
+                    $text = ''
+                    for ($i = 0; $i -lt $take; $i++) {
+                        if ($i -gt 0) { $text += ' ' }
+                        $text += '{0:x2}' -f $slice[$i]
+                    }
+                    if ($count -gt $take) { $text += ' ...' }
+                    [void]$log.Add("tcp recv ${count}: $text")
+                }
                 $encoded = Encode-Frame 0x2 $slice
                 [System.Threading.Monitor]::Enter($browser)
                 try {
@@ -218,6 +253,7 @@ function Start-RemotePump([System.Net.Sockets.NetworkStream]$remote, [System.Net
     })
     [void]$worker.AddArgument($remote)
     [void]$worker.AddArgument($browser)
+    [void]$worker.AddArgument($log)
     $worker.BeginInvoke() | Out-Null
     return $worker
 }
@@ -230,6 +266,8 @@ try {
         $stream = $client.GetStream()
         $tcp = $null
         $worker = $null
+        $log = [System.Collections.ArrayList]::Synchronized((New-Object System.Collections.ArrayList))
+        $sent = 0
         try {
             $header = New-Object System.Collections.Generic.List[byte]
             while ($header.Count -lt 4 -or -not ($header[$header.Count - 4] -eq 13 -and $header[$header.Count - 3] -eq 10 -and $header[$header.Count - 2] -eq 13 -and $header[$header.Count - 1] -eq 10)) {
@@ -245,6 +283,7 @@ try {
             Write-Host "websocket ready"
             $remote = $null
             while ($client.Connected) {
+                Write-Traffic $log
                 $message = Read-WsFrame $stream
                 if ($null -eq $message) { break }
                 if ($message.opcode -eq 0x8) {
@@ -265,7 +304,7 @@ try {
                         $remote = $tcp.GetStream()
                         Write-Host "tcp open $($request.host):$($request.port)"
                         Send-Text $stream '{"ok":true}'
-                        $worker = Start-RemotePump $remote $stream
+                        $worker = Start-RemotePump $remote $stream $log
                     } catch {
                         Write-Host "tcp failed: $($_.Exception.Message)"
                         Send-Text $stream ("{`"ok`":false,`"error`":`"连不上 $($request.host):$($request.port)`"}")
@@ -274,6 +313,10 @@ try {
                     continue
                 }
                 if ($message.opcode -eq 0x2 -and $null -ne $remote) {
+                    if ($sent -lt 6) {
+                        $sent += 1
+                        Write-Host "tcp send $($message.payload.Length): $(Format-HexPreview $message.payload)"
+                    }
                     $remote.Write($message.payload, 0, $message.payload.Length)
                     $remote.Flush()
                 }
@@ -282,6 +325,7 @@ try {
             Write-Host "bridge error: $($_.Exception.Message)"
             try { Send-Text $stream "{`"ok`":false,`"error`":`"$($_.Exception.Message)`"}" } catch {}
         } finally {
+            Write-Traffic $log
             Write-Host "preview closed"
             if ($tcp) { $tcp.Close() }
             if ($worker) { $worker.Stop(); $worker.Dispose() }

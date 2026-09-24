@@ -17,6 +17,10 @@ export class XxBuf {
         return Uint8Array.from(this.bytes);
     }
 
+    rest(): Uint8Array {
+        return Uint8Array.from(this.bytes.slice(this.offset));
+    }
+
     get left(): number {
         return this.bytes.length - this.offset;
     }

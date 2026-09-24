@@ -1,11 +1,10 @@
 import { decodePacket, encodeAuth, encodeEnter, encodeRegister } from './GosPackets';
 import type { ServerAccount, ServerPacket } from './GosPackets';
 import type { ServerSettings } from './ServerSettings';
+import { XxBuf } from './XxBuf';
 
-/** Empty body, or this serial, tells the client that a service is open. */
-export const OPEN_SERIAL = 0x7fffffff;
-const CLOSE_SERIAL = 0x7ffffffe;
 const MAX_FRAME = 2_000_000;
+const GATEWAY = 0xffffffff;
 
 export interface GosFrame {
     serviceId: number;
@@ -38,7 +37,9 @@ interface SocketLike {
 
 /**
  * Speaks the hall login protocol over a local WebSocket-to-TCP bridge.
- * Each TCP frame is little-endian length (not counting itself), serviceId, and serial, then the xx body.
+ * Each TCP frame is little-endian length (not counting itself), a fixed service id,
+ * then a zigzag varint serial and the xx body. Service 0xFFFFFFFF carries the
+ * gateway commands open, close, and echo.
  */
 export class GosClient {
     private socket: SocketLike | null = null;
@@ -208,6 +209,8 @@ export class GosClient {
             }
             await delay(20);
         }
+        const preview = this.stream.preview || '（没有收到任何数据）';
+        throw new Error(`登录服务没有打开。服务器开头数据：${preview}`);
     }
 
     private async roundTrip(body: Uint8Array): Promise<ServerPacket> {
@@ -325,16 +328,21 @@ export class GosClient {
 
 export class GosStream {
     readonly opened = new Set<number>();
+    preview = '';
     private pending = new Uint8Array(0);
     private readonly queue: GosFrame[] = [];
+    private seen = 0;
 
     reset(): void {
         this.opened.clear();
         this.pending = new Uint8Array(0);
         this.queue.length = 0;
+        this.preview = '';
+        this.seen = 0;
     }
 
     push(chunk: Uint8Array): void {
+        this.remember(chunk);
         const merged = new Uint8Array(this.pending.length + chunk.length);
         merged.set(this.pending);
         merged.set(chunk, this.pending.length);
@@ -342,31 +350,59 @@ export class GosStream {
         while (this.pending.length >= 4) {
             const view = new DataView(this.pending.buffer, this.pending.byteOffset, this.pending.byteLength);
             const length = view.getUint32(0, true);
-            if (length < 8 || length > MAX_FRAME) {
-                const sample = Array.from(this.pending.slice(0, 16)).map((byte) => byte.toString(16).padStart(2, '0')).join(' ');
-                throw new Error(`帧长度异常（${length}） ${sample}`);
+            if (length < 4 || length > MAX_FRAME) {
+                throw new Error(`帧长度异常（${length}） ${hexBytes(this.pending.slice(0, 16))}`);
             }
             if (this.pending.length < 4 + length) {
                 return;
             }
-            const serviceId = view.getUint32(4, true);
-            const serial = view.getInt32(8, true);
-            const body = this.pending.slice(12, 4 + length);
+            const payload = this.pending.slice(4, 4 + length);
             this.pending = this.pending.slice(4 + length);
-            if (serviceId === 0xffffffff) {
+            const head = new DataView(payload.buffer, payload.byteOffset, payload.byteLength);
+            const serviceId = head.getUint32(0, true);
+            const rest = payload.slice(4);
+            if (serviceId === GATEWAY) {
+                this.readCommand(rest);
                 continue;
             }
-            if (body.length === 0 || serial === OPEN_SERIAL) {
-                this.opened.add(serviceId);
-                continue;
-            }
-            if (serial === CLOSE_SERIAL) {
-                this.opened.delete(serviceId);
-                continue;
+            const reader = XxBuf.wrap(rest);
+            let serial = 0;
+            try {
+                serial = reader.rvi32();
+            } catch (error) {
+                const reason = error instanceof Error ? error.message : '无法读取序号';
+                throw new Error(`${reason} ${hexBytes(payload.slice(0, 16))}`);
             }
             this.opened.add(serviceId);
-            this.queue.push({ serviceId, serial, body });
+            this.queue.push({ serviceId, serial, body: reader.rest() });
         }
+    }
+
+    private remember(chunk: Uint8Array): void {
+        if (this.seen >= 48 || chunk.length === 0) {
+            return;
+        }
+        const take = Math.min(48 - this.seen, chunk.length);
+        const sample = hexBytes(chunk.slice(0, take));
+        this.preview = this.preview ? `${this.preview} ${sample}` : sample;
+        this.seen += take;
+    }
+
+    private readCommand(rest: Uint8Array): void {
+        const reader = XxBuf.wrap(rest);
+        const command = reader.rstr();
+        if (command === 'open') {
+            this.opened.add(reader.rvu());
+            return;
+        }
+        if (command === 'close') {
+            this.opened.delete(reader.rvu());
+            return;
+        }
+        if (command === 'echo') {
+            return;
+        }
+        throw new Error(`未知网关指令 ${command}`);
     }
 
     shift(): GosFrame | undefined {
@@ -375,13 +411,34 @@ export class GosStream {
 }
 
 export function packFrame(serviceId: number, serial: number, body: Uint8Array): Uint8Array {
-    const frame = new Uint8Array(12 + body.length);
+    const serialBytes = new XxBuf();
+    serialBytes.wvi32(serial);
+    const encoded = serialBytes.toUint8Array();
+    const frame = new Uint8Array(8 + encoded.length + body.length);
     const view = new DataView(frame.buffer);
-    view.setUint32(0, 8 + body.length, true);
+    view.setUint32(0, 4 + encoded.length + body.length, true);
     view.setUint32(4, serviceId >>> 0, true);
-    view.setInt32(8, serial | 0, true);
-    frame.set(body, 12);
+    frame.set(encoded, 8);
+    frame.set(body, 8 + encoded.length);
     return frame;
+}
+
+/** Gateway command that marks a service id as open. */
+export function packOpen(serviceId: number): Uint8Array {
+    const body = new XxBuf();
+    body.wstr('open');
+    body.wvu(serviceId >>> 0);
+    const content = body.toUint8Array();
+    const frame = new Uint8Array(8 + content.length);
+    const view = new DataView(frame.buffer);
+    view.setUint32(0, 4 + content.length, true);
+    view.setUint32(4, GATEWAY, true);
+    frame.set(content, 8);
+    return frame;
+}
+
+function hexBytes(bytes: Uint8Array): string {
+    return Array.from(bytes).map((byte) => byte.toString(16).padStart(2, '0')).join(' ');
 }
 
 function profileFrom(username: string, accountId: number, lobbyToken: string, self: ServerAccount | null): ServerProfile {
