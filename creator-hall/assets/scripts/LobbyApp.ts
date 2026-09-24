@@ -40,7 +40,7 @@ const ITEM_HEIGHT = 600;
 /**
  * Builds the hall from LobbyLayer.csb.
  * Sample data stands in for PKG_Lobby_Client_Enter_Success until the socket is ported.
- * Open assets/scenes/Lobby.scene in Cocos Creator 3.8.
+ * Open assets/scenes/Lobby.scene with Cocos Creator 3.8.8.
  */
 @ccclass('LobbyApp')
 export class LobbyApp extends Component {
