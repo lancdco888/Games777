@@ -5,6 +5,7 @@ import {
     Graphics,
     HorizontalTextAlignment,
     JsonAsset,
+    js,
     Label,
     Layers,
     Mask,
@@ -224,3 +225,7 @@ export class LobbyApp extends Component {
         }
     }
 }
+
+// Creator 3.8.8 registers the 23-character id. The first scene file used the 22-character id.
+js.setClassAlias(LobbyApp, 'c4a1eeybTBPkZpYDns8kdSm');
+js.setClassAlias(LobbyApp, 'c4oeeybTBPkZpYDns8kdSm');

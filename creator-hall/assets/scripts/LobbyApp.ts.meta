@@ -5,5 +5,9 @@
   "uuid": "c4a1e7b2-6d30-4f91-9a58-0e7b3c91d4a6",
   "files": [],
   "subMetas": {},
-  "userData": {}
+  "userData": {
+    "moduleId": "project:///assets/scripts/LobbyApp.js",
+    "importerSettings": 0,
+    "simulateGlobals": []
+  }
 }
