@@ -141,11 +141,14 @@ cfg.Line50 = {
     { line = { 0, 0, 1, 2, 1, }, color = "#0053A5" }, -- 49
     { line = { 2, 2, 1, 0, 1, }, color = "#D562A4" }, -- 50
 }
+
 cfg.Type2Url = {
     [0] = "ui://Basics/slots_line_flat",
     [1] = "ui://Basics/slots_line_short_down",
     [2] = "ui://Basics/slots_line_long_down",
+    [3] = "ui://Basics/slots_line2_long_down",
     [-1] = "ui://Basics/slots_line_short_up",
     [-2] = "ui://Basics/slots_line_long_up",
+    [-3] = "ui://Basics/slots_line2_long_up",
 }
 return cfg

@@ -37,10 +37,10 @@ function BettingOptions:OnOpenFinish()
     self.btn_max_bet = frame:GetChild("btn_max_bet")
     
     -- 关闭回调
-    FToolSet.AddClickListener(self.btn_close, handler(self, self.OnClickClose))
-    FToolSet.AddClickListener(self.render:GetChild("mask"), handler(self, self.OnClickClose))
-    FToolSet.AddClickListener(self.btn_confirm, handler(self, self.OnClickConfirm))
-    FToolSet.AddClickListener(self.btn_max_bet, handler(self, self.OnClickMaxBet))
+    FToolSet.AddClickListener(self.btn_close, handler(self, self.OnClickClose), false)
+    FToolSet.AddClickListener(self.render:GetChild("mask"), handler(self, self.OnClickClose), false)
+    FToolSet.AddClickListener(self.btn_confirm, handler(self, self.OnClickConfirm), false)
+    FToolSet.AddClickListener(self.btn_max_bet, handler(self, self.OnClickMaxBet), false)
     
     FSysEventEmitter:AddListener(FSysEvent.ON_LOGIC_UPDATE, handler(self, self.OnUpdate), self)
 end

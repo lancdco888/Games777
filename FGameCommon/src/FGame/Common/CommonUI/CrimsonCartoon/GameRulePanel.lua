@@ -32,7 +32,7 @@ function GameRulePanel:ctor(frameUrl, itemUrls, isOdds)
         title.text  = APIGateway.GetLangText("fgame_crimson_cartoon_title_2")
     end
     -- 关闭回调
-    FToolSet.AddClickListener(top_title:GetChild("btn_close"), handler(self, self.OnClickClose))
+    FToolSet.AddClickListener(top_title:GetChild("btn_close"), handler(self, self.OnClickClose), false)
 end
 
 function GameRulePanel:__delete()

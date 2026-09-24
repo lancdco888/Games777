@@ -52,29 +52,54 @@ function BottomPanel:ctor(render)
         end
     end
 
-    FToolSet.AddClickListener(self.btn_bet_pre,    handler(self, self.OnClickBetReduce))
-    FToolSet.AddClickListener(self.btn_bet_next,   handler(self, self.OnClickBetIncrease))
-    FToolSet.AddClickListener(self.btn_max,        handler(self, self.OnClickBetMax))
-    FToolSet.AddClickListener(self.btn_betlvID,    handler(self, self.OnClickBetLvID))
-    FToolSet.AddClickListener(self.btn_accelerate, handler(self, self.OnClickAccelerate))
-    FToolSet.AddClickListener(self.btn_changeDenomination, handler(self, self.OnClickBetLvID))
-    FToolSet.AddClickListener(self.btn_openAutoList, handler(self, self.OnClickOpenAutoList))
+    FToolSet.AddClickListener(self.btn_bet_pre,    handler(self, self.OnClickBetReduce), false)
+    FToolSet.AddClickListener(self.btn_bet_next,   handler(self, self.OnClickBetIncrease), false)
+    FToolSet.AddClickListener(self.btn_max,        handler(self, self.OnClickBetMax), false)
+    FToolSet.AddClickListener(self.btn_betlvID,    handler(self, self.OnClickBetLvID), false)
+    FToolSet.AddClickListener(self.btn_accelerate, handler(self, self.OnClickAccelerate), false)
+    FToolSet.AddClickListener(self.btn_changeDenomination, handler(self, self.OnClickBetLvID), false)
+    FToolSet.AddClickListener(self.btn_openAutoList, handler(self, self.OnClickOpenAutoList), false)
 
     
-    FToolSet.AddClickListener(render:GetChild("btn_click_win"), handler(self, self.OnClickWinMoney))
-    FToolSet.AddClickListener(render:GetChild("btn_click_bet"), handler(self, self.OnClickBetMoney))
+    FToolSet.AddClickListener(render:GetChild("btn_click_win"), handler(self, self.OnClickWinMoney), false)
+    FToolSet.AddClickListener(render:GetChild("btn_click_bet"), handler(self, self.OnClickBetMoney), false)
 
     self.btn_spin:AddEventListener(FGUIEventKey.onTouchBegin, handler(self, self.OnTouchSpinBegin))
     self.btn_spin:AddEventListener(FGUIEventKey.onTouchEnd, handler(self, self.OnTouchSpinEnd))
+    self.btn_spin:AddEventListener(FGUIEventKey.onClick, function()
+        if FCasinoCtx then
+            FCasinoCtx:GetGame():PlaySpinButtonClickSound()
+        end
+    end)
+
+    --调试 模拟点击
+    if DebugSlots then
+        DebugSlots:BottomPanelSpin( self, 
+            handler(self, self.OnTouchSpinBegin), handler(self, self.OnTouchSpinEnd)
+        )
+    end
 
     -- 游戏规则按钮
     FToolSet.AddClickListener(self.btn_rule, function()
         FCasinoCtx:GetGame():OnShowGameRule()
-    end)
+    end, false)
+
+    if FConfig.Common.IsReviewVersion then
+        self.btn_openAutoList.visible = false
+        if not APIGateway.IsDeviceOrientationPortrai() then
+            self.btn_max.x = self.btn_max.x + 60
+            self.btn_changeDenomination.x = self.btn_changeDenomination.x + 60
+        end
+    end
 
     -- 进入游戏自动弹出自动Spin和选C列表
     if not FCasinoCtx.reconnectData and not RUNTIME_USE_H5_PROTO then
-        StartOnceTimer(function()
+        if FConfig.Common.IsReviewVersion then
+            return
+        end
+
+        self.delayShowAutoSpinListPanelTimer = StartOnceTimer(function()
+            self.delayShowAutoSpinListPanelTimer = nil
             self:ShowAutoSpinListPanel()
             if self.btn_betlvID.visible then
                 self:ShowBetListPanel()
@@ -112,6 +137,7 @@ end
 
 -- @brief 点击旋转按钮
 function BottomPanel:OnClickSpin(isSimulation)
+    if FCasinoCtx == nil then return end
     self:StopPressTimer()
 
     -- 等待状态，不允许按钮响应
@@ -130,6 +156,10 @@ function BottomPanel:OnClickSpin(isSimulation)
             FCasinoCtx:GetGame():OnClickSpin(isSimulation)
         end
     elseif FCasinoCtx.curSpinStatus == FSpinStatus.STOP then
+        if FConfig.Common.IsReviewVersion then
+            -- 审核版本不允许点击停止按钮
+            return
+        end
         FCasinoCtx:GetGame():OnClickStop()
     end
 end
@@ -278,9 +308,19 @@ end
 
 function BottomPanel:ShowAutoSpinListPanel()
     if self.autoSpinListPanel then return end
+
+    if FConfig.Common.IsReviewVersion then
+        -- 审核版本不允许点击自动spin
+        return
+    end
+
     self.autoSpinListPanel = AutoSpinListPanel.New()
     self.autoSpinListPanel:SetDestroyCallback(handler(self, self.CloseAutoSpinListPanel))
     self.autoSpinListPanel:SetSelectCallback(function(mode)
+        if FCasinoCtx.curSpinStatus ~= FSpinStatus.SPIN then
+            print("当前状态不允许设置自动spin模式")
+            return
+        end
         self:SetAutoMode(mode)
     end)
 end
@@ -289,6 +329,10 @@ function BottomPanel:CloseAutoSpinListPanel()
     if self.autoSpinListPanel then
         self.autoSpinListPanel:Delete()
         self.autoSpinListPanel = nil
+    end
+    if self.delayShowAutoSpinListPanelTimer then
+        StopTimer(self.delayShowAutoSpinListPanelTimer)
+        self.delayShowAutoSpinListPanelTimer = nil
     end
 end
 

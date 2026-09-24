@@ -3,6 +3,7 @@
 FPlayerMoneyType = {
     NORMAL_MONEY = 0, -- 普通金币
     BIND_MONEY   = 1, -- 绑定金币
+    GEMS         = 2, -- 钻石
 }
 
 -- @brief spin按钮状态定义
@@ -28,6 +29,7 @@ FSysEvent = {
     ON_SEND_REQUEST = 5,  -- 发送网络请求
     ON_RECV_LOTTERT_DATA = 6, -- 收到彩金消息
     ON_UPDATE_SERVICE_RED_DOT = 7,--刷新客服红点
+    ON_GAME_REEL_STATE_ERROR = 8,-- 游戏转轴状态错误
 }
 
 
@@ -35,4 +37,6 @@ FSysEvent = {
 FThemeType = {
     Lilac            = "Lilac",             -- 紫色UI
     CrimsonCartoon   = "CrimsonCartoon",    -- 深红色卡通风格UI
+    NeonArcade       = "NeonArcade",        -- 娱乐版UI
+    H5Review         = "H5Review",          -- H5审核版UI
 }

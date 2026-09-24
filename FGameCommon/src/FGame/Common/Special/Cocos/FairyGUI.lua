@@ -1,4 +1,3 @@
----@class FairyGUI table
 FairyGUI = fairygui
 
 if not FairyGUI.GTween.KillAllTweens then
@@ -55,30 +54,31 @@ function DestroyFairyRoot()
 		-- 停止所有声音
 		gSound:stopAll()
 
+		APIGateway.OnDestroy(fairyRoot)
+		local root = fairyRoot
+
+		fairyRoot = nil
+
+		-- root.displayObject:setVisible(false)
+		FairyGUI.GTween.KillAllTweens()
+		root.displayObject:removeFromParent()
+		
+		FairyGUI.HtmlObject:ClearStaticPools()
+		FairyGUI.DragDropManager:DestroyInstance()
+		FairyGUI.GCache.Destroy()
+		
 		-- 清理所有 Tween 动画
 		FairyGUI.GTween.Clean()
-		FairyGUI.GTween.KillAllTweens()
 		-- 清理webm缓存
 		ax.Webm:cancelAllAsync()
 		ax.Webm:removeAllWebmTexture()
 		
-		APIGateway.OnDestroy(fairyRoot)
-		local root = fairyRoot
-		local handle
-
-		fairyRoot = nil
-
-		root.displayObject:setVisible(false)
 		-- 延迟一帧删除
-		handle = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function()
-			cc.Director:getInstance():getScheduler():unscheduleScriptEntry(handle)
-
-			root.displayObject:removeFromParent()
+		-- local handle
+		-- handle = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function()
+		-- 	cc.Director:getInstance():getScheduler():unscheduleScriptEntry(handle)
 			root:release()
-			FairyGUI.HtmlObject:ClearStaticPools()
-			FairyGUI.DragDropManager:DestroyInstance()
-			FairyGUI.GCache.Destroy()
-		end, 0, false)
+		-- end, 0, false)
 	end
 end
 

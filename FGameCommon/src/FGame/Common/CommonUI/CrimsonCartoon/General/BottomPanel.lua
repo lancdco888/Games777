@@ -25,7 +25,17 @@ function BottomPanel:ctor(render)
     self:InitMenuPanel1(render:GetChild("menu_panel_1"))
     self:InitMenuPanel2(render:GetChild("menu_panel_2"))
     
-    FToolSet.AddClickListener(self.text_bet, handler(self, self.OnClickTextBet))
+    FToolSet.AddClickListener(self.text_bet, handler(self, self.OnClickTextBet), false)
+
+    
+    -- 游戏转轴状态错误事件
+    FSysEventEmitter:AddListener(FSysEvent.ON_GAME_REEL_STATE_ERROR, function()
+        self.btn_menu.touchable = true
+        self.btn_menu.grayed = false
+        
+        self.btn_exit.touchable = true
+        self.btn_exit.grayed = false
+    end, self)
 end
 
 function BottomPanel:GetMaxHeight()
@@ -51,13 +61,13 @@ function BottomPanel:InitMenuPanel1(render)
     SetIconAndTextColor(self.btn_rule)
     self.btn_close_menu:GetChild("title").color = FTheme.curThemCfg.textColor
 
-    FToolSet.AddClickListener(self.btn_exit,       handler(self, self.OnClickExitGame))
-    FToolSet.AddClickListener(self.btn_audio,      handler(self, self.OnClickAudio))
-    FToolSet.AddClickListener(self.btn_odds_table, handler(self, self.OnClickOddsTable))
-    FToolSet.AddClickListener(self.btn_rule,       handler(self, self.OnClickGameRule))
+    FToolSet.AddClickListener(self.btn_exit,       handler(self, self.OnClickExitGame), false)
+    FToolSet.AddClickListener(self.btn_audio,      handler(self, self.OnClickAudio), false)
+    FToolSet.AddClickListener(self.btn_odds_table, handler(self, self.OnClickOddsTable), false)
+    FToolSet.AddClickListener(self.btn_rule,       handler(self, self.OnClickGameRule), false)
     FToolSet.AddClickListener(self.btn_close_menu, function()
         self.render:GetController("c1").selectedIndex = 0
-    end)
+    end, false)
 
     self.btn_exit.text          = APIGateway.GetLangText("fgame_crimson_cartoon_menu_1")
     self.btn_audio.text         = APIGateway.GetLangText("fgame_crimson_cartoon_menu_2")
@@ -83,13 +93,13 @@ function BottomPanel:InitMenuPanel2(render)
     Utils.SetChildColor(self.btn_accelerate)
     Utils.SetChildColor(self.btn_auto)
     
-    FToolSet.AddClickListener(self.btn_bet_pre,    handler(self, self.OnClickBetReduce))
-    FToolSet.AddClickListener(self.btn_bet_next,   handler(self, self.OnClickBetIncrease))
-    FToolSet.AddClickListener(self.btn_accelerate, handler(self, self.OnClickAccelerate))
-    FToolSet.AddClickListener(self.btn_auto,       handler(self, self.OnClickAuto))
+    FToolSet.AddClickListener(self.btn_bet_pre,    handler(self, self.OnClickBetReduce), false)
+    FToolSet.AddClickListener(self.btn_bet_next,   handler(self, self.OnClickBetIncrease), false)
+    FToolSet.AddClickListener(self.btn_accelerate, handler(self, self.OnClickAccelerate), false)
+    FToolSet.AddClickListener(self.btn_auto,       handler(self, self.OnClickAuto), false)
     FToolSet.AddClickListener(self.btn_menu,       function()
         self.render:GetController("c1").selectedIndex = 1
-    end)
+    end, false)
 
     -- spin按钮
     self.btn_spin = SpinButton.New(render:GetChild("loader_spin"))
@@ -100,7 +110,7 @@ function BottomPanel:InitMenuPanel2(render)
     self.auto_spin_num = loader_auto_num.component
     FToolSet.AddClickListener(self.auto_spin_num, function()
         self:ExitAutoSpinMode()
-    end)
+    end, false)
 end
 
 function BottomPanel:__delete()
@@ -123,6 +133,8 @@ function BottomPanel:__delete()
         self.gameRulePanel:Delete()
         self.gameRulePanel = nil
     end
+
+    FSysEventEmitter:RemoveListenersByTag(self)
 end
 
 -- @brief 点击减少押注按钮
@@ -227,6 +239,7 @@ end
 
 -- @brief 点击旋转按钮
 function BottomPanel:OnClickSpin(isSimulation)
+    if FCasinoCtx == nil then return end
     self.btn_spin:OnClickSpin(isSimulation)
 end
 

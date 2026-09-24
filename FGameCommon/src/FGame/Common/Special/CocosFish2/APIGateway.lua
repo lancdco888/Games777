@@ -117,7 +117,7 @@ end
 
 -- @brief 打开设置界面
 function APIGateway.OpenSettingPanel()
-    local layer = PopLayer:Pop(SetUpLayer)
+    local layer = PopLayer:Pop(user.SetUpLayer)
     layer:ShowLangSelect(false)
     if APIGateway.IsDeviceOrientationPortrai() then
         layer:setScale(1.4)
@@ -126,9 +126,10 @@ end
 
 -- @brief 打开客服界面
 function APIGateway.OpenServicePanel()
-    local Panel_ServiceMail = require("hall.src.hallnew.layers.lobby.service.Panel_ServiceMail")
-    Panel_ServiceMail.default_ui_type = ServiceMailLogic.SERVICE
-    gStates_SetAsync(Panel_ServiceMail)
+    local layer = PopLayer:Pop(service.ServiceMailLayer)
+    if layer then
+        layer:ShowType(service.ServiceLogic.SERVICE)
+    end
 end
 
 -- @brief 获取当前文本的多语言翻译文本
@@ -389,4 +390,83 @@ end
 function APIGateway.RemoveEventListeners(aObj, aType)
     if aObj == nil or aType == nil then return end
     aObj:RemoveEventListener(aType)
+end
+
+-- @brief 绑定骨骼跟随目标
+-- @param spine 骨骼对象(GLoader3D)
+-- @param boneName 骨骼名称
+-- @param callback 回调函数
+function APIGateway.SpineFollowBone(loader3d, boneName, target)
+    if target == nil then return end
+    
+    local rawScaleX = target.scaleX
+    local rawScaleY = target.scaleY
+    local rawX = target.x
+    local rawY = target.y
+
+    local function callback(bone)
+        target.scaleX = rawScaleX * bone.scaleX
+        target.scaleY = rawScaleY * bone.scaleY
+        target.x = rawX + bone.x
+        target.y = rawY - bone.y
+        target.rotation = bone.rotation
+    end
+
+    local bone = APIGateway.SpineFollowBoneWithCallback(loader3d, boneName, callback)
+    if bone then
+        callback(bone)
+    end
+end
+
+-- @brief 绑定骨骼跟随目标
+-- @param spine 骨骼对象(GLoader3D)
+-- @param boneName 骨骼名称
+-- @param callback 回调函数
+-- @return bone 骨骼对象(结构类型 {x = 0, y = 0, scaleX = 1, scaleY = 1, rotation = 0, worldX = 0, worldY = 0})
+function APIGateway.SpineFollowBoneWithCallback(loader3d, boneName, callback)
+    if loader3d == nil or boneName == nil or callback == nil then return end
+
+    local skeletonAnimation = loader3d.content
+    if skeletonAnimation == nil then return end
+
+    local nodeKey = tostring(boneName) .. "_schedule_node"
+    local bone = skeletonAnimation:findBone(boneName)
+    if bone.x == nil then
+        print("骨骼不存在:", boneName)
+        return
+    end
+
+    local scheduleNode = skeletonAnimation:getChildByName(nodeKey)
+    if scheduleNode then
+        scheduleNode:removeFromParent()
+        print("骨骼跟随目标已经存在:", boneName)
+    end
+
+    scheduleNode = cc.Node:create()
+    scheduleNode:setName(nodeKey)
+    scheduleNode:onUpdate(function()
+        callback(skeletonAnimation:findBone(boneName))
+    end)
+    skeletonAnimation:addChild(scheduleNode)
+
+    return bone
+end
+
+-- @brief 取消绑定骨骼跟随目标
+-- @param spine 骨骼对象(GLoader3D)
+-- @param boneName 骨骼名称
+function APIGateway.SpineUnfollowBone(loader3d, boneName)
+    if loader3d == nil or boneName == nil then return end
+
+    local skeletonAnimation = loader3d.content
+    if skeletonAnimation == nil then return end
+
+    local nodeKey = tostring(boneName) .. "_schedule_node"
+    local scheduleNode = skeletonAnimation:getChildByName(nodeKey)
+    if scheduleNode then
+        scheduleNode:removeFromParent()
+    end
+end
+
+function APIGateway.OpenFeature(name)
 end

@@ -111,6 +111,9 @@ end
 -- @param speed 滚动速度(可选)
 -- @param delay 延迟时间(可选)
 function BaseReel:SpinForever(speed, delay)
+    if self.curState ~= State.None and not RUNTIME_IN_CREATOR then
+        FSysEventEmitter:Emit(FSysEvent.ON_GAME_REEL_STATE_ERROR)
+    end
     assert(self.curState == State.None, "self.curState:" .. tostring(self.curState).." FCasinoCtx.curSpinStatus:" .. FCasinoCtx.curSpinStatus)
 
     self:SetOffset(0)
@@ -137,7 +140,7 @@ end
 -- @param callback 回调函数
 -- @param delayTime 延迟时间
 function BaseReel:Stop(lastSymbols, callback, delayTime)
-    assert(#lastSymbols == self.symbolNum)
+    assert(#lastSymbols >= self.symbolNum, "#lastSymbols:" .. tostring(#lastSymbols) .. ", self.symbolNum:" .. tostring(self.symbolNum))
     self.onStopCallback = callback
     lastSymbols = clone(lastSymbols)
 
@@ -477,7 +480,12 @@ function BaseReel:UpdateDraw()
     end
 end
 
-
+function BaseReel:UpdateBounsValue()
+    for i = 0, self.symbolNum + 1 do
+        local symbol = self.arraySymbolDisplays[i]
+        self:UpdateSymbol(symbol.render, symbol.data, i)
+    end
+end
 ----------------------------------------------------------------- Utils -----------------------------------------------------------------
 
 -- @brief 

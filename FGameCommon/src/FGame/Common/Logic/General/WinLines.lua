@@ -61,9 +61,13 @@ function WinLines:InitUI()
     local xNum = reelCfg.xCellNumber + 1     -- 6
     local yNum = 2 * reelCfg.yCellNumber - 1 -- 3 * 2 - 1 -- 5
 
+    local realwidth = reelCfg._Width or reelCfg.reelWidth
+    local realHeight = reelCfg._Height or reelCfg.reelHeight
+    local realSpace = reelCfg._Space or reelCfg.reelSpace
+
     self.lineNodes = {}
-    local xOffect = reelCfg.reelWidth + reelCfg.reelSpace
-    local yOffect = reelCfg.reelHeight / (yNum + 1)
+    local xOffect = realwidth + realSpace
+    local yOffect = realHeight / (yNum + 1)
     for i = 1, yNum do
         for j = 1, xNum do
             local line = FairyGUI.UIPackage.CreateObject("Basics", "Line")

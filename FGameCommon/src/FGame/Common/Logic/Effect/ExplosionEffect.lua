@@ -1,28 +1,19 @@
--- 喷金币效果
----@class FountainPool
-local FountainPool = Class("FountainPool")
+-- 爆炸效果
 
-local math_pow = math.pow
-
-local function createBezierCurve(P0, P1, P2)
-    return function(t)
-        local x = math_pow(1 - t, 2) * P0.x
-                + 2 * (1 - t) * t * P1.x
-                + math_pow(t, 2) * P2.x
-        local y = math_pow(1 - t, 2) * P0.y
-                + 2 * (1 - t) * t * P1.y
-                + math_pow(t, 2) * P2.y
-
-        return x, y
-    end
-end
+local ExplosionEffect = Class("ExplosionEffect")
 
 local function lerp(p1, p2, alpha)
     return p1 * (1 - alpha) + p2 * alpha
 end
 
+local function clamp01(value)
+    return math.min(1, math.max(0, value))
+end
 
 local function randomRange(range)
+    if type(range) == "function" then
+        return range()
+    end
     local min = range[1]
     local max = range[2]
     if min > max then
@@ -31,7 +22,7 @@ local function randomRange(range)
     return math.random(min, max)
 end
 
-function FountainPool:ctor(parent)
+function ExplosionEffect:ctor(parent)
     -- dump(parent,"parent",10)
     if parent == nil then
         parent = FCasinoCtx.commonPanel:GetEffectLayer()
@@ -47,9 +38,11 @@ function FountainPool:ctor(parent)
 
     -- 动画间隔
     self.interval = 1 / 20
+
+    self.spawnCount = 1
 end
 
-function FountainPool:__delete()
+function ExplosionEffect:__delete()
     self:Stop()
     for _, object in pairs(self.activeObjects) do
         FTween.KillTweens(object, nil, false)
@@ -58,12 +51,12 @@ function FountainPool:__delete()
     self.rootNode:RemoveFromParent(true)
 end
 
-function FountainPool:SetSortingOrder(value)
+function ExplosionEffect:SetSortingOrder(value)
     self.rootNode.sortingOrder = value
 end
 
 -- @brief 设置动画间隔
-function FountainPool:SetAnimationInterval(value)
+function ExplosionEffect:SetAnimationInterval(value)
     self.interval = value
 end
 
@@ -73,20 +66,17 @@ end
 -- {
 --  {
 --     url = "ui://Game324/mini_bonus",
---     widget = 10,            -- 权重(可选, 默认为1)
---     rotation = {-180, 180}, -- 旋转角度随机范围(可选)
---     height = {300, 650},    -- 抛起高度范围(可选)
---     width = {200, 300},     -- 抛起范围(可选)
---     scale = {1, 1},         -- 起始到结束的缩放值
---     speed = 200,            -- 速度(可选)
---     dropValue = 0,          -- 向下掉落距离(可选，默认0)
---     offset = {x = 0,y = 0}, -- 金币实例偏移值
+--     speed = {5, 10},
+--     gravity = -9.8,      -- 重力加速度
+--     damping = 0.5,       -- 空气阻力系数（每秒速度保留的比例）
+--     lifeTime = 1.5,      -- 金币存活时间
+--     rotation = {0, 360}, -- 旋转角度随机范围
+--     rotationSpeed = {360, 360}, -- 旋转速度（度/秒）
+--     offset = vec2(0, 0), -- 位置偏移
+--     scale = {1, 1},    -- 起始到结束的缩放值
 --  },
---  {
---     url = "ui://Game324/mini_bonus"
---  }
 -- }
-function FountainPool:Play(cfgs)
+function ExplosionEffect:Play(cfgs, play_duration)
     self:Stop()
 
     assert(#cfgs > 0)
@@ -97,77 +87,67 @@ function FountainPool:Play(cfgs)
         self.activeCount = self.activeCount + 1
         local cfg = self:RandomCfg()
 
-        -- 位置偏移
-        local posOffset = cfg.offset or vec2()
-        -- 旋转角度随机范围
-        local rotationRange = cfg.rotation or {-180, 180}
-        -- 抛起高度随机范围
-        local yRange = cfg.height or {300, 650}
-        -- 抛起宽度随机范围
-        local xRange = cfg.width or {200, 300}
+
         -- 速度
-        local speed = cfg.speed or 250
-        -- 掉落距离
-        local dropValue = cfg.dropValue or 0
+        local speed = randomRange(cfg.speed or {5, 10})
+        -- 重力加速度
+        local gravity = cfg.gravity or -9.8
+        -- 空气阻力系数（每秒速度保留的比例）
+        local damping = cfg.damping or 0.5
+        -- 金币存活时间
+        local lifeTime = cfg.lifeTime or 1.5
+        -- 旋转角度
+        local rotation = randomRange(cfg.rotation or {0, 360})
+        -- 旋转速度（度/秒）
+        local rotationSpeed = randomRange(cfg.rotationSpeed or {300, 360})
+        -- 位置偏移
+        local offset = cfg.offset or vec2()
         -- 起始到结束的缩放值
-        local scale = cfg.scale
+        local scale = cfg.scale or {1, 1}
 
 
         local coin = self:Fetch(cfg.url)
-        coin.rotation = randomRange(rotationRange)
-        coin.xy = posOffset
+        coin.rotation = rotation
+        coin.xy = offset
         if scale then
             coin.scaleX = scale[1]
             coin.scaleY = scale[1]
         end
 
-        local deltaX     = randomRange(xRange)
-        local jumpHeight = -randomRange(yRange)
-        local duration   = (math.abs(jumpHeight) + math.abs(dropValue)) / speed
-
-        if math.random(1, 100) <= 50 then deltaX = -deltaX end
-
         table.insert(self.activeObjects, coin)
 
-        local updateLogic
-
-        if dropValue == 0 then
-            -- jump动画
-            updateLogic = function(t)
-                local frac = t
-                local y    = jumpHeight * 4 * frac * (1 - frac)
-                coin.xy = vec2(posOffset.x + deltaX * t, posOffset.y + y)
-                if scale then
-                    local value = lerp(scale[1], scale[2], t)
-                    coin.scaleX = value
-                    coin.scaleY = value
-                end
-            end
-        else
-            -- 抛物线动画
-            deltaX = deltaX / 2
-            jumpHeight = jumpHeight * 2
-            local P0 = vec2()
-            local P2 = vec2(deltaX, dropValue)
-            local P1 = vec2(deltaX / 2, jumpHeight)
-
-            local curve = createBezierCurve(P0, P1, P2)
-
-            updateLogic = function(t)
-                local x, y = curve(t)
-                coin.xy = vec2(posOffset.x + x, posOffset.y + y)
-                if scale then
-                    local value = lerp(scale[1], scale[2], t)
-                    coin.scaleX = value
-                    coin.scaleY = value
-                end
-            end
-        end
+        -- 将角度转换为方向向量
+        local deg2Rad = math.pi / 180
+        local radian = math.random(0, 360) * deg2Rad
+        local  direction = {x = math.cos(radian), y = math.sin(radian)}
+        local velocity = { x = direction.x * speed, y = direction.y * speed}
 
         -- 模拟抛物线
-        FairyGUI.GTween.ToDouble(0, 1, duration)
+        FairyGUI.GTween.ToDouble(0, 1, lifeTime)
         :OnUpdate(function(tweener)
-            updateLogic(tweener.value.d)
+            local deltaTime = tweener.deltaValue.d
+            
+            -- 应用重力
+            velocity.y = velocity.y + gravity * deltaTime
+            
+            -- 应用空气阻力（线性衰减）
+            velocity.x = velocity.x * clamp01(1 - damping * deltaTime)
+            velocity.y = velocity.y * clamp01(1 - damping * deltaTime)
+
+            --  更新位置
+            coin.x = coin.x + velocity.x * deltaTime
+            coin.y = coin.y + velocity.y * deltaTime
+
+            -- 旋转效果
+            coin.rotation = coin.rotation + rotationSpeed * deltaTime
+
+            
+            if scale[1] ~= scale[2] then
+                local t = tweener.value.d
+                local value = lerp(scale[1], scale[2], t)
+                coin.scaleX = value
+                coin.scaleY = value
+            end
         end)
         :OnComplete(function()
             for key, value in pairs(self.activeObjects) do
@@ -188,17 +168,31 @@ function FountainPool:Play(cfgs)
     end
 
     FTween.Start(self.rootNode, FTween.RepeatForever({
-        FTween.Delay(self.interval, doPlay),
+        FTween.Delay(self.interval, function()
+            for i = 1, self.spawnCount do
+                doPlay()
+            end
+        end),
     }))
+    
+    if play_duration then
+        FTween.Start(self.rootNode, FTween.Delay(play_duration, function()
+            self:Stop()
+        end))
+    end
 end
 
-function FountainPool:Stop()
+function ExplosionEffect:Stop()
     FTween.KillTweens(self.rootNode)
+end
+
+function ExplosionEffect:SetSpawnCount(value)
+    self.spawnCount = value
 end
 
 --------------------------------------------------- private ---------------------------------------------------
 
-function FountainPool:RandomCfg()
+function ExplosionEffect:RandomCfg()
     if #self.cfgs == 1 then
         return self.cfgs[1]
     end
@@ -227,7 +221,7 @@ function FountainPool:RandomCfg()
 end
 
 
-function FountainPool:Fetch(url)
+function ExplosionEffect:Fetch(url)
     if not self.objectPool[url] then self.objectPool[url] = {} end
 
     local obj = nil
@@ -250,7 +244,7 @@ function FountainPool:Fetch(url)
     return obj
 end
 
-function FountainPool:Put(obj, url)
+function ExplosionEffect:Put(obj, url)
     if not self.objectPool[url] then self.objectPool[url] = {} end
 
     local pool = self.objectPool[url]
@@ -273,7 +267,7 @@ function FountainPool:Put(obj, url)
     table.insert(self.objectPool[url], obj)
 end
 
-function FountainPool:Clear()
+function ExplosionEffect:Clear()
     for _, pool in pairs(self.objectPool) do
         for __, obj in pairs(pool) do
             FTween.KillTweens(obj)
@@ -283,4 +277,4 @@ function FountainPool:Clear()
     self.objectPool = {}
 end
 
-return FountainPool
+return ExplosionEffect

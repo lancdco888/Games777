@@ -19,12 +19,12 @@ function TopPanel:ctor(render)
         if FCasinoCtx then
             FCasinoCtx:GetGame():OnClickBack()
         end
-    end)
+    end, false)
 
     -- 菜单按钮
     FToolSet.AddClickListener(self.btn_menu, function()
         APIGateway.OpenSettingPanel()
-    end)
+    end, false)
 
     -- 玩家金币
     self.text_game_money = render:GetChild("text_game_money")
@@ -34,8 +34,8 @@ function TopPanel:ctor(render)
     self.text_game_bind_money = render:GetChild("text_game_bind_money")
     self.text_lobby_bind_money = render:GetChild("text_lobby_bind_money")
     
-    self.moneyMaxWitdh = self.text_lobby_money.width
-    self.bindMoneyMaxWitdh = self.text_lobby_bind_money.width
+    self.moneyMaxWidth = self.text_lobby_money.width
+    self.bindMoneyMaxWidth = self.text_lobby_bind_money.width
 
     -- 玩家当前押注
     self.text_game_bet = render:GetChild("text_game_bet")
@@ -71,10 +71,10 @@ function TopPanel:ctor(render)
             self.text_game_bet.visible = false
             self.text_game_win.visible = false
 
-            self.text_lobby_money.y      = self.text_lobby_money.y - 16
-            self.text_lobby_bind_money.y = self.text_lobby_bind_money.y - 16
-            self.text_lobby_bet.y        = self.text_lobby_bet.y   - 16
-            self.text_lobby_win.y        = self.text_lobby_win.y   - 16
+            self.text_lobby_money.y      = self.text_lobby_money.y - 12
+            self.text_lobby_bind_money.y = self.text_lobby_bind_money.y - 12
+            self.text_lobby_bet.y        = self.text_lobby_bet.y   - 12
+            self.text_lobby_win.y        = self.text_lobby_win.y   - 12
         end
     end
 
@@ -82,9 +82,25 @@ function TopPanel:ctor(render)
     self.curShowMoney = 0
     self.curShowBindMoney = 0
     self.curShowWinMoney = 0
+
+    local text_time = render:GetChild("text_time")
+    if text_time then
+        text_time.visible = FConfig.Common.IsReviewVersion
+        if FConfig.Common.IsReviewVersion then
+
+            local function updateTimeText()
+                local time = os.date("%H:%M:%S", os.time())
+                text_time.text = time
+            end
+
+            self.updateTimeTextTimer = StartTimer(updateTimeText, 0.2)
+            updateTimeText()
+        end
+    end
 end
 
 function TopPanel:__delete()
+    StopTimer(self.updateTimeTextTimer)
 end
 
 -- @brief 获取当前金币类型
@@ -144,15 +160,15 @@ function TopPanel:SetPlayerMoney(value, moneyType, rolling, scrollEndValue)
         self.text_lobby_money.text = lobbyText
         self.curShowMoney = value
 
-        self:LimitTextSize(self.text_game_money, self.moneyMaxWitdh)
-        self:LimitTextSize(self.text_lobby_money, self.moneyMaxWitdh)
+        self:LimitTextSize(self.text_game_money, self.moneyMaxWidth)
+        self:LimitTextSize(self.text_lobby_money, self.moneyMaxWidth)
     else
         self.text_game_bind_money.text = gameText
         self.text_lobby_bind_money.text = lobbyText
         self.curShowBindMoney = value
 
-        self:LimitTextSize(self.text_game_bind_money, self.bindMoneyMaxWitdh)
-        self:LimitTextSize(self.text_lobby_bind_money, self.bindMoneyMaxWitdh)
+        self:LimitTextSize(self.text_game_bind_money, self.bindMoneyMaxWidth)
+        self:LimitTextSize(self.text_lobby_bind_money, self.bindMoneyMaxWidth)
     end
 end
 

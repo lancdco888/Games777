@@ -76,6 +76,7 @@ FairyGUI.GController =
     SetSelectedIndex = function() end,
 }
 
+---@class FairyGUI.GObject
 FairyGUI.GObject = 
 {
     -- variables
@@ -307,6 +308,7 @@ FairyGUI.GLoader =
     __call = function() end,
 }
 
+---@class FairyGUI.GLoader3D
 FairyGUI.GLoader3D = 
 {
     -- variables
@@ -330,6 +332,7 @@ FairyGUI.GLoader3D =
     __call = function() end,
 }
 
+---@class FairyGUI.GGroup
 FairyGUI.GGroup = 
 {
     -- variables
@@ -348,6 +351,7 @@ FairyGUI.GGroup =
     __call = function() end,
 }
 
+---@class FairyGUI.Transition
 FairyGUI.Transition = 
 {
     -- variables
@@ -370,6 +374,7 @@ FairyGUI.Transition =
     Play = function() end,
 }
 
+---@class FairyGUI.ScrollPane
 FairyGUI.ScrollPane = 
 {
     -- variables
@@ -423,6 +428,7 @@ FairyGUI.ScrollPane =
     CancelDragging = function() end,
 }
 
+---@class FairyGUI.GComponent : FairyGUI.GObject
 FairyGUI.GComponent = 
 {
     -- variables
@@ -455,6 +461,7 @@ FairyGUI.GComponent =
     AddChildAt = function() end,
     RemoveChildren = function() end,
     RemoveChildAt = function() end,
+    ---@return FairyGUI.GObject
     GetChild = function() end,
     AddController = function() end,
     ChildSortingOrderChanged = function() end,
@@ -478,7 +485,7 @@ FairyGUI.GComponent =
     IsOverflowHidden = function() end,
     __call = function() end,
 }
-
+---@class FairyGUI.GButton
 FairyGUI.GButton = 
 {
     -- variables

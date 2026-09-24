@@ -5,6 +5,7 @@ M["fgame_2"] = "确定退出游戏?"
 M["fgame_3"] = "请先成为VIP!"
 M["fgame_4"] = "游戏长时间未操作，游戏将在%s秒后退出"
 M["fgame_5"] = "钻石余额不足!"
+M["fgame_6"] = "游戏错误,请返回大厅重新进入"
 
 M["fgame_crimson_cartoon_menu_1"] = "退出"
 M["fgame_crimson_cartoon_menu_2"] = "声音"

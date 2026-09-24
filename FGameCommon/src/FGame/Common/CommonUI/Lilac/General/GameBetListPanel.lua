@@ -22,7 +22,7 @@ function GameBetListPanel:ctor()
         if enabled then
             FToolSet.AddClickListener(obj, function()
                 self:OnClickItem(index)
-            end)
+            end, false)
         end
         -- 置灰
         obj:GetChild("img_normal").grayed = not enabled

@@ -5,12 +5,15 @@
 
 
 local FountainPool = Import(".FountainPool")
+---@class CoinFountain
 local CoinFountain = Class("CoinFountain")
 
 CoinFountain.Anims = {
     "ui://Basics/Ani_Clip_Gold",
     "ui://Basics/Ani_Clip_Gold2",
-    "ui://Basics/Ani_Clip_Gold3"
+    "ui://Basics/Ani_Clip_Gold3",
+    "ui://Basics/Ani_Clip_Gold4",--非中国风
+    "ui://Basics/Ani_Clip_Gold5",--国风
 }
 
 function CoinFountain:ctor(parent)

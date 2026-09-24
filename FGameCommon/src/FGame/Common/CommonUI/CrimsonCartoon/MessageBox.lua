@@ -30,8 +30,8 @@ function MessageBox:ctor(title, content, onConfirmCall, onCancelCall)
     btn_cancel.text = APIGateway.GetLangText("fgame_crimson_cartoon_title_13")
     btn_confirm.text = APIGateway.GetLangText("fgame_crimson_cartoon_title_14")
 
-    FToolSet.AddClickListener(btn_cancel, handler(self, self.OnClickCancel))
-    FToolSet.AddClickListener(btn_confirm, handler(self, self.OnClickConfirm))
+    FToolSet.AddClickListener(btn_cancel, handler(self, self.OnClickCancel), false)
+    FToolSet.AddClickListener(btn_confirm, handler(self, self.OnClickConfirm), false)
 end
 
 function MessageBox:__delete()

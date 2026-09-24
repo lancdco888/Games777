@@ -64,13 +64,24 @@ end
 
 -- @brief 彩金 NumToStr
 function FToolSet.LotteryNumToStr(value, isConvertInteger, useLobbyExchangeRate)
+    if FCasinoCtx == nil then return "" end
+    
     if useLobbyExchangeRate then
         value = value / FCasinoCtx.lobbyData.lobbyExchangeRate
     else
         value = value / FCasinoCtx.lobbyData.gameExchangeRate
     end
 
-    return FToolSet.FixedDecimalPlaces(tostring(value), 2)
+    local decimalPlaces = FConfig.Common.LotteryTextDecimalPlaces
+    if not useLobbyExchangeRate then
+        decimalPlaces = FConfig.Common.LotteryTextGameRateDecimalPlaces
+    end
+    if decimalPlaces == 0 then
+        -- 如果是0小数位，直接返回整数部分
+        return string.format("%d", value)
+    end
+
+    return FToolSet.FixedDecimalPlaces(tostring(value), decimalPlaces)
 end
 
 -- @brief 添加逗号分割
@@ -132,6 +143,14 @@ local dynamicBonusGames = {
     820,
     816,
     823,
+
+    738,
+    739,
+    324,
+    741,
+    744,
+    342,
+    734,
 }
 
 -- @brief 获取动态彩金倍率值
@@ -163,6 +182,7 @@ end
 
 -- @brief 播放FairyGUI音效
 function FToolSet.PlayFGUISound(url, loop)
+    print("play audio:"..tostring(url))
     local item = FairyGUI.UIPackage.GetItemByURL(url)
     if not item then
         return -1
@@ -172,6 +192,7 @@ end
 
 -- @brief 播放背景音乐
 function FToolSet.PlayBGM(url)
+    -- print("play bgm:"..tostring(url))
     local item = FairyGUI.UIPackage.GetItemByURL(url)
     if not item then
         FToolSet.StopBGM()
@@ -198,11 +219,14 @@ function FToolSet.FmtLogMoney(money)
 end
 
 
-function FToolSet.AddClickListener(btn, callback)
+function FToolSet.AddClickListener(btn, callback, isOverride)
+    if isOverride == nil then isOverride = true end
+
     APIGateway.AddEventListener(btn, FGUIEventKey.onClick, function()
         if not btn.touchable then return end
+        if FCasinoCtx == nil then return end
         if callback then callback() end
-    end, true)
+    end, isOverride)
 end
 
 -- @brief 十二选三倒计时提示文本
@@ -310,6 +334,30 @@ function FToolSet.IsForceShowGameScore()
         return true
     end
     return false
+end
+
+-- @brief 把num均分count份,每个上下浮动20%
+-- @param totalNum 总数
+-- @param count 分成多少份
+-- @return 返回一个数组，长度为count
+function FToolSet.GetAverageFloatNums(totalNum, count)
+    local ret = {}
+
+    local average = math.floor(totalNum / count)
+    local float = math.floor(average * 0.2)
+
+    for i = 1, count - 1 do
+        local num = average
+        if float ~= 0 then
+            num = num + math.random(float * 2) - float
+        end
+        num = math.floor(num)
+        table.insert(ret, num)
+        totalNum = totalNum - num
+    end
+    table.insert(ret, totalNum)
+
+    return ret
 end
 
 -- [[定时器 绑定class 

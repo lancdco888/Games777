@@ -32,6 +32,15 @@ function CasinoContext:ctor(gameId, enterData, reconnectData)
     self.runningTime = 0
 end
 
+local STATIC_CONFIG_OF_REEL = {
+    "xCellNumber",
+    "yCellNumber",
+    "reelWidth",
+    "reelHeight",
+    "reelSpace",
+}
+
+
 function CasinoContext:Init()
     -- 加载游戏配置
     self.gameCfg = {
@@ -43,6 +52,13 @@ function CasinoContext:Init()
     if RUNTIME_IN_CREATOR or RUNTIME_IN_COCOS_H5 then
         local ok, ret = pcall(require, string.format("FGame.Game%d.Cfgs_Creator.Reel", self.gameId))
         if ok and ret then
+            if RUNTIME_IN_CREATOR then   
+            ---creator游戏中,固定这几个字段
+                for k, v in pairs(STATIC_CONFIG_OF_REEL) do
+                    ret[v] = self.gameCfg.Reel[v]
+                end
+            end
+
             self.gameCfg.Reel = ret
         end
     end
@@ -221,6 +237,10 @@ function CasinoContext:SyncPlayerMoneyDisplay(animationTime)
         self.commonPanel:SetPlayerMoney(self.playerMoney, FPlayerMoneyType.NORMAL_MONEY)
         self.commonPanel:SetPlayerMoney(self.playerBindMoney, FPlayerMoneyType.BIND_MONEY)
     end    
+end
+
+function CasinoContext:GetLastSpinResult()
+    return self.lastSpinResult
 end
 
 return CasinoContext

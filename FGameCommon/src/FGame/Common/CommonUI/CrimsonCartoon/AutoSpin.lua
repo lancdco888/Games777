@@ -51,7 +51,7 @@ function AutoSpin:OnOpenFinish()
         self.btn_options[k]:GetChild("title").color = OptionTextNormalColor
         FToolSet.AddClickListener(self.btn_options[k], function()
             self:OnClickOption(k)
-        end)
+        end, false)
     end
 
     self.render:GetTransition("fadein"):Play()
@@ -59,9 +59,9 @@ function AutoSpin:OnOpenFinish()
     self.btn_confirm = btn_confirm
     btn_confirm.grayed = true
     -- 按钮回调绑定
-    FToolSet.AddClickListener(frame:GetChild("btn_close"), handler(self, self.OnClickClose))
-    FToolSet.AddClickListener(self.render:GetChild("mask"), handler(self, self.OnClickClose))
-    FToolSet.AddClickListener(self.btn_confirm, handler(self, self.OnClickConfirm))
+    FToolSet.AddClickListener(frame:GetChild("btn_close"), handler(self, self.OnClickClose), false)
+    FToolSet.AddClickListener(self.render:GetChild("mask"), handler(self, self.OnClickClose), false)
+    FToolSet.AddClickListener(self.btn_confirm, handler(self, self.OnClickConfirm), false)
 end
 
 function AutoSpin:__delete()

@@ -46,7 +46,7 @@ function BettingOptions:InitUI()
         
         FToolSet.AddClickListener(obj, function()
             self:OnClickItem(index)
-        end)
+        end, false)
     end
 
     if #FCasinoCtx.commonPanel.betCValues > 5 then

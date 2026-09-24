@@ -52,6 +52,12 @@ function CommonPanel:ctor(ctx)
 
     self.betMoneyScale = 1
     self.tweeners = {}
+
+    -- 游戏转轴状态错误事件
+    FSysEventEmitter:AddListener(FSysEvent.ON_GAME_REEL_STATE_ERROR, function()
+        self.topPanel.btn_back.touchable = true
+        self.topPanel.btn_back.grayed = false
+    end, self)
 end
 
 function CommonPanel:__delete()
@@ -63,6 +69,8 @@ function CommonPanel:__delete()
         v:Kill(false)
     end
     self.tweeners = {}
+
+    FSysEventEmitter:RemoveListenersByTag(self)
 end
 
 -- @interface
@@ -138,6 +146,11 @@ function CommonPanel:GetCurrentBetConfig()
     return self:GetCurCConfigList()[self.curBetGear]
 end
 
+-- @brief 获取押注总配置
+function CommonPanel:GetBetConfig()
+    return self.betCfg
+end
+
 -- @brief 获取当前C位配置
 function CommonPanel:GetCurCConfigList()
     return self.betCfg[self:GetCurCValueIndex()]
@@ -151,6 +164,24 @@ end
 -- @brief 获取当前C位押注具体档位
 function CommonPanel:GetCurBetGear()
     return self.curBetGear
+end
+
+-- @brief 通过C位下标和押注值设置
+function CommonPanel:SetBetByCIndexAndValue(cIndex, betValue)
+    local cfgList = self.betCfg[cIndex]
+    if not cfgList then
+        print("[CommonPanel][SetBetByCIndexAndValue] invalid cIndex:", cIndex)
+        return
+    end
+
+    for i, cfg in pairs(cfgList) do
+        if cfg.betMoney == betValue then
+            self:SetCurCValueIndex(cIndex, i)
+            return
+        end
+    end
+
+    print("[CommonPanel][SetBetByCIndexAndValue] invalid betValue:", betValue, "for cIndex:", cIndex)
 end
 
 -- @brief 获取当前押注C位值
@@ -445,6 +476,17 @@ function CommonPanel:StopScrollMoney(moneyType, complete)
         self:KillTweener(TweenerType.SCROLL_PLAYER_MONEY, complete)
     else
         self:KillTweener(TweenerType.SCROLL_PLAYER_BIND_MONEY, complete)
+    end
+end
+
+-- @brief 检查金币是否正在滚动
+function CommonPanel:CheckMoneyRolling(moneyType)
+    if moneyType == nil then moneyType = self:GetMoneyType() end
+
+    if moneyType == FPlayerMoneyType.NORMAL_MONEY then
+        return self.tweeners[TweenerType.SCROLL_PLAYER_MONEY] ~= nil
+    else
+        return self.tweeners[TweenerType.SCROLL_PLAYER_BIND_MONEY] ~= nil
     end
 end
 

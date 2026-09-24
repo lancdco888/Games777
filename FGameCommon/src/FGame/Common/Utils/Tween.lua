@@ -121,7 +121,8 @@ function FTween._Run(target, tweens, times, isParallel, onComplete)
         end
 
         if isSequence then
-            local subTask = FTween._Run(target, data.tweens, data.times, data.isParallel, function() 
+            local subTask = nil
+            subTask = FTween._Run(target, data.tweens, data.times, data.isParallel, function() 
                 onTweenComplete()
                 table.removevalue(subTasks, subTask)
             end)
@@ -132,6 +133,9 @@ function FTween._Run(target, tweens, times, isParallel, onComplete)
                 -- dump(data,"FairyGUI.GTween.To",10)
                 tween = FairyGUI.GTween.To(data.startValue, data.endValue, data.duration)
                                 :SetTarget(target, data.propType)
+                if type(data.easeType) == "number" then
+                    tween:SetEase(data.easeType)
+                end
             elseif data.type == TweenType.Shake then
                 tween = FairyGUI.GTween.Shake(data.startValue, data.amplitude, data.duration)
                                 :SetTarget(target)
@@ -274,7 +278,7 @@ function FTween.Parallel(tweens, times)
     return FTween.Repeat(tweens, times, true)
 end
 
-function FTween.To(propType, startValue, endValue, duration, callback, onCreate)
+function FTween.To(propType, startValue, endValue, duration, callback, onCreate, easeType)
     return {
         type = TweenType.To,
         propType = propType,
@@ -283,6 +287,7 @@ function FTween.To(propType, startValue, endValue, duration, callback, onCreate)
         duration = duration,
         callback = callback,
         onCreate = onCreate,
+        easeType = easeType,
     }
 end
 

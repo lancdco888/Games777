@@ -13,6 +13,13 @@ function BaseGame:ctor()
         self.curFreeSpinResult = nil
         self.curSpecialSpinResult = nil
     end, self)
+
+    -- 游戏转轴状态错误事件
+    FSysEventEmitter:AddListener(FSysEvent.ON_GAME_REEL_STATE_ERROR, function()
+        APIGateway.ShowMessageBox(APIGateway.GetLangText("fgame_6"), function()
+            self:DoExitGame()
+        end)
+    end, self)
 end
 
 function BaseGame:__delete()
@@ -20,11 +27,17 @@ function BaseGame:__delete()
         self.gameRulePanel:Delete()
         self.gameRulePanel = nil
     end
+    if not APIGateway.IsInvalidObject(self.fadeoutPanel) then
+        self.fadeoutPanel:RemoveFromParent(true)
+        self.fadeoutPanel = nil
+    end
+    FSysEventEmitter:RemoveListenersByTag(self)
 end
 
 -- @interface
 -- @brief 点击返回按钮
 function BaseGame:OnClickBack()
+    if FCasinoCtx == nil then return end
     if FTheme.curPkgName == "Theme_CrimsonCartoon" then
         FCasinoCtx.commonPanel.bottomPanel:OnClickExitGame()
     else
@@ -33,6 +46,7 @@ function BaseGame:OnClickBack()
 end
 
 function BaseGame:DoExitGame()
+    if FCasinoCtx == nil then return end
     if self.bExiting then return end
     self.bExiting = true
 
@@ -49,24 +63,29 @@ function BaseGame:DoExitGame()
     APIGateway.SendExactRequest({ _msgName_ = "PB.Client_Slots.Leave" }, "PB.Slots_Client.Leave_Success", function(ok, result)
         self.bExiting = false
         if ok then
-            if RUNTIME_IN_COCOS and ax and not RUNTIME_IN_COCOS_H5 then
+            if RUNTIME_IN_COCOS and ax and not RUNTIME_IN_COCOS_H5 and not RUNTIME_IN_COCOS_NEONARCADE then
                 if asyncSendEnterLobbyRequest then
                     asyncSendEnterLobbyRequest(nil, true)
                 end
                 
                 -- 防止动画播放失败
                 StartOnceTimer(function() DestroyCasino() end, 1)
+                
                 -- 播放过渡动画
-                self.fadeoutPanel:GetTransition("t0"):Play(function()
-                    print("手动退出游戏返回大厅")
+                if APIGateway.IsInvalidObject(self.fadeoutPanel) then
                     DestroyCasino()
-                end)
+                else
+                    self.fadeoutPanel:GetTransition("t0"):Play(function()
+                        print("手动退出游戏返回大厅")
+                        DestroyCasino()
+                    end)
+                end
             else
                 print("手动退出游戏返回大厅")
                 DestroyCasino()
             end
         else
-            if self.fadeoutPanel then
+            if not APIGateway.IsInvalidObject(self.fadeoutPanel) then
                 self.fadeoutPanel:RemoveFromParent(true)
                 self.fadeoutPanel = nil
             end
@@ -91,8 +110,7 @@ end
 function BaseGame:OnShowGameRule()
     if self.gameRulePanel then return end
 
-    local cfg = FCasinoCtx.gameCfg.Rule
-    self.gameRulePanel = FTheme.Require("GameRulePanel").New(cfg.frame, cfg.items)
+    self.gameRulePanel = FTheme.Require("GameRulePanel").New()
     self.gameRulePanel:SetDestroyCallback(function()
         self.gameRulePanel:Delete()
         self.gameRulePanel = nil
@@ -154,6 +172,12 @@ function BaseGame:SpinFaultToleranceProtection()
         print("阻断 OnClickSpin 函数调用(2)")
         return true
     end
+end
+
+-- @brief 播放Spin按钮点击音效
+function BaseGame:PlaySpinButtonClickSound()
+    local url = string.format("ui://%s/dafu_common_click", FTheme.curPkgName)
+    FToolSet.PlayFGUISound(url, false)
 end
 
 return BaseGame

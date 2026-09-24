@@ -2,7 +2,12 @@
 
 local GameRulePanel = Class("GameRulePanel")
 
-function GameRulePanel:ctor(frameUrl, itemUrls)
+function GameRulePanel:ctor()
+    self.cfg = FCasinoCtx.gameCfg.Rule
+    if type(self.cfg.OnAwake) == "function" then
+        self.cfg.OnAwake(self.cfg, self)
+    end
+
     if APIGateway.IsDeviceOrientationPortrai() then
         self.render = FairyGUI.UIPackage.CreateObject(FTheme.curPkgName, "GameRulePanel_V")
     else
@@ -14,25 +19,36 @@ function GameRulePanel:ctor(frameUrl, itemUrls)
     
     -- 加载frame
     self.loader = self.render:GetChild("loader")
-    self.loader.url = frameUrl
+    self.loader.url = self.cfg.frame
 
     -- 
     self.frame = self.loader.component
     -- self.frame:MakeFullScreen()
 
-
-    -- fame里面必须要有这些接口
-    local bottomPanel = self.frame:GetChild("bottomPanel")
-    FToolSet.AddClickListener(bottomPanel:GetChild("btn_close"), handler(self, self.OnClickClose))
-    FToolSet.AddClickListener(bottomPanel:GetChild("btn_pre"), handler(self, self.OnClickPre))
-    FToolSet.AddClickListener(bottomPanel:GetChild("btn_next"), handler(self, self.OnClickNext))
+    local bottomPanel = nil
+    if APIGateway.IsDeviceOrientationPortrai() then
+        bottomPanel = FairyGUI.UIPackage.CreateObject(FTheme.curPkgName, "RuleBottom_V")
+    else
+        bottomPanel = FairyGUI.UIPackage.CreateObject(FTheme.curPkgName, "RuleBottom")
+    end
+    bottomPanel.pivot = vec2(0, 1)
+    bottomPanel.pivotAsAnchor = true
+    bottomPanel.xy = vec2(0, self.frame.height)
+    self.frame:AddChild(bottomPanel)
+    FToolSet.AddClickListener(bottomPanel:GetChild("btn_close"), handler(self, self.OnClickClose), false)
+    FToolSet.AddClickListener(bottomPanel:GetChild("btn_pre"), handler(self, self.OnClickPre), false)
+    FToolSet.AddClickListener(bottomPanel:GetChild("btn_next"), handler(self, self.OnClickNext), false)
 
     self.bScrollEnd = true
 
     self.list = self.frame:GetChild("list")
     self.list.touchable = false
     self.list.itemRenderer = function(index, obj)
-        obj.icon = itemUrls[index + 1]
+        obj.icon = self.cfg.items[index + 1]
+        
+        if type(self.cfg.OnPageRender) == "function" then
+            self.cfg.OnPageRender(self.cfg, self, index + 1, obj)
+        end
     end
     -- -- 设置为循环列表
     self.list:SetVirtualAndLoop()
@@ -46,12 +62,19 @@ function GameRulePanel:ctor(frameUrl, itemUrls)
     end
 
     -- 设置页数
-    self.list.numItems = #itemUrls
+    self.list.numItems = #self.cfg.items
     -- 滚动到第一页
     self.list:ScrollToView(0)
+
+    if type(self.cfg.OnStart) == "function" then
+        self.cfg.OnStart(self.cfg, self)
+    end
 end
 
 function GameRulePanel:__delete()
+    if type(self.cfg.OnDestroy) == "function" then
+        self.cfg.OnDestroy(self.cfg, self)
+    end
     self.render:RemoveFromParent(true)
 end
 

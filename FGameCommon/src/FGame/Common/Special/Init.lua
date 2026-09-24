@@ -9,6 +9,11 @@ if RUNTIME_IN_COCOS then
         Import(".CocosH5.FairyGUIConstants")
         Import(".CocosH5.Timer")
         Import(".CocosH5.APIGateway")
+    elseif RUNTIME_IN_COCOS_NEONARCADE then
+        Import(".CocosNeonArcade.FairyGUI")
+        Import(".CocosNeonArcade.FairyGUIConstants")
+        Import(".CocosNeonArcade.Timer")
+        Import(".CocosNeonArcade.APIGateway")
     else
         Import(".Cocos.FairyGUI")
         Import(".Cocos.FairyGUIConstants")

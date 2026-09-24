@@ -54,31 +54,31 @@ function DestroyFairyRoot()
 		-- 停止所有声音
 		gSound.stopAll()
 
-		-- 清理webm缓存
-		cc.Webm:cancelAllAsync()
-		cc.Webm:removeAllWebmTexture()
-		
 		APIGateway.OnDestroy(fairyRoot)
 		local root = fairyRoot
-		local handle
 
 		fairyRoot = nil
 
-		root.displayObject:setVisible(false)
+		-- root.displayObject:setVisible(false)
+		FairyGUI.GTween.KillAllTweens()
+		root.displayObject:removeFromParent()
+
+		FairyGUI.HtmlObject:ClearStaticPools()
+		FairyGUI.DragDropManager:DestroyInstance()
+		FairyGUI.GCache.Destroy()
+
+		-- 清理所有 Tween 动画
+		FairyGUI.GTween.Clean()
+		-- 清理webm缓存
+		cc.Webm:cancelAllAsync()
+		cc.Webm:removeAllWebmTexture()
+
 		-- 延迟一帧删除
-		handle = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function()
-			cc.Director:getInstance():getScheduler():unscheduleScriptEntry(handle)
-
-			-- 清理所有 Tween 动画
-			FairyGUI.GTween.Clean()
-			FairyGUI.GTween.KillAllTweens()
-
-			root.displayObject:removeFromParent()
+		-- local handle
+		-- handle = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function()
+		-- 	cc.Director:getInstance():getScheduler():unscheduleScriptEntry(handle)
 			root:release()
-			FairyGUI.HtmlObject:ClearStaticPools()
-			FairyGUI.DragDropManager:DestroyInstance()
-			FairyGUI.GCache.Destroy()
-		end, 0, false)
+		-- end, 0, false)
 	end
 end
 

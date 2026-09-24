@@ -15,6 +15,7 @@ function RunCasino(gameId, enterData, reconnectData)
     -- 系统事件派发器
     FSysEventEmitter = EventEmitter.New()
 
+    
     CreateFairyRoot()
     FCasinoCtx = CasinoContext.New(gameId, enterData, reconnectData)
     FCasinoCtx:Init()

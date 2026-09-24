@@ -7,6 +7,10 @@ local FTheme = {}
 function FTheme.SetThemeCfg(cfg)
     local name = cfg.name
 
+    if name == nil or FThemeType[name] == nil then
+        name = FGameDefaultThemeName
+    end
+
     -- 使用默认主题
     if name == nil or FThemeType[name] == nil then
         name = FThemeType.Lilac
@@ -20,7 +24,7 @@ function FTheme.SetThemeCfg(cfg)
     FTheme.curPkgName = "Theme_" .. name
     
 	FairyGUI.UIPackage.AddPackage("Basics/Basics")
-	FairyGUI.UIPackage.AddPackage(string.format("Basics/%s", FTheme.curPkgName, FTheme.curPkgName))
+	FairyGUI.UIPackage.AddPackage(string.format("%s/%s", FTheme.curPkgName, FTheme.curPkgName))
 
     if name == "CrimsonCartoon" then
         -- 巴西语需要带前缀

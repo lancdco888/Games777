@@ -12,7 +12,7 @@ function HoverMenu:ctor()
     self.render = render
 
     self.btn_arrow = render:GetChild("btn_arrow")
-    FToolSet.AddClickListener(self.btn_arrow, handler(self, self.OnClickArrow))
+    FToolSet.AddClickListener(self.btn_arrow, handler(self, self.OnClickArrow), false)
     
     local left = render:GetChild("left")
     self.btns = {}
@@ -21,10 +21,10 @@ function HoverMenu:ctor()
     self.btns.btn_bind_money = left:GetChild("btn_bind_money")
     self.btns.btn_recharge   = left:GetChild("btn_recharge")
 
-    FToolSet.AddClickListener(self.btns.btn_service, handler(self, self.OnClickService))
-    FToolSet.AddClickListener(self.btns.btn_money, handler(self, self.OnClickMoney))
-    FToolSet.AddClickListener(self.btns.btn_bind_money, handler(self, self.OnClickBindMoney))
-    FToolSet.AddClickListener(self.btns.btn_recharge, handler(self, self.OnClickRecharge))
+    FToolSet.AddClickListener(self.btns.btn_service, handler(self, self.OnClickService), false)
+    FToolSet.AddClickListener(self.btns.btn_money, handler(self, self.OnClickMoney), false)
+    FToolSet.AddClickListener(self.btns.btn_bind_money, handler(self, self.OnClickBindMoney), false)
+    FToolSet.AddClickListener(self.btns.btn_recharge, handler(self, self.OnClickRecharge), false)
 
     self:UpdateBtnStatus()
 
