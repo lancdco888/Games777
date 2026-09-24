@@ -1,0 +1,694 @@
+{
+  "modules": {
+    "FGame270": {
+      "version": "1.0.3"
+    },
+    "FGame272": {
+      "version": "1.0.3"
+    },
+    "FGame273": {
+      "version": "1.0.3"
+    },
+    "FGame274": {
+      "version": "1.0.3"
+    },
+    "FGame275": {
+      "version": "1.0.3"
+    },
+    "FGame277": {
+      "version": "1.0.3"
+    },
+    "FGame282": {
+      "version": "1.0.3"
+    },
+    "FGame315": {
+      "version": "1.0.5"
+    },
+    "FGame324": {
+      "version": "1.0.1"
+    },
+    "FGame335": {
+      "version": "1.0.4"
+    },
+    "FGame336": {
+      "version": "1.0.3"
+    },
+    "FGame338": {
+      "version": "1.0.3"
+    },
+    "FGame340": {
+      "version": "1.0.2"
+    },
+    "FGame341": {
+      "version": "1.0.3"
+    },
+    "FGame342": {
+      "version": "1.0.1"
+    },
+    "FGame345": {
+      "version": "1.0.3"
+    },
+    "FGame346": {
+      "version": "1.0.2"
+    },
+    "FGame347": {
+      "version": "1.0.3"
+    },
+    "FGame348": {
+      "version": "1.0.4"
+    },
+    "FGame349": {
+      "version": "1.0.4"
+    },
+    "FGame350": {
+      "version": "1.0.3"
+    },
+    "FGame353": {
+      "version": "1.0.3"
+    },
+    "FGame355": {
+      "version": "1.0.2"
+    },
+    "FGame360": {
+      "version": "1.0.4"
+    },
+    "FGame366": {
+      "version": "1.0.3"
+    },
+    "FGame367": {
+      "version": "1.0.2"
+    },
+    "FGame368": {
+      "version": "1.0.2"
+    },
+    "FGame369": {
+      "version": "1.0.2"
+    },
+    "FGame370": {
+      "version": "1.0.2"
+    },
+    "FGame371": {
+      "version": "1.0.2"
+    },
+    "FGame372": {
+      "version": "1.0.1"
+    },
+    "FGame374": {
+      "version": "1.0.3"
+    },
+    "FGame375": {
+      "version": "1.0.3"
+    },
+    "FGame377": {
+      "version": "1.0.3"
+    },
+    "FGame378": {
+      "version": "1.0.3"
+    },
+    "FGame379": {
+      "version": "1.0.3"
+    },
+    "FGame380": {
+      "version": "1.0.3"
+    },
+    "FGame381": {
+      "version": "1.0.3"
+    },
+    "FGame382": {
+      "version": "1.0.3"
+    },
+    "FGame383": {
+      "version": "1.0.3"
+    },
+    "FGame384": {
+      "version": "1.0.3"
+    },
+    "FGame385": {
+      "version": "1.0.3"
+    },
+    "FGame386": {
+      "version": "1.0.3"
+    },
+    "FGame387": {
+      "version": "1.0.3"
+    },
+    "FGame388": {
+      "version": "1.0.3"
+    },
+    "FGame389": {
+      "version": "1.0.3"
+    },
+    "FGame390": {
+      "version": "1.0.3"
+    },
+    "FGame391": {
+      "version": "1.0.3"
+    },
+    "FGame392": {
+      "version": "1.0.3"
+    },
+    "FGame393": {
+      "version": "1.0.3"
+    },
+    "FGame394": {
+      "version": "1.0.3"
+    },
+    "FGame395": {
+      "version": "1.0.3"
+    },
+    "FGame396": {
+      "version": "1.0.3"
+    },
+    "FGame397": {
+      "version": "1.0.3"
+    },
+    "FGame398": {
+      "version": "1.0.3"
+    },
+    "FGame399": {
+      "version": "1.0.3"
+    },
+    "FGame400": {
+      "version": "1.0.3"
+    },
+    "FGame401": {
+      "version": "1.0.3"
+    },
+    "FGame402": {
+      "version": "1.0.3"
+    },
+    "FGame403": {
+      "version": "1.0.3"
+    },
+    "FGame404": {
+      "version": "1.0.3"
+    },
+    "FGame405": {
+      "version": "1.0.3"
+    },
+    "FGame406": {
+      "version": "1.0.3"
+    },
+    "FGame407": {
+      "version": "1.0.3"
+    },
+    "FGame408": {
+      "version": "1.0.3"
+    },
+    "FGame409": {
+      "version": "1.0.3"
+    },
+    "FGame410": {
+      "version": "1.0.3"
+    },
+    "FGame411": {
+      "version": "1.0.3"
+    },
+    "FGame412": {
+      "version": "1.0.3"
+    },
+    "FGame413": {
+      "version": "1.0.3"
+    },
+    "FGame414": {
+      "version": "1.0.3"
+    },
+    "FGame415": {
+      "version": "1.0.3"
+    },
+    "FGame416": {
+      "version": "1.0.3"
+    },
+    "FGame417": {
+      "version": "1.0.2"
+    },
+    "FGame418": {
+      "version": "1.0.3"
+    },
+    "FGame419": {
+      "version": "1.0.2"
+    },
+    "FGame423": {
+      "version": "1.0.3"
+    },
+    "FGame424": {
+      "version": "1.0.2"
+    },
+    "FGame425": {
+      "version": "1.0.2"
+    },
+    "FGame426": {
+      "version": "1.0.3"
+    },
+    "FGame427": {
+      "version": "1.0.3"
+    },
+    "FGame428": {
+      "version": "1.0.2"
+    },
+    "FGame429": {
+      "version": "1.0.2"
+    },
+    "FGame430": {
+      "version": "1.0.2"
+    },
+    "FGame431": {
+      "version": "1.0.2"
+    },
+    "FGame432": {
+      "version": "1.0.2"
+    },
+    "FGame433": {
+      "version": "1.0.2"
+    },
+    "FGame435": {
+      "version": "1.0.2"
+    },
+    "FGame437": {
+      "version": "1.0.2"
+    },
+    "FGame438": {
+      "version": "1.0.2"
+    },
+    "FGame439": {
+      "version": "1.0.2"
+    },
+    "FGame440": {
+      "version": "1.0.2"
+    },
+    "FGame441": {
+      "version": "1.0.2"
+    },
+    "FGame444": {
+      "version": "1.0.2"
+    },
+    "FGame445": {
+      "version": "1.0.2"
+    },
+    "FGame446": {
+      "version": "1.0.2"
+    },
+    "FGame447": {
+      "version": "1.0.2"
+    },
+    "FGame452": {
+      "version": "1.0.2"
+    },
+    "FGame454": {
+      "version": "1.0.2"
+    },
+    "FGame457": {
+      "version": "1.0.2"
+    },
+    "FGame459": {
+      "version": "1.0.4"
+    },
+    "FGame460": {
+      "version": "1.0.4"
+    },
+    "FGame461": {
+      "version": "1.0.4"
+    },
+    "FGame462": {
+      "version": "1.0.4"
+    },
+    "FGame463": {
+      "version": "1.0.4"
+    },
+    "FGame464": {
+      "version": "1.0.5"
+    },
+    "FGame465": {
+      "version": "1.0.2"
+    },
+    "FGame466": {
+      "version": "1.0.2"
+    },
+    "FGame468": {
+      "version": "1.0.3"
+    },
+    "FGame469": {
+      "version": "1.0.2"
+    },
+    "FGame470": {
+      "version": "1.0.2"
+    },
+    "FGame475": {
+      "version": "1.0.2"
+    },
+    "FGame476": {
+      "version": "1.0.2"
+    },
+    "FGame477": {
+      "version": "1.0.2"
+    },
+    "FGame479": {
+      "version": "1.0.3"
+    },
+    "FGame481": {
+      "version": "1.0.2"
+    },
+    "FGame482": {
+      "version": "1.0.2"
+    },
+    "FGame483": {
+      "version": "1.0.2"
+    },
+    "FGame484": {
+      "version": "1.0.2"
+    },
+    "FGame485": {
+      "version": "1.0.2"
+    },
+    "FGame499": {
+      "version": "1.0.2"
+    },
+    "FGame734": {
+      "version": "1.0.1"
+    },
+    "FGame738": {
+      "version": "1.0.1"
+    },
+    "FGame739": {
+      "version": "1.0.1"
+    },
+    "FGame741": {
+      "version": "1.0.2"
+    },
+    "FGame744": {
+      "version": "1.0.1"
+    },
+    "FGameCommon": {
+      "version": "1.0.7"
+    },
+    "casino205": {
+      "version": "1.0.4"
+    },
+    "casino206": {
+      "version": "1.0.6"
+    },
+    "casino207": {
+      "version": "1.0.6"
+    },
+    "casino208": {
+      "version": "1.0.3"
+    },
+    "casino209": {
+      "version": "1.0.6"
+    },
+    "casino210": {
+      "version": "1.0.4"
+    },
+    "casino211": {
+      "version": "1.0.5"
+    },
+    "casino212": {
+      "version": "1.0.6"
+    },
+    "casino213": {
+      "version": "1.0.6"
+    },
+    "casino214": {
+      "version": "1.0.5"
+    },
+    "casino215": {
+      "version": "1.0.6"
+    },
+    "casino216": {
+      "version": "1.0.11"
+    },
+    "casino217": {
+      "version": "1.0.7"
+    },
+    "casino218": {
+      "version": "1.0.7"
+    },
+    "casino219": {
+      "version": "1.0.7"
+    },
+    "casino220": {
+      "version": "1.0.6"
+    },
+    "casino221": {
+      "version": "1.0.7"
+    },
+    "casino223": {
+      "version": "1.0.6"
+    },
+    "casino224": {
+      "version": "1.0.3"
+    },
+    "casino225": {
+      "version": "1.0.6"
+    },
+    "casino226": {
+      "version": "1.0.3"
+    },
+    "casino229": {
+      "version": "1.0.6"
+    },
+    "casino230": {
+      "version": "1.0.7"
+    },
+    "casino231": {
+      "version": "1.0.7"
+    },
+    "casino232": {
+      "version": "1.0.5"
+    },
+    "casino234": {
+      "version": "1.0.4"
+    },
+    "casino240": {
+      "version": "1.0.2"
+    },
+    "casino241": {
+      "version": "1.0.1"
+    },
+    "casino251": {
+      "version": "1.0.8"
+    },
+    "casino252": {
+      "version": "1.0.7"
+    },
+    "casino255": {
+      "version": "1.0.7"
+    },
+    "casino256": {
+      "version": "1.0.9"
+    },
+    "casino257": {
+      "version": "1.0.6"
+    },
+    "casino258": {
+      "version": "1.0.8"
+    },
+    "casino259": {
+      "version": "1.0.8"
+    },
+    "casino260": {
+      "version": "1.0.6"
+    },
+    "casino270": {
+      "version": "1.0.6"
+    },
+    "casino271": {
+      "version": "1.0.5"
+    },
+    "casino272": {
+      "version": "1.0.6"
+    },
+    "casino273": {
+      "version": "1.0.4"
+    },
+    "casino274": {
+      "version": "1.0.4"
+    },
+    "casino275": {
+      "version": "1.0.3"
+    },
+    "casino276": {
+      "version": "1.0.5"
+    },
+    "casino277": {
+      "version": "1.0.6"
+    },
+    "casino278": {
+      "version": "1.0.6"
+    },
+    "casino279": {
+      "version": "1.0.5"
+    },
+    "casino280": {
+      "version": "1.0.4"
+    },
+    "casino281": {
+      "version": "1.0.5"
+    },
+    "casino282": {
+      "version": "1.0.7"
+    },
+    "casino283": {
+      "version": "1.0.3"
+    },
+    "casino288": {
+      "version": "1.0.8"
+    },
+    "casino289": {
+      "version": "1.0.5"
+    },
+    "casino291": {
+      "version": "1.0.2"
+    },
+    "casino292": {
+      "version": "1.0.2"
+    },
+    "casino293": {
+      "version": "1.0.3"
+    },
+    "casino294": {
+      "version": "1.0.3"
+    },
+    "casino295": {
+      "version": "1.0.2"
+    },
+    "casino296": {
+      "version": "1.0.2"
+    },
+    "casino297": {
+      "version": "1.0.2"
+    },
+    "casino298": {
+      "version": "1.0.3"
+    },
+    "casino299": {
+      "version": "1.0.3"
+    },
+    "casino301": {
+      "version": "1.0.2"
+    },
+    "casino302": {
+      "version": "1.0.2"
+    },
+    "casino303": {
+      "version": "1.0.3"
+    },
+    "casino304": {
+      "version": "1.0.3"
+    },
+    "casino305": {
+      "version": "1.0.3"
+    },
+    "casino306": {
+      "version": "1.0.2"
+    },
+    "casino307": {
+      "version": "1.0.2"
+    },
+    "casino308": {
+      "version": "1.0.2"
+    },
+    "casino309": {
+      "version": "1.0.5"
+    },
+    "casino310": {
+      "version": "1.0.7"
+    },
+    "casino311": {
+      "version": "1.0.5"
+    },
+    "casino313": {
+      "version": "1.0.4"
+    },
+    "casino315": {
+      "version": "1.0.7"
+    },
+    "casino317": {
+      "version": "1.0.4"
+    },
+    "casino318": {
+      "version": "1.0.4"
+    },
+    "casino319": {
+      "version": "1.0.5"
+    },
+    "casino320": {
+      "version": "1.0.8"
+    },
+    "casino321": {
+      "version": "1.0.3"
+    },
+    "casino322": {
+      "version": "1.0.4"
+    },
+    "casino323": {
+      "version": "1.0.4"
+    },
+    "casino325": {
+      "version": "1.0.2"
+    },
+    "casino331": {
+      "version": "1.0.7"
+    },
+    "casino332": {
+      "version": "1.0.4"
+    },
+    "casino333": {
+      "version": "1.0.4"
+    },
+    "casino_common": {
+      "version": "1.0.20"
+    },
+    "fish_101": {
+      "version": "1.0.1"
+    },
+    "fish_102": {
+      "version": "1.0.1"
+    },
+    "fish_103": {
+      "version": "1.0.1"
+    },
+    "fish_104": {
+      "version": "1.0.1"
+    },
+    "fish_105": {
+      "version": "1.0.1"
+    },
+    "fish_106": {
+      "version": "1.0.1"
+    },
+    "fish_107": {
+      "version": "1.0.1"
+    },
+    "fish_108": {
+      "version": "1.0.1"
+    },
+    "fish_140": {
+      "version": "1.0.1"
+    },
+    "fish_141": {
+      "version": "1.0.1"
+    },
+    "fish_142": {
+      "version": "1.0.1"
+    },
+    "fish_143": {
+      "version": "1.0.1"
+    },
+    "fish_144": {
+      "version": "1.0.1"
+    },
+    "fish_145": {
+      "version": "1.0.1"
+    },
+    "fish_146": {
+      "version": "1.0.1"
+    },
+    "fish_common": {
+      "version": "1.0.4"
+    },
+    "fish_common_cs": {
+      "version": "1.0.1"
+    }
+  }
+}
