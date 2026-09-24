@@ -2,8 +2,43 @@ param([int]$ListenPort = 17901)
 
 $ErrorActionPreference = 'Stop'
 $guid = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
+
+function Show-PortOwner([int]$port) {
+    $rows = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue
+    foreach ($row in $rows) {
+        $proc = Get-Process -Id $row.OwningProcess -ErrorAction SilentlyContinue
+        $name = if ($proc) { $proc.ProcessName } else { 'unknown' }
+        Write-Host "port $port is held by $name pid $($row.OwningProcess)"
+    }
+}
+
+function Test-PortOpen([int]$port) {
+    $client = New-Object System.Net.Sockets.TcpClient
+    try {
+        $client.Connect('127.0.0.1', $port)
+        return $true
+    } catch {
+        return $false
+    } finally {
+        $client.Close()
+    }
+}
+
+if (Test-PortOpen $ListenPort) {
+    Write-Host "already listening on ws://127.0.0.1:$ListenPort"
+    Write-Host "Do not start a second bridge. Keep the older window open, then press Play in Creator."
+    Show-PortOwner $ListenPort
+    exit 0
+}
+
 $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, $ListenPort)
-$listener.Start()
+try {
+    $listener.Start()
+} catch {
+    Write-Host "port $ListenPort is already in use. Close the other bridge window, then run open-bridge.bat again."
+    Show-PortOwner $ListenPort
+    exit 0
+}
 $ListenPort = ([System.Net.IPEndPoint]$listener.LocalEndpoint).Port
 Write-Host "goserver bridge listening on ws://127.0.0.1:$ListenPort"
 
