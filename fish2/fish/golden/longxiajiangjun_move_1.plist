@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>longxiajiangjun_move (145).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{511,427}</string>
+                <key>spriteSourceSize</key>
+                <string>{511,427}</string>
+                <key>textureRect</key>
+                <string>{{0,0},{511,427}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>longxiajiangjun_move (147).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{511,427}</string>
+                <key>spriteSourceSize</key>
+                <string>{511,427}</string>
+                <key>textureRect</key>
+                <string>{{511,0},{511,427}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>longxiajiangjun_move (149).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{511,427}</string>
+                <key>spriteSourceSize</key>
+                <string>{511,427}</string>
+                <key>textureRect</key>
+                <string>{{1022,0},{511,427}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>longxiajiangjun_move_1.png</string>
+            <key>size</key>
+            <string>{1533,427}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:6a3ca3aa6db823e2e7400be0096886ee:c9724b372a34d030632f7526fb23ac31:08107c2ad9295b8098d1e74e5761e3f6$</string>
+            <key>textureFileName</key>
+            <string>longxiajiangjun_move_1.png</string>
+        </dict>
+    </dict>
+</plist>

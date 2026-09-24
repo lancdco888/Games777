@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>bazhuazhangyu_move (145).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{870,680}</string>
+                <key>spriteSourceSize</key>
+                <string>{870,680}</string>
+                <key>textureRect</key>
+                <string>{{0,0},{870,680}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>bazhuazhangyu_move (147).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{870,680}</string>
+                <key>spriteSourceSize</key>
+                <string>{870,680}</string>
+                <key>textureRect</key>
+                <string>{{0,680},{870,680}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>bazhuazhangyu_move (149).png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{870,680}</string>
+                <key>spriteSourceSize</key>
+                <string>{870,680}</string>
+                <key>textureRect</key>
+                <string>{{0,1360},{870,680}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>bazhuazhangyu_move_3.png</string>
+            <key>size</key>
+            <string>{870,2040}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:77e4cede4bb19e5997bb9a6caf289283:cdbcf017849941796eddcf9e4d53eb28:2a12eb8d3900d5f2bdcaebb647e12c72$</string>
+            <key>textureFileName</key>
+            <string>bazhuazhangyu_move_3.png</string>
+        </dict>
+    </dict>
+</plist>
