@@ -1,0 +1,59 @@
+// ==============================================
+// 📄 Source: 350_royalMonkey.proto
+package PB.RoyalMonkey;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated int32 listInfo = 14;
+    optional int32 intoFree = 4;
+    repeated Line lines = 6;
+    optional int32 intoCollect = 7;
+    optional int32 lockStates = 8;
+    optional SlotMoneyGift slotMoneyGift = 9;
+    optional SlotMoney slotMoney = 10;
+    optional int64 levelUpMoney = 11;
+    repeated int64 levelUpMoneys = 12;
+    repeated int64 plusA = 21;
+    repeated int64 plusB = 22;
+    repeated int64 plusC = 23;
+    repeated int64 plusD = 24;
+}
+
+message FreeType {
+    optional int32 type = 1;
+    optional int32 time = 2;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated int32 listInfo = 14;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    optional int32 newFreeTime = 7;
+    repeated Line lines = 8;
+    optional int32 intoCollect = 9;
+    optional int32 lockStates = 10;
+    optional SlotMoneyGift slotMoneyGift = 11;
+    optional SlotMoney slotMoney = 12;
+    repeated int64 plusA = 21;
+    repeated int64 plusB = 22;
+    repeated int64 plusC = 23;
+    repeated int64 plusD = 24;
+}

@@ -1,0 +1,30 @@
+// ==============================================
+// 📄 Source: CatchFish_Lobby.proto
+package PB.CatchFish_Lobby;
+
+message RegisterCatchFishService {
+    optional int32 serviceId = 1;
+}
+
+message EnterRet {
+    optional int32 code = 1;
+}
+
+message Leave {
+    optional int32 isRobot = 1;
+    optional int32 accountId = 2;
+    optional double moneyChange = 3;
+}
+
+message ChangeNoticeReadState {
+    optional int32 id = 1;
+    optional int32 accountId = 2;
+}
+
+message GetAllServerNotice {
+    optional int32 accountId = 1;
+}
+
+message Ping {
+    optional int64 ticks = 1;
+}

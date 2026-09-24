@@ -1,0 +1,19 @@
+// ==============================================
+// 📄 Source: 337_Client_Slots.proto
+package PB.Client_Slots;
+
+message RichPigNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message RichPigFreeSpin {
+}
+
+message RichPigSpecialSpin {
+}
+
+message RichPigFreeType {
+    optional int32 type = 1;
+}

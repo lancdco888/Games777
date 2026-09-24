@@ -1,0 +1,61 @@
+// ==============================================
+// 📄 Source: Lobby_CatchFish.proto
+package PB.Lobby_CatchFish;
+
+message Enter {
+    optional uint32 gateWayId = 1;
+    optional uint32 clientId = 2;
+    optional int32 gameId = 3;
+    optional int32 levelId = 4;
+    optional int32 roomId = 5;
+    optional string gameName = 6;
+    optional int32 sitIndex = 7;
+    optional int32 accountId = 8;
+    optional string userName = 9;
+    optional string nickName = 10;
+    optional int32 avatarId = 11;
+    optional double enterMoney = 12;
+    optional double enterMoneySafe = 13;
+    optional double enterMoneyGift = 14;
+    optional double enterMoneyGiftSafe = 15;
+    optional int64 enterTime = 16;
+    optional double totalRecharge = 17;
+    optional int32 isRobot = 18;
+    optional string cbKey = 19;
+    optional int32 isOfficial = 20;
+}
+
+message KillPlayer {
+    optional int32 accountId = 1;
+}
+
+message GameLevelCannon {
+    optional int32 level_id = 1;
+    optional int32 coin = 2;
+}
+
+message UpdateLevelCannon {
+    repeated GameLevelCannon levelCannons = 1;
+}
+
+message ReEnter {
+    optional int32 accountId = 1;
+    optional uint32 clientId = 2;
+    optional uint32 gateWayId = 3;
+}
+
+message Notice {
+    optional int32 id = 1;
+    optional string title = 2;
+    optional string content = 3;
+    optional string sender = 4;
+    optional int64 createTime = 5;
+}
+
+message GetNotices {
+    repeated Notice notices = 1;
+}
+
+message Pong {
+    optional int64 ticks = 1;
+}

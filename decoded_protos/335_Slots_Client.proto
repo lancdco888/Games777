@@ -1,0 +1,22 @@
+// ==============================================
+// 📄 Source: 335_Slots_Client.proto
+package PB.Slots_Client;
+
+message GoldenRoadNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message GoldenRoadSpecRet {
+    optional SpecSpin specSpin = 1;
+}
+
+message GoldenRoadEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional Enter_Success enterBase = 4;
+    optional GoldenRoadNormalRet resumedNormal = 5;
+    optional GoldenRoadSpecRet resumedSpec = 6;
+    optional int32 status = 7;
+    repeated int32 cells = 8;
+}

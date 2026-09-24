@@ -1,0 +1,97 @@
+// ==============================================
+// 📄 Source: Login_Client.proto
+package PB.Login_Client;
+
+message AuthSuccessLobby {
+    optional string lobby_token = 1;
+    optional string username = 2;
+    optional int32 account_id = 3;
+    optional string phone = 4;
+    optional string facebook = 5;
+    optional int32 game_id = 6;
+    optional SelfAccount self = 7;
+    repeated Vip vips = 8;
+    optional int32 service_id = 9;
+    optional int32 money_exchange_coin = 10;
+    repeated GiftCfg gift_cfg = 11;
+    optional int32 is_open_real_name_mode = 12;
+    optional string google = 13;
+    optional string apple = 14;
+    repeated ButtonSettings button_configs = 15;
+    optional int32 slots_bet_lottery_mode = 16;
+    optional int32 washcode_mode = 17;
+    optional int32 activity_give_type = 27;
+}
+
+message AuthSuccessGame {
+    optional int32 game_id = 1;
+    optional string game_ip = 2;
+    optional int32 game_port = 3;
+    optional string game_token = 4;
+    optional string username = 5;
+    optional int32 account_id = 6;
+    optional string phone = 7;
+    optional string facebook = 8;
+}
+
+message ReRouteNetWork {
+    optional string host = 1;
+    optional int32 port = 2;
+}
+
+message ReceivedPackageType {
+    optional int32 state = 1;
+    optional string message = 2;
+}
+
+message ReceivedPromotionCode {
+    optional int32 state = 1;
+    optional string message = 2;
+}
+
+message ReceivedVerificationFacebook {
+    optional int32 state = 1;
+    optional string facebook_id = 2;
+    optional string facebook_name = 3;
+}
+
+message ReceivedVerificationGoogle {
+    optional int32 state = 1;
+    optional string google_id = 2;
+}
+
+message ReceivedVerificationApple {
+    optional int32 state = 1;
+    optional string apple_id = 2;
+}
+
+message ServerVersionInfo {
+    optional string info = 1;
+}
+
+message GameEnforceUpdatePath {
+    optional string version = 1;
+    optional string updatePath = 2;
+}
+
+message RegisterAccountInfo {
+    optional int32 account_id = 1;
+    optional string username = 2;
+    optional string account_name = 3;
+}
+
+message HasAccountNameResult {
+    optional bool okya = 1;
+}
+
+message GetRegisterConfigResult {
+    optional int32 register_require_bind_bank = 1;
+    optional string bind_account_password_money_desc = 2;
+    optional int32 register_require_bind_phone = 3;
+}
+
+message SendGlobalPhoneVerificationCodeResult {
+    optional int32 verification_id = 1;
+    optional string phone_number = 2;
+    optional uint64 resend_sec = 3;
+}

@@ -1,0 +1,48 @@
+// ==============================================
+// 📄 Source: 339_Bowl888.proto
+package PB.Bowl888;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 lottyType = 3;
+    optional int64 lottyValue = 4;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message Graph {
+    repeated Cell grids = 1;
+    repeated Line lines = 2;
+}
+
+message SpinResult {
+    optional Graph graphs = 1;
+    optional int64 curwinCoin = 2;
+    optional int32 graphType = 3;
+    optional int32 emitSpecialType = 4;
+    optional int32 freeGameTotalCount = 5;
+    optional int32 freeGameCurCount = 6;
+    optional int32 freeValidIndex = 7;
+}
+
+message NormalSpin {
+    optional int64 betMoney = 1;
+    optional SpinResult spinResult = 2;
+    optional SlotMoneyGift slotMoneyGift = 3;
+    optional SlotMoney slotMoney = 4;
+    optional int64 levelUpMoney = 5;
+    repeated int64 levelUpMoneys = 6;
+}
+
+message FreeSpin {
+    optional int64 betMoney = 1;
+    optional SpinResult spinResult = 2;
+    optional SlotMoneyGift slotMoneyGift = 3;
+    optional SlotMoney slotMoney = 4;
+}

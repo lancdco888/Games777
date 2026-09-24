@@ -1,0 +1,34 @@
+// ==============================================
+// 📄 Source: 469_Slots_Client.proto
+package PB.Slots_Client;
+
+message MightyMonkey_NormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message MightyMonkey_FreeTypeRet {
+    optional FreeSpinType freeSpinType = 1;
+}
+
+message MightyMonkey_FreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message MightyMonkey_SpecialSpinRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message MightyMonkey_EnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional MightyMonkey_NormalRet resumedNormal = 4;
+    optional MightyMonkey_FreeRet resumedFree = 5;
+    optional MightyMonkey_FreeTypeRet resumedFreeType = 6;
+    optional MightyMonkey_SpecialSpinRet specialRet = 7;
+    optional int32 type = 8;
+    optional int64 MoneyA = 11;
+    optional int64 MoneyB = 12;
+    repeated int32 cells = 13;
+    optional int32 lvID = 14;
+}

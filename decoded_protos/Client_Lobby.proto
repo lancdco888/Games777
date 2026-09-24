@@ -1,0 +1,558 @@
+// ==============================================
+// 📄 Source: Client_Lobby.proto
+package PB.client_lobby;
+
+message Enter {
+    optional string token = 1;
+    optional bool mode = 2;
+}
+
+message EnterGame {
+    optional int32 game_id = 1;
+}
+
+message EnterGameCatchFishLevel {
+    optional int32 level_id = 1;
+}
+
+message EnterGameCatchFishLevelRoomSit {
+    optional int32 room_id = 1;
+    optional int32 sit_index = 2;
+}
+
+message ReturnUp {
+}
+
+message ChangeNickname {
+    optional string nickname = 1;
+}
+
+message ChangeAvatar {
+    optional int32 avatar_id = 1;
+}
+
+message Refund {
+    optional int32 id = 1;
+    optional double money = 2;
+    optional string requirement = 3;
+    optional int32 pay_channel_id = 4;
+    optional int32 verification_id = 5;
+    optional string verification_code = 6;
+}
+
+message GetRefundList {
+}
+
+message ChangeMoneySafe {
+    optional int32 account_id = 1;
+    optional double money = 2;
+}
+
+message GetNotice {
+}
+
+message Chat {
+    optional string content = 1;
+    optional string urls = 2;
+}
+
+message ChangeReadState {
+    optional int32 id = 1;
+    optional int32 type = 2;
+}
+
+message ChangePayChannelBank {
+    optional int32 id = 1;
+    optional string name = 2;
+    optional string card_number = 3;
+    optional string bank_name = 4;
+    optional int32 pay_channel_id = 5;
+    optional string ifsc = 6;
+}
+
+message GetRecharge {
+}
+
+message GetRefundInfo {
+}
+
+message ClientRechargeRequest {
+    optional double money = 1;
+    optional int32 pay_type = 2;
+    optional string ip_info = 3;
+    optional int32 is_create_order = 4;
+    optional string pay_name = 5;
+    optional string pay_card_number = 6;
+    optional string upstream_order_num = 7;
+    optional string payment_key = 8;
+}
+
+message LoginOut {
+}
+
+message GetClientRechargeResult {
+    optional string package_name = 1;
+    optional string product_id = 2;
+    optional string token = 3;
+    optional string order_num = 4;
+}
+
+message ClientGiftPassword {
+    optional string content = 1;
+}
+
+message ClientGiftMoney {
+    optional int32 account_id = 1;
+    optional double money = 2;
+    optional string content = 3;
+}
+
+message ClientApplyPromotion {
+    optional string promotion_name = 1;
+}
+
+message ClientPromotion {
+    optional int32 language = 1;
+}
+
+message ClientBindPromotionCode {
+    optional string promotion_code = 1;
+}
+
+message ClientVerificationFacebook {
+    optional string token = 1;
+}
+
+message Get_SignInGaveInfo {
+}
+
+message SignInToDay {
+}
+
+message ClientGiftRecord {
+}
+
+message ClientRechargeRequestPayerInfo {
+    optional string order_num = 1;
+    optional string payer_name = 2;
+    optional string payer_type = 3;
+    optional string payer_card_number = 4;
+    optional string upstream_order_num = 5;
+}
+
+message GetMessage {
+    optional int32 limit_index = 1;
+    optional int32 count = 2;
+    optional int32 account_id = 3;
+    optional string username = 4;
+}
+
+message SendMessage {
+    optional string content = 1;
+    optional string image = 2;
+    optional int32 account_id = 3;
+    optional string username = 4;
+}
+
+message ReadMessage {
+    optional int64 id = 1;
+}
+
+message GetUnreadMessage {
+}
+
+message CustomerEvaluate {
+    optional string question_id = 1;
+    optional int32 score = 2;
+    optional string evaluate = 3;
+    optional string contact = 4;
+}
+
+message GetRechargeList {
+}
+
+message SetAccountNameAndPassword {
+    optional string account_name = 1;
+    optional string password = 2;
+    optional BankInfo bank_info = 3;
+}
+
+message BandingRealNameBankInfo {
+    optional string bank_name = 1;
+    optional string payer_name = 2;
+    optional string payer_card_number = 3;
+}
+
+message BandingRealNamePhoneInfo {
+    optional string payer_name = 1;
+    optional string phone = 2;
+}
+
+message RegisterTempMsgService {
+    optional int32 account_id = 1;
+    optional string username = 2;
+}
+
+message GetFAQ {
+}
+
+message NewComplaint {
+    optional string content = 1;
+    optional string images = 2;
+    optional string real_name = 3;
+    optional string phone = 4;
+}
+
+message ApplyFixRealName {
+    optional string bank_name = 1;
+    optional string payer_name = 2;
+    optional string payer_card_number = 3;
+    optional string phone = 4;
+}
+
+message UpQRCodeImage {
+    optional string qr_image = 1;
+    optional string bank_name = 2;
+}
+
+message GetPaymentKey {
+}
+
+message Ping {
+    optional int64 ticks = 1;
+}
+
+message ChangeMoneyGiftSafe {
+    optional int32 account_id = 1;
+    optional double money = 2;
+}
+
+message RequestDailyWashCodeActivityInfo {
+}
+
+message GetDailyWashCode {
+}
+
+message GetActivityInfo {
+}
+
+message StartSpin {
+}
+
+message GetGameTotalActivityInfo {
+}
+
+message GetTotalActivityAwards {
+    optional int32 activity_id = 1;
+}
+
+message ModifyPromotionIcon {
+    optional int32 id = 1;
+}
+
+message ModifyPromotionDesc {
+    optional string description = 1;
+}
+
+message QuitPromotion {
+}
+
+message GetPromotionSettlementInfo {
+}
+
+message ReceiveSettlement {
+}
+
+message GetReceiveSettlementLog {
+}
+
+message RequestWelfare {
+}
+
+message GetAppleRechargeResult {
+    optional string receipt = 1;
+    optional string product_id = 2;
+    optional string order_num = 3;
+}
+
+message RequestChatMessage {
+    optional int32 target_id = 1;
+    optional string content = 2;
+}
+
+message GetPromotionAuthority {
+    optional int32 account_id = 1;
+}
+
+message SetPromotionAuthority {
+    optional int32 account_id = 2;
+    optional int32 authority = 3;
+}
+
+message GetPrivateOffLineChatMessage {
+}
+
+message GetBusinessmanMassUsers {
+}
+
+message SendMassMessage {
+    repeated int32 user_ids = 1;
+    optional string content = 2;
+}
+
+message GetPromotionUsers {
+}
+
+message GetWebsite {
+}
+
+message GetFormalRegisterMoney {
+}
+
+message GetChatPlayerInfo {
+    repeated int32 account_list = 1;
+}
+
+message GetFriends {
+}
+
+message GetChatGroups {
+}
+
+message CreateChatGroup {
+    optional string name = 1;
+    optional string join_code = 2;
+}
+
+message GetChatGroupInfo {
+    optional int64 group_id = 1;
+}
+
+message GetChatGroupMember {
+    optional int64 group_id = 1;
+}
+
+message EditGroupInfo {
+    optional int64 group_id = 1;
+    optional string name = 2;
+    optional string notice = 3;
+    optional int32 global_muted = 4;
+    optional string join_code = 5;
+}
+
+message GroupAdminMemberSet {
+    optional int64 group_id = 1;
+    optional int32 account_id = 2;
+    optional int32 feature = 3;
+    optional int32 value = 4;
+}
+
+message DisbandGroup {
+    optional int64 group_id = 1;
+}
+
+message JoinChatGroup {
+    optional int64 id = 1;
+    optional string join_code = 2;
+}
+
+message RequestChatGroupMessage {
+    optional int64 id = 1;
+    optional string content = 2;
+}
+
+message QuitChatGroup {
+    optional int64 id = 1;
+}
+
+message AddFriend {
+    optional int32 target_id = 1;
+}
+
+message DeleteFriend {
+    optional int32 target_id = 1;
+}
+
+message ClientVerificationGoogle {
+    optional string token = 1;
+}
+
+message ClientVerificationApple {
+    optional string token = 1;
+}
+
+message ClientGetChatNotice {
+}
+
+message BindVirtualCoinAddress {
+    optional int32 pay_channel_id = 1;
+    optional string virtual_coin_address = 2;
+}
+
+message GetWashCodeActivityInfo {
+    optional int32 activity_id = 1;
+}
+
+message ReceiveWashcodeActivity {
+    optional int32 activity_id = 1;
+}
+
+message GetPlayerInfo {
+}
+
+message GetBusinessmanPrivateMsgButtons {
+}
+
+message GetPublicMessages {
+    optional int64 channel_id = 1;
+    optional uint32 page = 2;
+}
+
+message GetPrivateMessages {
+    optional int32 target_id = 1;
+    optional uint32 page = 2;
+}
+
+message StartSpinExperience {
+}
+
+message GiveReliefMoney {
+}
+
+message SendPhoneVerificationCode {
+    optional string phone_number = 1;
+}
+
+message BindPhoneNumber {
+    optional string code = 1;
+}
+
+message SendEmailVerificationCode {
+    optional string email = 1;
+}
+
+message BindEMailNumber {
+    optional string code = 1;
+}
+
+message GetAssistanceStore {
+}
+
+message SaveAssistanceStore {
+    optional string context = 1;
+}
+
+message GetAssistanceInfo {
+    optional int32 activity_id = 1;
+}
+
+message AssistanceToUser {
+    optional int32 target_id = 1;
+    optional int32 activity_id = 2;
+}
+
+message RequestActivityAssistanceExamine {
+    optional int32 activity_id = 1;
+}
+
+message BindFace {
+    optional string code = 1;
+}
+
+message BindAgentSuperiorId {
+    optional int32 account_id = 1;
+}
+
+message GetAgentInfo {
+}
+
+message GetAgentDateInfo {
+    optional string start_time = 1;
+    optional string end_time = 2;
+    optional int32 level = 3;
+    optional int32 page = 4;
+}
+
+message ReceiveAgentRebate {
+}
+
+message GetAgentRecommendInfo {
+}
+
+message GetAgentRecommendPlayers {
+}
+
+message ReceiveAgentRecommendRewardMy {
+}
+
+message ReceiveAgentRecommendRewardTarget {
+}
+
+message GetAgentStatisticsInfo {
+    optional string start_time = 1;
+    optional string end_time = 2;
+    optional int32 level = 3;
+}
+
+message ReceiveBindAccountReward {
+}
+
+message ReceiveRedemptionCode {
+    optional string code = 1;
+}
+
+message GetWeeklySharingInfo {
+}
+
+message GetWeeklySharingPostInfo {
+}
+
+message PostWeeklySharingImage {
+    optional string img_url = 1;
+}
+
+message ReceiveWeeklySharing {
+    optional int64 order_id = 1;
+}
+
+message GetRescueReceiveInfo {
+}
+
+message ReceiveRescueReward {
+}
+
+message GetRedEnvelopeRainInfo {
+}
+
+message ReceiveRedEnvelopeRain {
+}
+
+message GetFirstRechargeInfo {
+}
+
+message ReceiveAgentRecommendRechargeRewardMy {
+}
+
+message ReceiveAgentRecommendRechargeRewardTarget {
+}
+
+message GetAgentRecommendRechargeInfo {
+}
+
+message GetLuckySpinInfo {
+}
+
+message RechargePackage {
+    optional int32 recharge_package_id = 2;
+}
+
+message GetRechargePackageInfo {
+}
+
+message UpdateRechargeUpStreamOrderNum {
+    optional string order_id = 1;
+    optional string upstream_order_num = 2;
+}
+
+message GetGameEntryConditionsList {
+}

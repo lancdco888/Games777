@@ -1,0 +1,42 @@
+// ==============================================
+// 📄 Source: 364_GoldenElephant.proto
+package PB.GoldenElephant;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 intoFree = 5;
+    optional int32 freeTime = 6;
+    optional int32 totalFreeTime = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+    optional int64 levelUpMoney = 10;
+    repeated int64 levelUpMoneys = 11;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 freeTime = 5;
+    optional int32 totalFreeTime = 6;
+    optional int32 doubled = 7;
+    optional int32 wildLvl = 8;
+    optional SlotMoneyGift slotMoneyGift = 9;
+    optional SlotMoney slotMoney = 10;
+}

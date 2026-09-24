@@ -1,0 +1,39 @@
+// ==============================================
+// 📄 Source: SlotsBase.proto
+package PB.SlotsBase;
+
+message BetRatio {
+    optional int64 betMoney = 1;
+    optional int64 betLine = 2;
+    optional int32 lvID = 3;
+}
+
+message EntryConditions {
+    optional int32 id = 1;
+    optional int64 spinMinMoney = 2;
+    optional int64 spinMaxMoney = 3;
+    optional int64 enterMinMoney = 4;
+    optional string desc = 5;
+    optional int32 c_value = 6;
+    optional int32 c_lottery_value = 7;
+}
+
+message GamingPlayer {
+    optional int32 accountId = 1;
+    optional string userName = 2;
+    optional string nickName = 3;
+    optional int32 avatarId = 4;
+    optional int32 tableId = 5;
+    optional int32 chairId = 6;
+}
+
+message SlotMoneyGift {
+    optional int64 money_gift = 1;
+    optional int64 money_gift_safe = 2;
+    optional int64 amount_of_gift = 3;
+}
+
+message SlotMoney {
+    optional int64 money = 1;
+    optional int64 money_safe = 2;
+}

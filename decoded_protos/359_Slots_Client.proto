@@ -1,0 +1,20 @@
+// ==============================================
+// 📄 Source: 359_Slots_Client.proto
+package PB.Slots_Client;
+
+message FortuneTigerNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message FortuneTigerFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message FortuneTigerEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional FortuneTigerNormalRet resumedNormal = 4;
+    optional FortuneTigerFreeRet resumedFree = 5;
+    optional int32 lastMsgType = 6;
+}

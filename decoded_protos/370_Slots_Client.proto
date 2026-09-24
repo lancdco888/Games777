@@ -1,0 +1,26 @@
+// ==============================================
+// 📄 Source: 370_Slots_Client.proto
+package PB.Slots_Client;
+
+message DeepSeaNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message DeepSeaFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message DeepSeaSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message DeepSeaEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional DeepSeaNormalRet resumedNormal = 4;
+    optional DeepSeaFreeRet resumedFree = 5;
+    optional DeepSeaSpecialRet resumedSpecial = 6;
+    optional int32 lastMsgType = 7;
+    optional int64 currentWinCoin = 8;
+}

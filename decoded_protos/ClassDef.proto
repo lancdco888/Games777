@@ -1,0 +1,413 @@
+// ==============================================
+// 📄 Source: ClassDef.proto
+package PB.ClassDef;
+
+message PayChannelAccount {
+    optional int32 id = 1;
+    optional int32 pay_channel_id = 2;
+    optional string name = 3;
+    optional string card_number = 4;
+    optional string bank_name = 5;
+}
+
+message SelfAccount {
+    optional int32 id = 1;
+    optional string username = 2;
+    optional string nickname = 3;
+    optional string account_name = 4;
+    optional int32 avatar_id = 5;
+    optional string phone = 6;
+    optional double money = 7;
+    optional double money_gift = 8;
+    optional double money_safe = 9;
+    optional double money_gift_safe = 10;
+    optional double total_recharge = 11;
+    optional double total_refund = 12;
+    optional int32 pay_channel_id = 13;
+    optional int32 has_refund_purview = 14;
+    optional int32 is_gift_money_password = 15;
+    optional int32 is_system_gift_money = 16;
+    optional int32 is_promotion_master = 17;
+    optional int32 have_promotion = 18;
+    optional int32 has_gift_money_purview = 19;
+    optional int32 is_sign_in_gave = 20;
+    optional int32 is_shows_sign_in_gave_button = 21;
+    optional double refund_min_money = 22;
+    optional double refund_min_remain_money = 23;
+    optional double refund_margin = 24;
+    optional int32 is_big_win_lock = 25;
+    optional int32 bank_card_count = 26;
+    repeated PayChannelAccount pay_channel_accounts = 27;
+    optional double amount_of_gift = 28;
+    optional double amount_of_wash_code = 29;
+    optional int32 vip_level = 31;
+    optional int32 is_businessman = 30;
+    optional int32 virtual_coin_status = 32;
+    optional int32 is_experience = 33;
+    optional string email = 34;
+    optional bool face_bind = 35;
+    optional int32 superior_id = 36;
+}
+
+message Vip {
+    optional int32 id = 1;
+    optional double enough_wash = 2;
+    optional double fish_per_millage_value = 3;
+    optional double slots_per_millage_value = 4;
+    optional double levelup_gift = 5;
+}
+
+message EntryConditions {
+    optional int32 id = 1;
+    optional double spinMinMoney = 2;
+    optional double spinMaxMoney = 3;
+    optional double enterMinMoney = 4;
+    optional int32 exchange_coin_ratio = 6;
+    optional string desc = 5;
+}
+
+message GameEntryConditions {
+    optional int32 game_id = 1;
+    repeated EntryConditions entry_conditions_list = 2;
+}
+
+message GiftCfg {
+    optional int32 id = 1;
+    optional double enough_gift = 2;
+    optional double per_millage_value = 3;
+    optional double levelup_value = 4;
+}
+
+message ButtonSettings {
+    optional int32 key = 1;
+    optional int32 is_open = 2;
+}
+
+message ActivityStatus {
+    optional int32 id = 1;
+    optional int32 is_open = 2;
+    optional string config = 3;
+}
+
+message GameCatchFishLevelInfo {
+    optional int32 levelId = 1;
+    optional int64 minBet = 2;
+    optional int64 maxBet = 3;
+    optional double minMoney = 4;
+    optional int32 exchangeCoinRatio = 5;
+}
+
+message RoomPlayers {
+    optional int32 id = 1;
+    optional string nickname = 2;
+    optional int32 avatar_id = 3;
+    optional double money = 4;
+    optional int32 is_robot = 5;
+}
+
+message GameCatchFishRoomInfo {
+    optional int32 room_id = 1;
+    repeated RoomPlayers players = 2;
+}
+
+message RefundInfo {
+    optional int64 refund_id = 1;
+    optional int32 account_id = 2;
+    optional double money = 3;
+    optional double server_fee_money = 4;
+    optional string cash_name = 5;
+    optional string cash_account = 6;
+    optional string cash_bank_name = 7;
+    optional int32 return_pay_status = 8;
+    optional int32 state = 9;
+    optional string description = 10;
+    optional int64 create_time = 11;
+    optional int64 updated_time = 12;
+    optional int32 pay_channel_id = 13;
+    optional double before_money = 14;
+    optional double before_money_safe = 15;
+    optional double after_money = 16;
+    optional double after_money_safe = 17;
+    optional int32 is_exception = 18;
+    optional string ip = 19;
+    optional string ip_area = 20;
+}
+
+message Notice {
+    optional int32 id = 1;
+    optional string title = 2;
+    optional string content = 3;
+    optional string urls = 4;
+    optional string sender = 5;
+    optional int64 create_time = 6;
+    optional int32 is_read = 7;
+    optional int32 type = 8;
+    optional int32 notice_type = 9;
+    optional int32 is_show = 10;
+    optional string template_key = 11;
+}
+
+message PayChannel {
+    optional int32 id = 1;
+    optional string name = 2;
+    optional int32 is_accuracy = 3;
+    optional double exchange = 4;
+    optional int32 vip_level = 5;
+}
+
+message VipChannel {
+    optional int32 id = 1;
+    optional string nickname = 2;
+    optional string bank_name = 3;
+    optional string account = 4;
+    optional int32 type = 5;
+    optional int32 enabled = 6;
+    optional string description = 7;
+    optional int64 create_time = 8;
+    optional int32 pay_channel_id = 9;
+    optional int64 money_level = 10;
+    optional int32 vip_level = 11;
+}
+
+message ConfigChannelMoney {
+    optional int32 pay_channel_id = 1;
+    optional int64 money = 2;
+}
+
+message GoogleMoney {
+    optional string product_id = 1;
+    optional double money = 2;
+    optional double dollar = 3;
+}
+
+message AppleMoney {
+    optional string product_id = 1;
+    optional double money = 2;
+    optional double dollar = 4;
+    optional string config = 3;
+}
+
+message PromotionDetail {
+    optional string link_url = 1;
+    optional string qrcode_url = 2;
+    optional string promotion_code = 3;
+}
+
+message PromotionProfit {
+    optional int32 have_give_minute = 1;
+    optional double profit_wash_code = 2;
+    optional double all_profit = 3;
+}
+
+message PromotionUser {
+    optional int32 id = 1;
+    optional string username = 2;
+    optional string nickname = 3;
+    optional int32 avatar_id = 8;
+    optional int64 last_online_time = 4;
+    optional int64 join_promotion_time = 5;
+    optional int32 status = 6;
+    optional int32 authority = 7;
+}
+
+message PromotionInfo {
+    optional int32 portrait_id = 1;
+    optional string promotion_name = 2;
+    optional string description = 3;
+    optional double add_fish_rate = 4;
+    optional double add_slots_rate = 5;
+    optional double settlement_fish_rate = 6;
+    optional double settlement_slots_rate = 7;
+}
+
+message EverydaySignInMoneyConfig {
+    optional int32 day = 1;
+    optional double money = 2;
+}
+
+message LogGiftMoneyToAccount {
+    optional int32 id = 1;
+    optional int32 give_account_id = 2;
+    optional int32 received_account_id = 3;
+    optional double money = 4;
+    optional int64 create_time = 5;
+}
+
+message FAQItem {
+    optional int32 id = 1;
+    optional string question = 2;
+    optional string answer = 3;
+    optional string images = 4;
+}
+
+message DailyWashCodeActivityLevel {
+    optional double wash_code_level = 1;
+    optional double give_wash_code = 2;
+}
+
+message AccountActivityStatus {
+    optional int32 activity_id = 1;
+    optional int32 prev = 2;
+    optional int32 game_id = 3;
+    optional int32 table_id = 4;
+    optional int32 vip_level = 6;
+    optional int32 fish_type = 7;
+    optional int64 fish_bet = 8;
+    optional int64 cannon_bet = 9;
+    optional int32 need_count = 10;
+    optional double give_wash_code = 11;
+    optional int32 is_open = 12;
+    optional string config = 13;
+    optional int32 current_count = 14;
+    optional int32 is_receive = 15;
+    optional int32 game_type = 16;
+    optional int64 slots_bet_money = 17;
+    optional int64 slots_win_money = 18;
+    optional int32 slots_lottery_type = 19;
+    optional int32 slots_lottery_id = 20;
+    optional int32 slots_spin_type = 21;
+}
+
+message SettlementMember {
+    optional int32 account_id = 1;
+    optional string name = 2;
+    optional double slots_wash_code = 3;
+    optional double catchfish_wash_code = 4;
+    optional double settlement_value = 5;
+    optional double yesterday_slots_wash_code = 6;
+    optional double yesterday_catchfish_wash_code = 7;
+    optional double yesterday_settlement_value = 8;
+}
+
+message ReceiveSettlementLog {
+    optional int64 time = 1;
+    optional double give_wash_code = 2;
+}
+
+message ChatPlayerInfo {
+    optional int32 account_id = 1;
+    optional int32 vip_level = 2;
+    optional int32 avatar_id = 3;
+    optional string nickname = 4;
+    optional double money = 5;
+    optional int32 is_businessman = 6;
+    optional int32 is_online = 7;
+}
+
+message ChatGroup {
+    optional int64 id = 1;
+    optional string name = 2;
+    optional int32 member_count = 3;
+    optional int32 has_join_code = 4;
+}
+
+message GroupMemberInfo {
+    optional int32 account_id = 1;
+    optional int32 vip_level = 2;
+    optional int32 avatar_id = 3;
+    optional string nickname = 4;
+    optional double money = 5;
+    optional int32 authority = 6;
+    optional int32 is_online = 7;
+    optional int32 state = 8;
+}
+
+message BusinessManNotice {
+    optional int64 time = 1;
+    optional int32 source_id = 2;
+    optional int32 source_avatar_id = 3;
+    optional string source_nickname = 4;
+    optional string content = 5;
+}
+
+message PublicMessage {
+    optional int64 time = 1;
+    optional int32 source_id = 2;
+    optional int32 source_avatar_id = 3;
+    optional string source_nickname = 4;
+    optional int32 source_is_businessman = 5;
+    optional string content = 6;
+    optional double money = 7;
+    optional int32 vip_level = 8;
+}
+
+message PrivateMessage {
+    optional int64 time = 1;
+    optional int32 source_id = 2;
+    optional int32 source_avatar_id = 3;
+    optional string source_nickname = 4;
+    optional int32 source_is_businessman = 5;
+    optional int32 target_id = 6;
+    optional string content = 7;
+    optional double money = 8;
+    optional int32 vip_level = 9;
+}
+
+message AgentIncomeDayInfo {
+    optional int64 day = 1;
+    optional int32 account_id = 2;
+    optional double bet = 3;
+    optional double contribute_rebate = 4;
+}
+
+message AgentRecommendInfo {
+    optional int32 account_id = 1;
+    optional int64 create_time = 3;
+    optional double total_recharge = 4;
+    optional double reward = 5;
+    optional int32 is_receive = 6;
+    optional double once_recharge_reward = 7;
+    optional int32 is_complete_once_recharge = 8;
+    optional int32 is_receive_once_recharge_reward = 9;
+    optional double once_recharge_money = 10;
+    optional double once_recommend_reward = 11;
+    optional int32 is_receive_once_recommend = 12;
+}
+
+message AgentStatisticsData {
+    optional int64 number = 1;
+    optional double bet = 2;
+    optional double rebate = 3;
+}
+
+message AgentStatisticsDataDay {
+    optional int64 day = 1;
+    optional int64 number = 2;
+    optional double bet = 3;
+    optional double rebate = 4;
+}
+
+message OnceRechargeReward {
+    optional int32 hour = 1;
+    optional double reward = 2;
+}
+
+message RechargeBonus {
+    optional double min = 1;
+    optional double max = 2;
+    optional double bonus_rate = 3;
+}
+
+message RechargeReward {
+    optional double min_money = 1;
+    optional double max_money = 3;
+    optional double reward = 2;
+}
+
+message BankInfo {
+    optional int32 pay_channel_id = 1;
+    optional string name = 2;
+    optional string card_number = 3;
+    optional string bank_name = 4;
+}
+
+message PhoneInfo {
+    optional int32 verification_id = 1;
+    optional string code = 2;
+}
+
+message RechargePackageInfo {
+    optional int32 id = 1;
+    optional double real_money = 2;
+    optional double money = 3;
+}

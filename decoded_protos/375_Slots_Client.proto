@@ -1,0 +1,31 @@
+// ==============================================
+// 📄 Source: 375_Slots_Client.proto
+package PB.Slots_Client;
+
+message EurekaTrainNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message EurekaTrainFreeTypeRet {
+    optional FreeType freetype = 1;
+}
+
+message EurekaTrainFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message EurekaTrainSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message EurekaTrainEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional EurekaTrainNormalRet resumedNormal = 4;
+    optional EurekaTrainFreeTypeRet resumedFreetype = 5;
+    optional EurekaTrainFreeRet resumedFree = 6;
+    optional EurekaTrainSpecialRet resumedSpecial = 7;
+    optional int32 type = 8;
+    optional int32 lvID = 10;
+}

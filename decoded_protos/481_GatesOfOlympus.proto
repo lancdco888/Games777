@@ -1,0 +1,49 @@
+// ==============================================
+// 📄 Source: 481_GatesOfOlympus.proto
+package PB.GatesOfOlympus;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 value = 3;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message Result {
+    repeated Cell grids = 1;
+    repeated Line lines = 2;
+}
+
+message Results {
+    repeated Result array = 1;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    optional Results results = 3;
+    optional int32 intoFree = 4;
+    optional SlotMoneyGift slotMoneyGift = 5;
+    optional SlotMoney slotMoney = 6;
+    optional int64 levelUpMoney = 7;
+    repeated int64 levelUpMoneys = 8;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    optional Results results = 3;
+    optional SlotMoneyGift slotMoneyGift = 4;
+    optional SlotMoney slotMoney = 5;
+    optional int64 bonusWinCoin = 6;
+    optional int32 totalFreeTime = 7;
+    optional int32 freeTime = 8;
+    optional int32 newFreeTime = 9;
+    optional int32 AccuScale = 10;
+}

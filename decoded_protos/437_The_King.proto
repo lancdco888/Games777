@@ -1,0 +1,75 @@
+// ==============================================
+// 📄 Source: 437_The_King.proto
+package PB.TheKing;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 lottyType = 3;
+    optional int64 lottyValue = 4;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message SpinResult {
+    repeated Cell grids = 1;
+    repeated Line lines = 2;
+    optional int64 curWinCoin = 3;
+    optional int32 emitSpecialEvent = 4;
+    optional int32 freeGameTotalCount = 5;
+    optional int32 freeGameCurCount = 6;
+    optional int32 lottyGameRestCount = 7;
+}
+
+message NormalSpin {
+    optional int64 betMoney = 1;
+    optional SlotMoneyGift slotMoneyGift = 2;
+    optional SlotMoney slotMoney = 3;
+    optional int64 levelUpMoney = 4;
+    repeated int64 levelUpMoneys = 5;
+    repeated Cell grids = 6;
+    repeated Line lines = 7;
+    optional int64 curWinCoin = 8;
+    optional int32 emitSpecialEvent = 9;
+    optional int32 restSelectCount = 10;
+    optional int32 lottyGameRestCount = 11;
+}
+
+message SelectType {
+    optional int32 type = 1;
+    optional int32 times = 2;
+    optional int64 money = 3;
+}
+
+message FreeSpin {
+    optional int64 betMoney = 1;
+    optional SlotMoneyGift slotMoneyGift = 2;
+    optional SlotMoney slotMoney = 3;
+    repeated Cell grids = 4;
+    repeated Line lines = 5;
+    optional int64 curWinCoin = 6;
+    optional int32 emitSpecialEvent = 7;
+    optional int32 freeGameTotalCount = 8;
+    optional int32 freeGameCurCount = 9;
+    optional int32 lottyGameRestCount = 10;
+    optional int64 allWinCoin = 11;
+}
+
+message SpecialSpin {
+    optional int64 betMoney = 1;
+    optional SlotMoneyGift slotMoneyGift = 2;
+    optional SlotMoney slotMoney = 3;
+    repeated Cell grids = 4;
+    repeated Line lines = 5;
+    optional int64 curWinCoin = 6;
+    optional int32 emitSpecialEvent = 7;
+    optional int32 freeGameTotalCount = 8;
+    optional int32 freeGameCurCount = 9;
+    optional int32 lottyGameRestCount = 10;
+    optional int64 allWinCoin = 11;
+}

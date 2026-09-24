@@ -1,0 +1,23 @@
+// ==============================================
+// 📄 Source: 338_Client_Slots.proto
+package PB.Client_Slots;
+
+message CoinComboMouse_NormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message CoinComboMouse_FreeType {
+    optional int32 index = 1;
+}
+
+message CoinComboMouse_FreeSpin {
+}
+
+message CoinComboMouse_SpecialSpin {
+}
+
+message FreeCoinInfo {
+    optional int32 CoinSymbol = 1;
+}

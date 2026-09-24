@@ -1,0 +1,41 @@
+// ==============================================
+// 📄 Source: 361_FortuneRabbit.proto
+package PB.FortuneRabbit;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 SymbolType = 3;
+    optional int64 SymbolValue = 4;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 intoFree = 5;
+    optional SlotMoneyGift slotMoneyGift = 6;
+    optional SlotMoney slotMoney = 7;
+    optional int64 levelUpMoney = 8;
+    repeated int64 levelUpMoneys = 9;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    optional int64 bonusWinCoin = 4;
+    optional int32 allCount = 5;
+    optional int32 totalCount = 6;
+    repeated Line lines = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+}

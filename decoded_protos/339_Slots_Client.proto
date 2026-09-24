@@ -1,0 +1,22 @@
+// ==============================================
+// 📄 Source: 339_Slots_Client.proto
+package PB.Slots_Client;
+
+message Bowl888NormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message Bowl888FreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message Bowl888EnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional Bowl888NormalRet resumedNormal = 4;
+    optional Bowl888FreeRet resumedFree = 5;
+    optional int32 lastMsgType = 6;
+    optional int64 accumulativeWin = 7;
+    repeated int64 extraAward = 8;
+}

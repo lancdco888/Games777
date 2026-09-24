@@ -1,0 +1,21 @@
+// ==============================================
+// 📄 Source: 340_Slots_Client.proto
+package PB.Slots_Client;
+
+message PandaNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message PandaFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message PandaEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional PandaNormalRet resumedNormal = 4;
+    optional PandaFreeRet resumedFree = 5;
+    optional int32 lastMsgType = 6;
+    optional int64 totalWinCoin = 7;
+}

@@ -1,0 +1,56 @@
+// ==============================================
+// 📄 Source: Slots_Client.proto
+package PB.Slots_Client;
+
+message Enter_Success {
+    optional int32 accountId = 1;
+    optional string userName = 2;
+    optional string nickName = 3;
+    optional int32 avatarId = 4;
+    optional int64 enterMoney = 5;
+    optional int64 enterMoneySalfe = 6;
+    optional int64 enterMoneyGift = 7;
+    optional int64 enterMoneyGiftSafe = 8;
+    repeated BetRatio betRatios = 9;
+    repeated EntryConditions entryConditions = 10;
+    optional int32 tableSize = 11;
+    optional int32 chairSize = 12;
+    optional int32 tableId = 13;
+    optional int32 chairId = 14;
+    repeated GamingPlayer players = 15;
+    optional SlotMoneyGift enterSlotMoneyGift = 16;
+    optional SlotMoney enterSlotMoney = 17;
+    optional int32 moneyType = 18;
+}
+
+message EnterRoomSuccess {
+    optional int32 tableId = 1;
+    repeated GamingPlayer players = 15;
+}
+
+message RoomPlayerNum {
+    repeated int32 playerNum = 15;
+}
+
+message EnterGameSlots_Success {
+    optional int32 GameId = 1;
+    optional int32 serviceId = 2;
+}
+
+message Leave_Success {
+}
+
+message LockLeaveSuccess {
+}
+
+message OfflineCheck {
+}
+
+message SyncPlayerStates {
+    optional GamingPlayer player = 1;
+    optional int32 operate = 2;
+}
+
+message CollectValue {
+    optional int32 nowValue = 1;
+}

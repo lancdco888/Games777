@@ -1,0 +1,32 @@
+// ==============================================
+// 📄 Source: 337_Slots_Client.proto
+package PB.Slots_Client;
+
+message RichPigNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message RichPigFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message RichPigSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message RichPigSelectRet {
+    optional SelectType freeType = 1;
+}
+
+message RichPigEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional RichPigNormalRet resumedNormal = 4;
+    optional RichPigFreeRet resumedFree = 5;
+    optional RichPigSpecialRet resumedSpecial = 6;
+    optional RichPigSelectRet resumedSelect = 7;
+    optional int32 lastMsgType = 8;
+    optional int64 accumulativeWin = 9;
+    optional int32 restSelectCount = 10;
+}

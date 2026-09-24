@@ -1,0 +1,161 @@
+// ==============================================
+// 📄 Source: BaseInfo.proto
+package PB.BaseInfo;
+
+message AccountMoney {
+    optional int64 money = 1;
+    optional int64 money_safe = 2;
+}
+
+message AccountMoneyGift {
+    optional int64 money_gift = 1;
+    optional int64 money_gift_safe = 2;
+    optional int64 amount_of_gift = 3;
+    optional int64 amount_of_washcode = 4;
+}
+
+message AccountWashAmount {
+    optional int32 wash_amount_lv = 1;
+    optional int64 wash_amount_value = 2;
+    optional int32 wash_check = 3;
+}
+
+message AccountMoneyAll {
+    optional int32 account_id = 1;
+    optional AccountMoney moneyBase = 2;
+    optional AccountMoneyGift giftInfo = 3;
+    optional AccountWashAmount washInfo = 4;
+    optional string cb_key = 5;
+    optional int64 logId = 6;
+}
+
+message UpdateOne {
+    optional int32 account_id = 1;
+    optional DB_AccountMoney db_moneyBase = 2;
+    optional DB_AccountMoneyGift db_giftInfo = 3;
+    optional int64 levelUpMoney = 4;
+}
+
+message DB_AccountMoney {
+    optional int64 money = 1;
+    optional int64 money_safe = 2;
+}
+
+message DB_AccountMoneyGift {
+    optional double money_gift = 1;
+    optional double money_gift_safe = 2;
+    optional double amount_of_gift = 3;
+    optional double amount_of_washcode = 4;
+    optional double amount_of_slotswash = 5;
+    optional double amount_of_fishwash = 6;
+    optional int64 consum_money = 7;
+    optional int64 consum_money_gift = 8;
+    optional double can_refund_money = 9;
+}
+
+message DB_AccountWashAmount {
+    optional int32 wash_amount_lv = 1;
+    optional int64 wash_amount_value = 2;
+    optional int32 wash_check = 3;
+}
+
+message DB_AccountMoneyAll {
+    optional int32 account_id = 1;
+    optional DB_AccountMoney db_moneyBase = 2;
+    optional DB_AccountMoneyGift db_giftInfo = 3;
+    optional DB_AccountWashAmount db_washInfo = 4;
+    optional string cb_key = 5;
+    optional int64 logId = 6;
+}
+
+message LotteryInfo {
+    optional int32 lotteryID = 1;
+    optional int32 hallShow = 2;
+    optional int32 lType = 3;
+    optional int32 betOrMoney = 4;
+    optional int64 lReal = 5;
+    optional int64 lMinBet = 6;
+    optional int64 lMaxBet = 7;
+    optional int64 coinMin = 8;
+    optional int64 setp = 9;
+    repeated int32 gameIDs = 10;
+}
+
+message OnceChange {
+    optional int32 accountId = 1;
+    optional int64 onceChange = 2;
+}
+
+message HitInfo {
+    optional int32 tableId = 1;
+    optional int32 accountId = 2;
+    optional int32 bulletId = 3;
+    optional int32 bulletCount = 4;
+    optional int64 bulletValue = 5;
+    repeated Fish fish = 6;
+    optional uint32 moneyType = 7;
+    optional int32 lotteryId = 8;
+    optional int32 levelId = 9;
+    optional int32 gameId = 10;
+    optional int32 type = 11;
+}
+
+message HitInfoRet {
+    optional int32 code = 1;
+    optional int32 tableId = 2;
+    optional int32 accountId = 3;
+    optional int32 bulletId = 4;
+    optional int64 bulletValue = 5;
+    optional int32 missBulletCount = 6;
+    repeated Fish deathFish = 7;
+    optional AccountMoney moneyBase = 8;
+    optional AccountMoneyGift giftInfo = 9;
+    optional int32 lotteryId = 10;
+    optional int32 type = 11;
+    repeated int64 levelUps = 12;
+}
+
+message HitInfoGroup {
+    optional int32 SerialId = 1;
+    repeated HitInfo infos = 2;
+}
+
+message HitInfoRetGroup {
+    optional int32 SerialId = 1;
+    repeated HitInfoRet infos = 2;
+}
+
+message Fish {
+    optional int32 fishId = 1;
+    optional int64 value = 2;
+    optional int32 fishTypeId = 3;
+    optional uint32 fishMultiple = 4;
+}
+
+message DataStatistics {
+    optional int32 accountId = 1;
+    optional int32 gameType = 2;
+    optional int32 gameId = 3;
+    optional int32 levelId = 4;
+    optional int32 tableId = 5;
+    optional int32 moneyType = 6;
+    optional uint64 betOrMoney = 7;
+    optional uint64 winMoney = 8;
+    optional uint32 vipLv = 9;
+    repeated Fish deathFish = 10;
+    optional int32 lotteryType = 11;
+    optional int32 lotteryId = 12;
+    optional uint32 spinType = 13;
+    optional bool isWin = 14;
+    optional uint64 timeStamp = 15;
+    optional int64 logGameInId = 16;
+    optional int32 serviceId = 17;
+    optional double money = 18;
+    optional double moneyGift = 19;
+    optional double amountOfGift = 20;
+    optional double amountOfWashcode = 21;
+    optional double levelUpMoney = 22;
+    optional double amountOfSlotsWash = 23;
+    optional double amountOfFishwash = 24;
+    optional double winMoneyGift = 25;
+}

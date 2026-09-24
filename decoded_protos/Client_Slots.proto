@@ -1,0 +1,30 @@
+// ==============================================
+// 📄 Source: Client_Slots.proto
+package PB.Client_Slots;
+
+message Enter {
+}
+
+message PlayerSit {
+    optional int32 tableId = 1;
+    optional int32 chairId = 2;
+}
+
+message EnterRoom {
+    optional int32 tableId = 1;
+}
+
+message table {
+    optional int32 tableId = 1;
+    optional int32 chairId = 2;
+}
+
+message Leave {
+}
+
+message LockLeave {
+}
+
+message CionInfo {
+    repeated int32 cells = 1;
+}

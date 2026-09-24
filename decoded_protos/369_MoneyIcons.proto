@@ -1,0 +1,71 @@
+// ==============================================
+// 📄 Source: 369_MoneyIcons.proto
+package PB.MoneyIcons;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+}
+
+message IconReward {
+    optional int32 index = 1;
+    optional int64 money = 2;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+    repeated IconReward iconRewards = 5;
+}
+
+message Reward {
+    optional int32 rewardType = 1;
+    optional int64 value1 = 2;
+    optional int64 value2 = 3;
+    optional int64 change1 = 4;
+    optional int64 change2 = 5;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    repeated Reward rewards = 5;
+    optional int32 intoFree = 6;
+    optional int32 intoCollect = 7;
+    optional int32 intoReward = 8;
+    optional int32 freeTime = 9;
+    optional int64 pay1 = 10;
+    optional int64 pay2 = 11;
+    optional int32 lockStates = 12;
+    optional SlotMoneyGift slotMoneyGift = 13;
+    optional SlotMoney slotMoney = 14;
+    optional int64 levelUpMoney = 15;
+    repeated int64 levelUpMoneys = 16;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    repeated Cell grids = 3;
+    repeated Line lines = 4;
+    optional int32 freeTime = 5;
+    optional int32 totalFreeTime = 6;
+    optional int32 intoCollect = 7;
+    optional SlotMoneyGift slotMoneyGift = 8;
+    optional SlotMoney slotMoney = 9;
+}
+
+message RewardSpin {
+    repeated Reward rewards = 1;
+    optional Reward thisReward = 2;
+    optional int32 rewardTime = 3;
+    optional int32 freeTime = 4;
+    optional int64 pay1 = 5;
+    optional int64 pay2 = 6;
+    optional SlotMoneyGift slotMoneyGift = 7;
+    optional SlotMoney slotMoney = 8;
+}

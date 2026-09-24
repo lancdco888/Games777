@@ -1,0 +1,48 @@
+// ==============================================
+// 📄 Source: 483_MahjongWays.proto
+package PB.MahjongWays;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 golden = 3;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message Result {
+    repeated Cell grids = 1;
+    repeated Line lines = 2;
+    optional int64 doubled = 3;
+    optional int64 lastDoubled = 4;
+    optional int32 freeTime = 5;
+    optional int32 totalFreeTime = 6;
+}
+
+message Results {
+    repeated Result array = 1;
+}
+
+message NormalSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    optional Results results = 3;
+    optional int32 intoFree = 4;
+    optional SlotMoneyGift slotMoneyGift = 5;
+    optional SlotMoney slotMoney = 6;
+    optional int64 levelUpMoney = 7;
+    repeated int64 levelUpMoneys = 8;
+}
+
+message FreeSpin {
+    optional int64 bet = 1;
+    optional int64 winCoin = 2;
+    optional Results results = 3;
+    optional SlotMoneyGift slotMoneyGift = 4;
+    optional SlotMoney slotMoney = 5;
+}

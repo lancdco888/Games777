@@ -1,0 +1,738 @@
+// ==============================================
+// 📄 Source: Lobby_Client.proto
+package PB.Lobby_Client;
+
+message PlayerSitdown {
+    optional RoomPlayers player = 1;
+    optional int32 room_id = 2;
+    optional int32 sit_index = 3;
+}
+
+message PlayerStandup {
+    optional int32 room_id = 1;
+    optional int32 sit_index = 2;
+}
+
+message CatchFishMarquees {
+    optional int32 game_id = 1;
+    optional string gameName = 2;
+    optional string nickName = 3;
+    optional double total_recharge = 4;
+    optional double coin = 5;
+    optional double bet = 6;
+    optional int32 fish_id = 7;
+    optional string fish_name = 8;
+    optional int32 fish_ratio = 9;
+    optional int32 level = 10;
+    optional double amount_of_gift = 11;
+}
+
+message Marquee {
+    optional string content = 1;
+    optional int32 frequency = 2;
+}
+
+message GetGMMarquees {
+    repeated Marquee marquees = 1;
+}
+
+message EnterSuccess {
+    repeated int32 gameIds = 1;
+    optional SelfAccount self = 2;
+    repeated Vip vips = 3;
+    optional string website = 4;
+    repeated GameEntryConditions game_entry_conditions_list = 5;
+    optional int32 is_open_promotion = 6;
+    optional int32 money_exchange_coin = 7;
+    optional string contact_service = 8;
+    optional string upload_image_path = 9;
+    repeated ButtonSettings button_configs = 10;
+    optional string versioninfo = 11;
+    optional int32 is_open_real_name_mode = 12;
+    optional string gameTypeSort = 13;
+    optional double gift_min_money = 14;
+    optional double gift_min_remain_money = 15;
+    repeated GiftCfg gift_cfg = 16;
+    repeated ActivityStatus activity_status = 17;
+    optional int32 is_open_first_recharge_wash_code = 18;
+    optional double first_recharge_wash_code = 19;
+    optional double first_recharge_wash_code_min_money = 20;
+    optional int32 is_open_lucky_spin = 21;
+    repeated int64 spin_array = 22;
+    optional int32 is_welfare = 23;
+    optional int32 has_promotion_msg_win = 24;
+    optional int32 has_chat_group_win = 25;
+    optional double virtual_coin_status_switch_money = 26;
+    optional int32 activity_give_type = 27;
+    optional int32 is_experience_spin = 28;
+    repeated int64 experience_spin_array = 29;
+    optional int32 is_experience_relief_money = 30;
+    optional int32 is_experience_open_recharge_and_refund = 31;
+    optional int32 is_open_email_bind = 32;
+    optional double bind_account_money_gift = 33;
+    optional int32 is_bind_face_identity = 35;
+    optional int32 is_agent_tree_open = 36;
+    optional int32 is_30day_agent_recharge_rebate_open = 37;
+    optional int32 is_agent_recommend_recharge_open = 38;
+    optional int32 agent_give_money_type = 39;
+    optional int32 is_receive_register_reward = 40;
+    optional int32 is_open_bz_refund_money_mode = 41;
+    optional int32 is_open_rescue_reward = 45;
+    optional int32 is_have_red_envelope_rain = 46;
+    optional double once_recommend_reward = 47;
+    optional int32 phone_code_resend_sec = 48;
+    optional int32 register_require_bind_bank = 49;
+    optional int32 register_only_bind_one_bank = 50;
+    optional int32 refund_is_register = 51;
+    optional int32 is_lock_bank_info = 52;
+    optional int32 is_show_lucky_spin = 53;
+    optional int32 is_open_recharge_package = 54;
+    optional int32 is_open_activity_bind_account = 55;
+}
+
+message UserInfo {
+    repeated SelfAccount my_info = 1;
+    repeated Vip vips = 2;
+}
+
+message EnterGameCatchFishSuccess {
+    repeated GameCatchFishLevelInfo levels = 1;
+}
+
+message EnterGameCatchFishLevelSuccess {
+    repeated GameCatchFishRoomInfo rooms = 1;
+}
+
+message EnterGameCatchFishLevelRoomSitSuccess {
+    optional int32 GameId = 1;
+    optional int32 serviceId = 2;
+}
+
+message ChangeNicknameSuccess {
+    optional string nickname = 1;
+}
+
+message ChangeAvatarSuccess {
+    optional int32 avatar_id = 1;
+}
+
+message GetRefundList {
+    optional int32 accountId = 1;
+    repeated RefundInfo refund_List = 2;
+}
+
+message ChangeMoneySafe_Success {
+    optional double money = 1;
+    optional double money_safe = 2;
+    optional double money_gift = 3;
+    optional double money_gift_safe = 4;
+}
+
+message GetNotices {
+    repeated Notice notices = 1;
+    optional string app_url = 2;
+    optional int32 app_switch = 3;
+}
+
+message GetRecharges {
+    repeated PayChannel pay_channels = 1;
+    repeated VipChannel vip_channels = 2;
+    repeated ConfigChannelMoney channel_moneys = 3;
+    optional int32 app_switch = 4;
+    optional double recharge_max_money = 5;
+    optional double accuracy = 6;
+    optional double recharge_min_money = 7;
+    optional int32 is_lock_card_name = 8;
+    repeated GoogleMoney google_moneys = 9;
+    optional double max_fix_real_name_money = 10;
+    repeated AppleMoney apple_moneys = 11;
+    repeated RechargeBonus bonus = 12;
+}
+
+message GetRefundInfo {
+    repeated PayChannel pay_channels = 1;
+    optional int32 money_exchange_coin = 2;
+    optional string qr_image = 3;
+    optional string qr_bank_name = 4;
+    optional double refund_min_bet = 5;
+    optional double refund_current_bet = 6;
+    optional int32 is_refund_recharge = 7;
+    optional double can_refund_money = 8;
+    optional double curr_task_flowing_value = 9;
+    optional double curr_task_flowing_max = 10;
+    optional int32 is_refund_need_bind_phone = 11;
+}
+
+message MoneyChanged {
+    optional double money = 1;
+    optional double money_safe = 2;
+    optional double money_gift = 3;
+    optional double money_gift_safe = 4;
+    optional double total_refund = 5;
+    optional double total_recharge = 6;
+    optional int32 vip_level = 7;
+    optional int32 virtual_coin_status = 8;
+    optional int32 is_experience = 9;
+}
+
+message RefundResultMoneyChanged {
+    optional MoneyChanged base = 1;
+    optional double refund_money = 2;
+}
+
+message ClientRechargeRequestSuccess {
+    optional string pay_url = 1;
+    optional string order_num = 2;
+}
+
+message Website {
+    optional string website = 1;
+    optional string website_qrcode = 2;
+}
+
+message ClientRechargeResult {
+    optional int32 state = 1;
+    optional double money = 2;
+    optional double curr_money = 3;
+    optional double total_recharge = 4;
+}
+
+message OtherDeviceLogin {
+}
+
+message GiftMoneyResult {
+    optional double money = 1;
+    optional double money_safe = 2;
+}
+
+message ReceivedMoneyResult {
+    optional double money = 1;
+    optional double money_safe = 2;
+    optional double total_recharge = 3;
+    optional int32 gift_account_id = 4;
+    optional double gift_money = 5;
+}
+
+message ApplyPromotionResult {
+    optional int32 state = 1;
+}
+
+message ReceivedPromotion {
+    optional int32 status = 1;
+    optional string desc = 2;
+    optional PromotionInfo info = 3;
+    optional PromotionDetail promotion_detail = 4;
+    optional PromotionProfit promotion_profit = 5;
+    repeated PromotionUser promotion_user = 6;
+}
+
+message QuitPromotionResult {
+    optional int32 status = 1;
+    optional int32 need_minute = 2;
+}
+
+message VerificationFacebookSuccess {
+    optional double money = 1;
+    optional int32 is_system_gift_money = 2;
+    optional string facebook = 3;
+}
+
+message EverydaySignInInfo {
+    optional int32 index = 1;
+    repeated EverydaySignInMoneyConfig money_list = 2;
+    optional int32 is_today_complete = 3;
+}
+
+message SignInToDayResult {
+    optional double give_money = 1;
+    optional double curr_money = 2;
+}
+
+message ReceivedGiftRecord {
+    optional int32 record_count = 1;
+    repeated LogGiftMoneyToAccount gift_record = 2;
+    repeated LogGiftMoneyToAccount receive_record = 3;
+}
+
+message ReturnLobby {
+}
+
+message ChangePayChannelBankSuccess {
+    repeated PayChannelAccount pay_channel_accounts = 1;
+}
+
+message UnLockAccount {
+}
+
+message AllMessage {
+    repeated Message messages = 1;
+}
+
+message UnreadMessage {
+    optional int32 msg_count = 1;
+}
+
+message ClosedCustomerQuestion {
+    optional string question_id = 1;
+    repeated string customer_questions = 2;
+    repeated string finance_questions = 3;
+}
+
+message RechargeInfo {
+    optional string order_num = 1;
+    optional double money = 2;
+    optional int64 time = 3;
+    optional int32 status = 4;
+    optional string remarks = 5;
+}
+
+message RechargeInfoList {
+    repeated RechargeInfo recharge_infos = 1;
+}
+
+message BandingRealNameResult {
+    repeated PayChannelAccount pay_channel_accounts = 1;
+}
+
+message RegisterTempMsgServiceResult {
+    optional int32 account_id = 1;
+    optional string username = 2;
+    optional string url = 3;
+}
+
+message FAQList {
+    repeated FAQItem faq_list_result = 1;
+}
+
+message UpdateRealName {
+    repeated PayChannelAccount pay_channel_accounts = 1;
+}
+
+message PaymentKeyResult {
+    optional string key = 1;
+}
+
+message Pong {
+    optional int64 ticks = 1;
+}
+
+message DailyWashCodeActivityInfo {
+    repeated DailyWashCodeActivityLevel levels = 1;
+    optional double last_wash_code = 2;
+    optional double today_wash_code = 3;
+    optional int32 can_give = 4;
+}
+
+message GetDailyWashCodeInfo {
+    optional int32 status = 1;
+    optional double give_wash_code = 2;
+}
+
+message ResponseActivityInfo {
+    repeated ActivityStatus activity_status = 1;
+    optional int32 is_open_first_recharge_wash_code = 2;
+}
+
+message ResponseSpinInfo {
+    optional int64 give_wash_code = 1;
+}
+
+message ResponseGameTotalActivityInfo {
+    repeated AccountActivityStatus activity_status_array = 1;
+}
+
+message ResponseGameTotalActivityAwards {
+    optional int32 activity_id = 1;
+    optional int32 status = 2;
+    optional int64 give_wash_code = 3;
+}
+
+message PromotionSettlementInfo {
+    optional double catch_fish_rate = 1;
+    optional double slots_rate = 2;
+    repeated SettlementMember settlement_members = 3;
+}
+
+message ReceiveSettlementResult {
+    optional double wash_code = 1;
+}
+
+message GetReceiveSettlementLogResult {
+    repeated ReceiveSettlementLog logs = 1;
+}
+
+message RequestWelfareStatus {
+    optional int32 welfare_type = 1;
+    optional double money = 2;
+}
+
+message ChatMessage {
+    optional int64 time = 1;
+    optional int32 source_id = 2;
+    optional int32 source_avatar_id = 3;
+    optional string source_nickname = 4;
+    optional int32 source_is_businessman = 5;
+    optional int32 message_type = 6;
+    optional string content = 7;
+    optional double money = 8;
+    optional int32 vip_level = 9;
+}
+
+message RequestPromotionChatAuthority {
+    optional int32 authority = 1;
+}
+
+message PrivateChatMessages {
+    repeated ChatMessage msgs = 1;
+}
+
+message EnterGameSlotsSuccess {
+    optional int32 game_id = 1;
+    optional int32 service_id = 2;
+}
+
+message FormalRegisterMoney {
+    optional double money = 1;
+}
+
+message MassUser {
+    optional int32 account_id = 1;
+    optional int32 vip_level = 2;
+    optional int32 is_online = 3;
+    optional int64 last_online_time = 4;
+}
+
+message BusinessmanMassUsers {
+    repeated MassUser users = 1;
+}
+
+message PromotionUsers {
+    repeated PromotionUser promotion_users = 1;
+}
+
+message Message {
+    optional int64 id = 1;
+    optional int64 create_time = 2;
+    optional string content = 3;
+    optional string image_url = 4;
+    optional string auditor = 5;
+    optional int32 status = 6;
+    optional int32 type = 7;
+}
+
+message ResponseChatPlayerInfos {
+    repeated ChatPlayerInfo info_list = 1;
+}
+
+message ResponseFriends {
+    repeated int32 account_ids = 1;
+}
+
+message ResponseChatGroups {
+    repeated ChatGroup my_groups = 1;
+    repeated ChatGroup join_groups = 2;
+    repeated ChatGroup chat_groups = 3;
+}
+
+message ResponseChatGroupInfo {
+    optional int64 id = 1;
+    optional string name = 2;
+    optional string notice = 3;
+    optional int32 global_muted = 4;
+    optional string join_code = 5;
+    optional int32 authority = 6;
+}
+
+message ChatGroupMembersInfo {
+    repeated GroupMemberInfo member_list = 1;
+}
+
+message ChatGroupMessage {
+    optional int64 group_id = 1;
+    optional GroupMemberInfo source = 2;
+    optional int64 time = 3;
+    optional string content = 4;
+}
+
+message DisbandChatGroup {
+    optional int64 group_id = 1;
+}
+
+message ChatGroupMemberSet {
+    optional int64 group_id = 1;
+    optional int32 feature = 2;
+    optional int32 value = 3;
+}
+
+message VerificationGoogleSuccess {
+    optional double money = 1;
+    optional int32 is_system_gift_money = 2;
+    optional string google = 3;
+}
+
+message VerificationAppleSuccess {
+    optional double money = 1;
+    optional int32 is_system_gift_money = 2;
+    optional string apple = 3;
+}
+
+message ResponseChatNotice {
+    optional string system = 1;
+    optional string private_system = 2;
+    repeated BusinessManNotice businessman_notices = 3;
+}
+
+message ResponseBindVirtualCoinAddress {
+    repeated PayChannelAccount pay_channel_accounts = 1;
+}
+
+message ResponseWashcodeActivityInfo {
+    optional int32 activity_id = 1;
+    optional int32 can_give = 2;
+}
+
+message ResponseReceiveWashcodeActivity {
+    optional int32 activity_id = 1;
+    optional int32 reward_type = 2;
+    optional int64 reward_value = 3;
+}
+
+message ReqPlayerInfo {
+    optional SelfAccount info = 1;
+}
+
+message ResponseBusinessmanPrivateMsgButtons {
+    optional int32 is_open_recharge = 1;
+    optional int32 is_open_refund = 2;
+}
+
+message UpdateBusinessmanPrivateMsgButtons {
+    optional int32 is_open_recharge = 1;
+    optional int32 is_open_refund = 2;
+}
+
+message ResponsePublicMessages {
+    optional uint32 page = 1;
+    repeated PublicMessage messages = 2;
+}
+
+message ResponsePrivateMessages {
+    optional int32 target_id = 1;
+    optional uint32 page = 2;
+    repeated PrivateMessage messages = 3;
+}
+
+message SpinExperienceResult {
+    optional int64 give_value = 1;
+}
+
+message GiveReliefMoneyResult {
+    optional double money = 1;
+}
+
+message UpdateExperienceStatus {
+}
+
+message BindPhoneNumberResult {
+    optional bool success = 1;
+    optional string phone_number = 2;
+}
+
+message BindEmailResult {
+    optional bool success = 1;
+    optional string email = 2;
+}
+
+message GetAssistanceStoreResult {
+    optional string context = 1;
+}
+
+message GetAssistanceInfoResult {
+    optional int32 status = 1;
+    optional string url = 2;
+    optional int32 reward_type = 3;
+    optional double reward_value = 4;
+    optional int32 need_assistance_user_count = 5;
+    repeated int32 accounts = 6;
+}
+
+message AssistanceToUserResult {
+    optional int32 result = 1;
+}
+
+message AssistanceToYou {
+    optional int32 account_id = 1;
+}
+
+message GetAgentInfoResult {
+    optional double all_rebate = 1;
+    optional double yesterday_rebate = 2;
+    optional double no_receive_rebate = 3;
+    optional double agent_rate = 4;
+    optional double level_1_agent_rebate_rate = 5;
+    optional double level_2_agent_rebate_rate = 6;
+    optional double level_3_agent_rebate_rate = 7;
+    optional AgentStatisticsData level_1_info = 8;
+    optional AgentStatisticsData level_2_info = 9;
+    optional AgentStatisticsData level_3_info = 10;
+}
+
+message GetAgentDateInfoResult {
+    repeated AgentIncomeDayInfo info = 1;
+}
+
+message ReceiveAgentRebateResult {
+    optional double receive_rebate = 1;
+}
+
+message GetAgentRecommendInfoResult {
+    optional double day30_agent_recharge_money = 1;
+    optional double day30_agent_recharge_rebate_money = 2;
+    optional int64 create_time = 5;
+    optional int32 in_progress = 6;
+    optional double total_recharge = 7;
+    optional int32 is_receive = 8;
+    optional double total_not_receive_recommend_reward = 9;
+    optional string recommend_url = 11;
+    optional string qr_code_url = 12;
+}
+
+message ReceiveAgentRecommendRewardMyResult {
+    optional double receive_reward = 1;
+}
+
+message ReceiveAgentRecommendRewardTargetResult {
+    optional double receive_reward = 1;
+}
+
+message ReceiveAgentRecommendOnceRechargeRewardResult {
+    optional double receive_reward = 1;
+}
+
+message GetAgentRecommendPlayersResult {
+    repeated AgentRecommendInfo info = 13;
+}
+
+message GetAgentStatisticsInfoResult {
+    repeated AgentStatisticsDataDay info = 1;
+}
+
+message ReceiveBindAccountRewardResult {
+    optional double receive_reward = 1;
+    optional int32 receive_type = 2;
+}
+
+message ReceiveRedemptionCodeResult {
+    optional double receive_reward = 1;
+    optional int32 receive_type = 2;
+}
+
+message GetWeeklySharingInfoResult {
+    optional int32 max_count = 1;
+    optional int32 curr_count = 2;
+    optional double receive_reward = 3;
+    optional int32 receive_type = 4;
+    optional string sharing_url = 5;
+}
+
+message GetWeeklySharingPostInfoResult {
+    optional int32 status = 1;
+    optional string upload_image_path = 2;
+    optional int64 order_id = 3;
+    optional string curr_img_url = 4;
+}
+
+message ReceiveWeeklySharingResult {
+    optional double receive_reward = 3;
+    optional int32 receive_type = 4;
+}
+
+message GetRescueReceiveInfoResult {
+    optional double receive_reward = 1;
+    optional int32 receive_type = 2;
+    optional int32 is_receive = 3;
+}
+
+message ReceiveRescueRewardResult {
+    optional double receive_reward = 1;
+    optional int32 receive_type = 2;
+}
+
+message GetRedEnvelopeRainInfoResult {
+    optional string desc = 1;
+    optional int32 status = 2;
+    optional int32 countdown = 3;
+}
+
+message ReceiveRedEnvelopeRainResult {
+    optional double receive_reward = 1;
+    optional int32 receive_type = 2;
+}
+
+message GetFirstRechargeInfoResult {
+    optional int32 first_recharge_bonus_mode = 1;
+    optional int32 reward_type = 2;
+    repeated RechargeReward rewards = 3;
+    repeated RechargeBonus bonus = 4;
+    optional string first_recharge_give_desc = 5;
+}
+
+message GetAgentRecommendRechargeInfoResult {
+    optional int32 agent_recommend_recharge_mode = 1;
+    optional double agent_recommend_recharge_money_value = 2;
+    optional int32 agent_recommend_recharge_day = 3;
+    optional double agent_recommend_recharge_reference_reward = 4;
+    optional double agent_recommend_recharge_target_reward = 5;
+    optional int32 agent_recommend_number = 6;
+    optional int32 agent_recommend_complete_number = 7;
+    optional double agent_recommend_receive_money = 8;
+    optional double total_not_receive_recharge_target_reward = 9;
+    optional string recommend_url = 10;
+    optional string qr_code_url = 11;
+}
+
+message ReceiveAgentRecommendRechargeRewardTargetResult {
+    optional int32 receive_type = 1;
+    optional double receive_reward = 2;
+}
+
+message ReceiveAgentRecommendRechargeRewardMyResult {
+    optional int32 receive_type = 1;
+    optional double receive_reward = 2;
+}
+
+message RefundResultNeedVerificationPhone {
+    optional int32 verification_id = 1;
+}
+
+message BandingAccountAndBankResult {
+    repeated PayChannelAccount pay_channel_accounts = 1;
+}
+
+message GetLuckySpinInfoResult {
+    optional int64 activity_start = 1;
+    optional int64 activity_end = 2;
+    optional int64 lucky_points_consumption_value = 3;
+    optional int64 lucky_points = 4;
+    optional int32 activity_type = 5;
+    optional double total_value = 6;
+    optional string lucky_spin_desc = 7;
+}
+
+message GetRechargePackageInfoResult {
+    optional string recharge_package_desc = 1;
+    optional VipChannel vip_channel = 2;
+    repeated RechargePackageInfo recharge_packages = 3;
+}
+
+message RechargePackageResult {
+    optional string order_id = 1;
+    optional double real_money = 2;
+    optional double money = 3;
+    optional BankInfo bank_info = 4;
+    optional VipChannel vip_channel = 5;
+}
+
+message GetGameEntryConditionsListResult {
+    repeated GameEntryConditions game_entry_conditions = 1;
+}

@@ -1,0 +1,41 @@
+// ==============================================
+// 📄 Source: Lobby_Slots.proto
+package PB.Lobby_Slots;
+
+message Enter {
+    optional uint32 gateWayId = 1;
+    optional uint32 clientId = 2;
+    optional int32 accountId = 3;
+    optional string cb_key = 4;
+    optional string userName = 5;
+    optional string nickName = 6;
+    optional double totalRecharge = 7;
+    optional int32 avatarId = 8;
+    optional int64 enterTime = 9;
+    optional int32 kill_percent = 10;
+    optional double gift_money = 11;
+    optional int32 is_cost_get = 12;
+    optional double money = 13;
+    optional double money_safe = 14;
+    optional double money_gift = 15;
+    optional double money_gift_safe = 16;
+    optional int32 wash_amount_lv = 17;
+    optional double wash_amount_value = 18;
+    optional int32 wash_check = 19;
+    optional int32 serial = 20;
+    optional int32 is_official = 21;
+}
+
+message KillPlayer {
+    optional int32 accountId = 1;
+}
+
+message ReEnter {
+    optional int32 accountId = 1;
+    optional uint32 clientId = 2;
+    optional uint32 gateWayId = 3;
+}
+
+message Pong {
+    optional int64 ticks = 1;
+}

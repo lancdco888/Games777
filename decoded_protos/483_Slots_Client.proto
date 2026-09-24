@@ -1,0 +1,21 @@
+// ==============================================
+// 📄 Source: 483_Slots_Client.proto
+package PB.Slots_Client;
+
+message MahjongWaysNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message MahjongWaysFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message MahjongWaysEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional Enter_Success enterBase = 4;
+    optional MahjongWaysNormalRet resumedNormal = 5;
+    optional MahjongWaysFreeRet resumedFree = 6;
+    optional int32 status = 7;
+}

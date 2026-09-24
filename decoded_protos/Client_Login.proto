@@ -1,0 +1,79 @@
+// ==============================================
+// 📄 Source: Client_Login.proto
+package PB.client_login;
+
+message ClientPackageType {
+    optional string facebook = 1;
+    optional string google = 5;
+    optional string apple = 6;
+    optional string username = 2;
+    optional string device_id = 3;
+    optional int32 packageType = 4;
+}
+
+message ClientPromotionCode {
+    optional string facebook = 1;
+    optional string username = 2;
+    optional string device_id = 3;
+    optional string promotion_code = 4;
+    optional string google = 5;
+    optional string apple = 6;
+}
+
+message AuthByUsername {
+    optional string clientType = 1;
+    optional int32 phoneType = 2;
+    optional string createIp = 3;
+    optional string version = 4;
+    optional string packageName = 5;
+    optional string device_id = 6;
+    optional string ram = 7;
+    optional string promotion_code = 8;
+    optional string facebook = 9;
+    optional string username = 10;
+    optional string account_name = 11;
+    optional string password = 12;
+    optional string google = 13;
+    optional string apple = 14;
+}
+
+message ClientVerificationFacebook {
+    optional string token = 1;
+}
+
+message ClientVerificationGoogle {
+    optional string token = 1;
+}
+
+message ClientVerificationApple {
+    optional string token = 1;
+}
+
+message GetServerVersionInfo {
+    optional string packageName = 1;
+    optional int32 type = 2;
+    optional string account = 3;
+    optional string password = 4;
+}
+
+message RegisterAccount {
+    optional string package_name = 1;
+    optional string client_type = 2;
+    optional int32 phone_type = 3;
+    optional string device_id = 4;
+    optional string account_name = 5;
+    optional string password = 6;
+    optional BankInfo bank_info = 7;
+    optional PhoneInfo phone_info = 8;
+}
+
+message HasAccountName {
+    optional string account_name = 1;
+}
+
+message GetRegisterConfig {
+}
+
+message SendGlobalPhoneVerificationCode {
+    optional string phone_number = 1;
+}

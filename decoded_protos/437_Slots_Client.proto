@@ -1,0 +1,31 @@
+// ==============================================
+// 📄 Source: 437_Slots_Client.proto
+package PB.Slots_Client;
+
+message TheKingNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message TheKingFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message TheKingSpecialRet {
+    optional SpecialSpin specialSpin = 1;
+}
+
+message TheKingSelectRet {
+    optional SelectType freeType = 1;
+}
+
+message TheKingEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional TheKingNormalRet resumedNormal = 4;
+    optional TheKingFreeRet resumedFree = 5;
+    optional TheKingSpecialRet resumedSpecial = 6;
+    optional TheKingSelectRet resumedSelect = 7;
+    optional int32 lastMsgType = 8;
+    optional int64 accumulativeWin = 9;
+}

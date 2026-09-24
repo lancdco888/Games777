@@ -1,0 +1,123 @@
+// ==============================================
+// 📄 Source: Support_Other.proto
+package PB.Support_Other;
+
+message FishConnRet {
+    optional int32 code = 1;
+}
+
+message EnterRet {
+    optional int32 accountId = 1;
+    optional int32 code = 2;
+    optional AccountMoneyAll saveMoney = 3;
+    optional int32 isRobot = 4;
+}
+
+message LeaveRet {
+    optional int32 accountId = 1;
+    optional int32 code = 2;
+}
+
+message OneServiceSaved {
+    optional int32 serviceId = 1;
+    repeated int32 accountIds = 2;
+}
+
+message RegisterToLobby {
+}
+
+message AllLotteryRet {
+    repeated LotteryInfo lotterys = 1;
+}
+
+message OneGameLotteryRet {
+    repeated LotteryInfo infos = 1;
+}
+
+message SlotCountRet {
+    optional int32 code = 1;
+    optional int32 guid = 2;
+    optional bool isWin = 3;
+    optional int64 inMoney = 4;
+    optional int64 winMoney = 5;
+    optional AccountMoney moneyBase = 6;
+    optional AccountMoneyGift giftInfo = 7;
+    repeated int64 levelUps = 8;
+    optional uint32 moneyType = 9;
+    optional bool isGrandWin = 10;
+}
+
+message SlotCountRets {
+    optional int32 code = 1;
+    repeated SlotCountRet rets = 2;
+}
+
+message RobotSpinLotterySucces {
+    optional int32 accountId = 1;
+    optional int64 betMoney = 2;
+    optional int32 lotteryId = 3;
+    optional int64 money = 4;
+}
+
+message RobotHitLotterySucces {
+    optional int32 roomId = 1;
+    optional uint32 gameId = 2;
+    optional int32 levelId = 3;
+    optional int32 accountId = 4;
+    optional int64 betMoney = 5;
+    optional int32 lotteryId = 6;
+    optional int64 money = 7;
+}
+
+message PlayerStoreResult {
+    optional int32 status = 1;
+    optional int32 accountId = 2;
+    optional AccountMoney moneyBase = 3;
+    optional AccountMoneyGift giftInfo = 4;
+}
+
+message HitFishRet {
+    optional int32 code = 1;
+    repeated HitInfoRetGroup groups = 2;
+}
+
+message SlotSpinRet {
+    optional int32 code = 1;
+    optional int32 guid = 2;
+    optional bool isWin = 3;
+    optional int64 inMoney = 4;
+    optional int64 winMoney = 5;
+    optional AccountMoney moneyBase = 6;
+    optional AccountMoneyGift giftInfo = 7;
+    repeated int64 levelUps = 8;
+    optional uint32 moneyType = 9;
+}
+
+message SlotReRundRet {
+    optional int32 code = 1;
+    optional int32 guid = 2;
+    optional int32 levelId = 3;
+    optional uint32 gameId = 4;
+    optional int64 inMoney = 5;
+    optional AccountMoney moneyBase = 6;
+    optional AccountMoneyGift giftInfo = 7;
+}
+
+message ActivityCountRet {
+    optional int32 code = 1;
+    optional int32 guid = 2;
+    optional bool isWin = 3;
+}
+
+message UpdateDataStatistics {
+    repeated DataStatistics data = 1;
+}
+
+message PlayerInCalcRet {
+    optional bool ret = 1;
+}
+
+message UpdateRefundMoneyRet {
+    optional int32 accountId = 1;
+    optional double refundMoney = 2;
+}

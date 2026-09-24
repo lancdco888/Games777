@@ -1,0 +1,17 @@
+// ==============================================
+// 📄 Source: 363_Slots_Client.proto
+package PB.Slots_Client;
+
+message DragonTigerLuckNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message DragonTigerLuckEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional DragonTigerLuckNormalRet resumedNormal = 4;
+    optional int32 typeB = 9;
+    optional int32 type = 6;
+    optional int32 lvID = 7;
+}

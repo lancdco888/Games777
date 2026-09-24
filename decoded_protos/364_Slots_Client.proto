@@ -1,0 +1,21 @@
+// ==============================================
+// 📄 Source: 364_Slots_Client.proto
+package PB.Slots_Client;
+
+message GoldenElephantNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message GoldenElephantFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message GoldenElephantEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional Enter_Success enterBase = 4;
+    optional GoldenElephantNormalRet resumedNormal = 5;
+    optional GoldenElephantFreeRet resumedFree = 6;
+    optional int32 status = 7;
+}

@@ -1,0 +1,45 @@
+// ==============================================
+// 📄 Source: Slots_Lobby.proto
+package PB.Slots_Lobby;
+
+message RegisterSlotsService {
+    optional int32 serviceId = 1;
+    optional int32 gameId = 2;
+    optional int32 playerMaxNum = 3;
+}
+
+message EnterRet {
+    optional int32 code = 1;
+}
+
+message Leave {
+    optional int32 accountId = 1;
+}
+
+message LockLeave {
+    optional int32 accountId = 1;
+    optional int32 lockStates = 2;
+}
+
+message OnceChange {
+    optional int32 accountId = 1;
+    optional int64 onceChange = 2;
+}
+
+message PlayingGameMoneyChanges {
+    repeated OnceChange changes = 1;
+}
+
+message UpdateLogId {
+    optional int32 accountId = 1;
+    optional int64 logId = 2;
+}
+
+message SlotsMarquee {
+    optional string nickName = 1;
+    optional uint32 gameId = 2;
+    optional int64 winMoney = 3;
+    optional uint64 totalRecharge = 4;
+    optional int32 winType = 5;
+    optional int64 amountOfGift = 6;
+}

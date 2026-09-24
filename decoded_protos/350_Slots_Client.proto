@@ -1,0 +1,27 @@
+// ==============================================
+// 📄 Source: 350_Slots_Client.proto
+package PB.Slots_Client;
+
+message RoyalMonkeyNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message RoyalMonkeyFreeRetType {
+    optional FreeType freeType = 1;
+}
+
+message RoyalMonkeyFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message RoyalMonkeyEnterResumed {
+    optional Enter_Success enterBase = 1;
+    optional int64 currentWinCoin = 2;
+    optional int64 currentBetMoney = 3;
+    optional RoyalMonkeyNormalRet resumedNormal = 4;
+    optional RoyalMonkeyFreeRet resumedFree = 5;
+    optional RoyalMonkeyFreeRetType freeType = 6;
+    optional int32 type = 7;
+    repeated int32 cells = 9;
+    optional int32 lvID = 10;
+}

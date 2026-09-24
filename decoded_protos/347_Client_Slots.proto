@@ -1,0 +1,18 @@
+// ==============================================
+// 📄 Source: 347_Client_Slots.proto
+package PB.Client_Slots;
+
+message HappyLanternNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message HappyLanternFreeType {
+}
+
+message HappyLanternFreeSpin {
+}
+
+message HappyLanternSpecialSpin {
+}

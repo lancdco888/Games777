@@ -1,0 +1,15 @@
+// ==============================================
+// 📄 Source: 369_Client_Slots.proto
+package PB.Client_Slots;
+
+message MoneyIconsNormalSpin {
+    optional int64 betMoney = 1;
+    optional int32 moneyType = 2;
+    optional int32 lvID = 3;
+}
+
+message MoneyIconsFreeSpin {
+}
+
+message MoneyIconsRewardSpin {
+}

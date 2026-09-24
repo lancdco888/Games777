@@ -1,0 +1,16 @@
+// ==============================================
+// 📄 Source: Generic.proto
+package PB.Generic;
+
+message Success {
+}
+
+message Fail {
+    optional int64 number = 1;
+    optional string message = 2;
+}
+
+message Error {
+    optional int64 number = 1;
+    optional string message = 2;
+}

@@ -1,0 +1,21 @@
+// ==============================================
+// 📄 Source: 374_Slots_Client.proto
+package PB.Slots_Client;
+
+message PompeNormalRet {
+    optional NormalSpin normalSpin = 1;
+}
+
+message PompeFreeRet {
+    optional FreeSpin freeSpin = 1;
+}
+
+message PompeEnterResumed {
+    optional int32 lvID = 1;
+    optional int64 currentBetMoney = 2;
+    optional Enter_Success enterBase = 3;
+    optional PompeNormalRet resumedNormal = 4;
+    optional PompeFreeRet resumedFree = 5;
+    optional int32 lastMsgType = 6;
+    optional int64 accumulativeWin = 7;
+}

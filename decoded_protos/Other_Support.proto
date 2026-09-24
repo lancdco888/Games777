@@ -1,0 +1,119 @@
+// ==============================================
+// 📄 Source: Other_Support.proto
+package PB.Other_Support;
+
+message LobbyConn {
+    optional uint32 serviceId = 1;
+}
+
+message SlotsConn {
+    optional uint32 serviceId = 1;
+    optional uint32 gameId = 2;
+}
+
+message FishConn {
+    optional uint32 serviceId = 1;
+    optional uint32 gameId = 2;
+}
+
+message Enter {
+    optional int32 accountId = 1;
+    optional int32 levelId = 2;
+    optional int32 tableId = 3;
+    optional int32 chairId = 4;
+    optional string cbKey = 5;
+    optional uint32 gameId = 6;
+}
+
+message Leave {
+    optional int32 accountId = 1;
+}
+
+message ReqAllLottery {
+}
+
+message ReqOneGameLottery {
+    optional uint32 game_id = 1;
+}
+
+message ReqSlotCounter {
+    optional int32 guid = 1;
+    optional int32 levelId = 2;
+    optional uint32 gameId = 3;
+    optional int64 inMoney = 4;
+    optional int64 hopeGet = 5;
+    optional int64 hiddenMoney = 6;
+    optional int32 lotteryID = 7;
+    optional bool isFree = 8;
+    optional bool isPresent = 9;
+    optional bool needChangeLottery = 10;
+    optional uint32 moneyType = 11;
+}
+
+message ReqSlotCounters {
+    repeated ReqSlotCounter counters = 1;
+}
+
+message RobotSpinLottery {
+    optional int32 accountId = 1;
+    optional int64 betMoney = 2;
+    optional int32 lotteryId = 3;
+}
+
+message RobotHitLottery {
+    optional int32 roomId = 1;
+    optional uint32 gameId = 2;
+    optional int32 levelId = 3;
+    optional int32 accountId = 4;
+    optional int64 betMoney = 5;
+    optional int32 lotteryId = 6;
+}
+
+message PlayerStore {
+    optional int32 type = 1;
+    optional int32 accountId = 2;
+    optional int64 money = 3;
+}
+
+message HitFish {
+    repeated HitInfoGroup groups = 1;
+}
+
+message ReqSlotSpin {
+    optional int32 guid = 1;
+    optional int32 levelId = 2;
+    optional uint32 gameId = 3;
+    optional int64 inMoney = 4;
+    optional int64 hopeGet = 5;
+    optional uint32 moneyType = 6;
+    optional bool needChangeLottery = 7;
+    optional bool needReRund = 8;
+    optional int32 lotteryId = 9;
+    optional uint32 spinType = 10;
+}
+
+message ReqSlotReRund {
+    optional int32 guid = 1;
+    optional int32 levelId = 2;
+    optional uint32 gameId = 3;
+    optional int64 inMoney = 4;
+    optional int64 reRundGet = 5;
+    optional int32 lotteryId = 6;
+    optional uint32 moneyType = 7;
+}
+
+message ReqActivityCount {
+    optional int32 guid = 1;
+    optional int64 inMoney = 2;
+    optional int64 hopeGet = 3;
+}
+
+message ReqPlayerInCalc {
+    optional int32 guid = 1;
+}
+
+message ReqUpdateRefundMoney {
+    optional int32 accountId = 1;
+    optional double changingRefundMoney = 2;
+    optional string cbKey = 3;
+}

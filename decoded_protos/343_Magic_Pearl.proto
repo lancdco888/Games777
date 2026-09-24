@@ -1,0 +1,58 @@
+// ==============================================
+// 📄 Source: 343_Magic_Pearl.proto
+package PB.MagicPearl;
+
+message Cell {
+    optional int32 index = 1;
+    optional int32 icon = 2;
+    optional int32 lottyType = 3;
+    optional int64 lottyValue = 4;
+}
+
+message Line {
+    optional int32 lineIndex = 1;
+    optional int64 winCoin = 2;
+    optional int32 icon = 3;
+    repeated Cell lineCells = 4;
+}
+
+message Graph {
+    repeated Cell grids = 1;
+    repeated Line lines = 2;
+}
+
+message SpinResult {
+    optional Graph graph = 1;
+    optional int64 curWinCoin = 2;
+    optional int32 graphType = 3;
+    optional int32 emitSpecialEvent = 4;
+    optional int32 freeGameTotalCount = 5;
+    optional int32 freeGameCurCount = 6;
+    optional int32 freeGameGotCount = 7;
+    optional int32 lottyGameTotalCount = 8;
+    optional int32 lottyGameCurCount = 9;
+    optional int32 lottyGameRestCount = 10;
+}
+
+message NormalSpin {
+    optional int64 betMoney = 1;
+    optional SpinResult spinResult = 2;
+    optional SlotMoneyGift slotMoneyGift = 3;
+    optional SlotMoney slotMoney = 4;
+    optional int64 levelUpMoney = 5;
+    repeated int64 levelUpMoneys = 6;
+}
+
+message FreeSpin {
+    optional int64 betMoney = 1;
+    optional SpinResult spinResult = 2;
+    optional SlotMoneyGift slotMoneyGift = 3;
+    optional SlotMoney slotMoney = 4;
+}
+
+message SpecialSpin {
+    optional int64 betMoney = 1;
+    optional SpinResult spinResult = 2;
+    optional SlotMoneyGift slotMoneyGift = 3;
+    optional SlotMoney slotMoney = 4;
+}
