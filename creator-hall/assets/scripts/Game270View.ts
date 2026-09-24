@@ -263,8 +263,9 @@ export class Game270View {
         for (let col = 0; col < 5; col += 1) {
             for (let row = 0; row < 3; row += 1) {
                 const frame = this.art.get(grid[col][row]);
+                const sprite = this.cells[col][row];
                 if (frame) {
-                    this.cells[col][row].spriteFrame = frame;
+                    fitSprite(sprite, frame, REEL_W - 4, SYMBOL_H - 4);
                 }
             }
         }
@@ -287,7 +288,7 @@ export class Game270View {
         node.setParent(this.root);
         const sprite = node.addComponent(Sprite);
         sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-        sprite.trim = false;
+        sprite.trim = true;
         this.ruleSprite = sprite;
         this.rule = node;
         this.loadRulePage();
@@ -299,7 +300,7 @@ export class Game270View {
         const page = this.rulePage + 1;
         loadSpriteFrame(`game270/art/slots_270_info_${page}`, (frame) => {
             if (frame && this.ruleSprite?.isValid) {
-                this.ruleSprite.spriteFrame = frame;
+                fitSprite(this.ruleSprite, frame, 900, 460);
             }
         });
     }
@@ -330,10 +331,10 @@ export class Game270View {
         const sprite = node.addComponent(Sprite);
         sprite.sizeMode = Sprite.SizeMode.CUSTOM;
         sprite.type = Sprite.Type.SIMPLE;
-        sprite.trim = false;
+        sprite.trim = true;
         loadSpriteFrame(path, (frame) => {
             if (frame && sprite.isValid) {
-                sprite.spriteFrame = frame;
+                fitSprite(sprite, frame, width, height);
             }
         });
         if (onClick) {
@@ -352,7 +353,7 @@ export class Game270View {
         const sprite = node.addComponent(Sprite);
         sprite.sizeMode = Sprite.SizeMode.CUSTOM;
         sprite.type = Sprite.Type.SIMPLE;
-        sprite.trim = false;
+        sprite.trim = true;
         return sprite;
     }
 
@@ -378,6 +379,17 @@ export class Game270View {
             this.audio.playOneShot(clip, 1);
         }
     }
+}
+
+/** Draw the sprite inside the node box. Trimmed imports otherwise shift the picture. */
+function fitSprite(sprite: Sprite, frame: SpriteFrame, width: number, height: number): void {
+    frame.packable = false;
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    sprite.trim = true;
+    sprite.spriteFrame = frame;
+    const transform = sprite.node.getComponent(UITransform);
+    transform?.setAnchorPoint(0.5, 0.5);
+    transform?.setContentSize(width, height);
 }
 
 function fguiCenter(x: number, y: number, width: number, height: number): { x: number; y: number } {
