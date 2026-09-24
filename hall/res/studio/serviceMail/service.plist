@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>serviceMail/fs.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{404,88},{98,51}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{98,51}</string>
+			</dict>
+			<key>serviceMail/head_service.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{923,4},{77,77}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{77,77}</string>
+			</dict>
+			<key>serviceMail/icon_read.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{168,88},{110,52}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{110,52}</string>
+			</dict>
+			<key>serviceMail/kftx.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{510,88},{52,62}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{52,62}</string>
+			</dict>
+			<key>serviceMail/qipao.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{404,147},{69,59}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{69,59}</string>
+			</dict>
+			<key>serviceMail/qipao_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{168,148},{69,59}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{69,59}</string>
+			</dict>
+			<key>serviceMail/sctpan.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{867,177},{135,61}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{135,61}</string>
+			</dict>
+			<key>serviceMail/srk.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{168,4},{583,76}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{583,76}</string>
+			</dict>
+			<key>serviceMail/unread.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{286,88},{110,52}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{110,52}</string>
+			</dict>
+			<key>serviceMail/xxan.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{759,4},{156,65}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{156,65}</string>
+			</dict>
+			<key>serviceMail/xxl.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,4},{156,473}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{156,473}</string>
+			</dict>
+			<key>serviceMail/xz_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{245,148},{38,38}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{38,38}</string>
+			</dict>
+			<key>serviceMail/xz_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{867,129},{38,40}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{38,40}</string>
+			</dict>
+			<key>serviceMail/xz_3.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{867,77},{44,44}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{44,44}</string>
+			</dict>
+			<key>serviceMail/yj_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{919,89},{99,80}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{99,80}</string>
+			</dict>
+			<key>serviceMail/yj_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{759,77},{100,102}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{100,102}</string>
+			</dict>
+			<key>serviceMail/yjt.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,485},{558,127}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{558,127}</string>
+			</dict>
+			<key>serviceMail/zxkf.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{570,88},{161,41}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{161,41}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>service.png</string>
+			<key>realTextureFileName</key>
+			<string>service.png</string>
+			<key>size</key>
+			<string>{1024,1024}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+</plist>

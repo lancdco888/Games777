@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>rechargeLayer/1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,4},{259,185}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{259,185}</string>
+			</dict>
+			<key>rechargeLayer/ann.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{625,79},{114,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{114,46}</string>
+			</dict>
+			<key>rechargeLayer/cjsan.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{271,79},{186,81}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{186,81}</string>
+			</dict>
+			<key>rechargeLayer/csyh.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,197},{527,82}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{527,82}</string>
+			</dict>
+			<key>rechargeLayer/cz_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{806,4},{118,118}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{118,118}</string>
+			</dict>
+			<key>rechargeLayer/czje.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{465,79},{152,70}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{152,70}</string>
+			</dict>
+			<key>rechargeLayer/jb.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{465,157},{188,26}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,26}</string>
+			</dict>
+			<key>rechargeLayer/xsje.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{271,4},{527,67}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{527,67}</string>
+			</dict>
+			<key>rechargeLayer/zalo.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{747,130},{118,118}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{118,118}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>rechargeLayer.png</string>
+			<key>realTextureFileName</key>
+			<string>rechargeLayer.png</string>
+			<key>size</key>
+			<string>{1024,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

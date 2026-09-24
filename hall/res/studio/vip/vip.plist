@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>vip/jdt.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,174},{381,24}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{381,24}</string>
+			</dict>
+			<key>vip/jdtd.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,137},{384,29}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{384,29}</string>
+			</dict>
+			<key>vip/max.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,4},{136,125}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{136,125}</string>
+			</dict>
+			<key>vip/vip.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{148,4},{136,125}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{136,125}</string>
+			</dict>
+			<key>vip/vip_0.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{292,4},{136,125}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{136,125}</string>
+			</dict>
+			<key>vip/vipdj.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{104,206},{77,46}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{77,46}</string>
+			</dict>
+			<key>vip/wxz.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{4,206},{92,92}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{92,92}</string>
+			</dict>
+			<key>vip/xz.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{396,137},{95,94}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{95,94}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>vip.png</string>
+			<key>realTextureFileName</key>
+			<string>vip.png</string>
+			<key>size</key>
+			<string>{512,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>512</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>
