@@ -1,0 +1,485 @@
+{
+    "version": "1.0.0",
+    "assets": {
+        "res/lang.i18neeb7ef752c33b9c8c886a1f83844ac97": {
+            "md5": "eeb7ef752c33b9c8c886a1f83844ac97"
+        },
+        "res/i18n/bd.jsonf74624f900c2956f48fa8407ac98daca": {
+            "md5": "f74624f900c2956f48fa8407ac98daca"
+        },
+        "res/i18n/en.json735c24113a65aaae8112ac369bf48464": {
+            "md5": "735c24113a65aaae8112ac369bf48464"
+        },
+        "res/i18n/es.json6f0cbc4f215f4dc31ba253075b535a3a": {
+            "md5": "6f0cbc4f215f4dc31ba253075b535a3a"
+        },
+        "res/i18n/hi.json57124af08e827418e151fd3d3928854d": {
+            "md5": "57124af08e827418e151fd3d3928854d"
+        },
+        "res/i18n/id.jsond136bd1a320085722e94a0c21ec426f3": {
+            "md5": "d136bd1a320085722e94a0c21ec426f3"
+        },
+        "res/i18n/my1.jsoned84d776b2d6db40b5533d9640618326": {
+            "md5": "ed84d776b2d6db40b5533d9640618326"
+        },
+        "res/i18n/my2.jsonf539b035a53525fb578670a64a112916": {
+            "md5": "f539b035a53525fb578670a64a112916"
+        },
+        "res/i18n/phl.json4be9da9cd0dffa9975d09836599d4f59": {
+            "md5": "4be9da9cd0dffa9975d09836599d4f59"
+        },
+        "res/i18n/pt.json5519052ae77a033e16f3e76bb036f8b4": {
+            "md5": "5519052ae77a033e16f3e76bb036f8b4"
+        },
+        "res/i18n/th.json74715eddc37dbc827ea7fccba0fa1eb2": {
+            "md5": "74715eddc37dbc827ea7fccba0fa1eb2"
+        },
+        "res/i18n/vi.json2c1f44b8dacf8fdec6a6529a0b02bd12": {
+            "md5": "2c1f44b8dacf8fdec6a6529a0b02bd12"
+        },
+        "res/i18n/zh_CN.json4af9ced62a2391d8ce663fe9f9cfdad3": {
+            "md5": "4af9ced62a2391d8ce663fe9f9cfdad3"
+        },
+        "res/sound/bg_lobby.mp35502a95c87653e0ed8f47f0e5c1b0ea5": {
+            "md5": "5502a95c87653e0ed8f47f0e5c1b0ea5"
+        },
+        "res/sound/click.mp3624947927e1317f86dc6b7491c6690d2": {
+            "md5": "624947927e1317f86dc6b7491c6690d2"
+        },
+        "res/sound/dafu_game_loading.mp3df50a7e3340fd2c2da61e9cf37e38102": {
+            "md5": "df50a7e3340fd2c2da61e9cf37e38102"
+        },
+        "res/studio/bd/language/lang/title.pngd902562448fc32a9a9d1b15541405e81": {
+            "md5": "d902562448fc32a9a9d1b15541405e81"
+        },
+        "res/studio/bd/language/login/dating_zalo.png92e16b06057b0e855635783fc7c17f2a": {
+            "md5": "92e16b06057b0e855635783fc7c17f2a"
+        },
+        "res/studio/bd/language/msgBox/frame_msgbox.pngd7fade78b01261c0fecb3e6cea95405c": {
+            "md5": "d7fade78b01261c0fecb3e6cea95405c"
+        },
+        "res/studio/bd/language/password_login/dl.png7481fd053527e5453e18b013536643f6": {
+            "md5": "7481fd053527e5453e18b013536643f6"
+        },
+        "res/studio/bd/language/password_login/zczh.pngd332343cd403de7af294a57a320fa11f": {
+            "md5": "d332343cd403de7af294a57a320fa11f"
+        },
+        "res/studio/common/bg_2.png4bb2339ec11a978d9ba11db2d4646375": {
+            "md5": "4bb2339ec11a978d9ba11db2d4646375"
+        },
+        "res/studio/common/bj.pnge66ef52a89c6b6fe60b11154055d7f88": {
+            "md5": "e66ef52a89c6b6fe60b11154055d7f88"
+        },
+        "res/studio/common/bj_2.png54356e717dae6a9cf4bf5dc00a42404e": {
+            "md5": "54356e717dae6a9cf4bf5dc00a42404e"
+        },
+        "res/studio/common/btn_1.png90370742130dab849254a092f12b0cf4": {
+            "md5": "90370742130dab849254a092f12b0cf4"
+        },
+        "res/studio/common/btn_2.png37006c8f355de8dc0153f13e083f8c4d": {
+            "md5": "37006c8f355de8dc0153f13e083f8c4d"
+        },
+        "res/studio/common/btn_3.png67839e9728f5b6c62db44b393039788a": {
+            "md5": "67839e9728f5b6c62db44b393039788a"
+        },
+        "res/studio/common/btn_6.png285aa44ace3467d2ce3dc8321acc9598": {
+            "md5": "285aa44ace3467d2ce3dc8321acc9598"
+        },
+        "res/studio/common/btn_close.pnga95fd0c95c81f177a1243859f7eab3de": {
+            "md5": "a95fd0c95c81f177a1243859f7eab3de"
+        },
+        "res/studio/common/btn_down.pnga227800ab5a4f12e70f838bc418acbf7": {
+            "md5": "a227800ab5a4f12e70f838bc418acbf7"
+        },
+        "res/studio/common/frame_2.pngf83796a1758883a244ac220fe526bc8c": {
+            "md5": "f83796a1758883a244ac220fe526bc8c"
+        },
+        "res/studio/common/input_bg.png96b78085d4431e78646f583f24b014f9": {
+            "md5": "96b78085d4431e78646f583f24b014f9"
+        },
+        "res/studio/common/k_1.pngd95bf144559e0ba329a95b59ca11a852": {
+            "md5": "d95bf144559e0ba329a95b59ca11a852"
+        },
+        "res/studio/common/k_2.pnga39e8290bb0dc521c50d8c7260a8ebc6": {
+            "md5": "a39e8290bb0dc521c50d8c7260a8ebc6"
+        },
+        "res/studio/common/list_bg.png945fb83d4afccf3be36e3c94569c9096": {
+            "md5": "945fb83d4afccf3be36e3c94569c9096"
+        },
+        "res/studio/common/logo.pngaedc45a0fc25f5db2bb45ec91abd64ca": {
+            "md5": "aedc45a0fc25f5db2bb45ec91abd64ca"
+        },
+        "res/studio/common/sz_xzyy.png14242c5bcdc810927a782c071fb428a5": {
+            "md5": "14242c5bcdc810927a782c071fb428a5"
+        },
+        "res/studio/common/wenhao.png2879c7b1d0c2577fc8d6e89b3a4ccc15": {
+            "md5": "2879c7b1d0c2577fc8d6e89b3a4ccc15"
+        },
+        "res/studio/csb/Download.csbd3dabe06d9ae3b84a36737c6508f1ed0": {
+            "md5": "d3dabe06d9ae3b84a36737c6508f1ed0"
+        },
+        "res/studio/csb/LanguageLayer.csb03b0eec90e181da44c5117f6c8865649": {
+            "md5": "03b0eec90e181da44c5117f6c8865649"
+        },
+        "res/studio/csb/LoginLayer.csbe5dbefa2b1d7b6c26b5b84bbdeedb478": {
+            "md5": "e5dbefa2b1d7b6c26b5b84bbdeedb478"
+        },
+        "res/studio/csb/MsgBoxBaseLayer.csbe1315e18f3dfeda77c9d7ffb0e73bf68": {
+            "md5": "e1315e18f3dfeda77c9d7ffb0e73bf68"
+        },
+        "res/studio/csb/PasswordLoginLayer.csb59b70f1ba026619cc42b3844f3051c09": {
+            "md5": "59b70f1ba026619cc42b3844f3051c09"
+        },
+        "res/studio/csb/RegisterLayer.csb512bd3d7e3f51c62f6dd4a73d9066fab": {
+            "md5": "512bd3d7e3f51c62f6dd4a73d9066fab"
+        },
+        "res/studio/Default/Button_Disable.pnge53ebdf62127f1eaa0d3c48931169dd4": {
+            "md5": "e53ebdf62127f1eaa0d3c48931169dd4"
+        },
+        "res/studio/Default/Button_Normal.pngeeb2a669862d09233be76e60f88ee4ab": {
+            "md5": "eeb2a669862d09233be76e60f88ee4ab"
+        },
+        "res/studio/Default/Button_Press.pnge34f7688676ea6f1fee5c9131e206811": {
+            "md5": "e34f7688676ea6f1fee5c9131e206811"
+        },
+        "res/studio/Default/ImageFile.pngd7215eb49a4242f2c1b7434e0620bd4c": {
+            "md5": "d7215eb49a4242f2c1b7434e0620bd4c"
+        },
+        "res/studio/download/bar.png9329713c6fd737dafa326b259c13b312": {
+            "md5": "9329713c6fd737dafa326b259c13b312"
+        },
+        "res/studio/download/bar_fg.png521bd73965bf77063ec549ea48573e79": {
+            "md5": "521bd73965bf77063ec549ea48573e79"
+        },
+        "res/studio/download/loading.fntcdc97e5a20f6cd6d04c4245804d8eb40": {
+            "md5": "cdc97e5a20f6cd6d04c4245804d8eb40"
+        },
+        "res/studio/download/loading.pngc62746a06f66fb57a6af7ea7fe8ca2e5": {
+            "md5": "c62746a06f66fb57a6af7ea7fe8ca2e5"
+        },
+        "res/studio/download/loading_bg.png1649b0cf6ca1382d0f1cc055c099cde5": {
+            "md5": "1649b0cf6ca1382d0f1cc055c099cde5"
+        },
+        "res/studio/download/loading_bg_1.png65256f6e8c3fc9384a41687baacc26d4": {
+            "md5": "65256f6e8c3fc9384a41687baacc26d4"
+        },
+        "res/studio/download/logo.pngaedc45a0fc25f5db2bb45ec91abd64ca": {
+            "md5": "aedc45a0fc25f5db2bb45ec91abd64ca"
+        },
+        "res/studio/en/language/lang/title.png24f0ad17cfb39afa07513faa563fd92f": {
+            "md5": "24f0ad17cfb39afa07513faa563fd92f"
+        },
+        "res/studio/en/language/login/dating_zalo.png40502cb1c5373436bc6a96de5e79e4c6": {
+            "md5": "40502cb1c5373436bc6a96de5e79e4c6"
+        },
+        "res/studio/en/language/msgBox/frame_msgbox.png41d9bf645c8d24b880e3ebf54a4fff25": {
+            "md5": "41d9bf645c8d24b880e3ebf54a4fff25"
+        },
+        "res/studio/en/language/password_login/dl.png3deef775e4f32b10aa5de4d564924c94": {
+            "md5": "3deef775e4f32b10aa5de4d564924c94"
+        },
+        "res/studio/en/language/password_login/zczh.pngf78398a9054df12bb7c86df32f4745c7": {
+            "md5": "f78398a9054df12bb7c86df32f4745c7"
+        },
+        "res/studio/ind/language/lang/title.png7f91ca101cc26a18845cfb690915d164": {
+            "md5": "7f91ca101cc26a18845cfb690915d164"
+        },
+        "res/studio/ind/language/login/dating_zalo.png40502cb1c5373436bc6a96de5e79e4c6": {
+            "md5": "40502cb1c5373436bc6a96de5e79e4c6"
+        },
+        "res/studio/ind/language/msgBox/frame_msgbox.png5b65f3e59ff323f62d21a471f2bc1c0b": {
+            "md5": "5b65f3e59ff323f62d21a471f2bc1c0b"
+        },
+        "res/studio/ind/language/password_login/dl.pngbc0bb8d6b34601ef79d5b9a87d2b544f": {
+            "md5": "bc0bb8d6b34601ef79d5b9a87d2b544f"
+        },
+        "res/studio/ind/language/password_login/zczh.pnge5475cf9c150f0ef23af03e740b33dde": {
+            "md5": "e5475cf9c150f0ef23af03e740b33dde"
+        },
+        "res/studio/language/lang/title.png223a3c26d8c9eb6dfbcfec1b56670e57": {
+            "md5": "223a3c26d8c9eb6dfbcfec1b56670e57"
+        },
+        "res/studio/language/login/dating_zalo.png92e16b06057b0e855635783fc7c17f2a": {
+            "md5": "92e16b06057b0e855635783fc7c17f2a"
+        },
+        "res/studio/language/msgBox/frame_msgbox.png0037cef0fe3849cfa873ea0bb5129b6f": {
+            "md5": "0037cef0fe3849cfa873ea0bb5129b6f"
+        },
+        "res/studio/language/password_login/dl.pngf0fe3db38531806da90c8a83bfaaf11f": {
+            "md5": "f0fe3db38531806da90c8a83bfaaf11f"
+        },
+        "res/studio/language/password_login/zczh.png323ad8c79d4a4cc136e01d39e46b6ca5": {
+            "md5": "323ad8c79d4a4cc136e01d39e46b6ca5"
+        },
+        "res/studio/login/btn_facebook.png628d3fe2770e57438981157e0d9f9ac3": {
+            "md5": "628d3fe2770e57438981157e0d9f9ac3"
+        },
+        "res/studio/login/denglu_mimadenglu.png467172c824c04871d5d04ebba8f667df": {
+            "md5": "467172c824c04871d5d04ebba8f667df"
+        },
+        "res/studio/login/denglu_mimadenglu_2.png51e3b1ab7b9557417a91dc77ed3f2fdb": {
+            "md5": "51e3b1ab7b9557417a91dc77ed3f2fdb"
+        },
+        "res/studio/login/tuichu.png8118060653e989db7810602e64a91787": {
+            "md5": "8118060653e989db7810602e64a91787"
+        },
+        "res/studio/login/ykdl.png5db9e8341250130e9e699c4ab0308b5b": {
+            "md5": "5db9e8341250130e9e699c4ab0308b5b"
+        },
+        "res/studio/mm/language/lang/title.png226478588481e991734fb1de2f86cd48": {
+            "md5": "226478588481e991734fb1de2f86cd48"
+        },
+        "res/studio/mm/language/login/dating_zalo.png40502cb1c5373436bc6a96de5e79e4c6": {
+            "md5": "40502cb1c5373436bc6a96de5e79e4c6"
+        },
+        "res/studio/mm/language/msgBox/frame_msgbox.png5fe0a53c8dbcfa9f33a141f72e61c528": {
+            "md5": "5fe0a53c8dbcfa9f33a141f72e61c528"
+        },
+        "res/studio/mm/language/password_login/dl.png1cf770b58013cf6afd96e2579a64526e": {
+            "md5": "1cf770b58013cf6afd96e2579a64526e"
+        },
+        "res/studio/mm/language/password_login/zczh.png7fa6d276e33f607044abc88dc2e300b3": {
+            "md5": "7fa6d276e33f607044abc88dc2e300b3"
+        },
+        "res/studio/ph/language/lang/title.pngea0e45f9ba1d867f12b367812cb0bc28": {
+            "md5": "ea0e45f9ba1d867f12b367812cb0bc28"
+        },
+        "res/studio/ph/language/login/dating_zalo.png92e16b06057b0e855635783fc7c17f2a": {
+            "md5": "92e16b06057b0e855635783fc7c17f2a"
+        },
+        "res/studio/ph/language/msgBox/frame_msgbox.pngf29157a0956d71a79b28beb46e28d822": {
+            "md5": "f29157a0956d71a79b28beb46e28d822"
+        },
+        "res/studio/ph/language/password_login/dl.png960c9249f3cc1e8ee55dfd4cb50d0c61": {
+            "md5": "960c9249f3cc1e8ee55dfd4cb50d0c61"
+        },
+        "res/studio/ph/language/password_login/zczh.pngce8d77554ca188ad71405b89915bb99e": {
+            "md5": "ce8d77554ca188ad71405b89915bb99e"
+        },
+        "res/studio/pt/language/lang/title.png8858a817520a6b68241fe14dcf9d8b13": {
+            "md5": "8858a817520a6b68241fe14dcf9d8b13"
+        },
+        "res/studio/pt/language/login/dating_zalo.png92e16b06057b0e855635783fc7c17f2a": {
+            "md5": "92e16b06057b0e855635783fc7c17f2a"
+        },
+        "res/studio/pt/language/msgBox/frame_msgbox.png750e7e480d377cc7aa801c1dc25305c8": {
+            "md5": "750e7e480d377cc7aa801c1dc25305c8"
+        },
+        "res/studio/pt/language/password_login/dl.png321ab381dc32441cd940194bd99ddbee": {
+            "md5": "321ab381dc32441cd940194bd99ddbee"
+        },
+        "res/studio/pt/language/password_login/zczh.pngf3dc17ab240278a77c2bb4a7697f08ae": {
+            "md5": "f3dc17ab240278a77c2bb4a7697f08ae"
+        },
+        "res/studio/tha/language/lang/title.png7945de94a7d9364bc50f6f3a4a69eb35": {
+            "md5": "7945de94a7d9364bc50f6f3a4a69eb35"
+        },
+        "res/studio/tha/language/login/dating_zalo.png40502cb1c5373436bc6a96de5e79e4c6": {
+            "md5": "40502cb1c5373436bc6a96de5e79e4c6"
+        },
+        "res/studio/tha/language/msgBox/frame_msgbox.png6d3e258a805245d6ce65925348d6be4e": {
+            "md5": "6d3e258a805245d6ce65925348d6be4e"
+        },
+        "res/studio/tha/language/password_login/dl.png40709f1bf9daa32aded5162063cf567c": {
+            "md5": "40709f1bf9daa32aded5162063cf567c"
+        },
+        "res/studio/tha/language/password_login/zczh.png4b4d5bd39e6be7d3f52419a08a28f398": {
+            "md5": "4b4d5bd39e6be7d3f52419a08a28f398"
+        },
+        "res/studio/vn/language/lang/title.pngb75efce3a6776107e5fafffca5e446f4": {
+            "md5": "b75efce3a6776107e5fafffca5e446f4"
+        },
+        "res/studio/vn/language/login/dating_zalo.png40502cb1c5373436bc6a96de5e79e4c6": {
+            "md5": "40502cb1c5373436bc6a96de5e79e4c6"
+        },
+        "res/studio/vn/language/msgBox/frame_msgbox.pngb37553363bd2bff49b7971a1d7540705": {
+            "md5": "b37553363bd2bff49b7971a1d7540705"
+        },
+        "res/studio/vn/language/password_login/dl.png964410030358901296e1e54f1214abfb": {
+            "md5": "964410030358901296e1e54f1214abfb"
+        },
+        "res/studio/vn/language/password_login/zczh.png2070f2be46aacad6d5d1e01e88f40dcd": {
+            "md5": "2070f2be46aacad6d5d1e01e88f40dcd"
+        },
+        "res/waitting/texiao_jiazai.png4c8e5027fb7768d837c943aa0084fceb": {
+            "md5": "4c8e5027fb7768d837c943aa0084fceb"
+        },
+        "res/waitting/texiao_loading.atlas99ce1668c167afbfb6fafa8f6ad46d88": {
+            "md5": "99ce1668c167afbfb6fafa8f6ad46d88"
+        },
+        "res/waitting/texiao_loading.skel3812481c8b517bdbf77b675b8c92bbc0": {
+            "md5": "3812481c8b517bdbf77b675b8c92bbc0"
+        },
+        "src/BuildConfig.lua5406183a99553d06a3ea47f944fde568": {
+            "md5": "5406183a99553d06a3ea47f944fde568"
+        },
+        "src/const_def.luace9757c29bcf8671e303ca9ffa89009f": {
+            "md5": "ce9757c29bcf8671e303ca9ffa89009f"
+        },
+        "src/PackageMain.lua8a94ceb16fd104aa40320d21f65de7b7": {
+            "md5": "8a94ceb16fd104aa40320d21f65de7b7"
+        },
+        "src/base/BaseInfo.lua5756da288cd993d269693a225b503edb": {
+            "md5": "5756da288cd993d269693a225b503edb"
+        },
+        "src/base/BottomLayer.lua1547a1c411970344463380a4720735b7": {
+            "md5": "1547a1c411970344463380a4720735b7"
+        },
+        "src/base/class_def.luabfbde38cd99cd3de75eeb0fc669a22a0": {
+            "md5": "bfbde38cd99cd3de75eeb0fc669a22a0"
+        },
+        "src/base/client_lobby.lua458f3b884785b49cf5f74f8228b96ac1": {
+            "md5": "458f3b884785b49cf5f74f8228b96ac1"
+        },
+        "src/base/client_login.lua2dc9e3a7cb73cb9997fd28fb3ea069df": {
+            "md5": "2dc9e3a7cb73cb9997fd28fb3ea069df"
+        },
+        "src/base/Device.luafe934ce0e7795d369a1b61ffd51817d2": {
+            "md5": "fe934ce0e7795d369a1b61ffd51817d2"
+        },
+        "src/base/Dispatcher.lua5af7d08d8a320a792aec1b73cff1f817": {
+            "md5": "5af7d08d8a320a792aec1b73cff1f817"
+        },
+        "src/base/generic.lua9b554c6eb54f94d2621837b7ae612661": {
+            "md5": "9b554c6eb54f94d2621837b7ae612661"
+        },
+        "src/base/g_coros.lua562f6d104aa12baaf6fceed118e093f0": {
+            "md5": "562f6d104aa12baaf6fceed118e093f0"
+        },
+        "src/base/g_funcs.luac02a018fb15c2c7ff1830a7f05a9847c": {
+            "md5": "c02a018fb15c2c7ff1830a7f05a9847c"
+        },
+        "src/base/g_net.luad246cb1050237fba8d80c25995f1752e": {
+            "md5": "d246cb1050237fba8d80c25995f1752e"
+        },
+        "src/base/g_sound.luad9979e68a3545a517c6e66a366a4733f": {
+            "md5": "d9979e68a3545a517c6e66a366a4733f"
+        },
+        "src/base/g_states.lua893569b584e5891c1d3dc7f954ac1b90": {
+            "md5": "893569b584e5891c1d3dc7f954ac1b90"
+        },
+        "src/base/g_updates.lua28a3f7e540f73e00ab1172aea446d6a0": {
+            "md5": "28a3f7e540f73e00ab1172aea446d6a0"
+        },
+        "src/base/LangDef.lua4cc5a488b854c6289f58ec0258fb4a8e": {
+            "md5": "4cc5a488b854c6289f58ec0258fb4a8e"
+        },
+        "src/base/Lobby_Slots.lua4b0c8d334a64df2ef6d5af9bdb3de018": {
+            "md5": "4b0c8d334a64df2ef6d5af9bdb3de018"
+        },
+        "src/base/md5.luaa2f21081aa8be55988c4eab52c39ec23": {
+            "md5": "a2f21081aa8be55988c4eab52c39ec23"
+        },
+        "src/base/Network.luae636bc252e79eccb6d51f36e60ea920f": {
+            "md5": "e636bc252e79eccb6d51f36e60ea920f"
+        },
+        "src/base/PKG_GetVersion.lua04f89ae2248feded19f36364bc09bb86": {
+            "md5": "04f89ae2248feded19f36364bc09bb86"
+        },
+        "src/base/slot_com.lua87287b0366f85c597a6d8f73c5ac9a14": {
+            "md5": "87287b0366f85c597a6d8f73c5ac9a14"
+        },
+        "src/base/SupportOther.lua79555ac6debb446ca66b36f5a79f239b": {
+            "md5": "79555ac6debb446ca66b36f5a79f239b"
+        },
+        "src/base/Tools_Base.lua9049f1d0af3e0e86ccc45287e44cef71": {
+            "md5": "9049f1d0af3e0e86ccc45287e44cef71"
+        },
+        "src/bootstrap/callstack.lua4be7e8c3897453a04db8953bd441a7ea": {
+            "md5": "4be7e8c3897453a04db8953bd441a7ea"
+        },
+        "src/bootstrap/GetLang.luabbd200a34eee344d8399c6c816a3f5f8": {
+            "md5": "bbd200a34eee344d8399c6c816a3f5f8"
+        },
+        "src/bootstrap/GetTranslate.luae99f0387e71815cf345ac2f9a194eaf7": {
+            "md5": "e99f0387e71815cf345ac2f9a194eaf7"
+        },
+        "src/bootstrap/init.luada5e6ecb29febb9fd34c34cb5deae6d3": {
+            "md5": "da5e6ecb29febb9fd34c34cb5deae6d3"
+        },
+        "src/bootstrap/json_patch.luaab0a307784d4e4b0f1fb6b9af053c020": {
+            "md5": "ab0a307784d4e4b0f1fb6b9af053c020"
+        },
+        "src/bootstrap/ResetTranslator.luae7875a6c91bcbfabb6646aa768097475": {
+            "md5": "e7875a6c91bcbfabb6646aa768097475"
+        },
+        "src/bootstrap/SearchPath.lua06cfd07575deed43884e592eee97244d": {
+            "md5": "06cfd07575deed43884e592eee97244d"
+        },
+        "src/bootstrap/Statistical.lua270884b4648726752a031f4f14774399": {
+            "md5": "270884b4648726752a031f4f14774399"
+        },
+        "src/bootstrap/TR.luac1b26b441fb8431188c76e3b98572b22": {
+            "md5": "c1b26b441fb8431188c76e3b98572b22"
+        },
+        "src/data/LoginData.lua7e8cb57043d8d99fe36aa0da160e38db": {
+            "md5": "7e8cb57043d8d99fe36aa0da160e38db"
+        },
+        "src/data/SettingData.lua66ca2530a32b8dcb62afcd9b10fdd6ad": {
+            "md5": "66ca2530a32b8dcb62afcd9b10fdd6ad"
+        },
+        "src/downloader/downloader_def.luaeac649e831cf1e58ac97007f76bac69a": {
+            "md5": "eac649e831cf1e58ac97007f76bac69a"
+        },
+        "src/downloader/DownloadManager.lua84a6afe32b37cab60c8834839482074b": {
+            "md5": "84a6afe32b37cab60c8834839482074b"
+        },
+        "src/downloader/DownloadTask.lua62912996f7ea57cb0cb6f731f5f6f3e4": {
+            "md5": "62912996f7ea57cb0cb6f731f5f6f3e4"
+        },
+        "src/downloader/hotfixJson.luac96d2862b3bd83ef4771918b519287ea": {
+            "md5": "c96d2862b3bd83ef4771918b519287ea"
+        },
+        "src/downloader/init.lua808ea8031cb5f01dda22dbe18097d474": {
+            "md5": "808ea8031cb5f01dda22dbe18097d474"
+        },
+        "src/login/DownloadingHall.luad21f407e66bc2eaedd5774dd6e396c6a": {
+            "md5": "d21f407e66bc2eaedd5774dd6e396c6a"
+        },
+        "src/login/DownloadingPackageLua.lua38048cb12420617793d25b5d62b3eb25": {
+            "md5": "38048cb12420617793d25b5d62b3eb25"
+        },
+        "src/login/FacebookSingle.luacba53d4f4cf187d7c159747a116fdbf7": {
+            "md5": "cba53d4f4cf187d7c159747a116fdbf7"
+        },
+        "src/login/LangCombo.lua0ab2ced78d9d8a03d44842ca0a1d0c95": {
+            "md5": "0ab2ced78d9d8a03d44842ca0a1d0c95"
+        },
+        "src/login/LanguageLayer.luaeb39b154bad016a6d4978ec6eb43db7e": {
+            "md5": "eb39b154bad016a6d4978ec6eb43db7e"
+        },
+        "src/login/LoginLayer.lua19b1ac9bca5dfb792932c4ff2dff6640": {
+            "md5": "19b1ac9bca5dfb792932c4ff2dff6640"
+        },
+        "src/login/NavigationUrl.lua896a14a369caeefc0a396200b5a76d65": {
+            "md5": "896a14a369caeefc0a396200b5a76d65"
+        },
+        "src/login/PasswordLoginLayer.lua595297a215540afba04782fe325cdb1b": {
+            "md5": "595297a215540afba04782fe325cdb1b"
+        },
+        "src/login/RegisterLayer.lua215fd8d0bee6e768d3cd65e2b345ebce": {
+            "md5": "215fd8d0bee6e768d3cd65e2b345ebce"
+        },
+        "src/login/TranslatePatch.luaa82cd5d02e86eb6e988eafe3d06d9187": {
+            "md5": "a82cd5d02e86eb6e988eafe3d06d9187"
+        },
+        "src/msg/MsgBoxBaseLayer.luafd15d2979447a36b96ef518fea877ab7": {
+            "md5": "fd15d2979447a36b96ef518fea877ab7"
+        },
+        "src/msg/WaitingLayer.lua0c9c886df55957358455737de7e346f3": {
+            "md5": "0c9c886df55957358455737de7e346f3"
+        },
+        "src/sdk/FireBase.lua0f461a3513829bcbc6568f54c4d50c2a": {
+            "md5": "0f461a3513829bcbc6568f54c4d50c2a"
+        },
+        "src/sdk/MetaPixel.lua64ef614e2746277bcbe8f65dea907141": {
+            "md5": "64ef614e2746277bcbe8f65dea907141"
+        },
+        "src/sdk/Sdk.luadaea6b6dbbdc068e2196d59fd5a9c845": {
+            "md5": "daea6b6dbbdc068e2196d59fd5a9c845"
+        },
+        "src/sdk/Singular.lua86ac01569ddb3e71cb6d32085d847fa8": {
+            "md5": "86ac01569ddb3e71cb6d32085d847fa8"
+        }
+    }
+}
