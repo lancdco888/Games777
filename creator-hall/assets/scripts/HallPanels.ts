@@ -32,7 +32,17 @@ export class HallPanels {
     private popup: Node | null = null;
     private toastNode: Label | null = null;
 
+    private logoutHandler: (() => void) | null = null;
+
     constructor(private readonly root: Node, private readonly state: HallState) {}
+
+    setLogout(handler: () => void): void {
+        this.logoutHandler = handler;
+    }
+
+    dismiss(): void {
+        this.close();
+    }
 
     toast(text: string): void {
         if (!this.toastNode) {
@@ -84,8 +94,12 @@ export class HallPanels {
             this.button(panel, '查看 VIP', 40, -50, 200, 58, () => this.openVip());
             this.button(panel, '绑定账号', -180, -130, 200, 58, () => this.openBind());
             this.button(panel, '退出登录', 40, -130, 200, 58, () => {
-                this.toast('已退出，当前预览仍停留在大厅');
                 this.close();
+                if (this.logoutHandler) {
+                    this.logoutHandler();
+                    return;
+                }
+                this.toast('已退出登录');
             });
         });
     }

@@ -1,18 +1,11 @@
 import { _decorator, Button, Component, EventTouch, JsonAsset, js, Label, Layers, Mask, Node, resources, ScrollView, UITransform } from 'cc';
 import { attachSprite, bindClick, CsbNode, mountCsb } from './CsbView';
+import { Game270View } from './Game270View';
 import { HallPanels } from './HallPanels';
 import { formatMoney, GameInfo, HallState } from './HallState';
+import { LoginView } from './LoginView';
 
 const { ccclass } = _decorator;
-
-interface SampleLobby {
-    nickname: string;
-    vipLevel: number;
-    money: string;
-    moneySafe: string;
-    washCode: string;
-    url: string;
-}
 
 const ICON_WIDTH = 264;
 const ICON_HEIGHT = 467;
@@ -26,10 +19,31 @@ export class LobbyApp extends Component {
     private names = new Map<string, Node>();
     private readonly state = new HallState();
     private panels: HallPanels | null = null;
+    private login: LoginView | null = null;
+    private entered = false;
+    private game: Game270View | null = null;
 
     start(): void {
         this.panels = new HallPanels(this.node, this.state);
-        this.state.listen(() => this.refresh());
+        this.panels.setLogout(() => {
+            this.state.logout();
+            this.entered = false;
+            this.setLobbyVisible(false);
+            this.login?.show();
+        });
+        this.login = new LoginView(this.node, this.state, (message) => {
+            this.entered = true;
+            this.panels?.toast(message);
+            this.setLobbyVisible(true);
+            this.refresh();
+            this.bringNicknameIntoBar();
+            this.raiseBars();
+        });
+        this.state.listen(() => {
+            if (this.entered) {
+                this.refresh();
+            }
+        });
         resources.load('layout/LobbyLayer', JsonAsset, (err, asset) => {
             if (err || !asset) {
                 console.error(err);
@@ -40,15 +54,12 @@ export class LobbyApp extends Component {
             this.setActive('lua_btn_chat', false);
             this.setActive('lua_btn_lwjfl', false);
             this.bindHall();
+            this.setLobbyVisible(this.entered && !this.game);
+            this.bringNicknameIntoBar();
             this.raiseBars();
-            resources.load('layout/sample-lobby', JsonAsset, (sampleErr, sample) => {
-                if (sampleErr || !sample) {
-                    console.error(sampleErr);
-                    return;
-                }
-                this.state.applySample(sample.json as SampleLobby);
-                this.bringNicknameIntoBar();
-            });
+            if (!this.entered) {
+                this.login?.bringToFront();
+            }
             resources.load('layout/games', JsonAsset, (gameErr, gamesAsset) => {
                 if (gameErr || !gamesAsset) {
                     console.error(gameErr);
@@ -56,7 +67,11 @@ export class LobbyApp extends Component {
                 }
                 const games = (gamesAsset.json as { games: GameInfo[] }).games;
                 this.fillGameList(games);
+                this.setLobbyVisible(this.entered && !this.game);
                 this.raiseBars();
+                if (!this.entered) {
+                    this.login?.bringToFront();
+                }
             });
         });
     }
@@ -153,10 +168,42 @@ export class LobbyApp extends Component {
         });
         card.on(Node.EventType.TOUCH_END, (event: EventTouch) => {
             if (Math.abs(event.getUILocation().x - startX) < 24) {
-                this.panels?.openGame(game);
+                this.openGame(game);
             }
         });
         return card;
+    }
+
+    private openGame(game: GameInfo): void {
+        if (game.id === 270) {
+            if (this.game) {
+                return;
+            }
+            this.panels?.dismiss();
+            this.setLobbyVisible(false);
+            this.game = new Game270View(
+                this.node,
+                this.state,
+                () => {
+                    this.game = null;
+                    this.setLobbyVisible(true);
+                    this.refresh();
+                    this.raiseBars();
+                },
+                (text) => this.panels?.toast(text),
+            );
+            return;
+        }
+        this.panels?.openGame(game);
+    }
+
+    private setLobbyVisible(visible: boolean): void {
+        for (const child of this.node.children) {
+            if (child.name === 'hall_login' || child.name === 'game270' || child.name === 'toast' || child.name === 'hall_popup') {
+                continue;
+            }
+            child.active = visible;
+        }
     }
 
     private raiseBars(): void {

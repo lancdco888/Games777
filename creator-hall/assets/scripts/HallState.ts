@@ -62,13 +62,106 @@ export class HallState {
     ];
     readonly records: { target: string; amount: number; fee: number }[] = [];
     private readonly listeners: Array<() => void> = [];
+    private readonly accounts: Record<string, AccountRecord> = {
+        player9236: {
+            password: '12345678',
+            nickname: '玩家9236',
+            userId: '9236',
+            vipLevel: 3,
+            money: 128800,
+            moneySafe: 50000,
+            washCode: 8600,
+            giftSafe: 1200,
+        },
+    };
+
+    constructor() {
+        const saved = readAccounts();
+        Object.assign(this.accounts, saved);
+    }
 
     listen(fn: () => void): void {
         this.listeners.push(fn);
     }
 
     emit(): void {
+        this.captureAccount();
         this.listeners.forEach((fn) => fn());
+    }
+
+    loginGuest(): HallResult {
+        const id = String(100000 + Math.floor(Math.random() * 900000));
+        this.account = '';
+        this.registered = false;
+        this.nickname = `游客${id.slice(-4)}`;
+        this.userId = id;
+        this.vipLevel = 0;
+        this.money = 50000;
+        this.moneySafe = 0;
+        this.washCode = 0;
+        this.giftSafe = 0;
+        this.emit();
+        return { ok: true, message: '游客登录成功' };
+    }
+
+    loginAccount(account: string, password: string): HallResult {
+        const found = this.accounts[account.trim()];
+        if (!found || found.password !== password) {
+            return { ok: false, message: '用户名或密码错误' };
+        }
+        this.applyAccount(account.trim(), found);
+        return { ok: true, message: '登录成功' };
+    }
+
+    registerAccount(account: string, password: string, confirm: string): HallResult {
+        const name = account.trim();
+        if (name.length < 4 || name.length > 12) {
+            return { ok: false, message: '账户名称长度4至12位' };
+        }
+        if (password.length < 8 || password.length > 16) {
+            return { ok: false, message: '账户密码长度8至16位' };
+        }
+        if (password !== confirm) {
+            return { ok: false, message: '两次密码不一致' };
+        }
+        if (this.accounts[name]) {
+            return { ok: false, message: '账号已存在' };
+        }
+        const id = String(200000 + Math.floor(Math.random() * 700000));
+        this.accounts[name] = {
+            password,
+            nickname: name,
+            userId: id,
+            vipLevel: 1,
+            money: 50000,
+            moneySafe: 0,
+            washCode: 0,
+            giftSafe: 0,
+        };
+        return this.loginAccount(name, password);
+    }
+
+    logout(): void {
+        this.captureAccount();
+        this.account = '';
+        this.registered = false;
+    }
+
+    spend(amount: number): HallResult {
+        if (amount <= 0 || amount > this.money) {
+            return { ok: false, message: '金币不足' };
+        }
+        this.money -= amount;
+        this.emit();
+        return { ok: true, message: '' };
+    }
+
+    award(amount: number): void {
+        if (amount <= 0) {
+            return;
+        }
+        this.money += amount;
+        this.emit();
     }
 
     applySample(sample: {
@@ -232,5 +325,68 @@ export class HallState {
         }
         this.emit();
         return { ok: true, message: intoSafe ? '存入成功' : '取出成功' };
+    }
+
+    private applyAccount(account: string, found: AccountRecord): void {
+        this.account = account;
+        this.registered = true;
+        this.nickname = found.nickname;
+        this.userId = found.userId;
+        this.vipLevel = found.vipLevel;
+        this.money = found.money;
+        this.moneySafe = found.moneySafe;
+        this.washCode = found.washCode;
+        this.giftSafe = found.giftSafe;
+        this.emit();
+    }
+
+    private captureAccount(): void {
+        if (!this.account || !this.accounts[this.account]) {
+            return;
+        }
+        const found = this.accounts[this.account];
+        found.nickname = this.nickname;
+        found.vipLevel = this.vipLevel;
+        found.money = this.money;
+        found.moneySafe = this.moneySafe;
+        found.washCode = this.washCode;
+        found.giftSafe = this.giftSafe;
+        writeAccounts(this.accounts);
+    }
+}
+
+interface AccountRecord {
+    password: string;
+    nickname: string;
+    userId: string;
+    vipLevel: number;
+    money: number;
+    moneySafe: number;
+    washCode: number;
+    giftSafe: number;
+}
+
+function accountStorage(): { getItem(key: string): string | null; setItem(key: string, value: string): void } | undefined {
+    return (globalThis as { localStorage?: { getItem(key: string): string | null; setItem(key: string, value: string): void } }).localStorage;
+}
+
+function readAccounts(): Record<string, AccountRecord> {
+    try {
+        const raw = accountStorage()?.getItem('creator-hall-accounts');
+        if (!raw) {
+            return {};
+        }
+        const parsed = JSON.parse(raw) as Record<string, AccountRecord>;
+        return parsed && typeof parsed === 'object' ? parsed : {};
+    } catch {
+        return {};
+    }
+}
+
+function writeAccounts(accounts: Record<string, AccountRecord>): void {
+    try {
+        accountStorage()?.setItem('creator-hall-accounts', JSON.stringify(accounts));
+    } catch {
+        // Preview without browser storage still keeps the account for this run.
     }
 }
