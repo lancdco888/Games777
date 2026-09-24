@@ -1,0 +1,89 @@
+{
+    "animsFileName": "AwakenKingTaco.anims",
+	"actions": [
+		{
+			"name": "move",
+			"totalSeconds": 12.1,
+            "baseSpeed": 100,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 80,
+                    "animPlayRatio": 1,
+                    "animIndex": 3
+                },
+				{
+					"time": 2.1,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 0
+				},
+				{
+					"time": 10.06667,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 4
+				},
+				{
+					"time": 12,
+					"speed": 0,
+					"animPlayRatio": 0,
+					"animIndex": 1,
+					"eventId": 2
+				}
+			]
+		},
+		{
+			"name": "attack",
+			"totalSeconds": 1.96667,
+			"baseSpeed": 100,
+			"events": [
+				{
+					"time": 0,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 1
+				}
+			]
+		},
+		{
+			"name": "die",
+			"totalSeconds": 2.03333,
+			"baseSpeed": 100,
+			"events": [
+				{
+					"time": 0,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 2
+				}
+			]
+		},
+		{
+			"name": "info",
+			"totalSeconds": 2.1,
+			"baseSpeed": 100,
+			"events": [
+				{
+					"time": 0,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 3
+				}
+			]
+		},
+		{
+			"name": "leave",
+			"totalSeconds": 2.03333,
+			"baseSpeed": 100,
+			"events": [
+				{
+					"time": 0,
+					"speed": 80,
+					"animPlayRatio": 1,
+					"animIndex": 4
+				}
+			]
+		}
+	]
+}

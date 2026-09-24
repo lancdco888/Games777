@@ -1,0 +1,335 @@
+
+AwakenKingLacoste.png
+size: 3624,1244
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AwakeningCroc_bite_00
+  rotate: false
+  xy: 1996, 883
+  size: 172, 359
+  orig: 172, 359
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_02
+  rotate: false
+  xy: 1821, 872
+  size: 173, 370
+  orig: 173, 370
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_04
+  rotate: false
+  xy: 1266, 863
+  size: 179, 379
+  orig: 179, 379
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_06
+  rotate: true
+  xy: 967, 662
+  size: 184, 386
+  orig: 184, 386
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_08
+  rotate: true
+  xy: 229, 636
+  size: 192, 392
+  orig: 192, 392
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_10
+  rotate: false
+  xy: 431, 238
+  size: 200, 396
+  orig: 200, 396
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_12
+  rotate: false
+  xy: 426, 841
+  size: 209, 401
+  orig: 209, 401
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_14
+  rotate: false
+  xy: 823, 848
+  size: 217, 394
+  orig: 217, 394
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_16
+  rotate: false
+  xy: 1042, 859
+  size: 222, 383
+  orig: 222, 383
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_18
+  rotate: true
+  xy: 633, 28
+  size: 225, 376
+  orig: 225, 376
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_19
+  rotate: true
+  xy: 1011, 30
+  size: 225, 371
+  orig: 225, 371
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_20
+  rotate: true
+  xy: 1384, 30
+  size: 225, 368
+  orig: 225, 368
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_21
+  rotate: false
+  xy: 2, 634
+  size: 225, 608
+  orig: 225, 608
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_22
+  rotate: true
+  xy: 1754, 30
+  size: 225, 362
+  orig: 225, 362
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_23
+  rotate: true
+  xy: 2450, 31
+  size: 224, 357
+  orig: 224, 357
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_24
+  rotate: false
+  xy: 2170, 889
+  size: 223, 353
+  orig: 223, 353
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_25
+  rotate: false
+  xy: 2395, 893
+  size: 221, 349
+  orig: 221, 349
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_26
+  rotate: false
+  xy: 2, 59
+  size: 221, 573
+  orig: 221, 573
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_27
+  rotate: false
+  xy: 2618, 900
+  size: 219, 342
+  orig: 219, 342
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_28
+  rotate: false
+  xy: 2614, 324
+  size: 219, 341
+  orig: 219, 341
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_29
+  rotate: false
+  xy: 3063, 902
+  size: 219, 340
+  orig: 219, 340
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_30
+  rotate: true
+  xy: 3274, 577
+  size: 219, 339
+  orig: 219, 339
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_31
+  rotate: false
+  xy: 3398, 237
+  size: 219, 338
+  orig: 219, 338
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_32
+  rotate: true
+  xy: 3284, 798
+  size: 220, 338
+  orig: 220, 338
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_33
+  rotate: true
+  xy: 3058, 355
+  size: 220, 338
+  orig: 220, 338
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_34
+  rotate: false
+  xy: 2835, 334
+  size: 221, 339
+  orig: 221, 339
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_35
+  rotate: false
+  xy: 2839, 902
+  size: 222, 340
+  orig: 222, 340
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_36
+  rotate: true
+  xy: 2979, 110
+  size: 222, 337
+  orig: 222, 337
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_37
+  rotate: true
+  xy: 3284, 1020
+  size: 222, 338
+  orig: 222, 338
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_38
+  rotate: true
+  xy: 2737, 675
+  size: 223, 330
+  orig: 223, 330
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_40
+  rotate: true
+  xy: 2429, 667
+  size: 224, 306
+  orig: 224, 306
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_42
+  rotate: true
+  xy: 2118, 30
+  size: 225, 330
+  orig: 225, 330
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_44
+  rotate: true
+  xy: 2074, 657
+  size: 224, 353
+  orig: 224, 353
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_46
+  rotate: false
+  xy: 1597, 868
+  size: 222, 374
+  orig: 222, 374
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_48
+  rotate: false
+  xy: 633, 255
+  size: 219, 391
+  orig: 219, 391
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_50
+  rotate: true
+  xy: 225, 2
+  size: 212, 406
+  orig: 212, 406
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_52
+  rotate: false
+  xy: 225, 216
+  size: 204, 416
+  orig: 204, 416
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_54
+  rotate: false
+  xy: 229, 830
+  size: 195, 412
+  orig: 195, 412
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_56
+  rotate: false
+  xy: 637, 846
+  size: 184, 396
+  orig: 184, 396
+  offset: 0, 0
+  index: -1
+AwakeningCroc_bite_58
+  rotate: true
+  xy: 1700, 692
+  size: 174, 372
+  orig: 174, 372
+  offset: 0, 0
+  index: -1
+AwakeningCroc_body
+  rotate: true
+  xy: 854, 257
+  size: 389, 1758
+  orig: 389, 1758
+  offset: 0, 0
+  index: -1
+AwakeningCroc_body_S
+  rotate: false
+  xy: 1447, 867
+  size: 148, 375
+  orig: 148, 375
+  offset: 0, 0
+  index: -1
+AwakeningCroc_forefoot
+  rotate: false
+  xy: 2809, 8
+  size: 168, 314
+  orig: 168, 314
+  offset: 0, 0
+  index: -1
+AwakeningCroc_rearfoot
+  rotate: true
+  xy: 1355, 680
+  size: 181, 343
+  orig: 181, 343
+  offset: 0, 0
+  index: -1
+AwakeningCroc_rearfoot_S
+  rotate: false
+  xy: 3203, 768
+  size: 69, 132
+  orig: 69, 132
+  offset: 0, 0
+  index: -1
+AwakeningCroc_rearfoot_left
+  rotate: true
+  xy: 623, 648
+  size: 191, 342
+  orig: 191, 342
+  offset: 0, 0
+  index: -1
+AwakeningCroc_rearfoot_left_S
+  rotate: true
+  xy: 3069, 827
+  size: 73, 132
+  orig: 73, 132
+  offset: 0, 0
+  index: -1

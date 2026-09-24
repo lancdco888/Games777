@@ -1,0 +1,97 @@
+
+Spine_FiveElementsLobsterKing.png
+size: 1024,1014
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Antenna
+  rotate: false
+  xy: 845, 128
+  size: 172, 525
+  orig: 172, 525
+  offset: 0, 0
+  index: -1
+Ball
+  rotate: false
+  xy: 632, 7
+  size: 95, 96
+  orig: 95, 96
+  offset: 0, 0
+  index: -1
+Body_1
+  rotate: false
+  xy: 2, 464
+  size: 279, 548
+  orig: 279, 548
+  offset: 0, 0
+  index: -1
+Body_2
+  rotate: false
+  xy: 283, 464
+  size: 279, 548
+  orig: 279, 548
+  offset: 0, 0
+  index: -1
+Body_3
+  rotate: false
+  xy: 564, 105
+  size: 279, 548
+  orig: 279, 548
+  offset: 0, 0
+  index: -1
+Circle
+  rotate: false
+  xy: 845, 10
+  size: 116, 116
+  orig: 116, 116
+  offset: 0, 0
+  index: -1
+Claw_1
+  rotate: true
+  xy: 564, 655
+  size: 357, 420
+  orig: 357, 420
+  offset: 0, 0
+  index: -1
+Claw_2
+  rotate: false
+  xy: 2, 42
+  size: 357, 420
+  orig: 357, 420
+  offset: 0, 0
+  index: -1
+Feet
+  rotate: false
+  xy: 361, 2
+  size: 269, 101
+  orig: 269, 101
+  offset: 0, 0
+  index: -1
+Light
+  rotate: true
+  xy: 729, 34
+  size: 69, 57
+  orig: 69, 57
+  offset: 0, 0
+  index: -1
+Light_2
+  rotate: true
+  xy: 2, 20
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+Word
+  rotate: true
+  xy: 963, 59
+  size: 67, 59
+  orig: 67, 59
+  offset: 0, 0
+  index: -1
+item
+  rotate: false
+  xy: 361, 253
+  size: 162, 209
+  orig: 162, 209
+  offset: 0, 0
+  index: -1

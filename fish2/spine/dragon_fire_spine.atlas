@@ -1,0 +1,398 @@
+
+dragon_fire_spine_Atlas.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ranba_Body
+  rotate: false
+  xy: 1, 1
+  size: 767, 176
+  orig: 767, 180
+  offset: 0, 0
+  index: -1
+Ranba_Hair
+  rotate: false
+  xy: 1, 899
+  size: 121, 122
+  orig: 121, 122
+  offset: 0, 0
+  index: -1
+Ranba_Hand
+  rotate: true
+  xy: 916, 123
+  size: 70, 107
+  orig: 77, 107
+  offset: 0, 0
+  index: -1
+Ranba_Head
+  rotate: false
+  xy: 770, 1
+  size: 205, 120
+  orig: 206, 120
+  offset: 1, 0
+  index: -1
+Ranba_Leg
+  rotate: true
+  xy: 395, 218
+  size: 75, 109
+  orig: 83, 109
+  offset: 0, 0
+  index: -1
+Ranba_Mouth
+  rotate: true
+  xy: 357, 662
+  size: 62, 61
+  orig: 62, 61
+  offset: 0, 0
+  index: -1
+RealFireA_000
+  rotate: false
+  xy: 916, 195
+  size: 97, 128
+  orig: 150, 150
+  offset: 28, 3
+  index: -1
+RealFireA_001
+  rotate: false
+  xy: 219, 892
+  size: 91, 131
+  orig: 150, 150
+  offset: 26, 3
+  index: -1
+RealFireA_002
+  rotate: false
+  xy: 177, 753
+  size: 91, 137
+  orig: 150, 150
+  offset: 26, 3
+  index: -1
+RealFireA_003
+  rotate: false
+  xy: 1, 615
+  size: 90, 141
+  orig: 150, 150
+  offset: 28, 3
+  index: -1
+RealFireA_004
+  rotate: false
+  xy: 1, 325
+  size: 91, 144
+  orig: 150, 150
+  offset: 27, 3
+  index: -1
+RealFireA_005
+  rotate: false
+  xy: 180, 325
+  size: 93, 139
+  orig: 150, 150
+  offset: 26, 2
+  index: -1
+RealFireA_006
+  rotate: false
+  xy: 93, 614
+  size: 92, 137
+  orig: 150, 150
+  offset: 26, 3
+  index: -1
+RealFireA_007
+  rotate: false
+  xy: 94, 325
+  size: 84, 141
+  orig: 150, 150
+  offset: 35, 3
+  index: -1
+RealFireA_008
+  rotate: false
+  xy: 1, 179
+  size: 88, 144
+  orig: 150, 150
+  offset: 33, 3
+  index: -1
+RealFireA_009
+  rotate: false
+  xy: 91, 758
+  size: 84, 139
+  orig: 150, 150
+  offset: 33, 3
+  index: -1
+RealFireA_010
+  rotate: false
+  xy: 270, 744
+  size: 87, 131
+  orig: 150, 150
+  offset: 32, 3
+  index: -1
+RealFireA_011
+  rotate: false
+  xy: 183, 466
+  size: 89, 137
+  orig: 150, 150
+  offset: 31, 3
+  index: -1
+RealFireA_012
+  rotate: false
+  xy: 91, 179
+  size: 91, 143
+  orig: 150, 150
+  offset: 32, 2
+  index: -1
+RealFireA_013
+  rotate: false
+  xy: 91, 471
+  size: 90, 141
+  orig: 150, 150
+  offset: 32, 2
+  index: -1
+RealFireA_014
+  rotate: false
+  xy: 1, 758
+  size: 88, 139
+  orig: 150, 150
+  offset: 32, 3
+  index: -1
+RealFireA_015
+  rotate: false
+  xy: 275, 325
+  size: 86, 129
+  orig: 150, 150
+  offset: 33, 3
+  index: -1
+RealFireA_016
+  rotate: false
+  xy: 363, 325
+  size: 83, 128
+  orig: 150, 150
+  offset: 33, 3
+  index: -1
+RealFireA_017
+  rotate: false
+  xy: 271, 605
+  size: 84, 131
+  orig: 150, 150
+  offset: 32, 3
+  index: -1
+RealFireA_018
+  rotate: false
+  xy: 187, 605
+  size: 82, 137
+  orig: 150, 150
+  offset: 31, 3
+  index: -1
+RealFireA_019
+  rotate: false
+  xy: 1, 471
+  size: 88, 142
+  orig: 150, 150
+  offset: 29, 3
+  index: -1
+RealFireA_020
+  rotate: true
+  xy: 770, 123
+  size: 93, 144
+  orig: 150, 150
+  offset: 29, 3
+  index: -1
+RealFireA_021
+  rotate: false
+  xy: 184, 179
+  size: 93, 139
+  orig: 150, 150
+  offset: 30, 3
+  index: -1
+RealFireA_022
+  rotate: true
+  xy: 279, 218
+  size: 95, 114
+  orig: 150, 150
+  offset: 31, 3
+  index: -1
+RealFireA_023
+  rotate: false
+  xy: 124, 899
+  size: 93, 122
+  orig: 150, 150
+  offset: 32, 3
+  index: -1
+RealFireA_024
+  rotate: false
+  xy: 274, 466
+  size: 95, 129
+  orig: 150, 150
+  offset: 30, 3
+  index: -1
+RealFireB_000
+  rotate: false
+  xy: 357, 597
+  size: 58, 63
+  orig: 70, 70
+  offset: 6, 4
+  index: -1
+RealFireB_001
+  rotate: false
+  xy: 312, 877
+  size: 57, 59
+  orig: 70, 70
+  offset: 7, 5
+  index: -1
+RealFireB_002
+  rotate: false
+  xy: 312, 938
+  size: 57, 59
+  orig: 70, 70
+  offset: 7, 4
+  index: -1
+RealFireB_003
+  rotate: false
+  xy: 417, 787
+  size: 58, 58
+  orig: 70, 70
+  offset: 6, 5
+  index: -1
+RealFireB_004
+  rotate: false
+  xy: 418, 726
+  size: 58, 58
+  orig: 70, 70
+  offset: 6, 5
+  index: -1
+RealFireB_005
+  rotate: true
+  xy: 506, 218
+  size: 59, 58
+  orig: 70, 70
+  offset: 5, 5
+  index: -1
+RealFireB_006
+  rotate: true
+  xy: 431, 455
+  size: 60, 56
+  orig: 70, 70
+  offset: 4, 6
+  index: -1
+RealFireB_007
+  rotate: true
+  xy: 359, 726
+  size: 59, 57
+  orig: 70, 70
+  offset: 5, 5
+  index: -1
+RealFireB_008
+  rotate: true
+  xy: 426, 847
+  size: 58, 57
+  orig: 70, 70
+  offset: 6, 5
+  index: -1
+RealFireB_009
+  rotate: false
+  xy: 480, 640
+  size: 57, 57
+  orig: 70, 70
+  offset: 7, 5
+  index: -1
+RealFireB_010
+  rotate: false
+  xy: 430, 907
+  size: 56, 57
+  orig: 70, 70
+  offset: 8, 5
+  index: -1
+RealFireB_011
+  rotate: false
+  xy: 359, 787
+  size: 56, 59
+  orig: 70, 70
+  offset: 8, 4
+  index: -1
+RealFireB_012
+  rotate: false
+  xy: 371, 909
+  size: 57, 58
+  orig: 70, 70
+  offset: 7, 5
+  index: -1
+RealFireB_013
+  rotate: false
+  xy: 420, 644
+  size: 58, 58
+  orig: 70, 70
+  offset: 6, 5
+  index: -1
+RealFireB_014
+  rotate: false
+  xy: 503, 325
+  size: 58, 59
+  orig: 70, 70
+  offset: 6, 5
+  index: -1
+RealFireB_015
+  rotate: false
+  xy: 473, 580
+  size: 58, 58
+  orig: 70, 70
+  offset: 6, 6
+  index: -1
+RealFireB_016
+  rotate: true
+  xy: 429, 518
+  size: 60, 58
+  orig: 70, 70
+  offset: 4, 6
+  index: -1
+RealFireB_017
+  rotate: true
+  xy: 371, 455
+  size: 61, 58
+  orig: 70, 70
+  offset: 3, 7
+  index: -1
+RealFireB_018
+  rotate: true
+  xy: 371, 518
+  size: 61, 56
+  orig: 70, 70
+  offset: 3, 8
+  index: -1
+RealFireB_019
+  rotate: true
+  xy: 478, 704
+  size: 58, 55
+  orig: 70, 70
+  offset: 5, 8
+  index: -1
+RealFireB_020
+  rotate: false
+  xy: 448, 387
+  size: 59, 59
+  orig: 70, 70
+  offset: 4, 7
+  index: -1
+RealFireB_021
+  rotate: false
+  xy: 477, 786
+  size: 56, 58
+  orig: 70, 70
+  offset: 6, 6
+  index: -1
+RealFireB_022
+  rotate: false
+  xy: 371, 848
+  size: 53, 59
+  orig: 70, 70
+  offset: 7, 6
+  index: -1
+RealFireB_023
+  rotate: false
+  xy: 448, 325
+  size: 53, 60
+  orig: 70, 70
+  offset: 7, 5
+  index: -1
+RealFireB_024
+  rotate: false
+  xy: 417, 581
+  size: 54, 61
+  orig: 70, 70
+  offset: 6, 5
+  index: -1

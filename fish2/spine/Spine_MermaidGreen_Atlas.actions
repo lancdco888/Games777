@@ -1,0 +1,31 @@
+{
+    "animsFileName": "Spine_MermaidGreen_Atlas.anims",
+	"actions": [
+		{
+			"name": "move",
+			"totalSeconds": 25,
+            "baseSpeed":50,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+			]
+		},
+        {
+            "name": "ATK",
+            "totalSeconds": 4.86667,
+            "baseSpeed": 50,
+            "events": [
+                {
+                    "time": 0,
+                    "speed": 0,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+            ]
+        }
+	]
+}

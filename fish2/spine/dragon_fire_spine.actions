@@ -1,0 +1,30 @@
+{
+    "animsFileName": "dragon_fire_spine.anims",
+	"actions": [
+		{
+			"name": "SWIM",
+			"totalSeconds": 10,
+            "baseSpeed": 50,
+			"events": [
+				{
+					"time": 0,
+					"speed": 50,
+                    "animPlayRatio": 1,
+					"animIndex": 0
+				},
+                {
+                    "time": 1,
+                    "speed": 30,
+                    "animPlayRatio": 1,
+					"animIndex": 0
+                },
+                {
+                    "time": 9,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+					"animIndex": 0
+                }
+			]
+		}
+	]
+}

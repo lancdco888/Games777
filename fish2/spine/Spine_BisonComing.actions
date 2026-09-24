@@ -1,0 +1,74 @@
+{
+    "animsFileName": "Spine_BisonComing.anims",
+	"actions": [
+		{
+			"name": "move",
+			"totalSeconds": 4.6666669,
+            "baseSpeed":100,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "animIndex": 7
+                },
+				{
+                    "time": 0.1,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1200,
+                    "animIndex": 7
+                },
+				{
+                    "time": 0.1,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time": 0.7666667,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time": 1.4333334,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time":2.1000001,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time": 2.7666668,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time": 3.4333335,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                },
+				{
+                    "time": 4.1000002,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "eventId": 1100,
+                    "animIndex": 7
+                }
+			]
+		}
+	]
+}

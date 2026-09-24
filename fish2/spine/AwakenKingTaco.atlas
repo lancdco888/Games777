@@ -1,0 +1,251 @@
+
+AwakenKingTaco.png
+size: 2063,2007
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+AwakeningTako_atk_00
+  rotate: true
+  xy: 1322, 35
+  size: 172, 177
+  orig: 172, 177
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_01
+  rotate: false
+  xy: 1860, 2
+  size: 188, 184
+  orig: 188, 184
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_02
+  rotate: true
+  xy: 1860, 188
+  size: 231, 188
+  orig: 231, 188
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_03
+  rotate: true
+  xy: 1859, 421
+  size: 293, 189
+  orig: 293, 189
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_04
+  rotate: true
+  xy: 1322, 209
+  size: 369, 187
+  orig: 369, 187
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_05
+  rotate: true
+  xy: 913, 52
+  size: 531, 185
+  orig: 531, 185
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_07
+  rotate: false
+  xy: 712, 1391
+  size: 633, 175
+  orig: 633, 175
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_09
+  rotate: true
+  xy: 464, 548
+  size: 662, 206
+  orig: 662, 206
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_11
+  rotate: true
+  xy: 229, 530
+  size: 680, 233
+  orig: 680, 233
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_13
+  rotate: false
+  xy: 2, 1212
+  size: 696, 253
+  orig: 696, 253
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_15
+  rotate: false
+  xy: 2, 1467
+  size: 708, 273
+  orig: 708, 273
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_17
+  rotate: false
+  xy: 2, 1742
+  size: 725, 263
+  orig: 725, 263
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_19
+  rotate: false
+  xy: 729, 1761
+  size: 726, 244
+  orig: 726, 244
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_21
+  rotate: true
+  xy: 2, 503
+  size: 707, 225
+  orig: 707, 225
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_23
+  rotate: true
+  xy: 672, 560
+  size: 650, 213
+  orig: 650, 213
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_25
+  rotate: true
+  xy: 1438, 718
+  size: 613, 185
+  orig: 613, 185
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_27
+  rotate: true
+  xy: 1867, 716
+  size: 615, 169
+  orig: 615, 169
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_29
+  rotate: true
+  xy: 1076, 592
+  size: 620, 186
+  orig: 620, 186
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_31
+  rotate: true
+  xy: 887, 585
+  size: 627, 187
+  orig: 627, 187
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_33
+  rotate: true
+  xy: 1264, 580
+  size: 632, 172
+  orig: 632, 172
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_35
+  rotate: false
+  xy: 700, 1214
+  size: 631, 175
+  orig: 631, 175
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_37
+  rotate: true
+  xy: 1511, 90
+  size: 626, 168
+  orig: 626, 168
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_39
+  rotate: false
+  xy: 1365, 1514
+  size: 633, 164
+  orig: 633, 164
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_41
+  rotate: false
+  xy: 1347, 1333
+  size: 633, 179
+  orig: 633, 179
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_43
+  rotate: false
+  xy: 729, 1568
+  size: 634, 191
+  orig: 634, 191
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_45
+  rotate: false
+  xy: 1457, 1800
+  size: 598, 205
+  orig: 598, 205
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_47
+  rotate: true
+  xy: 1625, 773
+  size: 558, 240
+  orig: 558, 240
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_48
+  rotate: true
+  xy: 665, 5
+  size: 541, 246
+  orig: 541, 246
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_49
+  rotate: true
+  xy: 423, 13
+  size: 515, 240
+  orig: 515, 240
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_51
+  rotate: true
+  xy: 1100, 77
+  size: 501, 220
+  orig: 501, 220
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_53
+  rotate: true
+  xy: 2, 35
+  size: 466, 205
+  orig: 466, 205
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_55
+  rotate: true
+  xy: 209, 77
+  size: 424, 212
+  orig: 424, 212
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_57
+  rotate: true
+  xy: 1681, 406
+  size: 365, 176
+  orig: 365, 176
+  offset: 0, 0
+  index: -1
+AwakeningTako_atk_59
+  rotate: true
+  xy: 1681, 85
+  size: 319, 177
+  orig: 319, 177
+  offset: 0, 0
+  index: -1
+AwakeningTako_foot
+  rotate: true
+  xy: 1457, 1680
+  size: 118, 604
+  orig: 118, 604
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+{
+    "animsFileName": "GoldenToad.anims",
+	"actions": [
+		{
+			"name": "move",
+			"totalSeconds": 100000,
+            "baseSpeed": 100,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 0.00001,
+                    "animPlayRatio": 1,
+                    "animIndex": 2
+                },
+				{
+                    "time": 1.33333,
+                    "speed": 60,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+				{
+                    "time": 47,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+				{
+                    "time": 48,
+                    "speed": 200,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+				{
+                    "time": 49,
+                    "speed": 300,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                }
+			]
+		},
+		{
+			"name": "die",
+			"totalSeconds": 1.33333,
+            "baseSpeed": 100,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 100,
+                    "animPlayRatio": 1,
+                    "animIndex": 1
+                }
+			]
+		}
+	]
+}

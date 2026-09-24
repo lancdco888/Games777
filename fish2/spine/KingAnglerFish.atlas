@@ -1,0 +1,167 @@
+
+KingAnglerFish.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+eye_diffuse
+  rotate: false
+  xy: 1648, 1772
+  size: 143, 143
+  orig: 143, 143
+  offset: 0, 0
+  index: -1
+eye_light
+  rotate: false
+  xy: 1, 1920
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+eye_pupil
+  rotate: true
+  xy: 1936, 466
+  size: 53, 54
+  orig: 53, 54
+  offset: 0, 0
+  index: -1
+eye_shadow
+  rotate: false
+  xy: 1793, 1772
+  size: 143, 143
+  orig: 143, 143
+  offset: 0, 0
+  index: -1
+eye_specular
+  rotate: false
+  xy: 201, 1751
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1
+general_Body_A
+  rotate: false
+  xy: 1, 1
+  size: 643, 1103
+  orig: 643, 1103
+  offset: 0, 0
+  index: -1
+general_Body_B
+  rotate: true
+  xy: 201, 1106
+  size: 643, 1103
+  orig: 643, 1103
+  offset: 0, 0
+  index: -1
+general_Body_C
+  rotate: false
+  xy: 646, 1
+  size: 643, 1103
+  orig: 643, 1103
+  offset: 0, 0
+  index: -1
+general_Body_D
+  rotate: false
+  xy: 1291, 1
+  size: 643, 1103
+  orig: 643, 1103
+  offset: 0, 0
+  index: -1
+general_Chin_A
+  rotate: false
+  xy: 1306, 1106
+  size: 637, 331
+  orig: 637, 331
+  offset: 0, 0
+  index: -1
+general_Chin_B
+  rotate: false
+  xy: 1306, 1439
+  size: 637, 331
+  orig: 637, 331
+  offset: 0, 0
+  index: -1
+general_Dorsal
+  rotate: false
+  xy: 1992, 466
+  size: 49, 200
+  orig: 49, 200
+  offset: 0, 0
+  index: -1
+general_Dorsal_Fin
+  rotate: false
+  xy: 255, 1751
+  size: 131, 287
+  orig: 131, 287
+  offset: 0, 0
+  index: -1
+general_Glow
+  rotate: false
+  xy: 128, 1920
+  size: 125, 125
+  orig: 125, 125
+  offset: 0, 0
+  index: -1
+general_Hand_L_A
+  rotate: false
+  xy: 519, 1751
+  size: 172, 222
+  orig: 172, 222
+  offset: 0, 0
+  index: -1
+general_Hand_L_B
+  rotate: false
+  xy: 693, 1751
+  size: 172, 222
+  orig: 172, 222
+  offset: 0, 0
+  index: -1
+general_Hand_R_A
+  rotate: false
+  xy: 867, 1751
+  size: 172, 210
+  orig: 172, 210
+  offset: 0, 0
+  index: -1
+general_Hand_R_B
+  rotate: false
+  xy: 1041, 1751
+  size: 172, 210
+  orig: 172, 210
+  offset: 0, 0
+  index: -1
+general_Light
+  rotate: false
+  xy: 1, 1106
+  size: 198, 812
+  orig: 198, 812
+  offset: 0, 0
+  index: -1
+general_Tail
+  rotate: false
+  xy: 388, 1751
+  size: 129, 258
+  orig: 129, 258
+  offset: 0, 0
+  index: -1
+general_Tooth_A
+  rotate: false
+  xy: 1215, 1772
+  size: 431, 188
+  orig: 431, 188
+  offset: 0, 0
+  index: -1
+general_Tooth_B
+  rotate: false
+  xy: 1936, 1
+  size: 85, 232
+  orig: 85, 232
+  offset: 0, 0
+  index: -1
+general_Tooth_C
+  rotate: false
+  xy: 1936, 235
+  size: 80, 229
+  orig: 80, 229
+  offset: 0, 0
+  index: -1

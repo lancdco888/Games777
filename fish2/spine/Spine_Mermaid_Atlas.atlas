@@ -1,0 +1,48 @@
+
+Spine_Mermaid_Atlas.png
+size: 1009,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: true
+  xy: 894, 289
+  size: 287, 73
+  orig: 287, 73
+  offset: 0, 0
+  index: -1
+attk
+  rotate: false
+  xy: 2, 578
+  size: 1005, 444
+  orig: 1005, 444
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 357, 20
+  size: 169, 285
+  orig: 169, 285
+  offset: 0, 0
+  index: -1
+face
+  rotate: true
+  xy: 644, 31
+  size: 158, 180
+  orig: 158, 180
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 2, 2
+  size: 187, 353
+  orig: 187, 353
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 2, 191
+  size: 385, 890
+  orig: 385, 890
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,343 @@
+
+KingLacoste_1.atlas.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Croc_bite_00
+  rotate: false
+  xy: 1130, 839
+  size: 184, 409
+  orig: 600, 1200
+  offset: 186, 207
+  index: -1
+Croc_bite_02
+  rotate: false
+  xy: 899, 422
+  size: 188, 416
+  orig: 600, 1200
+  offset: 183, 201
+  index: -1
+Croc_bite_04
+  rotate: false
+  xy: 456, 454
+  size: 193, 431
+  orig: 600, 1200
+  offset: 180, 194
+  index: -1
+Croc_bite_06
+  rotate: false
+  xy: 446, 922
+  size: 201, 440
+  orig: 600, 1200
+  offset: 176, 187
+  index: -1
+Croc_bite_08
+  rotate: false
+  xy: 234, 922
+  size: 210, 446
+  orig: 600, 1200
+  offset: 171, 181
+  index: -1
+Croc_bite_10
+  rotate: false
+  xy: 233, 469
+  size: 221, 451
+  orig: 600, 1200
+  offset: 166, 178
+  index: -1
+Croc_bite_12
+  rotate: false
+  xy: 1, 949
+  size: 231, 452
+  orig: 600, 1200
+  offset: 161, 179
+  index: -1
+Croc_bite_14
+  rotate: false
+  xy: 156, 1403
+  size: 240, 447
+  orig: 600, 1200
+  offset: 157, 188
+  index: -1
+Croc_bite_16
+  rotate: false
+  xy: 638, 1364
+  size: 245, 434
+  orig: 600, 1200
+  offset: 155, 205
+  index: -1
+Croc_bite_18
+  rotate: true
+  xy: 822, 1800
+  size: 246, 427
+  orig: 600, 1200
+  offset: 155, 219
+  index: -1
+Croc_bite_19
+  rotate: false
+  xy: 651, 426
+  size: 246, 422
+  orig: 600, 1200
+  offset: 155, 223
+  index: -1
+Croc_bite_20
+  rotate: false
+  xy: 632, 1
+  size: 245, 423
+  orig: 600, 1200
+  offset: 156, 226
+  index: -1
+Croc_bite_21
+  rotate: false
+  xy: 885, 1312
+  size: 244, 418
+  orig: 600, 1200
+  offset: 156, 229
+  index: -1
+Croc_bite_22
+  rotate: false
+  xy: 887, 850
+  size: 241, 416
+  orig: 600, 1200
+  offset: 158, 232
+  index: -1
+Croc_bite_23
+  rotate: false
+  xy: 879, 1
+  size: 239, 419
+  orig: 600, 1200
+  offset: 159, 237
+  index: -1
+Croc_bite_24
+  rotate: false
+  xy: 649, 887
+  size: 236, 423
+  orig: 600, 1200
+  offset: 161, 241
+  index: -1
+Croc_bite_25
+  rotate: false
+  xy: 1131, 1250
+  size: 233, 405
+  orig: 600, 1200
+  offset: 163, 247
+  index: -1
+Croc_bite_26
+  rotate: false
+  xy: 1089, 422
+  size: 231, 415
+  orig: 600, 1200
+  offset: 164, 251
+  index: -1
+Croc_bite_27
+  rotate: false
+  xy: 1366, 1242
+  size: 229, 400
+  orig: 600, 1200
+  offset: 165, 256
+  index: -1
+Croc_bite_28
+  rotate: true
+  xy: 1322, 415
+  size: 227, 398
+  orig: 600, 1200
+  offset: 166, 259
+  index: -1
+Croc_bite_29
+  rotate: true
+  xy: 1597, 719
+  size: 227, 396
+  orig: 600, 1200
+  offset: 166, 262
+  index: -1
+Croc_bite_30
+  rotate: true
+  xy: 1597, 948
+  size: 227, 396
+  orig: 600, 1200
+  offset: 166, 264
+  index: -1
+Croc_bite_31
+  rotate: true
+  xy: 1597, 1410
+  size: 227, 394
+  orig: 600, 1200
+  offset: 166, 265
+  index: -1
+Croc_bite_32
+  rotate: false
+  xy: 1316, 839
+  size: 228, 401
+  orig: 600, 1200
+  offset: 165, 265
+  index: -1
+Croc_bite_33
+  rotate: false
+  xy: 1496, 1644
+  size: 229, 399
+  orig: 600, 1200
+  offset: 164, 265
+  index: -1
+Croc_bite_34
+  rotate: true
+  xy: 1597, 1177
+  size: 231, 394
+  orig: 600, 1200
+  offset: 163, 266
+  index: -1
+Croc_bite_35
+  rotate: true
+  xy: 431, 1815
+  size: 232, 389
+  orig: 600, 1200
+  offset: 162, 272
+  index: -1
+Croc_bite_36
+  rotate: false
+  xy: 1727, 1639
+  size: 234, 365
+  orig: 600, 1200
+  offset: 161, 294
+  index: -1
+Croc_bite_37
+  rotate: true
+  xy: 1727, 243
+  size: 235, 316
+  orig: 600, 1200
+  offset: 160, 342
+  index: -1
+Croc_bite_38
+  rotate: true
+  xy: 1727, 480
+  size: 237, 295
+  orig: 600, 1200
+  offset: 159, 363
+  index: -1
+Croc_bite_40
+  rotate: true
+  xy: 1727, 1
+  size: 240, 316
+  orig: 600, 1200
+  offset: 157, 340
+  index: -1
+Croc_bite_42
+  rotate: true
+  xy: 1365, 1
+  size: 243, 347
+  orig: 600, 1200
+  offset: 155, 308
+  index: -1
+Croc_bite_44
+  rotate: false
+  xy: 1251, 1657
+  size: 243, 389
+  orig: 600, 1200
+  offset: 155, 271
+  index: -1
+Croc_bite_46
+  rotate: false
+  xy: 1120, 1
+  size: 243, 412
+  orig: 600, 1200
+  offset: 155, 235
+  index: -1
+Croc_bite_48
+  rotate: false
+  xy: 398, 1370
+  size: 238, 443
+  orig: 600, 1200
+  offset: 158, 199
+  index: -1
+Croc_bite_50
+  rotate: false
+  xy: 1, 478
+  size: 230, 469
+  orig: 600, 1200
+  offset: 162, 168
+  index: -1
+Croc_bite_52
+  rotate: false
+  xy: 1, 1
+  size: 220, 475
+  orig: 600, 1200
+  offset: 167, 156
+  index: -1
+Croc_bite_54
+  rotate: false
+  xy: 223, 1
+  size: 208, 466
+  orig: 600, 1200
+  offset: 173, 162
+  index: -1
+Croc_bite_56
+  rotate: false
+  xy: 433, 1
+  size: 197, 451
+  orig: 600, 1200
+  offset: 179, 178
+  index: -1
+Croc_bite_58
+  rotate: true
+  xy: 1, 1855
+  size: 189, 428
+  orig: 600, 1200
+  offset: 183, 197
+  index: -1
+Croc_body_S
+  rotate: false
+  xy: 1, 1403
+  size: 153, 450
+  orig: 153, 450
+  offset: 0, 0
+  index: -1
+Croc_rearfoot_left_S
+  rotate: false
+  xy: 1435, 246
+  size: 70, 153
+  orig: 70, 153
+  offset: 0, 0
+  index: -1
+Croc_rearfoot_S
+  rotate: false
+  xy: 1365, 246
+  size: 68, 157
+  orig: 68, 157
+  offset: 0, 0
+  index: -1
+  
+  
+  
+KingLacoste_2.atlas.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Croc_body
+  rotate: false
+  xy: 1, 1
+  size: 351, 1759
+  orig: 351, 1759
+  offset: 0, 0
+  index: -1
+Croc_forefoot
+  rotate: true
+  xy: 679, 1
+  size: 148, 296
+  orig: 150, 296
+  offset: 0, 0
+  index: -1
+Croc_rearfoot
+  rotate: true
+  xy: 336, 1762
+  size: 148, 341
+  orig: 148, 341
+  offset: 0, 0
+  index: -1
+Croc_rearfoot_left
+  rotate: true
+  xy: 1, 1762
+  size: 153, 333
+  orig: 153, 333
+  offset: 0, 0
+  index: -1

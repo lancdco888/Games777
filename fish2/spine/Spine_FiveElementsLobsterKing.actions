@@ -1,0 +1,18 @@
+{
+    "animsFileName": "Spine_FiveElementsLobsterKing.anims",
+	"actions": [
+		{
+			"name": "move",
+			"totalSeconds": 6.599999,
+            "baseSpeed":50,
+			"events": [
+				{
+                    "time": 0,
+                    "speed": 50,
+                    "animPlayRatio": 1,
+                    "animIndex": 0
+                },
+			]
+		}
+	]
+}

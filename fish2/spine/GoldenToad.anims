@@ -1,0 +1,57 @@
+{
+    "resFileName": "GoldenToad.atlas",
+    "anims": [
+        {
+            "name": "SWIM",
+            "skin": "",
+            "totalSeconds": 8,
+            "nextAnim": "",
+            "lps": [
+                {
+                    "time": 0,
+                    "mainLockPoint": {
+                        "x": 0.99951171875,
+                        "y": 12.999053955078125
+                    },
+                    "lockPoints": []
+                }
+            ],
+            "cds": [
+                {
+                    "time": 0,
+                    "maxCDCircle": {
+                        "x": -4.0020751953125,
+                        "y": 17.99908447265625,
+                        "r": 150.71722412109375
+                    },
+                    "cdCircles": [
+                        {
+                            "x": -4.0020751953125,
+                            "y": 17.99908447265625,
+                            "r": 150.71722412109375
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CATCH",
+            "skin": "",
+            "totalSeconds": 1.3333300352096558,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        },
+        {
+            "name": "INTO",
+            "skin": "",
+            "totalSeconds": 1.3333300352096558,
+            "nextAnim": "",
+            "lps": [],
+            "cds": []
+        }
+    ],
+    "shadowX": -5,
+    "shadowY": -5,
+    "shadowScale": 0
+}
