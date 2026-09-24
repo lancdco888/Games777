@@ -2,13 +2,17 @@ import {
     Button,
     Color,
     HorizontalTextAlignment,
+    ImageAsset,
     Label,
     Layers,
     Node,
     Overflow,
+    Rect,
     resources,
+    Size,
     Sprite,
     SpriteFrame,
+    Texture2D,
     UITransform,
     VerticalTextAlignment,
 } from 'cc';
@@ -95,18 +99,86 @@ function createNode(item: CsbNode, parentData: CsbNode, named: Map<string, Node>
     return node;
 }
 
+const imageStats = { pending: 0, loaded: 0, missing: 0 };
+
 function addSprite(node: Node, spritePath: string): void {
     const sprite = node.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
     sprite.type = Sprite.Type.SIMPLE;
-    const loadPath = spritePath.replace(/\.(png|jpg|jpeg|webp)$/i, '') + '/spriteFrame';
-    resources.load(loadPath, SpriteFrame, (err, frame) => {
-        if (err || !frame || !sprite.isValid) {
+    sprite.trim = false;
+    const base = spritePath.replace(/\.(png|jpg|jpeg|webp)$/i, '');
+    imageStats.pending += 1;
+    resources.load(`${base}/spriteFrame`, SpriteFrame, (err, frame) => {
+        if (!err && frame) {
+            showSprite(sprite, frame);
             return;
         }
-        sprite.spriteFrame = frame;
-        sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+        resources.load(base, ImageAsset, (imageErr, image) => {
+            if (!imageErr && image) {
+                showSprite(sprite, frameFromImage(image));
+                return;
+            }
+            resources.load(`${base}/texture`, Texture2D, (textureErr, texture) => {
+                if (!textureErr && texture) {
+                    showSprite(sprite, frameFromTexture(texture));
+                    return;
+                }
+                imageStats.pending -= 1;
+                imageStats.missing += 1;
+                console.warn('[hall] image missing', base, err || imageErr || textureErr);
+                reportImages();
+            });
+        });
     });
+}
+
+function frameFromImage(image: ImageAsset): SpriteFrame {
+    const texture = new Texture2D();
+    texture.image = image;
+    return frameFromTexture(texture);
+}
+
+function frameFromTexture(texture: Texture2D): SpriteFrame {
+    const frame = new SpriteFrame();
+    const width = texture.width || imageWidth(texture);
+    const height = texture.height || imageHeight(texture);
+    frame.reset({
+        texture,
+        rect: new Rect(0, 0, width, height),
+        originalSize: new Size(width, height),
+    });
+    frame.packable = false;
+    return frame;
+}
+
+function imageWidth(texture: Texture2D): number {
+    return texture.image?.width || 0;
+}
+
+function imageHeight(texture: Texture2D): number {
+    return texture.image?.height || 0;
+}
+
+function showSprite(sprite: Sprite, frame: SpriteFrame): void {
+    imageStats.pending -= 1;
+    if (!sprite.isValid) {
+        reportImages();
+        return;
+    }
+    const transform = sprite.node.getComponent(UITransform);
+    const width = transform?.width || frame.rect.width;
+    const height = transform?.height || frame.rect.height;
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    sprite.spriteFrame = frame;
+    transform?.setContentSize(width, height);
+    imageStats.loaded += 1;
+    reportImages();
+}
+
+function reportImages(): void {
+    if (imageStats.pending === 0) {
+        console.log(`[hall] images loaded ${imageStats.loaded}, missing ${imageStats.missing}`);
+    }
 }
 
 function addLabel(node: Node, item: CsbNode): void {
