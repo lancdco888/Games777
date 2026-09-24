@@ -1,0 +1,278 @@
+{
+    "version": "1.0.1",
+    "assets": {
+        "ext/fish_gxfc/fish_gxfc.png700d5d499cc10acfde36a686c0a89011": {
+            "md5": "700d5d499cc10acfde36a686c0a89011"
+        },
+        "ext/fish_ngsxd/fish_ngsxd.png23e2d2de45aa0c80dda864450ac0f446": {
+            "md5": "23e2d2de45aa0c80dda864450ac0f446"
+        },
+        "ext/fish_scroll_chuxian/fish_scorll.png2f90da620c6a0c57d11ae459cb788dec": {
+            "md5": "2f90da620c6a0c57d11ae459cb788dec"
+        },
+        "ext/flames_storm/fish_lyfb/fish_lyfb.png60c91e2ae7df5be4613dd41aabdb33ad": {
+            "md5": "60c91e2ae7df5be4613dd41aabdb33ad"
+        },
+        "ext/flames_storm/fish_lyfb_freegame/fish_lyfb_freegame.png97d663df920cf4ccba17188c3ed02a0e": {
+            "md5": "97d663df920cf4ccba17188c3ed02a0e"
+        },
+        "ext/flames_storm/fish_lyfb_pt/fish_lyfb_pt.png90370a19e8b7cba564cf0183f073eaf1": {
+            "md5": "90370a19e8b7cba564cf0183f073eaf1"
+        },
+        "ext/ingot/fish_wfcs_yuanbao.pngb8e81e165041a9bf8456f66477423889": {
+            "md5": "b8e81e165041a9bf8456f66477423889"
+        },
+        "ext/pumpkinBomb/pumpkinBomb_0.pnge7c75ef3184c41c2863f5170ee8ed38b": {
+            "md5": "e7c75ef3184c41c2863f5170ee8ed38b"
+        },
+        "ext/speedboat_bomb/BombSpeedboat_Explotion_0.pngcd587043c6a71fb51c3cd6861d45bd1d": {
+            "md5": "cd587043c6a71fb51c3cd6861d45bd1d"
+        },
+        "ext/yuanxiao/fish_yuanxiao.pngb08a7c8b91c10a673b77c3094516ca39": {
+            "md5": "b08a7c8b91c10a673b77c3094516ca39"
+        },
+        "fish/general/bimuyu_move_0.pngdb5991949a328a9a2523fd6069a6fd41": {
+            "md5": "db5991949a328a9a2523fd6069a6fd41"
+        },
+        "fish/general/bimuyu_xuanfeng_move_0.png17cafc79b9d08762dcabe8f1f9a58ed1": {
+            "md5": "17cafc79b9d08762dcabe8f1f9a58ed1"
+        },
+        "fish/general/dieyu_move_0.pngf04b4f9dd316bfe958f5659b67289969": {
+            "md5": "f04b4f9dd316bfe958f5659b67289969"
+        },
+        "fish/general/dieyu_xuanfeng_move_0.png264c6c89f681e92b011f684eef6bb387": {
+            "md5": "264c6c89f681e92b011f684eef6bb387"
+        },
+        "fish/general/fuyu_move_0.png789ffa2a67323602f6a65f98d69258aa": {
+            "md5": "789ffa2a67323602f6a65f98d69258aa"
+        },
+        "fish/general/jianayu_move_0.png134a955ec9a9acf5696fcd3a9eb8cf92": {
+            "md5": "134a955ec9a9acf5696fcd3a9eb8cf92"
+        },
+        "fish/general/jianayu_xuanfeng_move_0.png4082c22a7e4f323296bf2288b88305b0": {
+            "md5": "4082c22a7e4f323296bf2288b88305b0"
+        },
+        "fish/general/juchiyu_move_0.png7c82b4d294df29072f9a25c685181d40": {
+            "md5": "7c82b4d294df29072f9a25c685181d40"
+        },
+        "fish/general/juchiyu_xuanfeng_move_0.pngc5a175d86423b80df5ad3b2ff22c36a5": {
+            "md5": "c5a175d86423b80df5ad3b2ff22c36a5"
+        },
+        "fish/general/judadieyu_move_0.png838572347613ae95b80a5cdb5976e2db": {
+            "md5": "838572347613ae95b80a5cdb5976e2db"
+        },
+        "fish/general/judahetun_move_0.png56fa646d6fd8bcb203de0e36686cd6e7": {
+            "md5": "56fa646d6fd8bcb203de0e36686cd6e7"
+        },
+        "fish/general/judahetun_xuanfeng_move_0.png2f49e5f5ed2601b5f4ee9ef721075737": {
+            "md5": "2f49e5f5ed2601b5f4ee9ef721075737"
+        },
+        "fish/general/judaxiaochouyu_move_0.pnga3aa0e71046815a1f75a3fbef99b784d": {
+            "md5": "a3aa0e71046815a1f75a3fbef99b784d"
+        },
+        "fish/general/lantern_move_0.png18401ab1f3aa95850cba59195155538e": {
+            "md5": "18401ab1f3aa95850cba59195155538e"
+        },
+        "fish/general/lantern_xuanfeng_move_0.png406be215c5dda075e95dcceaba352189": {
+            "md5": "406be215c5dda075e95dcceaba352189"
+        },
+        "fish/general/longxia_move_0.png0d085737a4f90ebf145c6d92c6c470c8": {
+            "md5": "0d085737a4f90ebf145c6d92c6c470c8"
+        },
+        "fish/general/longxia_xuanfeng_move_0.png35b87141e93189e06ec4652fc32aba49": {
+            "md5": "35b87141e93189e06ec4652fc32aba49"
+        },
+        "fish/general/qiyu_move_0.pngf17fe615bfea1a25c3a0d0f279137ddc": {
+            "md5": "f17fe615bfea1a25c3a0d0f279137ddc"
+        },
+        "fish/general/qiyu_xuanfeng_move_0.png6a288331860e9497dc49cd597afa5603": {
+            "md5": "6a288331860e9497dc49cd597afa5603"
+        },
+        "fish/general/seaturtle_move_0.pngde769245d9f265eb3c1b061cfdfd7c26": {
+            "md5": "de769245d9f265eb3c1b061cfdfd7c26"
+        },
+        "fish/general/seaturtle_xuanfeng_move_0.png4f5fdf6863413439f92401b9184430f2": {
+            "md5": "4f5fdf6863413439f92401b9184430f2"
+        },
+        "fish/general/shark_move_0.png2c10e0201f7a2cd50aa0c927df2aaeb6": {
+            "md5": "2c10e0201f7a2cd50aa0c927df2aaeb6"
+        },
+        "fish/general/shiziyu_move_0.png896d29f134ceede9f4a88e3f26835bff": {
+            "md5": "896d29f134ceede9f4a88e3f26835bff"
+        },
+        "fish/general/shiziyu_xuanfeng_move_0.pngda1c6b2515773a0571a2b44f1b50f519": {
+            "md5": "da1c6b2515773a0571a2b44f1b50f519"
+        },
+        "fish/general/whale_move_0.pngdbe9427cb7c9abbf1c43f04263a8ac27": {
+            "md5": "dbe9427cb7c9abbf1c43f04263a8ac27"
+        },
+        "fish/general/xiaochouyu_move_0.png8cccffa8027e732560f1f66813c7d3b1": {
+            "md5": "8cccffa8027e732560f1f66813c7d3b1"
+        },
+        "fish/general/xiaochouyu_xuanfeng_move_0.png3c7fad97b77cd7bee6a41346fd30d22e": {
+            "md5": "3c7fad97b77cd7bee6a41346fd30d22e"
+        },
+        "fish/general/xiaohetun_move_0.png42c67d527a185a1bfe0e5dfb9da760ed": {
+            "md5": "42c67d527a185a1bfe0e5dfb9da760ed"
+        },
+        "fish/general/xiaohetun_xuanfeng_move_0.png1344430786b8f1e09024940e9ad0419b": {
+            "md5": "1344430786b8f1e09024940e9ad0419b"
+        },
+        "fish/general/xiaoshuimu_move_0.pnged182f210e862a986aa1916c95bc946d": {
+            "md5": "ed182f210e862a986aa1916c95bc946d"
+        },
+        "fish/general/xiaoshuimu_xuanfeng_move_0.png90a7bfd2996f6d4b6c346cac6f6ef819": {
+            "md5": "90a7bfd2996f6d4b6c346cac6f6ef819"
+        },
+        "fish/general/zhangyu_move_0.png43eb3a6b504e9306e61df4771e6f9150": {
+            "md5": "43eb3a6b504e9306e61df4771e6f9150"
+        },
+        "fish/general/zhangyu_xuanfeng_move_0.png9514616fde16eeaa36f38cef26798ff3": {
+            "md5": "9514616fde16eeaa36f38cef26798ff3"
+        },
+        "fish/golden/bawangjin_move_0.pngfce2ab858dabaea57ffa54c2c2d04fb2": {
+            "md5": "fce2ab858dabaea57ffa54c2c2d04fb2"
+        },
+        "fish/golden/bombspeedboat_die_0.pngcab9be9942c0eb47fdad1331b7e29d1f": {
+            "md5": "cab9be9942c0eb47fdad1331b7e29d1f"
+        },
+        "fish/golden/bombspeedboat_move_0.pngbea1656424ece1921a91e033a460cec0": {
+            "md5": "bea1656424ece1921a91e033a460cec0"
+        },
+        "fish/golden/clownfishlearner_move_0.pngb0d3ab90e7031674d16a5a10bf93b169": {
+            "md5": "b0d3ab90e7031674d16a5a10bf93b169"
+        },
+        "fish/golden/coin_up_0.png4d2faae2c0ad674b349fe806d9cab408": {
+            "md5": "4d2faae2c0ad674b349fe806d9cab408"
+        },
+        "fish/golden/dawangwuzei_move_0.pngb9e5132f5dd2a364ad437ca9e99e0270": {
+            "md5": "b9e5132f5dd2a364ad437ca9e99e0270"
+        },
+        "fish/golden/dawangwuzei_move_1.png26328b51cf5fc73959a72db0c8289fee": {
+            "md5": "26328b51cf5fc73959a72db0c8289fee"
+        },
+        "fish/golden/dawangwuzei_move_2.pngd10d36fcec3e92000adeecaa6f74b2bf": {
+            "md5": "d10d36fcec3e92000adeecaa6f74b2bf"
+        },
+        "fish/golden/dianguangshuimu_move_0.png66ecad2d99297fcb8fbeb6c2b3fc7847": {
+            "md5": "66ecad2d99297fcb8fbeb6c2b3fc7847"
+        },
+        "fish/golden/god_move_0.pngcd1f5cc40015d1c540de48f45d8ed0a7": {
+            "md5": "cd1f5cc40015d1c540de48f45d8ed0a7"
+        },
+        "fish/golden/huangjindieyu_move_0.png668987f83f9430ae9117a8407c833c4e": {
+            "md5": "668987f83f9430ae9117a8407c833c4e"
+        },
+        "fish/golden/huangjinhetun_move_0.png832b4ac91e76d8854ddc4cef3a9cee0a": {
+            "md5": "832b4ac91e76d8854ddc4cef3a9cee0a"
+        },
+        "fish/golden/huangjinsharenjing_move_0.pnga3f799bee569bfbcb89f4ab839ebb828": {
+            "md5": "a3f799bee569bfbcb89f4ab839ebb828"
+        },
+        "fish/golden/huangjinshayu_move_0.pnga54b7a1538aabef754b23d1bf2ed32c9": {
+            "md5": "a54b7a1538aabef754b23d1bf2ed32c9"
+        },
+        "fish/golden/huangjinxiaochouyu_move_0.png3ea5fb544271424c0628b0fe7bf42975": {
+            "md5": "3ea5fb544271424c0628b0fe7bf42975"
+        },
+        "fish/golden/lanternfestival_die_0.pngffa094f74048afe5f4fea0ebcdef0078": {
+            "md5": "ffa094f74048afe5f4fea0ebcdef0078"
+        },
+        "fish/golden/lanternfestival_move_0.png4da6e406f97f2008ee6b695446768217": {
+            "md5": "4da6e406f97f2008ee6b695446768217"
+        },
+        "fish/golden/nianmonster_move_0.png55229b7eae64331d3c45aed308ea954f": {
+            "md5": "55229b7eae64331d3c45aed308ea954f"
+        },
+        "fish/golden/pegasus_move_0.pngc5b294547cf3a13f6c2cf145dd4f7fa1": {
+            "md5": "c5b294547cf3a13f6c2cf145dd4f7fa1"
+        },
+        "fish/golden/pumpkin_0.pngf799bf5050beff41ebf60aabaae8a7e4": {
+            "md5": "f799bf5050beff41ebf60aabaae8a7e4"
+        },
+        "fish/special/lianhuanzhadanxie_0.png36dcaabc1dbc9bebe66b2390faec717a": {
+            "md5": "36dcaabc1dbc9bebe66b2390faec717a"
+        },
+        "fish/special/lianhuanzhadanxie_die_0.png5994cdfc824bcc4eee84715d3aa48800": {
+            "md5": "5994cdfc824bcc4eee84715d3aa48800"
+        },
+        "fish/special/lieyanfengbao_bullet_0.png856dda6bce285ae1946f030dd8419b99": {
+            "md5": "856dda6bce285ae1946f030dd8419b99"
+        },
+        "fish/special/lieyanfengbao_cannon_0.png14934b984cc34df752e8eb92262af80d": {
+            "md5": "14934b984cc34df752e8eb92262af80d"
+        },
+        "fish/special/lieyanfengbao_fire_0.png36a8088a38f4d1e2b33b02d3cbef13ca": {
+            "md5": "36a8088a38f4d1e2b33b02d3cbef13ca"
+        },
+        "fish/special/lieyanfengbao_move_0.png0d9cbdbd458c7756b4fc903cf26ad818": {
+            "md5": "0d9cbdbd458c7756b4fc903cf26ad818"
+        },
+        "fish/special/lieyanfengbao_move_texiao_0.pngea3331c49b845a8e94d927c8491a8c41": {
+            "md5": "ea3331c49b845a8e94d927c8491a8c41"
+        },
+        "fish/special/lieyanfengbao_yuwang_0.pngd19f93070188ad75a2db1178540cea09": {
+            "md5": "d19f93070188ad75a2db1178540cea09"
+        },
+        "fish/special/shandiansha_die_0.png317f814d32dac18bec826c6a88eb628a": {
+            "md5": "317f814d32dac18bec826c6a88eb628a"
+        },
+        "fish/special/shandiansha_move_0.png207baf3663afc500b627d1b944414169": {
+            "md5": "207baf3663afc500b627d1b944414169"
+        },
+        "fish/special/shenlongzhuanpan_die_0.pngc7948f4387fa107e65c97a34cb195fc1": {
+            "md5": "c7948f4387fa107e65c97a34cb195fc1"
+        },
+        "fish/special/shenlongzhuanpan_move_0.pngb660018c5c6c76390bb2b53b13bb60e6": {
+            "md5": "b660018c5c6c76390bb2b53b13bb60e6"
+        },
+        "fish/special/texiao_shandiansha01_0.pnga79e5c1f8142db2ca910d97ac4cb8726": {
+            "md5": "a79e5c1f8142db2ca910d97ac4cb8726"
+        },
+        "fish/special/texiao_shandiansha02_0.png30785d91f605ea688553223178693bd1": {
+            "md5": "30785d91f605ea688553223178693bd1"
+        },
+        "fish/special/texiao_shandiansha03_0.pngd1726c09dd24fcb4b4bf5bf201b32de8": {
+            "md5": "d1726c09dd24fcb4b4bf5bf201b32de8"
+        },
+        "fish/special/texiao_shandiansha04_0.png22593a57effe41fb347ca1aa627f836e": {
+            "md5": "22593a57effe41fb347ca1aa627f836e"
+        },
+        "fish/special/texiao_shandiansha05_0.png0f869d8c289aa423080dce4118f94bfd": {
+            "md5": "0f869d8c289aa423080dce4118f94bfd"
+        },
+        "fish/special/zhadanxie_boom_0.png63657a258ee4b6793c0159ee4518414e": {
+            "md5": "63657a258ee4b6793c0159ee4518414e"
+        },
+        "fish/special/zhadanxie_die_0.png6f26b8c47d2380de1cb4b634eb25b9ad": {
+            "md5": "6f26b8c47d2380de1cb4b634eb25b9ad"
+        },
+        "fish/special/zhadanxie_move_0.png8455621c8e028e16376bb0528ad4dc63": {
+            "md5": "8455621c8e028e16376bb0528ad4dc63"
+        },
+        "fish/special/zuantouxie_boom_0.png296e3da7f0bcae7201333be0364e0c2c": {
+            "md5": "296e3da7f0bcae7201333be0364e0c2c"
+        },
+        "fish/special/zuantouxie_bullet_move_0.pngb377c3929c22e51a05f86ae234a96aca": {
+            "md5": "b377c3929c22e51a05f86ae234a96aca"
+        },
+        "fish/special/zuantouxie_cannon_0.pngc97acab8a3bfab76d63695c28d34540f": {
+            "md5": "c97acab8a3bfab76d63695c28d34540f"
+        },
+        "fish/special/zuantouxie_drift_0.pngfc6f3f4ea894a9e6d9c056a6a96c3758": {
+            "md5": "fc6f3f4ea894a9e6d9c056a6a96c3758"
+        },
+        "fish/special/zuantouxie_move_0.png96e9c7938ab626c3b3904f9e45f1bbd8": {
+            "md5": "96e9c7938ab626c3b3904f9e45f1bbd8"
+        },
+        "fish/special/zuantouxie_pengzhang_0.pngbfc6d3ec3667c604777edccdd81db8bc": {
+            "md5": "bfc6d3ec3667c604777edccdd81db8bc"
+        },
+        "spine/hall_fish_caishen.png97fc6f7d2eaec41b3c8edca597ff1552": {
+            "md5": "97fc6f7d2eaec41b3c8edca597ff1552"
+        },
+        "spine/Spine_FiveElementsLobsterKing.png0105dd98816de6937d4265ea60430667": {
+            "md5": "0105dd98816de6937d4265ea60430667"
+        }
+    }
+}
