@@ -191,6 +191,7 @@ try {
     while ($true) {
         $client = $listener.AcceptTcpClient()
         $client.NoDelay = $true
+        Write-Host "preview connected"
         $stream = $client.GetStream()
         $tcp = $null
         $worker = $null
@@ -203,8 +204,10 @@ try {
                 if ($header.Count -gt 8192) { throw 'header too large' }
             }
             if (-not (Accept-Upgrade $stream ([System.Text.Encoding]::ASCII.GetString($header.ToArray())))) {
+                Write-Host "websocket upgrade failed"
                 continue
             }
+            Write-Host "websocket ready"
             $remote = $null
             while ($client.Connected) {
                 $message = Read-WsFrame $stream
@@ -220,13 +223,16 @@ try {
                 if ($message.opcode -eq 0x1 -and $null -eq $tcp) {
                     try {
                         $request = [System.Text.Encoding]::UTF8.GetString($message.payload) | ConvertFrom-Json
+                        Write-Host "dial $($request.host):$($request.port)"
                         $tcp = New-Object System.Net.Sockets.TcpClient
                         $tcp.NoDelay = $true
                         $tcp.Connect([string]$request.host, [int]$request.port)
                         $remote = $tcp.GetStream()
+                        Write-Host "tcp open $($request.host):$($request.port)"
                         Send-Text $stream '{"ok":true}'
                         $worker = Start-RemotePump $remote $stream
                     } catch {
+                        Write-Host "tcp failed: $($_.Exception.Message)"
                         Send-Text $stream ("{`"ok`":false,`"error`":`"连不上 $($request.host):$($request.port)`"}")
                         break
                     }
@@ -238,8 +244,10 @@ try {
                 }
             }
         } catch {
+            Write-Host "bridge error: $($_.Exception.Message)"
             try { Send-Text $stream "{`"ok`":false,`"error`":`"$($_.Exception.Message)`"}" } catch {}
         } finally {
+            Write-Host "preview closed"
             if ($tcp) { $tcp.Close() }
             if ($worker) { $worker.Stop(); $worker.Dispose() }
             $client.Close()
