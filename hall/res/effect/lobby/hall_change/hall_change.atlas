@@ -1,0 +1,27 @@
+
+hall_change.png
+size: 1600,285
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huanting_1
+  rotate: false
+  xy: 552, 45
+  size: 573, 238
+  orig: 573, 238
+  offset: 0, 0
+  index: -1
+huanting_2
+  rotate: false
+  xy: 1127, 77
+  size: 471, 206
+  orig: 471, 206
+  offset: 0, 0
+  index: -1
+huanting_3
+  rotate: false
+  xy: 2, 2
+  size: 548, 281
+  orig: 548, 281
+  offset: 0, 0
+  index: -1

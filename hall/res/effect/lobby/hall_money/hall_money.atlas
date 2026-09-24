@@ -1,0 +1,153 @@
+
+hall_money.png
+size: 356,289
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fff/money/bxxt
+  rotate: false
+  xy: 2, 226
+  size: 314, 61
+  orig: 314, 61
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00029
+  rotate: false
+  xy: 2, 49
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00030
+  rotate: false
+  xy: 262, 179
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00032
+  rotate: false
+  xy: 2, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00033
+  rotate: false
+  xy: 49, 49
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00035
+  rotate: false
+  xy: 262, 132
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00036
+  rotate: false
+  xy: 49, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00038
+  rotate: false
+  xy: 96, 49
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00039
+  rotate: false
+  xy: 96, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00041
+  rotate: false
+  xy: 143, 49
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00042
+  rotate: false
+  xy: 143, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00044
+  rotate: false
+  xy: 190, 49
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00045
+  rotate: false
+  xy: 190, 2
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00047
+  rotate: false
+  xy: 262, 85
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00048
+  rotate: false
+  xy: 237, 38
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00050
+  rotate: false
+  xy: 284, 38
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00051
+  rotate: false
+  xy: 309, 179
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00053
+  rotate: false
+  xy: 309, 132
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+fff/money/sg/1_00054
+  rotate: false
+  xy: 309, 85
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+heiquan
+  rotate: false
+  xy: 2, 96
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 132, 96
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

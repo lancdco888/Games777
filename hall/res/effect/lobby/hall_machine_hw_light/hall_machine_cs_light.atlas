@@ -1,0 +1,20 @@
+
+hall_machine_cs_light.png
+size: 674,674
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gd
+  rotate: false
+  xy: 231, 591
+  size: 97, 81
+  orig: 97, 81
+  offset: 0, 0
+  index: -1
+guang_lhj
+  rotate: false
+  xy: 2, 2
+  size: 227, 670
+  orig: 227, 670
+  offset: 0, 0
+  index: -1

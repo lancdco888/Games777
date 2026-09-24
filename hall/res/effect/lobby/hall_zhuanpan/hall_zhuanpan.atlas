@@ -1,0 +1,139 @@
+
+hall_zhuanpan.png
+size: 960,186
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fff/buy/cz_00007
+  rotate: false
+  xy: 224, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00009
+  rotate: false
+  xy: 316, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00011
+  rotate: false
+  xy: 408, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00013
+  rotate: false
+  xy: 500, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00015
+  rotate: false
+  xy: 592, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00017
+  rotate: false
+  xy: 684, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00019
+  rotate: false
+  xy: 776, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00021
+  rotate: false
+  xy: 868, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00023
+  rotate: false
+  xy: 132, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00024
+  rotate: false
+  xy: 224, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00026
+  rotate: false
+  xy: 316, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00028
+  rotate: false
+  xy: 408, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00030
+  rotate: false
+  xy: 500, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00032
+  rotate: false
+  xy: 592, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00034
+  rotate: false
+  xy: 684, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00036
+  rotate: false
+  xy: 776, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00038
+  rotate: false
+  xy: 868, 2
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+fff/buy/cz_00040
+  rotate: false
+  xy: 132, 94
+  size: 90, 90
+  orig: 90, 90
+  offset: 0, 0
+  index: -1
+quan1
+  rotate: false
+  xy: 2, 56
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

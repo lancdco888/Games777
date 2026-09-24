@@ -1,0 +1,13 @@
+
+hall_buy.png
+size: 236,236
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xx
+  rotate: false
+  xy: 2, 2
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
