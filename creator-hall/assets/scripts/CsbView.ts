@@ -101,6 +101,35 @@ function createNode(item: CsbNode, parentData: CsbNode, named: Map<string, Node>
 
 const imageStats = { pending: 0, loaded: 0, missing: 0 };
 
+export function attachSprite(node: Node, spritePath: string): void {
+    addSprite(node, spritePath);
+}
+
+/** Runtime buttons only respond after a click listener is attached. */
+export function bindClick(node: Node | null | undefined, handler: () => void): void {
+    if (!node) {
+        return;
+    }
+    let button = node.getComponent(Button);
+    if (!button) {
+        button = node.addComponent(Button);
+    }
+    button.transition = Button.Transition.SCALE;
+    button.zoomScale = 0.94;
+    button.interactable = true;
+    let locked = false;
+    node.on(Button.EventType.CLICK, () => {
+        if (locked) {
+            return;
+        }
+        locked = true;
+        handler();
+        setTimeout(() => {
+            locked = false;
+        }, 250);
+    });
+}
+
 function addSprite(node: Node, spritePath: string): void {
     const sprite = node.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.CUSTOM;
