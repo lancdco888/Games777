@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>es/anniu_caijingyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/anniu_caijingyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{461,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/anniu_teshuyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{702,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/anniu_teshuyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/anniu_yibanyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{461,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/anniu_yibanyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{702,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>es/boss.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,96},{104,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{104,113}</string>
+			</dict>
+			<key>es/gengenghuanpaotai_09.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{208,170},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{462,170},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{716,170},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,241},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,312},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,383},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{254,241},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{508,241},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_08.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{762,241},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_09.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{254,312},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_10.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{254,383},{254,71}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{254,71}</string>
+			</dict>
+			<key>es/genghuanpaotai_zhuangbei.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{220,96}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,96}</string>
+			</dict>
+			<key>es/hw.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{104,96},{104,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{104,113}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>fish2_ui_es.png</string>
+			<key>realTextureFileName</key>
+			<string>fish2_ui_es.png</string>
+			<key>size</key>
+			<string>{1016,454}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1016</integer>
+			<key>height</key>
+			<integer>454</integer>
+		</dict>
+	</dict>
+</plist>

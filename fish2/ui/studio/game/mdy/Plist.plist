@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>game/mdy/BoardBig.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,556},{696,444}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{696,444}</string>
+			</dict>
+			<key>game/mdy/clock.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1978},{62,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{62,68}</string>
+			</dict>
+			<key>game/mdy/Coins_WholeLot.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{217,1504},{213,157}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{213,157}</string>
+			</dict>
+			<key>game/mdy/gold.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{62,1978},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>game/mdy/lizi_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{909,1778},{146,100}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{146,100}</string>
+			</dict>
+			<key>game/mdy/lizi_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{556,556}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{556,556}</string>
+			</dict>
+			<key>game/mdy/maodaye_shouzhi_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{909,1924},{80,81}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,81}</string>
+			</dict>
+			<key>game/mdy/maodaye_shouzhi_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{989,1924},{80,81}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{80,81}</string>
+			</dict>
+			<key>game/mdy/ShellClose.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,1252},{180,144}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{180,144}</string>
+			</dict>
+			<key>game/mdy/ShellOpen.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1504},{217,237}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{217,237}</string>
+			</dict>
+			<key>game/mdy/ShellOpen_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1741},{217,237}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{217,237}</string>
+			</dict>
+			<key>game/mdy/Snake.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,1252},{220,252}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,252}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (1).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{364,1252},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (10).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{217,1717},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (11).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{217,1928},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (12).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{307,1717},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (13).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{374,1463},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (14).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{397,1674},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (15).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{428,1885},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (16).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{444,556},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (17).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{444,767},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (18).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{444,978},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (19).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{454,1189},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (2).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{464,1400},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (20).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{487,1611},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (21).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{534,556},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (22).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{534,767},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (23).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{534,978},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (24).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{544,1189},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (25).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{554,1400},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (26).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{577,1611},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (27).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{639,1822},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (28).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{556,0},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (29).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{556,211},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (3).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{556,422},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (30).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{646,0},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (31).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{646,211},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (32).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{736,0},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (33).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{736,211},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (34).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{624,512},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (35).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{624,723},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (36).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{624,934},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (37).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{634,1145},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (38).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{644,1356},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (39).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{667,1567},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (4).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{729,1778},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (40).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{714,512},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (41).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{767,422},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (42).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{826,0},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (43).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{826,211},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (44).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{916,0},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (45).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{916,211},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (46).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{714,723},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (47).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{714,934},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (48).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{724,1145},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (49).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{734,1356},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (5).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{757,1567},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (50).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{819,1778},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (51).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{804,512},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (52).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{804,723},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (6).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{804,934},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (7).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{814,1145},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (8).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{824,1356},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+			<key>game/mdy/lizi/maodaye_lizi_1 (9).png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{847,1567},{90,211}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{90,211}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{2048,2048}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>2048</integer>
+			<key>height</key>
+			<integer>2048</integer>
+		</dict>
+	</dict>
+</plist>

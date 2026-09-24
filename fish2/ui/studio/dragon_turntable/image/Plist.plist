@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>dragon_turntable/image/00_turntable_Base.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{334,290}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{336,292}</string>
+			</dict>
+			<key>dragon_turntable/image/01_turntable_in.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{452,270},{108,109}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{110,111}</string>
+			</dict>
+			<key>dragon_turntable/image/02_turntable_mid.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{821,193},{186,186}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{188,188}</string>
+			</dict>
+			<key>dragon_turntable/image/03_turntable_out.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{608,0},{212,213}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{214,215}</string>
+			</dict>
+			<key>dragon_turntable/image/04_dragonBall.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{736,212},{90,80}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{90,80}</string>
+			</dict>
+			<key>dragon_turntable/image/arrowflash_00.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{606,334},{82,55}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{82,55}</string>
+			</dict>
+			<key>dragon_turntable/image/arrowflash_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{736,302},{92,68}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{92,69}</string>
+			</dict>
+			<key>dragon_turntable/image/bullionflash_00.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{334,270},{118,110}}</string>
+				<key>offset</key>
+				<string>{1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,120}</string>
+			</dict>
+			<key>dragon_turntable/image/bullionflash_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{804,379},{120,120}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{120,120}</string>
+			</dict>
+			<key>dragon_turntable/image/incirle.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{924,447},{91,52}}</string>
+				<key>offset</key>
+				<string>{-1,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{94,53}</string>
+			</dict>
+			<key>dragon_turntable/image/midcirle.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{561,358},{90,42}}</string>
+				<key>offset</key>
+				<string>{1,-1}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{93,45}</string>
+			</dict>
+			<key>dragon_turntable/image/outcirle.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{603,389},{81,51}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{83,52}</string>
+			</dict>
+			<key>dragon_turntable/image/Pointer_S_000.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{924,379},{68,75}}</string>
+				<key>offset</key>
+				<string>{0,-5}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{68,88}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglong_baiguang_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{561,270},{88,45}}</string>
+				<key>offset</key>
+				<string>{-1,2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{94,53}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglong_baiguang_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{688,334},{90,39}}</string>
+				<key>offset</key>
+				<string>{2,-2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{93,45}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglong_baiguang_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{727,394},{83,51}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{83,52}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglongzhuanpan_guang01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{608,212},{122,128}}</string>
+				<key>offset</key>
+				<string>{1,-6}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{270,274}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglongzhuanpan_guang02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{821,0},{193,194}}</string>
+				<key>offset</key>
+				<string>{-1,-2}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{270,274}</string>
+			</dict>
+			<key>dragon_turntable/image/shenglongzhuanpan_guang03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{334,0},{270,274}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{270,274}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Plist.png</string>
+			<key>realTextureFileName</key>
+			<string>Plist.png</string>
+			<key>size</key>
+			<string>{1024,512}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>1024</integer>
+			<key>height</key>
+			<integer>512</integer>
+		</dict>
+	</dict>
+</plist>

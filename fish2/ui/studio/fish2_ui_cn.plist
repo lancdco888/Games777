@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>cn/anniu_caijingyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/anniu_caijingyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{461,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/anniu_teshuyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{702,0},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/anniu_teshuyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{220,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/anniu_yibanyu_huangse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{461,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/anniu_yibanyu_lanse.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{702,85},{241,85}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{241,85}</string>
+			</dict>
+			<key>cn/boss.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,96},{104,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{104,113}</string>
+			</dict>
+			<key>cn/genghuanpaotai_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{208,170},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,209},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{389,170},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{570,170},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{751,170},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_06.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{181,223},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_07.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,262},{181,53}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{181,53}</string>
+			</dict>
+			<key>cn/genghuanpaotai_zhuangbei.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{220,96}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{220,96}</string>
+			</dict>
+			<key>cn/hw.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{104,96},{104,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{104,113}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>fish2_ui_cn.png</string>
+			<key>realTextureFileName</key>
+			<string>fish2_ui_cn.png</string>
+			<key>size</key>
+			<string>{943,315}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>943</integer>
+			<key>height</key>
+			<integer>315</integer>
+		</dict>
+	</dict>
+</plist>
