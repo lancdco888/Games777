@@ -1,0 +1,465 @@
+{
+    "assets": {
+        "res/casino332/background/background.png8f0c3b94c2ae3bb9fd58a6c0bf7d6d3c": {
+            "md5": "8f0c3b94c2ae3bb9fd58a6c0bf7d6d3c",
+            "bytes": 216178
+        },
+        "res/casino332/background/background_fg.png9263fc9e179f8f83be25c832acb2bb70": {
+            "md5": "9263fc9e179f8f83be25c832acb2bb70",
+            "bytes": 194612
+        },
+        "res/casino332/info/Info.pliste1519e97b7e9ef01c545108289843722": {
+            "md5": "e1519e97b7e9ef01c545108289843722",
+            "bytes": 2573
+        },
+        "res/casino332/info/Info.png4476a41940a3760e3b43da2c1c877f5f": {
+            "md5": "4476a41940a3760e3b43da2c1c877f5f",
+            "bytes": 187273
+        },
+        "res/casino332/level/cjt_buffalo.atlasfc39ca177b861718ef3179896f42f07d": {
+            "md5": "fc39ca177b861718ef3179896f42f07d",
+            "bytes": 2636
+        },
+        "res/casino332/level/cjt_buffalo.json0b6a114d89c7dab8b013f03d54ff4351": {
+            "md5": "0b6a114d89c7dab8b013f03d54ff4351",
+            "bytes": 18617
+        },
+        "res/casino332/level/cjt_buffalo.png15c53582677ecc8e6b6e64ca6da01e99": {
+            "md5": "15c53582677ecc8e6b6e64ca6da01e99",
+            "bytes": 64556
+        },
+        "res/casino332/loading/loading_01.png7f21feead8391031d507b7aabcf4d0a7": {
+            "md5": "7f21feead8391031d507b7aabcf4d0a7",
+            "bytes": 12515
+        },
+        "res/casino332/loading/loading_02.png945ac1686c4356ca890ccbbb02dad982": {
+            "md5": "945ac1686c4356ca890ccbbb02dad982",
+            "bytes": 4474
+        },
+        "res/casino332/loading/loading_bg.png0482a0af993731ff90fcbbaafe439665": {
+            "md5": "0482a0af993731ff90fcbbaafe439665",
+            "bytes": 162221
+        },
+        "res/casino332/newres/InfoBackground.png6354a71b6d50548f005932d0bbc2ebd5": {
+            "md5": "6354a71b6d50548f005932d0bbc2ebd5",
+            "bytes": 180448
+        },
+        "res/casino332/newres/audio/1.1.mp374f367ce8b74ae47445235e35f5bd5f3": {
+            "md5": "74f367ce8b74ae47445235e35f5bd5f3",
+            "bytes": 6477
+        },
+        "res/casino332/newres/audio/close.mp33d37e5cb1168d6174492f267fdce20f8": {
+            "md5": "3d37e5cb1168d6174492f267fdce20f8",
+            "bytes": 25172
+        },
+        "res/casino332/newres/audio/fgbegin.mp3c7e99b7b103185c5bf1d2db04f9c41a9": {
+            "md5": "c7e99b7b103185c5bf1d2db04f9c41a9",
+            "bytes": 20896
+        },
+        "res/casino332/newres/audio/fgbgm.mp322386539d1ef0ccb4925f4b03e549e1d": {
+            "md5": "22386539d1ef0ccb4925f4b03e549e1d",
+            "bytes": 441154
+        },
+        "res/casino332/newres/audio/fgend.mp3e571b14efb9cbcc8aa13a17aa4212278": {
+            "md5": "e571b14efb9cbcc8aa13a17aa4212278",
+            "bytes": 26539
+        },
+        "res/casino332/newres/audio/fgretrigger.mp3bea7bb4fa0b95d8627fe87c9db10ae40": {
+            "md5": "bea7bb4fa0b95d8627fe87c9db10ae40",
+            "bytes": 9194
+        },
+        "res/casino332/newres/audio/fly.mp3d35b57978bb4f356e2a16d0135d96887": {
+            "md5": "d35b57978bb4f356e2a16d0135d96887",
+            "bytes": 4596
+        },
+        "res/casino332/newres/audio/flyin.mp3df60e59cb2a791009ca72fa0302fc1c7": {
+            "md5": "df60e59cb2a791009ca72fa0302fc1c7",
+            "bytes": 12537
+        },
+        "res/casino332/newres/audio/H1.mp364210df40ac8635a11c7949002b58769": {
+            "md5": "64210df40ac8635a11c7949002b58769",
+            "bytes": 33984
+        },
+        "res/casino332/newres/audio/mapbgm.mp3334397ff30834f27c57f85c10fb6193d": {
+            "md5": "334397ff30834f27c57f85c10fb6193d",
+            "bytes": 69589
+        },
+        "res/casino332/newres/audio/Mapchange.mp3a916d6f965fa6e829acf18a4d57391ba": {
+            "md5": "a916d6f965fa6e829acf18a4d57391ba",
+            "bytes": 6268
+        },
+        "res/casino332/newres/audio/Mapclick.mp3b7fa750f60657a6d3fa2402bb8cb2b6a": {
+            "md5": "b7fa750f60657a6d3fa2402bb8cb2b6a",
+            "bytes": 6059
+        },
+        "res/casino332/newres/audio/MapCoin.mp3685fb273ae42a0a47b98835df40e0d3b": {
+            "md5": "685fb273ae42a0a47b98835df40e0d3b",
+            "bytes": 7731
+        },
+        "res/casino332/newres/audio/MapFG.mp363c7699500d591a5fd79d4909f87a867": {
+            "md5": "63c7699500d591a5fd79d4909f87a867",
+            "bytes": 7522
+        },
+        "res/casino332/newres/audio/Mapflip.mp3d691cb49bb79b6f44b24c7501e1b8ef0": {
+            "md5": "d691cb49bb79b6f44b24c7501e1b8ef0",
+            "bytes": 10448
+        },
+        "res/casino332/newres/audio/mapunlock.mp36273fb96912fca3a59de5e9be83299f2": {
+            "md5": "6273fb96912fca3a59de5e9be83299f2",
+            "bytes": 10656
+        },
+        "res/casino332/newres/audio/MapUnlock2.mp340fb5705145a24fba07acc1df2043a6a": {
+            "md5": "40fb5705145a24fba07acc1df2043a6a",
+            "bytes": 10656
+        },
+        "res/casino332/newres/audio/Mapwin.mp352d2f8e3b27c284f65e5458938f28ea9": {
+            "md5": "52d2f8e3b27c284f65e5458938f28ea9",
+            "bytes": 10865
+        },
+        "res/casino332/newres/audio/MapX2.mp367b49e38ad58c1b6164dbf66a5143fd5": {
+            "md5": "67b49e38ad58c1b6164dbf66a5143fd5",
+            "bytes": 12119
+        },
+        "res/casino332/newres/audio/ngbgm.mp380ba0a97b2764e30972d555ee6c98214": {
+            "md5": "80ba0a97b2764e30972d555ee6c98214",
+            "bytes": 349203
+        },
+        "res/casino332/newres/audio/reelfast.mp3878339f20310ea1ec56af56dfc366038": {
+            "md5": "878339f20310ea1ec56af56dfc366038",
+            "bytes": 21952
+        },
+        "res/casino332/newres/audio/reelscatr-1.mp3750727179184769fe0a801c0668f2e8a": {
+            "md5": "750727179184769fe0a801c0668f2e8a",
+            "bytes": 7242
+        },
+        "res/casino332/newres/audio/reelscatr-2.mp3032565b6d3683c9fa592517a62dff65d": {
+            "md5": "032565b6d3683c9fa592517a62dff65d",
+            "bytes": 7626
+        },
+        "res/casino332/newres/audio/reelscatr-3.mp350d421c43d8bc546c98eeba4877bd472": {
+            "md5": "50d421c43d8bc546c98eeba4877bd472",
+            "bytes": 7626
+        },
+        "res/casino332/newres/audio/reelscatr-4.mp357e7d8b0b14f7e4d8a248f5c30efc34d": {
+            "md5": "57e7d8b0b14f7e4d8a248f5c30efc34d",
+            "bytes": 7242
+        },
+        "res/casino332/newres/audio/reelscatr-5.mp3f04434f19a3f88f476b8c03e1bbedc30": {
+            "md5": "f04434f19a3f88f476b8c03e1bbedc30",
+            "bytes": 7242
+        },
+        "res/casino332/newres/audio/reelstop.mp3e3abc55393d59c26503eea9efe1e9311": {
+            "md5": "e3abc55393d59c26503eea9efe1e9311",
+            "bytes": 3693
+        },
+        "res/casino332/newres/audio/triggering.mp3c4ab6697df31570aaa0b80c217c0af2d": {
+            "md5": "c4ab6697df31570aaa0b80c217c0af2d",
+            "bytes": 25408
+        },
+        "res/casino332/newres/audio/wild.mp3933259172015ac19c23e94d83a8a33a7": {
+            "md5": "933259172015ac19c23e94d83a8a33a7",
+            "bytes": 36096
+        },
+        "res/casino332/newres/audio/win_a.mp32b1c81577f35e6a7a521b82cf91a3d0e": {
+            "md5": "2b1c81577f35e6a7a521b82cf91a3d0e",
+            "bytes": 40277
+        },
+        "res/casino332/newres/audio/win_b.mp3f4dfa40e2e1e90687d1972eee67bc03c": {
+            "md5": "f4dfa40e2e1e90687d1972eee67bc03c",
+            "bytes": 28420
+        },
+        "res/casino332/newres/audio/win_c.mp3db385892054a2f7b9462ecfbb5367860": {
+            "md5": "db385892054a2f7b9462ecfbb5367860",
+            "bytes": 55796
+        },
+        "res/casino332/newres/audio/win_d.mp36d449750db048a452cf28095abb847e2": {
+            "md5": "6d449750db048a452cf28095abb847e2",
+            "bytes": 87982
+        },
+        "res/casino332/newres/audio/win_end.mp3841038f7138aef3bfc6f37e8d28d9c56": {
+            "md5": "841038f7138aef3bfc6f37e8d28d9c56",
+            "bytes": 6895
+        },
+        "res/casino332/newres/audio/X2.mp3d81fbf5a621dda1f2fb206a98142726c": {
+            "md5": "d81fbf5a621dda1f2fb206a98142726c",
+            "bytes": 12328
+        },
+        "res/casino332/newres/fnt/count_num.fnte7afaac5fccf57d8309f473fc0fb72f0": {
+            "md5": "e7afaac5fccf57d8309f473fc0fb72f0",
+            "bytes": 1417
+        },
+        "res/casino332/newres/fnt/count_num.png406d91c5b73779b0a6f1c066f0949113": {
+            "md5": "406d91c5b73779b0a6f1c066f0949113",
+            "bytes": 4893
+        },
+        "res/casino332/newres/fnt/fg_num.fntbf877aed5fcdf6022e227e69b9621e27": {
+            "md5": "bf877aed5fcdf6022e227e69b9621e27",
+            "bytes": 1527
+        },
+        "res/casino332/newres/fnt/fg_num.png1bcb42f47c0f8c52f046b357a5b68682": {
+            "md5": "1bcb42f47c0f8c52f046b357a5b68682",
+            "bytes": 1581
+        },
+        "res/casino332/newres/fnt/map_num.fnta721610cd94aac2cfe96ab99cd641d36": {
+            "md5": "a721610cd94aac2cfe96ab99cd641d36",
+            "bytes": 2206
+        },
+        "res/casino332/newres/fnt/map_num.png20a593b25ba4e50c4d83e3b773990f47": {
+            "md5": "20a593b25ba4e50c4d83e3b773990f47",
+            "bytes": 4745
+        },
+        "res/casino332/newres/fnt/total_num.fnt05888ad9dfcf9ef4f7efdb3b56339edb": {
+            "md5": "05888ad9dfcf9ef4f7efdb3b56339edb",
+            "bytes": 2209
+        },
+        "res/casino332/newres/fnt/total_num.png3d84658ef6930e0019a7cf44ca130bca": {
+            "md5": "3d84658ef6930e0019a7cf44ca130bca",
+            "bytes": 31600
+        },
+        "res/casino332/newres/lang_CN/game_fever_text_CN.png61f0de3ad3cda00dcfa8d70cc941c2be": {
+            "md5": "61f0de3ad3cda00dcfa8d70cc941c2be",
+            "bytes": 4484
+        },
+        "res/casino332/newres/lang_EN/add_extra_EN.png3574f3d26638c49df832b5a532d3a652": {
+            "md5": "3574f3d26638c49df832b5a532d3a652",
+            "bytes": 9640
+        },
+        "res/casino332/newres/lang_EN/add_you_win_EN.pngb1c6f0325f9c268675219e18b4664d5a": {
+            "md5": "b1c6f0325f9c268675219e18b4664d5a",
+            "bytes": 7833
+        },
+        "res/casino332/newres/lang_EN/all_EN.png5e0e69a7cfd0a4430139e59409b78a37": {
+            "md5": "5e0e69a7cfd0a4430139e59409b78a37",
+            "bytes": 1440
+        },
+        "res/casino332/newres/lang_EN/all_page_EN.png8269f9dbf6eab443d716f7a6fe1b48e8": {
+            "md5": "8269f9dbf6eab443d716f7a6fe1b48e8",
+            "bytes": 7599
+        },
+        "res/casino332/newres/lang_EN/and_EN.pngb76de85748562abfeec8781973d9f0fc": {
+            "md5": "b76de85748562abfeec8781973d9f0fc",
+            "bytes": 1726
+        },
+        "res/casino332/newres/lang_EN/are_EN.png6c2f44a16d04adc0201ea11b38d39f4d": {
+            "md5": "6c2f44a16d04adc0201ea11b38d39f4d",
+            "bytes": 1760
+        },
+        "res/casino332/newres/lang_EN/free_game_EN.png68af5f2bf87f6b7204ff602b03adea4e": {
+            "md5": "68af5f2bf87f6b7204ff602b03adea4e",
+            "bytes": 1736
+        },
+        "res/casino332/newres/lang_EN/free_start_EN.png7be3b5358d1774d25fcaec1a41656c0e": {
+            "md5": "7be3b5358d1774d25fcaec1a41656c0e",
+            "bytes": 3103
+        },
+        "res/casino332/newres/lang_EN/game_fever_text_EN.pngd28c17d962abd99001e6056bf4691bc6": {
+            "md5": "d28c17d962abd99001e6056bf4691bc6",
+            "bytes": 4231
+        },
+        "res/casino332/newres/lang_EN/Info_01_EN.pnge3a6edfd14f9857acf539c075350c602": {
+            "md5": "e3a6edfd14f9857acf539c075350c602",
+            "bytes": 56698
+        },
+        "res/casino332/newres/lang_EN/Info_02_EN.pngbf37ed3a23329be94dfb87afe4c52164": {
+            "md5": "bf37ed3a23329be94dfb87afe4c52164",
+            "bytes": 45940
+        },
+        "res/casino332/newres/lang_EN/Info_03_EN.png8e80e45e65a75f41a7a3b092f05ea042": {
+            "md5": "8e80e45e65a75f41a7a3b092f05ea042",
+            "bytes": 107713
+        },
+        "res/casino332/newres/lang_EN/map_tip_EN.pnge80efce67a3e060b25a13baf17543dbf": {
+            "md5": "e80efce67a3e060b25a13baf17543dbf",
+            "bytes": 5478
+        },
+        "res/casino332/newres/lang_EN/new_page_EN.png7105e2e645cec01e8deebf54f2f71782": {
+            "md5": "7105e2e645cec01e8deebf54f2f71782",
+            "bytes": 12470
+        },
+        "res/casino332/newres/lang_EN/pop_congratulation_EN.pngf4f9504cb78eed740cdd44e4fa0304bb": {
+            "md5": "f4f9504cb78eed740cdd44e4fa0304bb",
+            "bytes": 24221
+        },
+        "res/casino332/newres/lang_EN/pop_free_game_EN.png52c21db68ad9b9fc5d2bede544666170": {
+            "md5": "52c21db68ad9b9fc5d2bede544666170",
+            "bytes": 6091
+        },
+        "res/casino332/newres/lang_EN/pop_free_up_EN.pngd0d44453af153af90c687b206777faa2": {
+            "md5": "d0d44453af153af90c687b206777faa2",
+            "bytes": 12513
+        },
+        "res/casino332/newres/lang_EN/pop_ok_EN.png06f08210e0050a0b683a3234f943effe": {
+            "md5": "06f08210e0050a0b683a3234f943effe",
+            "bytes": 2019
+        },
+        "res/casino332/newres/lang_EN/pop_you_win_EN.png71a2f6d19676eb8948ca918368b3328a": {
+            "md5": "71a2f6d19676eb8948ca918368b3328a",
+            "bytes": 4658
+        },
+        "res/casino332/newres/lang_EN/total_win_EN.pnga072b7b9bcaa21fe6e37b4fc5699b68a": {
+            "md5": "a072b7b9bcaa21fe6e37b4fc5699b68a",
+            "bytes": 16698
+        },
+        "res/casino332/newres/lang_EN/trade_EN.png24c0efddb3b68db65556c597fd0d3f74": {
+            "md5": "24c0efddb3b68db65556c597fd0d3f74",
+            "bytes": 3292
+        },
+        "res/casino332/newres/lang_EN/well_done_EN.png24bf9476407f64d244deef9c9d123cb2": {
+            "md5": "24bf9476407f64d244deef9c9d123cb2",
+            "bytes": 5983
+        },
+        "res/casino332/newres/plist/bg.plistc0639f29289dc10165ad9c96c8803215": {
+            "md5": "c0639f29289dc10165ad9c96c8803215",
+            "bytes": 3102
+        },
+        "res/casino332/newres/plist/bg.pnge88cbe51b1bf432b2fc8e8fcff7a4546": {
+            "md5": "e88cbe51b1bf432b2fc8e8fcff7a4546",
+            "bytes": 376655
+        },
+        "res/casino332/newres/plist/freeGame.plist59ae088a5041a88f18645f82a1ae82ae": {
+            "md5": "59ae088a5041a88f18645f82a1ae82ae",
+            "bytes": 10107
+        },
+        "res/casino332/newres/plist/freeGame.png1c9f4cf023ba61c187519ce29c8b7ad1": {
+            "md5": "1c9f4cf023ba61c187519ce29c8b7ad1",
+            "bytes": 401986
+        },
+        "res/casino332/newres/plist/lang_EN.plistee3180f4bf2c3086d0f8ccf9b196ebe7": {
+            "md5": "ee3180f4bf2c3086d0f8ccf9b196ebe7",
+            "bytes": 11246
+        },
+        "res/casino332/newres/plist/lang_EN.png130d352f5cebbc1f71e74c43b3cfb904": {
+            "md5": "130d352f5cebbc1f71e74c43b3cfb904",
+            "bytes": 91749
+        },
+        "res/casino332/newres/plist/symbol.plist5c33a9f6eb99600c420c1e850645aa36": {
+            "md5": "5c33a9f6eb99600c420c1e850645aa36",
+            "bytes": 6777
+        },
+        "res/casino332/newres/plist/symbol.png82762000308d56f8843ee6036deecd33": {
+            "md5": "82762000308d56f8843ee6036deecd33",
+            "bytes": 99360
+        },
+        "res/casino332/newres/spine/Collect_Big.atlas0e504f35580006df75fe7de9d3ed9189": {
+            "md5": "0e504f35580006df75fe7de9d3ed9189",
+            "bytes": 6962
+        },
+        "res/casino332/newres/spine/Collect_Big.jsond8e96fa4ac8a04a6ccc5f8a1cc19d809": {
+            "md5": "d8e96fa4ac8a04a6ccc5f8a1cc19d809",
+            "bytes": 19034
+        },
+        "res/casino332/newres/spine/Collect_Big.pngaaf64d0f3c607ea62a03da6727be402d": {
+            "md5": "aaf64d0f3c607ea62a03da6727be402d",
+            "bytes": 154395
+        },
+        "res/casino332/newres/spine/Collect_Small.atlas94efb3ebd06dcfd21922cf345faec901": {
+            "md5": "94efb3ebd06dcfd21922cf345faec901",
+            "bytes": 178
+        },
+        "res/casino332/newres/spine/Collect_Small.jsonaa652a2f6d59cc9759c08bc731a42ada": {
+            "md5": "aa652a2f6d59cc9759c08bc731a42ada",
+            "bytes": 1352
+        },
+        "res/casino332/newres/spine/Collect_Small.png578aa915898447daa6289693e36f0e2c": {
+            "md5": "578aa915898447daa6289693e36f0e2c",
+            "bytes": 2281
+        },
+        "res/casino332/newres/spine/H1.atlas513d2fea96cd88913270a151f864ee3c": {
+            "md5": "513d2fea96cd88913270a151f864ee3c",
+            "bytes": 8124
+        },
+        "res/casino332/newres/spine/H1.json28210a32351f6f8fcf9a26820b13a719": {
+            "md5": "28210a32351f6f8fcf9a26820b13a719",
+            "bytes": 6764
+        },
+        "res/casino332/newres/spine/H1.pngeb4851844e39e4d8180affef44d44dad": {
+            "md5": "eb4851844e39e4d8180affef44d44dad",
+            "bytes": 852882
+        },
+        "res/casino332/newres/spine/Map.atlasb6134c355c28ba095a363f2810ac5e77": {
+            "md5": "b6134c355c28ba095a363f2810ac5e77",
+            "bytes": 4127
+        },
+        "res/casino332/newres/spine/Map.json7178cd3d0da6597333963e411b0ced0f": {
+            "md5": "7178cd3d0da6597333963e411b0ced0f",
+            "bytes": 3654
+        },
+        "res/casino332/newres/spine/Map.pngc715cd14749499eea293fb7b0de8c912": {
+            "md5": "c715cd14749499eea293fb7b0de8c912",
+            "bytes": 166773
+        },
+        "res/casino332/newres/spine/Map_LiZi_Big.atlas22f9a9d89f2a74d377b62c3cdd9229e4": {
+            "md5": "22f9a9d89f2a74d377b62c3cdd9229e4",
+            "bytes": 2411
+        },
+        "res/casino332/newres/spine/Map_LiZi_Big.jsonde076c6aeec353321164deece041a8a5": {
+            "md5": "de076c6aeec353321164deece041a8a5",
+            "bytes": 2452
+        },
+        "res/casino332/newres/spine/Map_LiZi_Big.pngde6143cea4cdb3779ecd107c42748941": {
+            "md5": "de6143cea4cdb3779ecd107c42748941",
+            "bytes": 113112
+        },
+        "res/casino332/newres/spine/Map_LiZi_Small.atlas17476bb21bdc3a181d985d9740c019e8": {
+            "md5": "17476bb21bdc3a181d985d9740c019e8",
+            "bytes": 2781
+        },
+        "res/casino332/newres/spine/Map_LiZi_Small.jsoncf5da3033d289d40b43e60f74139470f": {
+            "md5": "cf5da3033d289d40b43e60f74139470f",
+            "bytes": 2763
+        },
+        "res/casino332/newres/spine/Map_LiZi_Small.pngf79bdb9873ca2cd3505ae4a8f3466e5b": {
+            "md5": "f79bdb9873ca2cd3505ae4a8f3466e5b",
+            "bytes": 46450
+        },
+        "res/casino332/newres/spine/Scatter.atlas44d3cc0a66d9ee10aa1111256bac3bc9": {
+            "md5": "44d3cc0a66d9ee10aa1111256bac3bc9",
+            "bytes": 4935
+        },
+        "res/casino332/newres/spine/Scatter.jsonc7c8ddf5dd8cf609cd99311bed6ef0b7": {
+            "md5": "c7c8ddf5dd8cf609cd99311bed6ef0b7",
+            "bytes": 4944
+        },
+        "res/casino332/newres/spine/Scatter.pngff934e2e3c69bf838c3668d9d20c7df6": {
+            "md5": "ff934e2e3c69bf838c3668d9d20c7df6",
+            "bytes": 860565
+        },
+        "res/casino332/newres/spine/Scatter2.pnga93aabfb6fdc578183ee7f12d76ed663": {
+            "md5": "a93aabfb6fdc578183ee7f12d76ed663",
+            "bytes": 39563
+        },
+        "res/casino332/newres/spine/Wild.atlasc8a26d5c960ebab53873f2ed79c75192": {
+            "md5": "c8a26d5c960ebab53873f2ed79c75192",
+            "bytes": 8405
+        },
+        "res/casino332/newres/spine/Wild.jsond4f53489b521003914b80402cc6189bd": {
+            "md5": "d4f53489b521003914b80402cc6189bd",
+            "bytes": 76047
+        },
+        "res/casino332/newres/spine/Wild.pnga9ac9d72cf33461f774fd06b8697c793": {
+            "md5": "a9ac9d72cf33461f774fd06b8697c793",
+            "bytes": 270464
+        },
+        "res/casino332/newres/spine/YingFenKuang.atlasde4ce513430e46f76814c12fe38229e5": {
+            "md5": "de4ce513430e46f76814c12fe38229e5",
+            "bytes": 2435
+        },
+        "res/casino332/newres/spine/YingFenKuang.jsonffb551faee65b84f987a3033787872cc": {
+            "md5": "ffb551faee65b84f987a3033787872cc",
+            "bytes": 2424
+        },
+        "res/casino332/newres/spine/YingFenKuang.pngece3945569528b480cd72ba2dcc3d059": {
+            "md5": "ece3945569528b480cd72ba2dcc3d059",
+            "bytes": 188603
+        },
+        "src/casino332/AfricanBuffalo_Item.lua9c619970212892975cb5ff46dcb2dc59": {
+            "md5": "9c619970212892975cb5ff46dcb2dc59",
+            "bytes": 4258
+        },
+        "src/casino332/Panel_AfricanBuffalo.luaf10dde4044e4e4a62859ff5d7dd6a8d6": {
+            "md5": "f10dde4044e4e4a62859ff5d7dd6a8d6",
+            "bytes": 33518
+        }
+    },
+    "version": "1.0.4"
+}

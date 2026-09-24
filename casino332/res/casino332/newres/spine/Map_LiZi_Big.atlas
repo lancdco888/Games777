@@ -1,0 +1,146 @@
+
+Map_LiZi_Big.png
+size: 1568,396
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/LiZi_D/LiZi_D_001
+  rotate: false
+  xy: 288, 2
+  size: 25, 29
+  orig: 260, 260
+  offset: 117, 142
+  index: -1
+images/LiZi_D/LiZi_D_002
+  rotate: false
+  xy: 1483, 23
+  size: 54, 58
+  orig: 260, 260
+  offset: 102, 131
+  index: -1
+images/LiZi_D/LiZi_D_003
+  rotate: false
+  xy: 1483, 83
+  size: 83, 87
+  orig: 260, 260
+  offset: 87, 119
+  index: -1
+images/LiZi_D/LiZi_D_004
+  rotate: false
+  xy: 410, 45
+  size: 106, 110
+  orig: 260, 260
+  offset: 76, 107
+  index: -1
+images/LiZi_D/LiZi_D_005
+  rotate: false
+  xy: 288, 33
+  size: 120, 122
+  orig: 260, 260
+  offset: 69, 102
+  index: -1
+images/LiZi_D/LiZi_D_006
+  rotate: true
+  xy: 153, 14
+  size: 135, 133
+  orig: 260, 260
+  offset: 62, 97
+  index: -1
+images/LiZi_D/LiZi_D_007
+  rotate: false
+  xy: 2, 5
+  size: 149, 144
+  orig: 260, 260
+  offset: 55, 91
+  index: -1
+images/LiZi_D/LiZi_D_008
+  rotate: true
+  xy: 1325, 5
+  size: 165, 156
+  orig: 260, 260
+  offset: 47, 83
+  index: -1
+images/LiZi_D/LiZi_D_009
+  rotate: true
+  xy: 1156, 20
+  size: 180, 167
+  orig: 260, 260
+  offset: 40, 74
+  index: -1
+images/LiZi_D/LiZi_D_010
+  rotate: true
+  xy: 975, 4
+  size: 196, 179
+  orig: 260, 260
+  offset: 32, 64
+  index: -1
+images/LiZi_D/LiZi_D_011
+  rotate: false
+  xy: 953, 202
+  size: 213, 192
+  orig: 260, 260
+  offset: 24, 52
+  index: -1
+images/LiZi_D/LiZi_D_012
+  rotate: false
+  xy: 722, 188
+  size: 229, 206
+  orig: 260, 260
+  offset: 16, 39
+  index: -1
+images/LiZi_D/LiZi_D_013
+  rotate: false
+  xy: 474, 174
+  size: 246, 220
+  orig: 260, 260
+  offset: 8, 24
+  index: -1
+images/LiZi_D/LiZi_D_014
+  rotate: false
+  xy: 237, 157
+  size: 235, 237
+  orig: 260, 260
+  offset: 7, 8
+  index: -1
+images/LiZi_D/LiZi_D_015
+  rotate: true
+  xy: 1325, 172
+  size: 222, 235
+  orig: 260, 260
+  offset: 24, 10
+  index: -1
+images/LiZi_D/LiZi_D_016
+  rotate: false
+  xy: 2, 151
+  size: 233, 243
+  orig: 260, 260
+  offset: 17, 2
+  index: -1
+images/LiZi_D/LiZi_D_017
+  rotate: true
+  xy: 730, 11
+  size: 175, 243
+  orig: 260, 260
+  offset: 45, 2
+  index: -1
+images/LiZi_D/LiZi_D_018
+  rotate: true
+  xy: 518, 18
+  size: 154, 210
+  orig: 260, 260
+  offset: 56, 19
+  index: -1
+images/LiZi_D/LiZi_D_019
+  rotate: false
+  xy: 2, 2
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/LiZi_D/LiZi_D_000
+  rotate: false
+  xy: 2, 2
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1

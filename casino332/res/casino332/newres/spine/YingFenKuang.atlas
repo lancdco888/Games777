@@ -1,0 +1,146 @@
+
+YingFenKuang.png
+size: 1976,406
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/LiZi_K/LiZi_K_000
+  rotate: false
+  xy: 444, 2
+  size: 216, 180
+  orig: 240, 200
+  offset: 12, 10
+  index: -1
+images/LiZi_K/LiZi_K_001
+  rotate: true
+  xy: 178, 184
+  size: 220, 184
+  orig: 240, 200
+  offset: 10, 8
+  index: -1
+images/LiZi_K/LiZi_K_002
+  rotate: true
+  xy: 542, 186
+  size: 218, 188
+  orig: 240, 200
+  offset: 11, 6
+  index: -1
+images/LiZi_K/LiZi_K_003
+  rotate: true
+  xy: 2, 182
+  size: 222, 174
+  orig: 240, 200
+  offset: 9, 13
+  index: -1
+images/LiZi_K/LiZi_K_004
+  rotate: true
+  xy: 732, 186
+  size: 218, 176
+  orig: 240, 200
+  offset: 11, 12
+  index: -1
+images/LiZi_K/LiZi_K_005
+  rotate: false
+  xy: 224, 2
+  size: 218, 180
+  orig: 240, 200
+  offset: 11, 10
+  index: -1
+images/LiZi_K/LiZi_K_006
+  rotate: true
+  xy: 364, 184
+  size: 220, 176
+  orig: 240, 200
+  offset: 10, 12
+  index: -1
+images/LiZi_K/LiZi_K_007
+  rotate: true
+  xy: 1444, 190
+  size: 214, 176
+  orig: 240, 200
+  offset: 13, 12
+  index: -1
+images/LiZi_K/LiZi_K_008
+  rotate: true
+  xy: 1088, 188
+  size: 216, 180
+  orig: 240, 200
+  offset: 12, 10
+  index: -1
+images/LiZi_K/LiZi_K_009
+  rotate: true
+  xy: 1270, 188
+  size: 216, 172
+  orig: 240, 200
+  offset: 12, 14
+  index: -1
+images/LiZi_K/LiZi_K_010
+  rotate: true
+  xy: 910, 186
+  size: 218, 176
+  orig: 240, 200
+  offset: 11, 12
+  index: -1
+images/LiZi_K/LiZi_K_011
+  rotate: false
+  xy: 2, 2
+  size: 220, 178
+  orig: 240, 200
+  offset: 10, 11
+  index: -1
+images/LiZi_K/LiZi_K_012
+  rotate: false
+  xy: 662, 2
+  size: 208, 182
+  orig: 240, 200
+  offset: 16, 9
+  index: -1
+images/LiZi_K/LiZi_K_013
+  rotate: false
+  xy: 1700, 20
+  size: 206, 174
+  orig: 240, 200
+  offset: 17, 13
+  index: -1
+images/LiZi_K/LiZi_K_014
+  rotate: true
+  xy: 1622, 196
+  size: 208, 178
+  orig: 240, 200
+  offset: 16, 11
+  index: -1
+images/LiZi_K/LiZi_K_015
+  rotate: false
+  xy: 872, 2
+  size: 208, 182
+  orig: 240, 200
+  offset: 16, 9
+  index: -1
+images/LiZi_K/LiZi_K_016
+  rotate: false
+  xy: 1284, 2
+  size: 210, 184
+  orig: 240, 200
+  offset: 15, 8
+  index: -1
+images/LiZi_K/LiZi_K_017
+  rotate: false
+  xy: 1082, 2
+  size: 200, 182
+  orig: 240, 200
+  offset: 20, 9
+  index: -1
+images/LiZi_K/LiZi_K_018
+  rotate: false
+  xy: 1496, 8
+  size: 202, 180
+  orig: 240, 200
+  offset: 19, 10
+  index: -1
+images/LiZi_K/LiZi_K_019
+  rotate: true
+  xy: 1802, 198
+  size: 206, 172
+  orig: 240, 200
+  offset: 17, 14
+  index: -1
