@@ -1,0 +1,265 @@
+
+Map.png
+size: 695,523
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/x/FanP_001
+  rotate: true
+  xy: 139, 132
+  size: 141, 98
+  orig: 182, 146
+  offset: 20, 24
+  index: -1
+images/x/FanP_002
+  rotate: true
+  xy: 239, 132
+  size: 141, 98
+  orig: 182, 146
+  offset: 20, 24
+  index: -1
+images/x/FanP_003
+  rotate: true
+  xy: 434, 292
+  size: 112, 106
+  orig: 182, 146
+  offset: 45, 23
+  index: -1
+images/x/FanP_004
+  rotate: false
+  xy: 642, 157
+  size: 27, 112
+  orig: 182, 146
+  offset: 81, 22
+  index: -1
+images/x/FanP_005
+  rotate: false
+  xy: 168, 275
+  size: 75, 111
+  orig: 182, 146
+  offset: 45, 22
+  index: -1
+images/x/FanP_006
+  rotate: true
+  xy: 346, 9
+  size: 136, 106
+  orig: 182, 146
+  offset: 16, 22
+  index: -1
+images/x/FanP_007
+  rotate: false
+  xy: 478, 416
+  size: 145, 105
+  orig: 182, 146
+  offset: 24, 22
+  index: -1
+images/x/FanP_008
+  rotate: false
+  xy: 590, 271
+  size: 101, 115
+  orig: 182, 146
+  offset: 52, 20
+  index: -1
+images/x/FanP_009
+  rotate: false
+  xy: 671, 146
+  size: 12, 123
+  orig: 182, 146
+  offset: 87, 18
+  index: -1
+images/x/FanP_010
+  rotate: false
+  xy: 454, 38
+  size: 87, 120
+  orig: 182, 146
+  offset: 36, 19
+  index: -1
+images/x/FanP_011
+  rotate: false
+  xy: 330, 406
+  size: 146, 115
+  orig: 182, 146
+  offset: 8, 18
+  index: -1
+images/x/FanP_012
+  rotate: false
+  xy: 170, 409
+  size: 158, 112
+  orig: 182, 146
+  offset: 15, 18
+  index: -1
+images/x/FanP_013
+  rotate: true
+  xy: 129, 2
+  size: 128, 122
+  orig: 182, 146
+  offset: 40, 16
+  index: -1
+images/x/FanP_014
+  rotate: false
+  xy: 245, 276
+  size: 54, 131
+  orig: 182, 146
+  offset: 72, 14
+  index: -1
+images/x/FanP_015
+  rotate: false
+  xy: 542, 282
+  size: 46, 132
+  orig: 182, 146
+  offset: 61, 14
+  index: -1
+images/x/FanP_016
+  rotate: false
+  xy: 2, 13
+  size: 125, 128
+  orig: 182, 146
+  offset: 14, 14
+  index: -1
+images/x/FanP_017
+  rotate: false
+  xy: 2, 275
+  size: 164, 122
+  orig: 182, 146
+  offset: 2, 14
+  index: -1
+images/x/FanP_018
+  rotate: false
+  xy: 2, 399
+  size: 166, 122
+  orig: 182, 146
+  offset: 15, 14
+  index: -1
+images/x/FanP_019
+  rotate: false
+  xy: 2, 143
+  size: 135, 130
+  orig: 182, 146
+  offset: 39, 13
+  index: -1
+images/x/FanP_020
+  rotate: false
+  xy: 625, 388
+  size: 68, 133
+  orig: 182, 146
+  offset: 68, 13
+  index: -1
+images/x/FanP_021
+  rotate: false
+  xy: 543, 45
+  size: 20, 132
+  orig: 182, 146
+  offset: 78, 14
+  index: -1
+images/x/FanP_022
+  rotate: false
+  xy: 253, 6
+  size: 91, 124
+  orig: 182, 146
+  offset: 33, 17
+  index: -1
+images/x/FanP_023
+  rotate: false
+  xy: 301, 291
+  size: 131, 113
+  orig: 182, 146
+  offset: 14, 20
+  index: -1
+images/x/FanP_024
+  rotate: true
+  xy: 339, 147
+  size: 142, 101
+  orig: 182, 146
+  offset: 16, 24
+  index: -1
+images/x/FanP_025
+  rotate: true
+  xy: 442, 160
+  size: 130, 95
+  orig: 182, 146
+  offset: 30, 27
+  index: -1
+images/x/FanP_026
+  rotate: false
+  xy: 539, 179
+  size: 101, 90
+  orig: 182, 146
+  offset: 47, 30
+  index: -1
+images/x/FanP_027
+  rotate: false
+  xy: 565, 94
+  size: 63, 83
+  orig: 182, 146
+  offset: 65, 34
+  index: -1
+images/x/FanP_028
+  rotate: true
+  xy: 543, 21
+  size: 22, 76
+  orig: 182, 146
+  offset: 82, 37
+  index: -1
+images/x/FanP_029
+  rotate: true
+  xy: 170, 395
+  size: 12, 67
+  orig: 182, 146
+  offset: 84, 42
+  index: -1
+images/x/FanP_030
+  rotate: false
+  xy: 630, 97
+  size: 35, 58
+  orig: 182, 146
+  offset: 71, 45
+  index: -1
+images/x/FanP_031
+  rotate: true
+  xy: 565, 45
+  size: 47, 50
+  orig: 182, 146
+  offset: 65, 49
+  index: -1
+images/x/FanP_032
+  rotate: true
+  xy: 650, 44
+  size: 51, 43
+  orig: 182, 146
+  offset: 64, 52
+  index: -1
+images/x/FanP_033
+  rotate: false
+  xy: 621, 4
+  size: 50, 38
+  orig: 182, 146
+  offset: 65, 54
+  index: -1
+images/x/FanP_034
+  rotate: false
+  xy: 454, 2
+  size: 47, 34
+  orig: 182, 146
+  offset: 67, 56
+  index: -1
+images/x/FanP_035
+  rotate: true
+  xy: 617, 48
+  size: 44, 31
+  orig: 182, 146
+  offset: 69, 58
+  index: -1
+images/x/FanP_036
+  rotate: false
+  xy: 301, 406
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+images/x/FanP_000
+  rotate: false
+  xy: 301, 406
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
