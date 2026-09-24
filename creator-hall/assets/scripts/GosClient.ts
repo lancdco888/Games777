@@ -1,5 +1,7 @@
 import { decodePacket, encodeAuth, encodeEnter, encodeRegister } from './GosPackets';
 import type { ServerAccount, ServerPacket } from './GosPackets';
+import { decodePlay } from './ServerPlay';
+import type { WirePacket } from './ServerPlay';
 import type { ServerSettings } from './ServerSettings';
 import { XxBuf } from './XxBuf';
 
@@ -49,6 +51,7 @@ export class GosClient {
     private linked = false;
     private readonly early: Uint8Array[] = [];
     private serial = 0;
+    accountId = 0;
     private generation = 0;
     private failed: Error | null = null;
     private textInbox: string | null = null;
@@ -74,6 +77,27 @@ export class GosClient {
         if (packet.kind !== 'register') {
             throw new Error(packet.kind === 'unknown' ? `注册返回了未识别的包 ${packet.typeId}` : '注册没有成功');
         }
+    }
+
+    get connected(): boolean {
+        return this.linked && !this.failed && this.socket !== null;
+    }
+
+    async request(serviceId: number, body: Uint8Array): Promise<WirePacket> {
+        if (!this.stream.opened.has(serviceId)) {
+            await this.waitService(serviceId, 8000);
+        }
+        const serial = this.serial + 1;
+        this.serial = serial;
+        this.send(packFrame(serviceId, -serial, body));
+        const deadline = Date.now() + 10000;
+        while (Date.now() < deadline) {
+            const frame = await this.nextFrame(deadline - Date.now());
+            if (frame.serviceId === serviceId && frame.serial === serial) {
+                return decodeWire(frame.body);
+            }
+        }
+        throw new Error('服务器未响应');
     }
 
     close(): void {
@@ -113,6 +137,7 @@ export class GosClient {
             throw new Error(`账号还在 ${packet.gameId} 游戏里，请先从原版客户端退出`);
         }
         const profile = profileFrom(packet.username, packet.accountId, packet.lobbyToken, packet.self);
+        this.accountId = profile.accountId;
         try {
             const entered = await this.roundTrip(encodeEnter(packet.lobbyToken));
             if (entered.kind === 'enter') {
@@ -213,18 +238,22 @@ export class GosClient {
         throw new Error(`登录服务没有打开。服务器开头数据：${preview}`);
     }
 
-    private async roundTrip(body: Uint8Array): Promise<ServerPacket> {
-        const serial = this.serial + 1;
-        this.serial = serial;
-        this.send(packFrame(0, -serial, body));
-        const deadline = Date.now() + 10000;
+    private async roundTrip(body: Uint8Array): Promise<WirePacket> {
+        return this.request(0, body);
+    }
+
+    private async waitService(serviceId: number, timeoutMs: number): Promise<void> {
+        const deadline = Date.now() + timeoutMs;
         while (Date.now() < deadline) {
-            const frame = await this.nextFrame(deadline - Date.now());
-            if (frame.serial === serial) {
-                return decodePacket(frame.body);
+            if (this.stream.opened.has(serviceId)) {
+                return;
             }
+            if (this.failed) {
+                throw this.failed;
+            }
+            await delay(20);
         }
-        throw new Error('服务器未响应');
+        throw new Error(`服务 ${serviceId} 没有打开`);
     }
 
     private send(frame: Uint8Array): void {
@@ -508,6 +537,14 @@ async function toBytes(data: unknown): Promise<Uint8Array> {
         return new Uint8Array(await blob.arrayBuffer());
     }
     throw new Error('收到了无法识别的数据');
+}
+
+function decodeWire(body: Uint8Array): WirePacket {
+    const packet: ServerPacket = decodePacket(body);
+    if (packet.kind !== 'unknown') {
+        return packet;
+    }
+    return decodePlay(body) ?? packet;
 }
 
 function delay(ms: number): Promise<void> {

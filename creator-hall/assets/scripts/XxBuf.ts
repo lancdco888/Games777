@@ -77,6 +77,10 @@ export class XxBuf {
         this.wvi32(value);
     }
 
+    wb(value: boolean): void {
+        this.wu8(value ? 1 : 0);
+    }
+
     ru8(): number {
         this.need(1);
         const value = this.bytes[this.offset];
@@ -140,6 +144,10 @@ export class XxBuf {
             return null;
         }
         return this.rvi32();
+    }
+
+    rb(): boolean {
+        return this.ru8() !== 0;
     }
 
     private need(count: number): void {

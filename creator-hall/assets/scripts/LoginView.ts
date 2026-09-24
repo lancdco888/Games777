@@ -42,6 +42,10 @@ export class LoginView {
         this.root.active = false;
     }
 
+    get server(): GosClient {
+        return this.client;
+    }
+
     disconnect(): void {
         this.client.close();
     }

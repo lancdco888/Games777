@@ -25,15 +25,6 @@ export class LobbyApp extends Component {
     private catalog: GameInfo[] = [];
 
     start(): void {
-        this.panels = new HallPanels(this.node, this.state);
-        this.panels.setLogout(() => {
-            this.login?.disconnect();
-            this.state.logout();
-            this.entered = false;
-            this.setLobbyVisible(false);
-            this.renderGameList();
-            this.login?.show();
-        });
         this.login = new LoginView(this.node, this.state, (message) => {
             this.entered = true;
             this.panels?.toast(message);
@@ -42,6 +33,15 @@ export class LobbyApp extends Component {
             this.refresh();
             this.bringNicknameIntoBar();
             this.raiseBars();
+        });
+        this.panels = new HallPanels(this.node, this.state, this.login.server);
+        this.panels.setLogout(() => {
+            this.login?.disconnect();
+            this.state.logout();
+            this.entered = false;
+            this.setLobbyVisible(false);
+            this.renderGameList();
+            this.login?.show();
         });
         this.state.listen(() => {
             if (this.entered) {
@@ -202,6 +202,7 @@ export class LobbyApp extends Component {
                     this.raiseBars();
                 },
                 (text) => this.panels?.toast(text),
+                this.state.online ? this.login?.server ?? null : null,
             );
             return;
         }

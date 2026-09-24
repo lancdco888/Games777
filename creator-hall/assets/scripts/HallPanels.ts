@@ -13,6 +13,25 @@ import {
     VerticalTextAlignment,
 } from 'cc';
 import { bindClick } from './CsbView';
+import type { GosClient } from './GosClient';
+import {
+    serverActivity,
+    serverBindAccount,
+    serverGift,
+    serverGiftPassword,
+    serverNickname,
+    serverPassword,
+    serverPhoneBind,
+    serverPhoneCode,
+    serverPlayer,
+    serverRecharge,
+    serverRelief,
+    serverSafe,
+    serverService,
+    serverSignIn,
+    serverWash,
+    serverWebsite,
+} from './HallApi';
 import { formatMoney, GameInfo, HallResult, HallState } from './HallState';
 
 const FISH_LEVELS: Array<[string, number, string]> = [
@@ -26,7 +45,7 @@ const RECHARGE_AMOUNTS = [100, 500, 1000, 5000, 10000, 50000];
 
 /**
  * Hall popups for the buttons on the original lobby.
- * Account changes stay on this device until the socket login is ported.
+ * Server login sends the original lobby packets. Local play keeps the demo account.
  */
 export class HallPanels {
     private popup: Node | null = null;
@@ -34,7 +53,11 @@ export class HallPanels {
 
     private logoutHandler: (() => void) | null = null;
 
-    constructor(private readonly root: Node, private readonly state: HallState) {}
+    constructor(
+        private readonly root: Node,
+        private readonly state: HallState,
+        private readonly server: GosClient,
+    ) {}
 
     setLogout(handler: () => void): void {
         this.logoutHandler = handler;
@@ -72,17 +95,52 @@ export class HallPanels {
     }
 
     copyUrl(): void {
-        this.copyText(this.state.url);
-        this.toast('复制成功');
+        if (!this.state.online) {
+            this.copyText(this.state.url);
+            this.toast('复制成功');
+            return;
+        }
+        if (!this.server.connected) {
+            this.toast('和服务器的连接已断开');
+            return;
+        }
+        void this.useServer(async () => {
+            const site = await serverWebsite(this.server, this.state);
+            this.copyText(this.state.url);
+            return site;
+        });
     }
 
     claimRelief(): void {
-        this.toast(this.state.claimRelief().message);
+        if (!this.state.online) {
+            this.toast(this.state.claimRelief().message);
+            return;
+        }
+        if (!this.server.connected) {
+            this.toast('和服务器的连接已断开');
+            return;
+        }
+        void this.useServer(() => serverRelief(this.server, this.state));
     }
 
     openProfile(): void {
+        if (this.state.online) {
+            if (!this.server.connected) {
+                this.toast('和服务器的连接已断开');
+                return;
+            }
+            void serverPlayer(this.server, this.state).then(() => this.renderProfile()).catch((error: unknown) => {
+                this.toast(error instanceof Error ? error.message : '读取资料失败');
+                this.renderProfile();
+            });
+            return;
+        }
+        this.renderProfile();
+    }
+
+    private renderProfile(): void {
         const state = this.state;
-        this.open('个人信息', 500, (panel) => {
+        this.open('个人信息', state.online ? 640 : 500, (panel) => {
             this.text(panel, `${state.nickname}    ID ${state.userId}`, 0, 160, 28);
             this.text(panel, `VIP ${state.vipLevel}    账号 ${state.account || '未绑定'}`, 0, 110, 24);
             this.text(panel, `携带 ${formatMoney(state.money)}    保险箱 ${formatMoney(state.moneySafe)}`, 0, 60, 24);
@@ -93,6 +151,12 @@ export class HallPanels {
             });
             this.button(panel, '查看 VIP', 40, -50, 200, 58, () => this.openVip());
             this.button(panel, '绑定账号', -180, -130, 200, 58, () => this.openBind());
+            if (state.online) {
+                const nickname = this.field(panel, '新昵称', 0, -190);
+                this.button(panel, '修改昵称', 250, -190, 160, 52, () => {
+                    void this.useServer(() => serverNickname(this.server, state, nickname.string));
+                });
+            }
             this.button(panel, '退出登录', 40, -130, 200, 58, () => {
                 this.close();
                 if (this.logoutHandler) {
@@ -119,6 +183,19 @@ export class HallPanels {
                     this.toast(this.state.toggle(row[0]).message);
                     label.string = draw();
                 });
+            });
+            if (this.state.online) {
+                this.button(panel, '修改密码', 0, -150, 220, 52, () => this.openPassword());
+            }
+        });
+    }
+
+    private openPassword(): void {
+        this.open('修改密码', 420, (panel) => {
+            const oldPassword = this.field(panel, '原密码', 0, 80, true);
+            const nextPassword = this.field(panel, '新密码', 0, 10, true);
+            this.button(panel, '确定', 0, -80, 220, 58, () => {
+                void this.useServer(() => serverPassword(this.server, oldPassword.string, nextPassword.string), () => this.close());
             });
         });
     }
@@ -149,12 +226,10 @@ export class HallPanels {
             const input = this.field(panel, '输入金额', 0, -30);
             input.inputMode = EditBox.InputMode.NUMERIC;
             this.button(panel, '存入', -140, -120, 180, 58, () => {
-                this.toast(this.state.deposit(kind, Number(input.string)).message);
-                refresh();
+                this.moveSafe(kind, Number(input.string), true, refresh);
             });
             this.button(panel, '取出', 80, -120, 180, 58, () => {
-                this.toast(this.state.withdraw(kind, Number(input.string)).message);
-                refresh();
+                this.moveSafe(kind, Number(input.string), false, refresh);
             });
         });
     }
@@ -166,14 +241,49 @@ export class HallPanels {
                 const column = index % 3;
                 const row = Math.floor(index / 3);
                 this.button(panel, formatMoney(amount), -220 + column * 220, 50 - row * 90, 190, 64, () => {
-                    this.toast(this.state.recharge(amount).message);
-                    this.close();
+                    if (!this.state.online) {
+                        this.toast(this.state.recharge(amount).message);
+                        this.close();
+                        return;
+                    }
+                    if (!this.server.connected) {
+                        this.toast('和服务器的连接已断开');
+                        return;
+                    }
+                    void this.useServer(async () => {
+                        const message = await serverRecharge(this.server, amount);
+                        const url = message.split(' ').find((part) => part.startsWith('http'));
+                        if (url) {
+                            this.copyText(url);
+                        }
+                        return url ? `${message}（支付地址已复制）` : message;
+                    }, () => this.close());
                 });
             });
         });
     }
 
     openService(): void {
+        if (this.state.online) {
+            if (!this.server.connected) {
+                this.toast('和服务器的连接已断开');
+                return;
+            }
+            void serverService(this.server).then((rows) => {
+                this.open('客服', 520, (panel) => {
+                    if (!rows.length) {
+                        this.text(panel, '服务器没有公告', 0, 40, 24);
+                        return;
+                    }
+                    rows.slice(0, 4).forEach((mail, index) => {
+                        this.button(panel, mail.title || '公告', 0, 140 - index * 80, 560, 64, () => this.toast(mail.body));
+                    });
+                });
+            }).catch((error: unknown) => {
+                this.toast(error instanceof Error ? error.message : '客服消息获取失败');
+            });
+            return;
+        }
         this.open('客服', 520, (panel) => {
             this.text(panel, '在线客服：service888', 0, 170, 26);
             this.button(panel, '复制客服号', 0, 110, 220, 52, () => {
@@ -192,6 +302,35 @@ export class HallPanels {
     }
 
     openActivity(): void {
+        if (this.state.online) {
+            if (!this.server.connected) {
+                this.toast('和服务器的连接已断开');
+                return;
+            }
+            void serverActivity(this.server).then((activity) => {
+                this.open('活动中心', 520, (panel) => {
+                    const rows = activity.items.length
+                        ? activity.items.map((item) => `活动 ${item.id}${item.open ? ' 开启' : ' 关闭'}`)
+                        : ['暂无活动'];
+                    rows.slice(0, 3).forEach((name, index) => {
+                        this.text(panel, name, 0, 160 - index * 36, 22, 640);
+                    });
+                    this.button(panel, '签到', -160, -20, 200, 58, () => {
+                        void this.useServer(() => serverSignIn(this.server, this.state));
+                    });
+                    const washId = activity.items.find((item) => item.open)?.id ?? activity.items[0]?.id ?? 0;
+                    this.button(panel, '洗码', 80, -20, 200, 58, () => {
+                        void this.useServer(() => serverWash(this.server, this.state, washId, false));
+                    });
+                    this.button(panel, '领取洗码', 0, -100, 240, 58, () => {
+                        void this.useServer(() => serverWash(this.server, this.state, washId, true));
+                    });
+                });
+            }).catch((error: unknown) => {
+                this.toast(error instanceof Error ? error.message : '活动获取失败');
+            });
+            return;
+        }
         this.open('活动中心', 460, (panel) => {
             this.state.activities.forEach((item, index) => {
                 this.button(panel, item.name, 0, 120 - index * 100, 460, 72, () => {
@@ -210,6 +349,9 @@ export class HallPanels {
     }
 
     openVip(): void {
+        if (this.state.online && this.server.connected) {
+            void serverPlayer(this.server, this.state).catch(() => undefined);
+        }
         const level = this.state.vipLevel;
         this.open('VIP 特权', 420, (panel) => {
             this.text(panel, `当前等级 VIP ${level}`, 0, 110, 30);
@@ -220,6 +362,24 @@ export class HallPanels {
     }
 
     openBind(): void {
+        if (this.state.online) {
+            this.open('绑定账号', 560, (panel) => {
+                const account = this.field(panel, '账号', 0, 160);
+                const password = this.field(panel, '密码', 0, 90, true);
+                this.button(panel, '绑定账号', 0, 20, 240, 56, () => {
+                    void this.useServer(() => serverBindAccount(this.server, this.state, account.string.trim(), password.string), () => this.close());
+                });
+                const phone = this.field(panel, '手机号', 0, -50);
+                this.button(panel, '发送验证码', -140, -120, 200, 52, () => {
+                    void this.useServer(() => serverPhoneCode(this.server, phone.string));
+                });
+                const code = this.field(panel, '验证码', 0, -180);
+                this.button(panel, '绑定手机', 140, -120, 200, 52, () => {
+                    void this.useServer(() => serverPhoneBind(this.server, code.string), () => this.close());
+                });
+            });
+            return;
+        }
         this.open('绑定账号', 420, (panel) => {
             const account = this.field(panel, '账号', 0, 70);
             const password = this.field(panel, '密码', 0, 0, true);
@@ -237,6 +397,14 @@ export class HallPanels {
     }
 
     openRegister(): void {
+        if (this.state.online) {
+            if (this.state.account) {
+                this.toast(`已绑定 ${this.state.account}`);
+                return;
+            }
+            this.openBind();
+            return;
+        }
         this.open('注册会员', 380, (panel) => {
             const account = this.field(panel, '会员账号', 0, 40);
             this.button(panel, this.state.registered ? '已注册' : '注册', 0, -70, 240, 60, () => {
@@ -250,6 +418,27 @@ export class HallPanels {
     }
 
     openGive(): void {
+        if (this.state.online) {
+            this.open('赠送', 560, (panel) => {
+                const target = this.field(panel, '对方 ID', 0, 150);
+                target.inputMode = EditBox.InputMode.NUMERIC;
+                const amount = this.field(panel, '赠送金额', 0, 80);
+                amount.inputMode = EditBox.InputMode.NUMERIC;
+                const password = this.field(panel, '赠送密码', 0, 10, true);
+                password.maxLength = 6;
+                password.inputMode = EditBox.InputMode.NUMERIC;
+                this.button(panel, '确认赠送', -140, -70, 200, 56, () => {
+                    void this.useServer(() => serverGift(this.server, this.state, Number(target.string), Number(amount.string), password.string), () => this.close());
+                });
+                const next = this.field(panel, '新赠送密码', 0, -140, true);
+                next.maxLength = 6;
+                next.inputMode = EditBox.InputMode.NUMERIC;
+                this.button(panel, '设置密码', 140, -70, 200, 56, () => {
+                    void this.useServer(() => serverGiftPassword(this.server, next.string));
+                });
+            });
+            return;
+        }
         if (!this.state.giftPassword) {
             this.open('设置赠送密码', 360, (panel) => {
                 const password = this.field(panel, '6 位数字密码', 0, 40, true);
@@ -294,6 +483,10 @@ export class HallPanels {
     }
 
     openGame(game: GameInfo): void {
+        if (this.state.online) {
+            this.toast(`${game.name} 还没有接到服务器`);
+            return;
+        }
         if (game.type === 'haiwang') {
             this.open(game.name, 520, (panel) => {
                 FISH_LEVELS.forEach((level, index) => {
@@ -373,6 +566,30 @@ export class HallPanels {
     private copyText(value: string): void {
         const host = globalThis as { navigator?: { clipboard?: { writeText: (text: string) => Promise<void> } } };
         host.navigator?.clipboard?.writeText(value).catch(() => undefined);
+    }
+
+    private moveSafe(kind: 'coin' | 'wash', amount: number, deposit: boolean, refresh: () => void): void {
+        if (!this.state.online) {
+            const result = deposit ? this.state.deposit(kind, amount) : this.state.withdraw(kind, amount);
+            this.toast(result.message);
+            refresh();
+            return;
+        }
+        if (!this.server.connected) {
+            this.toast('和服务器的连接已断开');
+            return;
+        }
+        void this.useServer(() => serverSafe(this.server, this.state, kind, amount, deposit), refresh);
+    }
+
+    private async useServer(task: () => Promise<string>, after?: () => void): Promise<void> {
+        try {
+            const message = await task();
+            this.toast(message);
+            after?.();
+        } catch (error) {
+            this.toast(error instanceof Error ? error.message : '操作失败');
+        }
     }
 
     private close(): void {

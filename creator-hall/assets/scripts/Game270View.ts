@@ -19,6 +19,9 @@ import {
 import { bindClick, loadSpriteFrame } from './CsbView';
 import { rollGrid, scoreGrid } from './Game270Rules';
 import { formatMoney, HallState } from './HallState';
+import type { GosClient } from './GosClient';
+import { Slot270Session } from './Slot270';
+import type { SpinStep } from './Slot270';
 
 const BETS = [50, 100, 500, 1000];
 const SCREEN_W = 1280;
@@ -98,6 +101,12 @@ export class Game270View {
     private betLabel: Label | null = null;
     private winLabel: Label | null = null;
     private betIndex = 1;
+    private betChoices = BETS;
+    private session: Slot270Session | null = null;
+    private ready: Promise<void> = Promise.resolve();
+    private enterError = '';
+    private serverPlay = false;
+    private jackpotValues: Array<number | null> = [null, null, null, null];
     private spinning = false;
     private winAmount = 0;
     private audio: AudioSource | null = null;
@@ -112,6 +121,7 @@ export class Game270View {
         private readonly state: HallState,
         private readonly onExit: () => void,
         private readonly notify: (text: string) => void,
+        server: GosClient | null = null,
     ) {
         this.root = new Node('game270');
         this.root.layer = Layers.Enum.UI_2D;
@@ -126,6 +136,35 @@ export class Game270View {
         this.build();
         this.preload();
         this.root.setSiblingIndex(parent.children.length - 1);
+        if (server) {
+            this.serverPlay = true;
+            this.session = new Slot270Session(server, (balances) => {
+                this.state.applyBalances({
+                    money: balances.money,
+                    moneySafe: balances.moneySafe,
+                    giftSafe: balances.giftSafe,
+                });
+                this.refreshMoney();
+            });
+            this.ready = this.session.enter(270).then((opened) => {
+                if (!this.root.isValid) {
+                    return;
+                }
+                if (opened.bets.length) {
+                    this.betChoices = opened.bets.map((bet) => bet.money);
+                    this.betIndex = 0;
+                }
+                this.paint(opened.columns);
+                this.winAmount = opened.win;
+                this.refreshMoney();
+                if (opened.note) {
+                    this.notify(opened.note);
+                }
+            }).catch((error: unknown) => {
+                this.enterError = error instanceof Error ? error.message : '进入 270 失败';
+                this.notify(this.enterError);
+            });
+        }
     }
 
     private build(): void {
@@ -204,7 +243,11 @@ export class Game270View {
             return;
         }
         this.closeRule();
-        const bet = BETS[this.betIndex];
+        if (this.serverPlay) {
+            void this.spinOnServer();
+            return;
+        }
+        const bet = this.betChoices[this.betIndex];
         const paid = this.state.spend(bet);
         if (!paid.ok) {
             this.notify(paid.message);
@@ -250,12 +293,12 @@ export class Game270View {
         if (this.spinning) {
             return;
         }
-        this.betIndex = Math.max(0, Math.min(BETS.length - 1, this.betIndex + step));
+        this.betIndex = Math.max(0, Math.min(this.betChoices.length - 1, this.betIndex + step));
         this.refreshMoney();
     }
 
     private refreshMoney(): void {
-        const bet = formatMoney(BETS[this.betIndex]);
+        const bet = formatMoney(this.betChoices[this.betIndex] ?? 0);
         const win = formatMoney(this.winAmount);
         const money = formatMoney(this.state.money);
         if (this.balance) {
@@ -276,7 +319,8 @@ export class Game270View {
         JACKPOTS.forEach((jackpot, index) => {
             const label = this.jackpotLabels[index];
             if (label) {
-                label.string = formatMoney(BETS[this.betIndex] * jackpot.mult);
+                const serverValue = this.jackpotValues[index];
+                label.string = formatMoney(serverValue ?? (this.betChoices[this.betIndex] ?? 0) * jackpot.mult);
             }
         });
     }
@@ -287,7 +331,8 @@ export class Game270View {
         const scaleY = SYMBOL_H / SYMBOL_BOX_H;
         for (let col = 0; col < 5; col += 1) {
             for (let row = 0; row < 3; row += 1) {
-                const id = grid[col][row];
+                const raw = grid[col]?.[row] ?? 8;
+                const id = SYMBOL_BOX[raw] ? raw : 8;
                 const box = SYMBOL_BOX[id];
                 let left = box.x;
                 let top = box.y;
@@ -356,8 +401,102 @@ export class Game270View {
         if (this.spinning) {
             return;
         }
-        this.root.destroy();
-        this.onExit();
+        this.spinning = true;
+        const session = this.session;
+        const finish = () => {
+            if (this.root.isValid) {
+                this.root.destroy();
+            }
+            this.onExit();
+        };
+        if (!session) {
+            finish();
+            return;
+        }
+        void session.leave().finally(finish);
+    }
+
+    private async spinOnServer(): Promise<void> {
+        const session = this.session;
+        if (!session) {
+            this.notify('还没有连上 270 服务器');
+            return;
+        }
+        if (this.enterError) {
+            this.notify(this.enterError);
+            return;
+        }
+        const bet = this.betChoices[this.betIndex] ?? 0;
+        this.spinning = true;
+        try {
+            await this.ready;
+        } catch {
+            this.spinning = false;
+            return;
+        }
+        if (this.enterError || !this.root.isValid) {
+            this.spinning = false;
+            return;
+        }
+        this.winAmount = 0;
+        this.refreshMoney();
+        let steps: SpinStep[] = [];
+        try {
+            steps = await session.spin(bet);
+        } catch (error) {
+            this.spinning = false;
+            this.notify(error instanceof Error ? error.message : '开奖失败');
+            return;
+        }
+        if (!this.root.isValid) {
+            return;
+        }
+        for (let index = 0; index < steps.length; index += 1) {
+            const step = steps[index];
+            await this.rollTo(step.columns, index === 0 ? 12 : 6);
+            if (!this.root.isValid) {
+                return;
+            }
+            this.winAmount = step.win;
+            this.jackpotValues = step.jackpots;
+            this.refreshMoney();
+            this.play(step.win > 0 ? 'win' : 'reelstop');
+            if (countSymbol(step.columns, 2) >= 3) {
+                this.play('scatter');
+            }
+            if (step.note) {
+                this.notify(step.note);
+            }
+        }
+        this.spinning = false;
+    }
+
+    private rollTo(finalGrid: number[][], frames: number): Promise<void> {
+        return new Promise((resolve) => {
+            let frame = 0;
+            const timer = setInterval(() => {
+                if (!this.root.isValid) {
+                    clearInterval(timer);
+                    resolve();
+                    return;
+                }
+                frame += 1;
+                if (frame < frames) {
+                    this.paint(rollGrid());
+                    return;
+                }
+                const locked = Math.min(5, Math.floor((frame - frames) / 2) + 1);
+                const shown = rollGrid();
+                for (let col = 0; col < locked; col += 1) {
+                    shown[col] = finalGrid[col];
+                }
+                this.paint(shown);
+                if (locked >= 5) {
+                    clearInterval(timer);
+                    resolve();
+                }
+            }, 70);
+        });
     }
 
     private picture(path: string, x: number, y: number, width: number, height: number, onClick?: () => void): Node {

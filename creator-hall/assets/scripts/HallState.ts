@@ -99,6 +99,7 @@ export class HallState {
     ];
     readonly records: { target: string; amount: number; fee: number }[] = [];
     serverGameIds: number[] | null = null;
+    online = false;
     private readonly listeners: Array<() => void> = [];
     private readonly accounts: Record<string, AccountRecord> = {
         player9236: {
@@ -130,6 +131,7 @@ export class HallState {
     loginGuest(): HallResult {
         const id = String(100000 + Math.floor(Math.random() * 900000));
         this.serverGameIds = null;
+        this.online = false;
         this.account = '';
         this.registered = false;
         this.nickname = `游客${id.slice(-4)}`;
@@ -149,6 +151,7 @@ export class HallState {
             return { ok: false, message: '用户名或密码错误' };
         }
         this.serverGameIds = null;
+        this.online = false;
         this.applyAccount(account.trim(), found);
         return { ok: true, message: '登录成功' };
     }
@@ -186,6 +189,41 @@ export class HallState {
         this.account = '';
         this.registered = false;
         this.serverGameIds = null;
+        this.online = false;
+    }
+
+    applyBalances(next: {
+        money?: number;
+        moneySafe?: number;
+        washCode?: number;
+        giftSafe?: number;
+        vipLevel?: number;
+        nickname?: string;
+        account?: string;
+    }): void {
+        if (next.money !== undefined) {
+            this.money = next.money;
+        }
+        if (next.moneySafe !== undefined) {
+            this.moneySafe = next.moneySafe;
+        }
+        if (next.washCode !== undefined) {
+            this.washCode = next.washCode;
+        }
+        if (next.giftSafe !== undefined) {
+            this.giftSafe = next.giftSafe;
+        }
+        if (next.vipLevel !== undefined) {
+            this.vipLevel = next.vipLevel;
+        }
+        if (next.nickname) {
+            this.nickname = next.nickname;
+        }
+        if (next.account !== undefined) {
+            this.account = next.account;
+            this.registered = next.account.length > 0;
+        }
+        this.emit();
     }
 
     applyServer(profile: {
@@ -209,6 +247,7 @@ export class HallState {
         this.washCode = profile.washCode;
         this.giftSafe = profile.giftSafe;
         this.serverGameIds = profile.gameIds.length ? profile.gameIds : null;
+        this.online = true;
         this.emit();
         return { ok: true, message: `${this.nickname} 已登录，金币 ${formatMoney(this.money)}` };
     }

@@ -224,9 +224,10 @@ function writeAccount(buf: XxBuf, account: ServerAccount): void {
     buf.wstr('');
 }
 
-class Reader {
+export class Reader {
     readonly seen: number[] = [];
     readonly buf: XxBuf;
+    private readonly objects: unknown[] = [];
 
     constructor(buf: XxBuf) {
         this.buf = buf;
@@ -234,6 +235,25 @@ class Reader {
 
     keep(typeId: number): void {
         this.seen.push(typeId);
+    }
+
+    /** Shared xx object: index 0 is null, a new index is typeId plus the body. */
+    readObject(parse: (typeId: number, buf: XxBuf) => unknown): unknown {
+        const index = this.buf.rvu();
+        if (index === 0) {
+            return null;
+        }
+        if (index > 0 && index < this.seen.length + 1) {
+            return this.objects[index - 1] ?? null;
+        }
+        if (index !== this.seen.length + 1) {
+            throw new Error(`对象序号无法识别（${index}）`);
+        }
+        const typeId = this.buf.rvu();
+        this.seen.push(typeId);
+        const value = parse(typeId, this.buf);
+        this.objects[index - 1] = value;
+        return value;
     }
 
     readRef(): ServerAccount | null {

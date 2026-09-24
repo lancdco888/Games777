@@ -5,6 +5,8 @@ import { GosClient, GosStream, packFrame, packOpen } from '../assets/scripts/Gos
 import { CLIENT_LOGIN_MD5, decodePacket, encodeAuth, encodeEnterSuccess, encodeLobbySuccess, encodeRegister } from '../assets/scripts/GosPackets.ts';
 import { HallState, selectLobbyGames } from '../assets/scripts/HallState.ts';
 import type { ServerSettings } from '../assets/scripts/ServerSettings.ts';
+import { cellsToColumns, decodePlay, encodeEnterSlots, encodeNormalSpin, encodeSampleNormal, encodeSampleSeat, encodeType } from '../assets/scripts/ServerPlay.ts';
+import { Slot270Session } from '../assets/scripts/Slot270.ts';
 import { XxBuf } from '../assets/scripts/XxBuf.ts';
 
 const account = {
@@ -190,6 +192,85 @@ function testCodec(): void {
     assert.equal(stream.shift(), undefined);
     const request = packFrame(0, -1, new Uint8Array([0xd2, 0x08]));
     assert.equal(request[8], 0x01);
+
+    const spin = XxBuf.wrap(encodeNormalSpin(100, 0, 1));
+    assert.equal(spin.rvu(), 30614);
+    assert.equal(spin.rd(), 100);
+    assert.equal(spin.rvi32(), 0);
+    assert.equal(spin.rvi32(), 1);
+    const normal = decodePlay(encodeSampleNormal());
+    assert.equal(normal?.kind, 'normalSpin');
+    if (normal?.kind === 'normalSpin') {
+        assert.deepEqual(cellsToColumns(normal.spin.cells)[0], [4, 5, 6]);
+        assert.equal(normal.spin.winCoin, 80);
+        assert.equal(normal.spin.balances.money, 90000);
+    }
+    const seat = decodePlay(encodeSampleSeat());
+    assert.equal(seat?.kind, 'slotSeat');
+    if (seat?.kind === 'slotSeat') {
+        assert.equal(seat.bets[0].money, 100);
+        assert.equal(seat.bets[0].lvID, 1);
+        assert.equal(seat.balances.money, 99000);
+    }
+    const safe = new XxBuf();
+    safe.wvu(1224);
+    safe.wd(10);
+    safe.wd(20);
+    safe.wd(3);
+    safe.wd(4);
+    const safePacket = decodePlay(safe.toUint8Array());
+    assert.equal(safePacket?.kind, 'safe');
+    if (safePacket?.kind === 'safe') {
+        assert.equal(safePacket.money, 10);
+        assert.equal(safePacket.moneyGiftSafe, 4);
+    }
+    const activity = new XxBuf();
+    activity.wvu(1294);
+    activity.wvu(1);
+    activity.wvu(2);
+    activity.wvu(1290);
+    activity.wvi32(7);
+    activity.wvi32(1);
+    activity.wstr('cfg');
+    activity.wvi32(0);
+    const activityPacket = decodePlay(activity.toUint8Array());
+    assert.equal(activityPacket?.kind, 'activity');
+    if (activityPacket?.kind === 'activity') {
+        assert.equal(activityPacket.items[0].id, 7);
+        assert.equal(activityPacket.items[0].open, 1);
+    }
+    const free = new XxBuf();
+    free.wvu(30618);
+    free.wd(50);
+    free.wd(12);
+    free.wvu(1);
+    free.wvi32(2);
+    free.wvi32(2);
+    free.wvi32(0);
+    free.wd(0);
+    free.wvi32(0);
+    free.wvi32(0);
+    free.wd(8);
+    free.wvi32(6);
+    free.wvi32(6);
+    free.wvu(0);
+    free.wvi32(0);
+    free.wvi32(0);
+    free.wvi32(0);
+    free.wvi64(0);
+    free.wvi64(0);
+    free.wvi64(0);
+    free.wvi64(88000);
+    free.wvi64(1000);
+    const freePacket = decodePlay(free.toUint8Array());
+    assert.equal(freePacket?.kind, 'freeSpin');
+    if (freePacket?.kind === 'freeSpin') {
+        assert.equal(freePacket.spin.totalCount, 6);
+        assert.equal(freePacket.spin.allCount, 6);
+        assert.equal(freePacket.spin.bonusWinCoin, 8);
+        assert.equal(cellsToColumns(freePacket.spin.cells)[1][0], 2);
+        assert.equal(freePacket.spin.balances.money, 88000);
+    }
 }
 
 function testHallState(): void {
@@ -210,9 +291,11 @@ function testHallState(): void {
     assert.equal(state.userId, '9236');
     assert.equal(state.money, 99000);
     assert.equal(state.vipLevel, 2);
+    assert.equal(state.online, true);
     assert.deepEqual(state.serverGameIds, [270, 220]);
     state.logout();
     assert.equal(state.serverGameIds, null);
+    assert.equal(state.online, false);
     const catalog = [
         { id: 270 },
         { id: 336 },
@@ -244,6 +327,15 @@ function startFakeServer(): Promise<{ port: number; close: () => void }> {
                     })));
                 } else if (packet.kind === 'unknown' && packet.typeId === 2002) {
                     socket.write(packFrame(0, serial, encodeEnterSuccess([270, 220], { ...account, money: 99000 })));
+                } else if (packet.kind === 'unknown' && packet.typeId === 2003) {
+                    socket.write(packFrame(0, serial, encodeEnterSlots(270, 7)));
+                    socket.write(packOpen(7));
+                } else if (packet.kind === 'unknown' && packet.typeId === 30111) {
+                    socket.write(packFrame(frame.serviceId, serial, encodeSampleSeat()));
+                } else if (packet.kind === 'unknown' && packet.typeId === 30614) {
+                    socket.write(packFrame(frame.serviceId, serial, encodeSampleNormal()));
+                } else if (packet.kind === 'unknown' && packet.typeId === 30113) {
+                    socket.write(packFrame(frame.serviceId, serial, encodeType(30102)));
                 }
                 frame = stream.shift();
             }
@@ -318,10 +410,27 @@ async function testBridge(): Promise<void> {
         assert.equal(profile.giftSafe, 300);
         assert.equal(profile.vipLevel, 2);
         assert.deepEqual(profile.gameIds, [270, 220]);
+        let money = 0;
+        const session = new Slot270Session(client, (balances) => {
+            money = balances.money;
+        });
+        const opened = await session.enter(270);
+        assert.equal(opened.bets[0].money, 100);
+        assert.equal(money, 99000);
+        const steps = await session.spin(100);
+        assert.deepEqual(steps[0].columns[0], [4, 5, 6]);
+        assert.equal(steps[0].win, 80);
+        assert.equal(steps[0].jackpots[3], 400);
+        assert.equal(money, 90000);
+        await session.leave();
         console.log(JSON.stringify({
             nickname: profile.nickname,
             money: profile.money,
             gameIds: profile.gameIds,
+            slotBet: opened.bets[0].money,
+            slotWin: steps[0].win,
+            column: steps[0].columns[0],
+            balance: money,
             bridge: bridge.port,
             server: fake.port,
         }));
