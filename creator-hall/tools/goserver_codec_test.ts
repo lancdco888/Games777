@@ -3,9 +3,10 @@ import { spawn } from 'node:child_process';
 import net from 'node:net';
 import { GosClient, GosStream, packFrame, packOpen } from '../assets/scripts/GosClient.ts';
 import { CLIENT_LOGIN_MD5, decodePacket, encodeAuth, encodeEnterSuccess, encodeLobbySuccess, encodeRegister } from '../assets/scripts/GosPackets.ts';
+import { pickRoom, shotHits } from '../assets/scripts/Fish101.ts';
 import { HallState, selectLobbyGames } from '../assets/scripts/HallState.ts';
 import type { ServerSettings } from '../assets/scripts/ServerSettings.ts';
-import { cellsToColumns, decodePlay, encodeEnterSlots, encodeNormalSpin, encodeSampleNormal, encodeSampleSeat, encodeType } from '../assets/scripts/ServerPlay.ts';
+import { cellsToColumns, decodePlay, encodeEnterFishLevel, encodeEnterFishSit, encodeEnterSlots, encodeNormalSpin, encodeSampleNormal, encodeSampleSeat, encodeType } from '../assets/scripts/ServerPlay.ts';
 import { Slot270Session } from '../assets/scripts/Slot270.ts';
 import { XxBuf } from '../assets/scripts/XxBuf.ts';
 
@@ -239,6 +240,65 @@ function testCodec(): void {
         assert.equal(activityPacket.items[0].id, 7);
         assert.equal(activityPacket.items[0].open, 1);
     }
+    const levelBytes = XxBuf.wrap(encodeEnterFishLevel(3));
+    assert.equal(levelBytes.rvu(), 2004);
+    assert.equal(levelBytes.rvi32(), 3);
+    const sitBytes = XxBuf.wrap(encodeEnterFishSit(9, -1));
+    assert.equal(sitBytes.rvu(), 2005);
+    assert.equal(sitBytes.rvi32(), 9);
+    assert.equal(sitBytes.rvi32(), -1);
+    const levels = new XxBuf();
+    levels.wvu(1208);
+    levels.wvu(1);
+    levels.wvu(2);
+    levels.wvu(1207);
+    levels.wvi32(4);
+    levels.wvi64(10);
+    levels.wvi64(100);
+    levels.wd(1000);
+    levels.wvi32(1);
+    const fishLevels = decodePlay(levels.toUint8Array());
+    assert.equal(fishLevels?.kind, 'fishLevels');
+    if (fishLevels?.kind === 'fishLevels') {
+        assert.equal(fishLevels.levels[0].levelId, 4);
+        assert.equal(fishLevels.levels[0].minBet, 10);
+        assert.equal(fishLevels.levels[0].minMoney, 1000);
+    }
+    const rooms = new XxBuf();
+    rooms.wvu(1213);
+    rooms.wvu(1);
+    rooms.wvu(2);
+    rooms.wvu(1211);
+    rooms.wvi32(9);
+    rooms.wvu(2);
+    rooms.wvu(0);
+    rooms.wvu(3);
+    rooms.wvu(1212);
+    rooms.wvi32(7);
+    rooms.wstr('甲');
+    rooms.wvi32(1);
+    rooms.wd(50);
+    rooms.wvi32(0);
+    const fishRooms = decodePlay(rooms.toUint8Array());
+    assert.equal(fishRooms?.kind, 'fishRooms');
+    if (fishRooms?.kind === 'fishRooms') {
+        assert.equal(fishRooms.rooms[0].roomId, 9);
+        assert.equal(fishRooms.rooms[0].players[0], null);
+        assert.equal(fishRooms.rooms[0].players[1]?.nickname, '甲');
+        assert.equal(pickRoom(fishRooms.rooms).roomId, 9);
+    }
+    const fishSeatBuf = new XxBuf();
+    fishSeatBuf.wvu(1214);
+    fishSeatBuf.wvi32(101);
+    fishSeatBuf.wvi32(8);
+    const fishSeat = decodePlay(fishSeatBuf.toUint8Array());
+    assert.equal(fishSeat?.kind, 'fishSeat');
+    if (fishSeat?.kind === 'fishSeat') {
+        assert.equal(fishSeat.gameId, 101);
+        assert.equal(fishSeat.serviceId, 8);
+    }
+    assert.equal(shotHits(0, 0, 10, 0, 80, 80), true);
+    assert.equal(shotHits(0, 0, 400, 0, 80, 80), false);
     const free = new XxBuf();
     free.wvu(30618);
     free.wd(50);
@@ -304,6 +364,7 @@ function testHallState(): void {
     assert.deepEqual(selectLobbyGames(catalog, [336, 341]).map((game) => game.id), [270, 336, 341]);
     assert.deepEqual(selectLobbyGames(catalog, [2270, 336]).map((game) => game.id), [270, 336]);
     assert.deepEqual(selectLobbyGames(catalog, null).map((game) => game.id), [270, 336, 341]);
+    assert.deepEqual(selectLobbyGames([{ id: 270 }, { id: 101 }, { id: 336 }], [336]).map((game) => game.id), [270, 101, 336]);
 }
 
 function startFakeServer(): Promise<{ port: number; close: () => void }> {

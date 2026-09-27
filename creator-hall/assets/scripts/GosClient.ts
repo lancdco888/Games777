@@ -83,6 +83,11 @@ export class GosClient {
         return this.linked && !this.failed && this.socket !== null;
     }
 
+    /** Wait until the gateway has opened a service. Used after a fish sit returns that id. */
+    async waitUntilOpen(serviceId: number): Promise<void> {
+        await this.waitService(serviceId, 8000);
+    }
+
     async request(serviceId: number, body: Uint8Array): Promise<WirePacket> {
         if (!this.stream.opened.has(serviceId)) {
             await this.waitService(serviceId, 8000);

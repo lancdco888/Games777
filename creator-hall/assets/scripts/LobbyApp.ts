@@ -1,5 +1,6 @@
 import { _decorator, Button, Component, EventTouch, JsonAsset, js, Label, Layers, Mask, Node, resources, ScrollView, UITransform } from 'cc';
 import { attachSprite, bindClick, CsbNode, mountCsb, setBitmapText } from './CsbView';
+import { Fish101View } from './Fish101View';
 import { Game270View } from './Game270View';
 import { HallPanels } from './HallPanels';
 import { formatMoney, GameInfo, HallState, selectLobbyGames } from './HallState';
@@ -21,7 +22,7 @@ export class LobbyApp extends Component {
     private panels: HallPanels | null = null;
     private login: LoginView | null = null;
     private entered = false;
-    private game: Game270View | null = null;
+    private game: Game270View | Fish101View | null = null;
     private catalog: GameInfo[] = [];
 
     start(): void {
@@ -206,12 +207,32 @@ export class LobbyApp extends Component {
             );
             return;
         }
+        if (game.id === 101) {
+            if (this.game) {
+                return;
+            }
+            this.panels?.dismiss();
+            this.setLobbyVisible(false);
+            this.game = new Fish101View(
+                this.node,
+                this.state,
+                () => {
+                    this.game = null;
+                    this.setLobbyVisible(true);
+                    this.refresh();
+                    this.raiseBars();
+                },
+                (text) => this.panels?.toast(text),
+                this.state.online ? this.login?.server ?? null : null,
+            );
+            return;
+        }
         this.panels?.openGame(game);
     }
 
     private setLobbyVisible(visible: boolean): void {
         for (const child of this.node.children) {
-            if (child.name === 'hall_login' || child.name === 'game270' || child.name === 'toast' || child.name === 'hall_popup') {
+            if (child.name === 'hall_login' || child.name === 'game270' || child.name === 'fish101' || child.name === 'toast' || child.name === 'hall_popup') {
                 continue;
             }
             child.active = visible;

@@ -4,6 +4,15 @@ import { XxBuf } from './XxBuf';
 
 const SUCCESS = 101;
 const ENTER_GAME = 2003;
+const ENTER_FISH_LEVEL = 2004;
+const ENTER_FISH_SIT = 2005;
+const RETURN_UP = 2006;
+const FISH_LEVEL = 1207;
+const FISH_LEVELS = 1208;
+const FISH_ROOM = 1211;
+const FISH_PLAYER = 1212;
+const FISH_ROOMS = 1213;
+const FISH_SIT = 1214;
 const ENTER_SLOTS = 1215;
 const CHANGE_SAFE = 2019;
 const SAFE_OK = 1224;
@@ -102,6 +111,27 @@ export interface SpinBody {
     balances: SlotBalances;
 }
 
+export interface FishLevelInfo {
+    levelId: number;
+    minBet: number;
+    maxBet: number;
+    minMoney: number;
+    exchangeCoinRatio: number;
+}
+
+export interface FishSeatPlayer {
+    id: number;
+    nickname: string;
+    avatarId: number;
+    money: number;
+    robot: number;
+}
+
+export interface FishRoomInfo {
+    roomId: number;
+    players: Array<FishSeatPlayer | null>;
+}
+
 export interface SlotSeat {
     kind: 'slotSeat';
     accountId: number;
@@ -133,6 +163,9 @@ export type PlayPacket =
     | { kind: 'faq'; items: Array<{ id: number; question: string; answer: string }> }
     | { kind: 'notices'; items: Array<{ title: string; content: string }>; appUrl: string }
     | { kind: 'enterSlots'; gameId: number; serviceId: number }
+    | { kind: 'fishLevels'; levels: FishLevelInfo[] }
+    | { kind: 'fishRooms'; rooms: FishRoomInfo[] }
+    | { kind: 'fishSeat'; gameId: number; serviceId: number }
     | SlotSeat
     | { kind: 'slotLeft' }
     | { kind: 'normalSpin'; spin: SpinBody }
@@ -152,6 +185,26 @@ export function encodeEnterGame(gameId: number): Uint8Array {
     buf.wvu(ENTER_GAME);
     buf.wvi32(gameId);
     return buf.toUint8Array();
+}
+
+export function encodeEnterFishLevel(levelId: number): Uint8Array {
+    const buf = new XxBuf();
+    buf.wvu(ENTER_FISH_LEVEL);
+    buf.wvi32(levelId);
+    return buf.toUint8Array();
+}
+
+export function encodeEnterFishSit(roomId: number, sitIndex: number): Uint8Array {
+    const buf = new XxBuf();
+    buf.wvu(ENTER_FISH_SIT);
+    buf.wvi32(roomId);
+    buf.wvi32(sitIndex);
+    return buf.toUint8Array();
+}
+
+/** Step back from the fish level or room list. */
+export function encodeReturnUp(): Uint8Array {
+    return encodeType(RETURN_UP);
 }
 
 export function encodeNormalSpin(betMoney: number, moneyType: number, lvID: number): Uint8Array {
@@ -442,6 +495,15 @@ function readPlay(typeId: number, reader: Reader): PlayPacket | null {
     if (typeId === ENTER_SLOTS) {
         return { kind: 'enterSlots', gameId: buf.rvi32(), serviceId: buf.rvi32() };
     }
+    if (typeId === FISH_LEVELS) {
+        return readFishLevels(reader);
+    }
+    if (typeId === FISH_ROOMS) {
+        return readFishRooms(reader);
+    }
+    if (typeId === FISH_SIT) {
+        return { kind: 'fishSeat', gameId: buf.rvi32(), serviceId: buf.rvi32() };
+    }
     if (typeId === SLOTS_ENTER_OK) {
         return readSeat(reader, 'normal', 0, '');
     }
@@ -458,6 +520,64 @@ function readPlay(typeId: number, reader: Reader): PlayPacket | null {
         return { kind: 'specialSpin', spin: readSpecial(reader) };
     }
     return null;
+}
+
+function readFishLevels(reader: Reader): PlayPacket {
+    const count = readCount(reader.buf);
+    const levels: FishLevelInfo[] = [];
+    for (let index = 0; index < count; index += 1) {
+        const level = reader.readObject((typeId, buf) => {
+            if (typeId !== FISH_LEVEL) {
+                throw new Error(`捕鱼等级类型不是 1207（${typeId}）`);
+            }
+            return {
+                levelId: buf.rvi32(),
+                minBet: buf.rvi64(),
+                maxBet: buf.rvi64(),
+                minMoney: buf.rd(),
+                exchangeCoinRatio: buf.rvi32(),
+            };
+        }) as FishLevelInfo | null;
+        if (level) {
+            levels.push(level);
+        }
+    }
+    return { kind: 'fishLevels', levels };
+}
+
+function readFishRooms(reader: Reader): PlayPacket {
+    const count = readCount(reader.buf);
+    const rooms: FishRoomInfo[] = [];
+    for (let index = 0; index < count; index += 1) {
+        const room = reader.readObject((typeId, buf) => {
+            if (typeId !== FISH_ROOM) {
+                throw new Error(`捕鱼房间类型不是 1211（${typeId}）`);
+            }
+            const roomId = buf.rvi32();
+            const seats = readCount(buf);
+            const players: Array<FishSeatPlayer | null> = [];
+            for (let seat = 0; seat < seats; seat += 1) {
+                const player = reader.readObject((playerType, playerBuf) => {
+                    if (playerType !== FISH_PLAYER) {
+                        throw new Error(`座位玩家类型不是 1212（${playerType}）`);
+                    }
+                    return {
+                        id: playerBuf.rvi32(),
+                        nickname: playerBuf.rstr(),
+                        avatarId: playerBuf.rvi32(),
+                        money: playerBuf.rd(),
+                        robot: playerBuf.rvi32(),
+                    };
+                }) as FishSeatPlayer | null;
+                players.push(player);
+            }
+            return { roomId, players };
+        }) as FishRoomInfo | null;
+        if (room) {
+            rooms.push(room);
+        }
+    }
+    return { kind: 'fishRooms', rooms };
 }
 
 function readActivity(reader: Reader): PlayPacket {

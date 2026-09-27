@@ -37,8 +37,8 @@ const GAME_ID_ALIAS: Record<number, number> = {
     448: 348, 449: 349,
 };
 
-/** Game 270 is the ported slot, so its card stays even when the server list omits it. */
-const PINNED_GAME_IDS = [270];
+/** Ported games stay on the icon row even when the server list omits them. */
+const PINNED_GAME_IDS = [270, 101];
 
 export function canonicalGameId(gameId: number): number {
     let id = gameId;
