@@ -9,7 +9,7 @@ import {
     encodeSpecialSpin,
     explain,
 } from './ServerPlay';
-import type { SlotBalances, SlotBet, SlotCell, SpinBody, WirePacket } from './ServerPlay';
+import type { SlotBalances, SlotBet, SlotCell, SlotLine, SpinBody, WirePacket } from './ServerPlay';
 
 export interface SpinStep {
     columns: number[][];
@@ -17,6 +17,11 @@ export interface SpinStep {
     note: string;
     balances: SlotBalances;
     jackpots: Array<number | null>;
+    lines: SlotLine[];
+    /** Mode this spin was dealt in, before intoFree / intoSpecial changes it. */
+    mode: 'normal' | 'free' | 'special';
+    intoFree: boolean;
+    intoSpecial: boolean;
 }
 
 export interface OpenedSlot {
@@ -90,7 +95,7 @@ export class Slot270Session {
             this.lvID = lvID;
             const packet = await this.client.request(this.serviceId, encodeNormalSpin(betMoney, this.moneyType, lvID));
             const spin = takeSpin(packet, 'normalSpin');
-            steps.push(this.step(spin, spin.winCoin, spin.intoFree === 1 ? '进入免费游戏' : spin.intoSpecial === 1 ? '进入特别游戏' : ''));
+            steps.push(this.step(spin, spin.winCoin, spin.intoFree === 1 ? '进入免费游戏' : spin.intoSpecial === 1 ? '进入特别游戏' : '', this.mode));
             if (spin.intoFree === 1) {
                 this.mode = 'free';
             } else if (spin.intoSpecial === 1) {
@@ -104,7 +109,7 @@ export class Slot270Session {
             const spin = takeSpin(packet, 'freeSpin');
             const ended = spin.totalCount >= spin.allCount;
             const win = ended ? spin.winCoin + spin.bonusWinCoin : spin.winCoin;
-            steps.push(this.step(spin, win, `免费 ${spin.totalCount}/${spin.allCount}`));
+            steps.push(this.step(spin, win, `免费 ${spin.totalCount}/${spin.allCount}`, this.mode));
             if (spin.intoSpecial === 1) {
                 this.mode = 'special';
                 break;
@@ -120,7 +125,7 @@ export class Slot270Session {
             const packet = await this.client.request(this.serviceId, encodeSpecialSpin());
             const spin = takeSpin(packet, 'specialSpin');
             const win = spin.totalCount <= 0 && spin.allWinCoin > spin.winCoin ? spin.allWinCoin : spin.winCoin;
-            steps.push(this.step(spin, win, spin.totalCount > 0 ? `特别游戏 剩余 ${spin.totalCount}` : '特别游戏结束'));
+            steps.push(this.step(spin, win, spin.totalCount > 0 ? `特别游戏 剩余 ${spin.totalCount}` : '特别游戏结束', this.mode));
             if (spin.totalCount <= 0) {
                 this.mode = 'normal';
                 break;
@@ -145,7 +150,7 @@ export class Slot270Session {
         }
     }
 
-    private step(spin: SpinBody, win: number, note: string): SpinStep {
+    private step(spin: SpinBody, win: number, note: string, mode: 'normal' | 'free' | 'special'): SpinStep {
         this.onMoney(spin.balances);
         return {
             columns: cellsToColumns(spin.cells),
@@ -153,6 +158,10 @@ export class Slot270Session {
             note,
             balances: spin.balances,
             jackpots: jackpotsFrom(spin.cells),
+            lines: spin.lines,
+            mode,
+            intoFree: spin.intoFree === 1,
+            intoSpecial: spin.intoSpecial === 1,
         };
     }
 }

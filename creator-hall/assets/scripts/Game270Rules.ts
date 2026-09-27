@@ -88,6 +88,34 @@ export function rollGrid(random: () => number = Math.random): number[][] {
     return grid;
 }
 
+export interface PayCell {
+    index: number;
+    icon: number;
+}
+
+export interface PayLine {
+    lineIndex: number;
+    cells: PayCell[];
+}
+
+/** Winning cells only, in payline order. Line numbers match WinLineConfigs (1-based). */
+export function payHits(grid: number[][]): PayLine[] {
+    const hits: PayLine[] = [];
+    LINES.forEach((line, index) => {
+        const ids = line.map((row, col) => grid[col][row]);
+        const count = runLength(ids);
+        if (count < 3) {
+            return;
+        }
+        const cells: PayCell[] = [];
+        for (let col = 0; col < count; col += 1) {
+            cells.push({ index: line[col] * 5 + col + 1, icon: ids[col] });
+        }
+        hits.push({ lineIndex: index + 1, cells });
+    });
+    return hits;
+}
+
 export function scoreGrid(grid: number[][], bet: number): { win: number; hits: number } {
     const perLine = bet / LINES.length;
     let win = 0;
