@@ -6,9 +6,11 @@ import {
     encodeReturnUp,
     explain,
 } from './ServerPlay';
+import type { FishKind } from './Fish101Catalog';
 import type { FishLevelInfo, FishRoomInfo, WirePacket } from './ServerPlay';
 
 export const FISH_GAME_ID = 101;
+export { FISH_KINDS } from './Fish101Catalog';
 
 /** Local rooms used by 本地体验. Cannon values follow the hall fish level buttons. */
 export const LOCAL_FISH_LEVELS: Array<FishLevelInfo & { name: string }> = [
@@ -18,20 +20,48 @@ export const LOCAL_FISH_LEVELS: Array<FishLevelInfo & { name: string }> = [
     { name: '高级场', levelId: 4, minBet: 10000, maxBet: 100000, minMoney: 100000, exchangeCoinRatio: 1 },
 ];
 
-/** Coin multiples from fish2 fish_info_hw.lua. Boss is KingSquid's minimum. */
-export const FISH_KINDS = [
-    { art: 'fish101/fish_2', coin: 2, width: 90, height: 90 },
-    { art: 'fish101/fish_3', coin: 3, width: 86, height: 82 },
-    { art: 'fish101/fish_4', coin: 4, width: 120, height: 76 },
-    { art: 'fish101/fish_5', coin: 5, width: 110, height: 100 },
-    { art: 'fish101/boss', coin: 250, width: 280, height: 186 },
-];
-
 export interface FishTableSeat {
     gameId: number;
     serviceId: number;
     roomId: number;
+    sitIndex: number;
     level: FishLevelInfo;
+}
+
+/** Cannon ratios wrap from the level minimum to the maximum, doubling each step. */
+export function betSteps(minBet: number, maxBet: number): number[] {
+    const min = Math.max(1, Math.floor(minBet));
+    const max = Math.max(min, Math.floor(maxBet));
+    const steps = [min];
+    let value = min;
+    while (value < max) {
+        const next = Math.min(max, value * 2);
+        if (next === value) {
+            break;
+        }
+        steps.push(next);
+        value = next;
+    }
+    return steps;
+}
+
+/** fish_info coin range. `unit` is 0 inclusive to 1 exclusive. */
+export function coinAt(kind: Pick<FishKind, 'coinMin' | 'coinMax' | 'coinStep' | 'coinList'>, unit: number): number {
+    if (kind.coinList.length > 0) {
+        const index = Math.min(kind.coinList.length - 1, Math.max(0, Math.floor(unit * kind.coinList.length)));
+        return kind.coinList[index];
+    }
+    const step = Math.max(1, kind.coinStep);
+    const span = Math.max(0, Math.floor((kind.coinMax - kind.coinMin) / step));
+    const index = Math.min(span, Math.max(0, Math.floor(unit * (span + 1))));
+    return kind.coinMin + index * step;
+}
+
+export function localRooms(levelId: number): FishRoomInfo[] {
+    return [1, 2, 3].map((index) => ({
+        roomId: levelId * 100 + index,
+        players: [null, null, null, null],
+    }));
 }
 
 /**
@@ -60,7 +90,7 @@ export class Fish101Session {
         return packet.levels;
     }
 
-    async sit(level: FishLevelInfo): Promise<FishTableSeat> {
+    async openLevel(level: FishLevelInfo): Promise<FishRoomInfo[]> {
         const roomsPacket = await this.client.request(0, encodeEnterFishLevel(level.levelId));
         const roomError = explain(roomsPacket);
         if (roomError) {
@@ -69,8 +99,14 @@ export class Fish101Session {
         if (roomsPacket.kind !== 'fishRooms') {
             throw new Error(unexpected(roomsPacket));
         }
-        const room = pickRoom(roomsPacket.rooms);
-        const seatPacket = await this.client.request(0, encodeEnterFishSit(room.roomId, -1));
+        if (roomsPacket.rooms.length === 0) {
+            throw new Error('这个等级没有房间');
+        }
+        return roomsPacket.rooms;
+    }
+
+    async sit(level: FishLevelInfo, roomId: number, sitIndex: number): Promise<FishTableSeat> {
+        const seatPacket = await this.client.request(0, encodeEnterFishSit(roomId, sitIndex));
         const seatError = explain(seatPacket);
         if (seatError) {
             throw new Error(seatError);
@@ -83,9 +119,19 @@ export class Fish101Session {
         return {
             gameId: seatPacket.gameId,
             serviceId: seatPacket.serviceId,
-            roomId: room.roomId,
+            roomId,
+            sitIndex,
             level,
         };
+    }
+
+    /** One lobby ReturnUp. The room list goes back to levels; levels go back to the hall. */
+    async stepBack(): Promise<WirePacket> {
+        const packet = await this.client.request(0, encodeReturnUp());
+        if (packet.kind === 'enter' || packet.kind === 'error') {
+            this.enteredMenu = false;
+        }
+        return packet;
     }
 
     async leave(): Promise<void> {

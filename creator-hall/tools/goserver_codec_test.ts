@@ -3,7 +3,7 @@ import { spawn } from 'node:child_process';
 import net from 'node:net';
 import { GosClient, GosStream, packFrame, packOpen } from '../assets/scripts/GosClient.ts';
 import { CLIENT_LOGIN_MD5, decodePacket, encodeAuth, encodeEnterSuccess, encodeLobbySuccess, encodeRegister } from '../assets/scripts/GosPackets.ts';
-import { pickRoom, shotHits } from '../assets/scripts/Fish101.ts';
+import { betSteps, coinAt, localRooms, pickRoom, shotHits } from '../assets/scripts/Fish101.ts';
 import { HallState, selectLobbyGames } from '../assets/scripts/HallState.ts';
 import type { ServerSettings } from '../assets/scripts/ServerSettings.ts';
 import { cellsToColumns, decodePlay, encodeEnterFishLevel, encodeEnterFishSit, encodeEnterSlots, encodeNormalSpin, encodeSampleNormal, encodeSampleSeat, encodeType } from '../assets/scripts/ServerPlay.ts';
@@ -299,6 +299,12 @@ function testCodec(): void {
     }
     assert.equal(shotHits(0, 0, 10, 0, 80, 80), true);
     assert.equal(shotHits(0, 0, 400, 0, 80, 80), false);
+    assert.deepEqual(betSteps(10, 100), [10, 20, 40, 80, 100]);
+    assert.equal(coinAt({ coinMin: 250, coinMax: 550, coinStep: 10, coinList: [] }, 0), 250);
+    assert.equal(coinAt({ coinMin: 250, coinMax: 550, coinStep: 10, coinList: [] }, 0.999), 550);
+    assert.equal(coinAt({ coinMin: 100, coinMax: 10000, coinStep: 1, coinList: [100, 150, 10000] }, 0.9), 10000);
+    assert.equal(localRooms(2).length, 3);
+    assert.equal(localRooms(2)[0].players.length, 4);
     const free = new XxBuf();
     free.wvu(30618);
     free.wd(50);
