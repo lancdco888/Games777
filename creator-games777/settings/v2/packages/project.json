@@ -1,0 +1,16 @@
+{
+  "__version__": "1.0.6",
+  "general": {
+    "designResolution": {
+      "width": 1280,
+      "height": 720,
+      "fitWidth": true,
+      "fitHeight": true
+    }
+  },
+  "layer": [
+    { "name": "DEFAULT", "value": 1 },
+    { "name": "UI_2D", "value": 33554432 },
+    { "name": "UI_3D", "value": 16777216 }
+  ]
+}

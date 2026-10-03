@@ -1,0 +1,15 @@
+{
+  "name": "Games777",
+  "uuid": "1fe6c97d-e688-48be-96cf-242c92eb7711",
+  "version": "1.0.0",
+  "creator": {
+    "version": "3.8.3"
+  },
+  "description": "Games777 Cocos Creator 3.x migration — hall first, then FGame / fish2",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
