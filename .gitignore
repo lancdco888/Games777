@@ -1,0 +1,4 @@
+# 本机整站镜像和免安装 Python，由 download-h215.bat 生成
+/h215-local/
+/.pyruntime/
+__pycache__/
