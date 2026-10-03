@@ -234,7 +234,7 @@ def code_of(exc: Exception) -> str:
 
 
 def download_many(jobs: list[tuple[str, list[tuple[str, Path]], bool]], workers: int, log: Log, label: str) -> dict[str, int]:
-    stats = {"ok": 0, "skip": 0, "miss": 0, "absent": 0}
+    stats = {"ok": 0, "skip": 0, "miss": 0, "absent": 0, "denied": 0}
     misses: list[str] = []
     lock = threading.Lock()
     done = 0
@@ -246,6 +246,8 @@ def download_many(jobs: list[tuple[str, list[tuple[str, Path]], bool]], workers:
             return kind, name
         except Exception as exc:
             status = code_of(exc)
+            if status in {"403", "denied"}:
+                return "denied", name
             if not required and status == "404":
                 return "absent", name
             return "miss", f"{status} {name}"
@@ -259,12 +261,17 @@ def download_many(jobs: list[tuple[str, list[tuple[str, Path]], bool]], workers:
             with lock:
                 stats[kind] = stats.get(kind, 0) + 1
                 done += 1
-                if kind == "miss" and len(misses) < 30:
-                    misses.append(info)
+                if kind == "miss" and len(misses) < 20:
+                    misses.append("失败 " + info)
+                elif kind == "denied" and len(misses) < 20:
+                    misses.append("源站拒绝 " + info)
                 if done == len(jobs) or done % 200 == 0:
-                    log(f"{label} {done}/{len(jobs)} 新下 {stats['ok']} 跳过 {stats['skip']} 失败 {stats['miss']}")
+                    log(
+                        f"{label} {done}/{len(jobs)} 新下 {stats['ok']} 跳过 {stats['skip']} "
+                        f"失败 {stats['miss']} 源站拒绝 {stats['denied']}"
+                    )
     for item in misses:
-        log(f"失败 {item}")
+        log(item)
     return stats
 
 
@@ -598,6 +605,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-assets", type=int, default=None)
     parser.add_argument("--only-bundle", default="")
     parser.add_argument("--self-check", action="store_true")
+    parser.add_argument("--refresh", action="store_true")
     return parser.parse_args()
 
 
@@ -622,7 +630,16 @@ def main() -> int:
             if not args.no_browser:
                 webbrowser.open(f"http://127.0.0.1:{args.hall_port}/")
             return 0
-        if not args.serve_only:
+        already = (
+            (root / "download.done").exists()
+            and args.max_assets is None
+            and not args.only_bundle
+            and not args.refresh
+        )
+        if not args.serve_only and already:
+            log("这份下载已经完成，直接打开网页。")
+            log("要重新检查漏掉的文件，先删掉 h215-local 里面的 download.done，再双击。")
+        elif not args.serve_only:
             log(f"文件会保存到 {root}")
             log("大约 1.1GB。已经下过的文件会跳过。")
             download_hall(root, args.workers, log)
@@ -633,8 +650,11 @@ def main() -> int:
             stats = download_many(jobs, args.workers, log, "游戏资源")
             log(
                 f"游戏资源完成：新下 {stats['ok']} ，跳过 {stats['skip']} ，"
-                f"源站没有或拒绝 {stats['miss']} 。被拒绝的文件官方网页同样下不到。"
+                f"失败 {stats['miss']} ，源站拒绝 {stats['denied']} 。"
+                "被拒绝的文件官方网页同样下不到。"
             )
+            if args.max_assets is None and not args.only_bundle:
+                (root / "download.done").write_text("ok\n", encoding="utf-8")
         if not (hall / "index.html").exists():
             raise RuntimeError(f"还没有大厅文件。请先完整运行一次。目录：{root}")
         patch_hall(hall, args.game_port, log)
