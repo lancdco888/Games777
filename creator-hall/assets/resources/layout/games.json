@@ -1,0 +1,1534 @@
+{
+  "games": [
+    {
+      "id": 270,
+      "icon": 270,
+      "name": "财富之眼",
+      "type": "casino"
+    },
+    {
+      "id": 336,
+      "icon": 336,
+      "name": "和平&长寿",
+      "type": "casino"
+    },
+    {
+      "id": 341,
+      "icon": 341,
+      "name": "魔法熊猫",
+      "type": "casino"
+    },
+    {
+      "id": 353,
+      "icon": 353,
+      "name": "野牛-豪华版",
+      "type": "casino"
+    },
+    {
+      "id": 375,
+      "icon": 375,
+      "name": "尤里卡列车",
+      "type": "casino"
+    },
+    {
+      "id": 388,
+      "icon": 388,
+      "name": "江湖儿女",
+      "type": "casino"
+    },
+    {
+      "id": 465,
+      "icon": 465,
+      "name": "五龙争霸Ⅱ",
+      "type": "casino"
+    },
+    {
+      "id": 475,
+      "icon": 475,
+      "name": "海盗财宝",
+      "type": "casino"
+    },
+    {
+      "id": 479,
+      "icon": 479,
+      "name": "熊猫宝藏Ⅱ",
+      "type": "casino"
+    },
+    {
+      "id": 481,
+      "icon": 481,
+      "name": "481-Gates of Olympus 1000",
+      "type": "casino"
+    },
+    {
+      "id": 482,
+      "icon": 482,
+      "name": "482-Gates of Olympus",
+      "type": "casino"
+    },
+    {
+      "id": 483,
+      "icon": 483,
+      "name": "麻将胡了",
+      "type": "casino"
+    },
+    {
+      "id": 485,
+      "icon": 311,
+      "name": "终极火链",
+      "type": "casino"
+    },
+    {
+      "id": 101,
+      "icon": 101,
+      "name": "大王乌贼",
+      "type": "haiwang"
+    },
+    {
+      "id": 102,
+      "icon": 102,
+      "name": "八爪章鱼",
+      "type": "haiwang"
+    },
+    {
+      "id": 103,
+      "icon": 103,
+      "name": "狂暴火龙",
+      "type": "haiwang"
+    },
+    {
+      "id": 104,
+      "icon": 104,
+      "name": "霸王蟹",
+      "type": "haiwang"
+    },
+    {
+      "id": 105,
+      "icon": 105,
+      "name": "龙虾将军",
+      "type": "haiwang"
+    },
+    {
+      "id": 106,
+      "icon": 106,
+      "name": "史前巨鳄",
+      "type": "haiwang"
+    },
+    {
+      "id": 107,
+      "icon": 107,
+      "name": "暗夜巨兽",
+      "type": "haiwang"
+    },
+    {
+      "id": 108,
+      "icon": 108,
+      "name": "海王荣耀",
+      "type": "haiwang"
+    },
+    {
+      "id": 109,
+      "icon": 109,
+      "name": "铁甲飞龙",
+      "type": "changsheng"
+    },
+    {
+      "id": 110,
+      "icon": 110,
+      "name": "追风逐月",
+      "type": "changsheng"
+    },
+    {
+      "id": 111,
+      "icon": 111,
+      "name": "哪吒闹海",
+      "type": "changsheng"
+    },
+    {
+      "id": 112,
+      "icon": 112,
+      "name": "神龙宝藏",
+      "type": "changsheng"
+    },
+    {
+      "id": 113,
+      "icon": 113,
+      "name": "同类炸弹",
+      "type": "changsheng"
+    },
+    {
+      "id": 114,
+      "icon": 114,
+      "name": "响震四方",
+      "type": "changsheng"
+    },
+    {
+      "id": 115,
+      "icon": 115,
+      "name": "羊鳄大战",
+      "type": "changsheng"
+    },
+    {
+      "id": 116,
+      "icon": 116,
+      "name": "海盗船",
+      "type": "changsheng"
+    },
+    {
+      "id": 117,
+      "icon": 117,
+      "name": "三色鳄鱼",
+      "type": "changsheng"
+    },
+    {
+      "id": 118,
+      "icon": 118,
+      "name": "李逵劈鱼",
+      "type": "changsheng"
+    },
+    {
+      "id": 119,
+      "icon": 119,
+      "name": "摇钱树",
+      "type": "changsheng"
+    },
+    {
+      "id": 120,
+      "icon": 120,
+      "name": "金蟾捕鱼",
+      "type": "changsheng"
+    },
+    {
+      "id": 121,
+      "icon": 121,
+      "name": "黄金美人鱼",
+      "type": "changsheng"
+    },
+    {
+      "id": 122,
+      "icon": 122,
+      "name": "龙鲨争霸",
+      "type": "changsheng"
+    },
+    {
+      "id": 123,
+      "icon": 123,
+      "name": "火凤凰",
+      "type": "haiwang"
+    },
+    {
+      "id": 124,
+      "icon": 124,
+      "name": "神龙转轮",
+      "type": "haiwang"
+    },
+    {
+      "id": 140,
+      "icon": 140,
+      "name": "紫晶人鱼",
+      "type": "haiwang"
+    },
+    {
+      "id": 141,
+      "icon": 141,
+      "name": "冥焰赤龙",
+      "type": "haiwang"
+    },
+    {
+      "id": 142,
+      "icon": 142,
+      "name": "蛮荒凶兽",
+      "type": "haiwang"
+    },
+    {
+      "id": 143,
+      "icon": 143,
+      "name": "金色龙虾将军",
+      "type": "haiwang"
+    },
+    {
+      "id": 144,
+      "icon": 144,
+      "name": "招财宝蟾",
+      "type": "haiwang"
+    },
+    {
+      "id": 145,
+      "icon": 145,
+      "name": "深海秘籍",
+      "type": "haiwang"
+    },
+    {
+      "id": 146,
+      "icon": 146,
+      "name": "146",
+      "type": "slot"
+    },
+    {
+      "id": 205,
+      "icon": 205,
+      "name": "财神道",
+      "type": "casino"
+    },
+    {
+      "id": 206,
+      "icon": 206,
+      "name": "糖果王国",
+      "type": "casino"
+    },
+    {
+      "id": 207,
+      "icon": 207,
+      "name": "好运年年",
+      "type": "casino"
+    },
+    {
+      "id": 208,
+      "icon": 208,
+      "name": "幸运钻石",
+      "type": "casino"
+    },
+    {
+      "id": 209,
+      "icon": 209,
+      "name": "阿拉丁宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 210,
+      "icon": 210,
+      "name": "皇朝88",
+      "type": "casino"
+    },
+    {
+      "id": 211,
+      "icon": 211,
+      "name": "神偷侠兔",
+      "type": "casino"
+    },
+    {
+      "id": 212,
+      "icon": 212,
+      "name": "冰雪女神",
+      "type": "casino"
+    },
+    {
+      "id": 213,
+      "icon": 213,
+      "name": "金虎聚财",
+      "type": "casino"
+    },
+    {
+      "id": 214,
+      "icon": 214,
+      "name": "巨龙争霸",
+      "type": "casino"
+    },
+    {
+      "id": 215,
+      "icon": 215,
+      "name": "彩凤呈祥",
+      "type": "casino"
+    },
+    {
+      "id": 216,
+      "icon": 216,
+      "name": "黄金88",
+      "type": "casino"
+    },
+    {
+      "id": 217,
+      "icon": 217,
+      "name": "福星发财",
+      "type": "casino"
+    },
+    {
+      "id": 218,
+      "icon": 218,
+      "name": "发财树",
+      "type": "casino"
+    },
+    {
+      "id": 219,
+      "icon": 219,
+      "name": "法老宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 220,
+      "icon": 220,
+      "name": "熊猫宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 221,
+      "icon": 221,
+      "name": "狂野蛮牛",
+      "type": "casino"
+    },
+    {
+      "id": 222,
+      "icon": 222,
+      "name": "幸运美金",
+      "type": "casino"
+    },
+    {
+      "id": 223,
+      "icon": 223,
+      "name": "霹雳火",
+      "type": "casino"
+    },
+    {
+      "id": 224,
+      "icon": 224,
+      "name": "齐天大圣",
+      "type": "casino"
+    },
+    {
+      "id": 225,
+      "icon": 225,
+      "name": "龙海公主",
+      "type": "casino"
+    },
+    {
+      "id": 226,
+      "icon": 226,
+      "name": "精灵宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 229,
+      "icon": 229,
+      "name": "维加斯之夜",
+      "type": "casino"
+    },
+    {
+      "id": 230,
+      "icon": 230,
+      "name": "招财猫",
+      "type": "casino"
+    },
+    {
+      "id": 231,
+      "icon": 231,
+      "name": "富贵树",
+      "type": "casino"
+    },
+    {
+      "id": 232,
+      "icon": 232,
+      "name": "金猪报喜",
+      "type": "casino"
+    },
+    {
+      "id": 234,
+      "icon": 234,
+      "name": "777",
+      "type": "casino"
+    },
+    {
+      "id": 251,
+      "icon": 251,
+      "name": "88FORTUNES_5",
+      "type": "casino"
+    },
+    {
+      "id": 252,
+      "icon": 252,
+      "name": "DOUBLE BLESSINGS",
+      "type": "casino"
+    },
+    {
+      "id": 255,
+      "icon": 255,
+      "name": "DIAMOND ETERNITY",
+      "type": "casino"
+    },
+    {
+      "id": 256,
+      "icon": 256,
+      "name": "88FORTUNES_3",
+      "type": "casino"
+    },
+    {
+      "id": 257,
+      "icon": 257,
+      "name": "DUANWU",
+      "type": "casino"
+    },
+    {
+      "id": 258,
+      "icon": 258,
+      "name": "DANCING DRUMS",
+      "type": "casino"
+    },
+    {
+      "id": 259,
+      "icon": 259,
+      "name": "RISING FORTUNES",
+      "type": "casino"
+    },
+    {
+      "id": 260,
+      "icon": 260,
+      "name": "5TREASURES",
+      "type": "casino"
+    },
+    {
+      "id": 271,
+      "icon": 271,
+      "name": "东海龙王",
+      "type": "casino"
+    },
+    {
+      "id": 272,
+      "icon": 272,
+      "name": "女娲",
+      "type": "casino"
+    },
+    {
+      "id": 273,
+      "icon": 273,
+      "name": "锦鲤报喜",
+      "type": "casino"
+    },
+    {
+      "id": 274,
+      "icon": 274,
+      "name": "财神到",
+      "type": "casino"
+    },
+    {
+      "id": 275,
+      "icon": 275,
+      "name": "五龙争霸",
+      "type": "casino"
+    },
+    {
+      "id": 276,
+      "icon": 276,
+      "name": "财神赐宝",
+      "type": "casino"
+    },
+    {
+      "id": 277,
+      "icon": 277,
+      "name": "龙之宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 278,
+      "icon": 278,
+      "name": "运财锦鲤",
+      "type": "casino"
+    },
+    {
+      "id": 279,
+      "icon": 279,
+      "name": "天马",
+      "type": "casino"
+    },
+    {
+      "id": 280,
+      "icon": 280,
+      "name": "龙族王子",
+      "type": "casino"
+    },
+    {
+      "id": 281,
+      "icon": 281,
+      "name": "运财龙神",
+      "type": "casino"
+    },
+    {
+      "id": 282,
+      "icon": 282,
+      "name": "女侠",
+      "type": "casino"
+    },
+    {
+      "id": 283,
+      "icon": 283,
+      "name": "招财狮",
+      "type": "casino"
+    },
+    {
+      "id": 287,
+      "icon": 287,
+      "name": "287",
+      "type": "slot"
+    },
+    {
+      "id": 288,
+      "icon": 288,
+      "name": "龙腾虎啸",
+      "type": "casino"
+    },
+    {
+      "id": 289,
+      "icon": 289,
+      "name": "哪吒闹海",
+      "type": "casino"
+    },
+    {
+      "id": 291,
+      "icon": 291,
+      "name": "中秋佳节",
+      "type": "casino"
+    },
+    {
+      "id": 292,
+      "icon": 292,
+      "name": "美女猫咪",
+      "type": "casino"
+    },
+    {
+      "id": 293,
+      "icon": 293,
+      "name": "财神在线",
+      "type": "casino"
+    },
+    {
+      "id": 294,
+      "icon": 294,
+      "name": "五皇争霸",
+      "type": "casino"
+    },
+    {
+      "id": 295,
+      "icon": 295,
+      "name": "幸运女皇",
+      "type": "casino"
+    },
+    {
+      "id": 296,
+      "icon": 296,
+      "name": "虎威公主",
+      "type": "casino"
+    },
+    {
+      "id": 297,
+      "icon": 297,
+      "name": "熊猫滚滚",
+      "type": "casino"
+    },
+    {
+      "id": 298,
+      "icon": 298,
+      "name": "大圣爷",
+      "type": "casino"
+    },
+    {
+      "id": 299,
+      "icon": 299,
+      "name": "鸿福",
+      "type": "casino"
+    },
+    {
+      "id": 301,
+      "icon": 301,
+      "name": "熊猫宝贝",
+      "type": "casino"
+    },
+    {
+      "id": 302,
+      "icon": 302,
+      "name": "双喜熊猫",
+      "type": "casino"
+    },
+    {
+      "id": 303,
+      "icon": 303,
+      "name": "虎虎献瑞",
+      "type": "casino"
+    },
+    {
+      "id": 304,
+      "icon": 304,
+      "name": "金福满堂",
+      "type": "casino"
+    },
+    {
+      "id": 305,
+      "icon": 305,
+      "name": "赤红女皇",
+      "type": "casino"
+    },
+    {
+      "id": 306,
+      "icon": 306,
+      "name": "天龙地虎",
+      "type": "casino"
+    },
+    {
+      "id": 307,
+      "icon": 307,
+      "name": "巨龙宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 309,
+      "icon": 309,
+      "name": "富贵之花",
+      "type": "casino"
+    },
+    {
+      "id": 310,
+      "icon": 310,
+      "name": "财富之树",
+      "type": "casino"
+    },
+    {
+      "id": 311,
+      "icon": 311,
+      "name": "终极火链",
+      "type": "casino"
+    },
+    {
+      "id": 313,
+      "icon": 313,
+      "name": "女猎手",
+      "type": "casino"
+    },
+    {
+      "id": 315,
+      "icon": 315,
+      "name": "财富之树Ⅱ",
+      "type": "casino"
+    },
+    {
+      "id": 317,
+      "icon": 317,
+      "name": "金吉报喜-龙",
+      "type": "casino"
+    },
+    {
+      "id": 318,
+      "icon": 318,
+      "name": "金吉报喜-猪",
+      "type": "casino"
+    },
+    {
+      "id": 319,
+      "icon": 319,
+      "name": "DANCING DRUMSⅡ",
+      "type": "casino"
+    },
+    {
+      "id": 320,
+      "icon": 320,
+      "name": "弥勒佛",
+      "type": "casino"
+    },
+    {
+      "id": 321,
+      "icon": 321,
+      "name": "中秋",
+      "type": "casino"
+    },
+    {
+      "id": 322,
+      "icon": 322,
+      "name": "黄金纪元",
+      "type": "casino"
+    },
+    {
+      "id": 323,
+      "icon": 323,
+      "name": "春节",
+      "type": "casino"
+    },
+    {
+      "id": 324,
+      "icon": 324,
+      "name": "多福多彩_龙",
+      "type": "casino"
+    },
+    {
+      "id": 331,
+      "icon": 331,
+      "name": "新黄金88",
+      "type": "casino"
+    },
+    {
+      "id": 332,
+      "icon": 332,
+      "name": "新狂野蛮牛",
+      "type": "casino"
+    },
+    {
+      "id": 333,
+      "icon": 333,
+      "name": "新招财猫",
+      "type": "casino"
+    },
+    {
+      "id": 335,
+      "icon": 335,
+      "name": "天赐金路",
+      "type": "casino"
+    },
+    {
+      "id": 337,
+      "icon": 337,
+      "name": "337",
+      "type": "slot"
+    },
+    {
+      "id": 338,
+      "icon": 338,
+      "name": "黄金万两-神奇的老鼠",
+      "type": "casino"
+    },
+    {
+      "id": 339,
+      "icon": 339,
+      "name": "339",
+      "type": "slot"
+    },
+    {
+      "id": 340,
+      "icon": 340,
+      "name": "福袋连连-熊猫",
+      "type": "casino"
+    },
+    {
+      "id": 342,
+      "icon": 342,
+      "name": "342",
+      "type": "casino"
+    },
+    {
+      "id": 343,
+      "icon": 343,
+      "name": "343",
+      "type": "slot"
+    },
+    {
+      "id": 344,
+      "icon": 344,
+      "name": "344",
+      "type": "slot"
+    },
+    {
+      "id": 345,
+      "icon": 345,
+      "name": "丝绸之路",
+      "type": "casino"
+    },
+    {
+      "id": 346,
+      "icon": 346,
+      "name": "346",
+      "type": "slot"
+    },
+    {
+      "id": 347,
+      "icon": 347,
+      "name": "快乐灯笼",
+      "type": "casino"
+    },
+    {
+      "id": 348,
+      "icon": 348,
+      "name": "中秋",
+      "type": "casino"
+    },
+    {
+      "id": 349,
+      "icon": 349,
+      "name": "黄金纪元",
+      "type": "casino"
+    },
+    {
+      "id": 350,
+      "icon": 350,
+      "name": "皇室神猴",
+      "type": "casino"
+    },
+    {
+      "id": 351,
+      "icon": 351,
+      "name": "351",
+      "type": "slot"
+    },
+    {
+      "id": 355,
+      "icon": 355,
+      "name": "福袋连连-龙",
+      "type": "casino"
+    },
+    {
+      "id": 359,
+      "icon": 359,
+      "name": "359",
+      "type": "slot"
+    },
+    {
+      "id": 360,
+      "icon": 360,
+      "name": "发财牛",
+      "type": "casino"
+    },
+    {
+      "id": 361,
+      "icon": 361,
+      "name": "361",
+      "type": "slot"
+    },
+    {
+      "id": 362,
+      "icon": 362,
+      "name": "362",
+      "type": "slot"
+    },
+    {
+      "id": 363,
+      "icon": 363,
+      "name": "363",
+      "type": "slot"
+    },
+    {
+      "id": 364,
+      "icon": 364,
+      "name": "364",
+      "type": "slot"
+    },
+    {
+      "id": 366,
+      "icon": 366,
+      "name": "幸运小猪",
+      "type": "casino"
+    },
+    {
+      "id": 367,
+      "icon": 367,
+      "name": "仙人",
+      "type": "casino"
+    },
+    {
+      "id": 368,
+      "icon": 368,
+      "name": "埃及宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 369,
+      "icon": 369,
+      "name": "财富",
+      "type": "casino"
+    },
+    {
+      "id": 370,
+      "icon": 370,
+      "name": "深海",
+      "type": "casino"
+    },
+    {
+      "id": 371,
+      "icon": 371,
+      "name": "甜蜜的鸣叫",
+      "type": "casino"
+    },
+    {
+      "id": 372,
+      "icon": 372,
+      "name": "猪狼",
+      "type": "casino"
+    },
+    {
+      "id": 374,
+      "icon": 374,
+      "name": "庞贝古城2",
+      "type": "casino"
+    },
+    {
+      "id": 377,
+      "icon": 377,
+      "name": "金龙宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 378,
+      "icon": 378,
+      "name": "花好月圆",
+      "type": "casino"
+    },
+    {
+      "id": 379,
+      "icon": 379,
+      "name": "金色王朝",
+      "type": "casino"
+    },
+    {
+      "id": 380,
+      "icon": 380,
+      "name": "Tiger",
+      "type": "casino"
+    },
+    {
+      "id": 381,
+      "icon": 381,
+      "name": "百变熊猫",
+      "type": "casino"
+    },
+    {
+      "id": 382,
+      "icon": 382,
+      "name": "剑来",
+      "type": "casino"
+    },
+    {
+      "id": 383,
+      "icon": 383,
+      "name": "美人鱼",
+      "type": "casino"
+    },
+    {
+      "id": 384,
+      "icon": 384,
+      "name": "舞狮",
+      "type": "casino"
+    },
+    {
+      "id": 385,
+      "icon": 385,
+      "name": "少林寺",
+      "type": "casino"
+    },
+    {
+      "id": 386,
+      "icon": 386,
+      "name": "情人节",
+      "type": "casino"
+    },
+    {
+      "id": 387,
+      "icon": 387,
+      "name": "黄金佛",
+      "type": "casino"
+    },
+    {
+      "id": 389,
+      "icon": 389,
+      "name": "大闹龙宫",
+      "type": "casino"
+    },
+    {
+      "id": 390,
+      "icon": 390,
+      "name": "中国春节",
+      "type": "casino"
+    },
+    {
+      "id": 391,
+      "icon": 391,
+      "name": "老寿星",
+      "type": "casino"
+    },
+    {
+      "id": 392,
+      "icon": 392,
+      "name": "龙腾",
+      "type": "casino"
+    },
+    {
+      "id": 393,
+      "icon": 393,
+      "name": "帝王之力",
+      "type": "casino"
+    },
+    {
+      "id": 394,
+      "icon": 394,
+      "name": "孔雀公主",
+      "type": "casino"
+    },
+    {
+      "id": 395,
+      "icon": 395,
+      "name": "埃及女王",
+      "type": "casino"
+    },
+    {
+      "id": 396,
+      "icon": 396,
+      "name": "成吉思汗",
+      "type": "casino"
+    },
+    {
+      "id": 397,
+      "icon": 397,
+      "name": "热辣墨西哥",
+      "type": "casino"
+    },
+    {
+      "id": 398,
+      "icon": 398,
+      "name": "黄金锦鲤",
+      "type": "casino"
+    },
+    {
+      "id": 399,
+      "icon": 399,
+      "name": "红运锦鲤",
+      "type": "casino"
+    },
+    {
+      "id": 400,
+      "icon": 400,
+      "name": "尼罗河之女",
+      "type": "casino"
+    },
+    {
+      "id": 401,
+      "icon": 401,
+      "name": "龙之宝藏",
+      "type": "casino"
+    },
+    {
+      "id": 402,
+      "icon": 402,
+      "name": "黄金圣甲虫",
+      "type": "casino"
+    },
+    {
+      "id": 403,
+      "icon": 403,
+      "name": "西部牛仔",
+      "type": "casino"
+    },
+    {
+      "id": 404,
+      "icon": 404,
+      "name": "黄金矿工",
+      "type": "casino"
+    },
+    {
+      "id": 405,
+      "icon": 405,
+      "name": "马踏飞燕",
+      "type": "casino"
+    },
+    {
+      "id": 406,
+      "icon": 406,
+      "name": "月球漫步",
+      "type": "casino"
+    },
+    {
+      "id": 407,
+      "icon": 407,
+      "name": "虎啸",
+      "type": "casino"
+    },
+    {
+      "id": 408,
+      "icon": 408,
+      "name": "TIKI之火",
+      "type": "casino"
+    },
+    {
+      "id": 409,
+      "icon": 409,
+      "name": "桑巴舞",
+      "type": "casino"
+    },
+    {
+      "id": 410,
+      "icon": 410,
+      "name": "面具舞会",
+      "type": "casino"
+    },
+    {
+      "id": 411,
+      "icon": 411,
+      "name": "赛马",
+      "type": "casino"
+    },
+    {
+      "id": 413,
+      "icon": 413,
+      "name": "考拉",
+      "type": "casino"
+    },
+    {
+      "id": 415,
+      "icon": 415,
+      "name": "印度虎",
+      "type": "casino"
+    },
+    {
+      "id": 416,
+      "icon": 416,
+      "name": "沙漠绿洲",
+      "type": "casino"
+    },
+    {
+      "id": 417,
+      "icon": 417,
+      "name": "财神到Ⅱ",
+      "type": "casino"
+    },
+    {
+      "id": 418,
+      "icon": 418,
+      "name": "五龙争霸",
+      "type": "casino"
+    },
+    {
+      "id": 419,
+      "icon": 419,
+      "name": "五头狮子",
+      "type": "casino"
+    },
+    {
+      "id": 420,
+      "icon": 420,
+      "name": "420",
+      "type": "slot"
+    },
+    {
+      "id": 421,
+      "icon": 421,
+      "name": "421",
+      "type": "slot"
+    },
+    {
+      "id": 422,
+      "icon": 422,
+      "name": "422",
+      "type": "slot"
+    },
+    {
+      "id": 423,
+      "icon": 423,
+      "name": "娲皇",
+      "type": "casino"
+    },
+    {
+      "id": 424,
+      "icon": 424,
+      "name": "胜利88",
+      "type": "casino"
+    },
+    {
+      "id": 425,
+      "icon": 425,
+      "name": "森林泰山",
+      "type": "casino"
+    },
+    {
+      "id": 426,
+      "icon": 426,
+      "name": "森林狼",
+      "type": "casino"
+    },
+    {
+      "id": 428,
+      "icon": 428,
+      "name": "埃及甲虫",
+      "type": "casino"
+    },
+    {
+      "id": 429,
+      "icon": 429,
+      "name": "大袋鼠",
+      "type": "casino"
+    },
+    {
+      "id": 430,
+      "icon": 430,
+      "name": "丛林之王泰山",
+      "type": "casino"
+    },
+    {
+      "id": 431,
+      "icon": 431,
+      "name": "女海盗",
+      "type": "casino"
+    },
+    {
+      "id": 432,
+      "icon": 432,
+      "name": "狂野之心泰山",
+      "type": "casino"
+    },
+    {
+      "id": 433,
+      "icon": 433,
+      "name": "庞贝古城",
+      "type": "casino"
+    },
+    {
+      "id": 435,
+      "icon": 435,
+      "name": "斗牛",
+      "type": "casino"
+    },
+    {
+      "id": 437,
+      "icon": 437,
+      "name": "埃及法老",
+      "type": "casino"
+    },
+    {
+      "id": 438,
+      "icon": 438,
+      "name": "拉斯维加斯公主",
+      "type": "casino"
+    },
+    {
+      "id": 439,
+      "icon": 439,
+      "name": "拉斯维加斯帅哥",
+      "type": "casino"
+    },
+    {
+      "id": 440,
+      "icon": 440,
+      "name": "铿锵玫瑰",
+      "type": "casino"
+    },
+    {
+      "id": 441,
+      "icon": 441,
+      "name": "西部警长",
+      "type": "casino"
+    },
+    {
+      "id": 444,
+      "icon": 444,
+      "name": "海盗秘宝",
+      "type": "casino"
+    },
+    {
+      "id": 445,
+      "icon": 445,
+      "name": "埃及莲花",
+      "type": "casino"
+    },
+    {
+      "id": 446,
+      "icon": 446,
+      "name": "狮子王",
+      "type": "casino"
+    },
+    {
+      "id": 447,
+      "icon": 447,
+      "name": "金刚",
+      "type": "casino"
+    },
+    {
+      "id": 452,
+      "icon": 452,
+      "name": "万圣礼物",
+      "type": "casino"
+    },
+    {
+      "id": 454,
+      "icon": 454,
+      "name": "埃及奇观",
+      "type": "casino"
+    },
+    {
+      "id": 457,
+      "icon": 457,
+      "name": "赏金猎人",
+      "type": "casino"
+    },
+    {
+      "id": 459,
+      "icon": 459,
+      "name": "发财虎",
+      "type": "casino"
+    },
+    {
+      "id": 460,
+      "icon": 460,
+      "name": "发财牛",
+      "type": "casino"
+    },
+    {
+      "id": 461,
+      "icon": 461,
+      "name": "发财兔",
+      "type": "casino"
+    },
+    {
+      "id": 462,
+      "icon": 462,
+      "name": "发财鼠",
+      "type": "casino"
+    },
+    {
+      "id": 463,
+      "icon": 463,
+      "name": "龙虎运",
+      "type": "casino"
+    },
+    {
+      "id": 464,
+      "icon": 464,
+      "name": "金象神",
+      "type": "casino"
+    },
+    {
+      "id": 466,
+      "icon": 466,
+      "name": "熊猫宝藏Ⅱ",
+      "type": "casino"
+    },
+    {
+      "id": 468,
+      "icon": 468,
+      "name": "幸运小猪 2",
+      "type": "casino"
+    },
+    {
+      "id": 469,
+      "icon": 469,
+      "name": "猴王纳福",
+      "type": "casino"
+    },
+    {
+      "id": 470,
+      "icon": 470,
+      "name": "终极火链-2",
+      "type": "casino"
+    },
+    {
+      "id": 476,
+      "icon": 476,
+      "name": "烈焰凤凰",
+      "type": "casino"
+    },
+    {
+      "id": 477,
+      "icon": 477,
+      "name": "波塞冬传奇",
+      "type": "casino"
+    },
+    {
+      "id": 484,
+      "icon": 484,
+      "name": "麻将胡了2",
+      "type": "casino"
+    },
+    {
+      "id": 486,
+      "icon": 486,
+      "name": "486",
+      "type": "slot"
+    },
+    {
+      "id": 487,
+      "icon": 487,
+      "name": "487",
+      "type": "slot"
+    },
+    {
+      "id": 488,
+      "icon": 488,
+      "name": "488",
+      "type": "slot"
+    },
+    {
+      "id": 489,
+      "icon": 489,
+      "name": "489",
+      "type": "slot"
+    },
+    {
+      "id": 492,
+      "icon": 492,
+      "name": "492",
+      "type": "slot"
+    },
+    {
+      "id": 493,
+      "icon": 493,
+      "name": "493",
+      "type": "slot"
+    },
+    {
+      "id": 494,
+      "icon": 494,
+      "name": "494",
+      "type": "slot"
+    },
+    {
+      "id": 495,
+      "icon": 495,
+      "name": "495",
+      "type": "slot"
+    },
+    {
+      "id": 496,
+      "icon": 496,
+      "name": "496",
+      "type": "slot"
+    },
+    {
+      "id": 499,
+      "icon": 499,
+      "name": "燃烧吧辣椒",
+      "type": "casino"
+    },
+    {
+      "id": 500,
+      "icon": 500,
+      "name": "500",
+      "type": "slot"
+    },
+    {
+      "id": 501,
+      "icon": 501,
+      "name": "501",
+      "type": "slot"
+    },
+    {
+      "id": 600,
+      "icon": 600,
+      "name": "600",
+      "type": "slot"
+    },
+    {
+      "id": 734,
+      "icon": 734,
+      "name": "猪狼-两转盘",
+      "type": "casino"
+    },
+    {
+      "id": 738,
+      "icon": 738,
+      "name": "猪狼-三转盘",
+      "type": "casino"
+    },
+    {
+      "id": 739,
+      "icon": 739,
+      "name": "金元宝",
+      "type": "casino"
+    },
+    {
+      "id": 741,
+      "icon": 741,
+      "name": "木乃伊-圣诞",
+      "type": "casino"
+    },
+    {
+      "id": 744,
+      "icon": 744,
+      "name": "黄金万两-猛虎",
+      "type": "casino"
+    },
+    {
+      "id": 1001,
+      "icon": 1001,
+      "name": "1001",
+      "type": "slot"
+    }
+  ]
+}
