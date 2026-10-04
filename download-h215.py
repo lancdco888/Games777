@@ -9,7 +9,9 @@ from __future__ import annotations
 import argparse
 import json
 import mimetypes
+import os
 import re
+import subprocess
 import sys
 import threading
 import time
@@ -18,7 +20,7 @@ import urllib.parse
 import urllib.request
 import webbrowser
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 HALL_ORIGIN = "https://h215.vip"
@@ -26,6 +28,7 @@ GAME_ORIGIN = "https://game.m215gate.com"
 GAME_HOST = "https://game.m215gate.com"
 LOCAL_GAME_ORIGIN = "http://127.0.0.1:8081"
 UA = "Mozilla/5.0"
+VERSION = "3"
 LANGS = ["zh", "en", "my", "es", "ind", "pt", "vn", "th", "vi", "zh_CN", "my1", "es_MX"]
 EXT = {
     "cc.AudioClip": ["mp3", "ogg", "wav", "m4a"],
@@ -131,6 +134,9 @@ def patch_text(text: str, game_port: int) -> str:
 def self_check() -> int:
     wasm = decode_uuid("d2SmiAEh5MEYHkcc9bujX6")
     lua = decode_uuid("a95OSnyu5OrK+6wEptaTIV")
+    sample = "  TCP    127.0.0.1:8080         0.0.0.0:0              LISTENING       4321\n  TCP    [::1]:8081             [::]:0                 LISTENING       99\n"
+    if listening_pids(sample, 8080) != [4321] or listening_pids(sample, 8081) != [99]:
+        raise SystemExit(f"netstat parse {listening_pids(sample, 8080)} {listening_pids(sample, 8081)}")
     if wasm != "d24a6880-121e-4c11-81e4-71cf5bba35fa":
         raise SystemExit(f"wasm uuid {wasm}")
     if lua != "a9e4e4a7-caee-4eac-afba-c04a6d693215":
@@ -558,7 +564,53 @@ def page_has(url: str, needle: bytes) -> bool:
         return False
 
 
+def listening_pids(netstat_text: str, port: int) -> list[int]:
+    found: list[int] = []
+    for line in netstat_text.splitlines():
+        if "LISTENING" not in line.upper():
+            continue
+        parts = line.split()
+        if len(parts) < 4:
+            continue
+        local = parts[1]
+        if local.rsplit(":", 1)[-1] != str(port):
+            continue
+        try:
+            found.append(int(parts[-1]))
+        except ValueError:
+            continue
+    return found
+
+
+def free_port(port: int, log: Log) -> None:
+    """Stop a previous Python server on this port so the old file list cannot stay open."""
+    if os.name != "nt":
+        return
+    try:
+        text = subprocess.check_output(["netstat", "-ano"], text=True, errors="replace")
+    except Exception:
+        return
+    for pid in listening_pids(text, port):
+        try:
+            listed = subprocess.check_output(
+                ["tasklist", "/FI", f"PID eq {pid}", "/FO", "CSV", "/NH"],
+                text=True,
+                errors="replace",
+            )
+        except Exception:
+            continue
+        image = listed.split('"', 2)[1].lower() if listed.startswith('"') else ""
+        if image not in {"python.exe", "pythonw.exe", "py.exe"}:
+            log(f"端口 {port} 被 {image or pid} 占用，不是 Python，没有关闭它。")
+            continue
+        subprocess.check_call(["taskkill", "/F", "/PID", str(pid)])
+        log(f"已关闭占用 {port} 的旧 Python 进程 {pid}。")
+    time.sleep(0.4)
+
+
 class SiteServer(ThreadingHTTPServer):
+    allow_reuse_address = True
+
     def __init__(self, address, site_root: Path):
         self.site_root = str(site_root.resolve())
         super().__init__(address, SiteHandler)
@@ -570,18 +622,15 @@ class SiteServer(ThreadingHTTPServer):
         super().handle_error(request, client_address)
 
 
-class SiteHandler(SimpleHTTPRequestHandler):
-    """Serve one folder. `/` is always index.html, never a file list."""
+class SiteHandler(BaseHTTPRequestHandler):
+    """Serve one folder. `/` is always index.html. This handler cannot list files."""
 
     def __init__(self, request, client_address, server):
         self.directory = server.site_root
-        super().__init__(request, client_address, server, directory=server.site_root)
+        super().__init__(request, client_address, server)
 
     def log_message(self, fmt: str, *args) -> None:
         return
-
-    def list_directory(self, path):
-        return self._send(self._missing_page(), "text/html; charset=utf-8", head_only=False)
 
     def do_GET(self) -> None:
         self._serve(head_only=False)
@@ -592,7 +641,8 @@ class SiteHandler(SimpleHTTPRequestHandler):
     def _serve(self, head_only: bool) -> None:
         target = self._target()
         if target is None or not target.is_file():
-            self.send_error(404)
+            message = "这个地址没有页面。大厅是 http://127.0.0.1:8080/ ，游戏是 http://127.0.0.1:8081/ 。".encode("utf-8")
+            self._send(message, "text/html; charset=utf-8", head_only, status=404)
             return
         kind = mimetypes.guess_type(target.name)[0] or "application/octet-stream"
         data = b"" if head_only else target.read_bytes()
@@ -627,18 +677,14 @@ class SiteHandler(SimpleHTTPRequestHandler):
             return root / "index.html"
         return full
 
-    def _missing_page(self) -> bytes:
-        return (
-            "<!doctype html><meta charset=\"utf-8\"><title>页面不存在</title>"
-            "<p>这个地址没有对应文件。大厅请打开 "
-            "<a href=\"http://127.0.0.1:8080/\">http://127.0.0.1:8080/</a>。</p>"
-        ).encode("utf-8")
-
-    def _send(self, data: bytes, kind: str, head_only: bool, length: int | None = None) -> None:
-        self.send_response(200)
+    def _send(self, data: bytes, kind: str, head_only: bool, length: int | None = None, status: int = 200) -> None:
+        body = data if not head_only else b""
+        size = len(data) if length is None else length
+        self.send_response(status)
         self.send_header("Content-Type", kind)
-        self.send_header("Content-Length", str(len(data) if length is None else length))
-        self.send_header("Cache-Control", "no-cache")
+        self.send_header("Content-Length", str(size if not head_only else len(body)))
+        self.send_header("Cache-Control", "no-store")
+        self.send_header("Connection", "close")
         self.end_headers()
         if not head_only:
             self.wfile.write(data)
@@ -674,29 +720,37 @@ def serve(hall: Path, game: Path, hall_port: int, game_port: int, open_browser: 
     index = hall / "index.html"
     text = index.read_text(encoding="utf-8", errors="replace") if index.exists() else ""
     if "Slots Casino" not in text and 'id="root"' not in text:
-        raise RuntimeError(f"大厅首页不对，浏览器只会看到文件列表或空白。请检查 {index}")
+        raise RuntimeError(f"大厅首页不对。请检查 {index}")
+    game_index = game / "index.html"
+    if not game_index.exists():
+        raise RuntimeError(f"游戏首页不存在，所以 8081 会打不开。请检查 {game_index}")
+    for port in (hall_port, game_port):
+        free_port(port, log)
     servers = []
     for folder, port in ((hall, hall_port), (game, game_port)):
         try:
             server = SiteServer(("127.0.0.1", port), folder)
         except OSError as exc:
             raise RuntimeError(
-                f"端口 {port} 已被占用。请先关掉之前打开的黑色窗口，再双击一次。"
-                f"如果浏览器里是文件列表，那个窗口就是要关掉的。"
+                f"端口 {port} 仍被占用。请在旧的黑色窗口里按 Ctrl+C 关掉它，再双击一次。"
             ) from exc
         servers.append(server)
         threading.Thread(target=server.serve_forever, daemon=True).start()
-    home = read_page(f"http://127.0.0.1:{hall_port}/")
-    if b"Directory listing" in home or (b"Slots Casino" not in home and b'id="root"' not in home):
-        raise RuntimeError("8080 打开的不是大厅首页。请关掉旧窗口后重新双击。")
+    home = read_page(f"http://127.0.0.1:{hall_port}/?v={VERSION}")
+    game_home = read_page(f"http://127.0.0.1:{game_port}/?v={VERSION}")
+    if b"Directory listing" in home or b"Slots Casino" not in home:
+        raise RuntimeError("8080 仍然不是大厅首页。")
+    if b"Directory listing" in game_home or b"game_frame" not in game_home:
+        raise RuntimeError("8081 不是游戏页。")
     log("")
+    log(f"脚本版本 {VERSION}")
     log(f"大厅目录 {hall}")
-    log(f"大厅 http://127.0.0.1:{hall_port}")
-    log(f"游戏 http://127.0.0.1:{game_port}")
-    log("请不要关闭这个窗口。关闭后本机网页会停。")
+    log(f"大厅 http://127.0.0.1:{hall_port}/")
+    log(f"游戏 http://127.0.0.1:{game_port}/")
+    log("请不要关闭这个窗口。页面如果还是文件列表，在浏览器按 Ctrl+F5。")
     log("登录仍使用原来的账号。系统如果询问是否允许 Python 访问网络，请选允许。")
     if open_browser:
-        webbrowser.open(f"http://127.0.0.1:{hall_port}/")
+        webbrowser.open(f"http://127.0.0.1:{hall_port}/?v={VERSION}")
     try:
         while True:
             time.sleep(3600)
@@ -729,6 +783,7 @@ def main() -> int:
     args = parse_args()
     if args.self_check:
         return self_check()
+    print(f"脚本版本 {VERSION}", flush=True)
     root = (args.dir or Path(__file__).resolve().parent / "h215-local").resolve()
     log = Log(root / "download.log")
     hall = root / "hall"
