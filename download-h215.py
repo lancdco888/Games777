@@ -14,6 +14,7 @@ import sys
 import threading
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import webbrowser
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -557,26 +558,139 @@ def page_has(url: str, needle: bytes) -> bool:
         return False
 
 
-class QuietHandler(SimpleHTTPRequestHandler):
+class SiteServer(ThreadingHTTPServer):
+    def __init__(self, address, site_root: Path):
+        self.site_root = str(site_root.resolve())
+        super().__init__(address, SiteHandler)
+
+    def handle_error(self, request, client_address) -> None:
+        exc = sys.exc_info()[1]
+        if isinstance(exc, (ConnectionResetError, BrokenPipeError, TimeoutError)):
+            return
+        super().handle_error(request, client_address)
+
+
+class SiteHandler(SimpleHTTPRequestHandler):
+    """Serve one folder. `/` is always index.html, never a file list."""
+
+    def __init__(self, request, client_address, server):
+        self.directory = server.site_root
+        super().__init__(request, client_address, server, directory=server.site_root)
+
     def log_message(self, fmt: str, *args) -> None:
         return
+
+    def list_directory(self, path):
+        return self._send(self._missing_page(), "text/html; charset=utf-8", head_only=False)
+
+    def do_GET(self) -> None:
+        self._serve(head_only=False)
+
+    def do_HEAD(self) -> None:
+        self._serve(head_only=True)
+
+    def _serve(self, head_only: bool) -> None:
+        target = self._target()
+        if target is None or not target.is_file():
+            self.send_error(404)
+            return
+        kind = mimetypes.guess_type(target.name)[0] or "application/octet-stream"
+        data = b"" if head_only else target.read_bytes()
+        self._send(data, kind, head_only, length=target.stat().st_size)
+
+    def _target(self) -> Path | None:
+        raw = urllib.parse.urlsplit(self.path).path
+        rel = urllib.parse.unquote(raw)
+        if rel in ("", "/"):
+            rel = "/index.html"
+        parts = []
+        for part in rel.split("/"):
+            if part in ("", "."):
+                continue
+            if part == "..":
+                return None
+            parts.append(part)
+        root = Path(self.directory).resolve()
+        full = root.joinpath(*parts).resolve() if parts else root / "index.html"
+        try:
+            full.relative_to(root)
+        except ValueError:
+            return None
+        if full.is_dir():
+            index = full / "index.html"
+            if index.is_file():
+                return index
+            if "." not in full.name:
+                return root / "index.html"
+            return None
+        if not full.is_file() and parts and "." not in parts[-1]:
+            return root / "index.html"
+        return full
+
+    def _missing_page(self) -> bytes:
+        return (
+            "<!doctype html><meta charset=\"utf-8\"><title>页面不存在</title>"
+            "<p>这个地址没有对应文件。大厅请打开 "
+            "<a href=\"http://127.0.0.1:8080/\">http://127.0.0.1:8080/</a>。</p>"
+        ).encode("utf-8")
+
+    def _send(self, data: bytes, kind: str, head_only: bool, length: int | None = None) -> None:
+        self.send_response(200)
+        self.send_header("Content-Type", kind)
+        self.send_header("Content-Length", str(len(data) if length is None else length))
+        self.send_header("Cache-Control", "no-cache")
+        self.end_headers()
+        if not head_only:
+            self.wfile.write(data)
+
+
+def ensure_hall_index(hall: Path, log: Log) -> None:
+    index = hall / "index.html"
+
+    def ok(data: bytes) -> bool:
+        return b"Slots Casino" in data or b'id="root"' in data
+
+    current = index.read_bytes() if index.exists() else b""
+    if ok(current):
+        return
+    log("大厅首页不是官网页面，正在重新下载首页。")
+    data = read_url(HALL_ORIGIN + "/")
+    if not ok(data):
+        data = read_url(HALL_ORIGIN + "/index.html")
+    if not ok(data):
+        raise RuntimeError(f"官网首页没有下下来：{index}")
+    write_bytes(index, data)
+
+
+def read_page(url: str, limit: int = 12000) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=5) as response:
+        return response.read(limit)
 
 
 def serve(hall: Path, game: Path, hall_port: int, game_port: int, open_browser: bool, log: Log) -> None:
     if hall_port != 8080:
         log("大厅如果不是 8080 端口，账号服务器会拒绝登录。请使用默认端口。")
+    index = hall / "index.html"
+    text = index.read_text(encoding="utf-8", errors="replace") if index.exists() else ""
+    if "Slots Casino" not in text and 'id="root"' not in text:
+        raise RuntimeError(f"大厅首页不对，浏览器只会看到文件列表或空白。请检查 {index}")
     servers = []
     for folder, port in ((hall, hall_port), (game, game_port)):
-        handler = lambda *args, directory=str(folder), **kwargs: QuietHandler(*args, directory=directory, **kwargs)
         try:
-            server = ThreadingHTTPServer(("127.0.0.1", port), handler)
+            server = SiteServer(("127.0.0.1", port), folder)
         except OSError as exc:
             raise RuntimeError(
-                f"端口 {port} 已被占用。如果刚才的窗口还开着，直接用浏览器打开 http://127.0.0.1:{hall_port} 。"
+                f"端口 {port} 已被占用。请先关掉之前打开的黑色窗口，再双击一次。"
+                f"如果浏览器里是文件列表，那个窗口就是要关掉的。"
             ) from exc
         servers.append(server)
         threading.Thread(target=server.serve_forever, daemon=True).start()
+    home = read_page(f"http://127.0.0.1:{hall_port}/")
+    if b"Directory listing" in home or (b"Slots Casino" not in home and b'id="root"' not in home):
+        raise RuntimeError("8080 打开的不是大厅首页。请关掉旧窗口后重新双击。")
     log("")
+    log(f"大厅目录 {hall}")
     log(f"大厅 http://127.0.0.1:{hall_port}")
     log(f"游戏 http://127.0.0.1:{game_port}")
     log("请不要关闭这个窗口。关闭后本机网页会停。")
@@ -657,6 +771,7 @@ def main() -> int:
                 (root / "download.done").write_text("ok\n", encoding="utf-8")
         if not (hall / "index.html").exists():
             raise RuntimeError(f"还没有大厅文件。请先完整运行一次。目录：{root}")
+        ensure_hall_index(hall, log)
         patch_hall(hall, args.game_port, log)
         if args.no_serve:
             log(f"下载结束，未启动网页服务。目录：{root}")
