@@ -5,6 +5,7 @@ set PYTHONIOENCODING=utf-8
 set PYTHONUTF8=1
 title 下载 h215 大厅和全部游戏
 echo.
+echo 脚本版本 3
 echo 这个窗口会把 h215.vip 大厅和全部 H5 游戏下载到本目录的 h215-local。
 echo 大约 1.1GB。已经下过的文件会跳过，中途关掉可以再双击继续。
 echo 完成后不要关闭窗口。浏览器打开 http://127.0.0.1:8080
