@@ -1,0 +1,8 @@
+{
+  "mockServer": {
+    "enabled": true,
+    "note": "NetClient.SetMockMode(true) by default in BootApp"
+  },
+  "creatorVersion": "3.8.3",
+  "phases": ["hall", "fgame", "fish2"]
+}
